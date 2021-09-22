@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.InventarioGanadoOvino">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ESTRUCTURA DEL HATO"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INVENTARIO GANADO OVINO"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <!-- Tabla inventario ganadero ovinos-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuál es la estructura del hato ganadero de ovinos?"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkGanadoovinolecsem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadovino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Sementales" />
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinolecsemcabez"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinolecsemcabez"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinolecsemvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinolecsemvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadoovinolecborregadulta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadovino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Borregas adultas" />
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinolecborregadultacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinolecborregadultacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinolecborregadultavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinolecborregadultavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadoovinolecprimalas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadovino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Primalas del empadre al primer parto" />
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinolecprimalascabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinolecprimalascabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinolecprimalasavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinolecprimalasavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadoovinoleccorderadestete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadovino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Corderas del destete al primer empadre" />
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinoleccorderadestetecabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinoleccorderadestetecabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinoleccorderadestetevalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinoleccorderadestetevalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadoovinoleccorderolact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadovino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Corderos lactantes" />
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinoleccorderolactcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinoleccorderolactcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinoleccorderolactvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinoleccorderolactvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadoovinoleccorderoengorda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadovino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Corderos en engorda" />
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinoleccorderoengordacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinoleccorderoengordacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadoovinoleccorderoengordavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadoovinoleccorderoengordavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+            </LinearLayout>
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_inventario_ovino"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

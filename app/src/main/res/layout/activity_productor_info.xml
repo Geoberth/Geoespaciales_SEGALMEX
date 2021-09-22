@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Productor.ProductorInfo">
+
+    <ScrollView
+        android:id="@+id/scrollProd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAPTURA DE INFORMACIÓN PRODUCTOR"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Fecha "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="______"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textFol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Folio"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textFolio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint=".........."
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textDatpersonales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERSONALES"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textRespupf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Es usted el responsable o propietario de la UPF?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioSiresponsableupf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorupf"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioNoresponsableupf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorupf"
+                        android:layout_marginLeft="25dp"
+                        android:text="No"
+                        android:textSize="15sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtrelacionupf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="¿Qué relación guarda con la UPF?"
+                android:textSize="15sp" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre del productor"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellido paterno"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtAppaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Apellido paterno"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellido materno"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtApmaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Apellido materno"
+                android:inputType="textPersonName" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioSexomasc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorsexo"
+                        android:layout_marginLeft="25dp"
+                        android:text="Masculino"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioSexofem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorsexo"
+                        android:layout_marginLeft="25dp"
+                        android:text="Femenino"
+                        android:textSize="15sp" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edad"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="number"/>
+
+
+
+            <TextView
+                android:id="@+id/textDatestudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ESCOLARIDAD"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textLeer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Sabe leer?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioLee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorLeer"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioNolee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorLeer"
+                        android:layout_marginLeft="25dp"
+                        android:text="No"
+                        android:textSize="15sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textEscribir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Sabe escribir?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioEscrib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorEscribir"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioNoescrib"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onProductorEscribir"
+                        android:layout_marginLeft="25dp"
+                        android:text="No"
+                        android:textSize="15sp"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/txtGradoestudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="¿Qué nivel de estudios tiene?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/idSpgradoest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/grado_estudios"
+                android:prompt="@string/grado_prompt"
+                android:spinnerMode="dropdown" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textSituacestudios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="¿Cuál es la situación de su nivel de estudios?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioCompleto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickSituacionEstudios"
+                        android:visibility="gone"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Completo" />
+
+                    <RadioButton
+                        android:id="@+id/radioIncompleto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickSituacionEstudios"
+                        android:visibility="gone"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Trunco" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textPuebloriginario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Pertenece a un pueblo originario?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPueblo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickPuebloOriginario"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioNopueblo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickPuebloOriginario"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPuebloori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:text="¿Cuál?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/idSppueblorig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:entries="@array/pueblo_originario"
+                android:prompt="@string/pueblo_prompt"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:spinnerMode="dropdown" />
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textLenguaorig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Usted, habla alguna lengua originaria?"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioLengua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickLenguaOriginario"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioNolengua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickLenguaOriginario"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtLenguaord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:text="¿Cuál?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/isSpinLengorig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="25dp"
+                android:entries="@array/combo_lengua"
+                android:prompt="@string/lenguaorig_prompt"
+                android:spinnerMode="dialog"
+                android:textSize="15sp" />
+
+            <!--
+            <Button
+                android:id="@+id/btnAgrproda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:text="SIGUIENTE" />
+
+            <Button
+                android:id="@+id/btnMostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="15sp"
+                android:text="REGRESAR" /> -->
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+
+                android:id="@+id/btnAgrproda"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

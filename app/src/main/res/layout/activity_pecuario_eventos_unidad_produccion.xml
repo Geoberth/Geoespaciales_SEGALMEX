@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.PecuarioEventosUnidadProduccion">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <!-- Inicia tabla de eventos en la unidad de producción -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elija los meses en que suceden los siguientes eventos en su Unidad de Producción"
+                android:textSize="15sp" />
+
+
+            <!-- Inicia escasez de forrajes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Escasez de forrajes"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajeenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Enero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajefebrero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Febrero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajemarzo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Marzo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajeabril"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Abril" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajemayo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Mayo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajejunio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Junio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajejulio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Julio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajeagosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Agosto" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajeseptiembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Septiembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajeoctubre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Octubre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajenoviembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Noviembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupescasezforrajediciembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickescasezforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Diciembre" />
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- inicia compra de forrajes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Compra de forrajes"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajeenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Enero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajefebrero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Febrero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajemarzo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Marzo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajeabril"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Abril" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajemayo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Mayo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajejunio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Junio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajejulio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Julio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajeagosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Agosto" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajeseptiembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Septiembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajeoctubre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Octubre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajenoviembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Noviembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupcompraforrajediciembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcompraforraje"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Diciembre" />
+
+
+                <TextView
+                    android:id="@+id/txtPecuarioeventoupcompraforrajeotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo ($/ton)"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edtPecuarioeventoupcompraforrajeotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- inicia mantenimiento de praderas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mantenimiento de praderas"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Enero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasfebrero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Febrero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasmarzo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Marzo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasabril"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Abril" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasmayo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Mayo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasjunio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Junio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasjulio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Julio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasagosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Agosto" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasseptiembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Septiembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasoctubre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Octubre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasnoviembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Noviembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupmanttopraderasdiciembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickmattopraderas"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Diciembre" />
+
+                <TextView
+                    android:id="@+id/txtPecuarioeventoupmanttopraderasotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo ($/ton)"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edtPecuarioeventoupmanttopraderasotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- inicia alimentación en el agostadero -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alimentación en el agostadero"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderoenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Enero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderofebrero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Febrero" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderomarzo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Marzo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderoabril"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Abril" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderomayo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Mayo" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderojunio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Junio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderojulio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Julio" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderoagosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Agosto" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderoseptiembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Septiembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderooctubre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Octubre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderonoviembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Noviembre" />
+
+                <CheckBox
+                    android:id="@+id/checkPecuarioeventoupalimentacagostaderodiciembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickalimentacagostader"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Diciembre" />
+
+
+                <TextView
+                    android:id="@+id/txtPecuarioeventoupalimentacagostaderootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo ($/ton)"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edtPecuarioeventoupalimentacagostaderootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+
+
+
+            <!--
+            <Button
+                android:id="@+id/pecuario_next_eventos_undproduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente" /> -->
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_eventos_undproduccion"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

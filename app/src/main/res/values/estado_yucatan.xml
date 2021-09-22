@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_yucatan">
+        <item>DZILAM GONZALEZ</item>
+        <item>OXKUTZCAB</item>
+        <item>TIXCACALCUPUL</item>
+        <item>TIZIMIN</item>
+        <item>YAXCABA</item>
+        <item>DZIDZANTUN</item>
+        <item>HALACHO</item>
+        <item>SINANCHE</item>
+        <item>SOTUTA</item>
+        <item>TZUCACAB</item>
+        <item>YOBAIN</item>
+    </string-array>
+</resources>

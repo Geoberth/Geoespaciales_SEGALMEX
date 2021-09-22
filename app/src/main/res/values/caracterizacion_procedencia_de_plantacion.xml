@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="caracterizacion_procedencia_de_plantacion">
+    <item>Seleccione el origen</item>
+    <item>Semilla</item>
+    <item>Injerto</item>
+    <item>Estaca</item>
+    <item>Acodo</item>
+    <item>In vitro</item>
+    <item>Otro (especificar)</item>
+</string-array>
+<string name="relacion_prompt2">Tipo de relacion</string>
+</resources>

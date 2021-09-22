@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caprino_raza">
+        <item>Ninguna</item>
+        <item>Alpina</item>
+        <item>Saanen</item>
+        <item>Toggenburg</item>
+        <item>Nubia</item>
+        <item>Angora</item>
+        <item>Boer</item>
+        <item>Murciana–Granadina</item>
+        <item>Criollo</item>
+        <item>Otra(s) </item>
+    </string-array>
+
+    <string name="caprinoraza_prompt">Razas Caprinos</string>
+</resources>

@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.ProduccionPecuaria">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:id="@+id/esp_pecuaria_tresdos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Especie Pecuaria"/>
+
+        <Spinner
+            android:id="@+id/especie_pecuaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <!--Bovino -->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ln_bovino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:text="Bovino"
+                android:id="@+id/c_bovino_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/espacio_modulo_tres"
+                android:id="@+id/bovino_cabeza_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Cabezas"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/bovino_edit_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Cabezas"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bovino"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/carne_bovino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/carne_bovino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carne"/>
+
+                    <RadioButton
+                        android:onClick="carneBovino"
+                        android:id="@+id/carne_bovino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="carneBovino"
+                        android:id="@+id/carne_bovino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/leche_bovino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/leche_bovino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche"/>
+
+                    <RadioButton
+                        android:onClick="lecheBovino"
+                        android:id="@+id/leche_bovino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="lecheBovino"
+                        android:id="@+id/leche_bovino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/piecria_bovino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/piecria_bovino_tresdos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pie de Cria"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaBovino"
+                        android:id="@+id/piecria_bovino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaBovino"
+                        android:id="@+id/piecria_bovino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--Porcino -->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ln_porcino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:text="Porcino"
+                android:id="@+id/c_porcino_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/espacio_modulo_tres"
+                android:id="@+id/porcino_cabeza_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Cabezas"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/porcino_edit_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Cabezas"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Porcino"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/carne_porcino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/carne_porcino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carne"/>
+
+                    <RadioButton
+                        android:onClick="carnePorcino"
+                        android:id="@+id/carne_porcino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="carnePorcino"
+                        android:id="@+id/carne_porcino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/lechon_porcino_rg_tresdos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lechon_porcino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lechon"/>
+
+                    <RadioButton
+                        android:onClick="lechonPorcino"
+                        android:id="@+id/lechon_porcino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="lechonPorcino"
+                        android:id="@+id/lechon_porcino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/piecria_porcino_rg_tresdos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/piecria_porcino_tresdos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pie de Cria"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaPorcino"
+                        android:id="@+id/piecria_porcino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaPorcino"
+                        android:id="@+id/piecria_porcino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Ave -->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ln_ave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:text="Ave"
+                android:id="@+id/c_ave_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/espacio_modulo_tres"
+                android:id="@+id/ave_cabeza_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Cabezas"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/ave_edit_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Cabezas"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ave"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/carne_ave_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/carne_ave_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carne"/>
+
+                    <RadioButton
+                        android:onClick="carneAve"
+                        android:id="@+id/carne_ave_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="carneAve"
+                        android:id="@+id/carne_ave_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/huevo_ave_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/huevo_ave_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Huevo"/>
+
+                    <RadioButton
+                        android:onClick="huevoAve"
+                        android:id="@+id/huevo_ave_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="huevoAve"
+                        android:id="@+id/huevo_ave_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/piecria_ave_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/piecria_ave_tresdos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pollito/a"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaAve"
+                        android:id="@+id/piecria_ave_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaAve"
+                        android:id="@+id/piecria_ave_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Caprino-->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ln_caprino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:text="Caprino"
+                android:id="@+id/c_caprino_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/espacio_modulo_tres"
+                android:id="@+id/caprino_cabeza_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Cabezas"
+                android:inputType="number"/>
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="number"
+                android:id="@+id/caprino_edit_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Cabezas"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caprino"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/carne_caprino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/carne_caprino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carne"/>
+
+                    <RadioButton
+                        android:onClick="carneCaprino"
+                        android:id="@+id/carne_caprino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="carneCaprino"
+                        android:id="@+id/carne_caprino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/leche_caprino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/leche_caprino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche"/>
+
+                    <RadioButton
+                        android:onClick="lecheCaprino"
+                        android:id="@+id/leche_caprino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="lecheCaprino"
+                        android:id="@+id/leche_caprino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/piecria_caprino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/piecria_caprino_tresdos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pie de Cria"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaCaprino"
+                        android:id="@+id/piecria_caprino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaCaprino"
+                        android:id="@+id/piecria_caprino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Ovino-->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ln_ovino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:text="Ovino"
+                android:id="@+id/c_ovino_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/espacio_modulo_tres"
+                android:id="@+id/ovino_cabeza_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Cabezas"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/ovino_edit_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Cabezas"
+                android:inputType="number"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ovino"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/carne_ovino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/carne_ovino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carne"/>
+
+                    <RadioButton
+                        android:onClick="carneOvino"
+                        android:id="@+id/carne_ovino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="carneOvino"
+                        android:id="@+id/carne_ovino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/lana_ovino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lana_ovino_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lana"/>
+
+                    <RadioButton
+                        android:onClick="lanaOvino"
+                        android:id="@+id/lana_ovino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="lanaOvino"
+                        android:id="@+id/lana_ovino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/piecria_ovino_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/piecria_ovino_tresdos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pie de Cria"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaOvino"
+                        android:id="@+id/piecria_ovino_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaOvino"
+                        android:id="@+id/piecria_ovino_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Abejas  -->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ln_abejas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:text="Abeja (Colmenas)"
+                android:id="@+id/c_abeja_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/espacio_modulo_tres"
+                android:id="@+id/abejas_cabeza_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Colmenas"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/abejas_edit_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Colmenas"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abejas"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/miel_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/miel_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miel"/>
+
+                    <RadioButton
+                        android:onClick="miel"
+                        android:id="@+id/miel_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="miel"
+                        android:id="@+id/miel_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/reinas_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/reinas_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reinas"/>
+
+                    <RadioButton
+                        android:onClick="reinas"
+                        android:id="@+id/reinas_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="reinas"
+                        android:id="@+id/reinas_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/jalea_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jalea_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jalea"/>
+
+                    <RadioButton
+                        android:onClick="jalea"
+                        android:id="@+id/jalea_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="jalea"
+                        android:id="@+id/jalea_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/cera_rg_tresdos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cera_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cera"/>
+
+                    <RadioButton
+                        android:onClick="cera"
+                        android:id="@+id/cera_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="cera"
+                        android:id="@+id/cera_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/polen_rg_tresdos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/polen_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Polen"/>
+
+                    <RadioButton
+                        android:onClick="polen"
+                        android:id="@+id/polen_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="polen"
+                        android:id="@+id/polen_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/propoleo_rg_tresdos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/propoleo_tresdos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Propóleo"/>
+
+                    <RadioButton
+                        android:onClick="propoleo"
+                        android:id="@+id/propoleo_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="propoleo"
+                        android:id="@+id/propoleo_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nuc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nucleos"/>
+
+                    <RadioButton
+                        android:onClick="nucleo"
+                        android:id="@+id/nuc_si"
+                        android:text="Si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="nucleo"
+                        android:id="@+id/nuc_no"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Conejo-->
+        <!--  -->
+        <LinearLayout
+            android:id="@+id/ln_conejo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:text="Conejo"
+                android:id="@+id/c_conejo_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/espacio_modulo_tres"
+                android:id="@+id/conejo_cabeza_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Cabezas"/>
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/conejo_edit_tresdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero de Cabezas"
+                android:inputType="number"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conejo"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/carne_conejo_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/carne_conejo_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carne"/>
+
+                    <RadioButton
+                        android:onClick="carneConejo"
+                        android:id="@+id/carne_conejo_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="carneConejo"
+                        android:id="@+id/carne_conejo_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/piel_conejo_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/piel_conejo_tresdos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Piel"/>
+
+                    <RadioButton
+                        android:onClick="pielConejo"
+                        android:id="@+id/piel_conejo_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="pielConejo"
+                        android:id="@+id/piel_conejo_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_marginLeft="@dimen/espacio_radiogroup_horizontal"
+                    android:layout_marginTop="@dimen/espacio_modulo_tres"
+                    android:id="@+id/piecria_conejo_rg_tresdos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/piecria_conejo_tresdos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pie de Cria"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaConejo"
+                        android:id="@+id/piecria_conejo_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"/>
+
+                    <RadioButton
+                        android:onClick="pieCriaConejo"
+                        android:id="@+id/piecria_conejo_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#78909c"/>
+        -->
+
+        <Button
+            android:id="@+id/btn_otr_esp_pec"
+            android:text="AGREGAR OTRA ESPECIE PECUARIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_marginTop="100dp"
+        android:id="@+id/fab_next_pro_pecua"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Siguiente"
+        app:iconPadding="20dp"
+        app:icon="@android:drawable/ic_input_add"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

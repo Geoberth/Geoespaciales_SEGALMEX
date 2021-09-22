@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.ProduccionAcuicola">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRODUCCION ACUICOLA"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+
+            <Spinner
+                android:id="@+id/spin_pro_acui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/ck_otro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especifique actividad"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/ln_otro_acuicola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/txt_otr_act_acui"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Actividad" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:id="@+id/actividad_otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Especificar Actividad"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Superficie (ha)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/superficie_otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="(ha)"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numero de Estanques" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/stanques_otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Numero de estanques"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volumen del Tanque (m3)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/volumen_otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Numero del volumen del tanque"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/btn_pr_acui"
+                android:text="Agregar actividad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_next_pro_acuic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:text="Siguiente"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconPadding="20dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ovino_raza">
+        <item>Ninguna</item>
+        <item>Hampshire</item>
+        <item>Suffolk</item>
+        <item>Rambouillet</item>
+        <item>Blackbelly o panza negra</item>
+        <item>Katahdin</item>
+        <item>Dorper</item>
+        <item>Texel</item>
+        <item>Dorset</item>
+        <item>Pelibuey</item>
+        <item>Charoláis</item>
+        <item>Merino</item>
+        <item>Criollo</item>
+        <item>Otra (s)</item>
+
+    </string-array>
+
+
+    <string name="ovinoraza_prompt">Raza Ovino</string>
+</resources>

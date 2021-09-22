@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caracterizacion.ciclo_caracterizacion12">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Como conserva sus granos almacenados?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:onClick="tipoGranos"
+                    android:id="@+id/ckc_gra_1"
+                    android:text="Tapanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_gra_1"
+                    android:hint="Costo ($$$)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:onClick="tipoGranos"
+                    android:id="@+id/ckc_gra_2"
+                    android:text="Troje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_gra_2"
+                    android:hint="Costo ($$$)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:onClick="tipoGranos"
+                    android:id="@+id/ckc_gra_3"
+                    android:text="Silo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_gra_3"
+                    android:hint="Costo ($$$)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:onClick="tipoGranos"
+                    android:id="@+id/ckc_gra_4"
+                    android:text="Tambos herméticos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_gra_4"
+                    android:hint="Costo ($$$)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:onClick="tipoGranos"
+                    android:id="@+id/ckc_gra_5"
+                    android:text="Otro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:id="@+id/edt_gra_5"
+                    android:hint="Especifique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_gra_5_1"
+                    android:hint="Costo ($$$)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="¿Qué subproductos aprovecha?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="subproductosAprovecha"
+                        android:id="@+id/rd_sub_aprv_1"
+                        android:text="Esquilmo, paja o rastrojo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="subproductosAprovecha"
+                        android:id="@+id/rd_sub_aprv_2"
+                        android:text="Hojas (totomoxtle o jolochi)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/btn_sig12"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

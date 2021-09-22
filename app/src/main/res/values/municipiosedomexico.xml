@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_Mexico">
+        <item>OCUILAN</item>
+        <item>ACAMBAY DE RUIZ CASTAÑEDA</item>
+        <item>ACULCO</item>
+        <item>ALMOLOYA DE ALQUISIRAS</item>
+        <item>AMATEPEC</item>
+        <item>DONATO GUERRA</item>
+        <item>JOCOTITLAN</item>
+        <item>MALINALCO</item>
+        <item>OTZOLOAPAN</item>
+        <item>POLOTITLAN</item>
+        <item>SAN FELIPE DEL PROGRESO</item>
+        <item>SULTEPEC</item>
+        <item>TEMASCALTEPEC</item>
+        <item>LUVIANOS</item>
+        <item>ALMOLOYA DE JUAREZ</item>
+        <item>MORELOS</item>
+        <item>VILLA VICTORIA</item>
+        <item>SAN JOSE DEL RINCON</item>
+
+    </string-array>
+</resources>

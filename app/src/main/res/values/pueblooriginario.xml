@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pueblo_originario">
+
+        <item>Aguacatecos</item>
+        <item>Amusgos</item>
+        <item>Cakchiquiles</item>
+        <item>Cochimi</item>
+        <item>Coras</item>
+        <item>Cuicatecas</item>
+        <item>Chatinos</item>
+        <item>Chichimecas-Jonas</item>
+        <item>Chinantecas</item>
+        <item>Chochos o chuchones</item>
+        <item>Choles</item>
+        <item>Chontales de Oaxaca</item>
+        <item>Chontales de Tabasco</item>
+        <item>Guarijíos</item>
+        <item>Huaves</item>
+        <item>Huaxtecos</item>
+        <item>Huicholes</item>
+        <item>Ixcatecos</item>
+        <item>Ixiles</item>
+        <item>Jacaltecos</item>
+        <item>Kanjobales</item>
+        <item>Kekchíes</item>
+        <item>Kikapoos</item>
+        <item>Kiliwa</item>
+        <item>Kumiai</item>
+        <item>Lacandones</item>
+        <item>Mames</item>
+        <item>Matlatzincas o pirindas</item>
+        <item>Mayas</item>
+        <item>Mayos</item>
+        <item>Mazahuas</item>
+        <item>Mazatecas</item>
+        <item>Mexicaneros</item>
+        <item>Mixes</item>
+        <item>Mixtecas</item>
+        <item>Mochós</item>
+        <item>Motozintlecos</item>
+        <item>Nahuas</item>
+        <item>Ojitecas</item>
+        <item>Otomíes</item>
+        <item>Paipai</item>
+        <item>Pames</item>
+        <item>Pápagos</item>
+        <item>Pimas</item>
+        <item>Popolocas de Puebla</item>
+        <item>Popolocas de Veracruz</item>
+        <item>Purépechas o tarascos</item>
+        <item>Quichés</item>
+        <item>Seris</item>
+        <item>Tacuates</item>
+        <item>Tarahumaras</item>
+        <item>Tecos</item>
+        <item>Tepehuanes</item>
+        <item>Tepehuas</item>
+        <item>Tlahuicas</item>
+        <item>Tlapanecas</item>
+        <item>Tojolabales</item>
+        <item>Totonacas</item>
+        <item>Triquis</item>
+        <item>Tzeltales</item>
+        <item>Tzotziles</item>
+        <item>Varogios o guarijas</item>
+        <item>Yaquis</item>
+        <item>Zapotecas</item>
+        <item>Zoques</item>
+        <item>Zoques de Chimalapas</item>
+        <item>Cucapás y Cochimíes</item>
+        <item>Chontal de Guerrero</item>
+
+    </string-array>
+
+    <string name="pueblo_prompt">Selecciona pueblo originario</string>
+
+</resources>

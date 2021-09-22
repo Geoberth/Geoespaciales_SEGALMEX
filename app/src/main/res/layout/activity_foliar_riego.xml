@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.FoliarRiego">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:text="¿Qué tipo de aplicación foliar aplica?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="tipoFoliarAplica"
+                    android:id="@+id/ck_nut_fr_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nutrición" />
+
+                <RadioButton
+                    android:onClick="tipoFoliarAplica"
+                    android:id="@+id/ck_hor_fr_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hormonal (manejo fisiológico)" />
+
+                <RadioButton
+                    android:onClick="tipoFoliarAplica"
+                    android:id="@+id/ck_pro_fr_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Protección (radiación solar)" />
+
+                <RadioButton
+                    android:onClick="tipoFoliarAplica"
+                    android:id="@+id/ck_otr_fr_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_otr_fr_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Realiza algún riego?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="realizaRiegoSiNo"
+                    android:id="@+id/rd_si_fr_fe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:onClick="realizaRiegoSiNo"
+                    android:id="@+id/rd_no_fr_fe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué tipo de riego?" />
+
+            <RadioGroup
+                android:id="@+id/rg_tip_rie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="tipoRiego"
+                    android:id="@+id/ck_gv_r_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Gravedad o rodado" />
+
+                <RadioButton
+                    android:onClick="tipoRiego"
+                    android:id="@+id/ck_gt_r_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Goteo" />
+
+                <RadioButton
+                    android:onClick="tipoRiego"
+                    android:id="@+id/ck_as_r_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Aspersión" />
+
+                <RadioButton
+                    android:onClick="tipoRiego"
+                    android:id="@+id/ck_ot_es_r_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:id="@+id/edt_ot_es_r_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:maxLines="1" />
+            </RadioGroup>
+            <!--Cada cuando Riega -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:text="¿Cada cuándo riega?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:enabled="false"
+                    android:onClick="cuandoRiega"
+                    android:id="@+id/ck_di_ri_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diario" />
+
+                <RadioButton
+                    android:enabled="false"
+                    android:onClick="cuandoRiega"
+                    android:id="@+id/ck_dt_ri_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dos o tres veces a la semana" />
+
+                <RadioButton
+                    android:enabled="false"
+                    android:onClick="cuandoRiega"
+                    android:id="@+id/ck_se_ri_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semanal" />
+
+                <RadioButton
+                    android:enabled="false"
+                    android:onClick="cuandoRiega"
+                    android:id="@+id/ck_qi_ri_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quincenal" />
+
+                <RadioButton
+                    android:enabled="false"
+                    android:onClick="cuandoRiega"
+                    android:id="@+id/ck_me_ri_fe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mensual" />
+
+            </RadioGroup>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_fol_rie_fe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="material_techo">
+        <item>Lámina de cartón</item>
+        <item>Lámina metálica</item>
+        <item>Teja</item>
+        <item>Losa</item>
+        <item>Madera</item>
+        <item>Paja, hojas de palmera</item>
+        <item>Otro material</item>
+    </string-array>
+
+    <string name="modalidad_prompt">Material de techo</string>
+
+</resources>

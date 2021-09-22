@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.Apicultura_3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cuáles son los principales productos con valor agregado que cree qué le incrementarían sus ingresos?" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_cm_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="princpalesProductos"
+                android:text="Shampoo" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_cm_3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="princpalesProductos"
+                android:text="Jabón" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_cm_3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="princpalesProductos"
+                android:text="Cosméticos" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_cm_3_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="princpalesProductos"
+                android:text="Otro" />
+
+
+            <EditText
+                android:id="@+id/edt_otr_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Especificar"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Señale los principales problemas que le aquejan en el área de comercialización:" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_3_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="principaresQuejasAPicola"
+                android:text="Precio bajo de venta" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_3_1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="principaresQuejasAPicola"
+                android:text="Intermediarios" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_3_1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="principaresQuejasAPicola"
+                android:text="Se castigan precios por baja calidad" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_3_1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="principaresQuejasAPicola"
+                android:text="Baja producción" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_3_1_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="principaresQuejasAPicola"
+                android:text="Oferta alta" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_3_1_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="principaresQuejasAPicola"
+                android:text="Distancia de las fuentes de comercialización" />
+
+            <CheckBox
+                android:id="@+id/ck_apc_3_1_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="principaresQuejasAPicola"
+                android:text="Pago impuntual de los compradores" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cómo le gustaría que fueran los canales de comercialización de sus productos?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ck_apc_3_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="canalesAPicola"
+                    android:text="Directo al consumidor" />
+
+                <RadioButton
+                    android:id="@+id/ck_apc_3_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="canalesAPicola"
+                    android:text="Directo a la central de abastos" />
+
+                <RadioButton
+                    android:id="@+id/ck_apc_3_2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="canalesAPicola"
+                    android:text="Contrato con la industria" />
+
+                <RadioButton
+                    android:id="@+id/ck_apc_3_2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="canalesAPicola"
+                    android:text="Vender a organización de productores" />
+
+                <RadioButton
+                    android:id="@+id/ck_apc_3_2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="canalesAPicola"
+                    android:text="En el apiario" />
+
+            </RadioGroup>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/api_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

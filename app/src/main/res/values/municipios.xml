@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_Aguascalientes">
+        <item>Aguascalientes</item>
+        <item>Asientos</item>
+        <item>Calvillo</item>
+        <item>Cosío</item>
+        <item>El Llano</item>
+        <item>Jesús María</item>
+        <item>Pabellón de Arteaga</item>
+        <item>Rincón de Romos</item>
+        <item>San Francisco de los Romo</item>
+        <item>San José de Gracia</item>
+        <item>Tepezalá</item>
+    </string-array>
+</resources>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.InventarioGanBovinoLeche">
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ESTRUCTURA DEL HATO"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INVENTARIO GANADERO BOVINO LECHE"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <!-- Tabla inventario ganadero bovino leche -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuál es la estructura del hato ganadero de bovino leche? "
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlecsem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Sementales" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecsemcabez"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecsemcabez"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecsemval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecsemval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlecvacaprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Vacas en producción" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecvacaprodcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecvacaprodcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecvacaprodval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecvacaprodval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlecvacaseca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Vacas secas" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecvacasecacab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecvacasecacab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecvacasecaval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecvacasecaval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlecvaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Vaquillas (del servicio al primer parto)" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecvaqcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecvaqcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecvaqval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecvaqval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlechemdesar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Hembras en desarrollo (destete a servicio)" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlechemdesarcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlechemdesarcab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlechemdesarval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlechemdesarval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlecbec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Becerros (sin destetar)" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecbeccab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecbeccab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecbecval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecbecval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlecbecerra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Becerras" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecbecerracab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecbecerracab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecbecerraval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecbecerraval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+
+                <CheckBox
+                    android:id="@+id/checkGanbovlectorete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanbovinoleche"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Toretes" />
+
+                    <TextView
+                        android:id="@+id/txtGanbovlecteretecab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlecteretecab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanbovlectereteval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanbovlectereteval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_inventario_bovinoleche"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

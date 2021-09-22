@@ -1,0 +1,808 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a9510940d39f390620534476a057ab2b/transformed/appcompat-1.1.0-alpha05/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6684db8a17c4ca3786f79b6d51304824/transformed/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/55e311d705e7ca24b3efd8612e6caa41/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/14612f7d2d683da786e2e050c2f53812/transformed/navigation-fragment-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/84f0ad7c9db25ce4808bf783fb8327ff/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/61d86c4505a235f01698d4eb02e92bd1/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.volley:volley:1.1.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/28b7fff42fd2a3603c961f4073427638/transformed/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/1ea53c2095fc748f851c30510ed97702/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/bc661fbb93df02fd062b2985ab38e216/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/20a17e71544c4e7bb3fb65a7d7b86673/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ff62b5a688d56a31f0947860b0daa236/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/15ef8e1642a48b0d8a61e3fe688f3497/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/694c23fb96eea3960a99fa698a952346/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/4a3eb3d1b5eeb1082f4df7ab59eb5bf0/transformed/jetified-viewpager2-1.0.0-alpha04/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a96c50cf7b29ca354cf7e80d1718ac87/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.0.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/edb2cc89839d3352d0243c3cf0ce465d/transformed/transition-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/24b1df569ce561a0d543d45febee945e/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e5ff063da0ee9288b607352336020605/transformed/coordinatorlayout-1.1.0-alpha01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/fe447819b13cd01e3e28c6678c3b1dd7/transformed/jetified-appcompat-resources-1.1.0-alpha05/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/877a8c8dd3358aa1567fde924fbb1c82/transformed/vectordrawable-animated-1.1.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/9ee5cbf1c1556d346824ddaa1dab77ab/transformed/vectordrawable-1.1.0-beta01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/9e43550e678ca1123a99dd5e1b82ae60/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/8739ef9f080f0ee06c65833001c9e975/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/8211363af40047e76e4390b012dd3d05/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/00578af765a5666fe2159a6bf90585e6/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/d99622f5d2558a3ddb40fe5965969299/transformed/recyclerview-1.1.0-alpha05/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/d750a4640ecd46134a88514ecad02d3f/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/71189fea469fb47b0b68202a61af4a55/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/eef5b881f034328977a13b223dc94321/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/4f6a21492662c409e84928f9f9a4177f/transformed/navigation-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6054efa5cf8c2aa2f721b461fc2bb3c2/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6220e1294a9805214d9b12a3abbd4df7/transformed/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e2b01806f7fc26636c9733d8d128409c/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/643730bb74dd4540286750facb15bb47/transformed/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/32384a04bd6e5a2a6f25214da7b607db/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/585f1b03bc0825a7adc8ae1fef4a3f03/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/012899fde4250246944fd9b4ea08b6d4/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e83c61d08e7d6a18054b889d35435de4/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/524c6a3849ffabd24a7a3da79bf65f22/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/cdab6885b438a759bbebc3bab0411230/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/364cd11e18b25eea3f64fd0a4b722373/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2f8e445222e4e599ddd0550fcb0ff3e9/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/14ce081772fbaefa60f9b525e8651f2f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ffb4596ee7e80973d42422f5ef69480b/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+	package
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:1-169:12
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:5:5-159:19
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6684db8a17c4ca3786f79b6d51304824/transformed/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6684db8a17c4ca3786f79b6d51304824/transformed/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/84f0ad7c9db25ce4808bf783fb8327ff/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/84f0ad7c9db25ce4808bf783fb8327ff/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/61d86c4505a235f01698d4eb02e92bd1/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/61d86c4505a235f01698d4eb02e92bd1/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/28b7fff42fd2a3603c961f4073427638/transformed/jetified-volley-1.1.1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/28b7fff42fd2a3603c961f4073427638/transformed/jetified-volley-1.1.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ff62b5a688d56a31f0947860b0daa236/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ff62b5a688d56a31f0947860b0daa236/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/15ef8e1642a48b0d8a61e3fe688f3497/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/15ef8e1642a48b0d8a61e3fe688f3497/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/694c23fb96eea3960a99fa698a952346/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/694c23fb96eea3960a99fa698a952346/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.core:core:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ffb4596ee7e80973d42422f5ef69480b/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ffb4596ee7e80973d42422f5ef69480b/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:requestLegacyExternalStorage
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:12:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:8:9-38
+	android:roundIcon
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:9:9-55
+	android:icon
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:7:9-44
+	android:allowBackup
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:11:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:13:9-44
+activity#com.example.geoespaciales.NewCamara
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:14:9-56
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:14:19-44
+activity#com.example.geoespaciales.apicola.HerramientasProteccion
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:16:9-68
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:16:19-65
+activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_4
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:18:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:18:19-70
+activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_3
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:20:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:20:19-70
+activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_2
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:21:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:21:19-70
+activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_1
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:22:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:22:19-70
+activity#com.example.geoespaciales.frutales.frutales_4_0
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:23:9-59
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:23:19-56
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_3_1
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:24:9-81
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:24:19-78
+activity#com.example.geoespaciales.caracterizacion.variables_caracterizacion.CalendarioDate
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:25:9-94
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:25:19-91
+activity#com.example.geoespaciales.unidadproduccion.FuenteAgua
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:26:9-65
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:26:19-62
+activity#com.example.geoespaciales.Gps.GpsEnableb
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:27:9-52
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:27:19-49
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.FertilizanteSi
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:28:9-84
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:28:19-81
+activity#com.example.geoespaciales.apicola.SanidadApicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:29:9-60
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:29:19-57
+activity#com.example.geoespaciales.apicola.ReproduccionApicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:30:9-65
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:30:19-62
+activity#com.example.geoespaciales.apicola.ManejoApicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:31:9-59
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:31:19-56
+activity#com.example.geoespaciales.apicola.EnfermedadesCambioPanales
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:32:9-71
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:32:19-68
+activity#com.example.geoespaciales.apicola.CosechaApicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:33:9-60
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:33:19-57
+activity#com.example.geoespaciales.apicola.CapacitacionAsistenciaApicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:34:9-75
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:34:19-72
+activity#com.example.geoespaciales.apicola.AspectosProductivosApicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:35:9-72
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:35:19-69
+activity#com.example.geoespaciales.apicola.AlimentacionApicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:36:9-65
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:36:19-62
+activity#com.example.geoespaciales.apicola.ApicolaInicio
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:37:9-59
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:37:19-56
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_8
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:38:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:38:19-76
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_7
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:39:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:39:19-76
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_6
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:40:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:40:19-76
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_5
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:41:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:41:19-76
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_4
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:42:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:42:19-76
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_3
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:43:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:43:19-76
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_2
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:44:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:44:19-76
+activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_1
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:45:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:45:19-76
+activity#com.example.geoespaciales.Productor.ProductorInfo
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:46:9-61
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:46:19-58
+activity#com.example.geoespaciales.Productor.ProductorEconom
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:47:9-63
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:47:19-60
+activity#com.example.geoespaciales.Productor.IntegranteFamilia
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:48:9-65
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:48:19-62
+activity#com.example.geoespaciales.Productor.ProductorFamilia
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:49:9-64
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:49:19-61
+activity#com.example.geoespaciales.infraestructura_1
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:50:9-55
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:50:19-52
+activity#com.example.geoespaciales.frutales.frutales_14
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:51:9-58
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:51:19-55
+activity#com.example.geoespaciales.frutales.frutales_13
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:52:9-58
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:52:19-55
+activity#com.example.geoespaciales.frutales.frutales_12
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:53:9-58
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:53:19-55
+activity#com.example.geoespaciales.frutales.frutales_11
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:54:9-58
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:54:19-55
+activity#com.example.geoespaciales.frutales.frutales_10
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:55:9-58
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:55:19-55
+activity#com.example.geoespaciales.frutales.frutales_9
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:56:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:56:19-54
+activity#com.example.geoespaciales.frutales.frutales_8
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:57:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:57:19-54
+activity#com.example.geoespaciales.frutales.frutales_7
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:58:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:58:19-54
+activity#com.example.geoespaciales.frutales.frutales_6
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:59:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:59:19-54
+activity#com.example.geoespaciales.frutales.frutales_5
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:60:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:60:19-54
+activity#com.example.geoespaciales.frutales.frutales_4
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:61:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:61:19-54
+activity#com.example.geoespaciales.frutales.frutales_3
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:62:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:62:19-54
+activity#com.example.geoespaciales.frutales.frutales_2
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:63:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:63:19-54
+activity#com.example.geoespaciales.frutales.frutales_1
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:64:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:64:19-54
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.date.CalendarioActivity
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:65:9-93
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:65:19-90
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.TiempoRiego
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:66:9-81
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:66:19-78
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.PostCosecha
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:67:9-81
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:67:19-78
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.Nutricion
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:68:9-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:68:19-76
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunoD
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:69:9-86
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:69:19-83
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunoC
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:70:9-86
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:70:19-83
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunob
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:71:9-86
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:71:19-83
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPVuno
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:72:9-85
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:72:19-82
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.FoliarRiego
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:73:9-81
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:73:19-78
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.CosechaB
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:74:9-78
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:74:19-75
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.Cosecha
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:75:9-77
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:75:19-74
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnfermC
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:76:9-90
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:76:19-87
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:77:9-90
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:77:19-87
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnferm
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:78:9-89
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:78:19-86
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlMalezas
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:79:9-84
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:79:19-81
+activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.hortalizas
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:80:9-80
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:80:19-77
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion12
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:81:9-77
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:81:19-74
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion11
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:82:9-77
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:82:19-74
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:83:9-77
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:83:19-74
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion9
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:84:9-76
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:84:19-73
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion8
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:85:9-76
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:85:19-73
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion7
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:86:9-76
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:86:19-73
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion6
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:87:9-76
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:87:19-73
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion_tabla
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:88:9-81
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:88:19-78
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion5
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:89:9-76
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:89:19-73
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion4
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:90:9-76
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:90:19-73
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion2
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:91:9-76
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:91:19-73
+activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:92:9-75
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:92:19-72
+activity#com.example.geoespaciales.caracterizacion.ciclo_carac
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:93:9-65
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:93:19-62
+activity#com.example.geoespaciales.unidadproduccion.ModalidadHidrica
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:94:9-71
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:94:19-68
+activity#com.example.geoespaciales.unidadproduccion.TenenciaTierra
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:95:9-69
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:95:19-66
+activity#com.example.geoespaciales.unidadproduccion.TiposAlimentosTres
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:96:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:96:19-70
+activity#com.example.geoespaciales.unidadproduccion.TiposAlimentosDos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:97:9-72
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:97:19-69
+activity#com.example.geoespaciales.unidadproduccion.TiposAlimentos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:98:9-69
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:98:19-66
+activity#com.example.geoespaciales.unidadproduccion.ProduccionAcuicola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:99:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:99:19-70
+activity#com.example.geoespaciales.unidadproduccion.ProduccionForestal
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:100:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:100:19-70
+activity#com.example.geoespaciales.unidadproduccion.ProduccionPecuaria
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:101:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:101:19-70
+activity#com.example.geoespaciales.unidadproduccion.ProduccionAgricola
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:102:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:102:19-70
+activity#com.example.geoespaciales.unidadproduccion.UnidadProduccion
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:103:9-71
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:103:19-68
+activity#com.example.geoespaciales.Pecuario.EstructuraDelHato
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:104:9-64
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:104:19-61
+activity#com.example.geoespaciales.Pecuario.InventarioGanadoOvino
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:105:9-68
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:105:19-65
+activity#com.example.geoespaciales.Pecuario.InventarioGanBovinoLeche
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:106:9-71
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:106:19-68
+activity#com.example.geoespaciales.Pecuario.InventarioGanCaprino
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:107:9-67
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:107:19-64
+activity#com.example.geoespaciales.Pecuario.ManejoSanitarioOrdenia
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:108:9-69
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:108:19-66
+activity#com.example.geoespaciales.Pecuario.PecuarioAgregarAlimentos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:109:9-71
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:109:19-68
+activity#com.example.geoespaciales.Pecuario.PecuarioAlimentacionGanado
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:110:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:110:19-70
+activity#com.example.geoespaciales.Pecuario.PecuarioCaprinos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:111:9-63
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:111:19-60
+activity#com.example.geoespaciales.Pecuario.PecuarioComposicDietaOvinosCaprinos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:112:9-82
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:112:19-79
+activity#com.example.geoespaciales.Pecuario.PecuarioDietaOvinosCaprinosAlimentos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:113:9-83
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:113:19-80
+activity#com.example.geoespaciales.Pecuario.PecuarioEventosUnidadProduccion
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:114:9-78
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:114:19-75
+activity#com.example.geoespaciales.Pecuario.PecuarioInicio
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:115:9-61
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:115:19-58
+activity#com.example.geoespaciales.Pecuario.PecuarioManejoAgostadero
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:116:9-71
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:116:19-68
+activity#com.example.geoespaciales.Pecuario.PecuarioManejoSanGanado
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:117:9-70
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:117:19-67
+activity#com.example.geoespaciales.Pecuario.PecuarioOvinos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:118:9-61
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:118:19-58
+activity#com.example.geoespaciales.Pecuario.PecuarioParamProdReproductivos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:119:9-77
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:119:19-74
+activity#com.example.geoespaciales.Pecuario.PecuarioReproduccionGenetica
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:120:9-75
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:120:19-72
+activity#com.example.geoespaciales.Gps.GpsTrayectoria
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:121:9-56
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:121:19-53
+activity#com.example.geoespaciales.Gps.GpsActivity
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:122:9-53
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:122:19-50
+activity#com.example.geoespaciales.drawer.DrawerActivity
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:123:9-126:59
+	android:label
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:125:13-35
+	android:theme
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:126:13-56
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:124:13-50
+activity#com.example.geoespaciales.Georeferencia.GeoreferenciaActivity
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:127:9-73
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:127:19-70
+activity#com.example.geoespaciales.Geo.GeoFotos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:128:9-50
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:128:19-47
+activity#com.example.geoespaciales.Geo.FotoActivityDos
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:129:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:129:19-54
+activity#com.example.geoespaciales.Geo.FotoActivityUno
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:130:9-57
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:130:19-54
+activity#com.example.geoespaciales.IdentificacionCuestionario
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:131:9-64
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:131:19-61
+activity#com.example.geoespaciales.Segunda
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:132:9-45
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:132:19-42
+activity#com.example.geoespaciales.Principal
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:133:9-139:20
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:133:19-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:134:13-138:29
+action#android.intent.action.MAIN
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:135:17-69
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:135:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:137:17-77
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:137:27-74
+meta-data#com.google.android.actions
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:140:9-142:50
+	android:resource
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:142:13-47
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:141:13-54
+meta-data#com.google.android.gms.version
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:143:9-145:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/694c23fb96eea3960a99fa698a952346/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/694c23fb96eea3960a99fa698a952346/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:145:13-66
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:144:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:147:9-149:71
+	android:value
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:149:13-68
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:148:13-58
+provider#androidx.core.content.FileProvider
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:150:9-158:20
+	android:grantUriPermissions
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:154:13-47
+	android:authorities
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:152:13-73
+	android:exported
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:153:13-37
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:151:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:155:13-157:54
+	android:resource
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:157:17-51
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:156:17-67
+uses-feature#android.hardware.camera2.full
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:160:5-66
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:160:19-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:161:5-81
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:161:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:162:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:162:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:163:5-81
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:163:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:164:5-79
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:164:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:165:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:165:22-64
+uses-feature#android.hardware.camera
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:166:5-59
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:166:19-57
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:167:5-80
+	android:name
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml:167:22-77
+uses-sdk
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a9510940d39f390620534476a057ab2b/transformed/appcompat-1.1.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a9510940d39f390620534476a057ab2b/transformed/appcompat-1.1.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6684db8a17c4ca3786f79b6d51304824/transformed/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6684db8a17c4ca3786f79b6d51304824/transformed/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/55e311d705e7ca24b3efd8612e6caa41/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/55e311d705e7ca24b3efd8612e6caa41/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/14612f7d2d683da786e2e050c2f53812/transformed/navigation-fragment-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/14612f7d2d683da786e2e050c2f53812/transformed/navigation-fragment-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/84f0ad7c9db25ce4808bf783fb8327ff/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/84f0ad7c9db25ce4808bf783fb8327ff/transformed/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/61d86c4505a235f01698d4eb02e92bd1/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/61d86c4505a235f01698d4eb02e92bd1/transformed/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.volley:volley:1.1.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/28b7fff42fd2a3603c961f4073427638/transformed/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/28b7fff42fd2a3603c961f4073427638/transformed/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/1ea53c2095fc748f851c30510ed97702/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/1ea53c2095fc748f851c30510ed97702/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/bc661fbb93df02fd062b2985ab38e216/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/bc661fbb93df02fd062b2985ab38e216/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/20a17e71544c4e7bb3fb65a7d7b86673/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/20a17e71544c4e7bb3fb65a7d7b86673/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ff62b5a688d56a31f0947860b0daa236/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ff62b5a688d56a31f0947860b0daa236/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/15ef8e1642a48b0d8a61e3fe688f3497/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/15ef8e1642a48b0d8a61e3fe688f3497/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/694c23fb96eea3960a99fa698a952346/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/694c23fb96eea3960a99fa698a952346/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/4a3eb3d1b5eeb1082f4df7ab59eb5bf0/transformed/jetified-viewpager2-1.0.0-alpha04/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/4a3eb3d1b5eeb1082f4df7ab59eb5bf0/transformed/jetified-viewpager2-1.0.0-alpha04/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a96c50cf7b29ca354cf7e80d1718ac87/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a96c50cf7b29ca354cf7e80d1718ac87/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.0.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/edb2cc89839d3352d0243c3cf0ce465d/transformed/transition-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/edb2cc89839d3352d0243c3cf0ce465d/transformed/transition-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/24b1df569ce561a0d543d45febee945e/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/24b1df569ce561a0d543d45febee945e/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e5ff063da0ee9288b607352336020605/transformed/coordinatorlayout-1.1.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e5ff063da0ee9288b607352336020605/transformed/coordinatorlayout-1.1.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/fe447819b13cd01e3e28c6678c3b1dd7/transformed/jetified-appcompat-resources-1.1.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/fe447819b13cd01e3e28c6678c3b1dd7/transformed/jetified-appcompat-resources-1.1.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/877a8c8dd3358aa1567fde924fbb1c82/transformed/vectordrawable-animated-1.1.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/877a8c8dd3358aa1567fde924fbb1c82/transformed/vectordrawable-animated-1.1.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/9ee5cbf1c1556d346824ddaa1dab77ab/transformed/vectordrawable-1.1.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/9ee5cbf1c1556d346824ddaa1dab77ab/transformed/vectordrawable-1.1.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/9e43550e678ca1123a99dd5e1b82ae60/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/9e43550e678ca1123a99dd5e1b82ae60/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/8739ef9f080f0ee06c65833001c9e975/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/8739ef9f080f0ee06c65833001c9e975/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/8211363af40047e76e4390b012dd3d05/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/8211363af40047e76e4390b012dd3d05/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/00578af765a5666fe2159a6bf90585e6/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/00578af765a5666fe2159a6bf90585e6/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/d99622f5d2558a3ddb40fe5965969299/transformed/recyclerview-1.1.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/d99622f5d2558a3ddb40fe5965969299/transformed/recyclerview-1.1.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/d750a4640ecd46134a88514ecad02d3f/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/d750a4640ecd46134a88514ecad02d3f/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/71189fea469fb47b0b68202a61af4a55/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/71189fea469fb47b0b68202a61af4a55/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/eef5b881f034328977a13b223dc94321/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/eef5b881f034328977a13b223dc94321/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/4f6a21492662c409e84928f9f9a4177f/transformed/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/4f6a21492662c409e84928f9f9a4177f/transformed/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6054efa5cf8c2aa2f721b461fc2bb3c2/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6054efa5cf8c2aa2f721b461fc2bb3c2/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6220e1294a9805214d9b12a3abbd4df7/transformed/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/6220e1294a9805214d9b12a3abbd4df7/transformed/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e2b01806f7fc26636c9733d8d128409c/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e2b01806f7fc26636c9733d8d128409c/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/643730bb74dd4540286750facb15bb47/transformed/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/643730bb74dd4540286750facb15bb47/transformed/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/32384a04bd6e5a2a6f25214da7b607db/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/32384a04bd6e5a2a6f25214da7b607db/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/585f1b03bc0825a7adc8ae1fef4a3f03/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/585f1b03bc0825a7adc8ae1fef4a3f03/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/012899fde4250246944fd9b4ea08b6d4/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/012899fde4250246944fd9b4ea08b6d4/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e83c61d08e7d6a18054b889d35435de4/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/e83c61d08e7d6a18054b889d35435de4/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/524c6a3849ffabd24a7a3da79bf65f22/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/524c6a3849ffabd24a7a3da79bf65f22/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/cdab6885b438a759bbebc3bab0411230/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/cdab6885b438a759bbebc3bab0411230/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/364cd11e18b25eea3f64fd0a4b722373/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/364cd11e18b25eea3f64fd0a4b722373/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2f8e445222e4e599ddd0550fcb0ff3e9/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2f8e445222e4e599ddd0550fcb0ff3e9/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/14ce081772fbaefa60f9b525e8651f2f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/14ce081772fbaefa60f9b525e8651f2f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ffb4596ee7e80973d42422f5ef69480b/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ffb4596ee7e80973d42422f5ef69480b/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dti-siap/AndroidStudioProjects/GPS-Geoespaciales/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79

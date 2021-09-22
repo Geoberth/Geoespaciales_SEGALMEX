@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.siap.Geoespaciales"
+    android:versionCode="2"
+    android:versionName="1.6.1" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/iconoapp_liz"
+        android:label="GEOESPACIALES"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/iconoapp_liz_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.geoespaciales.NewCamara" />
+        <activity android:name="com.example.geoespaciales.apicola.HerramientasProteccion" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.Apicultura_4" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.Apicultura_3" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.Apicultura_2" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.Apicultura_1" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_4_0" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_3_1" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.variables_caracterizacion.CalendarioDate" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.FuenteAgua" />
+        <activity android:name="com.example.geoespaciales.Gps.GpsEnableb" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.FertilizanteSi" />
+        <activity android:name="com.example.geoespaciales.apicola.SanidadApicola" />
+        <activity android:name="com.example.geoespaciales.apicola.ReproduccionApicola" />
+        <activity android:name="com.example.geoespaciales.apicola.ManejoApicola" />
+        <activity android:name="com.example.geoespaciales.apicola.EnfermedadesCambioPanales" />
+        <activity android:name="com.example.geoespaciales.apicola.CosechaApicola" />
+        <activity android:name="com.example.geoespaciales.apicola.CapacitacionAsistenciaApicola" />
+        <activity android:name="com.example.geoespaciales.apicola.AspectosProductivosApicola" />
+        <activity android:name="com.example.geoespaciales.apicola.AlimentacionApicola" />
+        <activity android:name="com.example.geoespaciales.apicola.ApicolaInicio" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_8" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_7" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_6" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_5" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_4" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_3" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_2" />
+        <activity android:name="com.example.geoespaciales.unidadcomercializacion.comercializacion_1" />
+        <activity android:name="com.example.geoespaciales.Productor.ProductorInfo" />
+        <activity android:name="com.example.geoespaciales.Productor.ProductorEconom" />
+        <activity android:name="com.example.geoespaciales.Productor.IntegranteFamilia" />
+        <activity android:name="com.example.geoespaciales.Productor.ProductorFamilia" />
+        <activity android:name="com.example.geoespaciales.infraestructura_1" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_14" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_13" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_12" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_11" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_10" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_9" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_8" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_7" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_6" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_5" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_4" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_3" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_2" />
+        <activity android:name="com.example.geoespaciales.frutales.frutales_1" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.date.CalendarioActivity" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.TiempoRiego" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.PostCosecha" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.Nutricion" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunoD" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunoC" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunob" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPVuno" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.FoliarRiego" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.CosechaB" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.Cosecha" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnfermC" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnfermB" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnferm" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlMalezas" />
+        <activity android:name="com.example.geoespaciales.unidadcaracterizacionhortalizas.hortalizas" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion12" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion11" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion9" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion8" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion7" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion6" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion_tabla" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion5" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion4" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion2" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_caracterizacion" />
+        <activity android:name="com.example.geoespaciales.caracterizacion.ciclo_carac" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.ModalidadHidrica" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.TenenciaTierra" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.TiposAlimentosTres" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.TiposAlimentosDos" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.TiposAlimentos" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.ProduccionAcuicola" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.ProduccionForestal" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.ProduccionPecuaria" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.ProduccionAgricola" />
+        <activity android:name="com.example.geoespaciales.unidadproduccion.UnidadProduccion" />
+        <activity android:name="com.example.geoespaciales.Pecuario.EstructuraDelHato" />
+        <activity android:name="com.example.geoespaciales.Pecuario.InventarioGanadoOvino" />
+        <activity android:name="com.example.geoespaciales.Pecuario.InventarioGanBovinoLeche" />
+        <activity android:name="com.example.geoespaciales.Pecuario.InventarioGanCaprino" />
+        <activity android:name="com.example.geoespaciales.Pecuario.ManejoSanitarioOrdenia" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioAgregarAlimentos" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioAlimentacionGanado" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioCaprinos" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioComposicDietaOvinosCaprinos" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioDietaOvinosCaprinosAlimentos" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioEventosUnidadProduccion" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioInicio" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioManejoAgostadero" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioManejoSanGanado" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioOvinos" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioParamProdReproductivos" />
+        <activity android:name="com.example.geoespaciales.Pecuario.PecuarioReproduccionGenetica" />
+        <activity android:name="com.example.geoespaciales.Gps.GpsTrayectoria" />
+        <activity android:name="com.example.geoespaciales.Gps.GpsActivity" />
+        <activity
+            android:name="com.example.geoespaciales.drawer.DrawerActivity"
+            android:label="Drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.geoespaciales.Georeferencia.GeoreferenciaActivity" />
+        <activity android:name="com.example.geoespaciales.Geo.GeoFotos" />
+        <activity android:name="com.example.geoespaciales.Geo.FotoActivityDos" />
+        <activity android:name="com.example.geoespaciales.Geo.FotoActivityUno" />
+        <activity android:name="com.example.geoespaciales.IdentificacionCuestionario" />
+        <activity android:name="com.example.geoespaciales.Segunda" />
+        <activity android:name="com.example.geoespaciales.Principal" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBWRIUBSVY-2SKcteFyw4SaXTfGD9L_UQY" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.geoespaciales.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.siap.Geoespaciales.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

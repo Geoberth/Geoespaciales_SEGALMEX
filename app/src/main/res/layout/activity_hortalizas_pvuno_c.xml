@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.HortalizasPvunoC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué tipo de semilla utiliza para sembrar?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="tipoSemilla"
+                    android:id="@+id/ck_cr_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Criolla propia" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio ($/kg)" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/ed_cr_pro_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Precio($/Kg)"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad (kg/ha)" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/ed_cr_pro_ca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cantidad($/Kg)"
+                    android:maxLines="1" />
+
+                <RadioButton
+                    android:onClick="tipoSemilla"
+                    android:id="@+id/ck_ot_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Criolla de otra procedencia" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio ($/kg)" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/ed_ot_pro_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Precio($/Kg)"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad (kg/ha)" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/ed_ot_pro_ca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cantidad($/Kg)"
+                    android:maxLines="1" />
+
+                <RadioButton
+                    android:onClick="tipoSemilla"
+                    android:id="@+id/ck_cer_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Certificada, ¿Cuál? " />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/ed_cer_pro_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cual?"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio ($/kg)" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/ed_cer_pro_pr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Precio($/Kg)"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad (kg/ha)" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/ed_cer_pro_ca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cantidad($/Kg)"
+                    android:maxLines="1" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué variedad produce? " />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/ed_va_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿En caso de utilizar semilla propia, cómo la seleccionó?" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="utilizarSemillaPropia"
+                    android:id="@+id/ck_sm_prop_vi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vigor" />
+
+                <RadioButton
+                    android:onClick="utilizarSemillaPropia"
+                    android:id="@+id/ck_sm_prop_sn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sanidad" />
+
+                <RadioButton
+                    android:onClick="utilizarSemillaPropia"
+                    android:id="@+id/ck_sm_prop_asp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aspecto" />
+
+                <RadioButton
+                    android:onClick="utilizarSemillaPropia"
+                    android:id="@+id/ck_sm_prop_va"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valor económico " />
+
+            </RadioGroup>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_pv_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

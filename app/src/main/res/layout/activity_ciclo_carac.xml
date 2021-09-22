@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caracterizacion.ciclo_carac">
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. CARACTERIZACIÓN DEL CULTIVO AGRÍCOLA"
+                    android:textSize="20dp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="En el año apsado, ¿En qué ciclo agrícola tuvo producción?"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:onClick="temporalAgricola"
+                            android:id="@+id/pv_agr_1"
+                            android:text="P-V"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <RadioButton
+                            android:onClick="temporalAgricola"
+                            android:id="@+id/oi_agr_2"
+                            android:text="O-I"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <RadioButton
+                            android:onClick="temporalAgricola"
+                            android:id="@+id/pv_oi_agr_3"
+                            android:text="Ambos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </RadioGroup>
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/btn_sig1"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:text="Siguiente"
+                        app:iconPadding="20dp"
+                        app:icon="@android:drawable/ic_input_add"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

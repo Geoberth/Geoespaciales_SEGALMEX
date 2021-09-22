@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infraestructura_1">
+
+
+    <ScrollView
+        android:id="@+id/scrollProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9. INFRAESTRUCTURA, MAQUINARIA Y EQUIPO CON LA QUE CUENTA LA UNIDAD DE PRODUCCIÓN FAMILIAR"
+                    android:textSize="20dp" />/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Infraestructura, maquinaria y equipo"
+                    android:textSize="18sp" />
+           <!--
+                <Spinner
+                    android:id="@+id/idSprelacupfint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/infraestructura"
+                    android:prompt="@string/infraestructura_prompt"
+                    android:spinnerMode="dropdown" />
+-->
+                <Spinner
+                    android:id="@+id/spn_inf_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Otro tipo de infraestructura, maquinaria y equipo"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_inr_otr"
+                    android:hint="Especifique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Cantidad"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_inf_can"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Condición"
+                    android:textSize="18sp" />
+
+                <!--
+                <Spinner
+                    android:id="@+id/infraestructura_condicion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/infraestructura_condicion"
+                    android:prompt="@string/infracondicion_prompt"
+                    android:spinnerMode="dropdown" />
+-->
+                <Spinner
+                    android:id="@+id/spn_inf_9_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Propiedad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp" />
+                    <RadioButton
+                        android:onClick="tipoInfrestructura9"
+                        android:id="@+id/rd_inf_par"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Particular"
+                        />
+                    <RadioButton
+                        android:onClick="tipoInfrestructura9"
+                        android:id="@+id/rd_inf_cmn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Comunitaria"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Costo unitario ($/unidad)"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_inf_cst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="$/unidad"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:text="AGREGAR OTRO TIPO DE INFRAESTRUCTURA"
+                android:id="@+id/btn_otr_inf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/sig_infra"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gps.GpsEnableb">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/seleproyecto"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="20dp"
+            android:text="Selecciona el proyecto:"
+            />
+
+        <Spinner
+            android:id="@+id/spiproyectogeo"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="11dp"
+            android:entries="@array/selectproyect"
+            android:prompt="@string/relacion_proyecto"
+            android:spinnerMode="dropdown"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/avisofolio"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="19dp"
+            android:text="ID:"
+            />
+
+        <TextView
+            android:id="@+id/textMuestrafolioo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:textAlignment="center"
+
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#0C0C0C"/>
+
+        <Button
+            android:text="Capturar Fotos"
+            android:id="@+id/btn_ena_gps"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bertbethgps"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="20dp"
+            android:text="Realizando conexión satelital GPS ..."
+            />
+
+        <TextView
+            android:id="@+id/bertbeth2gps"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="20dp"
+            android:text="¡Conexión GPS exitosa!"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textlati"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:text="Latitud:"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/textlat"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textlongi"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:text="Latitud:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textlon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

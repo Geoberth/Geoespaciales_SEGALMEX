@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_veracruz">
+    <item>ACAJETE</item>
+    <item>ACATLAN</item>
+    <item>ACULA</item>
+    <item>ACULTZINGO</item>
+    <item>CAMARON DE TEJEDA</item>
+    <item>ALTOTONGA</item>
+    <item>AQUILA</item>
+    <item>ASTACINGA</item>
+    <item>ATLAHUILCO</item>
+    <item>ATZACAN</item>
+    <item>TLALTETELA</item>
+    <item>BENITO JUAREZ</item>
+    <item>CALCAHUALCO</item>
+    <item>CARRILLO PUERTO</item>
+    <item>COETZALA</item>
+    <item>COMAPA</item>
+    <item>COSAUTLAN DE CARVAJAL</item>
+    <item>COSCOMATEPEC</item>
+    <item>COTAXTLA</item>
+    <item>COYUTLA</item>
+    <item>CHACALTIANGUIS</item>
+    <item>CHALMA</item>
+    <item>CHICONAMEL</item>
+    <item>CHICONQUIACO</item>
+    <item>CHICONTEPEC</item>
+    <item>CHOCAMAN</item>
+    <item>CHONTLA</item>
+    <item>HUAYACOCOTLA</item>
+    <item>IXCATEPEC</item>
+    <item>IXHUATLAN DEL CAFE</item>
+    <item>IXHUATLAN DE MADERO</item>
+    <item>IXMATLAHUACAN</item>
+    <item>JALCOMULCO</item>
+    <item>LANDERO Y COSS</item>
+    <item>MAGDALENA</item>
+    <item>MALTRATA</item>
+    <item>MARIANO ESCOBEDO</item>
+    <item>MIAHUATLAN</item>
+    <item>MIXTLA DE ALTAMIRANO</item>
+    <item>OMEALCA</item>
+    <item>OTATITLAN</item>
+    <item>PAPANTLA</item>
+    <item>LA PERLA</item>
+    <item>LOS REYES</item>
+    <item>SANTIAGO TUXTLA</item>
+    <item>SOLEDAD ATZOMPA</item>
+    <item>TAMALIN</item>
+    <item>TAMIAHUA</item>
+    <item>TAMPICO ALTO</item>
+    <item>TANCOCO</item>
+    <item>TANTOYUCA</item>
+    <item>TATATILA</item>
+    <item>TEHUIPANGO</item>
+    <item>TEMPOAL</item>
+    <item>TENAMPA</item>
+    <item>TEPATLAXCO</item>
+    <item>TEPETLAN</item>
+    <item>TEQUILA</item>
+    <item>TEXCATEPEC</item>
+    <item>TLACOJALPAN</item>
+    <item>TLACOLULAN</item>
+    <item>TLACHICHILCO</item>
+    <item>TLAQUILPA</item>
+    <item>TONAYAN</item>
+    <item>TOTUTLA</item>
+    <item>VILLA ALDAMA</item>
+    <item>XOXOCOTLA</item>
+    <item>ZACUALPAN</item>
+    <item>ZENTLA</item>
+    <item>ZONGOLICA</item>
+    <item>TLILAPAN</item>
+    <item>RAFAEL DELGADO</item>
+</string-array>
+</resources>

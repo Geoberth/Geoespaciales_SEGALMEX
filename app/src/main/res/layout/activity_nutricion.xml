@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.Nutricion">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right">
+
+            <TextView
+                android:id="@+id/tx_tit_nut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:text="NUTRICIÓN"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Realiza algún análisis para fertilizar?  " />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="analisisFertilizar"
+                    android:id="@+id/rd_si_an_fer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:onClick="analisisFertilizar"
+                    android:id="@+id/rd_no_an_fer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué tipo de análisis?" />
+
+            <!--
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+-->
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:enabled="true"
+                android:onClick="tipoAnalisisFert"
+                android:id="@+id/ck_sl_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suelo" />
+            <!--
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rd_si_he"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Si" />
+
+                                <RadioButton
+                                    android:id="@+id/rd_no_he"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="No" />
+
+
+                            </RadioGroup>
+            -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:id="@+id/edt_pr_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="$" />
+            <!-- Foliar +++++++++++++++++++++++++ -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:enabled="true"
+                android:onClick="tipoAnalisisFert"
+                android:id="@+id/ck_fl_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foliar" />
+            <!--
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rd_si_fl_he"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Si" />
+
+                                <RadioButton
+                                    android:id="@+id/rd_no_fl_he"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="No" />
+
+                            </RadioGroup>
+            -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:id="@+id/edt_pr_fl_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="$" />
+
+            <!-- Agua++++++++++++++++++++  -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:enabled="true"
+                android:onClick="tipoAnalisisFert"
+                android:id="@+id/ck_ag_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agua" />
+
+            <!--
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rd_si_ag_he"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/rd_no_ag_he"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                </RadioGroup>
+-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:id="@+id/edt_pr_ag_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="$" />
+
+            <!--
+            </RadioGroup>
+            -->
+
+            <!-- Fertilizacion++++++++++++++++++++++++++++++++++++++    -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Realiza algún tipo de fertilización?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="tipoFertiActivity"
+                    android:id="@+id/rd_fer_si_he"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:onClick="tipoFertiActivity"
+                    android:id="@+id/rd_fer_no_he"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+
+            </RadioGroup>
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_nut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+        </LinearLayout>
+</ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

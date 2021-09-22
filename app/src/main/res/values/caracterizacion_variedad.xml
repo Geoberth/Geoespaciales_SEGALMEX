@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caracterizacion_variedad">
+        <item>Seleccione variedad</item>
+        <item>Criolla propia</item>
+        <item>Criolla de otra procedencia</item>
+        <item>Certificada, ¿Cuál?</item>
+        <item>Otra:</item>
+    </string-array>
+    <string name="relacion_prompt6">Tipo de relacion</string>
+</resources>

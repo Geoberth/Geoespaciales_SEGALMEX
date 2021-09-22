@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caracterizacion.ciclo_caracterizacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_tit_mod_cua_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.1 Ciclo P-V"
+                android:textSize="20dp"
+                android:textAlignment="textStart"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Maíz, ¿Qué tipo de maíz es?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoMaiz"
+                        android:id="@+id/maiz_blanco"
+                        android:text="Blanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="tipoMaiz"
+                        android:id="@+id/maiz_amarillo"
+                        android:text="Amarillo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="tipoMaiz"
+                        android:id="@+id/maiz_zul"
+                        android:text="Azul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="tipoMaiz"
+                        android:id="@+id/maiz_otro"
+                        android:text="Otro (especificar)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/edt_maiz_otroo"
+                        android:enabled="false"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Milpa?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoMilpa"
+                        android:id="@+id/propia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        />
+                    <RadioButton
+                        android:onClick="tipoMilpa"
+                        android:id="@+id/rentada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Sorgo, ¿Que tipo de sorgo es?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoSorgo"
+                        android:id="@+id/sorgo_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blanco"
+                        />
+                    <RadioButton
+                        android:onClick="tipoSorgo"
+                        android:id="@+id/sorgo_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rojo"
+                        />
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Frijol, ¿Qué tipo de frijol es?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoFrijol"
+                        android:id="@+id/frijol_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rojo"
+                        />
+                    <RadioButton
+                        android:onClick="tipoFrijol"
+                        android:id="@+id/frijol_n"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Negro"
+                        />
+                    <RadioButton
+                        android:onClick="tipoFrijol"
+                        android:id="@+id/frijol_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Azufrado"
+                        />
+                    <RadioButton
+                        android:onClick="tipoFrijol"
+                        android:id="@+id/frijol_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pinto"
+                        />
+
+                    <RadioButton
+                        android:onClick="tipoFrijol"
+                        android:id="@+id/frijol_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blanco"
+                        />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Trigo, ¿Qué tipo de trigo es?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoTrigo"
+                        android:id="@+id/trigo_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Duro"
+                        />
+                    <RadioButton
+                        android:onClick="tipoTrigo"
+                        android:id="@+id/trigo_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blando"
+                        />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Ajonjoli, ¿Qué tipo de ajonjoli es?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoAjonjoli"
+                        android:id="@+id/ajonjoli_n"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Negro"
+                        />
+                    <RadioButton
+                        android:onClick="tipoAjonjoli"
+                        android:id="@+id/ajonjoli_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crema"
+                        />
+                    <RadioButton
+                        android:onClick="tipoAjonjoli"
+                        android:id="@+id/ajonjoli_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blanco"
+                        />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Cacahuate, ¿Qué tipo de cacahuate es?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoCacahuate"
+                        android:id="@+id/cacahua_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Virginia o piñatero arbustivo"
+                        />
+                    <RadioButton
+                        android:onClick="tipoCacahuate"
+                        android:id="@+id/cacahua_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Virginia o piñatero rastrero"
+                        />
+                    <RadioButton
+                        android:onClick="tipoCacahuate"
+                        android:id="@+id/cacahua_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Runner o para confite"
+                        />
+                </RadioGroup>
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/btn_sig1"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="semillas_cultivo">
+        <item>Especifique el tipo de semilla</item>
+        <item>Criolla propia</item>
+        <item>Criolla de otra procedencia</item>
+        <item>Criolla mejorada</item>
+        <item>Certificada</item>
+        <item>Otra</item>
+    </string-array>
+</resources>

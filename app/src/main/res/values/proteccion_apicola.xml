@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="proteccion_apicola">
+        <item>Seleccione una opcion</item>
+        <item>Ahumador</item>
+        <item>Alzaprima</item>
+        <item>Velo</item>
+        <item>Guantes</item>
+        <item>Overol o Chamarra</item>
+        <item>Botas</item>
+        <item>Pinzas o palanca de manejo de cuadros</item>
+        <item>Cepillo para desabejar</item>
+        <item>Planta de extracción de miel</item>
+        <item>Planta purificadora de miel</item>
+        <item>Fundidores de cera</item>
+        <item>Rejilla excluidoras de reinas</item>
+        <item>Trampa caza polen</item>
+        <item>Aparato de descarga y colector de veneno</item>
+        <item>Otro (Especificar)</item>
+    </string-array>
+</resources>

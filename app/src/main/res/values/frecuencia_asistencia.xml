@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="frecuencia_asistencia">
+        <item>Seleccion una opcion</item>
+        <item>Dos veces cada mes</item>
+        <item>Una vez cada mes</item>
+        <item>Cada dos meses</item>
+        <item>Cada tres meses</item>
+        <item>Dos veces al año</item>
+        <item>Una vez al año</item>
+        <item>Otro (especificar)</item>
+    </string-array>
+
+    <string name="frecuencia_prompt">Frecuencia asistencia técnica</string>
+</resources>

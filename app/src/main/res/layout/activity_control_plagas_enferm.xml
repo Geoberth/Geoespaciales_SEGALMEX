@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.ControlPlagasEnferm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margen_left"
+        android:paddingRight="@dimen/margen_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/margen_titulo_top"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:id="@+id/tx_tit_ple"
+            android:text="CONTROL DE PLAGAS Y ENFERMEDADES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="36dp"
+            android:text="¿Conoce el nombre de las plagas y enfermedades que afectan a su cultivo?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:onClick="nombPlagasEnferm"
+                android:id="@+id/rd_si_cmp_fe"
+                android:text="Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:onClick="nombPlagasEnferm"
+                android:id="@+id/rd_no_cmp_fe"
+                android:text="No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="36dp"
+            android:text="¿Se han presentado nuevas plagas y enfermedades en su cultivo en los últimos cinco años? "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:onClick="nuvPlagasEnfer"
+                android:id="@+id/rd_si_pl_enf_fe"
+                android:text="Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:onClick="nuvPlagasEnfer"
+                android:id="@+id/rd_no_pl_enf_fe"
+                android:text="No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_next_cnp_fe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:text="Siguiente"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconPadding="20dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

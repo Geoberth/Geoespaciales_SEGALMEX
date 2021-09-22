@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.Apicultura_4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="¿Qué le hace falta a su producto para poderlo comercializar?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="faltaProdCmrAPi"
+                android:id="@+id/ck_ap_3_4_1"
+                android:text="Calidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="faltaProdCmrAPi"
+                android:id="@+id/ck_ap_3_4_2"
+                android:text="Presentación"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="faltaProdCmrAPi"
+                android:id="@+id/ck_ap_3_4_3"
+                android:text="Difusión"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="faltaProdCmrAPi"
+                android:id="@+id/ck_ap_3_4_4"
+                android:text="Valor agregado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="faltaProdCmrAPi"
+                android:id="@+id/ck_ap_3_4_5"
+                android:text="Procesos de conservación"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="En las últimas ventas, ¿Cómo considera que fue el precio de su producto?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="ultimasVentasAPicola"
+                    android:id="@+id/rd_cmr_4_1"
+                    android:text="Excelente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="ultimasVentasAPicola"
+                    android:id="@+id/rd_cmr_4_2"
+                    android:text="Muy bueno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="ultimasVentasAPicola"
+                    android:id="@+id/rd_cmr_4_3"
+                    android:text="Bueno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="ultimasVentasAPicola"
+                    android:id="@+id/rd_cmr_4_4"
+                    android:text="Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="ultimasVentasAPicola"
+                    android:id="@+id/rd_cmr_4_5"
+                    android:text="Malo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="ultimasVentasAPicola"
+                    android:id="@+id/rd_cmr_4_6"
+                    android:text="Muy malo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:text="¿Qué empresas de integración económica considera que le aportarían mayores ingresos?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="empresaApicola"
+                android:id="@+id/ck_cmr_4_1"
+                android:text="Centro de acopio y comercialización de producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="empresaApicola"
+                android:id="@+id/ck_cmr_4_2"
+                android:text="Central de maquinaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="empresaApicola"
+                android:id="@+id/ck_cmr_4_3"
+                android:text="Abastecimiento de insumos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:onClick="empresaApicola"
+                android:id="@+id/ck_cmr_4_4"
+                android:text="Manufactura de valor agregado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/api_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

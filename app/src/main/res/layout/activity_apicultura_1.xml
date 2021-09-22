@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.Apicultura_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APICULTURA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por favor indique lo siguiente para sus meses de venta:"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spn_pro_apic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:maxLines="1"
+                android:visibility="gone"
+                android:id="@+id/edt_otr_api"
+                android:hint="Especifique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/ln_api_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuánto se produce? (kg, l, unidad)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_api_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuánto se destina al autoconsumo? (kg o l)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_api_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuánto se vende? (kg o l)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_api_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio promedio ($/kg ó $/l)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_api_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meses del año que vende" />
+
+
+                <!--MESES DEL AÑO   -->
+                <CheckBox
+                    android:id="@+id/ck_ms_api_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Enero"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Febrero"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Marzo"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Abril"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Mayo"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Junio"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Julio"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Agosto"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Septiembre"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Octubre"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Noviembre"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_ms_api_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mesesVentaApic"
+                    android:text="Diciembre"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+
+                <!--      -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿A quién le vende?" />
+
+                <CheckBox
+                    android:onClick="ventaApicola"
+                    android:id="@+id/ck_api_cm_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consumidor" />
+
+
+                <CheckBox
+                    android:onClick="ventaApicola"
+                    android:id="@+id/ck_api_cm_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revendedor" />
+
+
+                <CheckBox
+                    android:onClick="ventaApicola"
+                    android:id="@+id/ck_api_cm_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Industria" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_otr_apic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AGREGAR OTRO PRODUCTO" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/api_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

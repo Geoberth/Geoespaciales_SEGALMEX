@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.geoespaciales">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconoapp_liz"
+        android:label="GEOESPACIALES"
+        android:roundIcon="@mipmap/iconoapp_liz_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".NewCamara"></activity>
+
+        <activity android:name=".apicola.HerramientasProteccion" />
+
+        <activity android:name=".unidadcomercializacion.Apicultura_4" />
+
+        <activity android:name=".unidadcomercializacion.Apicultura_3" />
+        <activity android:name=".unidadcomercializacion.Apicultura_2" />
+        <activity android:name=".unidadcomercializacion.Apicultura_1" />
+        <activity android:name=".frutales.frutales_4_0" />
+        <activity android:name=".unidadcomercializacion.comercializacion_3_1" />
+        <activity android:name=".caracterizacion.variables_caracterizacion.CalendarioDate" />
+        <activity android:name=".unidadproduccion.FuenteAgua" />
+        <activity android:name=".Gps.GpsEnableb" />
+        <activity android:name=".unidadcaracterizacionhortalizas.FertilizanteSi" />
+        <activity android:name=".apicola.SanidadApicola" />
+        <activity android:name=".apicola.ReproduccionApicola" />
+        <activity android:name=".apicola.ManejoApicola" />
+        <activity android:name=".apicola.EnfermedadesCambioPanales" />
+        <activity android:name=".apicola.CosechaApicola" />
+        <activity android:name=".apicola.CapacitacionAsistenciaApicola" />
+        <activity android:name=".apicola.AspectosProductivosApicola" />
+        <activity android:name=".apicola.AlimentacionApicola" />
+        <activity android:name=".apicola.ApicolaInicio" />
+        <activity android:name=".unidadcomercializacion.comercializacion_8" />
+        <activity android:name=".unidadcomercializacion.comercializacion_7" />
+        <activity android:name=".unidadcomercializacion.comercializacion_6" />
+        <activity android:name=".unidadcomercializacion.comercializacion_5" />
+        <activity android:name=".unidadcomercializacion.comercializacion_4" />
+        <activity android:name=".unidadcomercializacion.comercializacion_3" />
+        <activity android:name=".unidadcomercializacion.comercializacion_2" />
+        <activity android:name=".unidadcomercializacion.comercializacion_1" />
+        <activity android:name=".Productor.ProductorInfo" />
+        <activity android:name=".Productor.ProductorEconom" />
+        <activity android:name=".Productor.IntegranteFamilia" />
+        <activity android:name=".Productor.ProductorFamilia" />
+        <activity android:name=".infraestructura_1" />
+        <activity android:name=".frutales.frutales_14" />
+        <activity android:name=".frutales.frutales_13" />
+        <activity android:name=".frutales.frutales_12" />
+        <activity android:name=".frutales.frutales_11" />
+        <activity android:name=".frutales.frutales_10" />
+        <activity android:name=".frutales.frutales_9" />
+        <activity android:name=".frutales.frutales_8" />
+        <activity android:name=".frutales.frutales_7" />
+        <activity android:name=".frutales.frutales_6" />
+        <activity android:name=".frutales.frutales_5" />
+        <activity android:name=".frutales.frutales_4" />
+        <activity android:name=".frutales.frutales_3" />
+        <activity android:name=".frutales.frutales_2" />
+        <activity android:name=".frutales.frutales_1" />
+        <activity android:name=".unidadcaracterizacionhortalizas.date.CalendarioActivity" />
+        <activity android:name=".unidadcaracterizacionhortalizas.TiempoRiego" />
+        <activity android:name=".unidadcaracterizacionhortalizas.PostCosecha" />
+        <activity android:name=".unidadcaracterizacionhortalizas.Nutricion" />
+        <activity android:name=".unidadcaracterizacionhortalizas.HortalizasPvunoD" />
+        <activity android:name=".unidadcaracterizacionhortalizas.HortalizasPvunoC" />
+        <activity android:name=".unidadcaracterizacionhortalizas.HortalizasPvunob" />
+        <activity android:name=".unidadcaracterizacionhortalizas.HortalizasPVuno" />
+        <activity android:name=".unidadcaracterizacionhortalizas.FoliarRiego" />
+        <activity android:name=".unidadcaracterizacionhortalizas.CosechaB" />
+        <activity android:name=".unidadcaracterizacionhortalizas.Cosecha" />
+        <activity android:name=".unidadcaracterizacionhortalizas.ControlPlagasEnfermC" />
+        <activity android:name=".unidadcaracterizacionhortalizas.ControlPlagasEnfermB" />
+        <activity android:name=".unidadcaracterizacionhortalizas.ControlPlagasEnferm" />
+        <activity android:name=".unidadcaracterizacionhortalizas.ControlMalezas" />
+        <activity android:name=".unidadcaracterizacionhortalizas.hortalizas" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion12" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion11" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion10" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion9" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion8" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion7" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion6" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion_tabla" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion5" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion4" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion2" />
+        <activity android:name=".caracterizacion.ciclo_caracterizacion" />
+        <activity android:name=".caracterizacion.ciclo_carac" />
+        <activity android:name=".unidadproduccion.ModalidadHidrica" />
+        <activity android:name=".unidadproduccion.TenenciaTierra" />
+        <activity android:name=".unidadproduccion.TiposAlimentosTres" />
+        <activity android:name=".unidadproduccion.TiposAlimentosDos" />
+        <activity android:name=".unidadproduccion.TiposAlimentos" />
+        <activity android:name=".unidadproduccion.ProduccionAcuicola" />
+        <activity android:name=".unidadproduccion.ProduccionForestal" />
+        <activity android:name=".unidadproduccion.ProduccionPecuaria" />
+        <activity android:name=".unidadproduccion.ProduccionAgricola" />
+        <activity android:name=".unidadproduccion.UnidadProduccion" />
+        <activity android:name=".Pecuario.EstructuraDelHato" />
+        <activity android:name=".Pecuario.InventarioGanadoOvino" />
+        <activity android:name=".Pecuario.InventarioGanBovinoLeche" />
+        <activity android:name=".Pecuario.InventarioGanCaprino" />
+        <activity android:name=".Pecuario.ManejoSanitarioOrdenia" />
+        <activity android:name=".Pecuario.PecuarioAgregarAlimentos" />
+        <activity android:name=".Pecuario.PecuarioAlimentacionGanado" />
+        <activity android:name=".Pecuario.PecuarioCaprinos" />
+        <activity android:name=".Pecuario.PecuarioComposicDietaOvinosCaprinos" />
+        <activity android:name=".Pecuario.PecuarioDietaOvinosCaprinosAlimentos" />
+        <activity android:name=".Pecuario.PecuarioEventosUnidadProduccion" />
+        <activity android:name=".Pecuario.PecuarioInicio" />
+        <activity android:name=".Pecuario.PecuarioManejoAgostadero" />
+        <activity android:name=".Pecuario.PecuarioManejoSanGanado" />
+        <activity android:name=".Pecuario.PecuarioOvinos" />
+        <activity android:name=".Pecuario.PecuarioParamProdReproductivos" />
+        <activity android:name=".Pecuario.PecuarioReproduccionGenetica" />
+        <activity android:name=".Gps.GpsTrayectoria" />
+        <activity android:name=".Gps.GpsActivity" />
+        <activity
+            android:name=".drawer.DrawerActivity"
+            android:label="Drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Georeferencia.GeoreferenciaActivity" />
+        <activity android:name=".Geo.GeoFotos" />
+        <activity android:name=".Geo.FotoActivityDos" />
+        <activity android:name=".Geo.FotoActivityUno" />
+        <activity android:name=".IdentificacionCuestionario" />
+        <activity android:name=".Segunda" />
+        <activity android:name=".Principal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBWRIUBSVY-2SKcteFyw4SaXTfGD9L_UQY" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.geoespaciales.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+    <uses-feature android:name="android.hardware.camera2.full" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

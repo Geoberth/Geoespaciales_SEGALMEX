@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.comercializacion_8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:text="¿Cómo le gustaría que fueran los canales de comercialización de sus productos?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ck_cm_can_cm_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="cmcanalComercializacion"
+                    android:text="Directo al consumidor"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_cm_can_cm_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="cmcanalComercializacion"
+                    android:text="Directo a la central de abastos"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_cm_can_cm_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="cmcanalComercializacion"
+                    android:text="Contrato con la industria"></RadioButton>
+            </RadioGroup>
+
+
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+            <TextView
+                android:text="¿Qué le hace falta a su producto para poderlo comercializar?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <CheckBox
+                android:id="@+id/ck_pro_pdr_cm_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="faltaproComercializar"
+                android:text="Calidad"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_pro_pdr_cm_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="faltaproComercializar"
+                android:text="Presentación"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_pro_pdr_cm_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="faltaproComercializar"
+                android:text="Difusión"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_pro_pdr_cm_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="faltaproComercializar"
+                android:text="Valor agregado"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_pro_pdr_cm_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="faltaproComercializar"
+                android:text="Procesos de conservación "
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <TextView
+                android:text="En las ultimas ventas, ¿Cómo considera que fue el precio de su producto?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ck_vnt_ult_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="ventasUltimas"
+                    android:text="Excelente"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_vnt_ult_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="ventasUltimas"
+                    android:text="Muy bueno"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_vnt_ult_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="ventasUltimas"
+                    android:text="Bueno"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_vnt_ult_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="ventasUltimas"
+                    android:text="Regular"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_vnt_ult_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="ventasUltimas"
+                    android:text="Malo"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ck_vnt_ult_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="ventasUltimas"
+                    android:text="Muy malo"></RadioButton>
+            </RadioGroup>
+
+            <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <TextView
+                android:text="¿Qué empresas de integración económica considera que le aportarían mayores ingresos?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <CheckBox
+                android:id="@+id/ck_emp_int_cs_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="empresaIntEcon"
+                android:text="Centro de acopio y comercialización de producto"
+                android:textSize="16dp" />
+
+
+            <CheckBox
+                android:id="@+id/ck_emp_int_cs_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="empresaIntEcon"
+                android:text="Central de maquinaria"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_emp_int_cs_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="empresaIntEcon"
+                android:text="Abastecimiento de insumos"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_emp_int_cs_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="empresaIntEcon"
+                android:text="Manufactura de valor agregado"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_marginTop="16dp"
+                android:id="@+id/cr8"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.geoespaciales.drawer.fragment_drawer.MapaFragment"
+        android:label="Encuesta"
+        tools:layout="@layout/fragment_mapa" />
+
+    <fragment
+        android:id="@+id/nav_sync_municipio"
+        android:name="com.example.geoespaciales.drawer.fragment_drawer.SyncMunFragment"
+        android:label="Municipios"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_sync_usuarios"
+        android:name="com.example.geoespaciales.drawer.fragment_drawer.SyncUserFragment"
+        android:label="Usuarios"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_exportar"
+        android:name="com.example.geoespaciales.drawer.fragment_drawer.ExportarFragment"
+        android:label="Exportar"
+        tools:layout="@layout/fragment_tools" />
+
+
+</navigation>

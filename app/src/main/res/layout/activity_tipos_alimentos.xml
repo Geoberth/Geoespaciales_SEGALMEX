@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.TiposAlimentos">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En los últimos tres meses, por falta de dinero o recursos, ¿Alguna vez usted se preocupó de que la comida se acabara?"/>
+
+
+        <RadioGroup
+            android:id="@+id/rg_com_acabara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:onClick="mesesDineroFalta"
+                android:id="@+id/rg_com_acabara_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"/>
+
+            <RadioButton
+                android:onClick="mesesDineroFalta"
+                android:id="@+id/rg_com_acabara_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En los últimos tres meses, por falta de dinero o recursos, ¿Alguna vez se quedaron sin comida? "/>
+
+        <RadioGroup
+            android:id="@+id/rg_sin_comida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:onClick="sincomida"
+                android:id="@+id/rg_sin_comida_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"/>
+
+            <RadioButton
+                android:onClick="sincomida"
+                android:id="@+id/rg_sin_comida_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En los últimos tres meses, ¿Alguna vez se quedaron sin dinero o recursos para obtener una alimentación sana y variada?"/>
+
+        <RadioGroup
+            android:id="@+id/rg_sin_sana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:onClick="sinalimentacion"
+                android:id="@+id/rg_sin_sana_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"/>
+
+            <RadioButton
+                android:onClick="sinalimentacion"
+                android:id="@+id/rg_sin_sana_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_next_pro_aluno"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Siguiente"
+        app:iconPadding="20dp"
+        app:icon="@android:drawable/ic_input_add"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

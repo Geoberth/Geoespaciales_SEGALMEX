@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".frutales.frutales_2">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. CARACTERIZACIÓN DE FRUTALES"
+                    android:textSize="20dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es la procedencia de su plantación?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spin_pro_pln_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"/>
+<!--
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+-->
+                <EditText
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_otr_pro_pln_frt"
+                    android:hint="Especifique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿El vivero es?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spin_pro_pln_frt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿De dónde procede su plantación?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spin_pro_pln_frt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"
+                    />
+
+                <!--
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                    -->
+
+                <EditText
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_otr_pro_pln_frt_2"
+                    android:hint="Especifique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Qué variedad tiene?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spin_pro_pln_frt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"
+                    />
+<!--
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                    -->
+
+                <EditText
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_otr_pro_pln_frt_ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Por qué seleccionó dicha variedad?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spin_pro_pln_frt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"
+                    />
+<!--
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es la densidad de plantación por hectárea? "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                    -->
+
+                <EditText
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_otr_pro_pln_frt_4"
+                    android:hint="Especifique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es la densidad de plantación por hectárea? "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_otr_pro_pln_frt_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es el costo por planta? ($/planta)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_otr_pro_pln_frt_6"
+                    android:hint="$"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es la distancia entre hileras y entre plantas?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_otr_pro_pln_frt_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/fr2"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

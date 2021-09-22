@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frutales.frutales_10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+
+                android:textAlignment="center"
+                android:textSize="16dp"
+
+                android:text="CONTROL DE PLAGAS Y ENFERMEDADES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Enliste las principales plagas y/o enfermedades que se presentaron y su control:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Plagas y/o  ( Mosquita blanca, thrips, pulgones, gusanos, mayates, araña roja o cristalina, otros) enfermedades : (Manchas, royas, HBL,  secadera o marchitez, pudriciones, cáncer y  deficiencias nutricionales)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/pl_agr_1_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Control"
+                        android:textColor="@color/design_default_color_on_secondary" />
+
+                    <RadioButton
+                        android:onClick="tipoEnferAgrifrt"
+                        android:id="@+id/rd_tip_enf_1_frt"
+                        android:text="Químico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="tipoEnferAgrifrt"
+                        android:id="@+id/rd_tip_enf_2_frt"
+                        android:text="Biológico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="tipoEnferAgrifrt"
+                        android:id="@+id/rd_tip_enf_3_frt"
+                        android:text="Otro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:maxLines="1"
+                        android:id="@+id/pl_agr_2_frt"
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Insecticida o producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/pl_agr_3_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Cantidad (litros o kg/ha)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/pl_agr_4_frt"
+                    android:layout_width="match_parent"
+                    android:hint="(l o kg/ha)"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Jornales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/pl_agr_5_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Costo del insecticida o producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/pl_agr_6_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="($/l o Kg)"
+                    android:inputType="numberDecimal" />
+
+                <Button
+                    android:id="@+id/btn_pl_agr_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Agregar otra plaga" />
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fr10_frt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

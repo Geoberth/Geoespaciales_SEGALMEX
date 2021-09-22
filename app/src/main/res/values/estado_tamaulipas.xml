@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_tamaulipas">
+    <item>GOMEZ FARIAS</item>
+    <item>HIDALGO</item>
+    <item>EL MANTE</item>
+    <item>TULA</item>
+    <item>XICOTENCATL</item>
+    <item>LLERA</item>
+</string-array>
+</resources>

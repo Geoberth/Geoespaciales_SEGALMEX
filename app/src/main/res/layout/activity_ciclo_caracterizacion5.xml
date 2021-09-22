@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caracterizacion.ciclo_caracterizacion5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_tit_mod_cua_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NUTRICIÓN"
+                android:textSize="18dp"
+                android:textAlignment="textStart"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Realiza algún análisis para fertilizar?"
+                        android:textColor="@color/design_default_color_on_secondary" />
+                    <RadioButton
+                        android:onClick="analisisFertiAgri"
+                        android:id="@+id/si_agr_fer"
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="analisisFertiAgri"
+                        android:id="@+id/no_agr_fer"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué tipo de análisis?"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/tip_sue_agr"
+                    android:onClick="tipoAnalisisAgri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Suelo"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/suelo_precio_agr"
+                    android:hint="Precio $"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+               <RadioButton
+                    android:id="@+id/tip_fol_agr"
+                    android:onClick="tipoAnalisisAgri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foliar"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/foliar_precio_agr"
+                    android:hint="Precio $"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Realiza algún tipo de fertilización?"
+                        android:textColor="@color/design_default_color_on_secondary" />
+                    <RadioButton
+                        android:onClick="tipoFeltilizacion"
+                        android:id="@+id/si_f_agr"
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="tipoFeltilizacion"
+                        android:id="@+id/no_f_agr"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/btn_sig55"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.PecuarioManejoAgostadero">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="MANEJO DEL AGOSTADERO"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué práctica y/o actividad realiza?"
+                android:textSize="15sp" />
+
+
+            <!-- inicia la tabla practica y/o actividad -->
+
+
+
+
+            <!-- Parte de division de potreros -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="División de potreros "
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderodivpotrerossi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickdivisionpotrero"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderodivpotrerosno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickdivisionpotrero"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- parte de Utiliza cerco eléctrico  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Utiliza cerco eléctrico"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderocercoelectricosi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcercoelectric"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderocercoelectricono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcercoelectric"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- inicia ajuste de carga animal -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ajuste de carga animal (i.e. cabezas por hectárea) "
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderoajustecargaanimalsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickajustecarga"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderoajustecargaanimalno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickajustecarga"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- inicia realiza pastoreo rotacional -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Realiza pastoreo rotacional (lotifica el agostadero)"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderopastoreorotacionalsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpastorrotac"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderopastoreorotacionalno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpastorrotac"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- inicia manejo extensivo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manejo extensivo (todo el ganado en el agostadero)"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderomanejoextensivosi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickmanejoext"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderomanejoextensivono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickmanejoext"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- inicia cuenta con abrevaderos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cuenta con abrevaderos"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderocuentaabrevaderossi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcontarabrevaderos"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariomanejoagostaderocuentaabrevaderosno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcontarabrevaderos"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/txtPecuariomanejoagostaderocuentaabrevaderosotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="50dp"
+                    android:text="¿Cuántos?"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edtPecuariomanejoagostaderocuentaabrevaderosotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- tabla donde adquiere los alimentos -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="TABLA ADQUIERE ALIMENTOS"
+                android:textSize="15sp"  />
+
+            <Button
+                android:id="@+id/pecuario_next_adquiere_alimentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="ADQUIERE ALIMENTOS" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué alimentos produce en el rancho? "
+                    android:textSize="15sp" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/chPecuariomanejoproduceforraje"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:text="Forraje verde" />
+
+                    <CheckBox
+                        android:id="@+id/radioPecuariomanejoproduceconccomerc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Concentrados comerciales" />
+
+                    <CheckBox
+                        android:id="@+id/radioPecuariomanejoproduceensilados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Ensilados" />
+
+                    <CheckBox
+                        android:id="@+id/radioPecuariomanejoproducehenos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Henos (pacas)" />
+
+                    <CheckBox
+                        android:id="@+id/radioPecuariomanejoproduceminerales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Minerales" />
+
+                    <CheckBox
+                        android:id="@+id/radioPecuariomanejoproducegranos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Granos" />
+
+                    <CheckBox
+                        android:id="@+id/radioPecuariomanejoproduceotros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otros (especificar)" />
+
+                    <EditText
+                        android:id="@+id/edtPecuariomanejoproduceotros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                    <CheckBox
+                        android:id="@+id/radioPecuariomanejoproducenoproduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickproduceranchoalim"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No produce" />
+
+            </LinearLayout>
+
+
+
+
+            <!-- inicia tabla principales problemas en forraje y alimentación -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Señale los principales problemas que le aquejan en el área de forrajes y alimentación animal."
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Forrajes"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacsequias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="Sequías prolongadas" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacpocadisp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="Poca disponibilidad de forrajes en la región" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacmuycaros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="Son muy caros para adquirirlos" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacpocoterreno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="Poco terreno para producirlos" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacnorecursosprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="No cuento con recursos para producirlos" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacnocapacidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="No tengo capacitación para producir forrajes" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacinsuficmano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="Insuficiente mano de obra disponible" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentactierrapoconutric"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="Tierras de pastoreo poco valor nutricional" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareaforrajes"
+                    android:layout_marginLeft="50dp"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:id="@+id/edtProblemasforrajesalimentacotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+
+
+                <!-- Empieza suplementos comerciales -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Suplementos comerciales"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentaccostosconc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clicksuplementoscomerc"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo de los concentrados/minerales" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacpocadisponib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clicksuplementoscomerc"
+                    android:layout_marginLeft="50dp"
+                    android:text="Poca disponibilidad de forrajes en la región" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacnodietas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clicksuplementoscomerc"
+                    android:layout_marginLeft="50dp"
+                    android:text="Dietas no balanceadas" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacnoconocdietas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clicksuplementoscomerc"
+                    android:layout_marginLeft="50dp"
+                    android:text="No tengo conocimiento de como elaborar dietas" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacmusculonlanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clicksuplementoscomerc"
+                    android:layout_marginLeft="50dp"
+                    android:text="Músculo blanco" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasforrajesalimentacsupotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clicksuplementoscomerc"
+                    android:layout_marginLeft="50dp"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:id="@+id/edtProblemasforrajesalimentacsupotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <!--
+            <Button
+                android:id="@+id/pecuario_next_manejo_agostadero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente" /> -->
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_manejo_agostadero"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

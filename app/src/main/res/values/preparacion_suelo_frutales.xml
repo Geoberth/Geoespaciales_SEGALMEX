@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preparacion_suelo_frutales">
+    <item>Especifique la preparacion de suelo</item>
+    <item>Desvare y limpia</item>
+    <item>Subsoleo</item>
+    <item>Barbecho</item>
+    <item>Rastra</item>
+    <item>Nivelacion</item>
+    <item>Surcado o amelgado</item>
+    <item>Trazo del huerto</item>
+</string-array>
+</resources>

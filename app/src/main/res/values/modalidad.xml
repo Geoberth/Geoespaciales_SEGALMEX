@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modalidad">
+        <item> </item>
+        <item>Riego</item>
+        <item>Temporal</item>
+    </string-array>
+
+    <string name="techo_prompt">Modalidad</string>
+
+</resources>

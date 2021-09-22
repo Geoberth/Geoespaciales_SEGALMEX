@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.CapacitacionAsistenciaApicola">
+
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAPACITACIÓN ASISTENCIA"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtPersonalapicapac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Usted fue capacitado en apicultura el año pasado? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="capacitacionApicultura"
+                        android:id="@+id/radioSicapactec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="capacitacionApicultura"
+                        android:id="@+id/radioNocapactec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtApicapacraz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿En qué fue capacitado?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="tipoCapacitacion"
+                        android:id="@+id/radioApiorggrupo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sobre organización del grupo" />
+
+                    <RadioButton
+                        android:onClick="tipoCapacitacion"
+                        android:id="@+id/radioApiaprovapiario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sobre manejo, control y aprovechamientos de apiarios" />
+
+                    <RadioButton
+                        android:onClick="tipoCapacitacion"
+                        android:id="@+id/radioApicomercializacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sobre comercialización" />
+
+                    <RadioButton
+                        android:onClick="tipoCapacitacion"
+                        android:id="@+id/radioApicapacotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtApicapacotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtApiproporccapac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Quién le proporcionó la capacitación?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="proporcionaCapacitacion"
+                        android:id="@+id/radioProporccapprom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Productores – promotores (otros campesinos)" />
+
+                    <RadioButton
+                        android:onClick="proporcionaCapacitacion"
+                        android:id="@+id/radioProporccaptec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Los técnicos y/o coordinadores de algún programa" />
+
+                    <RadioButton
+                        android:onClick="proporcionaCapacitacion"
+                        android:id="@+id/radioProporcpersinst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Personal de instituciones educativas y de investigación" />
+
+                    <RadioButton
+                        android:onClick="proporcionaCapacitacion"
+                        android:id="@+id/radioProporccapotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtProporccapotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApinoproporccapac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿En caso de no haberse capacitado mencione por qué razón?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="noCapacitacion"
+                        android:id="@+id/radioProporcnocapdesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Desconocimiento" />
+
+                    <RadioButton
+                        android:onClick="noCapacitacion"
+                        android:id="@+id/radioProporcnocapfaltatiemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Falta de tiempo" />
+
+                    <RadioButton
+                        android:onClick="noCapacitacion"
+                        android:id="@+id/radioProporcnocapdist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Distancia" />
+
+                    <RadioButton
+                        android:onClick="noCapacitacion"
+                        android:id="@+id/radioProporcnocapnonec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No lo considera necesario" />
+
+                    <RadioButton
+                        android:onClick="noCapacitacion"
+                        android:id="@+id/radioProporcnocapotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtProporcnocapotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApirecastecinst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Explique de qué institución recibió asistencia técnica?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="institucionAsistencia"
+                        android:id="@+id/radioInstensinv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Institución, enseñanza e investigación" />
+
+                    <RadioButton
+                        android:onClick="institucionAsistencia"
+                        android:id="@+id/radioInstentgob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Entidades de gobierno" />
+
+                    <RadioButton
+                        android:onClick="institucionAsistencia"
+                        android:id="@+id/radioInstagrupacprod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Agrupaciones de productores" />
+
+                    <RadioButton
+                        android:onClick="institucionAsistencia"
+                        android:id="@+id/radioInstotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtInstotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtInsttemaasesorado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿En qué tema fue asesorado?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="temaAsesoramiento"
+                        android:id="@+id/radioInstasesogenetica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Genética en apicultura (reproducción, desarrollo)" />
+
+                    <RadioButton
+                        android:onClick="temaAsesoramiento"
+                        android:id="@+id/radioInstaseprodorganica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Producción orgánica" />
+
+                    <RadioButton
+                        android:onClick="temaAsesoramiento"
+                        android:id="@+id/radioInstasesomanejo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Manejo" />
+
+                    <RadioButton
+                        android:onClick="temaAsesoramiento"
+                        android:id="@+id/radioInstaseotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtInstaseotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFrecasistenctecnica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Con qué frecuencia recibió asistencia técnica el año pasado?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp"/>
+
+                <Spinner
+                    android:id="@+id/idSpinfrecasistenctecnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:spinnerMode="dialog" />
+
+                <EditText
+                    android:hint="Especifique"
+                    android:id="@+id/edtFrecasistotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/apicola_next_capacitacion_asistencia"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="26dp"
+
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

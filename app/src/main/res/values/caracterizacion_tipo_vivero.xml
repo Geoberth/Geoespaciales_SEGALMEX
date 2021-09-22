@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caracterizacion_tipo_vivero">
+        <item>Seleccione tipo</item>
+        <item>Propio</item>
+        <item>Privado</item>
+        <item>Social</item>
+        <item>Gubernamental</item>
+    </string-array>
+    <string name="relacion_prompt5">Tipo de relacion</string>
+</resources>

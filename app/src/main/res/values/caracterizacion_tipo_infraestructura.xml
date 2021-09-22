@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caracterizacion_tipo_infraestructura">
+        <item>Especifique infraestructura</item>
+        <item>Bioespacio o malla sombra</item>
+        <item>Macro túneles</item>
+        <item>Cielo abierto</item>
+        <item>Otro</item>
+    </string-array>
+    <string name="relacion_prompt4">Tipo de relacion</string>
+</resources>

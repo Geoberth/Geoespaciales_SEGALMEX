@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Productor.ProductorEconom">
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtEncprodecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRODUCTOR - ACTIVIDAD ECONÓMICA"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuáles son sus tres actividades principales, de acuerdo a la proporción de ingresos?"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkComercio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Comercio"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkTransformac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Transformación"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkAgricultura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Agricultura"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkGanaderia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Ganadería"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkPesca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Pesca"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkMineria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Minería"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkApicultura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Apicultura"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkManufact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Manufactura artesanal"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkServicpers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Servicios personales"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkConstruccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Construcción"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkEdusalud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Educación y salud"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkTurismo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Turismo"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkServicprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Servicios profesionales"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkTransp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Transporte"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkGobierno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Gobierno"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:id="@+id/checkOtroactind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickActividadesrealizar"
+
+                    android:layout_marginLeft="25dp"
+                    android:text="Otro"
+                    android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textOtraactind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Si es otra actividad, ¿Cuál es?"
+                        android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/edtOtraactind"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="65dp"
+                            android:ems="10"
+                            android:hint="Otra actividad"
+                            android:inputType="text"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtVivienda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARACTERÍSTICAS DE VIVIENDA"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtMatpared"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿El material principal de las paredes es?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioMaderapard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickMaterialpared"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Madera" />
+
+                    <RadioButton
+                        android:id="@+id/radioBlockpard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickMaterialpared"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Block o ladrillo" />
+
+                    <RadioButton
+                        android:id="@+id/radioAdobepard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickMaterialpared"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Adobe" />
+
+                    <RadioButton
+                        android:id="@+id/radioOtropard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickMaterialpared"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro" />
+                </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/txtOtropared"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="50dp"
+                            android:text="Si es otro material, ¿Cuál es?"
+                            android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/edtOtromatpared"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginLeft="65dp"
+                                android:ems="10"
+                                android:hint="Otro material"
+                                android:inputType="text" />
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtMattecho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿El material principal del techo es?"
+                android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/idSpinMattecho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:entries="@array/material_techo"
+                    android:prompt="@string/techo_prompt"
+                    android:spinnerMode="dialog" />
+
+
+                    <TextView
+                        android:id="@+id/txtLamOtro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="Si es de otro material, ¿Cuál es?"
+                        android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/edtOtrotec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:ems="10"
+                            android:hint="Escribe el material que lo conforma"
+                            android:inputType="text" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtMatpiso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿El material principal del piso es?"
+                android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/idSpinMatpiso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:entries="@array/material_piso"
+                    android:prompt="@string/piso_prompt"
+                    android:spinnerMode="dialog" />
+
+
+                    <TextView
+                        android:id="@+id/txtOtropiso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="Si es de otro material, ¿Cuál es?"
+                        android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/edtOtropiso"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:ems="10"
+                            android:hint="Escribe el material que lo conforma"
+                            android:inputType="text" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textCocina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Tiene cocina?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioCocina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickCocina"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioNococina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickCocina"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtCantcuarto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cuántos cuartos tiene además de la cocina?"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtCantidadcuartos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textBano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuenta con?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioBanio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickBanioletrina"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Baño" />
+
+                    <RadioButton
+                        android:id="@+id/radioLetrina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickBanioletrina"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Letrina" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtServichogar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿La vivienda cuenta con los siguientes servicios?"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkServdrenaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickServiciosvivienda"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Drenaje" />
+
+                <CheckBox
+                    android:id="@+id/checkServteleffijo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickServiciosvivienda"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Teléfono fijo" />
+
+                <CheckBox
+                    android:id="@+id/checkServaguapot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickServiciosvivienda"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Agua potable" />
+
+                <CheckBox
+                    android:id="@+id/checkServinternet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickServiciosvivienda"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Internet" />
+
+                <CheckBox
+                    android:id="@+id/checkServelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickServiciosvivienda"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Electricidad" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+
+                android:id="@+id/btnAgrfamilia"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+            <!--
+            <Button
+                android:id="@+id/btnAgrfamilia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:text="SIGUIENTE" />
+
+            <Button
+                android:id="@+id/btnRetorn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="15dp"
+                android:text="REGRESAR" /> -->
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.CosechaApicola">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtCosechatitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="COSECHA"
+                android:textSize="19sp" />
+
+
+            <!-- Epocas de cosecha de la miel -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCosechaepocasmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuáles serían las épocas de cosecha de la miel? "
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Enero" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Febrero" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Marzo" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Abril" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Mayo" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Junio" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Julio" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Agosto" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Septiembre" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Octubre" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Noviembre" />
+
+                <CheckBox
+                    android:onClick="mesCosechaMiela"
+                    android:id="@+id/ck_ms_api_7_2_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Diciembre" />
+
+            </LinearLayout>
+
+
+            <!-- Equipos para la cosecha -->
+            <TextView
+                android:id="@+id/txtCosechaequipostrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Con qué equipos cuenta para la cosecha?"
+                android:textSize="15sp"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCosechaequipoprotec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Equipo de protección"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/checkCosechaequipoahumador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Ahumador" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipoahumadorcosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edt_api_7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+
+                <TextView
+                    android:id="@+id/checkCosechaequipocuña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Cuña" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipocunacosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edt_api_7_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/checkCosechaequipocaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Cajas vacías" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipocajacosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edt_api_7_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/checkCosechaequipocepillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Cepillos para barrer abejas" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipocepillocosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_api_7_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/checkCosechaequipocharolas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:text="Charolas salvamiel" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipocharolascosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp"  />
+
+                <EditText
+                    android:id="@+id/edt_api_7_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/checkCosechaequipobalde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Balde para recoger la cera" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipobaldecosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_api_7_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/checkCosechaequipovehiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Vehículos" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipovehiculocosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_api_7_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/checkCosechaequipocuartoext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Cuarto de extracción" />
+
+                <TextView
+                    android:id="@+id/txtCosechaequipocuartoextcosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo por unidad ($/unidad)"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/edt_api_7_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+
+            <!-- como realiza la extraccion de miel -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtCosecharealextracmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo realiza la extracción de la miel? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="extraccionMiel"
+                        android:id="@+id/radioCosecharealextracmielformaman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="De forma manual" />
+
+                    <RadioButton
+                        android:onClick="extraccionMiel"
+                        android:id="@+id/radioCosecharealextracmielformamec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="De forma mecánica" />
+
+                    <RadioButton
+                        android:onClick="extraccionMiel"
+                        android:id="@+id/radioCosecharealextracmielformaambos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Ambos" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txtCosechanumerojornaleros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Núm.  de jornales utilizados"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtCosechanumerojornaleros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+
+
+                <TextView
+                    android:id="@+id/txtCosechacostojornal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Costo del jornal"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtCosechacostojornal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+
+                <TextView
+                    android:id="@+id/txtCosechapropiorentado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Propio o rentado? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="tipoMiel"
+                        android:id="@+id/radioCosechasipropio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Propio" />
+                    <RadioButton
+                        android:onClick="tipoMiel"
+                        android:id="@+id/radioCosechasirentado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Rentado" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/txtCosechacostototal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Costo ($) "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtCosechacostototal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- como procesa la cera -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtCosechaprocesocera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo procesa la cera?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="procesoCera"
+                        android:id="@+id/radioCosechaprocesocerafundsolares"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Con fundidores solares" />
+
+                    <RadioButton
+                        android:onClick="procesoCera"
+                        android:id="@+id/radioCosechaprocesocerafundvapor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Con fundidores a vapor" />
+
+                    <RadioButton
+                        android:onClick="procesoCera"
+                        android:id="@+id/radioCosechaprocesocerafundelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Con fundidores eléctricos" />
+
+                    <RadioButton
+                        android:onClick="procesoCera"
+                        android:id="@+id/radioCosechaprocesoceraporconoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Por cocimiento" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/apicola_next_cosecha"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

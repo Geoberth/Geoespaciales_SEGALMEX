@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.comercializacion_6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!--esto es un label -->
+            <TextView
+                android:textSize="16sp"
+                android:text="PROBLEMAS EN EL ÁREA DE COMERCIALIZACIÓN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enumere el principal problema en venta de leche"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_lec_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntLeche"
+                    android:text="Precio bajo de venta"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_lec_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntLeche"
+                    android:text="El comprador no compra toda la leche que se produce"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_lec_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntLeche"
+                    android:text="Intermediarios"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_lec_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntLeche"
+                    android:text="Se castigan precios por baja calidad"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_lec_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntLeche"
+                    android:text="Baja producción"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_lec_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntLeche"
+                    android:text="Otro"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:id="@+id/edt_otr_pro_cm_pro"
+                    android:hint="Especificar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+            <!--+++++++++++++++++++++++++++++++++esto es un label++++++++++++++++++++++++++++++++-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enumere el principal problema en venta de carne"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Precios bajos del ganado en pie"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Bajo peso a la venta"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Normativas para la venta de becerros"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Raza y características del animal"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Intermediarios"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Pago diferido a la compra (fiado)"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Competencia en el territorio"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Edad de los becerros vs precio"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_vnt_car_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enumProblemVntCarne"
+                    android:text="Falta acceso a mercados"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <!--+++++++++++++++++++++++++++++esto es un label+++++++++++++++++++++++ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal problema en aspecto social"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_soc_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemAspSocial"
+                    android:text="Abigeato (robo de ganado)"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_soc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemAspSocial"
+                    android:text="Inseguridad pública"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_soc_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemAspSocial"
+                    android:text="Adicciones recurrentes"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_soc_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemAspSocial"
+                    android:text="Gobernanza y cacicazgo"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_soc_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemAspSocial"
+                    android:text="Invasión de tierras"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <!--+++++++++++++++++++++++++++++esto es un label++++++++++++++++++++++++++-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal problema en aspecto político"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_pol_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problAspPolit"
+                    android:text="Ideología política (partidos políticos, religiones)"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_pol_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problAspPolit"
+                    android:text="Políticas publicas confusas (reglas de operación)"
+                    android:textSize="16dp" />
+            </RadioGroup>
+            <!--+++++++++++++++++++++++++++esto es un label +++++++++++++++++++++++++++++-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal problema en aspecto mercados"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_mer_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemAspMerc"
+                    android:text="Infraestructura carretera (caminos malos, terracerías)"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_mer_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemAspMerc"
+                    android:text="Fijación de precios (variación de precios)"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <!--++++++++++++++++++++++++++esto es un label +++++++++++++++++++++++++++++++++++++++-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal problema en aspecto de recursos naturales y cambio climático"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_rn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemRecNatClim"
+                    android:text="Sequías"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_rn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemRecNatClim"
+                    android:text="Heladas/granizadas"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_rn_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemRecNatClim"
+                    android:text="Inundaciones"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_rn_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemRecNatClim"
+                    android:text="Retraso de época de lluvias"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/ck_pro_asp_rn_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="problemRecNatClim"
+                    android:text="Vientos"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/cr6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

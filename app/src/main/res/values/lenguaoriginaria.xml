@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_lengua">
+         <item>Akateko</item>
+         <item>amuzgo</item>
+         <item>Awakateko</item>
+         <item>ayapaneco</item>
+         <item>chatino</item>
+         <item>chichimeco jonaz</item>
+         <item>chinanteco</item>
+         <item>chocholteco</item>
+         <item>ch´ol</item>
+         <item>chontal de Oaxaca</item>
+         <item>chontal de Tabasco</item>
+         <item>Chuj</item>
+         <item>cora</item>
+         <item>cucapá</item>
+         <item>cuicateco</item>
+         <item>guarijío</item>
+         <item>huasteco</item>
+         <item>huave</item>
+         <item>huichol</item>
+         <item>ixcateco</item>
+         <item>Ixil</item>
+         <item>Jakalteko</item>
+         <item>Kaqchikel</item>
+         <item>K´iche´</item>
+         <item>Kickapoo</item>
+         <item>kiliwa</item>
+         <item>ku´ahl</item>
+         <item>kumiai</item>
+
+         <item>lacandón</item>
+         <item>Mam</item>
+         <item>matlatzinca</item>
+         <item>maya</item>
+         <item>mayo</item>
+         <item>mazahua</item>
+         <item>mazateco</item>
+         <item>mixe</item>
+         <item>mixteco</item>
+         <item>náhuatl</item>
+         <item>oluteco</item>
+         <item>otomí</item>
+         <item>paipai</item>
+         <item>pame</item>
+         <item>pápago</item>
+         <item>pima</item>
+         <item>popoloca</item>
+         <item>popoluca de la Sierra</item>
+         <item>Q´anjob´al</item>
+         <item>qato´k</item>
+         <item>Q´eqchí´</item>
+         <item>sayulteco</item>
+         <item>seri</item>
+         <item>tarahumara</item>
+         <item>tarasco</item>
+         <item>Teko</item>
+         <item>tepehua</item>
+         <item>tepehuano del norte</item>
+         <item>tepehuano del sur</item>
+         <item>texistepequeño</item>
+         <item>tlahuica</item>
+         <item>tlapaneco</item>
+         <item>tojolabal</item>
+         <item>totonaco</item>
+         <item>triqui</item>
+         <item>tseltal</item>
+         <item>tsotsil</item>
+         <item>yaqui</item>
+         <item>zapoteco</item>
+         <item>zoque</item>
+    </string-array>
+    <string name="lenguaorig_prompt">Selecciona lengua</string>
+
+
+</resources>

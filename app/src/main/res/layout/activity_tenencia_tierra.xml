@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.TenenciaTierra">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="En relación a su producto principal, por favor responda las siguientes preguntas:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="¿Cuál es la tenencia de la tierra?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/ejidal"
+                        android:text="Ejidal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickTierra"/>
+
+                    <RadioButton
+                        android:id="@+id/comunal"
+                        android:text="Comunal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickTierra"/>
+
+                    <RadioButton
+                        android:id="@+id/peque_propiedad"
+                        android:text="Pequeña Propiedad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickTierra"/>
+
+                    <RadioButton
+                        android:id="@+id/otro_propiedad"
+                        android:text="Otro (especificar)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickTierra"/>
+                    <EditText
+                        android:maxLines="1"
+                        android:id="@+id/otro_edit_propiedad"
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="¿Cuál es el tipo de propiedad?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="tipoPropiedad"
+                        android:id="@+id/propia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Propia"
+                        />
+
+                    <RadioButton
+                        android:onClick="tipoPropiedad"
+                        android:id="@+id/rentada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rentada"
+                        />
+
+                    <RadioButton
+                        android:onClick="tipoPropiedad"
+                        android:id="@+id/prestada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prestada"
+                        />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="¿Cómo es la pendiente de su parcela?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="pendienteParcela"
+                        android:id="@+id/plano_parcela"
+                        android:text="Plano"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="pendienteParcela"
+                        android:id="@+id/ondulado_parcela"
+                        android:text="Ondulado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="pendienteParcela"
+                        android:id="@+id/ladera_parcela"
+                        android:text="Ladera Suave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="pendienteParcela"
+                        android:id="@+id/pendiente_parcela"
+                        android:text="Pendiente Fuerte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="¿De dónde obtiene usted asesorías cuando surge algún problema en su rancho/parcela?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/de_otro_productor"
+                        android:text="De otro productor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="aseroriaParcelaRancho"/>
+
+                    <RadioButton
+                        android:id="@+id/tienda_insumos"
+                        android:text="Tienda de insumos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="aseroriaParcelaRancho"/>
+
+                    <RadioButton
+                        android:id="@+id/tecnico_investigador"
+                        android:text="Técnico o investigador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="aseroriaParcelaRancho"/>
+
+                    <RadioButton
+                        android:id="@+id/otro_parcela_rancho"
+                        android:text="Otro (especificar)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="aseroriaParcelaRancho"/>
+
+                    <EditText
+                        android:id="@+id/otra_parcela_rancho_asesoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="¿De dónde obtiene dinero para su actividad productiva?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="obtienDinero"
+                        android:id="@+id/din_prop"
+                        android:text="Dinero propio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="obtienDinero"
+                        android:id="@+id/din_pres"
+                        android:text="Prestamos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="obtienDinero"
+                        android:text="Alguna organización"
+                        android:id="@+id/din_alg_org"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="obtienDinero"
+                        android:text="Familiares"
+                        android:id="@+id/din_fam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="obtienDinero"
+                        android:id="@+id/din_prg_gob"
+                        android:text="Programa de gobierno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="obtienDinero"
+                        android:id="@+id/din_rms"
+                        android:text="Remesas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="¿Cuantos años ha recibido asistencia técnica?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/asistencia_tiempo"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="¿De dónde proviene la asistencia técnica?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/gobierno_tiempo"
+                        android:text="Gobierno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="asistenciaTiempo"/>
+
+                    <RadioButton
+                        android:id="@+id/privado_tiempo"
+                        android:text="Privado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="asistenciaTiempo"/>
+
+                    <RadioButton
+                        android:id="@+id/proveedor_tiempo"
+                        android:text="Proveedor de insumos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="asistenciaTiempo"/>
+
+                    <RadioButton
+                        android:id="@+id/otro_tiempo"
+                        android:text="Otro (especificar)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="asistenciaTiempo"/>
+
+                    <EditText
+                        android:maxLines="1"
+                        android:id="@+id/otro_edit_tiempo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Si su terreno es mecanizable ¿Qué dificultad tuvo para conseguir maquinaria para preparar su terreno?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="terrenoMecanizable"
+                        android:id="@+id/ter_mec_in_op"
+                        android:text="Informalidad de los operadores"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/ter_mec_cs_sr"
+                        android:onClick="terrenoMecanizable"
+                        android:text="Costo del servicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/ter_mec_obr_ml"
+                        android:onClick="terrenoMecanizable"
+                        android:text="Mano de obra mal calificada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/ter_mec_cnd_maq"
+                        android:onClick="terrenoMecanizable"
+                        android:text="Condición de la maquinaria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/ter_mec_esc_trac"
+                        android:onClick="terrenoMecanizable"
+                        android:text="Escases de tractores e implementos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/ter_mec_no_dif"
+                        android:onClick="terrenoMecanizable"
+                        android:text="No tuve dificultad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/ter_mec_no_maqi"
+                        android:onClick="terrenoMecanizable"
+                        android:text="No utilizo maquinaria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/fab_next_pro_tierra"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

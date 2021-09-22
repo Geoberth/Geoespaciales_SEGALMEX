@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.HortalizasPvunoD">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:text="¿Cuál es la densidad de siembra (número de plantas) por hectárea?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_plan_ha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="¿Cómo realiza la siembra?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ck_alm"
+                    android:onClick="howrealizaSiembra"
+                    android:text="Almacigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/ck_sie_dir"
+                    android:onClick="howrealizaSiembra"
+                    android:text="Siembra directa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/ck_cha"
+                    android:onClick="howrealizaSiembra"
+                    android:text="Charola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/ck_otr_esp_sd"
+                    android:onClick="howrealizaSiembra"
+                    android:text="Otro (especificar)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:id="@+id/edt_otr_esp_sd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+            <TextView
+                android:text="Si contrata mano de obra, ¿Cuánto es el precio del jornal?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:hint="$"
+                android:id="@+id/edt_pr_jor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!-- Labores de Preparacion de suelo+++++++++++++++++++++++++++++++++++-->
+            <TextView
+                android:text="Describa las labores que realiza para la preparación del suelo."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="preparacionSuelo"
+                android:text="Desvare y limpia"
+                android:id="@+id/ck_des_lim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Número de veces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_des_lim_nv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Equipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_des_lim_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                -->
+
+            <RadioGroup
+                android:id="@+id/rdg_ds_lim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_pro_dv"
+                    android:text="Propio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_maq_dv"
+                    android:text="Maquila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="Costo/ha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_des_lim_ch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Núm. de jornales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_des_lim_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <!--subsuelo ++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="preparacionSuelo"
+                android:text="Subsoleo"
+                android:id="@+id/ck_sub_rps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Número de veces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_sub_rps_nv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Equipo (propio/maquila)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <!--
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_sub_rps_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+                -->
+            <RadioGroup
+                android:id="@+id/rdg_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_pro_sb"
+                    android:text="Propio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_maq_sb"
+                    android:text="Maquila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="Costo/ha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_sub_rps_ch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Núm. de jornales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_sub_rps_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Barbacheo ++++++++++++++++++++++++++++++++++++++  -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="preparacionSuelo"
+                android:text="Barbecho"
+                android:id="@+id/ck_barb_rps_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Número de veces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_barb_rps_nv_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Equipo (propio/maquila)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_barb_rps_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                -->
+            <RadioGroup
+                android:id="@+id/rdg_barb_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_pro_brc_cc"
+                    android:text="Propio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_maq_brc_cc"
+                    android:text="Maquila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="Costo/ha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_barb_rps_ch_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Núm. de jornales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_barb_rps_nj_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Rastra ++++++++++++++++++++++++++++++++++++++++   -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="preparacionSuelo"
+                android:text="Rastra"
+                android:id="@+id/ck_ras_rps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Número de veces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_ras_rps_nv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Equipo (propio/maquila)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_ras_rps_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                -->
+
+            <RadioGroup
+                android:id="@+id/rdg_rast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_pro_rs"
+                    android:text="Propio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_maq_rs"
+                    android:text="Maquila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="Costo/ha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_ras_rps_ch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Núm. de jornales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_ras_rps_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--  Nivelacion +++++++++++++++++++++++++++++++++++++++++   -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="preparacionSuelo"
+                android:text="Nivelación"
+                android:id="@+id/ck_nv_rps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Número de veces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_nv_rps_nv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Equipo (propio/maquila)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_nv_rps_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            -->
+            <RadioGroup
+
+                android:id="@+id/rdg_niv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_pro_nv"
+                    android:text="Propio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_maq_nv"
+                    android:text="Maquila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="Costo/ha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_nv_rps_ch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Núm. de jornales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_nv_rps_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--  Surcado o amelgado +++++++++++++++++++++++++++++++++   -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="preparacionSuelo"
+                android:text="Surcado o amelgado"
+                android:id="@+id/ck_amg_rps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Número de veces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_amg_rps_nv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Equipo (propio/maquila)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_amg_rps_pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            -->
+            <RadioGroup
+                android:id="@+id/rdg_sur_aml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_pro_sra"
+                    android:text="Propio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="pmPropioMaquina"
+                    android:enabled="false"
+                    android:id="@+id/rd_eqi_maq_sra"
+                    android:text="Maquila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="Costo/ha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_amg_rps_ch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Núm. de jornales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:enabled="false"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_amg_rps_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_pv_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

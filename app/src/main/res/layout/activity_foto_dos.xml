@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Geo.FotoActivityDos">
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id= "@+id/texture_activity_foto_dos"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id= "@+id/button_activity_captureDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomar Foto Dos"
+            android:layout_marginLeft="100dp"
+            />
+
+        <Button
+            android:id= "@+id/button_salir_de_foto_dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

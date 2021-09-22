@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preparacion_suelo_post_frutales">
+        <item>Seleccione una opcion</item>
+        <item>Deshierbes</item>
+        <item>Barbecho</item>
+        <item>Rastra</item>
+        <item>Surcado o amelgado</item>
+        <item>Podas</item>
+        <item>Tutoreo</item>
+    </string-array>
+</resources>

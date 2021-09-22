@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="causa_sinies">
+        <item>Especifique la causa</item>
+        <item>Enfermedades</item>
+        <item>Exceso de humedad</item>
+        <item>Granizo</item>
+        <item>Helada</item>
+        <item>Inundaciones</item>
+        <item>Sequía</item>
+        <item>Vientos</item>
+        <item>Plagas</item>
+    </string-array>
+
+    <string name="infraestructura">Causa siniestro</string>
+</resources>

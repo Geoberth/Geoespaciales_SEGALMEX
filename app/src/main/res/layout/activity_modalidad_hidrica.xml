@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.ModalidadHidrica">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Indique la modalidad hídrica de su superficie total en la UPF:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/ck_riego"
+                    android:text="De riego"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clikSuperficieHidrica"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Superficie destinada a la actividad agrícola"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/riego_agricola"
+                        android:enabled="false"
+                        android:hint="Núm. de ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Superficie destinada a la actividad pecuaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/riego_pecuaria"
+                        android:enabled="false"
+                        android:hint="Núm. de ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/ck_temporal"
+                    android:text="De temporal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clikSuperficieHidrica"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Superficie destinada a la actividad agrícola"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/temporal_agricola"
+                        android:enabled="false"
+                        android:hint="Núm. de ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Superficie destinada a la actividad pecuaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/temporal_pecuaria"
+                        android:enabled="false"
+                        android:hint="Núm. de ha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="¿Dispone de una superficie adicional para pastoreo?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:onClick="superficePastoreo"
+                        android:id="@+id/rd_sup_pas_si"
+                        android:text="Si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="superficePastoreo"
+                        android:id="@+id/rd_sup_pas_no"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="¿Tiene acceso a alguna fuente de agua para las actividades agropecuarias?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/acc_agua_si"
+                        android:text="Si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="accesoAgua"/>
+
+                    <RadioButton
+                        android:id="@+id/acc_agua_no"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="accesoAgua"/>
+
+
+                </RadioGroup>
+
+
+
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/fab_next_pro_hidrica"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

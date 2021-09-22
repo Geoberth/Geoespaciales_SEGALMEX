@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.HortalizasPVuno">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right">
+
+            <TextView
+                android:id="@+id/tx_tit_hvu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué cultivo de hortaliza tiene?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ck_ch_ji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cultivoHortaliza"
+                    android:text="Jitomate"
+                    />
+
+                <RadioButton
+                    android:id="@+id/ck_ch_chi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cultivoHortaliza"
+                    android:text="Chile" />
+
+                <RadioButton
+                    android:id="@+id/ck_ch_crc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cultivoHortaliza"
+                    android:text="Coles (Repollo, coliflor, brócoli)" />
+
+                <RadioButton
+                    android:id="@+id/ck_ch_otr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cultivoHortaliza"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/ed_ch_otr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="Especificar" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#78909c" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Por qué decidió sembrar esa hortaliza?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/ck_smb_hor_ren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="sembreHortalizas"
+                    android:text="Rentabilidad" />
+
+                <RadioButton
+                    android:id="@+id/ck_smb_hor_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="sembreHortalizas"
+                    android:text="Conoce el manejo" />
+
+                <RadioButton
+                    android:id="@+id/ck_smb_hor_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="sembreHortalizas"
+                    android:text="Demanda del producto" />
+
+                <RadioButton
+                    android:id="@+id/ck_smb_hor_adp_cul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="sembreHortalizas"
+                    android:text="Adaptabilidad del cultivo " />
+
+                <RadioButton
+                    android:id="@+id/ck_smb_hor_cp_cs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="sembreHortalizas"
+                    android:text="Contrato de compra de la cosecha" />
+
+                <RadioButton
+                    android:id="@+id/ck_smb_hor_otr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="sembreHortalizas"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/ed_smb_hor_otr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="Especificar" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#78909c" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Está asociado con otro cultivo? " />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_aso_cul_si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="asociadoCultivo"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rd_aso_cul_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="asociadoCultivo"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Con cuál cultivo está asociado?" />
+
+            <EditText
+                android:id="@+id/ed_aso_cul_si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Ha recibido alguna asesoría para establecer otro cultivo?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_ase_cult_si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="asesoriaOtroCultivo"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rd_ase_cult_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="asesoriaOtroCultivo"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cuál cultivo?" />
+
+            <EditText
+                android:id="@+id/ed_ase_cult_si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:maxLines="1" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_pv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

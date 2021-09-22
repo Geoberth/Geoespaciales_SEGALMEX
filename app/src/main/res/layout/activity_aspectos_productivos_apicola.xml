@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.AspectosProductivosApicola">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:text="ASPECTOS PRODUCTIVOS"
+                android:textSize="22sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+
+                <!-- ////////////////////////////////////////////////// -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Actualmente tiene producción de sus colonias? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="actualProdColonias"
+                        android:id="@+id/radioAspectprodsimiel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:onClick="actualProdColonias"
+                        android:id="@+id/radioAspectprodnomiel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="15sp"/>
+
+                </RadioGroup>
+
+
+
+
+                <!-- ////////////////////////////////////////////////////// -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Explique cuáles son los factores que limitan la producción de miel?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="factoresLimtMiel"
+                        android:id="@+id/radioAspectprodfactoreslimprodmielecon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Económicos"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:onClick="factoresLimtMiel"
+                        android:id="@+id/radioAspectprodfactoreslimprodmielclima"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Climáticos"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:onClick="factoresLimtMiel"
+                        android:id="@+id/radioAspectprodfactoreslimprodmieltecnol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Técnicos/ Tecnologías"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:onClick="factoresLimtMiel"
+                        android:id="@+id/radioAspectprodfactoreslimprodmielotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Otro (especificar)"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtAspectprodfactoreslimprodmielotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿En caso de no producir la mayor parte de los productos, explique las razones?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="noproduceMiel"
+                        android:id="@+id/radioAspectprodnoproducirecon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Económicos"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:onClick="noproduceMiel"
+                        android:id="@+id/radioAspectprodnoproducirdesconoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desconocimiento"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:onClick="noproduceMiel"
+                        android:id="@+id/radioAspectprodnoproducirtecn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Técnicos"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:onClick="noproduceMiel"
+                        android:id="@+id/radioAspectprodnoproducirotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Otro (especificar)"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtAspectprodnoproducirotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecu_next_pecuario_aspectproductivos"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

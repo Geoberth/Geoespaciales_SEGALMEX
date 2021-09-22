@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="condicion_colmenas" >
+        <item>Seleccion una opcion</item>
+        <item>Producción agrícola</item>
+        <item>Selva baja</item>
+        <item>Selva mediana</item>
+        <item>Selva alta</item>
+        <item>Bosque</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string name="colmenacond_prompt">Condiciones de colmenas</string>
+</resources>

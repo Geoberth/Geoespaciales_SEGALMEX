@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="frutales">
+        <item>Seleccione un frutal</item>
+        <item>Aguacate</item>
+        <item>Arándano</item>
+        <item>Cacao</item>
+        <item>Café</item>
+        <item>Capulín</item>
+        <item>Ciruela</item>
+        <item>Piñón</item>
+        <item>Pitahaya</item>
+        <item>Pitaya</item>
+        <item>Plátano</item>
+        <item>Toronja</item>
+        <item>Vid</item>
+        <item>Zapote</item>
+        <item>Zarzamora</item>
+        <item>Coco</item>
+        <item>Durazno</item>
+        <item>Frambuesa</item>
+        <item>Fresa</item>
+        <item>Guayaba</item>
+        <item>Higo</item>
+        <item>Lima</item>
+        <item>Limón</item>
+        <item>Mamey</item>
+        <item>Mandarina</item>
+        <item>Mango</item>
+        <item>Manzana</item>
+        <item>Nanche</item>
+        <item>Naranja</item>
+        <item>Nogal</item>
+        <item>Pera</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

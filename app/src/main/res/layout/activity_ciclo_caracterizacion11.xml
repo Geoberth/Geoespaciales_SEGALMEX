@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caracterizacion.ciclo_caracterizacion11">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tx_tit_cm_agr_cs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COSECHA"
+                    android:textSize="18dp"
+                    android:textAlignment="textStart"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Qué actividades realiza durante la cosecha?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:onClick="cosechaAgri"
+                        android:id="@+id/ch_dbl_agr_1"
+                        android:text="Doblado de mazorca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:text="Número de jornales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/jr_agr_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:onClick="cosechaAgri"
+                        android:id="@+id/ch_dbl_agr_2"
+                        android:text="Moneo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:text="Número de jornales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/jr_agr_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:onClick="cosechaAgri"
+                        android:id="@+id/ch_dbl_agr_3"
+                        android:text="Pizca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:text="Número de jornales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/jr_agr_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:onClick="cosechaAgri"
+                        android:id="@+id/ch_dbl_agr_4"
+                        android:text="Acarreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Número de jornales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/jr_agr_agri_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/tx_tit_cm_agr_psc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manejo post-cosecha"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Qué método de desgrane utiliza?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tipoDesgrane"
+                        android:id="@+id/manu_des_agr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manual"
+                        />
+                    <RadioButton
+                        android:onClick="tipoDesgrane"
+                        android:id="@+id/meca_des_agr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mecanizado"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Numero de jornales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/no_jorna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Costo por servicio/toneladas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/costo_serv"
+                    android:hint="$$$"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/btn_sig11"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

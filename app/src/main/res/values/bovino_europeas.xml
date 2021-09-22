@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bovino_europeas">
+        <item>Ninguna</item>
+        <item>Angus</item>
+        <item>Ayrshire</item>
+        <item>Charolais</item>
+        <item>Chianina</item>
+        <item>Hereford</item>
+        <item>Holstein Friesian</item>
+        <item>Jersey</item>
+        <item>Limousin</item>
+        <item>Montbeliarde</item>
+        <item>Normanda</item>
+        <item>Pardo suizo americano</item>
+        <item>Pardo suizo europeo</item>
+        <item>Romagnola</item>
+        <item>Simmental</item>
+        <item>Otra (especifique) </item>
+    </string-array>
+
+
+    <string name="bovinoeuropeo_prompt">Especies bovinos europeos</string></resources>

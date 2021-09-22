@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="especiepecuaria">
+        <item>Especifique una actividad pecuaria</item>
+        <item>Bovino</item>
+        <item>Porcino</item>
+        <item>Ave</item>
+        <item>Caprino</item>
+        <item>Ovino</item>
+        <item>Abeja</item>
+        <item>Conejo</item>
+    </string-array>
+</resources>

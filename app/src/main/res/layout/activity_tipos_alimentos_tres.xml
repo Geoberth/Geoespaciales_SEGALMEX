@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.TiposAlimentosTres">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿ Que alimentos compra?"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="compraAlimentos"
+                android:id="@+id/frutas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frutas"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="compraAlimentos"
+                android:id="@+id/hortalizas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hortalizas"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="compraAlimentos"
+                android:id="@+id/granos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Granos"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="compraAlimentos"
+                android:id="@+id/carne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carne"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="compraAlimentos"
+                android:id="@+id/leche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leche"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Dónde compra los productos?"
+                />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="dondeCompraAli"
+                android:id="@+id/directo_productor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directo al Productor"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="dondeCompraAli"
+                android:id="@+id/mercado_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mercado Local"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="dondeCompraAli"
+                android:id="@+id/mercado_municipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mercado Municipal"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:onClick="dondeCompraAli"
+                android:id="@+id/industria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Industria"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Los productos mencionados anteriormente, ¿Cubren al 100% las necesidades de
+alimentación de su UPF?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="cubreNecesidad"
+                    android:id="@+id/cubre_si"
+                    android:text="Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="cubreNecesidad"
+                    android:id="@+id/cubre_no"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_next_pro_altres"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Siguiente"
+        app:iconPadding="20dp"
+        app:icon="@android:drawable/ic_input_add"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

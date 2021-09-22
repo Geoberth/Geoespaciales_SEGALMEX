@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="material_piso">
+        <item>Tierra</item>
+        <item>Cemento</item>
+        <item>Madera</item>
+        <item>Loseta o azulejo</item>>
+        <item>Otro material</item>
+    </string-array>
+
+    <string name="piso_prompt">Material del piso</string>
+</resources>

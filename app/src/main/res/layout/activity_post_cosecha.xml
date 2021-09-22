@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.PostCosecha">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/margen_left"
+        android:paddingRight="@dimen/margen_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/margen_titulo_top"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:id="@+id/tx_tit_pos_cos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manejo post-cosecha" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Realiza algún manejo postcosecha?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:onClick="sinoPostCosecha"
+                android:id="@+id/rd_si_ps_fe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+                android:onClick="sinoPostCosecha"
+                android:id="@+id/rd_no_ps_fe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál?" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:onClick="manejoPostCosecha"
+            android:id="@+id/ck_pas_fe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pastoreo" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:onClick="manejoPostCosecha"
+            android:id="@+id/ck_pi_fe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pizca o pepena " />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:onClick="manejoPostCosecha"
+            android:id="@+id/ck_vn_fe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venta de esquilmos " />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:onClick="manejoPostCosecha"
+            android:id="@+id/ck_inc_fe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incorporación al suelo " />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:onClick="manejoPostCosecha"
+            android:id="@+id/ck_qe_fe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quema " />
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_next_cos_pos_fe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:text="Siguiente"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconPadding="20dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

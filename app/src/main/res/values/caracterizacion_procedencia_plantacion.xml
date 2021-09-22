@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caracterizacion_procedencia_plantacion">
+        <item>Seleccione la procedencia</item>
+        <item>Vivero</item>
+        <item>Siembra directa</item>
+        <item>Otro (especificar)</item>
+    </string-array>
+    <string name="relacion_prompt3">Tipo de relacion</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cultivo_esti">
+        <item> </item>
+        <item>Agave</item>
+        <item>Aguacate</item>
+        <item>Alfalfa verde</item>
+        <item>Algodón hueso</item>
+        <item>Amaranto</item>
+        <item>Arroz</item>
+        <item>Avena forrajera</item>
+        <item>Avena grano</item>
+        <item>Cacao</item>
+        <item>Café</item>
+        <item>Caña de azúcar</item>
+        <item>Cebada grano</item>
+        <item>Cítricos</item>
+        <item>Durazno</item>
+        <item>Flores</item>
+        <item>Frambruesa</item>
+        <item>Fresa</item>
+        <item>Frijol</item>
+        <item>Garbanzo grano</item>
+        <item>Guayaba</item>
+        <item>Hortaliza</item>
+        <item>Maguey pulquero</item>
+        <item>Maíz forrajero</item>
+        <item>Maíz grano</item>
+        <item>Mango</item>
+        <item>Manzana</item>
+        <item>Melón</item>
+        <item>Nopalitos</item>
+        <item>Nuez</item>
+        <item>Papa</item>
+        <item>Papaya</item>
+        <item>Pera</item>
+        <item>Piña</item>
+        <item>Platano</item>
+        <item>Sandia</item>
+        <item>Sorgo forrajero</item>
+        <item>Sorgo grano</item>
+        <item>Soya</item>
+        <item>Tabaco</item>
+        <item>Tomate rojo</item>
+        <item>Tomate verde</item>
+        <item>Trigo grano</item>
+        <item>Tuna</item>
+        <item>Uva</item>
+        <item>Zarzamora</item>
+        <item>Sin cultivo</item>
+        <item>Granja</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="modalidad_esti">
+        <item> </item>
+        <item>Riego</item>
+        <item>Temporal</item>
+        <item>Perenne</item>
+    </string-array>
+
+    <string-array name="siniestro_esti">
+        <item> </item>
+        <item>Inundación</item>
+        <item>Helada</item>
+        <item>Plagas y enfermedades</item>
+        <item>Sequía</item>
+        <item>Granizo</item>
+        <item>Vientos</item>
+        <item>Sin evidencia</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="suelo_esti">
+        <item> </item>
+        <item>0 a 50</item>
+        <item>50 a 80</item>
+        <item>80 a 100</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string-array name="predio_esti">
+        <item> </item>
+        <item>Menor a 0.25</item>
+        <item>0.26 a 0.5</item>
+        <item>0.6 a 1.0</item>
+        <item>1.1 a 3.0</item>
+        <item>Mayor a 3.0</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string-array name="maleza_esti">
+        <item> </item>
+        <item>0 a 20</item>
+        <item>20 a 50</item>
+        <item>Mayor a 50</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string-array name="feno_esti">
+        <item> </item>
+        <item>Emergencia</item>
+        <item>Desarrollo</item>
+        <item>Floración</item>
+        <item>Reproductiva</item>
+        <item>Senescencia</item>
+        <item>N/A</item>
+    </string-array>
+
+
+
+</resources>

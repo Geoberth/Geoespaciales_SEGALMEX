@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="produccioacuicola">
+        <item>Especifique produccion acuicola</item>
+        <item>Cria de Peces</item>
+        <item>Pesca</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

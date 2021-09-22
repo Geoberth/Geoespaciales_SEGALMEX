@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alimentos_procesados">
+        <item>Seleccione una opcion</item>
+        <item>Queso</item>
+        <item>Yogurt</item>
+        <item>Cajeta</item>
+        <item>Barbacoa</item>
+        <item>Otros</item>
+    </string-array>
+</resources>

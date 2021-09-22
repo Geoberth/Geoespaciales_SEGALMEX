@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".frutales.frutales_4_0">
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Describa las labores de cultivo o prácticas culturales que realiza de manera rutinaria (Una vez establecida la plantación)."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="14dp"/>
+
+
+                <Spinner
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/spn_prp_suelo_frt_dsp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="Actividad"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/des_sue_agr_frt_dsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desvare"
+                    android:textSize="16dp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Numero de veces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/precio_criop_frt_dsp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_pro_maq_frt_dsp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Equipo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioButton
+                        android:onClick="tipoEquipoAgrfrtdsp"
+                        android:enabled="false"
+                        android:id="@+id/propio_agr_frt_dsp"
+                        android:text="Propio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioButton
+                        android:onClick="tipoEquipoAgrfrtdsp"
+                        android:enabled="false"
+                        android:id="@+id/maquila_agr_frt_dsp"
+                        android:text="Maquila"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+                </RadioGroup>
+                <TextView
+                    android:text="Costo por ha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/costo_agr_frt_dsp"
+                    android:hint="$$$"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Número de jornales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/nojorna_agr_frt_dsp"
+                    android:hint=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--///////////////////////////////////////////////////////////
+                -->
+                <Button
+                    android:id="@+id/btn_next_frt_otr_dsp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:text="Agregue otra actividad"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/btn_next_frt_dsp"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

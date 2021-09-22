@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bovino_cebu">
+        <item>Ninguna</item>
+        <item>Brahman</item>
+        <item>Guzerat</item>
+        <item>Gyr</item>
+        <item>Indo-Brasil</item>
+        <item>Nelore</item>
+        <item>Sardo Negro</item>
+        <item>Otra</item>
+    </string-array>
+
+    <string name="bovinocebu_prompt">Bovino Cebu</string>
+</resources>

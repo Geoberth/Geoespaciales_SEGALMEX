@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdentificacionCuestionario">
+
+    <ScrollView
+        android:id="@+id/scrollProd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Encuesta"
+                android:textAlignment="center"
+                android:textColor="#454141"
+                android:visibility="gone"
+                android:textSize="2sp" />
+
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proyecto: FRONTERA AGRÍCOLA"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textFech"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textHora"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hora:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtestatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Estatus:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spiestatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/estatus"
+                android:prompt="@string/estatus_inicial"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <!-- Mod. Uso-->
+
+            <TextView
+                android:id="@+id/txtmoduso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Modo de Uso:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spimoduso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/mod_uso"
+                android:prompt="@string/mod_uso_inicial"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <!--Cobertura (Activo-Agricola)-->
+            <TextView
+                android:id="@+id/txtcobertura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cobertura:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spicobertura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cobertura_activo_agricola"
+                android:prompt="@string/cobertura_inicial"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <!--Cobertura (Activo-Pastos)-->
+            <TextView
+                android:id="@+id/txtcobertura2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cobertura:"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spicobertura2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cobertura_activo_pastos"
+                android:prompt="@string/cobertura_inicial"
+                android:spinnerMode="dropdown"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <!--Cobertura (Baja)-->
+            <TextView
+                android:id="@+id/txtcobertura3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cobertura:"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spicobertura3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cobertura_baja"
+                android:prompt="@string/cobertura_inicial"
+                android:spinnerMode="dropdown"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <!--Cobertura (Otra)-->
+
+            <!--Modalidad-->
+
+            <EditText
+                android:id="@+id/ediotracober"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Otra cobertura"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtmodalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Modalidad:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spimodalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/modalidad"
+                android:prompt="@string/techo_prompt"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <!--Estimacion-->
+
+            <TextView
+                android:id="@+id/txtcultivo_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cultivo:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spicultivo_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cultivo_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/otro_cultivo_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Otro cultivo"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtmodalidad_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Modalidad:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spimodalidad_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/modalidad_esti"
+                android:prompt="@string/techo_prompt"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtaltura_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Altura:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editaltura_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                />
+
+            <TextView
+                android:id="@+id/txtsiniestro_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Siniestro:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spisiniestro_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/siniestro_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/otro_siniestro_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Otro siniestro"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtsuelo_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Suelo Cubierto:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spisuelo_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/suelo_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtpredio_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Superficie del Predio:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spipredio_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/predio_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtvariedad_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Variedad tipo:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editvariedad_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo de Variedad:"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+
+            <TextView
+                android:id="@+id/txtmaleza_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Maleza:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spimaleza_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/maleza_esti"
+                android:prompt="@string/techo_prompt"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtfeno_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Estado Fenológico:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spifeno_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/feno_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtcult_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Asociación del Cultivo:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editcult_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Aso. Cult:"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtasocia_esti"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Porcentaje de Asociación:"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editasocia_esti"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="60"
+                    android:ems="10"
+                    android:inputType="number"
+                    />
+
+                <TextView
+                    android:id="@+id/txtasocia_esti2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:layout_weight="1"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editasocia_esti2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="40"
+                    android:ems="10"
+                    android:inputType="number"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtnorte_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Norte:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinorte_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cultivo_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/otro_norte_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Otro"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtsur_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Sur:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spisur_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cultivo_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/otro_sur_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Otro"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txteste_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Este:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spieste_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cultivo_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/otro_este_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Otro"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtoeste_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Oeste:"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spioeste_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cultivo_esti"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/otro_oeste_esti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Otro"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Observaciones:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/observa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Observaciones del técnico"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+
+            <!--Finalizar-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="Tomar punto georreferenciado y finalizar trayectoria automática"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnGeoloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TOMAR GEORREFERENCIA" />
+
+            <!--Otros-->
+            <TextView
+                android:id="@+id/textMuestrafolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edProyec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Frontera Agrícola"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textDescEstado"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Estado:"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spi_edo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:spinnerMode="dialog" />
+
+                <!--
+                                <TextView
+                                    android:id="@+id/textEstado"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Aguascalientes"
+                                    android:textSize="15sp" />
+                -->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!--Combo de los municipios -->
+                <TextView
+                    android:id="@+id/txtMunAguasc"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="Municipio:"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+
+                <Spinner
+                    android:id="@+id/spi_mun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:spinnerMode="dialog" />
+
+                <!--
+                <Spinner
+                    android:id="@+id/idSpinMunaguasc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:entries="@array/estado_Aguascalientes"
+                    android:spinnerMode="dialog"
+                    android:textSize="15sp"  />
+
+-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtLocalidad"
+                    android:layout_width="175dp"
+                    android:layout_height="45dp"
+                    android:text="Localidad:"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editLocalid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:hint=""
+                    android:visibility="gone"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnIrprod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:text="*AGREGAR DATOS PRODUCTOR" />
+
+            <Button
+                android:id="@+id/btn_uni_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="*AGREGAR UNIDAD DE PRODUCCION" />
+
+            <Button
+                android:id="@+id/btn_caracterizacion_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="AGREGAR GRANOS  (FRIJOL,TRIGO, MAÍZ, SORGO, AJONJOLÍ Y CACAHUATE)" />
+
+            <Button
+                android:id="@+id/btn_hortalizas_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="AGREGAR CARACTERIZACIÓN DE HORTALIZAS" />
+
+            <Button
+                android:id="@+id/btn_frutales_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="AGREGAR CARACTERIZACIÓN DE FRUTALES" />
+
+            <Button
+                android:id="@+id/btn_apicola_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="AGREGAR ACTIVIDAD APÍCOLA"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_pecuario_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="AGREGAR CUESTIONARIO PECUARIO" />
+
+            <Button
+                android:id="@+id/btn_infraestructura_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="*AGREGAR INFRAESTRUCTURA, MAQUINARIA Y EQUIPO" />
+
+            <Button
+                android:id="@+id/btn_comercializacion_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="*AGREGAR COMERCIALIZACIÓN" />
+            <Button
+                android:id="@+id/btn_cnt_enc_fol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp"
+                android:text="Continuar encuesta"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_cnt_enc_fol"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_cnt_enc_fol_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:enabled="false"
+                    android:text="Continuar"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

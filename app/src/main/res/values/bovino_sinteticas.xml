@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bovino_sinteticas">
+        <item>Ninguna</item>
+        <item>Beef Master</item>
+        <item>Bradford</item>
+        <item>Brangus</item>
+        <item>Charbray</item>
+        <item>Girolando</item>
+        <item>Simbrah</item>
+        <item>Sta. Gertrudis</item>
+        <item>Suiz-bu</item>
+        <item>Tropicarne</item>
+        <item>Otra</item>
+    </string-array>
+
+    <string name="bovinosint_prompt">Especies bovinos sintéticas</string>
+</resources>

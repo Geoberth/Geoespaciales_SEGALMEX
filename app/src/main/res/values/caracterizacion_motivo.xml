@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="caracterizacion_motivo">
+        <item>Especifique el motivo</item>
+        <item>Rentabilidad</item>
+        <item>Conoce el manejo</item>
+        <item>Demanda del producto</item>
+        <item>Adaptabilidad del cultivo</item>
+        <item>Contrato de compra de la cosecha</item>
+    </string-array>
+
+</resources>

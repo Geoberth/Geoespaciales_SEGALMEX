@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caracterizacion.ciclo_caracterizacion4">
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="¿Que tipo de semilla?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"/>
+
+
+                <Spinner
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/spn_sml_agr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/semil_otra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/semil_otra2"
+                    android:hint="Especifique"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Precio ($/kg)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/precio_seotra"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Cantidad (kg/ha)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/cant_seotra"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿En caso de utilizar semilla propia, cómo la seleccionó?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="utilSemiProSelecc"
+                        android:id="@+id/sp_color"
+                        android:text="Color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="utilSemiProSelecc"
+                        android:id="@+id/sp_tam"
+                        android:text="Tamaño"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="utilSemiProSelecc"
+                        android:id="@+id/sp_llenado"
+                        android:text="Llenado de mazorca, cápsula, espiga y/o panoja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="utilSemiProSelecc"
+                        android:id="@+id/sp_otro_mr_cp"
+                        android:text="Otro (especificar)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edt_sp_otro_mr_cp"
+                        android:visibility="visible"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Qué método de siembra utiliza?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="utilMetodoSie"
+                        android:id="@+id/volteo"
+                        android:text="Al voleo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="utilMetodoSie"
+                        android:id="@+id/hilera"
+                        android:text="En surcos, una hilera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="utilMetodoSie"
+                        android:id="@+id/doble_h"
+                        android:text="En surcos, doble hilera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Le da algún tratamiento a la semilla?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="tramientoSemilla"
+                        android:id="@+id/trata_si"
+                        android:text="Sí"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="tramientoSemilla"
+                        android:id="@+id/trata_no"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Que sistema de labranza utiliza?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="sistemaLabranza"
+                        android:id="@+id/conven"
+                        android:text="Convencional (tradicional)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <RadioButton
+                        android:onClick="sistemaLabranza"
+                        android:id="@+id/labran"
+                        android:text="Labranza reducida o mínima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioButton
+                        android:onClick="sistemaLabranza"
+                        android:id="@+id/labracero"
+                        android:text="Labranza cero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </RadioGroup>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ext_madera"
+                    android:text="Si contrata mano de obra, ¿Cuánto es el precio del jornal?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ext_madera_edit"
+                    android:hint="$"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/btn_sig4"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

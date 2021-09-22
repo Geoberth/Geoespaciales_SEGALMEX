@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nombre_prueba">
+        comercio
+    </string>
+
+    <string-array name="COMERPROAGR">
+        <item>Especifique producto</item>
+        <item>Agave</item>
+        <item>Aguacate</item>
+        <item>Ajo</item>
+        <item>Ajonjolí</item>
+        <item>Arándano</item>
+        <item>Arroz</item>
+        <item>Cacahuate</item>
+        <item>Cacao</item>
+        <item>Café</item>
+        <item>Calabaza</item>
+        <item>Caña de azúcar</item>
+        <item>Capulín</item>
+        <item>Chayote</item>
+        <item> Chigua </item>
+        <item>Chile</item>
+        <item>Ciruela</item>
+        <item>Coco</item>
+        <item>Coles</item>
+        <item>Durazno</item>
+        <item>Flores</item>
+        <item>Frambuesa</item>
+        <item>Fresa</item>
+        <item>Frijol</item>
+        <item>Garbanzo</item>
+        <item>Guayaba</item>
+        <item>Haba</item>
+        <item>Higo</item>
+        <item>Hortalizas</item>
+        <item>Hule</item>
+        <item>Jamaica</item>
+        <item>Jitomate</item>
+        <item>Lenteja</item>
+        <item>Lima</item>
+        <item>Limón</item>
+        <item>Maíz</item>
+        <item>Mamey</item>
+        <item>Mandarina</item>
+        <item>Mango</item>
+        <item>Manzana</item>
+        <item> Nanche </item>
+        <item>Naranja</item>
+        <item>Nogal</item>
+        <item> Nopal </item>
+        <item>Olivo</item>
+        <item>Palma camedor</item>
+        <item>Papa</item>
+        <item>Pera</item>
+        <item>Pimienta</item>
+        <item>Piñón</item>
+        <item>Pitahaya</item>
+        <item>Pitaya</item>
+        <item>Platáno</item>
+        <item>Pomelo</item>
+        <item>Sandía</item>
+        <item>Sorgo</item>
+        <item>tabaco</item>
+        <item> Tomate </item>
+        <item>Toronja</item>
+        <item>Trigo</item>
+        <item> Vainilla  </item>
+        <item> Vid </item>
+        <item>Yuca</item>
+        <item>Zapote</item>
+        <item>Zarzamora</item>
+    </string-array>
+
+    <string name="name_COMPROPEC">
+        comercio
+    </string>
+
+    <string-array name="COMPROPEC">
+        <item>Especifique producto</item>
+        <item>Becerro destetado </item>
+        <item>Becerro media engorda </item>
+        <item>Novillo o torete finalizado </item>
+        <item>Vaquilla (vientre, pie de cría)</item>
+        <item>Desecho bovino</item>
+        <item>Corderos al destete</item>
+        <item>Corderos finalizados</item>
+        <item>Vientres de primer parto</item>
+        <item>Sementales jóvenes</item>
+        <item>Desecho ovino</item>
+        <item>Cabras al destete</item>
+        <item>Cabras finalizadas</item>
+        <item>Vientres de primer parto</item>
+        <item>Sementales jóvenes</item>
+        <item>Desecho caprino</item>
+    </string-array>
+
+    <string name="name_LUGSACR">
+        LUGSACR
+    </string>
+
+
+    <string-array name="LUGSACRIFICIO">
+        <item>Especifique el lugar</item>
+        <item>Rastro</item>
+        <item>Casa de matanza</item>
+        <item>En la unidad de producción</item>
+    </string-array>
+
+    <string name="name_MESVEN">
+        MESVEN
+    </string>
+
+    <string-array name="MESVEN">
+        <item>Seleccione el mes</item>
+        <item>Enero </item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+</resources>

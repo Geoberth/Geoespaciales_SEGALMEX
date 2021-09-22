@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.AlimentacionApicola">
+
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALIMENTACIÓN"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtApialimcolonias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Alimenta a sus colonias?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="alimentaColonia"
+                        android:id="@+id/radioSialimcolonias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="alimentaColonia"
+                        android:id="@+id/radioNoalimcolonias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtApiexpcondicaliment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Explique cuándo o en qué condiciones alimenta las colonias?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="condicionesColonias"
+                        android:id="@+id/radioAlimentepoccritica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Época crítica" />
+
+                    <RadioButton
+                        android:onClick="condicionesColonias"
+                        android:id="@+id/radioAlimentestpostura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Estimular postura" />
+
+                    <RadioButton
+                        android:onClick="condicionesColonias"
+                        android:id="@+id/radioAlimentprevflorac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Previo a la floración" />
+
+                    <RadioButton
+                        android:onClick="condicionesColonias"
+                        android:id="@+id/radioAlimentotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtAlimentotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+            <!-- Tabla alimentacion a colonia -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCualtipoalicol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="¿Cuál es el tipo de alimentación que realiza en las colonias y sus características?"
+                    android:textSize="15sp" />
+<!--     De sostenimiento          -->
+                <CheckBox
+                    android:onClick="tipoAlimentacionAPi"
+                    android:id="@+id/checkAlimcaracsostenimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="De sostenimiento" />
+
+                <TextView
+                    android:id="@+id/txtAlimsostenimientomeses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Meses en que alimenta a las colonias"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtAlimsostenimientomeses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtAlimsostenimientoformas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Formas de alimentar"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:onClick="alimentarSosteniiento"
+                    android:id="@+id/checkFormassostedirecto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Directo" />
+
+                <CheckBox
+                    android:onClick="alimentarSosteniiento"
+                    android:id="@+id/checkFormassostelimentador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Con alimentador" />
+
+                <CheckBox
+                    android:onClick="alimentarSosteniiento"
+                    android:id="@+id/checkFormassostebolplastico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Bolsas de plástico" />
+
+                <CheckBox
+                    android:onClick="alimentarSosteniiento"
+                    android:id="@+id/checkFormassosteotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edtFormassosteotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <!-- Ingredientes que utiliza -->
+
+
+                <TextView
+                    android:id="@+id/txtAlimsostenimientoingred"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Ingredientes que utiliza"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:onClick="ingredienteUtilizarSostenimi"
+                    android:id="@+id/checkAlimsostenimientoingredjarabe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Jarabe de azúcar" />
+
+                <CheckBox
+                    android:onClick="ingredienteUtilizarSostenimi"
+                    android:id="@+id/checkAlimsostenimientoingredazucar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Azúcar granulada" />
+
+                <CheckBox
+                    android:onClick="ingredienteUtilizarSostenimi"
+                    android:id="@+id/checkAlimsostenimientoingredmelazas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Melazas" />
+
+                <CheckBox
+                    android:onClick="ingredienteUtilizarSostenimi"
+                    android:id="@+id/checkAlimsostenimientoingredotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Otra (especificar)" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edtAlimsostenimientoingredotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <!-- costo de sostenimiento -->
+
+                <TextView
+                    android:id="@+id/txtAlimsostenimientocosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo ($/kg ó l)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtAlimsostenimientocosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+
+                <!--++++++++++++++++++++++++++++++++++++++ Parte de estimulo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+                <CheckBox
+                    android:onClick="tipoAlimentacionAPi"
+                    android:id="@+id/checkEstimulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="De estimulo" />
+
+
+
+                <TextView
+                    android:id="@+id/txtAlimestimulomeses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Meses en que alimenta a las colonias"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtAlimestimulomeses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtAlimestimuloformas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Formas de alimentar"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:onClick="alimentarEstimulo"
+                    android:id="@+id/checkFormasestimulodirecto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Directo" />
+
+                <CheckBox
+                    android:onClick="alimentarEstimulo"
+                    android:id="@+id/checkFormasestimuloalimentador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Con alimentador" />
+
+                <CheckBox
+                    android:onClick="alimentarEstimulo"
+                    android:id="@+id/checkFormasestimulobolplastico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Bolsas de plástico" />
+
+                <CheckBox
+                    android:onClick="alimentarEstimulo"
+                    android:id="@+id/checkFormasestimulootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edtAlimestimulootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <!-- Ingredientes que utiliza -->
+
+
+                <TextView
+                    android:id="@+id/txtAlimestimuloingred"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Ingredientes que utiliza"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:onClick="ingredienteEstimulo"
+                    android:id="@+id/checkAlimestimuloingredpastcalabaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Pasta de calabaza" />
+
+                <CheckBox
+                    android:onClick="ingredienteEstimulo"
+                    android:id="@+id/checkAlimestimuloingredmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Miel" />
+
+                <CheckBox
+                    android:onClick="ingredienteEstimulo"
+                    android:id="@+id/checkAlimestimuloingredpolen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Polen" />
+
+                <CheckBox
+                    android:onClick="ingredienteEstimulo"
+                    android:id="@+id/checkAlimestimuloingredsoya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Pasta de soya" />
+
+                <CheckBox
+                    android:onClick="ingredienteEstimulo"
+                    android:id="@+id/checkAlimestimuloingredotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:textSize="15sp"
+                    android:text="Otra (especificar)" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edtAlimestimuloingredotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <!-- costo de estimulo -->
+
+                <TextView
+                    android:id="@+id/txtAlimestimulocosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo ($/kg ó l)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtAlimestimulocosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++Preguntas de ingredientes (tabla)+++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtingredalimcantcolonia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="En cuanto a los ingredientes, ¿Qué cantidades utiliza?"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:onClick="cantidadesIngredientes"
+                    android:id="@+id/checkAlimingmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp"
+                    android:text="Miel (l)" />
+
+                <TextView
+                    android:id="@+id/txtAlimingmielcantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Cantidad por colonia"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:id="@+id/txtAlimingmielcosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Costo ($/kg ó l)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+
+                <CheckBox
+                    android:onClick="cantidadesIngredientes"
+                    android:id="@+id/checkAlimingazucar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp"
+                    android:text="Azúcar en polvo (kg)" />
+
+                <TextView
+                    android:id="@+id/txtAlimingazucarcantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Cantidad por colonia"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:id="@+id/txtAlimingazucarcosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Costo ($/kg ó l)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <CheckBox
+                    android:onClick="cantidadesIngredientes"
+                    android:id="@+id/checkAlimingjarabe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp"
+                    android:text="Jarabe de azúcar (l)" />
+
+                <TextView
+                    android:id="@+id/txtAlimingjarabecantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Cantidad por colonia"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:id="@+id/txtAlimingjarabecosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Costo ($/kg ó l)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <CheckBox
+                    android:onClick="cantidadesIngredientes"
+                    android:id="@+id/checkAlimingpolen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp"
+                    android:text="Polen (gr)" />
+
+                <TextView
+                    android:id="@+id/txtAlimingpolencantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Cantidad por colonia"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:id="@+id/txtAlimingpolencosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Costo ($/kg ó l)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <CheckBox
+                    android:onClick="cantidadesIngredientes"
+                    android:id="@+id/checkAlimingharinas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp"
+                    android:text="Harinas (kg)" />
+
+                <TextView
+                    android:id="@+id/txtAlimingharinascantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Cantidad por colonia"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:id="@+id/txtAlimingharinascosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:text="Costo ($/kg ó l)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ing_api_5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+
+
+
+            <!-- razones de no alimentar la colonia -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtApiexpcondicnoalimentcol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿En caso de no alimentar las colonias explique las razones?"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="alimentarColonias"
+                        android:id="@+id/radioNoalimcoldesconocimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Desconocimiento" />
+
+                    <RadioButton
+                        android:onClick="alimentarColonias"
+                        android:id="@+id/radioNoalimcolcostos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Costos" />
+
+                    <RadioButton
+                        android:onClick="alimentarColonias"
+                        android:id="@+id/radioNoalimcoldisponibilidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Disponibilidad" />
+
+                    <RadioButton
+                        android:onClick="alimentarColonias"
+                        android:id="@+id/radioNoalimcolotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtNoalimcolotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/apicola_next_alimentacion"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

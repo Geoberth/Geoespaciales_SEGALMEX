@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Productor.IntegranteFamilia">
+
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtEncIntegrante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAMILIA - INTEGRANTE"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+             <!--   <TextView
+                    android:id="@+id/txtMostrarProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Productor: "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtNombprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="nombre"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMostrarFol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Folio: "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtFolprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="folio"
+                    android:textSize="15sp" />
+                    -->
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textSexoInt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioSexmasc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickSexointegrante"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Masculino" />
+
+                    <RadioButton
+                        android:id="@+id/radioSexfem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickSexointegrante"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Femenino" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textEdadInt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edad"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtEdadInt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="number"/>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textLeerInt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Sabe leer y escribir?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioLeeint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickLeerescribir"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioNoleeint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickLeerescribir"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtGradoestudiosint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="¿Qué nivel de estudios tiene?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/idSpgradoestint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/grado_estudios"
+                android:prompt="@string/grado_prompt"
+                android:spinnerMode="dropdown" />
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linSituacestudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textSituacestudiosint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuál es la situación de su nivel de estudios?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioCompletoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickSituacionestudios"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Completo" />
+
+                    <RadioButton
+                        android:id="@+id/radioIncompletoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickSituacionestudios"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Trunco" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textLenguaorigint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Usted habla alguna lengua originaria?"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioLenguaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickHablalenguaorig"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioNolenguaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickHablalenguaorig"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/txtLenguaordint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:text="¿Qué lengua originaria habla?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/isSpinLengorigint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/combo_lengua"
+                android:prompt="@string/lenguaorig_prompt"
+                android:spinnerMode="dialog" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textPartupfint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Participa en las actividades de la UPF?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioParticipaInt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickParticipacionupf"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Sí" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioNoparticipaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickParticipacionupf"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textLaborInt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿A qué se dedica el integrante de la familia?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RadioButton
+                        android:id="@+id/radioEstudiaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickDedicaintegrante"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Estudia" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioTrabajaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickDedicaintegrante"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="Trabaja" />
+
+                    <RadioButton
+                        android:id="@+id/radioNoaplicaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickDedicaintegrante"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:text="No aplica" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textIngresoupfint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cuál es el ingreso mensual ($) de las actividades en la UPF?"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtIngresointupf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=""
+                android:inputType="number" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textOtroingupfint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingreso extra mensual $"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtOtroingintupf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=""
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/btnGuardarInt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:textSize="15sp"
+                android:text="GUARDAR INTEGRANTE" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

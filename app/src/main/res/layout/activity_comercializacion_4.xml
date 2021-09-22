@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.comercializacion_4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!--esto es un label-->
+            <TextView
+                android:text="PRODUCCIÓN DE LECHE"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Seleccione su producción"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Spinner
+                android:id="@+id/spn_prd_lec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuánta leche se produce? (l/año)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_lec_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuánta leche de destina al autoconsumo? (l/año)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_lec_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuánta leche se destina para procesar? (l/año)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_lec_dest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuánta leche se vende? (l/año)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_lec_vnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio promedio ($/l)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_lec_prc_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <TextView
+                android:text="Meses del año que vende"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enero"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Febrero"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marzo"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abril"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mayo"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Junio"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Julio"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agosto"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Septiembre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Octubre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noviembre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta"
+                android:id="@+id/ck_mes_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diciembre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <!--esto es un label-->
+            <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <LinearLayout
+                android:id="@+id/ln_caprino_cmr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+            <TextView
+                android:id="@+id/id_text_caprino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿A quién le vende leche? (%)(Caprino)"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_cap_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Queseros "
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_cpr_1"
+                    android:hint="%"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_cap_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Industria"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_cpr_2"
+                    android:hint="%"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_cap_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consumidor"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_cpr_3"
+                    android:hint="%"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_cap_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro (Especifique)"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_otr_lec_cari"
+                    android:hint="Especifique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_cpr_4"
+                    android:hint="%"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!--esto es un label-->
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <LinearLayout
+            android:id="@+id/ln_bovino_cmr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿A quién le vende leche? (%) (Bovino)"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_bov_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liconsa"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_bov_1"
+                android:hint="%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_bov_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Industria"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_bov_2"
+                android:hint="%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_bov_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Queseros"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_bov_3"
+                android:hint="%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_bov_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediario"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_bov_4"
+                android:hint="%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_bov_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consumidor"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_bov_5"
+                android:hint="%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_vnt_lec_bov_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro (especifique)"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:maxLines="1"
+                android:enabled="true"
+                android:id="@+id/edt_otr_lec_bovi"
+                android:hint="Especifique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_bov_6"
+                android:hint="%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_otr_pro_lec"
+                android:text="AGREGAR OTRO PRODUCTO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_marginTop="16dp"
+                android:id="@+id/cr4"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.FuenteAgua">
+
+
+    <LinearLayout
+        android:id="@+id/ln_agua_si"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Especifique la fuente de agua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/fun_agua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <!-- Rios ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/ln_rios"
+            android:layout_marginLeft="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_rios"
+                android:text="Indique fuente de agua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Para la agricultura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="agriRios"
+                    android:id="@+id/rd_agr_ri_si"
+                    android:text="Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="agriRios"
+                    android:id="@+id/rd_agr_ri_no"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Para el ganado en el agostadero o pastizal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="ganaRios"
+                    android:id="@+id/rd_gn_ri_si"
+                    android:text="Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="ganaRios"
+                    android:id="@+id/rd_gn_ri_no"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Para el ganado en los corrales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="corralRios"
+                    android:id="@+id/rd_cr_ri_si"
+                    android:text="Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="corralRios"
+                    android:id="@+id/rd_cr_ri_no"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/btn_fun_agua"
+            android:text="Agregar otra fuente de Agua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_marginTop="100dp"
+        android:id="@+id/fab_next_pro_fue_agu"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Siguiente"
+        app:iconPadding="20dp"
+        app:icon="@android:drawable/ic_input_add"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

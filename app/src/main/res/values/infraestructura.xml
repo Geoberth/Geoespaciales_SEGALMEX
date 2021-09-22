@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="infraestructura">
+        <item>Seleccione una opcion</item>
+        <item>Cerco eléctrico</item>
+        <item>Comederos</item>
+        <item>Bebederos</item>
+        <item>Baño garrapaticida</item>
+        <item>Silos</item>
+        <item>Corrales</item>
+        <item>Sala de ordeña</item>
+        <item>Manga</item>
+        <item>Trampa</item>
+        <item>Termo de inseminación</item>
+        <item>Trasquiladora</item>
+        <item>Yunta</item>
+        <item>Tractor</item>
+        <item>Subsolador</item>
+        <item>Arado</item>
+        <item>Rastra</item>
+        <item>Surcadora</item>
+        <item>Sembradora</item>
+        <item>Empacadora</item>
+        <item>Sistema de riego</item>
+        <item>Aspersora de mochila</item>
+        <item>Aspersora mecánica</item>
+        <item>Báscula </item>
+        <item>Remolque</item>
+        <item>Bodega</item>
+        <item>Canal de riego</item>
+        <item>Pozo </item>
+        <item>Jagüey</item>
+        <item>Camioneta</item>
+        <item>Molino</item>
+        <item>Cosechadora</item>
+        <item>Camión</item>
+        <item>Bomba de agua</item>
+        <item>Trilladora</item>
+        <item>Segadora</item>
+        <item>Picadora</item>
+        <item>Molino de martillo</item>
+        <item>Ensiladora</item>
+        <item>Ordeñadora mecánica </item>
+        <item>Cubetas con pezoneras</item>
+        <item>Tinas de cuajo</item>
+        <item>Tanque enfriador</item>
+        <item>Descremadora</item>
+        <item>Pasteurizadora</item>
+        <item>Aspersora de motor</item>
+        <item>Equipo de cómputo </item>
+        <item>Otro</item>
+    </string-array>
+
+    <string name="infraestructura_prompt">Tipo de relacion</string>
+
+</resources>

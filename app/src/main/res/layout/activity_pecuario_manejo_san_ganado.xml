@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.PecuarioManejoSanGanado">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="MANEJO SANITARIO DEL GANADO "
+                android:textSize="19sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Participa en alguna campaña zoosanitaria?  "
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocampaniasanitariasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcampaniazoo"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocampaniasanitariano"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcampaniazoo"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:id="@+id/lncampsan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sí (Especificar)"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariocampaniasanitariatuberculosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcampaniapartic"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Tuberculosis bovina" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariocampaniasanitariarabia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcampaniapartic"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Rabia paralítica" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariocampaniasanitariagarrapata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcampaniapartic"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Garrapata" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariocampaniasanitariabrucelosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcampaniapartic"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Brucelosis" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariocampaniasanitariaotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickcampaniapartic"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Otra" />
+
+
+                        <EditText
+                            android:id="@+id/edtPecuariocampaniasanitariaotra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="75dp"
+                            android:ems="10"
+                            android:inputType="text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- programa de vacunación establecido -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Tiene algún programa de vacunación establecido? "
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuarioprogramavacsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramavacunacion"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuarioprogramavacno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramavacunacion"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+
+                <LinearLayout
+                    android:id="@+id/lnprogvac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sí (Especificar)"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuarioprogramavacneumonia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramasvacunac"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Neumonía" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuarioprogramavacdoblesepcarb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramasvacunac"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Doble (septicemia + Carbón)" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuarioprogramavactriplesepcarbedema"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramasvacunac"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="triple (Septicemia + Carbón + Edema)" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuarioprogramavacclost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramasvacunac"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Clostridiasis (ocho vías o más)" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuarioprogramavacder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramasvacunac"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Derriengue" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuarioprogramavaclep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramasvacunac"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Leptospira" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuarioprogramavacotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickprogramasvacunac"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Otra" />
+
+
+                        <EditText
+                            android:id="@+id/edtPecuarioprogramavacotr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="75dp"
+                            android:ems="10"
+                            android:inputType="text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- control de garrapata -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Realiza algún control de la garrapata? "
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocontrolgarrapatasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickctrlgarrapata"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocontrolgarrapatano"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickctrlgarrapata"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/lncontgarrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sí (Especificar)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocontrolgarrapatabanio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickselctrlgarrapata"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Baño" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocontrolgarrapatapour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickselctrlgarrapata"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Pour on (lomo)" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocontrolgarrapatainyectado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickselctrlgarrapata"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Inyectado" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariocontrolgarrapataotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickselctrlgarrapata"
+                        android:layout_marginLeft="65dp"
+                        android:textSize="15sp"
+                        android:text="Otra" />
+
+
+                        <EditText
+                            android:id="@+id/edtPecuariocontrolgarrapataotra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="75dp"
+                            android:ems="10"
+                            android:inputType="text"/>
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo por control $/servicio"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecuariocontrolgarrapatacosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <!-- Análisis para determinar parásitos internos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Realiza análisis para determinar parásitos internos?"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuarioanalisisparasitosi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickanalidetermparasitos"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuarioanalisisparasitono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickanalidetermparasitos"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+
+
+            <!-- frecuencia desparasita ganado -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Con qué frecuencia desparasita a su ganado?"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariodesparasitaranio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickfrecuencdespganado"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Una vez al año" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariodesparasitarseismeses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickfrecuencdespganado"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Cada seis meses" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariodesparasitarmes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickfrecuencdespganado"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Una vez al mes " />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariodesparasitarnunca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickfrecuencdespganado"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Nunca" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariodesparasitarotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickfrecuencdespganado"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                        <EditText
+                            android:id="@+id/edtPecuariodesparasitarotra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="75dp"
+                            android:hint="Especificar"
+                            android:ems="10"
+                            android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+            <!-- Indique problemas sanitarios presentado ganado -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Indique los problemas sanitarios que se han presentado en su ganado: "
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoperiparto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Peri parto: retención de placenta, metritis, piometra" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoaborto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Abortos" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadodiarrea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diarreas" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadosepticem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Septicemias" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoenfrespiratorias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enfermedades respiratorias " />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadomastitis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mastitis" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadorabiader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Rabia (derriengue)" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadooculares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Oculares (conjuntivitis)" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadogarrabos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Gabarro " />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoectima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Ectima contagioso (ovinos y caprinos)" />
+
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoparasitarias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Parasitarias asociadas con la garrapata " />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadootroesp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemassangan"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:id="@+id/edtSanganadootroesp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="75dp"
+                        android:hint="Especificar"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- causas desecho de animales -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuáles son las causas de desecho de animales?"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadobajafertilidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcausasdesechanim"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Baja fertilidad" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoedad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcausasdesechanim"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Edad" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadobajaproduccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcausasdesechanim"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Baja producción (leche, partos, destetes)" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoenfermedad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcausasdesechanim"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enfermedades" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadotemperamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcausasdesechanim"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Temperamento" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoprobpatas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcausasdesechanim"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Problemas de patas" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadodesotra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickcausasdesechanim"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:id="@+id/edtSanganadodesotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="75dp"
+                        android:hint="Especificar"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- principales problemas que le aquejan en el área de salud -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Señale los principales problemas que le aquejan en el área de salud: "
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadocostomedicamentos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareasalud"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo de medicamentos e insumos veterinarios" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadocapaccontrolenferm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareasalud"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Capacitación para control de enfermedades" />
+
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoregistroinformacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareasalud"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Registro de información" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadodisponveter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareasalud"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Disponibilidad de Veterinario " />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadocostoveterinario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareasalud"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo del veterinario" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadodiagsintomas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareasalud"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diagnóstico de síntomas básicos" />
+
+                <CheckBox
+                    android:id="@+id/checkSanganadoprobotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblemareasalud"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:id="@+id/edtSanganadoprobotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="75dp"
+                        android:hint="Especificar"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+            </LinearLayout>
+
+
+
+
+            <!--
+            <Button
+                android:id="@+id/pecuario_next_manejo_ganado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente" /> -->
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_manejo_ganado"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

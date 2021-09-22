@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.ProduccionForestal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRODUCCION FORESTAL" />
+
+        <TextView
+            android:id="@+id/ext_madera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:text="Extracción de maderas (Sup. Ha)" />
+
+        <EditText
+            android:id="@+id/ext_madera_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:hint="(Sup. Ha)"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/ext_madera_nomaderables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:text="Extracción de no maderables (resinas, follajes, semillas etc.) (Sup. Ha)" />
+
+        <EditText
+            android:id="@+id/ext_madera_nomaderables_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:hint="(Sup. Ha)"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/recoleccion_medicinales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:text="Recolección de plantas medicinales o especies (Sup. Ha)" />
+
+        <EditText
+            android:id="@+id/recoleccion_medicinales_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:hint="(Sup. Ha)"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/otro_forestal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:text="Otro (Especificar)" />
+
+        <EditText
+            android:id="@+id/otro_forestal_actividad_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:hint="Especificar Actividad"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/otro_forestal_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:enabled="false"
+            android:hint="(Sup. Ha)"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/otro_forestal_edit_nm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:clickable="true"
+            android:hint="Especifique actividad"
+            android:maxLines="1" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_next_pro_fores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:text="Siguiente"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconPadding="20dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="infraestructura_condicion">
+        <item>Buena</item>
+        <item>Regular </item>
+        <item>Mala</item>
+    </string-array>
+
+    <string name="infracondicion_prompt">Tipo de relacion</string>
+</resources>

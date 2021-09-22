@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Estados">
+        <item>ESTADO DE MÉXICO</item>
+        <item>CHIHUAHUA</item>
+        <item>JALISCO</item>
+        <item>SONORA</item>
+        <item>TAMAULIPAS</item>
+        <item>OAXACA</item>
+        <item>VERACRUZ</item>
+        <item>YUCATÁN</item>
+    </string-array>
+</resources>

@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.ReproduccionApicola">
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REPRODUCCIÓN"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodenjambrazon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Ha habido enjambrazón en su apiario? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="enjmbraApiario"
+                        android:id="@+id/radioSienjambrazon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="enjmbraApiario"
+                        android:id="@+id/radioNoenjambrazon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <!-- catalogo de mes de enjambrazon -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtReprodmesenjambrazon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿En qué mes ha habido enjambrazón en su apiario?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/idSpinfrecasistenctecnica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+
+
+            <!-- Division de enjambre (colonias) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReproddiviscolonias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Ha realizado la división de sus colonias?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="revisionColonias"
+                        android:id="@+id/radioSidivisioncolonias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="revisionColonias"
+                        android:id="@+id/radioNodivisioncolonias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!-- Caracteristicas para division de colonias -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodcaractdivicolonias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Usted qué características considera, para realizar la división de colonias?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="caracteristicasDivColonias"
+                        android:id="@+id/radioRepdivisionbuenareina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Buena reina" />
+
+                    <RadioButton
+                        android:onClick="caracteristicasDivColonias"
+                        android:id="@+id/radioRepdivisionpobabundante"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Población abundante" />
+
+                    <RadioButton
+                        android:onClick="caracteristicasDivColonias"
+                        android:id="@+id/radioRepdivisionexistprovmiel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Existencia de provisiones abundantes de miel" />
+
+                    <RadioButton
+                        android:onClick="caracteristicasDivColonias"
+                        android:id="@+id/radioRepdivisionconepoca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Conocer la época según la región" />
+
+                    <RadioButton
+                        android:onClick="caracteristicasDivColonias"
+                        android:id="@+id/radioRepdivisionotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otros (especificar)	" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtRepdivisionotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!-- Actualmente captura de enjambres -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodcaptenjambres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Actualmente captura enjambres? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="capturaEnjambres"
+                        android:id="@+id/radioSirepcaptenjambres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="capturaEnjambres"
+                        android:id="@+id/radioNorepcaptenjambres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!-- Razon de captura de enjambres -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodactcaptenjambres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Explique la razón para capturar enjambres?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="razonCapturaEnjambre"
+                        android:id="@+id/radioReprodactcaptcreccolmena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Crecimiento de la colmena" />
+
+                    <RadioButton
+                        android:onClick="razonCapturaEnjambre"
+                        android:id="@+id/radioReprodactcapteconomica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Económicos" />
+
+                    <RadioButton
+                        android:onClick="razonCapturaEnjambre"
+                        android:id="@+id/radioReprodactcaptotros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otros (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtReprodactcaptotros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!-- Aprovechar de captura del enjambre -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodactcaptenjaprov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué aprovecha de la captura del enjambre? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="aprovechamientoEjambre"
+                        android:id="@+id/radioReprodactcaptenjaprovmiel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="La miel" />
+
+                    <RadioButton
+                        android:onClick="aprovechamientoEjambre"
+                        android:id="@+id/radioReprodactcaptenjaprovcera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="La cera" />
+
+                    <RadioButton
+                        android:onClick="aprovechamientoEjambre"
+                        android:id="@+id/radioReprodactcaptenjaprovnucabe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Núcleo de abejas" />
+
+                    <RadioButton
+                        android:onClick="aprovechamientoEjambre"
+                        android:id="@+id/radioReprodactcaptenjaprovotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otros (especificar)" />
+
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtReprodactcaptenjaprovotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <!-- Union de colmenas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodunioncolm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Usted ha unido colmenas? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="unionColmenas"
+                        android:id="@+id/radioSireprodunioncolm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="unionColmenas"
+                        android:id="@+id/radioNoreprodunioncolm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!-- Actividades para la unión de colmenas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodunioncolmactiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Explique qué actividades realiza para unir colmenas?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="actividadesUnirColmenas"
+                        android:id="@+id/radioReprodunioncolmactivcolmdeb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Colmenas débiles" />
+
+                    <RadioButton
+                        android:onClick="actividadesUnirColmenas"
+                        android:id="@+id/radioReprodunioncolmactivperdreina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Perdida de reina" />
+
+                    <RadioButton
+                        android:onClick="actividadesUnirColmenas"
+                        android:id="@+id/radioReprodunioncolmactivotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otra (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtReprodunioncolmactivotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <!-- Actualmente cambio de reinas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodcambioreina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Actualmente cambia sus reinas?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="actualmenteReinas"
+                        android:id="@+id/radioSireprodcambioreina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="actualmenteReinas"
+                        android:id="@+id/radioNoreprodcambioreina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!-- Objetivo de cambio de reinas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodobjcambioreina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Explique cuál es el objetivo de cambiar las reinas?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="objetivoCambioReinas"
+                        android:id="@+id/radioReprodobjcambioreinarencolm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Renovar la colmena" />
+
+                    <RadioButton
+                        android:onClick="objetivoCambioReinas"
+                        android:id="@+id/radioReprodobjcambioreinaevitcons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Evitar consanguineidad" />
+
+                    <RadioButton
+                        android:onClick="objetivoCambioReinas"
+                        android:id="@+id/radioReprodobjcambioreinaotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otra: (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtReprodobjcambioreinaotra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <!-- Tiempo en cambio de reinas -->
+            <TextView
+                android:id="@+id/txtReptiempocambioreinas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="¿Cada cuándo acostumbra cambiarlas?"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtReptiempocambioreinas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+
+
+
+            <!-- De donde obtiene reinas para el apiario -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtReprodobtienereinasapi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿De dónde obtiene las reinas que utiliza en su apiario? "
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="obtieneReinas"
+                        android:id="@+id/radioReprodobtienereinasproduceapi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Las produce en su apiario" />
+
+                    <RadioButton
+                        android:onClick="obtieneReinas"
+                        android:id="@+id/radioReprodobtienereinascompnocertifapi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Las compras en apiarios no certificados" />
+
+                    <RadioButton
+                        android:onClick="obtieneReinas"
+                        android:id="@+id/radioReprodobtienereinascompcertifapi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Las compras en apiarios certificados" />
+
+                    <RadioButton
+                        android:onClick="obtieneReinas"
+                        android:id="@+id/radioReprodobtienereinasprodcompapi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Parte produce parte compra" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <!-- si compra, cual es el costo -->
+            <TextView
+                android:id="@+id/txtReprodobtienereinasapicosto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Si las compra, cuál es el costo?"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtReprodobtienereinasapicosto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/apicola_next_reproduccion"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_chihuahua">
+        <item>BALLEZA</item>
+        <item>BATOPILAS DE MANUEL GOMEZ MORIN</item>
+        <item>CARICHI</item>
+        <item>CHINIPAS</item>
+        <item>MADERA</item>
+        <item>MAGUARICHI</item>
+        <item>MORIS</item>
+        <item>NONOAVA</item>
+        <item>TEMOSACHIC</item>
+        <item>URUACHI</item>
+        <item>BOCOYNA</item>
+        <item>GUACHOCHI</item>
+        <item>GUADALUPE Y CALVO</item>
+        <item>GUAZAPARES</item>
+        <item>MORELOS</item>
+        <item>URIQUE</item>
+    </string-array>
+</resources>

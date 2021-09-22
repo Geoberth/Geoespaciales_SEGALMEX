@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.FertilizanteSi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:text="Indicar tipo de fertilizante químico y/u orgánico." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fertilizantes y/o abonos aplicados" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edit_fer_fe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fechas de aplicación" />
+
+            <EditText
+                android:inputType="date"
+                android:id="@+id/edit_fc_fe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantidad ( I ó kg / ha)" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edit_can_fe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Costo de fertilizante" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edit_cost_fer_fe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="($/l o Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Núm. de jornales" />
+
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edit_nm_jor_fe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Método de aplicación" />
+
+            <!--
+            <EditText
+                android:id="@+id/edit_mt_ap__fe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    -->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/edt_met_rad_fer"
+                android:onClick="metodoAplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Radicular" />
+
+            <RadioButton
+                android:id="@+id/edt_met_fer_fer"
+                android:onClick="metodoAplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fertirrigación" />
+
+            <RadioButton
+                android:id="@+id/edt_met_sue_fer"
+                android:onClick="metodoAplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Al suelo" />
+
+            <RadioButton
+                android:id="@+id/edt_met_fol_fer"
+                android:onClick="metodoAplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foliar" />
+            </RadioGroup>
+            <!--
+            <RadioButton
+                android:id="@+id/rd_met_otr_fer"
+                android:onClick="metodoAplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otro" />
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/edt_met_otr_fer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Otro metodo de aplicacion" />
+
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="@dimen/margen_titulo_top"
+                    android:id="@+id/btn_oto_fet_fe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Agregar Otro Fertilizante" />
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_fet_fe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="26dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

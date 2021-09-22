@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="grado_estudios">
+        <item>Ninguno</item>
+        <item>Preescolar</item>
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Preparatoria o bachillerato</item>
+        <item>Licenciatura</item>
+    </string-array>
+    <string name="grado_prompt">Selecciona grado estudios</string>
+</resources>

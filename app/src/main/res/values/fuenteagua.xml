@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fuenteagua">
+        <item>Especifique una fuente de agua</item>
+        <item>Ríos</item>
+        <item>Arroyos</item>
+        <item>Manantial</item>
+        <item>Presas</item>
+        <item>Pozo</item>
+        <item>Laguna</item>
+        <item>Toma domiciliaria</item>
+        <item>Olla de agua</item>
+        <item>Bordo de almacenamiento</item>
+        <item>Planta de tratamiento de aguas residuales</item>
+    </string-array>
+</resources>

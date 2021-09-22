@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.comercializacion_7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:text="¿Aplica algún proceso de conservación o transformación?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almacenamiento"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpieza"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refrigeración"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congelación"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cocción"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empaquetado"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curación"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAP8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secado"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_apl_pr_cns_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($/Kg)"
+                android:inputType="numberDecimal" />
+
+            <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+            <TextView
+                android:text="¿Cuáles son los principales productos con valor agregado que cree que le incrementarían sus ingresos?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <CheckBox
+                android:onClick="prinProdIncremIngresos"
+                android:id="@+id/ck_pro_ing_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Embutidos (jamón, salchicha…)"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="prinProdIncremIngresos"
+                android:id="@+id/ck_pro_ing_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crema"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="prinProdIncremIngresos"
+                android:id="@+id/ck_pro_ing_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quesos"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="prinProdIncremIngresos"
+                android:id="@+id/ck_pro_ing_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yogurt"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="prinProdIncremIngresos"
+                android:id="@+id/ck_pro_ing_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harina"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:id="@+id/ck_pro_ing_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="prinProdIncremIngresos"
+                android:text="Otro"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:enabled="false"
+                android:id="@+id/edt_pro_sie_cm"
+                android:hint="Especificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_marginTop="16dp"
+                android:id="@+id/cr7"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

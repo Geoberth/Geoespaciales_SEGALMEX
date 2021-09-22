@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.InventarioGanCaprino">
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ESTRUCTURA DEL HATO"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INVENTARIO GANADO CAPRINO"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+
+
+
+
+            <!-- Tabla inventario ganadero bovino leche -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuál es la estructura del hato ganadero de caprinos? "
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinosemental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Sementales" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinosementalcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinosementalcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinosementalvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinosementalvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinocabraslactancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:visibility="gone"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cabras en lactación" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabraslactanciacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabraslactanciacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabraslactanciavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabraslactanciavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinocabraseca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cabras secas" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabrasecacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabrasecacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabrasecavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabrasecavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+
+
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinocabrasservicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cabras del servicio al primer parto" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabrasserviciocabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabrasserviciocabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabrasserviciovalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabrasserviciovalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinocabradesarrollo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cabras en desarrollo (destete a servicio)" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabradesarrollocabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabradesarrollocabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabradesarrollovalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabradesarrollovalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinocabritaslact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cabritas lactantes (sin destetar)" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabritaslactcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabritaslactcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabritaslactvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabritaslactvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinocabritoslact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cabritos lactantes (sin destetar)" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabritoslactcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabritoslactcabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabritoslactvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabritoslactvalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+
+                <CheckBox
+                    android:id="@+id/checkGanadocaprinocabritoengorda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickGanadocaprino"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cabritos en engorda" />
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabritoengordacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Núm. cabezas"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabritoengordacabezas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Cantidad"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/txtGanadocaprinocabritoengordavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:text="Valor actual del animal ($/cabeza)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edtGanadocaprinocabritoengordavalor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:hint="Precio"
+                        android:inputType="number"/>
+
+
+            </LinearLayout>
+
+
+
+            <!-- explotacion de ganado caprino -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuál es el tipo de explotación?"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioGanadocaprinoexplotacinten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickGanadocapexplotac"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Intensiva" />
+
+                    <RadioButton
+                        android:id="@+id/radioGanadocaprinoexplotacsemiexten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickGanadocapexplotac"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Semi-extensiva" />
+
+                    <RadioButton
+                        android:id="@+id/radioGanadocaprinoexplotacexten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickGanadocapexplotac"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Extensiva" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_inventario_gan_caprino"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="produccion_leche">
+        <item>Seleccione una opcion</item>
+        <item>Caprino</item>
+        <item>Bovino</item>
+    </string-array>
+</resources>

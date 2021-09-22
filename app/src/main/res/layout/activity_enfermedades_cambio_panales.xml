@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.EnfermedadesCambioPanales">
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENFERMEDADES CAMBIO PANALES"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <!-- seleccion de enfermedades -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtEnfermedadescambpanales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enfermedades en cambio de panales"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="enfermCambioPanales"
+                        android:id="@+id/radioEnfermedadescambpanalesvarroa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Varroa" />
+
+                    <RadioButton
+                        android:onClick="enfermCambioPanales"
+                        android:id="@+id/radioEnfermedadescambpanalesloques"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Loques" />
+
+                    <RadioButton
+                        android:onClick="enfermCambioPanales"
+                        android:id="@+id/radioEnfermedadescambpanalesotros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtEnfermedadescambpanalesotros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <!-- Seleccion de consideracion de enfermedades -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtEnfermedadescambpanalesconsiderac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consideración de la enfermedades"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="consldProblemGrave"
+                        android:id="@+id/radioEnfcambpanalconsideracprobmatacolonia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Es un problema serio que mata a la colonia" />
+
+                    <RadioButton
+                        android:onClick="consldProblemGrave"
+                        android:id="@+id/radioEnfcambpanalconsideracdismproducmiel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Disminuye la producción de miel, pero no mata la colonia" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <!-- Parte de medicamentos para tratar enfermedad -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtEnfermedadescambpanalesmedic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medicamento"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedapist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Apistan" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedbayv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Bayvarol" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedacform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Acido fórmico" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedelzang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Elimina la cría de zánganos" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedaphumos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Aplica humos" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedtabmed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Tablitas medicadas" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedcolmes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Colmesan" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedtimol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Timol" />
+
+                    <RadioButton
+                        android:onClick="medicamentoAPicultura"
+                        android:id="@+id/radioEnfermedadescambpanalesmedotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtEnfermedadescambpanalesmedotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:inputType="text"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtEnfermedadescambpanalesmedcostos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Costos ($/medicamento)"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtEnfermedadescambpanalesmedcostos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+
+
+            <TextView
+                android:id="@+id/txtEnfermedadescambpanalesmedperaplic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Periodos de aplicación"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtEnfermedadescambpanalesmedperaplic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+
+            <Button
+                android:id="@+id/btn_otr_enf_api"
+                android:text="AGREGAR OTRA ENFERMEDAD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/apicola_next_enfermedad_panales"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="25dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

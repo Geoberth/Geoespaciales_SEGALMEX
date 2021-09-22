@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.PecuarioReproduccionGenetica">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="REPRODUCCIÓN Y GENÉTICA"
+                android:textSize="19sp" />
+
+
+
+
+
+            <!-- inicia la tabla de practicas de manejo reproductivo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccione las prácticas de manejo reproductivo que se realizan en su Unidad de Producción."
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecumontalibre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Monta libre" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecumontalibre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecumontacontrolada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Monta controlada" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecumontacontrolada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecuinseminacionart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Inseminación artificial" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecuinseminacionarta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecumontaeinseminacionart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Monta controlada e Inseminación artificial" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecumontaeinseminacionart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecusincrohermbras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Sincronización de hembras" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecusincrohermbras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecudiaggestac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diagnóstico de gestación" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecudiaggestac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecuevafertilsemntales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Evaluación de fertilidad de sementales" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecuevafertilsemntales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecuinseminacporproductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Realiza inseminación artificial, la hace el productor o una persona ajena al rancho" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecuinseminacporproductor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkReproductgenpecuotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickpractmanreproduct"
+                    android:layout_marginLeft="25dp"
+                    android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecuotroespec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Especificar otro"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+                    <EditText
+                        android:id="@+id/edtReproductgenpecuotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="50dp"
+                        android:hint="Costo ($/servicio)"
+                        android:ems="10"
+                        android:inputType="text"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <!-- inicia la tabla problemas aquejan reproducción y genética -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Señale los principales problemas que le aquejan en el área de reproducción y genética."
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Reproducción"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticapocospartos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblrepgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Pocos partos al año" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticahembrasnocargan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Las hembras tardan mucho en cargar después del parto" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticaabortos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblrepgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Abortos" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticacostotec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblrepgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo de tecnología (inseminación, etc.)" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticanocapacitac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblrepgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Capacitación (No tiene o es insuficiente)" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticapocadispon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblrepgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Poca disponibilidad de técnicos o expertos " />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticaotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblrepgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:id="@+id/edtProblemasreproducgeneticaotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:hint="Especificar"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+
+
+
+                <!-- Empieza genética -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Genética"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticaevaluacsem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Evaluación de sementales" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticaadaptganado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Adaptación del ganado" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticacapcruzas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Capacitación para realizar cruzas" />
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticasemcalidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Disponibilidad de semen de calidad" />
+
+
+                <CheckBox
+                    android:id="@+id/checkProblemasreproducgeneticaotrogen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickproblgenetica"
+                    android:layout_marginLeft="50dp"
+                    android:text="Otro (especificar)" />
+
+                    <EditText
+                        android:id="@+id/edtProblemasreproducgeneticaotrogen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="65dp"
+                        android:ems="10"
+                        android:inputType="text"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <!--
+            <Button
+                android:id="@+id/pecuario_next_reproduccion_gen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente" /> -->
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_reproduccion_gen"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

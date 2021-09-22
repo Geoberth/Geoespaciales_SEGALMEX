@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frutales.frutales_1">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. CARACTERIZACIÓN DE FRUTALES"
+                    android:textSize="20dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:text="¿Qué frutal tiene establecido?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spn_frt_frt_stab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:hint="Especifique"
+                    android:id="@+id/edt_otr_frt_sel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Año de establecimiento del frutal?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/car_an_rt_1"
+                    android:hint="(año)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Año de estabilización de la plantación?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/car_an_rt_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="(año)"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es la superficie (ha) plantada total? "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/car_an_rt_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="(ha)"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es la condición de la superficie del frutal?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Nueva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/car_an_rt_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="(ha)"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="En desarrollo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/car_an_rt_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="(ha)"
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="En producción"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/car_an_rt_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="(ha)"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Por qué decidió plantar este frutal?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Spinner
+                    android:id="@+id/spin_cart_mot_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Qué tipo de infraestructura utiliza?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Spinner
+                    android:id="@+id/spin_cart_mot_frt_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:id="@+id/edt_otr_inf_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Su plantación tuvo alguna afectación por siniestro?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="afetacionSinis"
+                        android:id="@+id/rd_aft_si"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        />
+                    <RadioButton
+                        android:onClick="afetacionSinis"
+                        android:id="@+id/rd_aft_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál fue la causa de la superficie siniestrada?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spin_cart_mot_frt_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dialog"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Está asociado con otro cultivo?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:onClick="asociadoCultivoFrut"
+                        android:id="@+id/rd_aso_frt_si"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        />
+                    <RadioButton
+                        android:onClick="asociadoCultivoFrut"
+                        android:id="@+id/rd_aso_frt_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                </RadioGroup>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_aso_frt_si"
+                    android:hint=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál es la fecha de siembra del cultivo asociado?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_fch_cult_frt"
+                    android:hint=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:maxLines="1"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="¿Ha recibido alguna asesoría para establecer otro cultivo? "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:onClick="asesoriaFrut"
+                        android:id="@+id/rd_ase_frt_si"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        />
+                    <RadioButton
+                        android:onClick="asesoriaFrut"
+                        android:id="@+id/rd_ase_frt_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                </RadioGroup>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="¿Cuál?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_ase_frt"
+                    android:hint=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/fr1"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="25dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.ManejoApicola">
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtManejoapi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MANEJO"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:id="@+id/txtApicantcolonias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Actualmente cuántas colonias tiene?"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtApicantcolonias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+
+            <TextView
+                android:id="@+id/txtApicantcapiario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Actualmente cuántos apiarios tiene?"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtApicantapiarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApidestapiario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿A cambiado de lugar su (s) apiario(s)? "
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="cambioApiarios"
+                        android:id="@+id/radioApisicambdest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="cambioApiarios"
+                        android:id="@+id/radioApinocambdest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApidestrazon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Usted por qué cambia de lugar (su)s apiario (s)? "
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="motivoCambioApiario"
+                        android:id="@+id/radioApicambdestprod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Productividad" />
+
+                    <RadioButton
+                        android:onClick="motivoCambioApiario"
+                        android:id="@+id/radioApicambdestfactclim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Factores climatológicos" />
+
+                    <RadioButton
+                        android:onClick="motivoCambioApiario"
+                        android:id="@+id/radioApicambdestservpol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Servicio de polinización" />
+
+                    <RadioButton
+                        android:onClick="motivoCambioApiario"
+                        android:id="@+id/radioApicambdestotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Otro (Especificar)" />
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/edtApicambdestapiariotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtApitiemporevcolon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cada cuándo revisa sus colonias? "
+                android:textSize="15sp"  />
+
+            <EditText
+                android:id="@+id/edtApitiemporevcolon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApicambiopanales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cambia sus panales? "
+                    android:textSize="15sp"  />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="cambioPaneles"
+                        android:id="@+id/radioApisicambpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="cambioPaneles"
+                        android:id="@+id/radioApinocambpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtApitiempocambpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cada cuánto tiempo cambia sus panales? 	"
+                android:textSize="15sp"  />
+
+            <EditText
+                android:id="@+id/edtApitiempocambpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+
+            <TextView
+                android:id="@+id/txtcondcolmenas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cómo son las condiciones donde se ubican sus colmenas?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/idSpincondcolmenas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/txtcondcotro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Especificar"
+                android:textSize="15sp"  />
+
+            <EditText
+                android:id="@+id/edtcondcotro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="1" />
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApiherramabeapi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Actualmente con qué herramientas y equipo de protección cuenta para revisar sus abejas y apiarios?"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/checkHerrahumador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Ahumador"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempoahumador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempoahumador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostoahumador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostoahumador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerralzaprima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Alzaprima"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempoalzaprima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempoalzaprima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostoalzaprima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo $"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostoalzaprima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrvelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Velo"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempovelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempovelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostovelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostovelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrguantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Guantes"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempoguantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempoguantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+
+                <TextView
+                    android:id="@+id/txtcostoguantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostoguantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkHerroverchamarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Overol o Chamarra"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempochamarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempochamarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostochamarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostochamarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrbotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Botas"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempobotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempobotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostobotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostobotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrpalmancuad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Pinzas o palanca de manejo de cuadros"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempopinzas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempopinzas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostopinzas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostopinzas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrcepdesabejar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cepillo para desabejar"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempocepillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempocepillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostocepillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Costo $"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostocepillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrplantaextmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Planta de extracción de miel"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempoextmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempoextmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostoextmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostoextmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrplantapurifmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Planta purificadora de miel"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempopurifmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempopurifmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostopurifmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostopurifmiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrfundcera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Fundidores de cera"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempofundcera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempofundcera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostofundcera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostofundcera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrrejexcreyna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Rejilla excluidoras de reinas"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempoexcreinas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempoexcreinas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostoexcreinas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostoexcreinas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrtrampcazpolen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Trampa caza polen"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempotrampapolen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempotrampapolen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostotrampapolen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostotrampapolen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrapadescveneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Aparato de descarga y colector de veneno"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txttiempocolectorveneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempocolectorveneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtcostocolectorveneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostocolectorveneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <CheckBox
+                    android:id="@+id/checkHerrotro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Otro (Especificar)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtHerrotroo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txttiempootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo de haberlo adquirido (años)"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edttiempootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+
+                <TextView
+                    android:id="@+id/txtcostootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo $"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtcostootro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+-->
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/apicola_next_manejo"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

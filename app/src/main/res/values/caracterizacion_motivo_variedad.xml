@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caracterizacion_motivo_variedad">
+        <item>Seleccione variedad</item>
+        <item>Vigor</item>
+        <item>Sanidad</item>
+        <item>Aspecto</item>
+        <item>Valor económico</item>
+        <item>Otro</item>
+    </string-array>
+
+</resources>

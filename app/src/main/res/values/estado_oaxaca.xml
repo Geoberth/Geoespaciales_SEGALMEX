@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado_oaxaca">
+        <item>ACATLAN DE PEREZ FIGUEROA</item>
+        <item>ASUNCION NOCHIXTLAN</item>
+        <item>AYOTZINTEPEC</item>
+        <item>CANDELARIA LOXICHA</item>
+        <item>COATECAS ALTAS</item>
+        <item>COICOYAN DE LAS FLORES</item>
+        <item>LA COMPAÑIA</item>
+        <item>CONCEPCION BUENAVISTA</item>
+        <item>ELOXOCHITLAN DE FLORES MAGON</item>
+        <item>TAMAZULAPAM DEL ESPIRITU SANTO</item>
+        <item>HUAUTLA DE JIMENEZ</item>
+        <item>SANTA MAGDALENA JICOTLAN</item>
+        <item>MAGDALENA TEQUISISTLAN</item>
+        <item>MARISCALA DE JUAREZ</item>
+        <item>MATIAS ROMERO AVENDAÑO</item>
+        <item>MAZATLAN VILLA DE FLORES</item>
+        <item>MIAHUATLAN DE PORFIRIO DIAZ</item>
+        <item>SAN AGUSTIN LOXICHA</item>
+        <item>SAN ANDRES TEOTILALPAM</item>
+        <item>SAN ANTONIO ACUTLA</item>
+        <item>SAN BALTAZAR LOXICHA</item>
+        <item>SAN BARTOLOME LOXICHA</item>
+        <item>SAN FELIPE JALAPA DE DIAZ</item>
+        <item>SAN FELIPE USILA</item>
+        <item>SAN FRANCISCO CHINDUA</item>
+        <item>SAN FRANCISCO DEL MAR</item>
+        <item>SAN FRANCISCO HUEHUETLAN</item>
+        <item>SAN FRANCISCO JALTEPETONGO</item>
+        <item>SAN FRANCISCO OZOLOTEPEC</item>
+        <item>SAN FRANCISCO TEOPAN</item>
+        <item>SAN JERONIMO COATLAN</item>
+        <item>SAN JERONIMO TECOATL</item>
+        <item>SAN JOSE AYUQUILA</item>
+        <item>SAN JOSE CHILTEPEC</item>
+        <item>SAN JOSE INDEPENDENCIA</item>
+        <item>SAN JOSE TENANGO</item>
+        <item>SAN JUAN BAUTISTA COIXTLAHUACA</item>
+        <item>SAN JUAN BAUTISTA CUICATLAN</item>
+        <item>SAN JUAN BAUTISTA TLACOATZINTEPEC</item>
+        <item>SAN JUAN DIUXI</item>
+        <item>SAN JUAN OZOLOTEPEC</item>
+        <item>SAN LUCAS OJITLAN</item>
+        <item>SAN LUCAS ZOQUIAPAM</item>
+        <item>SAN MARCIAL OZOLOTEPEC</item>
+        <item>SAN MARTIN ZACATEPEC</item>
+        <item>SAN MATEO ETLATONGO</item>
+        <item>SAN MATEO SINDIHUI</item>
+        <item>SAN MATEO TLAPILTEPEC</item>
+        <item>SAN MIGUEL AMATITLAN</item>
+        <item>SAN MIGUEL COATLAN</item>
+        <item>SAN MIGUEL EJUTLA</item>
+        <item>SAN MIGUEL PIEDRAS</item>
+        <item>SAN MIGUEL SOYALTEPEC</item>
+        <item>SAN MIGUEL TEQUIXTEPEC</item>
+        <item>SAN MIGUEL TULANCINGO</item>
+        <item>SAN PABLO COATLAN</item>
+        <item>SAN PEDRO COXCALTEPEC CANTAROS</item>
+        <item>SAN PEDRO IXCATLAN</item>
+        <item>SAN PEDRO NOPALA</item>
+        <item>SAN PEDRO POCHUTLA</item>
+        <item>SAN PEDRO SOCHIAPAM</item>
+        <item>SAN PEDRO TEUTILA</item>
+        <item>SAN PEDRO TIDAA</item>
+        <item>SAN PEDRO Y SAN PABLO TEPOSCOLULA</item>
+        <item>SAN SEBASTIAN COATLAN</item>
+        <item>SANTA CATARINA LOXICHA</item>
+        <item>SANTA MARIA ALOTEPEC</item>
+        <item>SANTA MARIA APAZCO</item>
+        <item>SANTA MARIA LA ASUNCION</item>
+        <item>SANTA MARIA CHACHOAPAM</item>
+        <item>SANTA MARIA GUIENAGATI</item>
+        <item>SANTA MARIA OZOLOTEPEC</item>
+        <item>SANTA MARIA TEXCATITLAN</item>
+        <item>SANTA MARIA TLAHUITOLTEPEC</item>
+        <item>SANTA MARIA TONAMECA</item>
+        <item>SANTA MARIA ZACATEPEC</item>
+        <item>VILLA TEJUPAM DE LA UNION</item>
+        <item>SANTIAGO TILANTONGO</item>
+        <item>SAN VICENTE COATLAN</item>
+        <item>TEOTONGO</item>
+        <item>TEPELMEME VILLA DE MORELOS</item>
+        <item>LA TRINIDAD VISTA HERMOSA</item>
+        <item>SAN JUAN BAUTISTA VALLE NACIONAL</item>
+        <item>YUTANDUCHI DE GUERRERO</item>
+        <item>HEROICA CIUDAD DE EJUTLA DE CRESPO</item>
+        <item>PINOTEPA DE DON LUIS</item>
+        <item>SAN ILDEFONSO VILLA ALTA</item>
+        <item>SAN JUAN TEPEUXILA</item>
+        <item>SAN LORENZO CUAUNECUILTITLA</item>
+        <item>SAN MATEO PEÑASCO</item>
+        <item>SAN MIGUEL CHICAHUA</item>
+        <item>SAN MIGUEL CHIMALAPA</item>
+        <item>VILLA SOLA DE VEGA</item>
+        <item>SAN PEDRO JALTEPETONGO</item>
+        <item>SAN PEDRO JOCOTIPAC</item>
+        <item>SAN PEDRO OCOPETATILLO</item>
+        <item>SAN PEDRO TEOZACOALCO</item>
+        <item>SANTA ANA TLAPACOYAN</item>
+        <item>SANTA CATARINA JUQUILA</item>
+        <item>SANTA CRUZ ACATEPEC</item>
+        <item>SANTA CRUZ ZENZONTEPEC</item>
+        <item>SANTA MARIA CHIMALAPA</item>
+        <item>SANTIAGO APOALA</item>
+        <item>SANTIAGO AYUQUILILLA</item>
+        <item>SANTO DOMINGO TEOJOMULCO</item>
+        <item>SANTOS REYES NOPALA</item>
+        <item>VALERIO TRUJANO</item>
+        <item>SANTIAGO APOSTOL</item>
+        <item>SANTIAGO NUYOO</item>
+        <item>SANTOS REYES YUCUNA</item>
+    </string-array>
+</resources>

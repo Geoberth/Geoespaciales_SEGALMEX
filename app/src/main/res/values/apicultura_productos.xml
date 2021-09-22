@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="producto_apicola">
+        <item>Seleccione un producto</item>
+        <item>Miel (litros)</item>
+        <item>Polen (kg)</item>
+        <item>Cera (kg)</item>
+        <item>Propoleo (kg)</item>
+        <item>Abeja reina (Unidades)</item>
+        <item>Núcleo (Unidades)</item>
+        <item>Jalea real</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

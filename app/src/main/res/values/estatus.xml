@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estatus">
+        <item> </item>
+        <item>Activo</item>
+        <item>Baja</item>
+    </string-array>
+
+    <string name="estatus_inicial">Activo</string>
+</resources>

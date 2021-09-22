@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apicola.SanidadApicola">
+
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SANIDAD"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+
+            <!-- Enfermedades cria colonias -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtSanidadenfcriacol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Ha encontrado enfermedades de la cría en sus colonias?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="enfermedadesColonias"
+                        android:id="@+id/radioSisanidadenfcriacol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="enfermedadesColonias"
+                        android:id="@+id/radioNosanidadenfcriacol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- colonias enfermas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtSanidadtratarcriacol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué hace con las colonias enfermas?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="coloniasEnfermas"
+                        android:id="@+id/radioSanidadtratarcriacolelim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Las elimina" />
+
+                    <RadioButton
+                        android:onClick="coloniasEnfermas"
+                        android:id="@+id/radioSanidadtratarcriacoltrata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Las trata" />
+
+                    <RadioButton
+                        android:onClick="coloniasEnfermas"
+                        android:id="@+id/radioSanidadtratarcriacolambas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Ambas" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <!-- Inicio de tabla de enfermedades -->
+            <!--
+            <TextView
+                android:id="@+id/txtSanidadenfpanales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:text="TABLA DE ENFERMEDADES"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btnSigagregaenfermedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="AGREGAR ENFERMEDAD" />
+
+
+-->
+            <!-- pregunta si se mueren abejas adultas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtSanidadenfabejaadulta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Actualmente se le mueren abejas adultas de su apiario?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="muerenAbejasAdultas"
+                        android:id="@+id/radioSisanidadenfabejaadultamuerte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="Sí" />
+
+                    <RadioButton
+                        android:onClick="muerenAbejasAdultas"
+                        android:id="@+id/radioNosanidadenfabejaadultamuerte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="15sp"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <!-- meses en que se mueren abejas adultas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtSanidadenfabejaadultamesesmueren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿En qué meses tiene el problema de muerte de abejas adultas?"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp" />
+
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Enero" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Febrero" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Marzo" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Abril" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Mayo" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Junio" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Julio" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Agosto" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Septiembre" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Octubre" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Noviembre" />
+
+                <CheckBox
+                    android:onClick="mesApicolaProblem"
+                    android:id="@+id/ck_ms_api_7_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:text="Diciembre" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/txtSanidadtratabeadultas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="¿Qué tratamiento utiliza para el problema de muerte de abejas adultas? "
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtSanidadtratabeadultas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/apicola_next_sanidad"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

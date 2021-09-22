@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.UnidadProduccion">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entidad Federativa:"
+            />
+
+
+        <Spinner
+            android:id="@+id/spn_edo_upf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+
+        <EditText
+            android:maxLines="1"
+            android:visibility="gone"
+            android:id="@+id/ent_fed_tres"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heigth_edit_text_tres"
+            android:text="AGUASCALIENTES"
+            />
+
+        <TextView
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Municipio:"
+            />
+
+
+        <Spinner
+            android:id="@+id/spn_mun_upf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+
+
+        <TextView
+            android:text="Localidad:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/edt_loc_upf"
+            android:hint="Localidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:maxLines="1"
+            android:visibility="gone"
+            android:id="@+id/ent_municipio_tres"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heigth_edit_text_tres"
+            android:text="MNPAGUASCALIENTES"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localidad:"
+            />
+
+        <EditText
+            android:maxLines="1"
+            android:visibility="gone"
+            android:id="@+id/ent_localidad_tres"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heigth_edit_text_tres"
+            android:text="LocAguascalientes"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la Upf:"
+            />
+
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/nombre_upf_tres"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heigth_edit_text_tres"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/espacio_modulo_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Superficie total de la Upf:"
+            />
+
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/superficie_upf_tres"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heigth_edit_text_tres"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_next_pro_tres"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Siguiente"
+        app:iconPadding="20dp"
+        app:icon="@android:drawable/ic_input_add"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

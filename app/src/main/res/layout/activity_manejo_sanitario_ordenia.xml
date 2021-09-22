@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.ManejoSanitarioOrdenia">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="MANEJO SANITARIO DE LA ORDEÑA"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="¿Cómo realiza el diagnóstico de mastitis subclínica?"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diagnóstico de mastitis subclínica, seleccione:"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariosanitarioordeniapruecal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickdiagnostmastitis"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Prueba de California" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariosanitarioordeniapruefondnegro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickdiagnostmastitis"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Prueba de fondo negro" />
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariosanitarioordeniaotro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickdiagnostmastitis"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Otro(especificar)" />
+
+                        <EditText
+                            android:id="@+id/edtPecuariosanitarioordeniaotro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginLeft="65dp"
+                            android:ems="10"
+                            android:inputType="text"/>
+
+                    <RadioButton
+                        android:id="@+id/radioPecuariosanitarioordenianinguna"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickdiagnostmastitis"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Ninguna"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo ($)/animal"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecuariosanitarioordeniacosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+
+
+            <!-- practicas de higiene durante ordeña -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prácticas e higiene durante la ordeña, seleccione:"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariosanitarioordenialavubre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpracthigieneordenia"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Lavado de ubre y pezones" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariosanitarioordeniasecmatdes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpracthigieneordenia"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Secado con material desechable individual" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariosanitarioordeniadespunte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpracthigieneordenia"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Despunte" />
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariosanitarioordeniausosella"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpracthigieneordenia"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Uso de selladores"/>
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariosanitarioordeniaaplicacantibio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpracthigieneordenia"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Aplicación de antibiótico intramamario al momento del secado"/>
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariosanitarioordeniaotrohig"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpracthigieneordenia"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Otro (especificar)" />
+
+                        <EditText
+                            android:id="@+id/edtPecuariosanitarioordeniaotrohig"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:hint="Especificar"
+                            android:layout_marginLeft="65dp"
+                            android:ems="10"
+                            android:inputType="text"/>
+
+
+                    <CheckBox
+                        android:id="@+id/checkPecuariosanitarioordeniahigninguna"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="clickpracthigieneordenia"
+                        android:layout_marginLeft="50dp"
+                        android:textSize="15sp"
+                        android:text="Ninguna" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo ($)/animal"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecuariosanitarioordeniacostohig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:ems="10"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+
+
+            <!--
+            <Button
+                android:id="@+id/pecuario_next_sanitario_ordenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente" /> -->
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_sanitario_ordenia"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

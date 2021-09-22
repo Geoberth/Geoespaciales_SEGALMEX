@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bovino_cruzas">
+        <item>Ninguna</item>
+        <item>Holstein x cebú</item>
+        <item>Holstein x suizo</item>
+        <item>Holstein x Montbeliarde</item>
+        <item>Pardo suizo x cebú</item>
+        <item>Montbeliarde x cebú</item>
+        <item>Montbeliarde x suizo</item>
+        <item>Otra</item>
+    </string-array>
+
+
+    <string name="bovinocruzas_prompt">Bovinos Cruzas</string>
+</resources>

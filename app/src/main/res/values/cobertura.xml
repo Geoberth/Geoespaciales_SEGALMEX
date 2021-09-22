@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cobertura_activo_agricola">
+        <item> </item>
+        <item>Acolchado</item>
+        <item>Agave</item>
+        <item>Aguacate</item>
+        <item>Alfalfa verde</item>
+        <item>Algodón hueso</item>
+        <item>Amaranto</item>
+        <item>Arroz</item>
+        <item>Avena forrajera</item>
+        <item>Avena grano</item>
+        <item>C. Intercalado</item>
+        <item>Cacao</item>
+        <item>Café</item>
+        <item>Caña de azúcar</item>
+        <item>Cebada grano</item>
+        <item>Cítricos</item>
+        <item>Durazno</item>
+        <item>Flores</item>
+        <item>Frambruesa</item>
+        <item>Fresa</item>
+        <item>Frijol</item>
+        <item>Garbanzo grano</item>
+        <item>Guayaba</item>
+        <item>Invernadero</item>
+        <item>Macrotúnel</item>
+        <item>Maguey pulquero</item>
+        <item>Maíz forrajero</item>
+        <item>Maíz grano</item>
+        <item>Malla sombra</item>
+        <item>Mango</item>
+        <item>Manzana</item>
+        <item>Melón</item>
+        <item>Microtúnel</item>
+        <item>Nopalitos</item>
+        <item>Nuez</item>
+        <item>Pabellón</item>
+        <item>Papa</item>
+        <item>Papaya</item>
+        <item>Parcela en descanso</item>
+        <item>Parcela preparada</item>
+        <item>Pera</item>
+        <item>Piña</item>
+        <item>Plástico (Agrícola)</item>
+        <item>Platano</item>
+        <item>Recién sembrado</item>
+        <item>Sandia</item>
+        <item>Sorgo forrajero</item>
+        <item>Sorgo grano</item>
+        <item>Soya</item>
+        <item>Tabaco</item>
+        <item>Techo sombra</item>
+        <item>Tomate rojo</item>
+        <item>Tomate verde</item>
+        <item>Trigo grano</item>
+        <item>Tuna</item>
+        <item>Uva</item>
+        <item>Vivero (Cultivo)</item>
+        <item>Zarzamora</item>
+        <item>Otra cobertura agrícola</item>
+    </string-array>
+
+    <string-array name="cobertura_activo_pastos">
+        <item> </item>
+        <item>Agostadero/Potrero</item>
+        <item>Pastizal cultivado</item>
+        <item>Pastizal inducido</item>
+        <item>Pastizal natural</item>
+        <item>Otra cobertura agrícola</item>
+    </string-array>
+
+    <string-array name="cobertura_baja">
+        <item> </item>
+        <item>Árboles</item>
+        <item>Bordo de agua</item>
+        <item>Bosque</item>
+        <item>Brecha</item>
+        <item>C. Saca cosecha</item>
+        <item>Campo de futbol</item>
+        <item>Canal de riego</item>
+        <item>Carretera</item>
+        <item>Caserío</item>
+        <item>Cementerio</item>
+        <item>Cuerpo de agua</item>
+        <item>Cultivo árboles</item>
+        <item>Granja</item>
+        <item>Hacienda o Rancho</item>
+        <item>Pista de aviación</item>
+        <item>Rasgo arqueológico</item>
+        <item>Río intermitente</item>
+        <item>Río perenne</item>
+        <item>Parcela con maleza</item>
+        <item>Sin cultivo</item>
+        <item>Subestación eléctrica</item>
+        <item>Terracería</item>
+        <item>Zona industrial</item>
+        <item>Árboles</item>
+        <item>Vivero forestal</item>
+        <item>Otra cobertura agrícola</item>
+    </string-array>
+
+    <string name="cobertura_inicial">Cobertura</string>
+</resources>

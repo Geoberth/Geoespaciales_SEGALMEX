@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.comercializacion_3_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="COMERCIALIZACIÓN PECUARIA"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Por favor indique lo siguiente para sus meses de venta:" />
+
+            <Spinner
+                android:id="@+id/spn_vnt_cm_pec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"
+                />
+
+            <!--   android:entries="@array/COMPROPEC"
+               android:prompt="@string/name_COMPROPEC"
+               android:spinnerMode="dropdown" />
+               -->
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuántas cabezas vendió?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_cab_ven_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuántas cabezas fueron de autoconsumo?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_cab_ven_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso promedio (kg)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_cab_ven_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio promedio ($/kg)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_cab_ven_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Vende su ganado en pie o lo sacrifica?"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="ventaGanPieScr"
+                    android:id="@+id/ck_vnt_gan_scr_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="En pie"></RadioButton>
+
+                <RadioButton
+                    android:onClick="ventaGanPieScr"
+                    android:id="@+id/ck_vnt_gan_scr_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Lo sacrifico"></RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Dónde sacrifica su ganado?"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/spn_lgr_scr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"
+                />
+            <!--
+                android:entries="@array/LUGSACR"
+                android:prompt="@string/name_LUGSACR"
+                android:spinnerMode="dropdown" />
+-->
+            <!--esto es un label-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio promedio ($/cabeza)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input-->
+            <EditText
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_cab_ven_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="" />
+
+
+            <TextView
+                android:text="Mes de venta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <!--
+            <Spinner
+                android:id="@+id/spi_mes_vnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"/>
+-->
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enero"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Febrero"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marzo"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abril"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mayo"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Junio"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Julio"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agosto"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Septiembre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Octubre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noviembre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="mesesVenta31"
+                android:id="@+id/ck_mes_1_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diciembre"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <!--
+                       <TextView
+                           android:text="CAMBIO DE MESES A CHEKBO y AGG % EDITTEX VENTAS"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+
+                           android:entries="@array/MESVEN"
+                           android:prompt="@string/name_MESVEN"
+                           android:spinnerMode="dropdown" />
+                           -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿A quién le vende su ganado? (%)"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/ck_qi_vnt_gnd_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consumidor"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_1"
+                android:hint="%"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ck_qi_vnt_gnd_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Industria"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_2"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%" />
+
+            <TextView
+                android:id="@+id/ck_qi_vnt_gnd_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ganaderos"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_3"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%" />
+
+
+            <TextView
+                android:id="@+id/ck_qi_vnt_gnd_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediarios"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_4"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%" />
+
+            <!--  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destino de la producción (%)"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/ck_des_pro_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_5"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%" />
+
+            <TextView
+                android:id="@+id/ck_des_pro_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Municipal"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_6"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%" />
+
+            <TextView
+                android:id="@+id/ck_des_pro_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estatal"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_7"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%" />
+
+            <TextView
+                android:id="@+id/ck_des_pro_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nacional"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cmr_8"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%" />
+
+            <!-- hasta aqui-->
+            <Button
+                android:id="@+id/fab_nex_otr_pro_vnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Agregar otro producto de venta"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_nex_cm_pec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

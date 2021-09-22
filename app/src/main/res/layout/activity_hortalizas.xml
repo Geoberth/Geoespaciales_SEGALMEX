@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.hortalizas">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="5. CARACTERIZACIÓN DE HORTALIZAS"
+            />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="En el año pasado, ¿En qué ciclo agrícola tuvo producción?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_marginTop="30dp"
+                android:onClick="temporalCosecha"
+                android:id="@+id/rd_pv_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="P-V"/>
+
+            <RadioButton
+                android:id="@+id/rd_ot_c"
+                android:onClick="temporalCosecha"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O-I"/>
+
+            <RadioButton
+                android:id="@+id/rd_pv_ot_c"
+                android:onClick="temporalCosecha"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambos"/>
+
+        </RadioGroup>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_marginTop="16dp"
+            android:id="@+id/fab_next_pv"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Siguiente"
+            app:iconPadding="20dp"
+            app:icon="@android:drawable/ic_input_add"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

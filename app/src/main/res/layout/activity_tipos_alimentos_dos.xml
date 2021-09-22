@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadproduccion.TiposAlimentosDos">
+
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIPOS DE ALIMENTOS"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Durante los últimos siete días, ¿Cuántos días comieron…?"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tortilla, alimentos hechos de masa de maíz, pan (blanco, integral, de caja rústico, dulce), galletas, cereales de caja, pasta para sopa o cualquier otro alimento hecho de maíz, trigo, arroz, avena, salvado, etc."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papas, camote, u otro alimento proveniente de raíces o tubérculos."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verduras (frescas, en guisados, sopas, salsas, enlatadas o deshidratadas)"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Frutas (frescas, enlatadas, deshidratadas, en postres o ensaladas)"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carne de vaca, cerdo, cordero, cabra, conejo, pollo, pato u otras aves."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Huevos (de gallina, codorniz, pato u otras aves)"/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pescado, sardinas, atún, camarón o cualquier otro marisco fresco o seco."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alimentos a base de frijoles, lentejas, habas, garbanzos, soya, cacahuates, pepitas, granola, palanquetas, nueces, amaranto, frutos secos."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Queso, yogurt, leche u otros productos lácteos."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cualquier tipo de aceite (soya, cártamo, canola, girasol, maíz); mantequilla,
+mantequilla de cacahuate, mayonesa, crema o manteca."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_j"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Azúcar o miel (de abeja o maple), jarabe de maíz, gelatina, mermelada, cajeta, polvo para preparar bebidas, flan, dulces, chocolates, refrescos."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_k"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros alimentos como condimentos, café o té."/>
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:id="@+id/inciso_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/fab_next_pro_aldos"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Siguiente"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

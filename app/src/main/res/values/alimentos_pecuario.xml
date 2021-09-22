@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alimentos_pecuario">
+        <item>Forraje verde</item>
+        <item>Concentrados comerciales</item>
+        <item>Ensilados</item>
+        <item>Henos (pacas)</item>
+        <item>Minerales</item>
+        <item>Granos</item>
+        <item>Otro (especificar)</item>
+    </string-array>
+
+
+    <string name="alimentospecu_prompt">Alimentos pecuarios</string>
+</resources>

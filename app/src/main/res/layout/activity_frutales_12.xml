@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frutales.frutales_12">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:id="@+id/tx_tit_cos"
+            android:text="COSECHA "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué actividades realiza durante la cosecha?" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Actividad" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:onClick="cosechaActividadfrt"
+                    android:textSize="16dp"
+                    android:text="Corte"
+                    android:id="@+id/ck_crt_cs_fe__frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:onClick="cosechaActividadfrt"
+                    android:textSize="16dp"
+                    android:text="Recolección"
+                    android:id="@+id/ck_rec_cs_fe_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:onClick="cosechaActividadfrt"
+                    android:textSize="16dp"
+                    android:text="Selección"
+                    android:id="@+id/ck_sel_cs_fe_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:onClick="cosechaActividadfrt"
+                    android:textSize="16dp"
+                    android:text="Lavado"
+                    android:id="@+id/ck_lvd_cs_fe_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:onClick="cosechaActividadfrt"
+                    android:textSize="14dp"
+                    android:text="Tratamiento de post corte"
+                    android:id="@+id/ck_tpc_cs_fe_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:onClick="cosechaActividadfrt"
+                    android:textSize="14dp"
+                    android:text="Empaque en campo"
+                    android:id="@+id/ck_emc_cs_fe_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:onClick="cosechaActividadfrt"
+                    android:textSize="16dp"
+                    android:text="Acarreo"
+                    android:id="@+id/ck_acr_cs_fe_frt"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Número de jornales" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:id="@+id/edt_cor_cs_fe_frt_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:maxLines="1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:textSize="16dp"
+                    android:id="@+id/edt_cor_cs_fe_frt_2"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:textSize="16dp"
+                    android:id="@+id/edt_cor_cs_fe_frt_3"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:textSize="16dp"
+                    android:id="@+id/edt_cor_cs_fe_frt_4"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:textSize="16dp"
+                    android:id="@+id/edt_cor_cs_fe_frt_5"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+                <EditText
+                    android:id="@+id/edt_cor_cs_fe_frt_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:textSize="16dp"
+                    android:id="@+id/edt_cor_cs_fe_frt_7"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--++++++++++Accesorio cosecha -->
+        <TextView
+            android:text="¿Utiliza accesorios para la cosecha?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:onClick="accesorioCosecha"
+                android:id="@+id/rd_acs_cos_1"
+                android:text="Pinzas o tijeras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:onClick="accesorioCosecha"
+                android:id="@+id/rd_acs_cos_2"
+                android:text="Bolsas especiales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <RadioButton
+                android:onClick="accesorioCosecha"
+                android:id="@+id/rd_acs_cos_3"
+                android:text="Recipientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <RadioButton
+                android:onClick="accesorioCosecha"
+                android:id="@+id/rd_acs_cos_4"
+                android:text="Gancho especial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:onClick="accesorioCosecha"
+                android:id="@+id/rd_acs_cos_5"
+                android:text="Otro (Especificar)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RadioGroup>
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/edt_otr_cs_frt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- ++++++++++++++++++++++++ -->
+        <TextView
+            android:text="¿Realiza algún control de inocuidad?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:onClick="controlInocuidadfrt"
+                android:id="@+id/rd_si_ci_cs_fe_frt"
+                android:text="Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:onClick="controlInocuidadfrt"
+                android:id="@+id/rd_no_ci_cs_fe_frt"
+                android:text="No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+        <TextView
+            android:text="¿Cuál? "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/edt_si_ci_cs_fe_frt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:maxLines="1" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fr12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+            android:text="Siguiente"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconPadding="20dp" />
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

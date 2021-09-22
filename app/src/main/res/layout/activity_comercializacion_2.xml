@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.comercializacion_2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="¿Dónde realiza la venta de su producto?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"/>
+
+                <RadioButton
+                    android:id="@+id/ck_pie_parcela"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="ventaProducto"
+                    android:text="A pie de parcela"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/ck_mercado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="ventaProducto"
+                    android:text="Usted lo lleva al mercado"
+                    android:textAlignment="center"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+            <!--esto es un label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Cuál es el costo del flete?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--esto es un input -->
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cst_fle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="$"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:text="¿Aplica algún proceso de conservación o transformación?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almacenamiento"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_con_alm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpieza"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_lim_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refrigeración"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_rfi_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congelación"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cng_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cocción"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_cnc_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empaquetado"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_emp_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ensilado"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_ens_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/ck_PROCONTRAA8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secado"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_scd_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="($ / Kg)"
+                android:inputType="numberDecimal" />
+
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <TextView
+                android:text="¿Cuáles son los principales productos con valor agregado que cree que le incrementarían sus ingresos?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <CheckBox
+                android:id="@+id/ck_pro_vag_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="valorAgregadoPrinc"
+                android:text="Ates"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/ck_pro_vag_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="valorAgregadoPrinc"
+                android:text="Mermeladas"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+
+            <CheckBox
+                android:id="@+id/ck_pro_vag_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="valorAgregadoPrinc"
+                android:text="Salvado"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+
+            <CheckBox
+                android:id="@+id/ck_pro_vag_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="valorAgregadoPrinc"
+                android:text="Afrecho"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+
+            <CheckBox
+                android:onClick="valorAgregadoPrinc"
+                android:id="@+id/ck_pro_vag_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harina"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="valorAgregadoPrinc"
+                android:id="@+id/ck_pro_vag_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copra"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="valorAgregadoPrinc"
+                android:id="@+id/ck_pro_vag_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piloncillo"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="valorAgregadoPrinc"
+                android:id="@+id/ck_pro_vag_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mezcal"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="valorAgregadoPrinc"
+                android:id="@+id/ck_pro_vag_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/edt_otr_10_2"
+                android:hint="Especificar"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+            <TextView
+                android:text="Señale los principales problemas que le aquejan en el área de comercialización:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <CheckBox
+                android:onClick="principalesProblemsAqueja"
+                android:id="@+id/ck_pro_pag_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio bajo de venta"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="principalesProblemsAqueja"
+                android:id="@+id/ck_pro_pag_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermediarios"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="principalesProblemsAqueja"
+                android:id="@+id/ck_pro_pag_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se castigan precios por baja calidad"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="principalesProblemsAqueja"
+                android:id="@+id/ck_pro_pag_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baja producción"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="principalesProblemsAqueja"
+                android:id="@+id/ck_pro_pag_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oferta alta"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="principalesProblemsAqueja"
+                android:id="@+id/ck_pro_pag_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distancia de las fuentes de comercialización"
+                android:textSize="16dp"
+                />
+
+            <CheckBox
+                android:onClick="principalesProblemsAqueja"
+                android:id="@+id/ck_pro_pag_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pago impuntual de los compradores"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+            <TextView
+                android:text="¿Cómo le gustaría que fueran los canales de comercialización de sus productos?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="canalesComercializacion"
+                    android:id="@+id/ck_com_fu_cn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Directo al consumidor">
+                </RadioButton>
+
+                <RadioButton
+                    android:onClick="canalesComercializacion"
+                    android:id="@+id/ck_com_fu_cn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Directo a la central de abastos">
+                </RadioButton>
+
+                <RadioButton
+                    android:onClick="canalesComercializacion"
+                    android:id="@+id/ck_com_fu_cn_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Contrato con la industria">
+                </RadioButton>
+
+                <RadioButton
+                    android:onClick="canalesComercializacion"
+                    android:id="@+id/ck_com_fu_cn_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Vender a organización de productores">
+                </RadioButton>
+
+                <RadioButton
+                    android:onClick="canalesComercializacion"
+                    android:id="@+id/ck_com_fu_cn_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="A pie de parcela">
+                </RadioButton>
+
+            </RadioGroup>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+            <TextView
+                android:text="¿Qué le hace falta a su producto para poderlo comercializar?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+
+
+            <CheckBox
+                android:onClick="faltaComercializar"
+                android:id="@+id/ck_fl_pro_cm_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calidad"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="faltaComercializar"
+                android:id="@+id/ck_fl_pro_cm_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presentación"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="faltaComercializar"
+                android:id="@+id/ck_fl_pro_cm_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difusión"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="faltaComercializar"
+                android:id="@+id/ck_fl_pro_cm_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor agregado"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:onClick="faltaComercializar"
+                android:id="@+id/ck_fl_pro_cm_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Procesos de conservación "
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_marginTop="16dp"
+                android:id="@+id/cr2"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

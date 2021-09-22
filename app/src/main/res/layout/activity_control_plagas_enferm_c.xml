@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.ControlPlagasEnfermC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:text="¿Ha recibido algún tipo de orientación sobre el uso y manejo de productos químicos para el control de plagas y enfermedades?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:onClick="tipoOrientacionMQi"
+                    android:id="@+id/rd_si_ori_pr_fe"
+                    android:text="Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="tipoOrientacionMQi"
+                    android:id="@+id/rd_no_ori_pr_fe"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="¿Cómo considera el nivel de calidad fitosanitaria de su cultivo?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:onClick="nivelCalidadFito"
+                    android:id="@+id/rd_al_nv_fe"
+                    android:text="Alta "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="nivelCalidadFito"
+                    android:id="@+id/rd_md_nv_fe"
+                    android:text="Media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="nivelCalidadFito"
+                    android:id="@+id/rd_bj_nv_fe"
+                    android:text="Baja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:text="¿Cuál es el origen de las plagas y enfermedades de su cultivo?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="origenPlgsEnfer"
+                    android:id="@+id/ck_su_pe_fe"
+                    android:text="El suelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="origenPlgsEnfer"
+                    android:id="@+id/ck_ag_pe_fe"
+                    android:text="El agua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="origenPlgsEnfer"
+                    android:id="@+id/ck_sm_pe_fe"
+                    android:text="La semilla o material vegetativo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="origenPlgsEnfer"
+                    android:id="@+id/ck_ut_pe_fe"
+                    android:text="Utensilios de trabajo "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="origenPlgsEnfer"
+                    android:id="@+id/ck_ot_pe_fe"
+                    android:text="Otro (especificar)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edt_ot_pe_fe"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:text="¿Conoce o ha utilizado control biológico para el manejo de plagas y enfermedades?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="controBiolgPlgs"
+                    android:id="@+id/rd_si_cb_fe"
+                    android:text="Si"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:onClick="controBiolgPlgs"
+                    android:id="@+id/rd_no_cb_fe"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_enf_c_fe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

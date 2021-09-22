@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcaracterizacionhortalizas.HortalizasPvunob">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margen_left"
+            android:paddingRight="@dimen/margen_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margen_titulo_top"
+                android:text="¿Cuál es la fecha de siembra?" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/id_date"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cuánta superficie (ha) tiene? " />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/id_sem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="superficieHa"
+                android:text="Sembrada" />
+
+            <EditText
+                android:id="@+id/id_sem_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="superficie (ha)"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/id_mec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="superficieHa"
+                android:text="Mecanizada" />
+
+
+            <EditText
+                android:id="@+id/id_mec_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="superficie (ha)"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/id_no_mec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="superficieHa"
+                android:text="No mecanizada" />
+
+            <EditText
+                android:id="@+id/id_no_mec_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="superficie (ha)"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+            <!-- Tipo infraestructura -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué tipo de infraestructura utiliza?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="tipoInfrestructura"
+                    android:id="@+id/ck_inv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invernadero" />
+
+                <RadioButton
+                    android:onClick="tipoInfrestructura"
+                    android:id="@+id/ck_ac_pl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acolchado plástico" />
+
+                <RadioButton
+                    android:onClick="tipoInfrestructura"
+                    android:id="@+id/ck_mc_tn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Macro túnel" />
+
+                <RadioButton
+                    android:onClick="tipoInfrestructura"
+                    android:id="@+id/ck_ci_ab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cielo abierto" />
+
+                <RadioButton
+                    android:onClick="tipoInfrestructura"
+                    android:id="@+id/ck_bi_so"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bioespacio o malla sombra" />
+
+                <RadioButton
+                    android:id="@+id/ck_ot_es"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="tipoInfrestructura"
+                    android:text="Otro (especificar)" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/ed_ot_esp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Su cultivo de hortalizas tuvo alguna afectación por siniestro?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:onClick="afectacionCultivo"
+                    android:id="@+id/rd_si_af_hor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:onClick="afectacionCultivo"
+                    android:id="@+id/rd_no_af_hor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Cuál fue la causa de la superficie siniestrada?" />
+
+            <RadioGroup
+                android:id="@+id/rd_grp_tip_afe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_enf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enfermedades" />
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_eh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exceso de humedad" />
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_gr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Granizo" />
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_hl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Helada" />
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inundaciones" />
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_sq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sequía" />
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_vi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vientos" />
+
+                <RadioButton
+                    android:onClick="tiposDeAfectaciones"
+                    android:enabled="false"
+                    android:id="@+id/ck_css_pl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plagas" />
+
+            </RadioGroup>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab_next_pv_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

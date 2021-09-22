@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pecuario.PecuarioComposicDietaOvinosCaprinos">
+
+    <ScrollView
+        android:id="@+id/scrollProdecon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMPOSICIÓN DE LA DIETA: OVINOS Y CAPRINOS "
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="19sp" />
+
+
+
+
+            <!-- Pregunta para la tabla de forrajas y alimentos -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué forraje y/o alimento proporciona y en qué meses? "
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+
+            <!-- Inician preguntas de tabla -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- inicia forrajes -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FORRAJES"
+                    android:textSize="15sp" />
+
+
+                <!-- dividido pastoreo en agostadero -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pastoreo en agostadero"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de enero -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enero"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de febrero -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosfeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Febrero"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de marzo-->
+                <CheckBox
+                    android:id="@+id/chPecupatagosdmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Marzo"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de abril -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosabr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Abril"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de Mayo -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosmayo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mayo"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de junio -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosjun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Junio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de julio -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosjul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Julio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de agosto -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosagos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Agosto"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de septiembre -->
+                <CheckBox
+                    android:id="@+id/chPecupaagossept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Septiembre"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de octubre -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosoct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Octubre"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de noviembre -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosnov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Noviembre"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de diciembre -->
+                <CheckBox
+                    android:id="@+id/chPecupaagosdic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforagostad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diciembre"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo ($/ha,ton,l, o pza)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecpaagoscos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:hint="Costo"
+                    android:inputType="number"/>
+
+
+                <!-- Pastoreo en praderas cultivadas -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Pastoreo en praderas cultivadas"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de enero -->
+                <CheckBox
+                    android:id="@+id/chPecupapradene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enero"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de febrero -->
+                <CheckBox
+                    android:id="@+id/chPecupapradfeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Febrero"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de marzo-->
+                <CheckBox
+                    android:id="@+id/chPecupapradmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Marzo"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de abril -->
+                <CheckBox
+                    android:id="@+id/chPecupapradabr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Abril"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de Mayo -->
+                <CheckBox
+                    android:id="@+id/chPecupapradmay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mayo"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de junio -->
+                <CheckBox
+                    android:id="@+id/chPecupapradjun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Junio"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de julio -->
+                <CheckBox
+                    android:id="@+id/chPecupapradjul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Julio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de agosto -->
+                <CheckBox
+                    android:id="@+id/chPecupapradagos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Agosto"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de septiembre -->
+                <CheckBox
+                    android:id="@+id/chPecupapradsept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Septiembre"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de octubre -->
+                <CheckBox
+                    android:id="@+id/chPecupapradoct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Octubre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de noviembre -->
+                <CheckBox
+                    android:id="@+id/chPecupapradnov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Noviembre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de diciembre -->
+                <CheckBox
+                    android:id="@+id/chPecupapraddic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforprad"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diciembre"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo ($/ha,ton,l, o pza)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecpastpradcos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:hint="Costo"
+                    android:inputType="number"/>
+
+
+
+                <!-- Pastoreo de rastrojos de residuos de cosechas -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Pastoreo de rastrojos de residuos de cosechas"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de enero -->
+                <CheckBox
+                    android:id="@+id/chPecparastrosene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enero"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de febrero -->
+                <CheckBox
+                    android:id="@+id/chPecparastrofeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Febrero"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de marzo-->
+                <CheckBox
+                    android:id="@+id/chPecparastromar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Marzo"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de abril -->
+                <CheckBox
+                    android:id="@+id/chPecparastroabr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Abril"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de Mayo -->
+                <CheckBox
+                    android:id="@+id/chPecparastromay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mayo"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de junio -->
+                <CheckBox
+                    android:id="@+id/chPecparastrojun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Junio"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de julio -->
+                <CheckBox
+                    android:id="@+id/chPecparastrojul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Julio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de agosto -->
+                <CheckBox
+                    android:id="@+id/chPecpasastroagos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Agosto"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de septiembre -->
+                <CheckBox
+                    android:id="@+id/chPecparastrosept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Septiembre"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de octubre -->
+                <CheckBox
+                    android:id="@+id/chPecparastrooct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Octubre"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de noviembre -->
+                <CheckBox
+                    android:id="@+id/chPecparastronov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Noviembre"
+                    android:textSize="15sp" />
+
+
+
+
+
+                <!-- en el mes de diciembre -->
+                <CheckBox
+                    android:id="@+id/chPecparastrodic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforrastro"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diciembre"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo ($/ha,ton,l, o pza)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecpastrastrocos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:hint="Costo"
+                    android:inputType="number"/>
+
+
+
+                <!-- Uso de forrajes de corte en verde -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Uso de forrajes de corte en verde"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de enero -->
+                <CheckBox
+                    android:id="@+id/chPecforcorverene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enero"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de febrero -->
+                <CheckBox
+                    android:id="@+id/chPecforcorverfeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Febrero"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de marzo-->
+                <CheckBox
+                    android:id="@+id/chPecforcorvermar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Marzo"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de abril -->
+                <CheckBox
+                    android:id="@+id/chPecforcorverabr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Abril"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de Mayo -->
+                <CheckBox
+                    android:id="@+id/chPecforcorvermay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mayo"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de junio -->
+                <CheckBox
+                    android:id="@+id/chPecforcorverjun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Junio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de julio -->
+                <CheckBox
+                    android:id="@+id/chPecforcorverjul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Julio"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de agosto -->
+                <CheckBox
+                    android:id="@+id/chPecforcorveragos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Agosto"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de septiembre -->
+                <CheckBox
+                    android:id="@+id/chPecforcorversept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Septiembre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de octubre -->
+                <CheckBox
+                    android:id="@+id/chPecforcorveroct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Octubre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de noviembre -->
+                <CheckBox
+                    android:id="@+id/chPecforcorvernov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Noviembre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de diciembre -->
+                <CheckBox
+                    android:id="@+id/chPecforcorverdic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diciembre"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforcorteverde"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo ($/ha,ton,l, o pza)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecforcorvercos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:hint="Costo"
+                    android:inputType="number"/>
+
+
+
+                <!-- Ensilados de maíz y otros -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Ensilado de maíz y otros"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de enero -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enero"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de febrero -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizfeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Febrero"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de marzo-->
+                <CheckBox
+                    android:id="@+id/chPecenmaizmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Marzo"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de abril -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizabr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Abril"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de Mayo -->
+                <CheckBox
+                    android:id="@+id/chPecuenmaizmay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mayo"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de junio -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizjun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Junio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de julio -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizjul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Julio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de agosto -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizagos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Agosto"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de septiembre -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizsept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Septiembre"
+                    android:textSize="15sp" />
+
+
+
+
+                <!-- en el mes de octubre -->
+                <CheckBox
+                    android:id="@+id/chPecuenmaizoct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Octubre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de noviembre -->
+                <CheckBox
+                    android:id="@+id/chPecenmaiznov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Noviembre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de diciembre -->
+                <CheckBox
+                    android:id="@+id/chPecenmaizdic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastformaiz"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diciembre"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo ($/ha,ton,l, o pza)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPecenmaizcos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:hint="Costo"
+                    android:inputType="number"/>
+
+
+
+
+                <!-- Henos o pacas -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Henos o pacas"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de enero -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Enero"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de febrero -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasfebrero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Febrero"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de marzo-->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasmarzo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Marzo"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de abril -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasabril"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Abril"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de Mayo -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasmayo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mayo"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de junio -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasjunio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Junio"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de julio -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasjulio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Julio"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de agosto -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasagosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Agosto"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de septiembre -->
+                <CheckBox
+                    android:id="@+id/checkPecuariohenospacasseptiembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Septiembre"
+                    android:textSize="15sp" />
+
+
+
+                <!-- en el mes de octubre -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasoctubre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Octubre"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de noviembre -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasnoviembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Noviembre"
+                    android:textSize="15sp" />
+
+
+                <!-- en el mes de diciembre -->
+                <CheckBox
+                    android:id="@+id/checkPecuhenospacasdiciembre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickPastforhenos"
+                    android:layout_marginLeft="25dp"
+                    android:text="Diciembre"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Costo ($/ha,ton,l, o pza)"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edtPechepaccos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:hint="Costo"
+                    android:inputType="number"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <!--
+            <Button
+                android:id="@+id/pecuario_next_dietas_ovinoscaprinos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="Siguiente" /> -->
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pecuario_next_dietas_ovinoscaprinos"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="25dp"
+                android:text="Siguiente"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

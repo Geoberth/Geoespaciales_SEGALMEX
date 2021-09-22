@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unidadcomercializacion.Apicultura_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Dónde realiza la venta de su producto?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rd_vnt_prd_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ventaProductoApi"
+                android:text="En el apiario" />
+
+
+            <RadioButton
+                android:id="@+id/rd_vnt_prd_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ventaProductoApi"
+                android:text="Usted lo lleva al mercado" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es el costo del flete?" />
+
+        <EditText
+            android:id="@+id/edt_api_2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Aplica algún proceso de conservación o transformación?" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proceso" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Almacenamiento"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Limpieza"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Envasado"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Etiquetado"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo ($/kg)" />
+
+                <EditText
+                    android:id="@+id/edt_pro_ap_2_1"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:hint="$"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_pro_ap_2_2"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:hint="$"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_pro_ap_2_3"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:hint="$"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:id="@+id/edt_pro_ap_2_4"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:hint="$"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/api_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+        android:text="Siguiente"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconPadding="20dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
