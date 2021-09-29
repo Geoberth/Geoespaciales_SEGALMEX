@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.siap.Geoespaciales",
+  "applicationId": "com.siap.Geo_Segalmex",
   "variantName": "debug",
   "elements": [
     {

@@ -109,14 +109,14 @@ com/example/geoespaciales/unidadcomercializacion/comercializacion_5.java
  com.example.geoespaciales.unidadcomercializacion.comercializacion_5$1
  com.example.geoespaciales.unidadcomercializacion.comercializacion_5$2
  com.example.geoespaciales.unidadcomercializacion.comercializacion_5$3
-com/example/geoespaciales/caracterizacion/ciclo_caracterizacion10.java
- com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10
- com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10$1
- com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10$2
 com/example/geoespaciales/Productor/IntegranteFamilia.java
  com.example.geoespaciales.Productor.IntegranteFamilia
  com.example.geoespaciales.Productor.IntegranteFamilia$1
  com.example.geoespaciales.Productor.IntegranteFamilia$2
+com/example/geoespaciales/caracterizacion/ciclo_caracterizacion10.java
+ com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10
+ com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10$1
+ com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10$2
 com/example/geoespaciales/apicola/ReproduccionApicola.java
  com.example.geoespaciales.apicola.ReproduccionApicola
  com.example.geoespaciales.apicola.ReproduccionApicola$1
@@ -153,6 +153,13 @@ com/example/geoespaciales/unidadproduccion/ProduccionAcuicola.java
  com.example.geoespaciales.unidadproduccion.ProduccionAcuicola$1
  com.example.geoespaciales.unidadproduccion.ProduccionAcuicola$2
  com.example.geoespaciales.unidadproduccion.ProduccionAcuicola$3
+com/example/geoespaciales/Gps/GpsTrayectoria.java
+ com.example.geoespaciales.Gps.GpsTrayectoria
+ com.example.geoespaciales.Gps.GpsTrayectoria$1
+ com.example.geoespaciales.Gps.GpsTrayectoria$2
+ com.example.geoespaciales.Gps.GpsTrayectoria$3
+ com.example.geoespaciales.Gps.GpsTrayectoria$4
+ com.example.geoespaciales.Gps.GpsTrayectoria$4$1
 com/example/geoespaciales/frutales/frutales_5.java
  com.example.geoespaciales.frutales.frutales_5
  com.example.geoespaciales.frutales.frutales_5$1
@@ -163,17 +170,10 @@ com/example/geoespaciales/apicola/ManejoApicola.java
  com.example.geoespaciales.apicola.ManejoApicola
  com.example.geoespaciales.apicola.ManejoApicola$1
  com.example.geoespaciales.apicola.ManejoApicola$2
-com/example/geoespaciales/Gps/GpsTrayectoria.java
- com.example.geoespaciales.Gps.GpsTrayectoria
- com.example.geoespaciales.Gps.GpsTrayectoria$1
- com.example.geoespaciales.Gps.GpsTrayectoria$2
- com.example.geoespaciales.Gps.GpsTrayectoria$3
- com.example.geoespaciales.Gps.GpsTrayectoria$4
- com.example.geoespaciales.Gps.GpsTrayectoria$4$1
-com/example/geoespaciales/unidadcaracterizacionhortalizas/model/MlTiempoRiego.java
- com.example.geoespaciales.unidadcaracterizacionhortalizas.model.MlTiempoRiego
 com/example/geoespaciales/Gps/GpsActivity.java
  com.example.geoespaciales.Gps.GpsActivity
+com/example/geoespaciales/unidadcaracterizacionhortalizas/model/MlTiempoRiego.java
+ com.example.geoespaciales.unidadcaracterizacionhortalizas.model.MlTiempoRiego
 com/example/geoespaciales/frutales/frutales_8.java
  com.example.geoespaciales.frutales.frutales_8
  com.example.geoespaciales.frutales.frutales_8$1
@@ -215,17 +215,17 @@ com/example/geoespaciales/drawer/fragment_drawer/ExportarFragment.java
  com.example.geoespaciales.drawer.fragment_drawer.ExportarFragment$TareaAsyncTask
 com/example/geoespaciales/Gps/UtilidadesTrayectoria.java
  com.example.geoespaciales.Gps.UtilidadesTrayectoria
+com/example/geoespaciales/unidadcaracterizacionhortalizas/date/CalendarioActivity.java
+ com.example.geoespaciales.unidadcaracterizacionhortalizas.date.CalendarioActivity
+ com.example.geoespaciales.unidadcaracterizacionhortalizas.date.CalendarioActivity$1
+com/example/geoespaciales/Pecuario/PecuarioAlimentacionGanado.java
+ com.example.geoespaciales.Pecuario.PecuarioAlimentacionGanado
+ com.example.geoespaciales.Pecuario.PecuarioAlimentacionGanado$1
 com/example/geoespaciales/caracterizacion/ciclo_carac.java
  com.example.geoespaciales.caracterizacion.ciclo_carac
  com.example.geoespaciales.caracterizacion.ciclo_carac$1
  com.example.geoespaciales.caracterizacion.ciclo_carac$2
  com.example.geoespaciales.caracterizacion.ciclo_carac$3
-com/example/geoespaciales/Pecuario/PecuarioAlimentacionGanado.java
- com.example.geoespaciales.Pecuario.PecuarioAlimentacionGanado
- com.example.geoespaciales.Pecuario.PecuarioAlimentacionGanado$1
-com/example/geoespaciales/unidadcaracterizacionhortalizas/date/CalendarioActivity.java
- com.example.geoespaciales.unidadcaracterizacionhortalizas.date.CalendarioActivity
- com.example.geoespaciales.unidadcaracterizacionhortalizas.date.CalendarioActivity$1
 com/example/geoespaciales/caracterizacion/ciclo_caracterizacion4.java
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion4
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion4$1
@@ -303,12 +303,12 @@ com/example/geoespaciales/Pecuario/PecuarioOvinos.java
 com/example/geoespaciales/Pecuario/InventarioGanadoOvino.java
  com.example.geoespaciales.Pecuario.InventarioGanadoOvino
  com.example.geoespaciales.Pecuario.InventarioGanadoOvino$1
+com/example/geoespaciales/dbstorage/Georreferencia.java
+ com.example.geoespaciales.dbstorage.Georreferencia
 com/example/geoespaciales/caracterizacion/ciclo_caracterizacion12.java
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion12
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion12$1
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion12$2
-com/example/geoespaciales/dbstorage/Georreferencia.java
- com.example.geoespaciales.dbstorage.Georreferencia
 com/example/geoespaciales/frutales/frutales_13.java
  com.example.geoespaciales.frutales.frutales_13
  com.example.geoespaciales.frutales.frutales_13$1
@@ -322,12 +322,12 @@ com/example/geoespaciales/unidadcaracterizacionhortalizas/HortalizasPvunob.java
  com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunob$1
  com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunob$2
  com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunob$3
-com/example/geoespaciales/caracterizacion/variables_caracterizacion/UtilidadesModuloCuatro.java
- com.example.geoespaciales.caracterizacion.variables_caracterizacion.UtilidadesModuloCuatro
 com/example/geoespaciales/Productor/ProductorFamilia.java
  com.example.geoespaciales.Productor.ProductorFamilia
  com.example.geoespaciales.Productor.ProductorFamilia$1
  com.example.geoespaciales.Productor.ProductorFamilia$2
+com/example/geoespaciales/caracterizacion/variables_caracterizacion/UtilidadesModuloCuatro.java
+ com.example.geoespaciales.caracterizacion.variables_caracterizacion.UtilidadesModuloCuatro
 com/example/geoespaciales/unidadcomercializacion/Apicultura_3.java
  com.example.geoespaciales.unidadcomercializacion.Apicultura_3
  com.example.geoespaciales.unidadcomercializacion.Apicultura_3$1
@@ -359,13 +359,13 @@ com/example/geoespaciales/unidadproduccion/UnidadProduccion.java
  com.example.geoespaciales.unidadproduccion.UnidadProduccion$1
  com.example.geoespaciales.unidadproduccion.UnidadProduccion$2
  com.example.geoespaciales.unidadproduccion.UnidadProduccion$3
+com/example/geoespaciales/Pecuario/GlobalPecuario/GlobalPecuario.java
+ com.example.geoespaciales.Pecuario.GlobalPecuario.GlobalPecuario
 com/example/geoespaciales/caracterizacion/ciclo_caracterizacion8.java
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion8
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion8$1
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion8$2
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion8$3
-com/example/geoespaciales/Pecuario/GlobalPecuario/GlobalPecuario.java
- com.example.geoespaciales.Pecuario.GlobalPecuario.GlobalPecuario
 com/example/geoespaciales/apicola/AlimentacionApicola.java
  com.example.geoespaciales.apicola.AlimentacionApicola
  com.example.geoespaciales.apicola.AlimentacionApicola$1
@@ -385,11 +385,11 @@ com/example/geoespaciales/unidadcomercializacion/Apicultura_2.java
 com/example/geoespaciales/unidadcomercializacion/comercializacion_8.java
  com.example.geoespaciales.unidadcomercializacion.comercializacion_8
  com.example.geoespaciales.unidadcomercializacion.comercializacion_8$1
-com/example/geoespaciales/caracterizacion/variables_caracterizacion/ActividadesCosecha.java
- com.example.geoespaciales.caracterizacion.variables_caracterizacion.ActividadesCosecha
 com/example/geoespaciales/Pecuario/PecuarioComposicDietaOvinosCaprinos.java
  com.example.geoespaciales.Pecuario.PecuarioComposicDietaOvinosCaprinos
  com.example.geoespaciales.Pecuario.PecuarioComposicDietaOvinosCaprinos$1
+com/example/geoespaciales/caracterizacion/variables_caracterizacion/ActividadesCosecha.java
+ com.example.geoespaciales.caracterizacion.variables_caracterizacion.ActividadesCosecha
 com/example/geoespaciales/apicola/variables_apicola/UtilidadesModuloSiete.java
  com.example.geoespaciales.apicola.variables_apicola.UtilidadesModuloSiete
 com/example/geoespaciales/apicola/EnfermedadesCambioPanales.java
@@ -426,11 +426,11 @@ com/example/geoespaciales/apicola/HerramientasProteccion.java
  com.example.geoespaciales.apicola.HerramientasProteccion$3
 com/example/geoespaciales/unidadproduccion/model/ActividadAgricolaAdapter.java
  com.example.geoespaciales.unidadproduccion.model.ActividadAgricolaAdapter
-com/example/geoespaciales/frutales/dbfrutales/VariablesFrutales.java
- com.example.geoespaciales.frutales.dbfrutales.VariablesFrutales
 com/example/geoespaciales/unidadcaracterizacionhortalizas/CosechaB.java
  com.example.geoespaciales.unidadcaracterizacionhortalizas.CosechaB
  com.example.geoespaciales.unidadcaracterizacionhortalizas.CosechaB$1
+com/example/geoespaciales/frutales/dbfrutales/VariablesFrutales.java
+ com.example.geoespaciales.frutales.dbfrutales.VariablesFrutales
 com/example/geoespaciales/apicola/SanidadApicola.java
  com.example.geoespaciales.apicola.SanidadApicola
  com.example.geoespaciales.apicola.SanidadApicola$1
@@ -446,10 +446,10 @@ com/example/geoespaciales/Geo/GeoFotos.java
  com.example.geoespaciales.Geo.GeoFotos$2
  com.example.geoespaciales.Geo.GeoFotos$2$1
  com.example.geoespaciales.Geo.GeoFotos$Localizacion
-com/example/geoespaciales/drawer/fragment_drawer/bdmunicipios/ModelMunicipios.java
- com.example.geoespaciales.drawer.fragment_drawer.bdmunicipios.ModelMunicipios
 com/example/geoespaciales/Georeferencia/Utilidades.java
  com.example.geoespaciales.Georeferencia.Utilidades
+com/example/geoespaciales/drawer/fragment_drawer/bdmunicipios/ModelMunicipios.java
+ com.example.geoespaciales.drawer.fragment_drawer.bdmunicipios.ModelMunicipios
 com/example/geoespaciales/frutales/frutales_4_0.java
  com.example.geoespaciales.frutales.frutales_4_0
  com.example.geoespaciales.frutales.frutales_4_0$1
@@ -490,21 +490,21 @@ com/example/geoespaciales/Pecuario/PecuarioInicio.java
  com.example.geoespaciales.Pecuario.PecuarioInicio$3
  com.example.geoespaciales.Pecuario.PecuarioInicio$4
  com.example.geoespaciales.Pecuario.PecuarioInicio$5
+com/example/geoespaciales/drawer/fragment_drawer/bdusers/ModelUsuarios.java
+ com.example.geoespaciales.drawer.fragment_drawer.bdusers.ModelUsuarios
 com/example/geoespaciales/apicola/CapacitacionAsistenciaApicola.java
  com.example.geoespaciales.apicola.CapacitacionAsistenciaApicola
  com.example.geoespaciales.apicola.CapacitacionAsistenciaApicola$1
  com.example.geoespaciales.apicola.CapacitacionAsistenciaApicola$2
-com/example/geoespaciales/drawer/fragment_drawer/bdusers/ModelUsuarios.java
- com.example.geoespaciales.drawer.fragment_drawer.bdusers.ModelUsuarios
 com/example/geoespaciales/Pecuario/UtilidadesPecuario/UtilidadesPecuario.java
  com.example.geoespaciales.Pecuario.UtilidadesPecuario.UtilidadesPecuario
+com/example/geoespaciales/unidadproduccion/TiposAlimentosTres.java
+ com.example.geoespaciales.unidadproduccion.TiposAlimentosTres
+ com.example.geoespaciales.unidadproduccion.TiposAlimentosTres$1
 com/example/geoespaciales/caracterizacion/ciclo_caracterizacion9.java
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion9
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion9$1
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion9$2
-com/example/geoespaciales/unidadproduccion/TiposAlimentosTres.java
- com.example.geoespaciales.unidadproduccion.TiposAlimentosTres
- com.example.geoespaciales.unidadproduccion.TiposAlimentosTres$1
 com/example/geoespaciales/caracterizacion/ciclo_caracterizacion6.java
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion6
  com.example.geoespaciales.caracterizacion.ciclo_caracterizacion6$1

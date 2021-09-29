@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.siap.Geoespaciales",
+  "applicationId": "com.siap.Geo_Segalmex",
   "variantName": "debug",
   "elements": []
 }
