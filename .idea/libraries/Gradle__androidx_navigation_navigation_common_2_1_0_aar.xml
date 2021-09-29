@@ -4,10 +4,14 @@
       <root url="jar://$USER_HOME$/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/res" />
       <root url="file://$USER_HOME$/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Library/Android/sdk/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/Library/Android/sdk/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/res" />
+      <root url="jar://$USER_HOME$/Library/Android/sdk/caches/transforms-3/f752fb6350dfea35f4ea0310b5e1d007/transformed/navigation-common-2.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.1.0/effb6f26806b1ecc6af7cd8ebe6a30c592a0c356/navigation-common-2.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Library/Android/sdk/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.1.0/effb6f26806b1ecc6af7cd8ebe6a30c592a0c356/navigation-common-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
