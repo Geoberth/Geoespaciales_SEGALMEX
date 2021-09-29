@@ -59,7 +59,7 @@ INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX
 INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:2:1-169:12
 INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:2:1-169:12
 	package
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:3:5-40
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -107,7 +107,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\er
 	android:supportsRtl
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:8:9-38
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:8:9-37
 	android:roundIcon
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:9:9-55
 	android:icon
@@ -118,466 +118,466 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\er
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:11:9-40
 	android:usesCleartextTraffic
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:13:9-44
-activity#com.example.geoespaciales.NewCamara
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:14:9-56
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:14:19-44
-activity#com.example.geoespaciales.apicola.HerramientasProteccion
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:16:9-68
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:16:19-65
-activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_4
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:18:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:18:19-70
-activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_3
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:20:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:20:19-70
-activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_2
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:21:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:21:19-70
-activity#com.example.geoespaciales.unidadcomercializacion.Apicultura_1
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:22:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:22:19-70
-activity#com.example.geoespaciales.frutales.frutales_4_0
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:23:9-59
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:23:19-56
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_3_1
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:24:9-81
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:24:19-78
-activity#com.example.geoespaciales.caracterizacion.variables_caracterizacion.CalendarioDate
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:25:9-94
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:25:19-91
-activity#com.example.geoespaciales.unidadproduccion.FuenteAgua
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:26:9-65
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:26:19-62
-activity#com.example.geoespaciales.Gps.GpsEnableb
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:27:9-52
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:27:19-49
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.FertilizanteSi
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:28:9-84
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:28:19-81
-activity#com.example.geoespaciales.apicola.SanidadApicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:29:9-60
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:29:19-57
-activity#com.example.geoespaciales.apicola.ReproduccionApicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:30:9-65
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:30:19-62
-activity#com.example.geoespaciales.apicola.ManejoApicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:31:9-59
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:31:19-56
-activity#com.example.geoespaciales.apicola.EnfermedadesCambioPanales
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:32:9-71
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:32:19-68
-activity#com.example.geoespaciales.apicola.CosechaApicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:33:9-60
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:33:19-57
-activity#com.example.geoespaciales.apicola.CapacitacionAsistenciaApicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:34:9-75
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:34:19-72
-activity#com.example.geoespaciales.apicola.AspectosProductivosApicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:35:9-72
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:35:19-69
-activity#com.example.geoespaciales.apicola.AlimentacionApicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:36:9-65
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:36:19-62
-activity#com.example.geoespaciales.apicola.ApicolaInicio
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:37:9-59
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:37:19-56
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_8
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:38:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:38:19-76
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_7
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:39:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:39:19-76
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_6
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:40:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:40:19-76
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_5
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:41:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:41:19-76
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_4
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:42:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:42:19-76
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_3
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:43:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:43:19-76
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_2
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:44:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:44:19-76
-activity#com.example.geoespaciales.unidadcomercializacion.comercializacion_1
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:45:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:45:19-76
-activity#com.example.geoespaciales.Productor.ProductorInfo
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:46:9-61
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:46:19-58
-activity#com.example.geoespaciales.Productor.ProductorEconom
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:47:9-63
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:47:19-60
-activity#com.example.geoespaciales.Productor.IntegranteFamilia
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:48:9-65
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:48:19-62
-activity#com.example.geoespaciales.Productor.ProductorFamilia
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:49:9-64
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:49:19-61
-activity#com.example.geoespaciales.infraestructura_1
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:50:9-55
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:50:19-52
-activity#com.example.geoespaciales.frutales.frutales_14
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:51:9-58
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:51:19-55
-activity#com.example.geoespaciales.frutales.frutales_13
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:52:9-58
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:52:19-55
-activity#com.example.geoespaciales.frutales.frutales_12
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:53:9-58
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:53:19-55
-activity#com.example.geoespaciales.frutales.frutales_11
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:54:9-58
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:54:19-55
-activity#com.example.geoespaciales.frutales.frutales_10
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:55:9-58
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:55:19-55
-activity#com.example.geoespaciales.frutales.frutales_9
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:56:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:56:19-54
-activity#com.example.geoespaciales.frutales.frutales_8
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:57:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:57:19-54
-activity#com.example.geoespaciales.frutales.frutales_7
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:58:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:58:19-54
-activity#com.example.geoespaciales.frutales.frutales_6
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:59:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:59:19-54
-activity#com.example.geoespaciales.frutales.frutales_5
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:60:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:60:19-54
-activity#com.example.geoespaciales.frutales.frutales_4
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:61:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:61:19-54
-activity#com.example.geoespaciales.frutales.frutales_3
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:62:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:62:19-54
-activity#com.example.geoespaciales.frutales.frutales_2
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:63:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:63:19-54
-activity#com.example.geoespaciales.frutales.frutales_1
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:64:9-57
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:64:19-54
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.date.CalendarioActivity
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:65:9-93
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:65:19-90
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.TiempoRiego
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:66:9-81
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:66:19-78
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.PostCosecha
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:67:9-81
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:67:19-78
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.Nutricion
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:68:9-79
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:68:19-76
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunoD
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:69:9-86
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:69:19-83
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunoC
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:70:9-86
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:70:19-83
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPvunob
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:71:9-86
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:71:19-83
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.HortalizasPVuno
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:72:9-85
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:72:19-82
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.FoliarRiego
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:73:9-81
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:73:19-78
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.CosechaB
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:74:9-78
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:74:19-75
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.Cosecha
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:75:9-77
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:75:19-74
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnfermC
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:76:9-90
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:76:19-87
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:77:9-90
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:77:19-87
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlPlagasEnferm
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:78:9-89
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:78:19-86
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.ControlMalezas
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:79:9-84
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:79:19-81
-activity#com.example.geoespaciales.unidadcaracterizacionhortalizas.hortalizas
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:80:9-80
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:80:19-77
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion12
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:81:9-77
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:81:19-74
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion11
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:82:9-77
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:82:19-74
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion10
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:83:9-77
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:83:19-74
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion9
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:84:9-76
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:84:19-73
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion8
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:85:9-76
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:85:19-73
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion7
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:86:9-76
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:86:19-73
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion6
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:87:9-76
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:87:19-73
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion_tabla
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:88:9-81
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:88:19-78
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion5
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:89:9-76
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:89:19-73
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion4
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:90:9-76
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:90:19-73
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion2
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:91:9-76
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:91:19-73
-activity#com.example.geoespaciales.caracterizacion.ciclo_caracterizacion
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:92:9-75
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:92:19-72
-activity#com.example.geoespaciales.caracterizacion.ciclo_carac
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:93:9-65
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:93:19-62
-activity#com.example.geoespaciales.unidadproduccion.ModalidadHidrica
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:94:9-71
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:94:19-68
-activity#com.example.geoespaciales.unidadproduccion.TenenciaTierra
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:95:9-69
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:95:19-66
-activity#com.example.geoespaciales.unidadproduccion.TiposAlimentosTres
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:96:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:96:19-70
-activity#com.example.geoespaciales.unidadproduccion.TiposAlimentosDos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:97:9-72
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:97:19-69
-activity#com.example.geoespaciales.unidadproduccion.TiposAlimentos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:98:9-69
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:98:19-66
-activity#com.example.geoespaciales.unidadproduccion.ProduccionAcuicola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:99:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:99:19-70
-activity#com.example.geoespaciales.unidadproduccion.ProduccionForestal
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:100:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:100:19-70
-activity#com.example.geoespaciales.unidadproduccion.ProduccionPecuaria
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:101:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:101:19-70
-activity#com.example.geoespaciales.unidadproduccion.ProduccionAgricola
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:102:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:102:19-70
-activity#com.example.geoespaciales.unidadproduccion.UnidadProduccion
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:103:9-71
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:103:19-68
-activity#com.example.geoespaciales.Pecuario.EstructuraDelHato
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:104:9-64
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:104:19-61
-activity#com.example.geoespaciales.Pecuario.InventarioGanadoOvino
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:105:9-68
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:105:19-65
-activity#com.example.geoespaciales.Pecuario.InventarioGanBovinoLeche
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:106:9-71
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:106:19-68
-activity#com.example.geoespaciales.Pecuario.InventarioGanCaprino
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:107:9-67
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:107:19-64
-activity#com.example.geoespaciales.Pecuario.ManejoSanitarioOrdenia
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:108:9-69
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:108:19-66
-activity#com.example.geoespaciales.Pecuario.PecuarioAgregarAlimentos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:109:9-71
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:109:19-68
-activity#com.example.geoespaciales.Pecuario.PecuarioAlimentacionGanado
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:110:9-73
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:110:19-70
-activity#com.example.geoespaciales.Pecuario.PecuarioCaprinos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:111:9-63
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:111:19-60
-activity#com.example.geoespaciales.Pecuario.PecuarioComposicDietaOvinosCaprinos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:112:9-82
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:112:19-79
-activity#com.example.geoespaciales.Pecuario.PecuarioDietaOvinosCaprinosAlimentos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:113:9-83
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:113:19-80
-activity#com.example.geoespaciales.Pecuario.PecuarioEventosUnidadProduccion
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:114:9-78
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:114:19-75
-activity#com.example.geoespaciales.Pecuario.PecuarioInicio
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:115:9-61
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:115:19-58
-activity#com.example.geoespaciales.Pecuario.PecuarioManejoAgostadero
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:116:9-71
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:116:19-68
-activity#com.example.geoespaciales.Pecuario.PecuarioManejoSanGanado
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:117:9-70
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:117:19-67
-activity#com.example.geoespaciales.Pecuario.PecuarioOvinos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:118:9-61
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:118:19-58
-activity#com.example.geoespaciales.Pecuario.PecuarioParamProdReproductivos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:119:9-77
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:119:19-74
-activity#com.example.geoespaciales.Pecuario.PecuarioReproduccionGenetica
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:120:9-75
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:120:19-72
-activity#com.example.geoespaciales.Gps.GpsTrayectoria
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:121:9-56
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:121:19-53
-activity#com.example.geoespaciales.Gps.GpsActivity
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:122:9-53
-	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:122:19-50
-activity#com.example.geoespaciales.drawer.DrawerActivity
+activity#com.example.geo_segalmex.NewCamara
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:14:9-80
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:14:19-68
+activity#com.example.geo_segalmex.apicola.HerramientasProteccion
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:16:9-92
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:16:19-89
+activity#com.example.geo_segalmex.unidadcomercializacion.Apicultura_4
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:18:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:18:19-94
+activity#com.example.geo_segalmex.unidadcomercializacion.Apicultura_3
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:20:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:20:19-94
+activity#com.example.geo_segalmex.unidadcomercializacion.Apicultura_2
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:21:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:21:19-94
+activity#com.example.geo_segalmex.unidadcomercializacion.Apicultura_1
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:22:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:22:19-94
+activity#com.example.geo_segalmex.frutales.frutales_4_0
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:23:9-83
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:23:19-80
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_3_1
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:24:9-105
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:24:19-102
+activity#com.example.geo_segalmex.caracterizacion.variables_caracterizacion.CalendarioDate
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:25:9-118
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:25:19-115
+activity#com.example.geo_segalmex.unidadproduccion.FuenteAgua
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:26:9-89
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:26:19-86
+activity#com.example.geo_segalmex.Gps.GpsEnableb
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:27:9-76
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:27:19-73
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.FertilizanteSi
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:28:9-108
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:28:19-105
+activity#com.example.geo_segalmex.apicola.SanidadApicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:29:9-84
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:29:19-81
+activity#com.example.geo_segalmex.apicola.ReproduccionApicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:30:9-89
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:30:19-86
+activity#com.example.geo_segalmex.apicola.ManejoApicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:31:9-83
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:31:19-80
+activity#com.example.geo_segalmex.apicola.EnfermedadesCambioPanales
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:32:9-95
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:32:19-92
+activity#com.example.geo_segalmex.apicola.CosechaApicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:33:9-84
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:33:19-81
+activity#com.example.geo_segalmex.apicola.CapacitacionAsistenciaApicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:34:9-99
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:34:19-96
+activity#com.example.geo_segalmex.apicola.AspectosProductivosApicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:35:9-96
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:35:19-93
+activity#com.example.geo_segalmex.apicola.AlimentacionApicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:36:9-89
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:36:19-86
+activity#com.example.geo_segalmex.apicola.ApicolaInicio
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:37:9-83
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:37:19-80
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_8
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:38:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:38:19-100
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_7
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:39:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:39:19-100
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_6
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:40:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:40:19-100
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_5
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:41:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:41:19-100
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_4
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:42:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:42:19-100
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_3
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:43:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:43:19-100
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_2
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:44:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:44:19-100
+activity#com.example.geo_segalmex.unidadcomercializacion.comercializacion_1
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:45:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:45:19-100
+activity#com.example.geo_segalmex.Productor.ProductorInfo
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:46:9-85
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:46:19-82
+activity#com.example.geo_segalmex.Productor.ProductorEconom
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:47:9-87
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:47:19-84
+activity#com.example.geo_segalmex.Productor.IntegranteFamilia
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:48:9-89
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:48:19-86
+activity#com.example.geo_segalmex.Productor.ProductorFamilia
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:49:9-88
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:49:19-85
+activity#com.example.geo_segalmex.infraestructura_1
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:50:9-79
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:50:19-76
+activity#com.example.geo_segalmex.frutales.frutales_14
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:51:9-82
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:51:19-79
+activity#com.example.geo_segalmex.frutales.frutales_13
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:52:9-82
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:52:19-79
+activity#com.example.geo_segalmex.frutales.frutales_12
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:53:9-82
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:53:19-79
+activity#com.example.geo_segalmex.frutales.frutales_11
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:54:9-82
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:54:19-79
+activity#com.example.geo_segalmex.frutales.frutales_10
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:55:9-82
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:55:19-79
+activity#com.example.geo_segalmex.frutales.frutales_9
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:56:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:56:19-78
+activity#com.example.geo_segalmex.frutales.frutales_8
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:57:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:57:19-78
+activity#com.example.geo_segalmex.frutales.frutales_7
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:58:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:58:19-78
+activity#com.example.geo_segalmex.frutales.frutales_6
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:59:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:59:19-78
+activity#com.example.geo_segalmex.frutales.frutales_5
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:60:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:60:19-78
+activity#com.example.geo_segalmex.frutales.frutales_4
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:61:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:61:19-78
+activity#com.example.geo_segalmex.frutales.frutales_3
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:62:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:62:19-78
+activity#com.example.geo_segalmex.frutales.frutales_2
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:63:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:63:19-78
+activity#com.example.geo_segalmex.frutales.frutales_1
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:64:9-81
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:64:19-78
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.date.CalendarioActivity
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:65:9-117
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:65:19-114
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.TiempoRiego
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:66:9-105
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:66:19-102
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.PostCosecha
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:67:9-105
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:67:19-102
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.Nutricion
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:68:9-103
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:68:19-100
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.HortalizasPvunoD
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:69:9-110
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:69:19-107
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.HortalizasPvunoC
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:70:9-110
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:70:19-107
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.HortalizasPvunob
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:71:9-110
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:71:19-107
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.HortalizasPVuno
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:72:9-109
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:72:19-106
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.FoliarRiego
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:73:9-105
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:73:19-102
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.CosechaB
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:74:9-102
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:74:19-99
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.Cosecha
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:75:9-101
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:75:19-98
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermC
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:76:9-114
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:76:19-111
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:77:9-114
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:77:19-111
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.ControlPlagasEnferm
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:78:9-113
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:78:19-110
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.ControlMalezas
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:79:9-108
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:79:19-105
+activity#com.example.geo_segalmex.unidadcaracterizacionhortalizas.hortalizas
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:80:9-104
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:80:19-101
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion12
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:81:9-101
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:81:19-98
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion11
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:82:9-101
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:82:19-98
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion10
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:83:9-101
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:83:19-98
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion9
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:84:9-100
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:84:19-97
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion8
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:85:9-100
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:85:19-97
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion7
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:86:9-100
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:86:19-97
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion6
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:87:9-100
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:87:19-97
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion_tabla
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:88:9-105
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:88:19-102
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion5
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:89:9-100
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:89:19-97
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion4
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:90:9-100
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:90:19-97
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion2
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:91:9-100
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:91:19-97
+activity#com.example.geo_segalmex.caracterizacion.ciclo_caracterizacion
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:92:9-99
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:92:19-96
+activity#com.example.geo_segalmex.caracterizacion.ciclo_carac
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:93:9-89
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:93:19-86
+activity#com.example.geo_segalmex.unidadproduccion.ModalidadHidrica
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:94:9-95
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:94:19-92
+activity#com.example.geo_segalmex.unidadproduccion.TenenciaTierra
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:95:9-93
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:95:19-90
+activity#com.example.geo_segalmex.unidadproduccion.TiposAlimentosTres
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:96:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:96:19-94
+activity#com.example.geo_segalmex.unidadproduccion.TiposAlimentosDos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:97:9-96
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:97:19-93
+activity#com.example.geo_segalmex.unidadproduccion.TiposAlimentos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:98:9-93
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:98:19-90
+activity#com.example.geo_segalmex.unidadproduccion.ProduccionAcuicola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:99:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:99:19-94
+activity#com.example.geo_segalmex.unidadproduccion.ProduccionForestal
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:100:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:100:19-94
+activity#com.example.geo_segalmex.unidadproduccion.ProduccionPecuaria
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:101:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:101:19-94
+activity#com.example.geo_segalmex.unidadproduccion.ProduccionAgricola
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:102:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:102:19-94
+activity#com.example.geo_segalmex.unidadproduccion.UnidadProduccion
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:103:9-95
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:103:19-92
+activity#com.example.geo_segalmex.Pecuario.EstructuraDelHato
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:104:9-88
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:104:19-85
+activity#com.example.geo_segalmex.Pecuario.InventarioGanadoOvino
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:105:9-92
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:105:19-89
+activity#com.example.geo_segalmex.Pecuario.InventarioGanBovinoLeche
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:106:9-95
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:106:19-92
+activity#com.example.geo_segalmex.Pecuario.InventarioGanCaprino
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:107:9-91
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:107:19-88
+activity#com.example.geo_segalmex.Pecuario.ManejoSanitarioOrdenia
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:108:9-93
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:108:19-90
+activity#com.example.geo_segalmex.Pecuario.PecuarioAgregarAlimentos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:109:9-95
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:109:19-92
+activity#com.example.geo_segalmex.Pecuario.PecuarioAlimentacionGanado
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:110:9-97
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:110:19-94
+activity#com.example.geo_segalmex.Pecuario.PecuarioCaprinos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:111:9-87
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:111:19-84
+activity#com.example.geo_segalmex.Pecuario.PecuarioComposicDietaOvinosCaprinos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:112:9-106
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:112:19-103
+activity#com.example.geo_segalmex.Pecuario.PecuarioDietaOvinosCaprinosAlimentos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:113:9-107
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:113:19-104
+activity#com.example.geo_segalmex.Pecuario.PecuarioEventosUnidadProduccion
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:114:9-102
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:114:19-99
+activity#com.example.geo_segalmex.Pecuario.PecuarioInicio
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:115:9-85
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:115:19-82
+activity#com.example.geo_segalmex.Pecuario.PecuarioManejoAgostadero
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:116:9-95
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:116:19-92
+activity#com.example.geo_segalmex.Pecuario.PecuarioManejoSanGanado
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:117:9-94
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:117:19-91
+activity#com.example.geo_segalmex.Pecuario.PecuarioOvinos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:118:9-85
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:118:19-82
+activity#com.example.geo_segalmex.Pecuario.PecuarioParamProdReproductivos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:119:9-101
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:119:19-98
+activity#com.example.geo_segalmex.Pecuario.PecuarioReproduccionGenetica
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:120:9-99
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:120:19-96
+activity#com.example.geo_segalmex.Gps.GpsTrayectoria
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:121:9-80
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:121:19-77
+activity#com.example.geo_segalmex.Gps.GpsActivity
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:122:9-77
+	android:name
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:122:19-74
+activity#com.example.geo_segalmex.drawer.DrawerActivity
 ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:123:9-126:59
 	android:label
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:125:13-35
 	android:theme
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:126:13-56
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:124:13-50
-activity#com.example.geoespaciales.Georeferencia.GeoreferenciaActivity
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:127:9-73
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:124:13-74
+activity#com.example.geo_segalmex.Georeferencia.GeoreferenciaActivity
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:127:9-97
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:127:19-70
-activity#com.example.geoespaciales.Geo.GeoFotos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:128:9-50
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:127:19-94
+activity#com.example.geo_segalmex.Geo.GeoFotos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:128:9-74
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:128:19-47
-activity#com.example.geoespaciales.Geo.FotoActivityDos
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:129:9-57
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:128:19-71
+activity#com.example.geo_segalmex.Geo.FotoActivityDos
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:129:9-81
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:129:19-54
-activity#com.example.geoespaciales.Geo.FotoActivityUno
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:130:9-57
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:129:19-78
+activity#com.example.geo_segalmex.Geo.FotoActivityUno
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:130:9-81
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:130:19-54
-activity#com.example.geoespaciales.IdentificacionCuestionario
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:131:9-64
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:130:19-78
+activity#com.example.geo_segalmex.IdentificacionCuestionario
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:131:9-88
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:131:19-61
-activity#com.example.geoespaciales.Segunda
-ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:132:9-45
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:131:19-85
+activity#com.example.geo_segalmex.Segunda
+ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:132:9-69
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:132:19-42
-activity#com.example.geoespaciales.Principal
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:132:19-66
+activity#com.example.geo_segalmex.Principal
 ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:133:9-139:20
 	android:name
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:133:19-44
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:133:19-68
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:134:13-138:29
 action#android.intent.action.MAIN
@@ -613,7 +613,7 @@ ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\ap
 	android:grantUriPermissions
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:154:13-47
 	android:authorities
-		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:152:13-73
+		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:152:13-72
 	android:exported
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:153:13-37
 	android:name
