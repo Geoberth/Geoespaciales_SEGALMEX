@@ -164,7 +164,7 @@ public class NewCamara extends AppCompatActivity {
     //Android 11
     private void abrirCamara(String id){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if(intent.resolveActivity(getPackageManager()) != null){
+        //if(intent.resolveActivity(getPackageManager()) != null){
             File imagenarchivo = null;
             try{
                 imagenarchivo = crearimagen(id);
@@ -176,7 +176,7 @@ public class NewCamara extends AppCompatActivity {
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, fotoUri);
                 startActivityForResult(intent, 1);
             }
-        }
+       // }
     }
 
     private File crearimagen(String id) throws IOException {

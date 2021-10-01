@@ -409,14 +409,9 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/ControlPlagasEnfermB.jav
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$1
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$2
-com/example/geosegalmex/NewCamara.java
- com.example.geosegalmex.NewCamara
- com.example.geosegalmex.NewCamara$1
- com.example.geosegalmex.NewCamara$1$1
- com.example.geosegalmex.NewCamara$2
- com.example.geosegalmex.NewCamara$2$1
- com.example.geosegalmex.NewCamara$3
- com.example.geosegalmex.NewCamara$3$1
+com/example/geosegalmex/unidadcomercializacion/Apicultura_3.java
+ com.example.geosegalmex.unidadcomercializacion.Apicultura_3
+ com.example.geosegalmex.unidadcomercializacion.Apicultura_3$1
 com/example/geosegalmex/frutales/frutales_2.java
  com.example.geosegalmex.frutales.frutales_2
  com.example.geosegalmex.frutales.frutales_2$1
@@ -453,14 +448,9 @@ com/example/geosegalmex/Pecuario/PecuarioInicio.java
  com.example.geosegalmex.Pecuario.PecuarioInicio$3
  com.example.geosegalmex.Pecuario.PecuarioInicio$4
  com.example.geosegalmex.Pecuario.PecuarioInicio$5
-com/example/geosegalmex/Gps/GpsEnableb.java
- com.example.geosegalmex.Gps.GpsEnableb
- com.example.geosegalmex.Gps.GpsEnableb$1
- com.example.geosegalmex.Gps.GpsEnableb$2
- com.example.geosegalmex.Gps.GpsEnableb$3
- com.example.geosegalmex.Gps.GpsEnableb$4
- com.example.geosegalmex.Gps.GpsEnableb$5
- com.example.geosegalmex.Gps.GpsEnableb$5$1
+com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
 com/example/geosegalmex/unidadcaracterizacionhortalizas/FertilizanteSi.java
  com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi
  com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi$1
@@ -584,9 +574,19 @@ com/example/geosegalmex/LiconsaVentanilla/Pasl_o_Model.java
 com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
-com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
-com/example/geosegalmex/unidadcomercializacion/Apicultura_3.java
- com.example.geosegalmex.unidadcomercializacion.Apicultura_3
- com.example.geosegalmex.unidadcomercializacion.Apicultura_3$1
+com/example/geosegalmex/NewCamara.java
+ com.example.geosegalmex.NewCamara
+ com.example.geosegalmex.NewCamara$1
+ com.example.geosegalmex.NewCamara$1$1
+ com.example.geosegalmex.NewCamara$2
+ com.example.geosegalmex.NewCamara$2$1
+ com.example.geosegalmex.NewCamara$3
+ com.example.geosegalmex.NewCamara$3$1
+com/example/geosegalmex/Gps/GpsEnableb.java
+ com.example.geosegalmex.Gps.GpsEnableb
+ com.example.geosegalmex.Gps.GpsEnableb$1
+ com.example.geosegalmex.Gps.GpsEnableb$2
+ com.example.geosegalmex.Gps.GpsEnableb$3
+ com.example.geosegalmex.Gps.GpsEnableb$4
+ com.example.geosegalmex.Gps.GpsEnableb$5
+ com.example.geosegalmex.Gps.GpsEnableb$5$1
