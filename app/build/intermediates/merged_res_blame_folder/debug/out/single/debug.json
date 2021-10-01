@@ -20,12 +20,12 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_ciclo_caracterizacion2.xml"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_herramientas_proteccion.xml.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_herramientas_proteccion.xml"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_frutales_12.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_frutales_12.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_herramientas_proteccion.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_herramientas_proteccion.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_manejo_sanitario_ordenia.xml.flat",
@@ -90,6 +90,10 @@
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_hortalizas_pvunob.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_hortalizas_pvunob.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\drawable_borde.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\borde.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_alimentacion_apicola.xml.flat",
@@ -532,6 +536,10 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\ic_menu_share.xml"
     },
     {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pasl_operativo.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pasl_operativo.xml"
+    },
+    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_hortalizas_pvuno.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_hortalizas_pvuno.xml"
     },
@@ -658,6 +666,10 @@
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\drawable_image_icon_compact_camera_pic_512x512.png.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\image_icon_compact_camera_pic_512x512.png"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_paslbeneficiario.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_paslbeneficiario.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_aspectos_productivos_apicola.xml.flat",

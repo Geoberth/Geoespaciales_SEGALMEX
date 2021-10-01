@@ -9,6 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Georeferencia.Utilidades;
 import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
+import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
+import com.example.geosegalmex.LiconsaVentanilla.pasl_operativo_bd;
 import com.example.geosegalmex.Pecuario.GlobalPecuario.GlobalPecuario;
 import com.example.geosegalmex.Pecuario.UtilidadesPecuario.UtilidadesPecuario;
 import com.example.geosegalmex.Principal;
@@ -29,7 +31,7 @@ import com.example.geosegalmex.unidadproduccion.variables.VariablesGlobalesUpf;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DB_NAME  = "BDENCUESTA";
-    public static final int DB_VERSION = 12;
+    public static final int DB_VERSION = 22;
 
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -39,8 +41,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+        //SEGALMEX
+        db.execSQL(pasl_operativo_bd.CREAR_TABLA_PASL_OPERATIVO);
+
+
+
+
         //Usuarios
-        db.execSQL(UtilidadesUsuarios.CREAR_TABLA_USUARIOS);
+        //db.execSQL(UtilidadesUsuarios.CREAR_TABLA_USUARIOS);
 
         //Municipios
         db.execSQL(UtilidadesEdoMunicipios.CREAR_TABLA_WAZURE);
@@ -112,7 +120,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(UtilidadesModuloTres.CREAR_TABLA_ACUICOLA);
 */
         //Unidad 1 IdentificacionCuestionario
-        db.execSQL(UtilidadesProductor.CREAR_TABLA_CUESTIONARIO2);
+        //db.execSQL(UtilidadesProductor.CREAR_TABLA_CUESTIONARIO2);
 /*
         //Unidad 2 Productor
         db.execSQL(UtilidadesProductor.CREAR_TABLA_PRODUCTOR);
@@ -144,6 +152,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        //SEGALMEX
+        db.execSQL("DROP TABLE IF EXISTS "+ pasl_operativo_bd.TABLA_BD);
+
+
         //Usuarios
         db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesUsuarios.TABLA_USUARIOS);
 
@@ -3226,6 +3238,49 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
     }
+
+    public boolean addPasl_operativo(Pasl_o_Model model){
+
+        SQLiteDatabase db           = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(pasl_operativo_bd.COLUMN_FOLIO, model.getFolio());
+        contentValues.put(pasl_operativo_bd.COLUMN_FECHA, model.getFecha());
+        contentValues.put(pasl_operativo_bd.COLUMN_ESTADO, model.getEstado());
+        contentValues.put(pasl_operativo_bd.COLUMN_MUNICIPIO, model.getMunicipio());
+        contentValues.put(pasl_operativo_bd.COLUMN_LOCALIDAD, model.getLocalidad());
+        contentValues.put(pasl_operativo_bd.COLUMN_NOMBRE, model.getNombre());
+        contentValues.put(pasl_operativo_bd.COLUMN_APATERNO, model.getApaterno());
+        contentValues.put(pasl_operativo_bd.COLUMN_AMATERNO, model.getAmaterno());
+        contentValues.put(pasl_operativo_bd.COLUMN_SEXO, model.getSexo());
+        contentValues.put(pasl_operativo_bd.COLUMN_EDAD, model.getEdad());
+        contentValues.put(pasl_operativo_bd.COLUMN_TIEMPO, model.getTiempo());
+        contentValues.put(pasl_operativo_bd.COLUMN_UNO, model.getUno());
+        contentValues.put(pasl_operativo_bd.COLUMN_DOS, model.getDos());
+        contentValues.put(pasl_operativo_bd.COLUMN_TRES, model.getTres());
+        contentValues.put(pasl_operativo_bd.COLUMN_CUATRO, model.getCuatro());
+        contentValues.put(pasl_operativo_bd.COLUMN_CINCO, model.getCinco());
+        contentValues.put(pasl_operativo_bd.COLUMN_SEIS, model.getSeis());
+        contentValues.put(pasl_operativo_bd.COLUMN_SIETE, model.getSiete());
+        contentValues.put(pasl_operativo_bd.COLUMN_OCHO, model.getOcho());
+        contentValues.put(pasl_operativo_bd.COLUMN_NUEVE, model.getNueve());
+        contentValues.put(pasl_operativo_bd.COLUMN_DIEZ, model.getDiez());
+        contentValues.put(pasl_operativo_bd.COLUMN_ONCE, model.getOnce());
+        contentValues.put(pasl_operativo_bd.COLUMN_DOCE, model.getDoce());
+        contentValues.put(pasl_operativo_bd.COLUMN_DOCEOBSERVACIONES, model.getDoce_bservaciones());
+        contentValues.put(pasl_operativo_bd.COLUMN_TRECE, model.getTrece());
+
+        long result = db.insert(pasl_operativo_bd.TABLA_BD, null, contentValues);
+        db.close();
+
+        if(result == -1) {
+            return false;
+        }else{
+            return true;
+        }
+
+    }
+
 
 
 

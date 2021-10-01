@@ -138,11 +138,17 @@ public class GpsEnableb extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
-                    case 0:
+                   /* case 0:
                         textid.setText("FA"+folioo);
                         break;
                     case 1:
                         textid.setText("ES"+folioo);
+                        break;*/
+                    case 0:
+                        textid.setText("PASL_O_"+folioo);
+                        break;
+                    case 1:
+                        textid.setText("PASL_B_"+folioo);
                         break;
                 }
             }
@@ -161,6 +167,8 @@ public class GpsEnableb extends AppCompatActivity {
                     General.Foliocuestion=textid.getText().toString();
                     aggTrayectoriaGps();
                     General.Proyecto = proyecto.getSelectedItem().toString();
+                    General.Latini = "" + latitudeGPS;
+                    General.Lonini = "" + longitudeGPS;
                     startActivity(new Intent(getApplication(), NewCamara.class));
                 }
             }

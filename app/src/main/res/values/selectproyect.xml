@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="selectproyect">
-    <item>Frontera Agrícola</item>
-    <item>Estimación de Superficie Agrícola</item>
+    <!--<item>Frontera Agrícola</item>-->
+    <!--<item>Estimación de Superficie Agrícola</item>-->
+    <item>PASL Operativo</item>
+    <item>PASL Beneficiario</item>
 
     </string-array>
 

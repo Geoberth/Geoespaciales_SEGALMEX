@@ -7,6 +7,9 @@ public class General {
     public static String Usuario;
     public static String Contrasena;
 
+    public static String Latini;
+    public static String Lonini;
+
     //Ambas encuestas
     public static String Foliocuestion;//1
     public static  String fechaenc;//2

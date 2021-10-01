@@ -6618,8 +6618,10 @@
         <item>Chontal de Guerrero</item>
 
     </string-array><string name="pueblo_prompt">Selecciona pueblo originario</string></file><file path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\values\relacionupf.xml" qualifiers=""/><file path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\values\selectproyect.xml" qualifiers=""><string-array name="selectproyect">
-    <item>Frontera Agrícola</item>
-    <item>Estimación de Superficie Agrícola</item>
+    
+    
+    <item>PASL Operativo</item>
+    <item>PASL Beneficiario</item>
 
     </string-array><string name="relacion_proyecto">relaproyect</string></file><file path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\values\semillas_cultivo.xml" qualifiers=""><string-array name="semillas_cultivo">
         <item>Especifique el tipo de semilla</item>
@@ -6709,7 +6711,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
-    </style></file><file name="file_paths" path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\xml\file_paths.xml" qualifiers="" type="xml"/></source><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\build\generated\res\rs\debug"/><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="file_paths" path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\xml\file_paths.xml" qualifiers="" type="xml"/><file name="borde" path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\drawable\borde.xml" qualifiers="" type="drawable"/><file name="activity_pasl_operativo" path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\layout\activity_pasl_operativo.xml" qualifiers="" type="layout"/><file name="activity_paslbeneficiario" path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\res\layout\activity_paslbeneficiario.xml" qualifiers="" type="layout"/></source><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\build\generated\res\rs\debug"/><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

@@ -22,7 +22,8 @@ import android.provider.MediaStore;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.geosegalmex.Gps.GpsEnableb;
+import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
+import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,13 +35,13 @@ public class NewCamara extends AppCompatActivity {
     TextView txt1, txt2;
     File archivo;
     File archivo2;
-    String lizbelat = GpsEnableb.lizlati;
-    String lizbelon = GpsEnableb.lizlong;
+    String lizbelat = General.Latini;
+    String lizbelon = General.Lonini;
     String lizID = General.Foliocuestion;
     String nombreImagen = ""+ lizID + "," + lizbelat + "," + lizbelon + "_1.jpg";
     String nombreImagen2 = ""+ lizID + "," + lizbelat + "," + lizbelon + "_2.jpg";
     String rutaImagen;
-    String nombre;
+    String nombre, nombre2;
     String version = Build.VERSION.RELEASE;
 
     @Override
@@ -75,7 +76,7 @@ public class NewCamara extends AppCompatActivity {
                     @Override
                     public void run() {
                         btnCamara.setVisibility(View.GONE);
-                        btnCamara2.setVisibility(View.VISIBLE);
+                        //btnCamara2.setVisibility(View.VISIBLE);
                         logo1.setVisibility(View.VISIBLE);
                         txt1.setVisibility(View.VISIBLE);
                     }
@@ -88,37 +89,20 @@ public class NewCamara extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(Integer.parseInt(version)>10){
-                    archivo = new File(getExternalFilesDir(null), "/GEOESPACIALES/" + nombre);
+                    abrirCamara("2");
                 }
                 else{
-                    archivo = new File(getExternalFilesDir(null), "../../../../GEOESPACIALES/" + nombreImagen);
+                    tomarFoto(2);
                 }
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        btnCamara2.setVisibility(View.GONE);
+                        logo2.setVisibility(View.VISIBLE);
+                        txt2.setVisibility(View.VISIBLE);
+                    }
+                },2000);
 
-                if (!archivo.exists()){
-                    Toast.makeText(getApplicationContext(), "No se guardo la Foto 1, favor de repetirla.",Toast.LENGTH_SHORT).show();
-                    btnCamara.setVisibility(View.VISIBLE);
-                    btnCamara2.setVisibility(View.GONE);
-                    logo1.setVisibility(View.GONE);
-                    txt1.setVisibility(View.GONE);
-                }
-                else{
-                    if(Integer.parseInt(version)>10){
-                        abrirCamara("2");
-                    }
-                    else{
-                        tomarFoto(2);
-                    }
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            btnCamara2.setVisibility(View.GONE);
-                            btnNext.setVisibility(View.VISIBLE);
-                            logo2.setVisibility(View.VISIBLE);
-                            txt2.setVisibility(View.VISIBLE);
-                            txt1.setText("Foto 1 guardada correctamente");
-                        }
-                    },2000);
-                }
 
             }
         });
@@ -126,33 +110,53 @@ public class NewCamara extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(Integer.parseInt(version)>10){
-                    archivo2 = new File(getExternalFilesDir(null), "/GEOESPACIALES/" + nombre);
+                if(btnCamara.getVisibility()==View.VISIBLE || btnCamara2.getVisibility()==View.VISIBLE){
+                    Toast.makeText(getApplicationContext(), "Favor de capturar las fotos",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    archivo2 = new File(getExternalFilesDir(null), "../../../../GEOESPACIALES/" + nombreImagen2);
-                }
+                    if(Integer.parseInt(version)>10){
+                        archivo = new File(getExternalFilesDir(null), "/GEOSEGALMEX/" + nombre);
+                        archivo2 = new File(getExternalFilesDir(null), "/GEOSEGALMEX/" + nombre2);
+                    }
+                    else{
+                        archivo = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagen);
+                        archivo2 = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagen2);
+                    }
 
-
-                if (!archivo2.exists()){
-                    Toast.makeText(getApplicationContext(), "No se guardo la Foto 2, favor de repetirla.",Toast.LENGTH_SHORT).show();
-                    btnCamara2.setVisibility(View.VISIBLE);
-                    btnNext.setVisibility(View.GONE);
-                    logo2.setVisibility(View.GONE);
-                    txt2.setVisibility(View.GONE);
-                }
-                else{
-                    txt2.setText("Foto 2 guardada correctamente");
-                    btnNext.setVisibility(View.GONE);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            //Toast.makeText(getApplicationContext(), "Podemos avanzar",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
-                        }
-                    },2000);
+                    if (!archivo.exists()){
+                        Toast.makeText(getApplicationContext(), "No se guardo la Foto 1, favor de repetirla.",Toast.LENGTH_SHORT).show();
+                        btnCamara.setVisibility(View.VISIBLE);
+                        logo1.setVisibility(View.GONE);
+                        txt1.setVisibility(View.GONE);
+                    }
+                    else if (!archivo2.exists()){
+                        Toast.makeText(getApplicationContext(), "No se guardo la Foto 2, favor de repetirla.",Toast.LENGTH_SHORT).show();
+                        btnCamara2.setVisibility(View.VISIBLE);
+                        logo2.setVisibility(View.GONE);
+                        txt2.setVisibility(View.GONE);
+                    }
+                    else{
+                        txt1.setText("Foto 1 guardada correctamente");
+                        txt2.setText("Foto 2 guardada correctamente");
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                //Toast.makeText(getApplicationContext(), "Podemos avanzar",Toast.LENGTH_SHORT).show();
+                                if(General.Proyecto.equals("PASL Operativo")){
+                                    startActivity(new Intent(getApplication(), PASLOperativo.class));
+                                }
+                                else if(General.Proyecto.equals("PASL Beneficiario")){
+                                    startActivity(new Intent(getApplication(), PASLBeneficiario.class));
+                                }
+                                else{
+                                    startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
+                                }
+                            }
+                        },2000);
+                    }
                 }
             }
+
         });
 
     }
@@ -160,7 +164,7 @@ public class NewCamara extends AppCompatActivity {
     //Android 11
     private void abrirCamara(String id){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        //if(intent.resolveActivity(getPackageManager()) != null){
+        if(intent.resolveActivity(getPackageManager()) != null){
             File imagenarchivo = null;
             try{
                 imagenarchivo = crearimagen(id);
@@ -172,49 +176,55 @@ public class NewCamara extends AppCompatActivity {
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, fotoUri);
                 startActivityForResult(intent, 1);
             }
-       // }
+        }
     }
 
     private File crearimagen(String id) throws IOException {
-        String lizbelat = GpsEnableb.lizlati;
-        String lizbelon = GpsEnableb.lizlong;
+        String lizbelat = General.Latini;
+        String lizbelon = General.Lonini;
         String lizID = General.Foliocuestion;
         String nombreImagen = ""+ lizID + "," + lizbelat + "," + lizbelon + "_" + id + "_";
 
-        File file = new File(getExternalFilesDir(null), "/GEOESPACIALES/");
+        File file = new File(getExternalFilesDir(null), "/GEOSEGALMEX/");
         if (!file.exists()) {
             file.mkdirs();
         }
         File imagen = File.createTempFile(nombreImagen, ".jpg", file);
         rutaImagen = imagen.getAbsolutePath();
         String[] parts = rutaImagen.split("/");
-        nombre = parts[9];
+        if (id.equals("1")){
+            nombre = parts[9];
+        }
+        else{
+            nombre2 = parts[9];
+        }
+
         return imagen;
     }
 
     //Android 10 o menor
     public void tomarFoto(int id) {
-        String lizbelat = GpsEnableb.lizlati;
-        String lizbelon = GpsEnableb.lizlong;
+        String lizbelat = General.Latini;
+        String lizbelon = General.Lonini;
         String lizID = General.Foliocuestion;
         String nombreImagennn = ""+ lizID + "," + lizbelat + "," + lizbelon + "_" + id + ".jpg";
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
 
-        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "GEOESPACIALES";
+        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX";
         File directory = new File(DB_PATHCopy);
         if (!directory.exists()) {
-            String direc = Environment.getExternalStorageDirectory().toString() + "/GEOESPACIALES/";
+            String direc = Environment.getExternalStorageDirectory().toString() + "/GEOSEGALMEX/";
             new File(direc).mkdirs();
 
             Intent intento1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            File foto = new File(getExternalFilesDir(null), "../../../../GEOESPACIALES/" + nombreImagennn);
+            File foto = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagennn);
             intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
             startActivity(intento1);
         }
         else{
             Intent intento1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            File foto = new File(getExternalFilesDir(null), "../../../../GEOESPACIALES/" + nombreImagennn);
+            File foto = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagennn);
             intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
             startActivity(intento1);
         }

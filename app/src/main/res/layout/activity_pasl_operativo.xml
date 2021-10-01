@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiconsaVentanilla.PASLOperativo">
+
+    <ScrollView
+        android:id="@+id/scrollProd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pasl_o_tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROGRAMA DE ABASTO SOCIAL DE LECHE (PASL)"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/pasl_o_tvTitulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENCUESTA PARA EL RESPONSABLE DE ATENDER LECHERÍAS"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvFech"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/pasl_o_txtFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pasl_o_tvSubtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="I. DATOS DE LA LECHERÍA LICONSA:"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/pasl_o_txtEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Estado:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/pasl_o_spiEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/estatus"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/borde"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pasl_o_txtMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Municipio:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/pasl_o_spiMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/estatus"
+                android:background="@drawable/borde"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pasl_o_tvLocalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Localidad:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pasl_o_txtLocalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords|textAutoCorrect" />
+
+
+
+            <TextView
+                android:id="@+id/pasl_o_tvSubtitulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="II. DATOS DE ENCARGADO DE TIENDA"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pasl_o_tvNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Nombre(s):"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pasl_o_txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords|textAutoCorrect" />
+
+            <TextView
+                android:id="@+id/pasl_o_tvApaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Apellido Paterno:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pasl_o_txtApaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords|textAutoCorrect" />
+
+            <TextView
+                android:id="@+id/pasl_o_tvAmaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Apellido Materno:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pasl_o_txtAmaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords|textAutoCorrect" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbHombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Hombre" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbMujer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Mujer" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pasl_o_tvEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Edad:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pasl_o_txtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number|numberDecimal"/>
+
+            <TextView
+                android:id="@+id/pasl_o_tvTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Tiempo que tiene como encargado de esta tienda:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvaños"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Años:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pasl_o_txtAños"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvMeses"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Meses:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pasl_o_txtMeses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pasl_o_tvSubtitulo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="III. PREGUNTAS SOBRE LA OPERACIÓN DE LA LECHERÍA"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pasl_o_tvSubtitulo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Por parte de LICONSA:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvUno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. ¿Conoce la operación del Programa de Abasto Social de Leche?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvDos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. ¿Conoce el procedimiento de operación de la lechería?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvTres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. ¿Le dieron a conocer con oportunidad la lista de beneficiarios que le corresponde atender?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvCuatro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. ¿Lo capacitaron sobre la operación del Programa?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvCinco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. ¿Sabe si LICONSA realizó actividades de difusión para promover el programa en su localidad?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvSeis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. ¿Sabe si se hicieron actividades de difusión ante los beneficiarios acerca de los requisitos para actualización de datos y mantenerse en el padrón de beneficiarios?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvSiete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. ¿Cuenta con los elementos necesarios para revisar que la cantidad de leche entregada a cada beneficiario sea la correcta?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvOcho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. ¿Cuenta con los elementos necesarios para rectificar  la información sobre el beneficiario y la cantidad de leche que éste recibe?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pasl_o_tvSubtitulo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Otros:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvNueve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9. ¿Recibe la cantidad correcta de leche de acuerdo con el listado de beneficiarios del programa?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvDiez"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10. ¿Identifica a beneficiarios que acuden a su lechería y no se encuentran en el listado de beneficiarios?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvOnce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11. En su caso, ¿se atendieron con oportunidad sus reportes para la rectificación de información sobre el padrón de beneficiarios?"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvDoce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12. ¿Se difundió ante la población la posibilidad de conformar los Comités de Abasto Social en el marco del Programa? En caso afirmativo, detallar cuales en observaciones."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/pasl_o_rg12"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/pasl_o_txtObservaciones12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Observaciones:"
+                    android:visibility="gone"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvTrece"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="13. ¿Tiene alguna recomendación para la mejora del Programa o comentarios adicionales que desee hacer? "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="Si" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:text="No" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Tomar punto georreferenciado y finalizar trayectoria automática"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+
+                android:id="@+id/btn_Avanzar"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp"
+                android:text="TOMAR GEORREFERENCIA"
+                app:iconPadding="20dp"
+                app:icon="@android:drawable/ic_input_add"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

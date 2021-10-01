@@ -166,12 +166,12 @@ public class ExportarFragment extends Fragment {
 */
         String packageName = getContext().getPackageName();
         String DB_PATH = "/data/data/" + packageName + "/databases/";
-        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "GEOESPACIALES";
+        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX";
 
         String version = Build.VERSION.RELEASE;
 
         if(Integer.parseInt(version)>10){
-            File file = new File(getActivity().getExternalFilesDir(null), "/GEOESPACIALES/");
+            File file = new File(getActivity().getExternalFilesDir(null), "/GEOSEGALMEX/");
             if (!file.exists()) {
                 file.mkdirs();
             }
@@ -180,7 +180,7 @@ public class ExportarFragment extends Fragment {
             File directory = new File(DB_PATHCopy);
             if (!directory.exists()) {
                 //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
-                String direc = Environment.getExternalStorageDirectory().toString() + "/GEOESPACIALES/";
+                String direc = Environment.getExternalStorageDirectory().toString() + "/GEOSEGALMEX/";
 
                 new File(direc).mkdirs();
             }
@@ -204,7 +204,7 @@ public class ExportarFragment extends Fragment {
 
         String outFileName;
         if(Integer.parseInt(version)>10){
-            File file = new File(getActivity().getExternalFilesDir(null), "/GEOESPACIALES/basedatos");
+            File file = new File(getActivity().getExternalFilesDir(null), "/GEOSEGALMEX/basedatos");
             try {
                 if (!file.exists()) {
                     file.createNewFile();
@@ -215,7 +215,7 @@ public class ExportarFragment extends Fragment {
             outFileName = file.getAbsolutePath();
         }
         else{
-            outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOESPACIALES" + "/" + "basedatos";
+            outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX" + "/" + "basedatos";
         }
 
         //String outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOESPACIALES" + "/" + "basedatos";
