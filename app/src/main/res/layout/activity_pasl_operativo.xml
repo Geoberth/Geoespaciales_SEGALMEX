@@ -27,6 +27,7 @@
             android:layout_marginBottom="16dp"
             android:orientation="vertical">
 
+
             <TextView
                 android:id="@+id/pasl_o_tvTitulo"
                 android:layout_width="match_parent"

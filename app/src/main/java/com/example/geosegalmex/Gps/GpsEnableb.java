@@ -44,6 +44,7 @@ public class GpsEnableb extends AppCompatActivity {
     TextView longitudeValueNetwork, latitudeValueNetwork;
     Button botonStop;
     Button btnGPsEna;
+    Button btnSele;
     TextView txtlat, txtlon;
     TextView bertbeth, bertbeth2, lizlatit, lizlongi;
     TextView textid;
@@ -71,6 +72,7 @@ public class GpsEnableb extends AppCompatActivity {
         latitudeValueGPS = (TextView) findViewById(R.id.latitudeValueGPS);
         botonStop = findViewById(R.id.locationControllerGPS);
         btnGPsEna = findViewById(R.id.btn_ena_gps);
+        btnSele = findViewById(R.id.btnSelecc);
 
         txtlat = (TextView) findViewById(R.id.textlat);
         txtlon = (TextView) findViewById(R.id.textlon);
@@ -158,6 +160,13 @@ public class GpsEnableb extends AppCompatActivity {
             }
         });
 
+        btnSele.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proyecto.setEnabled(false);
+                btnGPsEna.setVisibility(View.VISIBLE);
+            }
+        });
 
         btnGPsEna.setOnClickListener(new View.OnClickListener() {
             @Override

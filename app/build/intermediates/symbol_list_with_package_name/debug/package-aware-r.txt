@@ -1622,6 +1622,7 @@ id btnGuardarInt
 id btnIngresar
 id btnIrprod
 id btnNext
+id btnSelecc
 id btn_Avanzar
 id btn_add_otr_eqi_api
 id btn_add_tm_rg

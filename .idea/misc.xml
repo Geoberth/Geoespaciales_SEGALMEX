@@ -32,6 +32,13 @@
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_productor_econom.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_productor_familia.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_unidad_produccion.xml" value="0.5197916666666667" />
+        <entry key="app/src/main/res/layout/activity_foto_uno.xml" value="0.30416666666666664" />
+        <entry key="app/src/main/res/layout/activity_gps.xml" value="0.30416666666666664" />
+        <entry key="app/src/main/res/layout/activity_gps_enableb.xml" value="0.30416666666666664" />
+        <entry key="app/src/main/res/layout/activity_new_camara.xml" value="0.30416666666666664" />
+        <entry key="app/src/main/res/layout/activity_pasl_operativo.xml" value="0.271286231884058" />
+        <entry key="app/src/main/res/layout/activity_principal.xml" value="0.271286231884058" />
+        <entry key="app/src/main/res/layout/activity_segunda.xml" value="0.30416666666666664" />
       </map>
     </option>
   </component>
