@@ -7,679 +7,680 @@
     tools:context=".LiconsaBeneficiario.PASLBeneficiario">
 
 
-    <LinearLayout
-        android:padding="16dp"
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="PROGRAMA DE ABASTO SOCIAL DE LECHE (PASL)"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ENCUESTA DE OPINIÓN A LOS BENEFICIARIOS DEL PASL"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:layout_marginTop="30dp"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:text="TIPO DE BENEFICIARIO"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_marginTop="30dp"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="¿Quién responde la encuesta?"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <Spinner
-                    android:id="@+id/paslb_spin1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/borde"
-                    android:spinnerMode="dialog"/>
-
-                <TextView
-                    android:text="¿Usted viene a recoger la leche de qué tipo de beneficiario?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="BENEFICIARIO(S) DEL PROGRAMA:"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Niñas y niños de 6 meses a 12 años de edad." />
-
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Mujeres y hombres adolecentes de 13 a 15 años." />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Mujeres en período en gestación o lactancia." />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Mujeres de 45 a 59 años." />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Personas con enfermedades crónicas y personas con discapacidad." />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Personas adultas de 60 y más años de edad." />
-
-                <TextView
-                    android:text="ENCUESTA SOBRE LA OPERACIÓN DEL PROGRAMA"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="1. ¿Cómo considera la difusión del programa de Abasto Social de Leche?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-
-                <TextView
-                    android:text="2. ¿Cómo considera el proceso para acceder al programa?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="3. ¿Cómo considera la cantidad de leche que recibe?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="ENCUESTA DE OPINIÓN"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_marginTop="30dp"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="4. ¿Recibe un trato adecuado, oportuno, respetuoso"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="5. Cuando lo solicita, ¿recibe gratuitamente información del programa?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="6. ¿Adquiere la dotación de leche que le corresponde, en el horario establecido, para la venta de leche líquida?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="7. ¿Recibe la dotación de leche que le corresponde sin condicionamiento alguno?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="8. ¿Presenta su tarjeta de beneficiario para poder retirar su dotación de leche?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra23"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra24"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="9. ¿Retira su dotación de leche otro día, aunque no se presente el dia que le correspondía?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra25"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra26"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra27"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="10. ¿Acude a los pases de lista y operativos de actualización y depuración del padrón de beneficiarios, previo aviso del personal de promotoría social?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra28"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra29"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra30"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-
-                <TextView
-                    android:text="11. ¿El programa ha tenido representado ahorros para usted?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="12. ¿El programa ha tenido efectos en la nutrición de las personas de su familia?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra34"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra36"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="13. En general, ¿Cómo considera el trato recibido por parte del promotor social?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra37"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra38"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/paslb_ra39"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="14. En general, ¿Cuáles son los principales problemas o desventajas que usted identifica en el programa?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="No se da suficiente leche para las necesidades del beneficiario." />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Se le da leche LICONSA a quienes no la necesitan." />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Se nos pide más dinero del establecido para que nos den la leche." />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:enabled="true"
-                    android:layout_marginTop="5dp"
-
-                    android:id="@+id/paslb_ch10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Otras" />
-
-                <TextView
-                    android:text="15. ¿Cuáles considera son para usted las principales ventajas de este programa?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:maxLines="1"
-                    android:id="@+id/paslb_txt1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="16. ¿Qué acciones considera que necesita realizar el Programa en el futura para mejorar la atención otorgada?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:maxLines="1"
-                    android:id="@+id/paslb_txt2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                    android:id="@+id/paslb_sig"
-                    android:theme="@style/Theme.MaterialComponents.Light"
-                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:layout_height="wrap_content"
+                android:text="PROGRAMA DE ABASTO SOCIAL DE LECHE (PASL)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="ENCUESTA DE OPINIÓN A LOS BENEFICIARIOS DEL PASL"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="TIPO DE BENEFICIARIO"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Quién responde la encuesta?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/paslb_spin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/borde"
+                android:entries="@array/estatus"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="¿Usted viene a recoger la leche de qué tipo de beneficiario?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="BENEFICIARIO(S) DEL PROGRAMA:"
+                android:textColor="#000000" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Niñas y niños de 6 meses a 12 años de edad." />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Mujeres y hombres adolecentes de 13 a 15 años." />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch3"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Mujeres en período en gestación o lactancia." />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch4"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Mujeres de 45 a 59 años." />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch5"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Personas con enfermedades crónicas y personas con discapacidad." />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch6"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Personas adultas de 60 y más años de edad." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ENCUESTA SOBRE LA OPERACIÓN DEL PROGRAMA"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1. ¿Cómo considera la difusión del programa de Abasto Social de Leche?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="25dp"
-                    android:text="Siguiente"
-                    android:layout_marginTop="30dp"
-                    app:iconPadding="20dp"
-                    app:icon="@android:drawable/ic_input_add"
-                    />
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2. ¿Cómo considera el proceso para acceder al programa?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3. ¿Cómo considera la cantidad de leche que recibe?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="ENCUESTA DE OPINIÓN"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4. ¿Recibe un trato adecuado, oportuno, respetuoso"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5. Cuando lo solicita, ¿recibe gratuitamente información del programa?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6. ¿Adquiere la dotación de leche que le corresponde, en el horario establecido, para la venta de leche líquida?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="7. ¿Recibe la dotación de leche que le corresponde sin condicionamiento alguno?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="8. ¿Presenta su tarjeta de beneficiario para poder retirar su dotación de leche?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9. ¿Retira su dotación de leche otro día, aunque no se presente el dia que le correspondía?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="10. ¿Acude a los pases de lista y operativos de actualización y depuración del padrón de beneficiarios, previo aviso del personal de promotoría social?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="11. ¿El programa ha tenido representado ahorros para usted?"
+                android:textColor="#000000" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <RadioButton
 
+                    android:id="@+id/paslb_ra31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
 
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+                <RadioButton
+
+                    android:id="@+id/paslb_ra32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="12. ¿El programa ha tenido efectos en la nutrición de las personas de su familia?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="13. En general, ¿Cómo considera el trato recibido por parte del promotor social?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="14. En general, ¿Cuáles son los principales problemas o desventajas que usted identifica en el programa?"
+                android:textColor="#000000" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch9"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="No se da suficiente leche para las necesidades del beneficiario." />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch7"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Se le da leche LICONSA a quienes no la necesitan." />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch8"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Se nos pide más dinero del establecido para que nos den la leche." />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/paslb_ch10"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:text="Otras" />
+
+            <EditText
+                android:id="@+id/paslb_txtotras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Explique: "
+                android:visibility="gone"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="15. ¿Cuáles considera son para usted las principales ventajas de este programa?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/paslb_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="16. ¿Qué acciones considera que necesita realizar el Programa en el futura para mejorar la atención otorgada?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/paslb_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/paslb_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

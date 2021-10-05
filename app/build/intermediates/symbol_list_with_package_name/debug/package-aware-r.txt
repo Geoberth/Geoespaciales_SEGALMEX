@@ -3600,6 +3600,7 @@ id paslb_sig
 id paslb_spin1
 id paslb_txt1
 id paslb_txt2
+id paslb_txtotras
 id password_toggle
 id pecu_next_pecuario_alimentos
 id pecu_next_pecuario_aspectproductivos

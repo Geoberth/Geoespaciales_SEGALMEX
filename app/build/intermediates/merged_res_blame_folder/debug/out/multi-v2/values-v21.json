@@ -1,48 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/20a17e71544c4e7bb3fb65a7d7b86673/transformed/media-1.0.0/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "370,373,377,381",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "24074,24242,24531,24827",
-                        "endLines": "372,375,379,383",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "24237,24400,24694,24989"
-                    }
-                },
-                {
-                    "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/values-v21/styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "240"
-                    },
-                    "to": {
-                        "startLines": "76",
-                        "startColumns": "4",
-                        "startOffsets": "2388",
-                        "endLines": "80",
-                        "endColumns": "12",
-                        "endOffsets": "2611"
-                    }
-                },
-                {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/a9510940d39f390620534476a057ab2b/transformed/appcompat-1.1.0-alpha05/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\a9510940d39f390620534476a057ab2b\\transformed\\appcompat-1.1.0-alpha05\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,106,109,152,155,158,160,162,164,167,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,220,222,223,224,234,235,236,248",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -61,7 +23,45 @@
                     }
                 },
                 {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\20a17e71544c4e7bb3fb65a7d7b86673\\transformed\\media-1.0.0\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "370,373,377,381",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "24074,24242,24531,24827",
+                        "endLines": "372,375,379,383",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "24237,24400,24694,24989"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "246"
+                    },
+                    "to": {
+                        "startLines": "76",
+                        "startColumns": "4",
+                        "startOffsets": "2388",
+                        "endLines": "80",
+                        "endColumns": "12",
+                        "endOffsets": "2611"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\2eb885f97fd035152f7fd48c5013e690\\transformed\\core-1.1.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -80,8 +80,16 @@
                     }
                 },
                 {
-                    "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/values-v21/produccionagricola.xml",
+                    "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\values-v21\\produccionagricola.xml",
                     "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "70",
+                        "endColumns": "19",
+                        "endOffsets": "2075"
+                    },
+                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
@@ -91,7 +99,7 @@
                     }
                 },
                 {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\02c2eb78642995a8923fc1cd56a1d1f6\\transformed\\material-1.1.0-alpha07\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,6,7,10,15,26,32,38,44,50,56,60,63,66,69,72,76",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

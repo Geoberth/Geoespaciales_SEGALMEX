@@ -117,10 +117,14 @@ public class NewCamara extends AppCompatActivity {
                     if(Integer.parseInt(version)>10){
                         archivo = new File(getExternalFilesDir(null), "/GEOSEGALMEX/" + nombre);
                         archivo2 = new File(getExternalFilesDir(null), "/GEOSEGALMEX/" + nombre2);
+                        General.Foto1 = nombre;
+                        General.Foto2 = nombre2;
                     }
                     else{
                         archivo = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagen);
                         archivo2 = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagen2);
+                        General.Foto1 = nombreImagen;
+                        General.Foto2 = nombreImagen2;
                     }
 
                     if (!archivo.exists()){

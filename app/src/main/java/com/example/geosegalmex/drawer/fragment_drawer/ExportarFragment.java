@@ -4,6 +4,7 @@ package com.example.geosegalmex.drawer.fragment_drawer;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +36,8 @@ import java.io.OutputStream;
  * A simple {@link Fragment} subclass.
  */
 public class ExportarFragment extends Fragment {
+
+
 
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1 ;
     private TextView tvProgreso;
@@ -55,7 +59,6 @@ public class ExportarFragment extends Fragment {
        // tvProgreso = vistaExportar.findViewById(R.id.tvProgreso);
         fabExportar = vistaExportar.findViewById(R.id.fab_exportar);
 
-
         int permissionCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
         if (ContextCompat.checkSelfPermission(getContext(),
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -75,17 +78,32 @@ public class ExportarFragment extends Fragment {
         fabExportar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    deployDatabase();
-                } catch (IOException e) {
-                    try {
-                        deployDatabase();
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
 
-                }
+                    try {
+                        deployDatabase("PASLoperativo");
+                    } catch (IOException e) {
+                        try {
+                            deployDatabase("PASLoperativo");
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
+                        e.printStackTrace();
+
+                    }
+
+                    try {
+                        deployDatabase("PASLbeneficiario");
+                    } catch (IOException e) {
+                        try {
+                            deployDatabase("PASLbeneficiario");
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
+                        e.printStackTrace();
+
+                    }
+
+
                // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
                // tareaAsyncTask.execute();
             }
@@ -156,7 +174,7 @@ public class ExportarFragment extends Fragment {
     }
 
 
-    private void deployDatabase() throws IOException {
+    private void deployDatabase(String DB_NAME) throws IOException {
 //Open your local db as the input stream
 
        /* if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -193,7 +211,6 @@ public class ExportarFragment extends Fragment {
 
 
         Log.e("========>>", DB_PATH);
-        String DB_NAME = "BDENCUESTA"; //The name of the source sqlite file
 
         //InputStream myInput = getAssets().open("BDENCUESTA");
         InputStream myInput = new FileInputStream(DB_PATH + DB_NAME);
@@ -204,7 +221,7 @@ public class ExportarFragment extends Fragment {
 
         String outFileName;
         if(Integer.parseInt(version)>10){
-            File file = new File(getActivity().getExternalFilesDir(null), "/GEOSEGALMEX/basedatos");
+            File file = new File(getActivity().getExternalFilesDir(null), "/GEOSEGALMEX/" + DB_NAME);
             try {
                 if (!file.exists()) {
                     file.createNewFile();
@@ -215,7 +232,7 @@ public class ExportarFragment extends Fragment {
             outFileName = file.getAbsolutePath();
         }
         else{
-            outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX" + "/" + "basedatos";
+            outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX" + "/" + DB_NAME;
         }
 
         //String outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOESPACIALES" + "/" + "basedatos";
@@ -236,6 +253,6 @@ public class ExportarFragment extends Fragment {
         myOutput.close();
         myInput.close();
 
-        Toast.makeText(getContext(), "Base de datos exportada", Toast.LENGTH_LONG).show();
+        Toast.makeText(getContext(), "Base de datos: " + DB_NAME + " exportada", Toast.LENGTH_LONG).show();
     }
 }

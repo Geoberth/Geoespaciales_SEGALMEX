@@ -24,7 +24,6 @@ import java.util.Calendar;
 public class PASLOperativo extends AppCompatActivity {
 
     int dia, mes, anio;
-    private DatabaseHelper baseBD;
     Pasl_o_Model model;
 
     Button btnNext;
@@ -37,7 +36,6 @@ public class PASLOperativo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pasl_operativo);
-        baseBD = new DatabaseHelper(this);
 
         btnNext = findViewById(R.id.btn_Avanzar);
 
@@ -113,11 +111,15 @@ public class PASLOperativo extends AppCompatActivity {
                 String doce = obtenerResultado(si12, no12);
                 String doce_observ = observ.getText().toString();
                 String trece = obtenerResultado(si13, no13);
+                String f1 = General.Foto1;
+                String f2 = General.Foto2;
 
                 if(validar()){
-                    model = new Pasl_o_Model(fol, General.fechaenc, edo, mun, loc, nom, apa, ama, sexo, eda, tie, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, doce_observ, trece);
-                    addCuestionario(model);
-                    startActivity(new Intent(PASLOperativo.this, GeoreferenciaActivity.class));
+                    model = new Pasl_o_Model(fol, General.fechaenc, edo, mun, loc, nom, apa, ama, sexo, eda, tie, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, doce_observ, trece, f1, f2, "", "");
+                    //addCuestionario(model);
+                    Intent in = new Intent(PASLOperativo.this, GeoreferenciaActivity.class);
+                    in.putExtra("model", model);
+                    startActivity(in);
                     /*Toast.makeText(getApplicationContext(), "Folio: " + model.getFolio() + "\n Fecha: " + model.getFecha() + "\n Nombre: " + model.getNombre() + "\n Apaterno: " + model.getApaterno()
                             + "\n Amaterno: " + model.getAmaterno() + "\n Sexo: " + model.getSexo()  + "\n Edad: " + model.getEdad()  + "\n Tiempo: " + model.getTiempo()
                             + "\n Uno: " + model.getUno() + "\n Dos: " + model.getDos() + "\n Tres: " + model.getTres() + "\n Cuatro: " + model.getCuatro() + "\n Cinco: " + model.getCinco()
@@ -273,14 +275,5 @@ public class PASLOperativo extends AppCompatActivity {
         return retorno;
     }
 
-    private void addCuestionario(Pasl_o_Model model){
-        boolean insertarData = baseBD.addPasl_operativo(model);
-        if(insertarData == true) {
-            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
-        }
-
-    }
 
 }

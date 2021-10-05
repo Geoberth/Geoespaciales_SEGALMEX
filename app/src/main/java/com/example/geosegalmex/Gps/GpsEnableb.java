@@ -82,7 +82,7 @@ public class GpsEnableb extends AppCompatActivity {
         lizlatit = (TextView) findViewById(R.id.textlati);
         lizlongi = (TextView) findViewById(R.id.textlongi);
 
-        bertbeth.setVisibility(View.VISIBLE);
+        bertbeth.setVisibility(View.GONE);
         bertbeth2.setVisibility(View.GONE);
         lizlatit.setVisibility(View.GONE);
         lizlongi.setVisibility(View.GONE);
@@ -165,6 +165,8 @@ public class GpsEnableb extends AppCompatActivity {
             public void onClick(View v) {
                 proyecto.setEnabled(false);
                 btnGPsEna.setVisibility(View.VISIBLE);
+                bertbeth.setVisibility(View.VISIBLE);
+                autoMatico();
             }
         });
 
@@ -183,7 +185,7 @@ public class GpsEnableb extends AppCompatActivity {
             }
         });
 
-        autoMatico();
+
 
     }
 

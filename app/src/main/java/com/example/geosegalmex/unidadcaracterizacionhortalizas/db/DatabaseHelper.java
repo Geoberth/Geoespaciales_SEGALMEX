@@ -2439,7 +2439,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //Metodo para almacenar Pecuario alimentacion
+    //Metodo para almacenar Pecuario alimentacionaddGoerreferenciaDos
     public boolean addPecuariopastoreobov(){
 
         SQLiteDatabase db           = this.getWritableDatabase();

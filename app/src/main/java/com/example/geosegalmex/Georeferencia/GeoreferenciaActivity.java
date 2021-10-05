@@ -14,6 +14,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.geosegalmex.General;
+import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
+import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
+import com.example.geosegalmex.LiconsaBeneficiario.Pasl_b_Model;
+import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
+import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
+import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
 import com.example.geosegalmex.R;
 import com.example.geosegalmex.dbstorage.Georreferencia;
 import com.example.geosegalmex.drawer.DrawerActivity;
@@ -46,6 +53,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     private com.example.geosegalmex.unidadcaracterizacionhortalizas.db.DatabaseHelper db;
     private List<Georreferencia> georreferenciaList;
 
+    Pasl_o_Model model;
+    Pasl_b_Model model2;
+
     String longitudGeo;
     String latitudGeo;
     //---------
@@ -74,11 +84,17 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
         fabGeoMapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(General.Proyecto.equals("PASL Operativo")){
+                    agregarPASLoperativo();
+                }
+                else if(General.Proyecto.equals("PASL Beneficiario")){
+                    agregarPASLbeneficiario();
+                }
+
                 finish();
                 startActivity(new Intent(getApplication(), DrawerActivity.class));
             }
         });
-
 
         Calendar fecha = Calendar.getInstance();
         dia = fecha.get(Calendar.DAY_OF_MONTH);
@@ -167,7 +183,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
         latitudGeo = String.valueOf(mlocationBeta.getLatitude());
 
         if(longitudGeo.length()!=0 && latitudGeo.length()!=0){
-            agregarGoerreferencia("BrigadistaGeo","ProductorGeo" , longitudGeo, latitudGeo, horaActual, fechaActual,NAME_NOT_SYNCED_WITH_SERVER);
+            //agregarGoerreferencia("BrigadistaGeo","ProductorGeo" , longitudGeo, latitudGeo, horaActual, fechaActual,NAME_NOT_SYNCED_WITH_SERVER);
         }else {
             Toast.makeText(getBaseContext(), "Verifica los Datos", Toast.LENGTH_LONG).show();
         }
@@ -180,7 +196,64 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
 
     }
 
+    private void agregarPASLoperativo() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model = new Pasl_o_Model();
+        model = (Pasl_o_Model)getIntent().getSerializableExtra("model");
+        model.setLongitudGeo(longitudGeo);
+        model.setLatitudGeo(latitudGeo);
+
+        PASLoperativoBD baseBD;
+        baseBD = new PASLoperativoBD(this);
+
+        boolean insertarData = baseBD.addPASLoperativo(model);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+
+        /* Toast.makeText(getApplicationContext(), "Folio: " + model.getFolio() + "\n Fecha: " + model.getFecha() + "\n Nombre: " + model.getNombre() + "\n Apaterno: " + model.getApaterno()
+                + "\n Amaterno: " + model.getAmaterno() + "\n Sexo: " + model.getSexo()  + "\n Edad: " + model.getEdad()  + "\n Tiempo: " + model.getTiempo()
+                + "\n Uno: " + model.getUno() + "\n Dos: " + model.getDos() + "\n Tres: " + model.getTres() + "\n Cuatro: " + model.getCuatro() + "\n Cinco: " + model.getCinco()
+                + "\n Seis: " + model.getSeis() + "\n Siete: " + model.getSiete() + "\n Ocho: " + model.getOcho() + "\n Nueve: " + model.getNueve()
+                + "\n Diez: " + model.getDiez() + "\n Once: " + model.getOnce() + "\n Doce: " + model.getDoce() + "\n Doce_Obs: " + model.getDoce_bservaciones() + "\n Trece: " + model.getTrece()
+                + "\n Longitud: " + model.getLongitudGeo() + "\n Latitud: " + model.getLatitudGeo(),Toast.LENGTH_SHORT).show();*/
+
+    }
+
+    private void agregarPASLbeneficiario() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model2 = new Pasl_b_Model();
+        model2 = (Pasl_b_Model)getIntent().getSerializableExtra("model");
+        model2.setLongitudGeo(longitudGeo);
+        model2.setLatitudGeo(latitudGeo);
+
+        PASLbeneficiarioBD baseBD;
+        baseBD = new PASLbeneficiarioBD(this);
+
+        boolean insertarData = baseBD.addPASLbeneficiario(model2);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+
+        /*Toast.makeText(getApplicationContext(), "" + model.getResponde() + "\n" + model.getBeneficiarios() + "\n" + model.getUno() + "\n" + model.getDos() + "\n" + model.getTres()
+                            + "\n" + model.getCuatro() + "\n" + model.getCinco() + "\n" + model.getSeis() + "\n" + model.getSiete() + "\n" + model.getOcho() + "\n" + model.getNueve()
+                            + "\n" + model.getDiez() + "\n" + model.getOnce() + "\n" + model.getDoce() + "\n" + model.getTrece() + "\n" + model.getCatorce() + "\n" + model.getCatorceotrasespecificacion()
+                            + "\n" + model.getQuince() + "\n" + model.getDieciseis(), Toast.LENGTH_SHORT).show();*/
+
+
+    }
+
+
     private void agregarGoerreferencia(String brigadistaGeo, String productorGeo, String longitudGeoGeo, String latitudGeoGeo, String horaActual, String fechaActual, int status) {
+
         boolean insertarData = db.addGoerreferenciaDos(brigadistaGeo, productorGeo, longitudGeoGeo, latitudGeoGeo, horaActual, fechaActual, status);
         if(insertarData == true) {
            // Toast.makeText(this, "Datos insertados correctamente", Toast.LENGTH_SHORT).show();

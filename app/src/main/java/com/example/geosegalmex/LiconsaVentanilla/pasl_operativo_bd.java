@@ -28,6 +28,10 @@ public class pasl_operativo_bd {
     public static final String COLUMN_DOCE = "DOCE";
     public static final String COLUMN_DOCEOBSERVACIONES = "DOCEOBSERVACIONES";
     public static final String COLUMN_TRECE = "TRECE";
+    public static final String COLUMN_FOTO1 = "FOTO1";
+    public static final String COLUMN_FOTO2 = "FOTO2";
+    public static final String COLUMN_LONGITUD = "LONGITUD";
+    public static final String COLUMN_LATITUD = "LATITUD";
 
     public static final String CREAR_TABLA_PASL_OPERATIVO= "CREATE TABLE " + TABLA_BD + "("
             + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
@@ -54,5 +58,9 @@ public class pasl_operativo_bd {
             + COLUMN_ONCE + " VARCHAR, "
             + COLUMN_DOCE + " VARCHAR, "
             + COLUMN_DOCEOBSERVACIONES + " VARCHAR, "
-            + COLUMN_TRECE + " VARCHAR); " ;
+            + COLUMN_TRECE + " VARCHAR, "
+            + COLUMN_FOTO1 + " VARCHAR, "
+            + COLUMN_FOTO2 + " VARCHAR, "
+            + COLUMN_LONGITUD + " VARCHAR, "
+            + COLUMN_LATITUD + " VARCHAR); " ;
 }

@@ -1,13 +1,16 @@
 package com.example.geosegalmex.LiconsaVentanilla;
 
-public class Pasl_o_Model {
+import java.io.Serializable;
 
-    private String folio, fecha, estado, municipio, localidad, nombre, apaterno, amaterno, sexo, edad, tiempo, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, doce_bservaciones, trece;
+public class Pasl_o_Model implements Serializable {
+
+    private String folio, fecha, estado, municipio, localidad, nombre, apaterno, amaterno, sexo, edad, tiempo, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, doce_bservaciones, trece, foto1, foto2, longitudGeo, latitudGeo;
 
     public Pasl_o_Model() {
     }
 
-    public Pasl_o_Model(String folio, String fecha, String estado, String municipio, String localidad, String nombre, String apaterno, String amaterno, String sexo, String edad, String tiempo, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String doce_bservaciones, String trece) {
+
+    public Pasl_o_Model(String folio, String fecha, String estado, String municipio, String localidad, String nombre, String apaterno, String amaterno, String sexo, String edad, String tiempo, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String doce_bservaciones, String trece, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
         this.estado = estado;
@@ -33,6 +36,10 @@ public class Pasl_o_Model {
         this.doce = doce;
         this.doce_bservaciones = doce_bservaciones;
         this.trece = trece;
+        this.foto1 = foto1;
+        this.foto2 = foto2;
+        this.longitudGeo = longitudGeo;
+        this.latitudGeo = latitudGeo;
     }
 
     public String getFolio() {
@@ -233,5 +240,37 @@ public class Pasl_o_Model {
 
     public void setTrece(String trece) {
         this.trece = trece;
+    }
+
+    public String getFoto1() {
+        return foto1;
+    }
+
+    public void setFoto1(String foto1) {
+        this.foto1 = foto1;
+    }
+
+    public String getFoto2() {
+        return foto2;
+    }
+
+    public void setFoto2(String foto2) {
+        this.foto2 = foto2;
+    }
+
+    public String getLongitudGeo() {
+        return longitudGeo;
+    }
+
+    public void setLongitudGeo(String longitudGeo) {
+        this.longitudGeo = longitudGeo;
+    }
+
+    public String getLatitudGeo() {
+        return latitudGeo;
+    }
+
+    public void setLatitudGeo(String latitudGeo) {
+        this.latitudGeo = latitudGeo;
     }
 }

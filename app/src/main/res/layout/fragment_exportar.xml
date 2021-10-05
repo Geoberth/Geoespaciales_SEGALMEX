@@ -8,15 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-<!--
-    <TextView
-        android:id="@+id/tvProgreso"
-        android:textSize="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical |center_horizontal"/>
 
--->
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/fab_exportar"
         android:theme="@style/Theme.MaterialComponents.Light"

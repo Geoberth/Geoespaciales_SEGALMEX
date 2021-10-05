@@ -7,16 +7,8 @@
     tools:context=".LiconsaVentanilla.PASLOperativo">
 
     <ScrollView
-        android:id="@+id/scrollProd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:text="PROGRAMA DE ABASTO SOCIAL DE LECHE (PASL)"
                 android:textAlignment="center"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 android:textColor="#000000"
                 android:layout_marginBottom="15dp"/>
@@ -828,15 +821,6 @@
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="15dp"
-                android:text="Tomar punto georreferenciado y finalizar trayectoria automática"
-                android:textAlignment="center"
-                android:textSize="18sp" />
-
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 
                 android:id="@+id/btn_Avanzar"
@@ -847,7 +831,7 @@
                 android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="15dp"
-                android:text="TOMAR GEORREFERENCIA"
+                android:text="Siguiente"
                 app:iconPadding="20dp"
                 app:icon="@android:drawable/ic_input_add"
                 />
