@@ -31,7 +31,7 @@ import com.example.geosegalmex.unidadproduccion.variables.VariablesGlobalesUpf;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DB_NAME  = "BDENCUESTA";
-    public static final int DB_VERSION = 22;
+    public static final int DB_VERSION = 28;
 
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

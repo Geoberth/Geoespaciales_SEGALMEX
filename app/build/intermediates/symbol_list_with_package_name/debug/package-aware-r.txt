@@ -1418,6 +1418,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circular
+drawable circular2
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1567,6 +1569,7 @@ id action_text
 id actions
 id actividad_otro
 id activity_chooser_view_content
+id activity_main
 id add
 id adjust_height
 id adjust_width
@@ -2233,6 +2236,7 @@ id chekPecselenene
 id chip
 id chip_group
 id chronometer
+id circularProgress
 id ck_PROCONTRAA1
 id ck_PROCONTRAA2
 id ck_PROCONTRAA3

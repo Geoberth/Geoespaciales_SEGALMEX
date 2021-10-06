@@ -114,6 +114,7 @@ public class PASLBeneficiario extends AppCompatActivity {
             public void onClick(View view) {
 
                 if(validar()){
+                    String fol = General.Foliocuestion;
                     String res = responde.getSelectedItem().toString();
                     String bene = Resultado();
                     String uno = obtenerRadio(bueno,aceptable,malo);
@@ -137,7 +138,7 @@ public class PASLBeneficiario extends AppCompatActivity {
                     String f2 = General.Foto2;
 
 
-                    model = new Pasl_b_Model(res, bene, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, obs, quin, diesi, f1, f2, "", "");
+                    model = new Pasl_b_Model(fol, res, bene, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, obs, quin, diesi, f1, f2, "", "");
                     Intent in = new Intent(PASLBeneficiario.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);

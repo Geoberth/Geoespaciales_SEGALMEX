@@ -5,11 +5,14 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.geosegalmex.General;
+import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
+
 
 public class PASLbeneficiarioBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PASLbeneficiario";
-    public static final int DB_VERSION = 1;
+    public static final int DB_VERSION = 2;
 
     public PASLbeneficiarioBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -18,11 +21,13 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(pasl_beneficiario_bd.CREAR_TABLA_PASL_BENEFICIARIO);
+        db.execSQL(UtilidadesTrayectoria.CREAR_TABLA_TRAYECTORIA);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ pasl_beneficiario_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
     }
 
     public boolean addPASLbeneficiario(Pasl_b_Model model){
@@ -30,6 +35,7 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
         SQLiteDatabase db           = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
+        contentValues.put(pasl_beneficiario_bd.COLUMN_FOLIO, model.getFolio());
         contentValues.put(pasl_beneficiario_bd.COLUMN_RESPONDE, model.getResponde());
         contentValues.put(pasl_beneficiario_bd.COLUMN_BENEFICIARIOS, model.getBeneficiarios());
         contentValues.put(pasl_beneficiario_bd.COLUMN_UNO, model.getUno());
@@ -63,6 +69,26 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
             return true;
         }
 
+    }
+
+    public boolean addTrayectoriaS(String folioPro, String folioBrig, String longGpsSave, String latiGpsSave, String horaActl, String fechaActl){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        //contentValues.put(UtilidadesTrayectoria.COLUMN_FOLIO,folioPro);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_FOLIO, General.Foliocuestion);
+        //contentValues.put(UtilidadesTrayectoria.COLUMN_FOLIO_TECNICO,Principal.userId);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_LONGITUD_TRAY,latiGpsSave);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_LATITUD_TRAY,longGpsSave);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_HRACTUAL_TRAY,horaActl);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_FCACTUAL_TRAY,fechaActl);
+
+        long result = db.insert(UtilidadesTrayectoria.TABLA_TRAYECTORIA, null, contentValues);
+        db.close();
+        if(result == -1) {
+            return false;
+        }else{
+            return true;
+        }
     }
 
 }

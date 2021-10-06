@@ -49,7 +49,7 @@
 
         <TextView
             android:id="@+id/avisofolio"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -64,9 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="40dp"
             android:textAlignment="center"
-
+            android:layout_marginTop="5dp"
             android:textSize="22dp"
             android:textStyle="bold"
             android:textColor="#0C0C0C"/>
@@ -75,13 +74,14 @@
             android:text="Capturar Fotos"
             android:id="@+id/btn_ena_gps"
             android:enabled="false"
+            android:layout_marginTop="5dp"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/bertbethgps"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -93,7 +93,7 @@
 
         <TextView
             android:id="@+id/bertbeth2gps"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -107,7 +107,7 @@
 
         <TextView
             android:id="@+id/textlati"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -133,7 +133,7 @@
             android:layout_gravity="center"
             android:textAlignment="center"
             android:textColor="#0C0C0C"
-            android:text="Latitud:"
+            android:text="Longitud:"
             android:textSize="18dp" />
 
         <TextView
@@ -144,6 +144,44 @@
             android:textAlignment="center"
             android:textColor="#0C0C0C"
             android:textSize="22dp" />
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/circularProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="161dp"
+                android:layout_height="213dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="109dp"
+                android:layout_marginBottom="1dp"
+                android:indeterminate="false"
+                android:max="48"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:progress="1"
+                android:visibility="gone"
+                android:progressDrawable="@drawable/circular" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#0C0C0C"
+                android:visibility="gone"
+                android:text="Autenticando!" />
+
+        </RelativeLayout>
+
 
 
     </LinearLayout>

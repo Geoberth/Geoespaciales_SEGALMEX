@@ -103,9 +103,6 @@ public class ExportarFragment extends Fragment {
 
                     }
 
-
-               // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
-               // tareaAsyncTask.execute();
             }
         });
 

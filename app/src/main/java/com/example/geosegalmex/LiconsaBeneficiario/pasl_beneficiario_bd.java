@@ -3,6 +3,7 @@ package com.example.geosegalmex.LiconsaBeneficiario;
 public class pasl_beneficiario_bd {
 
     public static final String TABLA_BD = "TB_PASL_BENEFICIARIO";
+    public static final String COLUMN_FOLIO = "FOLIO";
     public static final String COLUMN_RESPONDE = "RESPONDE";
     public static final String COLUMN_BENEFICIARIOS = "BENEFICIARIOS";
     public static final String COLUMN_UNO = "UNO";
@@ -28,7 +29,8 @@ public class pasl_beneficiario_bd {
     public static final String COLUMN_LATITUD = "LATITUD";
 
     public static final String CREAR_TABLA_PASL_BENEFICIARIO= "CREATE TABLE " + TABLA_BD + "("
-            + COLUMN_RESPONDE + " VARCHAR PRIMARY KEY, "
+            + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
+            + COLUMN_RESPONDE + " VARCHAR, "
             + COLUMN_BENEFICIARIOS + " VARCHAR, "
             + COLUMN_UNO + " VARCHAR, "
             + COLUMN_DOS + " VARCHAR, "

@@ -7,10 +7,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.example.geosegalmex.General;
+import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
+
 public class PASLoperativoBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PASLoperativo";
-    public static final int DB_VERSION = 1;
+    public static final int DB_VERSION = 2;
 
     public PASLoperativoBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -19,11 +22,13 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(pasl_operativo_bd.CREAR_TABLA_PASL_OPERATIVO);
+        db.execSQL(UtilidadesTrayectoria.CREAR_TABLA_TRAYECTORIA);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ pasl_operativo_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
     }
 
     public boolean addPASLoperativo(Pasl_o_Model model){
@@ -71,4 +76,25 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
         }
 
     }
+
+    public boolean addTrayectoriaS(String folioPro, String folioBrig, String longGpsSave, String latiGpsSave, String horaActl, String fechaActl){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        //contentValues.put(UtilidadesTrayectoria.COLUMN_FOLIO,folioPro);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_FOLIO, General.Foliocuestion);
+        //contentValues.put(UtilidadesTrayectoria.COLUMN_FOLIO_TECNICO,Principal.userId);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_LONGITUD_TRAY,latiGpsSave);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_LATITUD_TRAY,longGpsSave);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_HRACTUAL_TRAY,horaActl);
+        contentValues.put(UtilidadesTrayectoria.COLUMN_FCACTUAL_TRAY,fechaActl);
+
+        long result = db.insert(UtilidadesTrayectoria.TABLA_TRAYECTORIA, null, contentValues);
+        db.close();
+        if(result == -1) {
+            return false;
+        }else{
+            return true;
+        }
+    }
+
 }

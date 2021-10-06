@@ -1,8 +1,11 @@
 package com.example.geosegalmex.Gps;
 
+import static android.view.View.GONE;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import android.Manifest;
+import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,16 +15,24 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.geosegalmex.General;
+import com.example.geosegalmex.IdentificacionCuestionario;
+import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
+import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
+import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
+import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.NewCamara;
 import com.example.geosegalmex.R;
 import com.example.geosegalmex.unidadcaracterizacionhortalizas.db.DatabaseHelper;
@@ -47,9 +58,8 @@ public class GpsEnableb extends AppCompatActivity {
     Button btnSele;
     TextView txtlat, txtlon;
     TextView bertbeth, bertbeth2, lizlatit, lizlongi;
-    TextView textid;
+    TextView textid, textView;
 
-    private DatabaseHelper db;
     private List<Trayectoria> trayectoriaList;
     Boolean chekGetGPs;
 
@@ -59,14 +69,21 @@ public class GpsEnableb extends AppCompatActivity {
     Spinner proyecto;
     public String folioo;
 
+    private ProgressBar miprogress, miprogress2;
+    private ObjectAnimator anim, anim2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gps_enableb);
+        //instanciamos el progrogressbar
+        miprogress = (ProgressBar) findViewById(R.id.circularProgress);
+        anim = ObjectAnimator.ofInt(miprogress, "progress", 0, 100);
+        textView = (TextView) findViewById(R.id.textView);
+
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         trayectoriaList = new ArrayList<>();
-        db         = new DatabaseHelper(this);
 
         longitudeValueGPS = (TextView) findViewById(R.id.longitudeValueGPS);
         latitudeValueGPS = (TextView) findViewById(R.id.latitudeValueGPS);
@@ -82,10 +99,10 @@ public class GpsEnableb extends AppCompatActivity {
         lizlatit = (TextView) findViewById(R.id.textlati);
         lizlongi = (TextView) findViewById(R.id.textlongi);
 
-        bertbeth.setVisibility(View.GONE);
-        bertbeth2.setVisibility(View.GONE);
-        lizlatit.setVisibility(View.GONE);
-        lizlongi.setVisibility(View.GONE);
+        bertbeth.setVisibility(GONE);
+        bertbeth2.setVisibility(GONE);
+        lizlatit.setVisibility(GONE);
+        lizlongi.setVisibility(GONE);
 
         textid = (TextView) findViewById(R.id.textMuestrafolioo);
 
@@ -167,21 +184,15 @@ public class GpsEnableb extends AppCompatActivity {
                 btnGPsEna.setVisibility(View.VISIBLE);
                 bertbeth.setVisibility(View.VISIBLE);
                 autoMatico();
+
             }
         });
 
         btnGPsEna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                locationManager.removeUpdates(locationListenerGPS);
-                if (chekGetGPs == true) {
-                    General.Foliocuestion=textid.getText().toString();
-                    aggTrayectoriaGps();
-                    General.Proyecto = proyecto.getSelectedItem().toString();
-                    General.Latini = "" + latitudeGPS;
-                    General.Lonini = "" + longitudeGPS;
-                    startActivity(new Intent(getApplication(), NewCamara.class));
-                }
+                animacion();
+
             }
         });
 
@@ -189,6 +200,63 @@ public class GpsEnableb extends AppCompatActivity {
 
     }
 
+    private void animacion(){
+        miprogress.setVisibility(View.VISIBLE);
+        textView.setVisibility(View.VISIBLE);
+        mostrarProgress(anim);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                anim = ObjectAnimator.ofInt(miprogress, "progress", 0, 100);
+                mostrarProgress(anim);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        anim = ObjectAnimator.ofInt(miprogress, "progress", 0, 100);
+
+                        mostrarProgress(anim);
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                anim = ObjectAnimator.ofInt(miprogress, "progress", 0, 100);
+                                mostrarProgress(anim);
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        anim = ObjectAnimator.ofInt(miprogress, "progress", 0, 100);
+                                        mostrarProgress(anim);
+                                        new Handler().postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                locationManager.removeUpdates(locationListenerGPS);
+                                                if (chekGetGPs == true) {
+                                                    General.Foliocuestion=textid.getText().toString();
+                                                    General.Proyecto = proyecto.getSelectedItem().toString();
+                                                    General.Latini = "" + latitudeGPS;
+                                                    General.Lonini = "" + longitudeGPS;
+                                                    aggTrayectoriaGps();
+                                                    startActivity(new Intent(getApplication(), NewCamara.class));
+                                                }
+                                            }
+                                        },1900);
+                                    }
+                                },1900);
+                            }
+                        },1900);
+                    }
+                },1900);
+            }
+        },1900);
+    }
+
+    private void mostrarProgress(ObjectAnimator mybar){
+        //agregamos el tiempo de la animacion a mostrar
+        mybar.setDuration(5000);
+        mybar.setInterpolator(new DecelerateInterpolator());
+        //iniciamos el progressbar
+        mybar.start();
+    }
 
 
     public void obtenFoliodos(){
@@ -281,15 +349,27 @@ public class GpsEnableb extends AppCompatActivity {
     }
 
     private void aggTrayectoriaGpsSave(String folioPro, String folioBrig, String longGpsSave, String latiGpsSave, String horaActl, String fechaActl) {
+        String proy = proyecto.getSelectedItem().toString();
 
-        boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
-        //boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, latiGpsSave,longGpsSave, horaActl, fechaActl);
-        db.close();
-        if(insertarData == true) {
-            // Toast.makeText(this, "Datos insertados correctamente", Toast.LENGTH_SHORT).show();
-        }else{
-            // Toast.makeText(this, "Algo salio mal", Toast.LENGTH_LONG).show();
+        if(proy.equals("PASL Operativo")){
+            PASLoperativoBD db;
+            db = new PASLoperativoBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
         }
+        else if(proy.equals("PASL Beneficiario")){
+            PASLbeneficiarioBD db;
+            db = new PASLbeneficiarioBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
+        }
+
     }
 
 
@@ -422,7 +502,7 @@ public class GpsEnableb extends AppCompatActivity {
                 @Override
                 public void run() {
 
-                    bertbeth.setVisibility(View.GONE);
+                    bertbeth.setVisibility(GONE);
                     bertbeth2.setVisibility(View.VISIBLE);
                     lizlatit.setVisibility(View.VISIBLE);
                     lizlongi.setVisibility(View.VISIBLE);
@@ -443,6 +523,7 @@ public class GpsEnableb extends AppCompatActivity {
 
                     if(longitudeGPS != 0 && latitudeGPS != 0){
                         btnGPsEna.setEnabled(true);
+
                         String lonGpsSt = String.valueOf(longitudeGPS);
                         String latiGpsSt = String.valueOf(latitudeGPS);
 
@@ -484,7 +565,7 @@ public class GpsEnableb extends AppCompatActivity {
                         trayectoriaList.add(trayectoria);
                         chekGetGPs = true;
                     }
-                    Toast.makeText(getApplication(), "Longitud:"+longitudeGPS +"Latitud:"+ latitudeGPS, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplication(), "Longitud:"+longitudeGPS +"Latitud:"+ latitudeGPS, Toast.LENGTH_SHORT).show();
                 }
             });
         }

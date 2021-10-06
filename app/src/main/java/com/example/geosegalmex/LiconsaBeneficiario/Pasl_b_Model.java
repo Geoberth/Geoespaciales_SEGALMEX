@@ -4,12 +4,13 @@ import java.io.Serializable;
 
 public class Pasl_b_Model implements Serializable {
 
-    private String responde, beneficiarios, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, catorceotrasespecificacion, quince, dieciseis, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, responde, beneficiarios, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, catorceotrasespecificacion, quince, dieciseis, foto1, foto2, longitudGeo, latitudGeo;
 
     public Pasl_b_Model() {
     }
 
-    public Pasl_b_Model(String responde, String beneficiarios, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String trece, String catorce, String catorceotrasespecificacion, String quince, String dieciseis, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public Pasl_b_Model(String folio, String responde, String beneficiarios, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String trece, String catorce, String catorceotrasespecificacion, String quince, String dieciseis, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+        this.folio = folio;
         this.responde = responde;
         this.beneficiarios = beneficiarios;
         this.uno = uno;
@@ -33,6 +34,14 @@ public class Pasl_b_Model implements Serializable {
         this.foto2 = foto2;
         this.longitudGeo = longitudGeo;
         this.latitudGeo = latitudGeo;
+    }
+
+    public String getFolio() {
+        return folio;
+    }
+
+    public void setFolio(String folio) {
+        this.folio = folio;
     }
 
     public String getResponde() {
