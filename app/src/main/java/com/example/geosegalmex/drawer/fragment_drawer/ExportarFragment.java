@@ -188,8 +188,21 @@ public class ExportarFragment extends Fragment {
 
         String version = Build.VERSION.RELEASE;
 
+
         if(Integer.parseInt(version)>10){
             File file = new File(getActivity().getExternalFilesDir(null), "/GEOSEGALMEX/");
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+        }
+        if(Integer.parseInt(version)>10){
+            File file = new File(getActivity().getExternalFilesDir(null), "/PASL_Beneficiarios/");
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+        }
+        if(Integer.parseInt(version)>10){
+            File file = new File(getActivity().getExternalFilesDir(null), "/PASL_Operativo/");
             if (!file.exists()) {
                 file.mkdirs();
             }
@@ -199,12 +212,22 @@ public class ExportarFragment extends Fragment {
             if (!directory.exists()) {
                 //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
                 String direc = Environment.getExternalStorageDirectory().toString() + "/GEOSEGALMEX/";
-
+                new File(direc).mkdirs();
+            }
+            if (!directory.exists()) {
+                //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
+                String direc = Environment.getExternalStorageDirectory().toString() + "/PASL_Beneficiarios/";
+                new File(direc).mkdirs();
+            }
+            if (!directory.exists()) {
+                //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
+                String direc = Environment.getExternalStorageDirectory().toString() + "/PASL_Operativo/";
                 new File(direc).mkdirs();
             }
             else{
                 //Toast.makeText(getContext(), "Si: " + directory, Toast.LENGTH_LONG).show();
             }
+
         }
 
 
