@@ -59,7 +59,7 @@ public class GpsEnableb extends AppCompatActivity {
     TextView txtlat, txtlon;
     TextView bertbeth, bertbeth2, lizlatit, lizlongi;
     TextView textid, textView;
-
+    int bandera = 0;
     private List<Trayectoria> trayectoriaList;
     Boolean chekGetGPs;
 
@@ -184,7 +184,7 @@ public class GpsEnableb extends AppCompatActivity {
                 btnGPsEna.setVisibility(View.VISIBLE);
                 bertbeth.setVisibility(View.VISIBLE);
                 autoMatico();
-
+                btnSele.setEnabled(false);
             }
         });
 
@@ -192,7 +192,7 @@ public class GpsEnableb extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 animacion();
-
+                btnGPsEna.setEnabled(false);
             }
         });
 
@@ -522,7 +522,10 @@ public class GpsEnableb extends AppCompatActivity {
                     int horados, minutosdos, segundosdos;
 
                     if(longitudeGPS != 0 && latitudeGPS != 0){
-                        btnGPsEna.setEnabled(true);
+                        if(bandera == 0){
+                            btnGPsEna.setEnabled(true);
+                        }
+
 
                         String lonGpsSt = String.valueOf(longitudeGPS);
                         String latiGpsSt = String.valueOf(latitudeGPS);
@@ -565,6 +568,7 @@ public class GpsEnableb extends AppCompatActivity {
                         trayectoriaList.add(trayectoria);
                         chekGetGPs = true;
                     }
+                    bandera = bandera+1;
                     //Toast.makeText(getApplication(), "Longitud:"+longitudeGPS +"Latitud:"+ latitudeGPS, Toast.LENGTH_SHORT).show();
                 }
             });

@@ -1,5 +1,3 @@
-
-
 package com.example.geosegalmex;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,12 +41,15 @@ public class NewCamara extends AppCompatActivity {
     String rutaImagen;
     String nombre, nombre2;
     String version = Build.VERSION.RELEASE;
+    String typeproyect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_camara);
 
+        typeproyect = General.Proyecto;
+        typeproyect = typeproyect.replaceAll(" ","");
         btnCamara = findViewById(R.id.btnCamara);
         btnCamara2 = findViewById(R.id.btnCamara2);
         btnNext = findViewById(R.id.btnNext);
@@ -69,12 +70,7 @@ public class NewCamara extends AppCompatActivity {
                     abrirCamara("1");
                 }
                 else{
-                    if(General.Proyecto.equals("PASL Operativo")) {
-                        tomarFoto2(1);
-                    }
-                    if(General.Proyecto.equals("PASL Beneficiario")){
-                        tomarFoto(1);
-                    }
+                    tomarFoto(1);
                 }
 
                 new Handler().postDelayed(new Runnable() {
@@ -97,12 +93,7 @@ public class NewCamara extends AppCompatActivity {
                     abrirCamara("2");
                 }
                 else{
-                    if(General.Proyecto.equals("PASL Operativo")) {
-                        tomarFoto2(2);
-                    }
-                    if(General.Proyecto.equals("PASL Beneficiario")){
-                        tomarFoto(2);
-                    }
+                    tomarFoto(2);
                 }
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -124,94 +115,51 @@ public class NewCamara extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Favor de capturar las fotos",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    if(General.Proyecto.equals("PASL Operativo")) {
-                        if (Integer.parseInt(version) > 10) {
-                            archivo = new File(getExternalFilesDir(null), "/PASL_Operativo/" + nombre);
-                            archivo2 = new File(getExternalFilesDir(null), "/PASL_Operativo/" + nombre2);
-                            General.Foto1 = nombre;
-                            General.Foto2 = nombre2;
-                        } else {
-                            archivo = new File(getExternalFilesDir(null), "../../../../PASL_Operativo/" + nombreImagen);
-                            archivo2 = new File(getExternalFilesDir(null), "../../../../PASL_Operativo/" + nombreImagen2);
-                            General.Foto1 = nombreImagen;
-                            General.Foto2 = nombreImagen2;
-                        }
-
-                        if (!archivo.exists()) {
-                            Toast.makeText(getApplicationContext(), "No se guardo la Foto 1, favor de repetirla.", Toast.LENGTH_SHORT).show();
-                            btnCamara.setVisibility(View.VISIBLE);
-                            logo1.setVisibility(View.GONE);
-                            txt1.setVisibility(View.GONE);
-                        } else if (!archivo2.exists()) {
-                            Toast.makeText(getApplicationContext(), "No se guardo la Foto 2, favor de repetirla.", Toast.LENGTH_SHORT).show();
-                            btnCamara2.setVisibility(View.VISIBLE);
-                            logo2.setVisibility(View.GONE);
-                            txt2.setVisibility(View.GONE);
-                        } else {
-                            txt1.setText("Foto 1 guardada correctamente");
-                            txt2.setText("Foto 2 guardada correctamente");
-                            new Handler().postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    //Toast.makeText(getApplicationContext(), "Podemos avanzar",Toast.LENGTH_SHORT).show();
-                                    if (General.Proyecto.equals("PASL Operativo")) {
-                                        startActivity(new Intent(getApplication(), PASLOperativo.class));
-                                    } else if (General.Proyecto.equals("PASL Beneficiario")) {
-                                        startActivity(new Intent(getApplication(), PASLBeneficiario.class));
-                                    } else {
-                                        startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
-                                    }
-                                }
-                            }, 2000);
-                        }
+                    if(Integer.parseInt(version)>10){
+                        archivo = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre);
+                        archivo2 = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre2);
+                        General.Foto1 = nombre;
+                        General.Foto2 = nombre2;
+                    }
+                    else{
+                        archivo = new File(getExternalFilesDir(null), "../../../../" + typeproyect + "/" + nombreImagen);
+                        archivo2 = new File(getExternalFilesDir(null), "../../../../" + typeproyect + "/" + nombreImagen2);
+                        General.Foto1 = nombreImagen;
+                        General.Foto2 = nombreImagen2;
                     }
 
-
-                    if(General.Proyecto.equals("PASL Beneficiario")) {
-                        if (Integer.parseInt(version) > 10) {
-                            archivo = new File(getExternalFilesDir(null), "/PASL_Beneficiarios/" + nombre);
-                            archivo2 = new File(getExternalFilesDir(null), "/PASL_Beneficiarios/" + nombre2);
-                            General.Foto1 = nombre;
-                            General.Foto2 = nombre2;
-                        } else {
-                            archivo = new File(getExternalFilesDir(null), "../../../../PASL_Beneficiarios/" + nombreImagen);
-                            archivo2 = new File(getExternalFilesDir(null), "../../../../PASL_Beneficiarios/" + nombreImagen2);
-                            General.Foto1 = nombreImagen;
-                            General.Foto2 = nombreImagen2;
-                        }
-
-                        if (!archivo.exists()) {
-                            Toast.makeText(getApplicationContext(), "No se guardo la Foto 1, favor de repetirla.", Toast.LENGTH_SHORT).show();
-                            btnCamara.setVisibility(View.VISIBLE);
-                            logo1.setVisibility(View.GONE);
-                            txt1.setVisibility(View.GONE);
-                        } else if (!archivo2.exists()) {
-                            Toast.makeText(getApplicationContext(), "No se guardo la Foto 2, favor de repetirla.", Toast.LENGTH_SHORT).show();
-                            btnCamara2.setVisibility(View.VISIBLE);
-                            logo2.setVisibility(View.GONE);
-                            txt2.setVisibility(View.GONE);
-                        } else {
-                            txt1.setText("Foto 1 guardada correctamente");
-                            txt2.setText("Foto 2 guardada correctamente");
-                            new Handler().postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    //Toast.makeText(getApplicationContext(), "Podemos avanzar",Toast.LENGTH_SHORT).show();
-                                    if (General.Proyecto.equals("PASL Operativo")) {
-                                        startActivity(new Intent(getApplication(), PASLOperativo.class));
-                                    } else if (General.Proyecto.equals("PASL Beneficiario")) {
-                                        startActivity(new Intent(getApplication(), PASLBeneficiario.class));
-                                    } else {
-                                        startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
-                                    }
-                                }
-                            }, 2000);
-                        }
+                    if (!archivo.exists()){
+                        Toast.makeText(getApplicationContext(), "No se guardo la Foto 1, favor de repetirla.",Toast.LENGTH_SHORT).show();
+                        btnCamara.setVisibility(View.VISIBLE);
+                        logo1.setVisibility(View.GONE);
+                        txt1.setVisibility(View.GONE);
                     }
-
-
-
-
+                    else if (!archivo2.exists()){
+                        Toast.makeText(getApplicationContext(), "No se guardo la Foto 2, favor de repetirla.",Toast.LENGTH_SHORT).show();
+                        btnCamara2.setVisibility(View.VISIBLE);
+                        logo2.setVisibility(View.GONE);
+                        txt2.setVisibility(View.GONE);
+                    }
+                    else{
+                        txt1.setText("Foto 1 guardada correctamente");
+                        txt2.setText("Foto 2 guardada correctamente");
+                        btnNext.setEnabled(false);
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                //Toast.makeText(getApplicationContext(), "Podemos avanzar",Toast.LENGTH_SHORT).show();
+                                if(General.Proyecto.equals("PASL Operativo")){
+                                    startActivity(new Intent(getApplication(), PASLOperativo.class));
+                                }
+                                else if(General.Proyecto.equals("PASL Beneficiario")){
+                                    startActivity(new Intent(getApplication(), PASLBeneficiario.class));
+                                }
+                                else{
+                                    startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
+                                }
+                            }
+                        },1000);
+                    }
                 }
             }
 
@@ -223,69 +171,40 @@ public class NewCamara extends AppCompatActivity {
     private void abrirCamara(String id){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         //if(intent.resolveActivity(getPackageManager()) != null){
-            File imagenarchivo = null;
-            try{
-                if(General.Proyecto.equals("PASL Beneficiario")) {
-                    imagenarchivo = crearimagen(id);
-                }
-                if(General.Proyecto.equals("PASL Operativo")){
-                    imagenarchivo = crearimagen2(id);
-                }
-            }catch(IOException ex){
-                Log.e("Error", ex.toString());
-            }
-            if(imagenarchivo != null){
-                Uri fotoUri = FileProvider.getUriForFile(this, "com.example.geosegalmex.fileprovider", imagenarchivo);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, fotoUri);
-                startActivityForResult(intent, 1);
-            }
-       // }
+        File imagenarchivo = null;
+        try{
+            imagenarchivo = crearimagen(id);
+        }catch(IOException ex){
+            Log.e("Error", ex.toString());
+        }
+        if(imagenarchivo != null){
+            Uri fotoUri = FileProvider.getUriForFile(this, "com.example.geosegalmex.fileprovider", imagenarchivo);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, fotoUri);
+            startActivityForResult(intent, 1);
+        }
+        // }
     }
-
 
     private File crearimagen(String id) throws IOException {
-
         String lizbelat = General.Latini;
         String lizbelon = General.Lonini;
         String lizID = General.Foliocuestion;
         String nombreImagen = ""+ lizID + "," + lizbelat + "," + lizbelon + "_" + id + "_";
 
-        String lizpro = "";
-            //File file = new File(getExternalFilesDir(null), "/GEOSEGALMEX/");
-            File file = new File(getExternalFilesDir(null), "/PASL_Beneficiarios/");
-            if (!file.exists()) {
-                file.mkdirs();
-            }
-            File imagen = File.createTempFile(nombreImagen, ".jpg", file);
-            rutaImagen = imagen.getAbsolutePath();
-            String[] parts = rutaImagen.split("/");
-            if (id.equals("1")) {
-                nombre = parts[9];
-            } else {
-                nombre2 = parts[9];
-            }
-        return imagen;
-    }
-
-    private File crearimagen2(String id) throws IOException {
-
-        String lizbelat = General.Latini;
-        String lizbelon = General.Lonini;
-        String lizID = General.Foliocuestion;
-        String nombreImagen = ""+ lizID + "," + lizbelat + "," + lizbelon + "_" + id + "_";
-        String lizpro = "";
-        File file = new File(getExternalFilesDir(null), "/PASL_Operativo/");
+        File file = new File(getExternalFilesDir(null), "/" + typeproyect + "/");
         if (!file.exists()) {
             file.mkdirs();
         }
         File imagen = File.createTempFile(nombreImagen, ".jpg", file);
         rutaImagen = imagen.getAbsolutePath();
         String[] parts = rutaImagen.split("/");
-        if (id.equals("1")) {
+        if (id.equals("1")){
             nombre = parts[9];
-        } else {
+        }
+        else{
             nombre2 = parts[9];
         }
+
         return imagen;
     }
 
@@ -298,56 +217,20 @@ public class NewCamara extends AppCompatActivity {
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
 
-        //String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX";
-        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "PASL_Beneficiarios";
+        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + typeproyect;
         File directory = new File(DB_PATHCopy);
         if (!directory.exists()) {
-            //String direc = Environment.getExternalStorageDirectory().toString() + "/GEOSEGALMEX/";
-            String direc = Environment.getExternalStorageDirectory().toString() + "/PASL_Beneficiarios/";
+            String direc = Environment.getExternalStorageDirectory().toString() + "/" + typeproyect + "/";
             new File(direc).mkdirs();
 
             Intent intento1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            //File foto = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagennn);
-            File foto = new File(getExternalFilesDir(null), "../../../../PASL_Beneficiarios/" + nombreImagennn);
+            File foto = new File(getExternalFilesDir(null), "../../../../" + typeproyect + "/" + nombreImagennn);
             intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
             startActivity(intento1);
         }
         else{
             Intent intento1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            //File foto = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagennn);
-            File foto = new File(getExternalFilesDir(null), "../../../../PASL_Beneficiarios/" + nombreImagennn);
-            intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
-            startActivity(intento1);
-        }
-
-    }
-
-    public void tomarFoto2(int id) {
-        String lizbelat = General.Latini;
-        String lizbelon = General.Lonini;
-        String lizID = General.Foliocuestion;
-        String nombreImagennn = ""+ lizID + "," + lizbelat + "," + lizbelon + "_" + id + ".jpg";
-        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
-        StrictMode.setVmPolicy(builder.build());
-
-        //String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX";
-        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "PASL_Operativo";
-        File directory = new File(DB_PATHCopy);
-        if (!directory.exists()) {
-            //String direc = Environment.getExternalStorageDirectory().toString() + "/GEOSEGALMEX/";
-            String direc = Environment.getExternalStorageDirectory().toString() + "/PASL_Operativo/";
-            new File(direc).mkdirs();
-
-            Intent intento1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            //File foto = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagennn);
-            File foto = new File(getExternalFilesDir(null), "../../../../PASL_Operativo/" + nombreImagennn);
-            intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
-            startActivity(intento1);
-        }
-        else{
-            Intent intento1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            //File foto = new File(getExternalFilesDir(null), "../../../../GEOSEGALMEX/" + nombreImagennn);
-            File foto = new File(getExternalFilesDir(null), "../../../../PASL_Operativo/" + nombreImagennn);
+            File foto = new File(getExternalFilesDir(null), "../../../../" + typeproyect + "/" + nombreImagennn);
             intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
             startActivity(intento1);
         }

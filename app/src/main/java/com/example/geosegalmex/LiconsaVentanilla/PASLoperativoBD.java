@@ -12,8 +12,8 @@ import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 
 public class PASLoperativoBD extends SQLiteOpenHelper {
 
-    public static final String DB_NAME  = "PASLoperativo";
-    public static final int DB_VERSION = 2;
+    public static final String DB_NAME  = "PASLOperativo";
+    public static final int DB_VERSION = 1;
 
     public PASLoperativoBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

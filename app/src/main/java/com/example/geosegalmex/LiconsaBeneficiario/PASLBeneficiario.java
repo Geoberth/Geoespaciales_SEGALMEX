@@ -171,22 +171,22 @@ public class PASLBeneficiario extends AppCompatActivity {
         String cadena="";
         String resultado="";
         if (beneficiarioa.isChecked()){
-            cadena += "a,";
+            cadena += "a-";
         }
         if (beneficiariob.isChecked()){
-            cadena += "b,";
+            cadena += "b-";
         }
         if (beneficiarioc.isChecked()){
-            cadena += "c,";
+            cadena += "c-";
         }
         if (beneficiariod.isChecked()){
-            cadena += "d,";
+            cadena += "d-";
         }
         if (beneficiarioe.isChecked()){
-            cadena += "e,";
+            cadena += "e-";
         }
         if (beneficiariof.isChecked()){
-            cadena += "f,";
+            cadena += "f-";
         }
         resultado = cadena.substring(0, cadena.length()-1);
         return resultado;
@@ -210,16 +210,16 @@ public class PASLBeneficiario extends AppCompatActivity {
         String cadena="";
         String resultado="";
         if (catorcea.isChecked()){
-            cadena += "a,";
+            cadena += "a-";
         }
         if (catorceb.isChecked()){
-            cadena += "b,";
+            cadena += "b-";
         }
         if (catorcec.isChecked()){
-            cadena += "c,";
+            cadena += "c-";
         }
         if (catorced.isChecked()){
-            cadena += "d,";
+            cadena += "d-";
         }
         resultado = cadena.substring(0, cadena.length()-1);
         return resultado;
