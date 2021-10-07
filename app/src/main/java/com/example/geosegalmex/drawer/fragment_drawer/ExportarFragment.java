@@ -56,7 +56,7 @@ public class ExportarFragment extends Fragment {
         View vistaExportar= inflater.inflate(R.layout.fragment_exportar, container, false);
 
 
-       // tvProgreso = vistaExportar.findViewById(R.id.tvProgreso);
+        // tvProgreso = vistaExportar.findViewById(R.id.tvProgreso);
         fabExportar = vistaExportar.findViewById(R.id.fab_exportar);
 
         int permissionCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
@@ -79,30 +79,34 @@ public class ExportarFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+
+                try {
+                    deployDatabase("PASLoperativo");
+                } catch (IOException e) {
+
+
                     try {
                         deployDatabase("PASLoperativo");
-                    } catch (IOException e) {
-                        try {
-                            deployDatabase("PASLoperativo");
-                        } catch (IOException ex) {
-                            ex.printStackTrace();
-                        }
-                        e.printStackTrace();
-
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
                     }
+                    e.printStackTrace();
+                }
 
+                try {
+                    deployDatabase2("PASLbeneficiario");
+                } catch (IOException e) {
                     try {
-                        deployDatabase("PASLbeneficiario");
-                    } catch (IOException e) {
-                        try {
-                            deployDatabase("PASLbeneficiario");
-                        } catch (IOException ex) {
-                            ex.printStackTrace();
-                        }
-                        e.printStackTrace();
-
+                        deployDatabase2("PASLbeneficiario");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
                     }
+                    e.printStackTrace();
+                }
 
+
+                // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
+                // tareaAsyncTask.execute();
             }
         });
 
@@ -181,46 +185,27 @@ public class ExportarFragment extends Fragment {
 */
         String packageName = getContext().getPackageName();
         String DB_PATH = "/data/data/" + packageName + "/databases/";
-        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX";
+        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "PASL_Operativo";
 
         String version = Build.VERSION.RELEASE;
 
 
-        if(Integer.parseInt(version)>10){
-            File file = new File(getActivity().getExternalFilesDir(null), "/GEOSEGALMEX/");
-            if (!file.exists()) {
-                file.mkdirs();
-            }
-        }
-        if(Integer.parseInt(version)>10){
-            File file = new File(getActivity().getExternalFilesDir(null), "/PASL_Beneficiarios/");
-            if (!file.exists()) {
-                file.mkdirs();
-            }
-        }
         if(Integer.parseInt(version)>10){
             File file = new File(getActivity().getExternalFilesDir(null), "/PASL_Operativo/");
             if (!file.exists()) {
                 file.mkdirs();
             }
         }
+
         else{
             File directory = new File(DB_PATHCopy);
-            if (!directory.exists()) {
-                //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
-                String direc = Environment.getExternalStorageDirectory().toString() + "/GEOSEGALMEX/";
-                new File(direc).mkdirs();
-            }
-            if (!directory.exists()) {
-                //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
-                String direc = Environment.getExternalStorageDirectory().toString() + "/PASL_Beneficiarios/";
-                new File(direc).mkdirs();
-            }
+
             if (!directory.exists()) {
                 //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
                 String direc = Environment.getExternalStorageDirectory().toString() + "/PASL_Operativo/";
                 new File(direc).mkdirs();
             }
+
             else{
                 //Toast.makeText(getContext(), "Si: " + directory, Toast.LENGTH_LONG).show();
             }
@@ -238,10 +223,12 @@ public class ExportarFragment extends Fragment {
 // Path to the just created empty db
         //String outFileName = DB_PATH + DB_NAME;
         //String outFileName = Environment.getExternalStorageDirectory() + "/" + DB_NAME;
+//Desplegar bd
+
 
         String outFileName;
         if(Integer.parseInt(version)>10){
-            File file = new File(getActivity().getExternalFilesDir(null), "/GEOSEGALMEX/" + DB_NAME);
+            File file = new File(getActivity().getExternalFilesDir(null), "/PASL_Operativo/" + DB_NAME);
             try {
                 if (!file.exists()) {
                     file.createNewFile();
@@ -252,8 +239,10 @@ public class ExportarFragment extends Fragment {
             outFileName = file.getAbsolutePath();
         }
         else{
-            outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOSEGALMEX" + "/" + DB_NAME;
+            outFileName = Environment.getExternalStorageDirectory() + "/" + "PASL_Operativo" + "/" + DB_NAME;
         }
+
+
 
         //String outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOESPACIALES" + "/" + "basedatos";
 
@@ -275,4 +264,98 @@ public class ExportarFragment extends Fragment {
 
         Toast.makeText(getContext(), "Base de datos: " + DB_NAME + " exportada", Toast.LENGTH_LONG).show();
     }
+
+
+    private void deployDatabase2(String DB_NAME) throws IOException {
+//Open your local db as the input stream
+
+       /* if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Permission is not granted
+        }
+*/
+        String packageName = getContext().getPackageName();
+        String DB_PATH = "/data/data/" + packageName + "/databases/";
+        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + "PASL_Beneficiarios";
+
+        String version = Build.VERSION.RELEASE;
+
+
+
+        if(Integer.parseInt(version)>10){
+            File file = new File(getActivity().getExternalFilesDir(null), "/PASL_Beneficiarios/");
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+        }
+
+        else{
+            File directory = new File(DB_PATHCopy);
+
+            if (!directory.exists()) {
+                //Toast.makeText(getContext(), "No: " + directory, Toast.LENGTH_LONG).show();
+                String direc = Environment.getExternalStorageDirectory().toString() + "/PASL_Beneficiarios/";
+                new File(direc).mkdirs();
+            }
+
+            else{
+                //Toast.makeText(getContext(), "Si: " + directory, Toast.LENGTH_LONG).show();
+            }
+
+        }
+
+
+
+
+        Log.e("========>>", DB_PATH);
+
+        //InputStream myInput = getAssets().open("BDENCUESTA");
+        InputStream myInput = new FileInputStream(DB_PATH + DB_NAME);
+
+// Path to the just created empty db
+        //String outFileName = DB_PATH + DB_NAME;
+        //String outFileName = Environment.getExternalStorageDirectory() + "/" + DB_NAME;
+//Desplegar bd
+
+
+        String outFileName;
+        if(Integer.parseInt(version)>10){
+            File file = new File(getActivity().getExternalFilesDir(null), "/PASL_Beneficiarios/" + DB_NAME);
+            try {
+                if (!file.exists()) {
+                    file.createNewFile();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            outFileName = file.getAbsolutePath();
+        }
+        else{
+            outFileName = Environment.getExternalStorageDirectory() + "/" + "PASL_Beneficiarios" + "/" + DB_NAME;
+        }
+
+
+
+        //String outFileName = Environment.getExternalStorageDirectory() + "/" + "GEOESPACIALES" + "/" + "basedatos";
+
+        Log.e("========>>", outFileName);
+//Open the empty db as the output stream
+        OutputStream myOutput = new FileOutputStream(outFileName);
+
+//transfer bytes from the inputfile to the outputfile
+        byte[] buffer = new byte[1024];
+        int length;
+        while ((length = myInput.read(buffer)) > 0) {
+            myOutput.write(buffer, 0, length);
+        }
+
+//Close the streams
+        myOutput.flush();
+        myOutput.close();
+        myInput.close();
+
+        Toast.makeText(getContext(), "Base de datos: " + DB_NAME + " exportada", Toast.LENGTH_LONG).show();
+    }
+
+
 }
