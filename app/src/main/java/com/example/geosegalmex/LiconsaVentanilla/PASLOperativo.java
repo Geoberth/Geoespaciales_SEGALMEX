@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -31,6 +33,78 @@ public class PASLOperativo extends AppCompatActivity {
     Spinner spi_edo, spi_mun;
     EditText localidad, nombre, apaterno, amaterno, edad, años, meses, observ;
     RadioButton sexo1, sexo2, si, no, si2, no2, si3, no3, si4, no4, si5, no5, si6, no6, si7, no7, si8, no8, si9, no9, si10, no10, si11, no11, si12, no12, si13, no13;
+
+    String cveedo = "";
+    String nomedo = "";
+    String cvemun = "";
+    String nommun = "";
+    int[] idmunicipios = {R.array.Aguascalientes2021
+            , R.array.BajaCalifornia2021
+            , R.array.BajaCaliforniaSur2021
+            , R.array.Campeche2021
+            , R.array.CoahuiladeZaragoza2021
+            , R.array.Colima2021
+            , R.array.Chiapas2021
+            , R.array.Chihuahua2021
+            , R.array.CiudaddeMéxico2021
+            , R.array.Durango2021
+            , R.array.Guanajuato2021
+            , R.array.Guerrero2021
+            , R.array.Hidalgo2021
+            , R.array.Jalisco2021
+            , R.array.México2021
+            , R.array.MichoacándeOcampo2021
+            , R.array.Morelos2021
+            , R.array.Nayarit2021
+            , R.array.NuevoLeón2021
+            , R.array.Oaxaca2021
+            , R.array.Puebla2021
+            , R.array.Querétaro2021
+            , R.array.QuintanaRoo2021
+            , R.array.SanLuisPotosí2021
+            , R.array.Sinaloa2021
+            , R.array.Sonora2021
+            , R.array.Tabasco2021
+            , R.array.Tamaulipas2021
+            , R.array.Tlaxcala2021
+            , R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021
+            , R.array.Zacatecas2021};
+    int[] idcvemunicipios = {R.array.cveAguascalientes2021
+            , R.array.cveBajaCalifornia2021
+            , R.array.cveBajaCaliforniaSur2021
+            , R.array.cveCampeche2021
+            , R.array.cveCoahuiladeZaragoza2021
+            , R.array.cveColima2021
+            , R.array.cveChiapas2021
+            , R.array.cveChihuahua2021
+            , R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021
+            , R.array.cveGuanajuato2021
+            , R.array.cveGuerrero2021
+            , R.array.cveHidalgo2021
+            , R.array.cveJalisco2021
+            , R.array.cveMéxico2021
+            , R.array.cveMichoacándeOcampo2021
+            , R.array.cveMorelos2021
+            , R.array.cveNayarit2021
+            , R.array.cveNuevoLeón2021
+            , R.array.cveOaxaca2021
+            , R.array.cvePuebla2021
+            , R.array.cveQuerétaro2021
+            , R.array.cveQuintanaRoo2021
+            , R.array.cveSanLuisPotosí2021
+            , R.array.cveSinaloa2021
+            , R.array.cveSonora2021
+            , R.array.cveTabasco2021
+            , R.array.cveTamaulipas2021
+            , R.array.cveTlaxcala2021
+            , R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021
+            , R.array.cveZacatecas2021
+    };
+    String[] municipios;
+    String[] cvemunicipios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +154,40 @@ public class PASLOperativo extends AppCompatActivity {
         no13 = (RadioButton)findViewById(R.id.pasl_o_rbNO13);
 
         muestrafecha();
+
+        spi_edo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String[] estados = getResources().getStringArray(R.array.Estados2021);
+                String[] cveestados = getResources().getStringArray(R.array.cveEstados2021);
+
+                cveedo = estados[position];
+                nomedo = cveestados[position];
+
+                municipios = getResources().getStringArray(idmunicipios[position]);
+                cvemunicipios = getResources().getStringArray(idcvemunicipios[position]);
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(PASLOperativo.this, android.R.layout.simple_spinner_item, municipios);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spi_mun.setAdapter(adapter);
+                spi_mun.setEnabled(true);
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        spi_mun.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                nommun = municipios[position];
+                cvemun = cvemunicipios[position];
+
+                Toast.makeText(getApplicationContext(), "cveEdo: " + cveedo + "\n Edo: " + nomedo + "\n cveMun: " + nommun + "\n Mun: " + cvemun,Toast.LENGTH_SHORT).show();
+
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -274,6 +382,7 @@ public class PASLOperativo extends AppCompatActivity {
 
         return retorno;
     }
+
 
 
 }

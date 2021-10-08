@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
-                android:entries="@array/estatus"
+                android:entries="@array/Estados2021"
                 android:spinnerMode="dropdown"
                 android:background="@drawable/borde"
                 android:textSize="15sp" />
@@ -112,9 +112,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
-                android:entries="@array/estatus"
+                android:entries="@array/Aguascalientes2021"
                 android:background="@drawable/borde"
                 android:spinnerMode="dropdown"
+                android:enabled="false"
                 android:textSize="15sp" />
 
             <TextView
@@ -244,7 +245,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number|numberDecimal"/>
+                android:inputType="number"/>
 
             <TextView
                 android:id="@+id/pasl_o_tvTiempo"
@@ -274,7 +275,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number|numberDecimal"/>
+                    android:inputType="number"/>
 
             </LinearLayout>
 
@@ -297,7 +298,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number|numberDecimal"/>
+                    android:inputType="number"/>
 
             </LinearLayout>
 

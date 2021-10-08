@@ -1,0 +1,2535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Estados2021">
+        <item>Aguascalientes</item>
+        <item>Baja California</item>
+        <item>Baja California Sur</item>
+        <item>Campeche</item>
+        <item>Coahuila de Zaragoza</item>
+        <item>Colima</item>
+        <item>Chiapas</item>
+        <item>Chihuahua</item>
+        <item>Ciudad de México</item>
+        <item>Durango</item>
+        <item>Guanajuato</item>
+        <item>Guerrero</item>
+        <item>Hidalgo</item>
+        <item>Jalisco</item>
+        <item>México</item>
+        <item>Michoacán de Ocampo</item>
+        <item>Morelos</item>
+        <item>Nayarit</item>
+        <item>Nuevo León</item>
+        <item>Oaxaca</item>
+        <item>Puebla</item>
+        <item>Querétaro</item>
+        <item>Quintana Roo</item>
+        <item>San Luis Potosí</item>
+        <item>Sinaloa</item>
+        <item>Sonora</item>
+        <item>Tabasco</item>
+        <item>Tamaulipas</item>
+        <item>Tlaxcala</item>
+        <item>Veracruz de Ignacio de la Llave</item>
+        <item>Yucatán</item>
+        <item>Zacatecas</item>
+    </string-array>
+
+    <string-array name="cveEstados2021">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </string-array>
+
+
+
+    <string-array name="Aguascalientes2021">
+        <item>Aguascalientes</item>
+        <item>Asientos</item>
+        <item>Calvillo</item>
+        <item>Jesús María</item>
+        <item>Pabellón de Arteaga</item>
+        <item>Rincón de Romos</item>
+        <item>San José de Gracia</item>
+        <item>Tepezalá</item>
+        <item>El Llano</item>
+        <item>San Francisco de los Romo</item>
+    </string-array>
+
+    <string-array name="cveAguascalientes2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+    </string-array>
+
+
+
+    <string-array name="BajaCalifornia2021">
+        <item>Ensenada</item>
+        <item>Mexicali</item>
+        <item>Tecate</item>
+        <item>Tijuana</item>
+        <item>San Quintín</item>
+    </string-array>
+
+    <string-array name="cveBajaCalifornia2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>006</item>
+    </string-array>
+
+
+
+    <string-array name="BajaCaliforniaSur2021">
+        <item>Comondú</item>
+        <item>Mulegé</item>
+        <item>La Paz</item>
+        <item>Los Cabos</item>
+        <item>Loreto</item>
+    </string-array>
+
+    <string-array name="cveBajaCaliforniaSur2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>008</item>
+        <item>009</item>
+    </string-array>
+
+
+
+    <string-array name="Campeche2021">
+        <item>Calkiní</item>
+        <item>Campeche</item>
+        <item>Carmen</item>
+        <item>Champotón</item>
+        <item>Hecelchakán</item>
+        <item>Hopelchén</item>
+        <item>Tenabo</item>
+        <item>Escárcega</item>
+        <item>Calakmul</item>
+        <item>Candelaria</item>
+        <item>Seybaplaya</item>
+    </string-array>
+
+    <string-array name="cveCampeche2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+    </string-array>
+
+
+    <string-array name="Chiapas2021">
+        <item>Acacoyagua</item>
+        <item>Acala</item>
+        <item>Altamirano</item>
+        <item>Amatán</item>
+        <item>Amatenango de la Frontera</item>
+        <item>Amatenango del Valle</item>
+        <item>Ángel Albino Corzo</item>
+        <item>Bejucal de Ocampo</item>
+        <item>Pijijiapan</item>
+        <item>Bella Vista</item>
+        <item>Bochil</item>
+        <item>Catazajá</item>
+        <item>Cintalapa</item>
+        <item>Comitán de Domínguez</item>
+        <item>La Concordia</item>
+        <item>Copainalá</item>
+        <item>Chalchihuitán</item>
+        <item>Chamula</item>
+        <item>Chiapa de Corzo</item>
+        <item>Chiapilla</item>
+        <item>Chicomuselo</item>
+        <item>Chilón</item>
+        <item>Escuintla</item>
+        <item>Frontera Comalapa</item>
+        <item>Huehuetán</item>
+        <item>Huixtán</item>
+        <item>Huixtla</item>
+        <item>Ixhuatán</item>
+        <item>Ixtacomitán</item>
+        <item>Ixtapa</item>
+        <item>Jiquipilas</item>
+        <item>Juárez</item>
+        <item>Mazapa de Madero</item>
+        <item>Pueblo Nuevo Solistahuacán</item>
+        <item>Metapa</item>
+        <item>Motozintla</item>
+        <item>Nicolás Ruíz</item>
+        <item>Ocosingo</item>
+        <item>Ocotepec</item>
+        <item>Ocozocoautla de Espinosa</item>
+        <item>Oxchuc</item>
+        <item>Palenque</item>
+        <item>Pantelhó</item>
+        <item>Pantepec</item>
+        <item>Reforma</item>
+        <item>Las Rosas</item>
+        <item>San Cristóbal de las Casas</item>
+        <item>San Fernando</item>
+        <item>Simojovel</item>
+        <item>Socoltenango</item>
+        <item>Solosuchiapa</item>
+        <item>Suchiapa</item>
+        <item>Tapachula</item>
+        <item>Tapalapa</item>
+        <item>Capitán Luis Ángel Vidal</item>
+        <item>Tapilula</item>
+        <item>Tecpatán</item>
+        <item>Tenejapa</item>
+        <item>Tonalá</item>
+        <item>Totolapa</item>
+        <item>La Trinitaria</item>
+        <item>Tuxtla Gutiérrez</item>
+        <item>Tuxtla Chico</item>
+        <item>Tuzantán</item>
+        <item>Tzimol</item>
+        <item>Venustiano Carranza</item>
+        <item>Villa Corzo</item>
+        <item>Villaflores</item>
+        <item>San Lucas</item>
+        <item>Zinacantán</item>
+        <item>Montecristo de Guerrero</item>
+        <item>El Parral</item>
+        <item>Emiliano Zapata</item>
+        <item>Honduras de la Sierra</item>
+    </string-array>
+
+    <string-array name="cveChiapas2021">
+        <item>001</item>
+        <item>002</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>010</item>
+        <item>069</item>
+        <item>011</item>
+        <item>013</item>
+        <item>016</item>
+        <item>017</item>
+        <item>019</item>
+        <item>020</item>
+        <item>021</item>
+        <item>022</item>
+        <item>023</item>
+        <item>027</item>
+        <item>028</item>
+        <item>030</item>
+        <item>031</item>
+        <item>032</item>
+        <item>034</item>
+        <item>037</item>
+        <item>038</item>
+        <item>040</item>
+        <item>042</item>
+        <item>043</item>
+        <item>044</item>
+        <item>046</item>
+        <item>048</item>
+        <item>053</item>
+        <item>072</item>
+        <item>055</item>
+        <item>057</item>
+        <item>058</item>
+        <item>059</item>
+        <item>060</item>
+        <item>061</item>
+        <item>064</item>
+        <item>065</item>
+        <item>066</item>
+        <item>067</item>
+        <item>074</item>
+        <item>075</item>
+        <item>078</item>
+        <item>079</item>
+        <item>081</item>
+        <item>083</item>
+        <item>084</item>
+        <item>086</item>
+        <item>089</item>
+        <item>090</item>
+        <item>120</item>
+        <item>091</item>
+        <item>092</item>
+        <item>093</item>
+        <item>097</item>
+        <item>098</item>
+        <item>099</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>110</item>
+        <item>111</item>
+        <item>117</item>
+        <item>122</item>
+        <item>123</item>
+        <item>125</item>
+    </string-array>
+
+
+
+    <string-array name="Chihuahua2021">
+        <item>Ahumada</item>
+        <item>Aldama</item>
+        <item>Aquiles Serdán</item>
+        <item>Bachíniva</item>
+        <item>Bocoyna</item>
+        <item>Buenaventura</item>
+        <item>Camargo</item>
+        <item>Carichí</item>
+        <item>La Cruz</item>
+        <item>Cuauhtémoc</item>
+        <item>Cusihuiriachi</item>
+        <item>Chihuahua</item>
+        <item>Chínipas</item>
+        <item>Delicias</item>
+        <item>Gran Morelos</item>
+        <item>Guachochi</item>
+        <item>Guadalupe</item>
+        <item>Guadalupe y Calvo</item>
+        <item>Guazapares</item>
+        <item>Guerrero</item>
+        <item>Hidalgo del Parral</item>
+        <item>Ignacio Zaragoza</item>
+        <item>Juárez</item>
+        <item>Julimes</item>
+        <item>Madera</item>
+        <item>Meoqui</item>
+        <item>Namiquipa</item>
+        <item>Nuevo Casas Grandes</item>
+        <item>Ojinaga</item>
+        <item>Praxedis G. Guerrero</item>
+        <item>Riva Palacio</item>
+        <item>Rosales</item>
+        <item>San Francisco de Borja</item>
+        <item>Saucillo</item>
+        <item>Urique</item>
+        <item>Uruachi</item>
+    </string-array>
+
+    <string-array name="cveChihuahua2021">
+        <item>001</item>
+        <item>002</item>
+        <item>004</item>
+        <item>006</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>019</item>
+        <item>020</item>
+        <item>021</item>
+        <item>026</item>
+        <item>027</item>
+        <item>028</item>
+        <item>029</item>
+        <item>030</item>
+        <item>031</item>
+        <item>032</item>
+        <item>034</item>
+        <item>037</item>
+        <item>038</item>
+        <item>040</item>
+        <item>045</item>
+        <item>048</item>
+        <item>050</item>
+        <item>052</item>
+        <item>053</item>
+        <item>054</item>
+        <item>055</item>
+        <item>057</item>
+        <item>062</item>
+        <item>065</item>
+        <item>066</item>
+    </string-array>
+
+
+
+    <string-array name="CiudaddeMéxico2021">
+        <item>Azcapotzalco</item>
+        <item>Coyoacán</item>
+        <item>Cuajimalpa de Morelos</item>
+        <item>Gustavo A. Madero</item>
+        <item>Iztacalco</item>
+        <item>Iztapalapa</item>
+        <item>Milpa Alta</item>
+        <item>Álvaro Obregón</item>
+        <item>Tláhuac</item>
+        <item>Tlalpan</item>
+        <item>Xochimilco</item>
+        <item>Cuauhtémoc</item>
+        <item>Venustiano Carranza</item>
+    </string-array>
+
+    <string-array name="cveCiudaddeMéxico2021">
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>015</item>
+        <item>017</item>
+    </string-array>
+
+
+
+    <string-array name="CoahuiladeZaragoza2021">
+        <item>Abasolo</item>
+        <item>Acuña</item>
+        <item>Arteaga</item>
+        <item>Francisco I. Madero</item>
+        <item>General Cepeda</item>
+        <item>Sacramento</item>
+        <item>Saltillo</item>
+        <item>San Pedro</item>
+        <item>Jiménez</item>
+        <item>Matamoros</item>
+        <item>Monclova</item>
+        <item>Nava</item>
+        <item>Ocampo</item>
+        <item>Parras</item>
+        <item>Piedras Negras</item>
+        <item>Torreón</item>
+        <item>Viesca</item>
+    </string-array>
+
+    <string-array name="cveCoahuiladeZaragoza2021">
+        <item>001</item>
+        <item>002</item>
+        <item>004</item>
+        <item>009</item>
+        <item>011</item>
+        <item>029</item>
+        <item>030</item>
+        <item>033</item>
+        <item>014</item>
+        <item>017</item>
+        <item>018</item>
+        <item>022</item>
+        <item>023</item>
+        <item>024</item>
+        <item>025</item>
+        <item>035</item>
+        <item>036</item>
+    </string-array>
+
+
+
+    <string-array name="Colima2021">
+        <item>Armería</item>
+        <item>Colima</item>
+        <item>Comala</item>
+        <item>Coquimatlán</item>
+        <item>Cuauhtémoc</item>
+        <item>Ixtlahuacán</item>
+        <item>Manzanillo</item>
+        <item>Minatitlán</item>
+        <item>Tecomán</item>
+        <item>Villa de Álvarez</item>
+    </string-array>
+
+    <string-array name="cveColima2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+    </string-array>
+
+
+
+    <string-array name="Durango2021">
+        <item>Canatlán</item>
+        <item>Cuencamé</item>
+        <item>Durango</item>
+        <item>General Simón Bolívar</item>
+        <item>Gómez Palacio</item>
+        <item>Guadalupe Victoria</item>
+        <item>Indé</item>
+        <item>Lerdo</item>
+        <item>Mapimí</item>
+        <item>Mezquital</item>
+        <item>Nazas</item>
+        <item>Nombre de Dios</item>
+        <item>Otáez</item>
+        <item>Peñón Blanco</item>
+        <item>Poanas</item>
+        <item>Pueblo Nuevo</item>
+        <item>Rodeo</item>
+        <item>San Dimas</item>
+        <item>San Juan del Río</item>
+        <item>Súchil</item>
+        <item>Tamazula</item>
+        <item>Santiago Papasquiaro</item>
+        <item>Tlahualilo</item>
+        <item>Topia</item>
+        <item>Vicente Guerrero</item>
+        <item>Nuevo Ideal</item>
+    </string-array>
+
+    <string-array name="cveDurango2021">
+        <item>001</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>015</item>
+        <item>016</item>
+        <item>019</item>
+        <item>021</item>
+        <item>022</item>
+        <item>023</item>
+        <item>024</item>
+        <item>026</item>
+        <item>028</item>
+        <item>033</item>
+        <item>034</item>
+        <item>032</item>
+        <item>036</item>
+        <item>037</item>
+        <item>038</item>
+        <item>039</item>
+    </string-array>
+
+
+
+    <string-array name="Guanajuato2021">
+        <item>Abasolo</item>
+        <item>Acámbaro</item>
+        <item>San Miguel de Allende</item>
+        <item>Apaseo el Alto</item>
+        <item>Apaseo el Grande</item>
+        <item>Manuel Doblado</item>
+        <item>Comonfort</item>
+        <item>Coroneo</item>
+        <item>Cortazar</item>
+        <item>Cuerámaro</item>
+        <item>Dolores Hidalgo Cuna de la Independencia Nacional</item>
+        <item>Guanajuato</item>
+        <item>Huanímaro</item>
+        <item>Irapuato</item>
+        <item>Jerécuaro</item>
+        <item>León</item>
+        <item>Ocampo</item>
+        <item>Pénjamo</item>
+        <item>Romita</item>
+        <item>Salamanca</item>
+        <item>Salvatierra</item>
+        <item>San Felipe</item>
+        <item>Santa Cruz de Juventino Rosas</item>
+        <item>Silao de la Victoria</item>
+        <item>Tarimoro</item>
+        <item>Tierra Blanca</item>
+        <item>Uriangato</item>
+        <item>Valle de Santiago</item>
+        <item>Villagrán</item>
+        <item>Xichú</item>
+        <item>Yuriria</item>
+    </string-array>
+
+    <string-array name="cveGuanajuato2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>014</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+        <item>019</item>
+        <item>020</item>
+        <item>022</item>
+        <item>023</item>
+        <item>026</item>
+        <item>027</item>
+        <item>028</item>
+        <item>030</item>
+        <item>035</item>
+        <item>037</item>
+        <item>039</item>
+        <item>040</item>
+        <item>041</item>
+        <item>042</item>
+        <item>044</item>
+        <item>045</item>
+        <item>046</item>
+    </string-array>
+
+
+
+    <string-array name="Guerrero2021">
+        <item>Acapulco de Juárez</item>
+        <item>Ahuacuotzingo</item>
+        <item>Ajuchitlán del Progreso</item>
+        <item>Alcozauca de Guerrero</item>
+        <item>Alpoyeca</item>
+        <item>Apaxtla</item>
+        <item>Arcelia</item>
+        <item>Atlixtac</item>
+        <item>Atoyac de Álvarez</item>
+        <item>Ayutla de los Libres</item>
+        <item>Azoyú</item>
+        <item>Benito Juárez</item>
+        <item>Buenavista de Cuéllar</item>
+        <item>Cocula</item>
+        <item>Copala</item>
+        <item>Coyuca de Benítez</item>
+        <item>Coyuca de Catalán</item>
+        <item>Cuajinicuilapa</item>
+        <item>San Luis Acatlán</item>
+        <item>San Marcos</item>
+        <item>San Miguel Totolapan</item>
+        <item>Tecoanapa</item>
+        <item>Teloloapan</item>
+        <item>Tepecoacuilco de Trujano</item>
+        <item>Tlalchapa</item>
+        <item>Tlapehuala</item>
+        <item>La Unión de Isidoro Montes de Oca</item>
+        <item>Xochihuehuetlán</item>
+        <item>Xochistlahuaca</item>
+        <item>Zapotitlán Tablas</item>
+        <item>Zirándaro</item>
+        <item>Zitlala</item>
+        <item>Eduardo Neri</item>
+        <item>Acatepec</item>
+        <item>Cualác</item>
+        <item>Cuautepec</item>
+        <item>Cutzamala de Pinzón</item>
+        <item>Chilapa de Álvarez</item>
+        <item>Chilpancingo de los Bravo</item>
+        <item>General Heliodoro Castillo</item>
+        <item>Huamuxtitlán</item>
+        <item>Huitzuco de los Figueroa</item>
+        <item>Iguala de la Independencia</item>
+        <item>Zihuatanejo de Azueta</item>
+        <item>Juan R. Escudero</item>
+        <item>Leonardo Bravo</item>
+        <item>Malinaltepec</item>
+        <item>Metlatónoc</item>
+        <item>Mochitlán</item>
+        <item>Olinalá</item>
+        <item>Ometepec</item>
+        <item>Pilcaya</item>
+        <item>Pungarabato</item>
+        <item>Tlalixtaquilla de Maldonado</item>
+        <item>Marquelia</item>
+        <item>Cochoapa el Grande</item>
+        <item>José Joaquín de Herrera</item>
+        <item>Juchitán</item>
+    </string-array>
+
+    <string-array name="cveGuerrero2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>015</item>
+        <item>017</item>
+        <item>018</item>
+        <item>021</item>
+        <item>022</item>
+        <item>023</item>
+        <item>052</item>
+        <item>053</item>
+        <item>054</item>
+        <item>056</item>
+        <item>058</item>
+        <item>059</item>
+        <item>064</item>
+        <item>067</item>
+        <item>068</item>
+        <item>070</item>
+        <item>071</item>
+        <item>072</item>
+        <item>073</item>
+        <item>074</item>
+        <item>075</item>
+        <item>076</item>
+        <item>024</item>
+        <item>025</item>
+        <item>027</item>
+        <item>028</item>
+        <item>029</item>
+        <item>032</item>
+        <item>033</item>
+        <item>034</item>
+        <item>035</item>
+        <item>038</item>
+        <item>039</item>
+        <item>040</item>
+        <item>041</item>
+        <item>043</item>
+        <item>044</item>
+        <item>045</item>
+        <item>046</item>
+        <item>049</item>
+        <item>050</item>
+        <item>065</item>
+        <item>077</item>
+        <item>078</item>
+        <item>079</item>
+        <item>080</item>
+    </string-array>
+
+
+
+    <string-array name="Hidalgo2021">
+        <item>Acatlán</item>
+        <item>Actopan</item>
+        <item>Agua Blanca de Iturbide</item>
+        <item>Apan</item>
+        <item>Atitalaquia</item>
+        <item>Atlapexco</item>
+        <item>Cardonal</item>
+        <item>Francisco I. Madero</item>
+        <item>Huasca de Ocampo</item>
+        <item>Huazalingo</item>
+        <item>Huejutla de Reyes</item>
+        <item>Huichapan</item>
+        <item>Ixmiquilpan</item>
+        <item>Jacala de Ledezma</item>
+        <item>Juárez Hidalgo</item>
+        <item>Lolotla</item>
+        <item>Metepec</item>
+        <item>San Agustín Metzquititlán</item>
+        <item>Metztitlán</item>
+        <item>Mineral del Chico</item>
+        <item>La Misión</item>
+        <item>Mixquiahuala de Juárez</item>
+        <item>San Felipe Orizatlán</item>
+        <item>Progreso de Obregón</item>
+        <item>Mineral de la Reforma</item>
+        <item>San Bartolo Tutotepec</item>
+        <item>San Salvador</item>
+        <item>Singuilucan</item>
+        <item>Tecozautla</item>
+        <item>Tepeapulco</item>
+        <item>Zempoala</item>
+        <item>Zimapán</item>
+        <item>Tetepango</item>
+        <item>Tezontepec de Aldama</item>
+        <item>Tianguistengo</item>
+        <item>Tizayuca</item>
+        <item>Tlahuiltepa</item>
+        <item>Tolcayuca</item>
+        <item>Tula de Allende</item>
+        <item>Tulancingo de Bravo</item>
+        <item>Yahualica</item>
+        <item>Zacualtipán de Ángeles</item>
+    </string-array>
+
+    <string-array name="cveHidalgo2021">
+        <item>001</item>
+        <item>003</item>
+        <item>004</item>
+        <item>008</item>
+        <item>010</item>
+        <item>011</item>
+        <item>015</item>
+        <item>023</item>
+        <item>024</item>
+        <item>026</item>
+        <item>028</item>
+        <item>029</item>
+        <item>030</item>
+        <item>031</item>
+        <item>033</item>
+        <item>034</item>
+        <item>035</item>
+        <item>036</item>
+        <item>037</item>
+        <item>038</item>
+        <item>040</item>
+        <item>041</item>
+        <item>046</item>
+        <item>050</item>
+        <item>051</item>
+        <item>053</item>
+        <item>054</item>
+        <item>057</item>
+        <item>059</item>
+        <item>061</item>
+        <item>083</item>
+        <item>084</item>
+        <item>065</item>
+        <item>067</item>
+        <item>068</item>
+        <item>069</item>
+        <item>071</item>
+        <item>075</item>
+        <item>076</item>
+        <item>077</item>
+        <item>080</item>
+        <item>081</item>
+    </string-array>
+
+
+
+    <string-array name="Jalisco2021">
+        <item>Acatic</item>
+        <item>Acatlán de Juárez</item>
+        <item>Ahualulco de Mercado</item>
+        <item>Ameca</item>
+        <item>San Juanito de Escobedo</item>
+        <item>El Arenal</item>
+        <item>Atengo</item>
+        <item>Atenguillo</item>
+        <item>Atotonilco el Alto</item>
+        <item>Atoyac</item>
+        <item>Autlán de Navarro</item>
+        <item>Ayotlán</item>
+        <item>Ayutla</item>
+        <item>La Barca</item>
+        <item>Bolaños</item>
+        <item>Cihuatlán</item>
+        <item>Zapotlán el Grande</item>
+        <item>Cocula</item>
+        <item>Cuautitlán de García Barragán</item>
+        <item>Cuquío</item>
+        <item>Chapala</item>
+        <item>Degollado</item>
+        <item>Encarnación de Díaz</item>
+        <item>Etzatlán</item>
+        <item>Guadalajara</item>
+        <item>Huejúcar</item>
+        <item>La Huerta</item>
+        <item>Ixtlahuacán de los Membrillos</item>
+        <item>Ixtlahuacán del Río</item>
+        <item>Jalostotitlán</item>
+        <item>Jamay</item>
+        <item>Jocotepec</item>
+        <item>Lagos de Moreno</item>
+        <item>El Limón</item>
+        <item>Magdalena</item>
+        <item>Mascota</item>
+        <item>Mexticacán</item>
+        <item>Mixtlán</item>
+        <item>Ocotlán</item>
+        <item>Ojuelos de Jalisco</item>
+        <item>Poncitlán</item>
+        <item>Puerto Vallarta</item>
+        <item>Villa Purificación</item>
+        <item>El Salto</item>
+        <item>San Diego de Alejandría</item>
+        <item>San Juan de los Lagos</item>
+        <item>San Julián</item>
+        <item>San Marcos</item>
+        <item>San Martín Hidalgo</item>
+        <item>San Miguel el Alto</item>
+        <item>Gómez Farías</item>
+        <item>Sayula</item>
+        <item>Tala</item>
+        <item>Talpa de Allende</item>
+        <item>Tamazula de Gordiano</item>
+        <item>Tapalpa</item>
+        <item>Tecalitlán</item>
+        <item>Tecolotlán</item>
+        <item>Tenamaxtlán</item>
+        <item>Teocaltiche</item>
+        <item>Teocuitatlán de Corona</item>
+        <item>Tepatitlán de Morelos</item>
+        <item>Tequila</item>
+        <item>Teuchitlán</item>
+        <item>Tizapán el Alto</item>
+        <item>Tlajomulco de Zúñiga</item>
+        <item>San Pedro Tlaquepaque</item>
+        <item>Tomatlán</item>
+        <item>Tonalá</item>
+        <item>Tototlán</item>
+        <item>Tuxpan</item>
+        <item>Unión de San Antonio</item>
+        <item>Unión de Tula</item>
+        <item>Valle de Guadalupe</item>
+        <item>San Gabriel</item>
+        <item>Villa Corona</item>
+        <item>Zapopan</item>
+        <item>Zapotiltic</item>
+        <item>Zapotlán del Rey</item>
+        <item>Zapotlanejo</item>
+        <item>San Ignacio Cerro Gordo</item>
+    </string-array>
+
+    <string-array name="cveJalisco2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>006</item>
+        <item>007</item>
+        <item>009</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>019</item>
+        <item>022</item>
+        <item>023</item>
+        <item>024</item>
+        <item>027</item>
+        <item>029</item>
+        <item>030</item>
+        <item>033</item>
+        <item>035</item>
+        <item>036</item>
+        <item>039</item>
+        <item>041</item>
+        <item>043</item>
+        <item>044</item>
+        <item>045</item>
+        <item>046</item>
+        <item>047</item>
+        <item>050</item>
+        <item>053</item>
+        <item>054</item>
+        <item>055</item>
+        <item>058</item>
+        <item>060</item>
+        <item>062</item>
+        <item>063</item>
+        <item>064</item>
+        <item>066</item>
+        <item>067</item>
+        <item>068</item>
+        <item>070</item>
+        <item>072</item>
+        <item>073</item>
+        <item>074</item>
+        <item>075</item>
+        <item>077</item>
+        <item>078</item>
+        <item>079</item>
+        <item>082</item>
+        <item>083</item>
+        <item>084</item>
+        <item>085</item>
+        <item>086</item>
+        <item>087</item>
+        <item>088</item>
+        <item>090</item>
+        <item>091</item>
+        <item>092</item>
+        <item>093</item>
+        <item>094</item>
+        <item>095</item>
+        <item>096</item>
+        <item>097</item>
+        <item>098</item>
+        <item>100</item>
+        <item>101</item>
+        <item>105</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>111</item>
+        <item>113</item>
+        <item>114</item>
+        <item>120</item>
+        <item>121</item>
+        <item>123</item>
+        <item>124</item>
+        <item>125</item>
+    </string-array>
+
+
+
+    <string-array name="México2021">
+        <item>Acambay de Ruíz Castañeda</item>
+        <item>Aculco</item>
+        <item>Almoloya de Juárez</item>
+        <item>Amanalco</item>
+        <item>Amatepec</item>
+        <item>Apaxco</item>
+        <item>Atizapán de Zaragoza</item>
+        <item>Axapusco</item>
+        <item>Coatepec Harinas</item>
+        <item>Coyotepec</item>
+        <item>Chalco</item>
+        <item>Chapa de Mota</item>
+        <item>Chiautla</item>
+        <item>Chicoloapan</item>
+        <item>Chimalhuacán</item>
+        <item>Donato Guerra</item>
+        <item>Ecatepec de Morelos</item>
+        <item>Huixquilucan</item>
+        <item>Isidro Fabela</item>
+        <item>Ixtapaluca</item>
+        <item>Ixtapan de la Sal</item>
+        <item>Ixtlahuaca</item>
+        <item>Jilotepec</item>
+        <item>Jilotzingo</item>
+        <item>Jiquipilco</item>
+        <item>Jocotitlán</item>
+        <item>Juchitepec</item>
+        <item>Lerma</item>
+        <item>Malinalco</item>
+        <item>Rayón</item>
+        <item>San Felipe del Progreso</item>
+        <item>Tepotzotlán</item>
+        <item>Naucalpan de Juárez</item>
+        <item>Nezahualcóyotl</item>
+        <item>Nextlalpan</item>
+        <item>Nicolás Romero</item>
+        <item>Ocoyoacac</item>
+        <item>Ocuilan</item>
+        <item>El Oro</item>
+        <item>Otumba</item>
+        <item>Timilpan</item>
+        <item>Tlalnepantla de Baz</item>
+        <item>Tlatlaya</item>
+        <item>Toluca</item>
+        <item>Tonatico</item>
+        <item>Tultepec</item>
+        <item>Tultitlán</item>
+        <item>Villa de Allende</item>
+        <item>Villa Victoria</item>
+        <item>Xonacatlán</item>
+        <item>Zinacantepec</item>
+        <item>Cuautitlán Izcalli</item>
+        <item>Soyaniquilpan de Juárez</item>
+        <item>Sultepec</item>
+        <item>Tecámac</item>
+        <item>Tejupilco</item>
+        <item>Luvianos</item>
+        <item>San José del Rincón</item>
+        <item>Temamatla</item>
+        <item>Temascalcingo</item>
+        <item>Temascaltepec</item>
+        <item>Temoaya</item>
+        <item>Tenango del Valle</item>
+        <item>Texcoco</item>
+        <item>Tezoyuca</item>
+        <item>Tianguistenco</item>
+    </string-array>
+
+    <string-array name="cveMéxico2021">
+        <item>001</item>
+        <item>003</item>
+        <item>005</item>
+        <item>007</item>
+        <item>008</item>
+        <item>010</item>
+        <item>013</item>
+        <item>016</item>
+        <item>021</item>
+        <item>023</item>
+        <item>025</item>
+        <item>026</item>
+        <item>028</item>
+        <item>029</item>
+        <item>031</item>
+        <item>032</item>
+        <item>033</item>
+        <item>037</item>
+        <item>038</item>
+        <item>039</item>
+        <item>040</item>
+        <item>042</item>
+        <item>045</item>
+        <item>046</item>
+        <item>047</item>
+        <item>048</item>
+        <item>050</item>
+        <item>051</item>
+        <item>052</item>
+        <item>072</item>
+        <item>074</item>
+        <item>095</item>
+        <item>057</item>
+        <item>058</item>
+        <item>059</item>
+        <item>060</item>
+        <item>062</item>
+        <item>063</item>
+        <item>064</item>
+        <item>065</item>
+        <item>102</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>111</item>
+        <item>114</item>
+        <item>115</item>
+        <item>118</item>
+        <item>121</item>
+        <item>079</item>
+        <item>080</item>
+        <item>081</item>
+        <item>082</item>
+        <item>123</item>
+        <item>124</item>
+        <item>083</item>
+        <item>085</item>
+        <item>086</item>
+        <item>087</item>
+        <item>090</item>
+        <item>099</item>
+        <item>100</item>
+        <item>101</item>
+    </string-array>
+
+
+
+    <string-array name="MichoacándeOcampo2021">
+        <item>Álvaro Obregón</item>
+        <item>Angamacutiro</item>
+        <item>Arteaga</item>
+        <item>Briseñas</item>
+        <item>Buenavista</item>
+        <item>Carácuaro</item>
+        <item>Coalcomán de Vázquez Pallares</item>
+        <item>Contepec</item>
+        <item>Copándaro</item>
+        <item>Charapan</item>
+        <item>Charo</item>
+        <item>Epitacio Huerta</item>
+        <item>Gabriel Zamora</item>
+        <item>La Huacana</item>
+        <item>Huandacareo</item>
+        <item>Huetamo</item>
+        <item>Irimbo</item>
+        <item>Ixtlán</item>
+        <item>Jacona</item>
+        <item>Jiquilpan</item>
+        <item>Juárez</item>
+        <item>Maravatío</item>
+        <item>Lázaro Cárdenas</item>
+        <item>Morelia</item>
+        <item>Nahuatzen</item>
+        <item>Numarán</item>
+        <item>Pajacuarán</item>
+        <item>Panindícuaro</item>
+        <item>Parácuaro</item>
+        <item>Penjamillo</item>
+        <item>La Piedad</item>
+        <item>Queréndaro</item>
+        <item>Quiroga</item>
+        <item>Los Reyes</item>
+        <item>Santa Ana Maya</item>
+        <item>Salvador Escalante</item>
+        <item>Tacámbaro</item>
+        <item>Tanhuato</item>
+        <item>Chilchota</item>
+        <item>Churintzio</item>
+        <item>Churumuco</item>
+        <item>Ecuandureo</item>
+        <item>Tarímbaro</item>
+        <item>Tepalcatepec</item>
+        <item>Tingambato</item>
+        <item>Tlalpujahua</item>
+        <item>Turicato</item>
+        <item>Tuzantla</item>
+        <item>Tzintzuntzan</item>
+        <item>Uruapan</item>
+        <item>Venustiano Carranza</item>
+        <item>Villamar</item>
+        <item>Vista Hermosa</item>
+        <item>Zacapu</item>
+        <item>Zamora</item>
+        <item>Zináparo</item>
+        <item>Zinapécuaro</item>
+        <item>Zitácuaro</item>
+        <item>José Sixto Verduzco</item>
+    </string-array>
+
+    <string-array name="cveMichoacándeOcampo2021">
+        <item>003</item>
+        <item>004</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>015</item>
+        <item>017</item>
+        <item>018</item>
+        <item>021</item>
+        <item>022</item>
+        <item>031</item>
+        <item>033</item>
+        <item>035</item>
+        <item>036</item>
+        <item>038</item>
+        <item>041</item>
+        <item>042</item>
+        <item>043</item>
+        <item>045</item>
+        <item>046</item>
+        <item>050</item>
+        <item>052</item>
+        <item>053</item>
+        <item>056</item>
+        <item>060</item>
+        <item>062</item>
+        <item>063</item>
+        <item>064</item>
+        <item>067</item>
+        <item>069</item>
+        <item>072</item>
+        <item>073</item>
+        <item>075</item>
+        <item>078</item>
+        <item>079</item>
+        <item>082</item>
+        <item>086</item>
+        <item>025</item>
+        <item>028</item>
+        <item>029</item>
+        <item>030</item>
+        <item>088</item>
+        <item>089</item>
+        <item>090</item>
+        <item>093</item>
+        <item>097</item>
+        <item>099</item>
+        <item>100</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+        <item>112</item>
+        <item>113</item>
+    </string-array>
+
+
+
+    <string-array name="Morelos2021">
+        <item>Amacuzac</item>
+        <item>Atlatlahucan</item>
+        <item>Ayala</item>
+        <item>Coatlán del Río</item>
+        <item>Cuautla</item>
+        <item>Cuernavaca</item>
+        <item>Jantetelco</item>
+        <item>Jiutepec</item>
+        <item>Jojutla</item>
+        <item>Jonacatepec de Leandro Valle</item>
+        <item>Miacatlán</item>
+        <item>Ocuituco</item>
+        <item>Puente de Ixtla</item>
+        <item>Temixco</item>
+        <item>Tepalcingo</item>
+        <item>Tlalnepantla</item>
+        <item>Tlaquiltenango</item>
+        <item>Yautepec</item>
+        <item>Zacatepec</item>
+        <item>Hueyapan</item>
+    </string-array>
+
+    <string-array name="cveMorelos2021">
+        <item>001</item>
+        <item>002</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>019</item>
+        <item>023</item>
+        <item>025</item>
+        <item>029</item>
+        <item>031</item>
+        <item>036</item>
+    </string-array>
+
+
+
+    <string-array name="Nayarit2021">
+        <item>Acaponeta</item>
+        <item>Ahuacatlán</item>
+        <item>Amatlán de Cañas</item>
+        <item>Compostela</item>
+        <item>Ixtlán del Río</item>
+        <item>Jala</item>
+        <item>Xalisco</item>
+        <item>Del Nayar</item>
+        <item>Rosamorada</item>
+        <item>Ruíz</item>
+        <item>San Blas</item>
+        <item>San Pedro Lagunillas</item>
+        <item>Santa María del Oro</item>
+        <item>Santiago Ixcuintla</item>
+        <item>Tecuala</item>
+        <item>Tepic</item>
+        <item>Tuxpan</item>
+        <item>Bahía de Banderas</item>
+    </string-array>
+
+    <string-array name="cveNayarit2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>020</item>
+    </string-array>
+
+
+
+    <string-array name="NuevoLeón2021">
+        <item>Apodaca</item>
+        <item>General Escobedo</item>
+        <item>General Terán</item>
+        <item>General Zuazua</item>
+        <item>Guadalupe</item>
+        <item>Aramberri</item>
+        <item>Bustamante</item>
+        <item>Cadereyta Jiménez</item>
+        <item>El Carmen</item>
+        <item>China</item>
+        <item>Doctor Arroyo</item>
+        <item>Galeana</item>
+        <item>García</item>
+        <item>Hualahuises</item>
+        <item>Iturbide</item>
+        <item>Juárez</item>
+        <item>Lampazos de Naranjo</item>
+        <item>Linares</item>
+        <item>Montemorelos</item>
+        <item>Monterrey</item>
+        <item>Sabinas Hidalgo</item>
+        <item>Santa Catarina</item>
+    </string-array>
+
+    <string-array name="cveNuevoLeón2021">
+        <item>006</item>
+        <item>021</item>
+        <item>022</item>
+        <item>025</item>
+        <item>026</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>013</item>
+        <item>014</item>
+        <item>017</item>
+        <item>018</item>
+        <item>029</item>
+        <item>030</item>
+        <item>031</item>
+        <item>032</item>
+        <item>033</item>
+        <item>038</item>
+        <item>039</item>
+        <item>044</item>
+        <item>048</item>
+    </string-array>
+
+
+
+    <string-array name="Oaxaca2021">
+        <item>Asunción Nochixtlán</item>
+        <item>Ayotzintepec</item>
+        <item>Candelaria Loxicha</item>
+        <item>Coatecas Altas</item>
+        <item>Cosolapa</item>
+        <item>San Andrés Sinaxtla</item>
+        <item>Cuyamecalco Villa de Zaragoza</item>
+        <item>Fresnillo de Trujano</item>
+        <item>Magdalena Peñasco</item>
+        <item>Magdalena Tequisistlán</item>
+        <item>Heroica Ciudad de Huajuapan de León</item>
+        <item>Huautla de Jiménez</item>
+        <item>Ixtlán de Juárez</item>
+        <item>Loma Bonita</item>
+        <item>Magdalena Apasco</item>
+        <item>Mariscala de Juárez</item>
+        <item>Matías Romero Avendaño</item>
+        <item>Mazatlán Villa de Flores</item>
+        <item>Oaxaca de Juárez</item>
+        <item>Ocotlán de Morelos</item>
+        <item>Putla Villa de Guerrero</item>
+        <item>La Reforma</item>
+        <item>San Agustín Atenango</item>
+        <item>San Agustín Loxicha</item>
+        <item>San Andrés Paxtlán</item>
+        <item>San Antonio Huitepec</item>
+        <item>San Carlos Yautepec</item>
+        <item>San Francisco Jaltepetongo</item>
+        <item>San Ildefonso Villa Alta</item>
+        <item>San Jerónimo Coatlán</item>
+        <item>San Jorge Nuchita</item>
+        <item>San Juan Achiutla</item>
+        <item>San José Chiltepec</item>
+        <item>San José del Peñasco</item>
+        <item>San José Tenango</item>
+        <item>Ánimas Trujano</item>
+        <item>San Juan Guichicovi</item>
+        <item>San Juan Bautista Tlachichilco</item>
+        <item>San Juan Bautista Tuxtepec</item>
+        <item>San Juan Cotzocón</item>
+        <item>Santiago Nundiche</item>
+        <item>Santiago Pinotepa Nacional</item>
+        <item>San Juan Lachigalla</item>
+        <item>San Juan Mazatlán</item>
+        <item>San Juan Ñumí</item>
+        <item>San Juan Tabaá</item>
+        <item>San Juan Tepeuxila</item>
+        <item>San Martín de los Cansecos</item>
+        <item>San Lucas Zoquiápam</item>
+        <item>San Marcos Arteaga</item>
+        <item>San Martín Itunyoso</item>
+        <item>San Miguel Amatlán</item>
+        <item>San Mateo Cajonos</item>
+        <item>San Miguel Soyaltepec</item>
+        <item>San Miguel Peras</item>
+        <item>San Pedro Pochutla</item>
+        <item>San Pedro el Alto</item>
+        <item>San Pedro Huamelula</item>
+        <item>San Pedro Ixtlahuaca</item>
+        <item>Villa de Tututepec</item>
+        <item>San Pedro Mártir</item>
+        <item>San Pedro Ocopetatillo</item>
+        <item>San Pedro Quiatoni</item>
+        <item>San Sebastián Ixcapa</item>
+        <item>San Sebastián Río Hondo</item>
+        <item>Santa Catarina Juquila</item>
+        <item>Santa Cruz Itundujia</item>
+        <item>Santa Cruz Mixtepec</item>
+        <item>Santa Cruz Xoxocotlán</item>
+        <item>Santa Cruz Zenzontepec</item>
+        <item>Santa Lucía del Camino</item>
+        <item>Santa Lucía Miahuatlán</item>
+        <item>Santa Lucía Monteverde</item>
+        <item>Heroica Ciudad de Tlaxiaco</item>
+        <item>Santa María Atzompa</item>
+        <item>Santa María Colotepec</item>
+        <item>Santa María Tlahuitoltepec</item>
+        <item>Santa María Chilchotla</item>
+        <item>Santa María Huatulco</item>
+        <item>Santa María Jacatepec</item>
+        <item>Santa María Peñoles</item>
+        <item>Santa María Yalina</item>
+        <item>Santa María Tonameca</item>
+        <item>Santiago Amoltepec</item>
+        <item>Santiago Huajolotitlán</item>
+        <item>Santiago Huauclilla</item>
+        <item>Santiago Jamiltepec</item>
+        <item>Santiago Jocotepec</item>
+        <item>Santiago Juxtlahuaca</item>
+        <item>Santiago Nejapilla</item>
+        <item>Santiago Tapextla</item>
+        <item>Santiago Tenango</item>
+        <item>Santo Domingo Tehuantepec</item>
+        <item>Santiago Textitlán</item>
+        <item>Santiago Tlazoyaltepec</item>
+        <item>Santiago Xanica</item>
+        <item>Santo Domingo Armenta</item>
+        <item>Santo Domingo Tonalá</item>
+        <item>Santo Domingo Yanhuitlán</item>
+        <item>San Vicente Lachixío</item>
+        <item>Santos Reyes Yucuná</item>
+        <item>Santo Tomás Tamazulapan</item>
+        <item>Tlalixtac de Cabrera</item>
+        <item>Totontepec Villa de Morelos</item>
+        <item>San Juan Bautista Valle Nacional</item>
+        <item>Unión Hidalgo</item>
+        <item>Villa de Zaachila</item>
+        <item>Zapotitlán Lagunas</item>
+    </string-array>
+
+    <string-array name="cveOaxaca2021">
+        <item>006</item>
+        <item>009</item>
+        <item>012</item>
+        <item>015</item>
+        <item>021</item>
+        <item>096</item>
+        <item>024</item>
+        <item>032</item>
+        <item>050</item>
+        <item>052</item>
+        <item>039</item>
+        <item>041</item>
+        <item>042</item>
+        <item>044</item>
+        <item>045</item>
+        <item>055</item>
+        <item>057</item>
+        <item>058</item>
+        <item>067</item>
+        <item>068</item>
+        <item>073</item>
+        <item>076</item>
+        <item>081</item>
+        <item>085</item>
+        <item>095</item>
+        <item>108</item>
+        <item>125</item>
+        <item>144</item>
+        <item>156</item>
+        <item>159</item>
+        <item>164</item>
+        <item>172</item>
+        <item>166</item>
+        <item>167</item>
+        <item>171</item>
+        <item>174</item>
+        <item>198</item>
+        <item>183</item>
+        <item>184</item>
+        <item>190</item>
+        <item>480</item>
+        <item>482</item>
+        <item>203</item>
+        <item>207</item>
+        <item>210</item>
+        <item>216</item>
+        <item>220</item>
+        <item>238</item>
+        <item>234</item>
+        <item>237</item>
+        <item>240</item>
+        <item>262</item>
+        <item>246</item>
+        <item>278</item>
+        <item>273</item>
+        <item>324</item>
+        <item>306</item>
+        <item>307</item>
+        <item>310</item>
+        <item>334</item>
+        <item>315</item>
+        <item>322</item>
+        <item>325</item>
+        <item>345</item>
+        <item>347</item>
+        <item>364</item>
+        <item>377</item>
+        <item>378</item>
+        <item>385</item>
+        <item>386</item>
+        <item>390</item>
+        <item>391</item>
+        <item>392</item>
+        <item>397</item>
+        <item>399</item>
+        <item>401</item>
+        <item>437</item>
+        <item>406</item>
+        <item>413</item>
+        <item>417</item>
+        <item>426</item>
+        <item>442</item>
+        <item>439</item>
+        <item>450</item>
+        <item>462</item>
+        <item>463</item>
+        <item>467</item>
+        <item>468</item>
+        <item>469</item>
+        <item>479</item>
+        <item>485</item>
+        <item>487</item>
+        <item>515</item>
+        <item>491</item>
+        <item>494</item>
+        <item>495</item>
+        <item>507</item>
+        <item>520</item>
+        <item>523</item>
+        <item>535</item>
+        <item>529</item>
+        <item>533</item>
+        <item>553</item>
+        <item>554</item>
+        <item>559</item>
+        <item>557</item>
+        <item>565</item>
+        <item>567</item>
+    </string-array>
+
+
+
+    <string-array name="Puebla2021">
+        <item>Acajete</item>
+        <item>Acatlán</item>
+        <item>Aljojuca</item>
+        <item>Amozoc</item>
+        <item>Atlixco</item>
+        <item>Atzitzintla</item>
+        <item>Coatzingo</item>
+        <item>Cuautlancingo</item>
+        <item>Cuetzalan del Progreso</item>
+        <item>Cuyoaco</item>
+        <item>Chalchicomula de Sesma</item>
+        <item>Chapulco</item>
+        <item>Chietla</item>
+        <item>Francisco Z. Mena</item>
+        <item>Huatlatlauca</item>
+        <item>Huehuetla</item>
+        <item>Hueytamalco</item>
+        <item>Hueytlalpan</item>
+        <item>Cañada Morelos</item>
+        <item>Nopalucan</item>
+        <item>Ocotepec</item>
+        <item>Olintla</item>
+        <item>Pahuatlán</item>
+        <item>Palmar de Bravo</item>
+        <item>Petlalcingo</item>
+        <item>Piaxtla</item>
+        <item>Puebla</item>
+        <item>Ixtepec</item>
+        <item>Izúcar de Matamoros</item>
+        <item>Jopala</item>
+        <item>San Salvador el Seco</item>
+        <item>Libres</item>
+        <item>Mazapiltepec de Juárez</item>
+        <item>Xochitlán Todos Santos</item>
+        <item>Zacapala</item>
+        <item>Zacapoaxtla</item>
+        <item>Zacatlán</item>
+        <item>Zautla</item>
+        <item>San Gregorio Atzompa</item>
+        <item>San Jerónimo Tecuanipan</item>
+        <item>San Juan Atenco</item>
+        <item>San Martín Texmelucan</item>
+        <item>San Matías Tlalancaleca</item>
+        <item>San Nicolás Buenos Aires</item>
+        <item>San Sebastián Tlacotepec</item>
+        <item>Santa Catarina Tlaltempan</item>
+        <item>Soltepec</item>
+        <item>Tecamachalco</item>
+        <item>Tecomatlán</item>
+        <item>Tepeaca</item>
+        <item>Tepetzintla</item>
+        <item>Tlacotepec de Benito Juárez</item>
+        <item>Tlacuilotepec</item>
+        <item>Tlachichuca</item>
+        <item>Tlahuapan</item>
+        <item>Tlapacoya</item>
+        <item>Tlatlauquitepec</item>
+        <item>Tochtepec</item>
+        <item>Tulcingo</item>
+        <item>Xicotepec</item>
+        <item>Zoquiapan</item>
+    </string-array>
+
+    <string-array name="cvePuebla2021">
+        <item>001</item>
+        <item>003</item>
+        <item>012</item>
+        <item>015</item>
+        <item>019</item>
+        <item>023</item>
+        <item>031</item>
+        <item>041</item>
+        <item>043</item>
+        <item>044</item>
+        <item>045</item>
+        <item>046</item>
+        <item>051</item>
+        <item>064</item>
+        <item>070</item>
+        <item>072</item>
+        <item>076</item>
+        <item>077</item>
+        <item>099</item>
+        <item>104</item>
+        <item>105</item>
+        <item>107</item>
+        <item>109</item>
+        <item>110</item>
+        <item>112</item>
+        <item>113</item>
+        <item>114</item>
+        <item>084</item>
+        <item>085</item>
+        <item>089</item>
+        <item>142</item>
+        <item>094</item>
+        <item>096</item>
+        <item>203</item>
+        <item>206</item>
+        <item>207</item>
+        <item>208</item>
+        <item>212</item>
+        <item>125</item>
+        <item>126</item>
+        <item>130</item>
+        <item>132</item>
+        <item>134</item>
+        <item>137</item>
+        <item>145</item>
+        <item>146</item>
+        <item>152</item>
+        <item>154</item>
+        <item>155</item>
+        <item>164</item>
+        <item>167</item>
+        <item>177</item>
+        <item>178</item>
+        <item>179</item>
+        <item>180</item>
+        <item>184</item>
+        <item>186</item>
+        <item>189</item>
+        <item>191</item>
+        <item>197</item>
+        <item>216</item>
+    </string-array>
+
+
+
+    <string-array name="Querétaro2021">
+        <item>Amealco de Bonfil</item>
+        <item>Pinal de Amoles</item>
+        <item>Arroyo Seco</item>
+        <item>Cadereyta de Montes</item>
+        <item>Colón</item>
+        <item>Corregidora</item>
+        <item>Ezequiel Montes</item>
+        <item>Huimilpan</item>
+        <item>Jalpan de Serra</item>
+        <item>Pedro Escobedo</item>
+        <item>Peñamiller</item>
+        <item>Querétaro</item>
+        <item>San Juan del Río</item>
+        <item>Tequisquiapan</item>
+    </string-array>
+
+    <string-array name="cveQuerétaro2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>016</item>
+        <item>017</item>
+    </string-array>
+
+
+
+    <string-array name="QuintanaRoo2021">
+        <item>Cozumel</item>
+        <item>Felipe Carrillo Puerto</item>
+        <item>Isla Mujeres</item>
+        <item>Othón P. Blanco</item>
+        <item>Benito Juárez</item>
+        <item>José María Morelos</item>
+        <item>Solidaridad</item>
+        <item>Tulum</item>
+        <item>Bacalar</item>
+        <item>Puerto Morelos</item>
+    </string-array>
+
+    <string-array name="cveQuintanaRoo2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+    </string-array>
+
+
+
+    <string-array name="SanLuisPotosí2021">
+        <item>Aquismón</item>
+        <item>Salinas</item>
+        <item>San Antonio</item>
+        <item>San Ciro de Acosta</item>
+        <item>Catorce</item>
+        <item>San Luis Potosí</item>
+        <item>San Martín Chalchicuautla</item>
+        <item>San Nicolás Tolentino</item>
+        <item>Santo Domingo</item>
+        <item>Soledad de Graciano Sánchez</item>
+        <item>Tampamolón Corona</item>
+        <item>Tamuín</item>
+        <item>Cedral</item>
+        <item>Cerritos</item>
+        <item>Cerro de San Pedro</item>
+        <item>Ciudad del Maíz</item>
+        <item>Ciudad Valles</item>
+        <item>Charcas</item>
+        <item>Ebano</item>
+        <item>Guadalcázar</item>
+        <item>Huehuetlán</item>
+        <item>Lagunillas</item>
+        <item>Matehuala</item>
+        <item>Mexquitic de Carmona</item>
+        <item>Rayón</item>
+        <item>Vanegas</item>
+        <item>Venado</item>
+        <item>Villa de Arriaga</item>
+        <item>Villa de Arista</item>
+        <item>Matlapa</item>
+        <item>Villa de Ramos</item>
+        <item>Axtla de Terrazas</item>
+        <item>Xilitla</item>
+    </string-array>
+
+    <string-array name="cveSanLuisPotosí2021">
+        <item>003</item>
+        <item>025</item>
+        <item>026</item>
+        <item>027</item>
+        <item>006</item>
+        <item>028</item>
+        <item>029</item>
+        <item>030</item>
+        <item>033</item>
+        <item>035</item>
+        <item>039</item>
+        <item>040</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>013</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>019</item>
+        <item>020</item>
+        <item>021</item>
+        <item>023</item>
+        <item>044</item>
+        <item>045</item>
+        <item>046</item>
+        <item>056</item>
+        <item>057</item>
+        <item>049</item>
+        <item>053</item>
+        <item>054</item>
+    </string-array>
+
+
+
+    <string-array name="Sinaloa2021">
+        <item>Ahome</item>
+        <item>Angostura</item>
+        <item>Badiraguato</item>
+        <item>Concordia</item>
+        <item>Culiacán</item>
+        <item>Choix</item>
+        <item>Elota</item>
+        <item>Escuinapa</item>
+        <item>El Fuerte</item>
+        <item>Guasave</item>
+        <item>Mazatlán</item>
+        <item>Mocorito</item>
+        <item>Salvador Alvarado</item>
+        <item>San Ignacio</item>
+        <item>Sinaloa</item>
+        <item>Navolato</item>
+    </string-array>
+
+    <string-array name="cveSinaloa2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+    </string-array>
+
+
+
+    <string-array name="Sonora2021">
+        <item>Álamos</item>
+        <item>Arivechi</item>
+        <item>Bácum</item>
+        <item>Caborca</item>
+        <item>Cajeme</item>
+        <item>Empalme</item>
+        <item>Etchojoa</item>
+        <item>Fronteras</item>
+        <item>Hermosillo</item>
+        <item>Huatabampo</item>
+        <item>Nácori Chico</item>
+        <item>Navojoa</item>
+        <item>Sahuaripa</item>
+        <item>San Luis Río Colorado</item>
+        <item>San Miguel de Horcasitas</item>
+        <item>Tepache</item>
+        <item>San Pedro de la Cueva</item>
+        <item>Yécora</item>
+        <item>Benito Juárez</item>
+        <item>San Ignacio Río Muerto</item>
+    </string-array>
+
+    <string-array name="cveSonora2021">
+        <item>003</item>
+        <item>005</item>
+        <item>012</item>
+        <item>017</item>
+        <item>018</item>
+        <item>025</item>
+        <item>026</item>
+        <item>027</item>
+        <item>030</item>
+        <item>033</item>
+        <item>040</item>
+        <item>042</item>
+        <item>052</item>
+        <item>055</item>
+        <item>056</item>
+        <item>063</item>
+        <item>057</item>
+        <item>069</item>
+        <item>071</item>
+        <item>072</item>
+    </string-array>
+
+
+
+    <string-array name="Tabasco2021">
+        <item>Balancán</item>
+        <item>Cárdenas</item>
+        <item>Centla</item>
+        <item>Centro</item>
+        <item>Comalcalco</item>
+        <item>Cunduacán</item>
+        <item>Emiliano Zapata</item>
+        <item>Huimanguillo</item>
+        <item>Jalapa</item>
+        <item>Jalpa de Méndez</item>
+        <item>Macuspana</item>
+        <item>Nacajuca</item>
+        <item>Paraíso</item>
+        <item>Tacotalpa</item>
+        <item>Teapa</item>
+        <item>Tenosique</item>
+    </string-array>
+
+    <string-array name="cveTabasco2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>007</item>
+        <item>008</item>
+        <item>009</item>
+        <item>010</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>015</item>
+        <item>016</item>
+        <item>017</item>
+    </string-array>
+
+
+
+    <string-array name="Tamaulipas2021">
+        <item>Abasolo</item>
+        <item>Aldama</item>
+        <item>Altamira</item>
+        <item>Antiguo Morelos</item>
+        <item>Casas</item>
+        <item>Ciudad Madero</item>
+        <item>Güémez</item>
+        <item>Gustavo Díaz Ordaz</item>
+        <item>Hidalgo</item>
+        <item>Nuevo Laredo</item>
+        <item>Jiménez</item>
+        <item>Soto la Marina</item>
+        <item>Tampico</item>
+        <item>Tula</item>
+        <item>Llera</item>
+        <item>Mainero</item>
+        <item>El Mante</item>
+        <item>Matamoros</item>
+        <item>Méndez</item>
+        <item>Miguel Alemán</item>
+        <item>Ocampo</item>
+        <item>Padilla</item>
+        <item>Reynosa</item>
+        <item>Río Bravo</item>
+        <item>San Carlos</item>
+        <item>San Fernando</item>
+        <item>Valle Hermoso</item>
+        <item>Victoria</item>
+    </string-array>
+
+    <string-array name="cveTamaulipas2021">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>008</item>
+        <item>009</item>
+        <item>013</item>
+        <item>015</item>
+        <item>016</item>
+        <item>027</item>
+        <item>018</item>
+        <item>037</item>
+        <item>038</item>
+        <item>039</item>
+        <item>019</item>
+        <item>020</item>
+        <item>021</item>
+        <item>022</item>
+        <item>023</item>
+        <item>025</item>
+        <item>029</item>
+        <item>030</item>
+        <item>032</item>
+        <item>033</item>
+        <item>034</item>
+        <item>035</item>
+        <item>040</item>
+        <item>041</item>
+    </string-array>
+
+
+
+    <string-array name="Tlaxcala2021">
+        <item>Apetatitlán de Antonio Carvajal</item>
+        <item>Atlangatepec</item>
+        <item>Atltzayanca</item>
+        <item>Apizaco</item>
+        <item>Calpulalpan</item>
+        <item>Chiautempan</item>
+        <item>Muñoz de Domingo Arenas</item>
+        <item>Españita</item>
+        <item>Huamantla</item>
+        <item>Hueyotlipan</item>
+        <item>Ixtacuixtla de Mariano Matamoros</item>
+        <item>Ixtenco</item>
+        <item>Contla de Juan Cuamatzi</item>
+        <item>Yauhquemehcan</item>
+        <item>Zacatelco</item>
+        <item>Sanctórum de Lázaro Cárdenas</item>
+        <item>Nanacamilpa de Mariano Arista</item>
+        <item>Panotla</item>
+        <item>Teolocholco</item>
+        <item>Tepeyanco</item>
+        <item>Terrenate</item>
+        <item>Tlaxco</item>
+        <item>Tocatlán</item>
+        <item>Totolac</item>
+        <item>Xaloztoc</item>
+        <item>Xaltocan</item>
+        <item>La Magdalena Tlaltelulco</item>
+        <item>San Lucas Tecopilco</item>
+        <item>San José Teacalco</item>
+        <item>Santa Catarina Ayometla</item>
+    </string-array>
+
+    <string-array name="cveTlaxcala2021">
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+        <item>010</item>
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+        <item>015</item>
+        <item>016</item>
+        <item>018</item>
+        <item>043</item>
+        <item>044</item>
+        <item>020</item>
+        <item>021</item>
+        <item>024</item>
+        <item>028</item>
+        <item>029</item>
+        <item>030</item>
+        <item>034</item>
+        <item>035</item>
+        <item>036</item>
+        <item>039</item>
+        <item>040</item>
+        <item>048</item>
+        <item>055</item>
+        <item>052</item>
+        <item>058</item>
+    </string-array>
+
+
+
+    <string-array name="VeracruzdeIgnaciodelaLlave2021">
+        <item>Acajete</item>
+        <item>Acayucan</item>
+        <item>Camarón de Tejeda</item>
+        <item>Alto Lucero de Gutiérrez Barrios</item>
+        <item>Altotonga</item>
+        <item>Naranjos Amatlán</item>
+        <item>Amatlán de los Reyes</item>
+        <item>Apazapan</item>
+        <item>Atlahuilco</item>
+        <item>Atzacan</item>
+        <item>Atzalan</item>
+        <item>Tlaltetela</item>
+        <item>Ayahualulco</item>
+        <item>Banderilla</item>
+        <item>Boca del Río</item>
+        <item>Calcahualco</item>
+        <item>Carrillo Puerto</item>
+        <item>Coacoatzintla</item>
+        <item>Coatepec</item>
+        <item>Coatzintla</item>
+        <item>Córdoba</item>
+        <item>Cosautlán de Carvajal</item>
+        <item>Cosoleacaque</item>
+        <item>Cotaxtla</item>
+        <item>Coxquihui</item>
+        <item>Chacaltianguis</item>
+        <item>Chiconamel</item>
+        <item>Chiconquiaco</item>
+        <item>Las Choapas</item>
+        <item>Chontla</item>
+        <item>Isla</item>
+        <item>Ixcatepec</item>
+        <item>Ixhuatlán del Café</item>
+        <item>Ixhuatlán de Madero</item>
+        <item>Ixtaczoquitlán</item>
+        <item>Xalapa</item>
+        <item>Emiliano Zapata</item>
+        <item>Espinal</item>
+        <item>Gutiérrez Zamora</item>
+        <item>Hidalgotitlán</item>
+        <item>Huatusco</item>
+        <item>Hueyapan de Ocampo</item>
+        <item>Jáltipan</item>
+        <item>Jamapa</item>
+        <item>Jesús Carranza</item>
+        <item>Xico</item>
+        <item>Jilotepec</item>
+        <item>Juan Rodríguez Clara</item>
+        <item>Juchique de Ferrer</item>
+        <item>Landero y Coss</item>
+        <item>Orizaba</item>
+        <item>Maltrata</item>
+        <item>Manlio Fabio Altamirano</item>
+        <item>Mariano Escobedo</item>
+        <item>Mecayapan</item>
+        <item>Medellín de Bravo</item>
+        <item>Misantla</item>
+        <item>Mixtla de Altamirano</item>
+        <item>Naolinco</item>
+        <item>Ozuluama de Mascareñas</item>
+        <item>Pánuco</item>
+        <item>Papantla</item>
+        <item>Perote</item>
+        <item>Platón Sánchez</item>
+        <item>Playa Vicente</item>
+        <item>Poza Rica de Hidalgo</item>
+        <item>Las Minas</item>
+        <item>Minatitlán</item>
+        <item>Las Vigas de Ramírez</item>
+        <item>Pueblo Viejo</item>
+        <item>Puente Nacional</item>
+        <item>Tempoal</item>
+        <item>Teocelo</item>
+        <item>Tepatlaxco</item>
+        <item>Tepetlán</item>
+        <item>José Azueta</item>
+        <item>Tezonapa</item>
+        <item>Tierra Blanca</item>
+        <item>San Andrés Tuxtla</item>
+        <item>San Juan Evangelista</item>
+        <item>Santiago Tuxtla</item>
+        <item>Sayula de Alemán</item>
+        <item>Sochiapa</item>
+        <item>Soledad Atzompa</item>
+        <item>Soledad de Doblado</item>
+        <item>Tamalín</item>
+        <item>Tamiahua</item>
+        <item>Tampico Alto</item>
+        <item>Tantima</item>
+        <item>Tantoyuca</item>
+        <item>Tecolutla</item>
+        <item>Álamo Temapache</item>
+        <item>Tlacolulan</item>
+        <item>Tlalixcoyan</item>
+        <item>Yanga</item>
+        <item>Zentla</item>
+        <item>Zongolica</item>
+        <item>Zontecomatlán de López y Fuentes</item>
+        <item>Agua Dulce</item>
+        <item>Tuxpan</item>
+        <item>Ursulo Galván</item>
+        <item>Veracruz</item>
+        <item>Villa Aldama</item>
+        <item>Xoxocotla</item>
+        <item>Tres Valles</item>
+        <item>Tatahuicapan de Juárez</item>
+        <item>Uxpanapa</item>
+    </string-array>
+
+    <string-array name="cveVeracruzdeIgnaciodelaLlave2021">
+        <item>001</item>
+        <item>003</item>
+        <item>007</item>
+        <item>009</item>
+        <item>010</item>
+        <item>013</item>
+        <item>014</item>
+        <item>017</item>
+        <item>020</item>
+        <item>022</item>
+        <item>023</item>
+        <item>024</item>
+        <item>025</item>
+        <item>026</item>
+        <item>028</item>
+        <item>029</item>
+        <item>031</item>
+        <item>036</item>
+        <item>038</item>
+        <item>040</item>
+        <item>044</item>
+        <item>046</item>
+        <item>048</item>
+        <item>049</item>
+        <item>050</item>
+        <item>054</item>
+        <item>056</item>
+        <item>057</item>
+        <item>061</item>
+        <item>063</item>
+        <item>077</item>
+        <item>078</item>
+        <item>080</item>
+        <item>083</item>
+        <item>085</item>
+        <item>087</item>
+        <item>065</item>
+        <item>066</item>
+        <item>069</item>
+        <item>070</item>
+        <item>071</item>
+        <item>073</item>
+        <item>089</item>
+        <item>090</item>
+        <item>091</item>
+        <item>092</item>
+        <item>093</item>
+        <item>094</item>
+        <item>095</item>
+        <item>096</item>
+        <item>118</item>
+        <item>099</item>
+        <item>100</item>
+        <item>101</item>
+        <item>104</item>
+        <item>105</item>
+        <item>109</item>
+        <item>110</item>
+        <item>112</item>
+        <item>121</item>
+        <item>123</item>
+        <item>124</item>
+        <item>128</item>
+        <item>129</item>
+        <item>130</item>
+        <item>131</item>
+        <item>107</item>
+        <item>108</item>
+        <item>132</item>
+        <item>133</item>
+        <item>134</item>
+        <item>161</item>
+        <item>164</item>
+        <item>165</item>
+        <item>166</item>
+        <item>169</item>
+        <item>173</item>
+        <item>174</item>
+        <item>141</item>
+        <item>142</item>
+        <item>143</item>
+        <item>144</item>
+        <item>146</item>
+        <item>147</item>
+        <item>148</item>
+        <item>150</item>
+        <item>151</item>
+        <item>152</item>
+        <item>154</item>
+        <item>155</item>
+        <item>158</item>
+        <item>160</item>
+        <item>177</item>
+        <item>181</item>
+        <item>196</item>
+        <item>200</item>
+        <item>201</item>
+        <item>202</item>
+        <item>204</item>
+        <item>189</item>
+        <item>191</item>
+        <item>193</item>
+        <item>194</item>
+        <item>195</item>
+        <item>207</item>
+        <item>209</item>
+        <item>210</item>
+    </string-array>
+
+
+
+    <string-array name="Yucatán2021">
+        <item>Abalá</item>
+        <item>Chankom</item>
+        <item>Chapab</item>
+        <item>Conkal</item>
+        <item>Mérida</item>
+        <item>Dzidzantún</item>
+        <item>Dzitás</item>
+        <item>Espita</item>
+        <item>Hocabá</item>
+        <item>Hoctún</item>
+        <item>Kanasín</item>
+        <item>Opichén</item>
+        <item>Oxkutzcab</item>
+        <item>Progreso</item>
+        <item>Maxcanú</item>
+        <item>Muna</item>
+        <item>Umán</item>
+        <item>Valladolid</item>
+        <item>Yaxcabá</item>
+        <item>Sudzal</item>
+        <item>Tekal de Venegas</item>
+        <item>Tekax</item>
+        <item>Telchac Puerto</item>
+        <item>Tinum</item>
+        <item>Tixkokob</item>
+    </string-array>
+
+    <string-array name="cveYucatán2021">
+        <item>001</item>
+        <item>017</item>
+        <item>018</item>
+        <item>013</item>
+        <item>050</item>
+        <item>027</item>
+        <item>030</item>
+        <item>032</item>
+        <item>034</item>
+        <item>035</item>
+        <item>041</item>
+        <item>055</item>
+        <item>056</item>
+        <item>059</item>
+        <item>048</item>
+        <item>053</item>
+        <item>101</item>
+        <item>102</item>
+        <item>104</item>
+        <item>071</item>
+        <item>077</item>
+        <item>079</item>
+        <item>083</item>
+        <item>091</item>
+        <item>093</item>
+    </string-array>
+
+
+
+    <string-array name="Zacatecas2021">
+        <item>Apozol</item>
+        <item>Calera</item>
+        <item>Concepción del Oro</item>
+        <item>Fresnillo</item>
+        <item>Genaro Codina</item>
+        <item>Guadalupe</item>
+        <item>Jalpa</item>
+        <item>Jerez</item>
+        <item>Juan Aldama</item>
+        <item>Loreto</item>
+        <item>Mazapil</item>
+        <item>Miguel Auza</item>
+        <item>Monte Escobedo</item>
+        <item>Morelos</item>
+        <item>Nochistlán de Mejía</item>
+        <item>Ojocaliente</item>
+        <item>Pánuco</item>
+        <item>Pinos</item>
+        <item>Río Grande</item>
+        <item>Sain Alto</item>
+        <item>Trancoso</item>
+        <item>General Francisco R. Murguía</item>
+        <item>Sombrerete</item>
+        <item>Tepetongo</item>
+        <item>Teúl de González Ortega</item>
+        <item>Villa de Cos</item>
+        <item>Villa García</item>
+        <item>Villa González Ortega</item>
+        <item>Villanueva</item>
+        <item>Zacatecas</item>
+        <item>Santa María de la Paz</item>
+    </string-array>
+
+    <string-array name="cveZacatecas2021">
+        <item>001</item>
+        <item>005</item>
+        <item>007</item>
+        <item>010</item>
+        <item>012</item>
+        <item>017</item>
+        <item>019</item>
+        <item>020</item>
+        <item>022</item>
+        <item>024</item>
+        <item>026</item>
+        <item>029</item>
+        <item>031</item>
+        <item>032</item>
+        <item>034</item>
+        <item>036</item>
+        <item>037</item>
+        <item>038</item>
+        <item>039</item>
+        <item>040</item>
+        <item>057</item>
+        <item>014</item>
+        <item>042</item>
+        <item>046</item>
+        <item>047</item>
+        <item>051</item>
+        <item>052</item>
+        <item>053</item>
+        <item>055</item>
+        <item>056</item>
+        <item>058</item>
+    </string-array>
+
+
+</resources>

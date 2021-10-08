@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PARBeneficiario.PARBeneficiario">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PROGRAMA DE ABASTO RURAL (PAR)"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="15dp"
+                    android:text="ENCUESTA PARA CONSUMIDORES DE LAS TIENDAS DICONSA"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="DATOS DE LA TIENDA DICONSA (PRE-LLENADO)"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:text="DIA/MES/AÑO"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/par_txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="ESTADO"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/par_spin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/estatus"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="MUNICIPIO/LOCALIDAD"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/par_spin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/estatus"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="15dp"
+                    android:text="DATOS DE IDENTIFICACIÓN DE CONSUMIDORES"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:text="NOMBRE DEL CONSUMIDOR:"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/par_txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="SEXO:"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hombre" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mujer" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="EDAD:"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/par_txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="PREGUNTAS PARA CONSUMIDORES SOBRE LA OPERACIÓN DE LAS TIENDAS"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:text="1. ¿Compra usted productos SEGALMEX?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí, ¿Cuáles?"/>
+
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/par_spin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/estatus"
+                    android:spinnerMode="dialog"/>
+
+            </LinearLayout>
+
+                <TextView
+                    android:text="2. ¿Cuáles son los tres productos que usted compra con mayor frecuencia en la tienda? (En caso necesario, refiera al usuario a la lista de los productos de canasta básica DICONSA que debería estar visible en la tienda.)"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/par_spin4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/estatus"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="3. ¿Considera que la tienda DICONSA está suficientemente surtida?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="4. ¿Encuentra los productos que usted necesita en esta tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="5. ¿Se tienen a la vista los precios de los productos de la canasta básica DICONSA en esta tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="6. ¿Cómo califica la disponibilidad de productos (de la canasta básica DICONSA) en la tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suficiente" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adecuado" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Insuficiente" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="7. ¿Qué le parece la calidad de los productos (de la canasta básica DICONSA) que se ofrecen??"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buena" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Regular" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mala" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="8. ¿Hay algún producto de la canasta básica que con frecuencia haga falta en la tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+
+                            android:id="@+id/par_ra17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No" />
+
+                        <RadioButton
+
+                            android:id="@+id/par_ra18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sí, ¿Cuáles?"/>
+
+                    </RadioGroup>
+
+                    <Spinner
+                        android:id="@+id/par_spin5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/borde"
+                        android:entries="@array/estatus"
+                        android:spinnerMode="dialog"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="9. ¿Qué marcas de productos busca y no encuentra en la tienda? (Elija 3 productos máximo)"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/par_spin6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/estatus"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="10.	¿Conoce el horario de apertura y cierre de la tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="11. ¿Considera que el horario de apertura de la tienda es adecuado?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="12. ¿Considera que el horario de cierre de la tienda es adecuado?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="13. En su opinión, ¿La tienda se encuentra limpia y ordenada?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:text="14. Además de comprar productos para su despensa ¿viene a DICONSA por algún otro servicio? En caso de ser así, ¿Cuál?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No (pase a la pregunta 14)" />
+                </RadioGroup>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apartado de sonido." />
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Caseta de telefonía." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo Aire." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Internet." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pago de servicios (agua, luz, telefonía)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pago de apoyos." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distribución de leche Liconsa." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papelería (fotocopiadora)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros." />
+
+                <TextView
+                    android:text="15. ¿Cuál es el medio de transporte que utiliza para ir a la tienda? (puede ser más de una respuesta)
+"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Caminando." />
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehículo propio (carro o camioneta)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transporte público (camión)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Motocicleta." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A caballo, burro, mula." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bicicleta." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otro." />
+
+                <TextView
+                    android:text="16. ¿Cuánto gasta en transporte para ir a la tienda DICONSA?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/par_txt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+
+                <TextView
+                    android:text="17. ¿Cuánto tiempo invierte en ir a comprar su mandado a la tienda DICONSA?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/par_txt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+                android:inputType="number"
+
+                <TextView
+                    android:text="18. ¿Sabe de las campañas de difusión que realiza SEGALMEX-DICONSA sobre formas de nutrición saludables y seguras? Por ejemplo: Carteles informativos con el semáforo de la nutrición, revista Nutrición con Sabor, mensajes, pláticas de orientación."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+
+                            android:id="@+id/par_ra29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No" />
+
+                        <RadioButton
+
+                            android:id="@+id/par_ra30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sí, ¿Cuáles?"/>
+
+                    </RadioGroup>
+
+                    <Spinner
+                        android:id="@+id/par_spin7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/borde"
+                        android:entries="@array/estatus"
+                        android:spinnerMode="dialog"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:text="ENCUESTA DE OPINIÓN"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="19. ¿Los productos de la canasta básica DICONSA han tenido efectos favorables en la nutrición de las personas de su familia?."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí ¿De qué tipo?" />
+
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/par_txt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="20. En su opinión: ¿La tienda ha representado ahorros para usted y su familia?."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:text="21. En comparación con otras tiendas de la localidad considera que los precios de los productos de canasta básica aquí son:
+."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Más baratos" />
+
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Más caros"/>
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No hay diferencia"/>
+                </RadioGroup>
+
+                <TextView
+                    android:text="22. ¿Cómo califica la atención que recibe del encargado de la Tienda?."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Excelente" />
+
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptable"/>
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mala"/>
+                </RadioGroup>
+
+                <TextView
+                    android:text="23. ¿Se le ha condicionado alguna vez la compra de productos en la Tienda?."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+
+                    <RadioButton
+
+                        android:id="@+id/par_ra42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:text="24. ¿Cuáles considera son las principales ventajas de esta Tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abasto de productos." />
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio accesible." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicación conveniente." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trato adecuado" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otro (especificar)." />
+
+                <EditText
+                    android:id="@+id/par_txt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Especificar:"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="25. ¿Cuáles son las principales desventajas de esta Tienda que usted identifica?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No tiene todos los productos de la canasta básica." />
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La caducidad de los productos." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La inseguridad para llegar a la tienda." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La calidad de los productos" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ch26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otro (especificar)." />
+
+                <EditText
+                    android:id="@+id/par_txt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Especificar:"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="26.¿Qué acciones considera necesarias para la mejora de la operación de la Tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/par_txt9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/paslb_sig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:text="Siguiente"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:icon="@android:drawable/ic_input_add"
+                    app:iconPadding="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
