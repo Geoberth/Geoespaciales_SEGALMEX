@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
+import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
 
 import java.io.File;
 import java.io.IOException;
@@ -64,7 +65,6 @@ public class NewCamara extends AppCompatActivity {
 
 
         btnCamara.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View view) {
                 if(Integer.parseInt(version)>10){
                     abrirCamara("1");
@@ -74,7 +74,6 @@ public class NewCamara extends AppCompatActivity {
                 }
 
                 new Handler().postDelayed(new Runnable() {
-                    @Override
                     public void run() {
                         btnCamara.setVisibility(View.GONE);
                         //btnCamara2.setVisibility(View.VISIBLE);
@@ -87,7 +86,6 @@ public class NewCamara extends AppCompatActivity {
         });
 
         btnCamara2.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View view) {
                 if(Integer.parseInt(version)>10){
                     abrirCamara("2");
@@ -96,7 +94,6 @@ public class NewCamara extends AppCompatActivity {
                     tomarFoto(2);
                 }
                 new Handler().postDelayed(new Runnable() {
-                    @Override
                     public void run() {
                         btnCamara2.setVisibility(View.GONE);
                         logo2.setVisibility(View.VISIBLE);
@@ -109,7 +106,6 @@ public class NewCamara extends AppCompatActivity {
         });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v) {
                 if(btnCamara.getVisibility()==View.VISIBLE || btnCamara2.getVisibility()==View.VISIBLE){
                     Toast.makeText(getApplicationContext(), "Favor de capturar las fotos",Toast.LENGTH_SHORT).show();
@@ -153,6 +149,9 @@ public class NewCamara extends AppCompatActivity {
                                 }
                                 else if(General.Proyecto.equals("PASL Beneficiario")){
                                     startActivity(new Intent(getApplication(), PASLBeneficiario.class));
+                                }
+                                else if(General.Proyecto.equals("PG Operativo Estimulos")){
+                                    startActivity(new Intent(getApplication(), PGOperativoEstimulos.class));
                                 }
                                 else{
                                     startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));

@@ -3267,7 +3267,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(pasl_operativo_bd.COLUMN_DIEZ, model.getDiez());
         contentValues.put(pasl_operativo_bd.COLUMN_ONCE, model.getOnce());
         contentValues.put(pasl_operativo_bd.COLUMN_DOCE, model.getDoce());
-        contentValues.put(pasl_operativo_bd.COLUMN_DOCEOBSERVACIONES, model.getDoce_bservaciones());
+        //contentValues.put(pasl_operativo_bd.COLUMN_DOCEOBSERVACIONES, model.getDoce_bservaciones());
         contentValues.put(pasl_operativo_bd.COLUMN_TRECE, model.getTrece());
 
         long result = db.insert(pasl_operativo_bd.TABLA_BD, null, contentValues);

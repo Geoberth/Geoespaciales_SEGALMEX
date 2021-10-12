@@ -8,7 +8,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="25dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,22 +26,22 @@
                 android:id="@+id/pasl_o_tvTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:text="PROGRAMA DE ABASTO SOCIAL DE LECHE (PASL)"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textSize="20sp"
                 android:textColor="#000000"
-                android:layout_marginBottom="15dp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/pasl_o_tvTitulo2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:text="ENCUESTA PARA EL RESPONSABLE DE ATENDER LECHERÍAS"
                 android:textAlignment="center"
-                android:textSize="15sp"
                 android:textColor="#000000"
-                android:layout_marginBottom="15dp"/>
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,9 +74,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:text="I. DATOS DE LA LECHERÍA LICONSA:"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
 
             <TextView
@@ -92,9 +94,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
                 android:entries="@array/Estados2021"
                 android:spinnerMode="dropdown"
-                android:background="@drawable/borde"
                 android:textSize="15sp" />
 
             <TextView
@@ -112,10 +114,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
-                android:entries="@array/Aguascalientes2021"
                 android:background="@drawable/borde"
-                android:spinnerMode="dropdown"
                 android:enabled="false"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dropdown"
                 android:textSize="15sp" />
 
             <TextView
@@ -135,16 +137,15 @@
                 android:inputType="textCapWords|textAutoCorrect" />
 
 
-
             <TextView
                 android:id="@+id/pasl_o_tvSubtitulo2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:text="II. DATOS DE ENCARGADO DE TIENDA"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/pasl_o_tvNombre"
@@ -216,17 +217,17 @@
                         android:id="@+id/pasl_o_rbHombre"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Hombre"
                         android:textColor="#000000"
-                        android:text="Hombre" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbMujer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Mujer"
                         android:textColor="#000000"
-                        android:text="Mujer" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -245,7 +246,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"/>
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/pasl_o_tvTiempo"
@@ -275,7 +276,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number"/>
+                    android:inputType="number" />
 
             </LinearLayout>
 
@@ -298,7 +299,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number"/>
+                    android:inputType="number" />
 
             </LinearLayout>
 
@@ -308,9 +309,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:text="III. PREGUNTAS SOBRE LA OPERACIÓN DE LA LECHERÍA"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/pasl_o_tvSubtitulo4"
@@ -343,17 +344,17 @@
                         android:id="@+id/pasl_o_rbSi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -380,17 +381,17 @@
                         android:id="@+id/pasl_o_rbSi2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -417,17 +418,17 @@
                         android:id="@+id/pasl_o_rbSi3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -454,17 +455,17 @@
                         android:id="@+id/pasl_o_rbSi4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -491,17 +492,17 @@
                         android:id="@+id/pasl_o_rbSi5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -528,17 +529,17 @@
                         android:id="@+id/pasl_o_rbSi6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -565,17 +566,17 @@
                         android:id="@+id/pasl_o_rbSi7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -602,17 +603,17 @@
                         android:id="@+id/pasl_o_rbSi8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -648,17 +649,17 @@
                         android:id="@+id/pasl_o_rbSi9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -673,7 +674,7 @@
                     android:id="@+id/pasl_o_tvDiez"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="10. ¿Identifica a beneficiarios que acuden a su lechería y no se encuentran en el listado de beneficiarios?"
+                    android:text="10. ¿Conoce la cantidad máxima de litros que puede vender por beneficiario a la semana?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
@@ -685,17 +686,17 @@
                         android:id="@+id/pasl_o_rbSi10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -710,7 +711,7 @@
                     android:id="@+id/pasl_o_tvOnce"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="11. En su caso, ¿se atendieron con oportunidad sus reportes para la rectificación de información sobre el padrón de beneficiarios?"
+                    android:text="11. ¿Identifica a beneficiarios que acuden a su lechería y no se encuentran en el listado de beneficiarios?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
@@ -722,17 +723,17 @@
                         android:id="@+id/pasl_o_rbSi11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -747,30 +748,30 @@
                     android:id="@+id/pasl_o_tvDoce"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="12. ¿Se difundió ante la población la posibilidad de conformar los Comités de Abasto Social en el marco del Programa? En caso afirmativo, detallar cuales en observaciones."
+                    android:text="12. ¿En esta lechería se vende al público abierto la leche sobrante?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
                 <RadioGroup
-                    android:layout_width="match_parent"
                     android:id="@+id/pasl_o_rg12"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbSi12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
                 <EditText
@@ -778,9 +779,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Observaciones:"
-                    android:visibility="gone"
-                    android:inputType="textPersonName" />
+                    android:hint="¿A qué precio?"
+                    android:inputType="number|numberDecimal"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
@@ -794,7 +795,7 @@
                     android:id="@+id/pasl_o_tvTrece"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="13. ¿Tiene alguna recomendación para la mejora del Programa o comentarios adicionales que desee hacer? "
+                    android:text="13. En su caso, ¿se atendieron con oportunidad sus reportes para la rectificación de información sobre elpadrón de beneficiarios?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
@@ -806,36 +807,97 @@
                         android:id="@+id/pasl_o_rbSi13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="Si"
                         android:textColor="#000000"
-                        android:text="Si" />
+                        android:textSize="15sp" />
 
                     <RadioButton
                         android:id="@+id/pasl_o_rbNO13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:text="No"
                         android:textColor="#000000"
-                        android:text="No" />
+                        android:textSize="15sp" />
                 </RadioGroup>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pasl_o_tvCatorce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="14. ¿Se difundió ante la población la posibilidad de conformar los Comités de Abasto Social en el marco del Programa? En caso afirmativo, detallar cuales"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/pasl_o_rg14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbSi14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/pasl_o_rbNO14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/pasl_o_txtObservaciones14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="¿Cuáles?"
+                    android:inputType="textCapWords|textAutoCorrect"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pasl_o_tvQuince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="15. ¿Tiene alguna recomendación para la mejora del Programa o comentarios adicionales que desee hacer?"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pasl_o_txtQuince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords|textAutoCorrect" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 
                 android:id="@+id/btn_Avanzar"
-                android:theme="@style/Theme.MaterialComponents.Light"
-                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginBottom="30dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
                 android:text="Siguiente"
-                app:iconPadding="20dp"
+                android:theme="@style/Theme.MaterialComponents.Light"
                 app:icon="@android:drawable/ic_input_add"
-                />
+                app:iconPadding="20dp" />
 
         </LinearLayout>
 

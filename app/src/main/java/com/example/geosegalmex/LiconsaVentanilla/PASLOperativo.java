@@ -31,77 +31,21 @@ public class PASLOperativo extends AppCompatActivity {
     Button btnNext;
     TextView textFecha;
     Spinner spi_edo, spi_mun;
-    EditText localidad, nombre, apaterno, amaterno, edad, años, meses, observ;
-    RadioButton sexo1, sexo2, si, no, si2, no2, si3, no3, si4, no4, si5, no5, si6, no6, si7, no7, si8, no8, si9, no9, si10, no10, si11, no11, si12, no12, si13, no13;
+    EditText localidad, nombre, apaterno, amaterno, edad, años, meses, observ, obs14, quince;
+    RadioButton sexo1, sexo2, si, no, si2, no2, si3, no3, si4, no4, si5, no5, si6, no6, si7, no7, si8, no8, si9, no9, si10, no10, si11, no11, si12, no12, si13, no13, si14, no14;
 
     String cveedo = "";
     String nomedo = "";
     String cvemun = "";
     String nommun = "";
-    int[] idmunicipios = {R.array.Aguascalientes2021
-            , R.array.BajaCalifornia2021
-            , R.array.BajaCaliforniaSur2021
-            , R.array.Campeche2021
-            , R.array.CoahuiladeZaragoza2021
-            , R.array.Colima2021
-            , R.array.Chiapas2021
-            , R.array.Chihuahua2021
-            , R.array.CiudaddeMéxico2021
-            , R.array.Durango2021
-            , R.array.Guanajuato2021
-            , R.array.Guerrero2021
-            , R.array.Hidalgo2021
-            , R.array.Jalisco2021
-            , R.array.México2021
-            , R.array.MichoacándeOcampo2021
-            , R.array.Morelos2021
-            , R.array.Nayarit2021
-            , R.array.NuevoLeón2021
-            , R.array.Oaxaca2021
-            , R.array.Puebla2021
-            , R.array.Querétaro2021
-            , R.array.QuintanaRoo2021
-            , R.array.SanLuisPotosí2021
-            , R.array.Sinaloa2021
-            , R.array.Sonora2021
-            , R.array.Tabasco2021
-            , R.array.Tamaulipas2021
-            , R.array.Tlaxcala2021
-            , R.array.VeracruzdeIgnaciodelaLlave2021
-            , R.array.Yucatán2021
-            , R.array.Zacatecas2021};
-    int[] idcvemunicipios = {R.array.cveAguascalientes2021
-            , R.array.cveBajaCalifornia2021
-            , R.array.cveBajaCaliforniaSur2021
-            , R.array.cveCampeche2021
-            , R.array.cveCoahuiladeZaragoza2021
-            , R.array.cveColima2021
-            , R.array.cveChiapas2021
-            , R.array.cveChihuahua2021
-            , R.array.cveCiudaddeMéxico2021
-            , R.array.cveDurango2021
-            , R.array.cveGuanajuato2021
-            , R.array.cveGuerrero2021
-            , R.array.cveHidalgo2021
-            , R.array.cveJalisco2021
-            , R.array.cveMéxico2021
-            , R.array.cveMichoacándeOcampo2021
-            , R.array.cveMorelos2021
-            , R.array.cveNayarit2021
-            , R.array.cveNuevoLeón2021
-            , R.array.cveOaxaca2021
-            , R.array.cvePuebla2021
-            , R.array.cveQuerétaro2021
-            , R.array.cveQuintanaRoo2021
-            , R.array.cveSanLuisPotosí2021
-            , R.array.cveSinaloa2021
-            , R.array.cveSonora2021
-            , R.array.cveTabasco2021
-            , R.array.cveTamaulipas2021
-            , R.array.cveTlaxcala2021
-            , R.array.cveVeracruzdeIgnaciodelaLlave2021
-            , R.array.cveYucatán2021
-            , R.array.cveZacatecas2021
+    int[] idmunicipios = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+            , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+            , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021, R.array.Zacatecas2021};
+    int[] idcvemunicipios = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+            , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021, R.array.cveZacatecas2021
     };
     String[] municipios;
     String[] cvemunicipios;
@@ -152,6 +96,10 @@ public class PASLOperativo extends AppCompatActivity {
         observ = (EditText)findViewById(R.id.pasl_o_txtObservaciones12);
         si13 = (RadioButton)findViewById(R.id.pasl_o_rbSi13);
         no13 = (RadioButton)findViewById(R.id.pasl_o_rbNO13);
+        si14 = (RadioButton)findViewById(R.id.pasl_o_rbSi14);
+        no14 = (RadioButton)findViewById(R.id.pasl_o_rbNO14);
+        obs14 = (EditText)findViewById(R.id.pasl_o_txtObservaciones14);
+        quince = (EditText)findViewById(R.id.pasl_o_txtQuince);
 
         muestrafecha();
 
@@ -160,8 +108,8 @@ public class PASLOperativo extends AppCompatActivity {
                 String[] estados = getResources().getStringArray(R.array.Estados2021);
                 String[] cveestados = getResources().getStringArray(R.array.cveEstados2021);
 
-                cveedo = estados[position];
-                nomedo = cveestados[position];
+                cveedo = cveestados[position];
+                nomedo = estados[position];
 
                 municipios = getResources().getStringArray(idmunicipios[position]);
                 cvemunicipios = getResources().getStringArray(idcvemunicipios[position]);
@@ -180,9 +128,7 @@ public class PASLOperativo extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 nommun = municipios[position];
                 cvemun = cvemunicipios[position];
-
-                Toast.makeText(getApplicationContext(), "cveEdo: " + cveedo + "\n Edo: " + nomedo + "\n cveMun: " + nommun + "\n Mun: " + cvemun,Toast.LENGTH_SHORT).show();
-
+                //Toast.makeText(getApplicationContext(), "cveEdo: " + cveedo + "\n Edo: " + nomedo + "\n cveMun: " + nommun + "\n Mun: " + cvemun,Toast.LENGTH_SHORT).show();
             }
             public void onNothingSelected(AdapterView<?> adapterView) {
                 return;
@@ -194,8 +140,6 @@ public class PASLOperativo extends AppCompatActivity {
             public void onClick(View view) {
                 String fol = General.Foliocuestion;
                 General.fechaenc = textFecha.getText().toString();
-                String edo = spi_edo.getSelectedItem().toString();
-                String mun = spi_mun.getSelectedItem().toString();
                 String loc = localidad.getText().toString();
                 String nom = nombre.getText().toString();
                 String apa = apaterno.getText().toString();
@@ -216,23 +160,24 @@ public class PASLOperativo extends AppCompatActivity {
                 String nueve = obtenerResultado(si9, no9);
                 String diez = obtenerResultado(si10, no10);
                 String once = obtenerResultado(si11, no11);
-                String doce = obtenerResultado(si12, no12);
-                String doce_observ = observ.getText().toString();
+                String doce = (!observ.getText().toString().equals(""))? obtenerResultado(si12, no12) + "-" + observ.getText().toString() : obtenerResultado(si12, no12);
                 String trece = obtenerResultado(si13, no13);
+                String cator = (!obs14.getText().toString().equals(""))? obtenerResultado(si14, no14) + "-" + obs14.getText().toString() : obtenerResultado(si14, no14);
+                String quin = quince.getText().toString();
                 String f1 = General.Foto1;
                 String f2 = General.Foto2;
 
                 if(validar()){
-                    model = new Pasl_o_Model(fol, General.fechaenc, edo, mun, loc, nom, apa, ama, sexo, eda, tie, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, doce_observ, trece, f1, f2, "", "");
-                    //addCuestionario(model);
+                    model = new Pasl_o_Model(fol, General.fechaenc, cveedo, nomedo, cvemun,  nommun, loc, nom, apa, ama, sexo, eda, tie, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, cator, quin, f1, f2, "", "");
                     Intent in = new Intent(PASLOperativo.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);
-                    /*Toast.makeText(getApplicationContext(), "Folio: " + model.getFolio() + "\n Fecha: " + model.getFecha() + "\n Nombre: " + model.getNombre() + "\n Apaterno: " + model.getApaterno()
+                    /*Toast.makeText(getApplicationContext(), "Folio: " + model.getFolio() + "\n Fecha: " + model.getFecha() + "\n CveEdo: " + model.getCveestado() + "\n Edo: " + model.getEstado()
+                            + "\n CveMun: " + model.getCvemunicipio() + "\n Mun: " + model.getMunicipio() + "\n Nombre: " + model.getNombre() + "\n Apaterno: " + model.getApaterno()
                             + "\n Amaterno: " + model.getAmaterno() + "\n Sexo: " + model.getSexo()  + "\n Edad: " + model.getEdad()  + "\n Tiempo: " + model.getTiempo()
                             + "\n Uno: " + model.getUno() + "\n Dos: " + model.getDos() + "\n Tres: " + model.getTres() + "\n Cuatro: " + model.getCuatro() + "\n Cinco: " + model.getCinco()
                             + "\n Seis: " + model.getSeis() + "\n Siete: " + model.getSiete() + "\n Ocho: " + model.getOcho() + "\n Nueve: " + model.getNueve()
-                            + "\n Diez: " + model.getDiez() + "\n Once: " + model.getOnce() + "\n Doce: " + model.getDoce() + "\n Doce_Obs: " + model.getDoce_bservaciones() + "\n Trece: " + model.getTrece(),Toast.LENGTH_SHORT).show();*/
+                            + "\n Diez: " + model.getDiez() + "\n Once: " + model.getOnce() + "\n Doce: " + model.getDoce() + "\n Trece: " + model.getTrece() + "\n Catorce: " + model.getCatorce() +  "\n Quince: " + model.getQuince(),Toast.LENGTH_SHORT).show();*/
                 }
 
             }
@@ -248,6 +193,20 @@ public class PASLOperativo extends AppCompatActivity {
                 }else{
                     observ.setVisibility(View.GONE);
                     observ.setText("");
+                }
+            }
+        });
+
+        RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.pasl_o_rg14);
+        radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si14.isChecked()==true){
+                    obs14.setVisibility(View.VISIBLE);
+                }else{
+                    obs14.setVisibility(View.GONE);
+                    obs14.setText("");
                 }
             }
         });
@@ -277,22 +236,22 @@ public class PASLOperativo extends AppCompatActivity {
     public boolean validar(){
         boolean retorno=true;
 
-        if(localidad.getText().toString().isEmpty()){
-            localidad.setError("No puede quedar vacio");
-            retorno=false;
-        }
-        else if(spi_edo.getSelectedItem().toString().equals("")){
+        if(spi_edo.getSelectedItem().toString().equals("") || cveedo.equals("") || nomedo.equals("")){
             TextView errorText = (TextView)spi_edo.getSelectedView();
             errorText.setError("No puede quedar vacio");
             errorText.setTextColor(Color.RED);
             errorText.setText("No puede quedar vacio");
             retorno=false;
         }
-        else if(spi_mun.getSelectedItem().toString().equals("")){
+        else if(spi_mun.getSelectedItem().toString().equals("") || cvemun.equals("") || nommun.equals("")){
             TextView errorText = (TextView)spi_mun.getSelectedView();
             errorText.setError("No puede quedar vacio");
             errorText.setTextColor(Color.RED);
             errorText.setText("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(localidad.getText().toString().isEmpty()){
+            localidad.setError("No puede quedar vacio");
             retorno=false;
         }
         else if(nombre.getText().toString().isEmpty()){
@@ -377,6 +336,18 @@ public class PASLOperativo extends AppCompatActivity {
         }
         else if(si12.isChecked() && observ.getText().toString().isEmpty()){
             observ.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(!si14.isChecked() && !no14.isChecked()){
+            si14.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(si14.isChecked() && obs14.getText().toString().isEmpty()){
+            obs14.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(quince.getText().toString().isEmpty()){
+            quince.setError("No puede quedar vacio");
             retorno=false;
         }
 

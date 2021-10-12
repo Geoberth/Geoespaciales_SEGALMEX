@@ -34,6 +34,7 @@ import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.NewCamara;
+import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.R;
 import com.example.geosegalmex.unidadcaracterizacionhortalizas.db.DatabaseHelper;
 
@@ -168,6 +169,9 @@ public class GpsEnableb extends AppCompatActivity {
                         break;
                     case 1:
                         textid.setText("PASL_B_"+folioo);
+                        break;
+                    case 2:
+                        textid.setText("PG_O_E_"+folioo);
                         break;
                 }
             }
@@ -363,6 +367,15 @@ public class GpsEnableb extends AppCompatActivity {
         else if(proy.equals("PASL Beneficiario")){
             PASLbeneficiarioBD db;
             db = new PASLbeneficiarioBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
+        }
+        else if(proy.equals("PG Operativo Estimulos")){
+            PGOperativoEstimulosBD db;
+            db = new PGOperativoEstimulosBD(this);
             boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
             db.close();
             if(insertarData == true) {

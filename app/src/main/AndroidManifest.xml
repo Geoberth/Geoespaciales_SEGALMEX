@@ -24,6 +24,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".PGOperativoEstimulos.PGOperativoEstimulos"
+            android:exported="true" />
+        <activity
             android:name=".PARBeneficiario.PARBeneficiario"
             android:exported="true" />
         <activity

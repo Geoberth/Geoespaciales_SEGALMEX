@@ -4,16 +4,18 @@ import java.io.Serializable;
 
 public class Pasl_o_Model implements Serializable {
 
-    private String folio, fecha, estado, municipio, localidad, nombre, apaterno, amaterno, sexo, edad, tiempo, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, doce_bservaciones, trece, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, fecha, cveestado, estado, cvemunicipio, municipio, localidad, nombre, apaterno, amaterno, sexo, edad, tiempo, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince, foto1, foto2, longitudGeo, latitudGeo;
 
     public Pasl_o_Model() {
     }
 
 
-    public Pasl_o_Model(String folio, String fecha, String estado, String municipio, String localidad, String nombre, String apaterno, String amaterno, String sexo, String edad, String tiempo, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String doce_bservaciones, String trece, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public Pasl_o_Model(String folio, String fecha, String cveestado, String estado, String cvemunicipio, String municipio, String localidad, String nombre, String apaterno, String amaterno, String sexo, String edad, String tiempo, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String trece, String catorce, String quince, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
+        this.cveestado = cveestado;
         this.estado = estado;
+        this.cvemunicipio = cvemunicipio;
         this.municipio = municipio;
         this.localidad = localidad;
         this.nombre = nombre;
@@ -34,8 +36,9 @@ public class Pasl_o_Model implements Serializable {
         this.diez = diez;
         this.once = once;
         this.doce = doce;
-        this.doce_bservaciones = doce_bservaciones;
         this.trece = trece;
+        this.catorce = catorce;
+        this.quince = quince;
         this.foto1 = foto1;
         this.foto2 = foto2;
         this.longitudGeo = longitudGeo;
@@ -58,12 +61,29 @@ public class Pasl_o_Model implements Serializable {
         this.fecha = fecha;
     }
 
+    public String getCveestado() {
+        return cveestado;
+    }
+
+    public void setCveestado(String cveestado) {
+        this.cveestado = cveestado;
+    }
+
+
     public String getEstado() {
         return estado;
     }
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getCvemunicipio() {
+        return cvemunicipio;
+    }
+
+    public void setCvemunicipio(String cvemunicipio) {
+        this.cvemunicipio = cvemunicipio;
     }
 
     public String getMunicipio() {
@@ -226,20 +246,28 @@ public class Pasl_o_Model implements Serializable {
         this.doce = doce;
     }
 
-    public String getDoce_bservaciones() {
-        return doce_bservaciones;
-    }
-
-    public void setDoce_bservaciones(String doce_bservaciones) {
-        this.doce_bservaciones = doce_bservaciones;
-    }
-
     public String getTrece() {
         return trece;
     }
 
     public void setTrece(String trece) {
         this.trece = trece;
+    }
+
+    public String getCatorce() {
+        return catorce;
+    }
+
+    public void setCatorce(String catorce) {
+        this.catorce = catorce;
+    }
+
+    public String getQuince() {
+        return quince;
+    }
+
+    public void setQuince(String quince) {
+        this.quince = quince;
     }
 
     public String getFoto1() {

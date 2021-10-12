@@ -103,6 +103,18 @@ public class ExportarFragment extends Fragment {
 
                 }
 
+                try {
+                    deployDatabase("PGOperativoEstimulos");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("PGOperativoEstimulos");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+
+                }
+
 
                 // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
                 // tareaAsyncTask.execute();

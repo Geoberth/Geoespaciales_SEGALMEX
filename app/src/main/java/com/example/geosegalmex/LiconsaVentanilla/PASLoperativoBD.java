@@ -38,7 +38,9 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
 
         contentValues.put(pasl_operativo_bd.COLUMN_FOLIO, model.getFolio());
         contentValues.put(pasl_operativo_bd.COLUMN_FECHA, model.getFecha());
+        contentValues.put(pasl_operativo_bd.COLUMN_CVEESTADO, model.getCveestado());
         contentValues.put(pasl_operativo_bd.COLUMN_ESTADO, model.getEstado());
+        contentValues.put(pasl_operativo_bd.COLUMN_CVEMUNICIPIO, model.getCvemunicipio());
         contentValues.put(pasl_operativo_bd.COLUMN_MUNICIPIO, model.getMunicipio());
         contentValues.put(pasl_operativo_bd.COLUMN_LOCALIDAD, model.getLocalidad());
         contentValues.put(pasl_operativo_bd.COLUMN_NOMBRE, model.getNombre());
@@ -59,8 +61,9 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
         contentValues.put(pasl_operativo_bd.COLUMN_DIEZ, model.getDiez());
         contentValues.put(pasl_operativo_bd.COLUMN_ONCE, model.getOnce());
         contentValues.put(pasl_operativo_bd.COLUMN_DOCE, model.getDoce());
-        contentValues.put(pasl_operativo_bd.COLUMN_DOCEOBSERVACIONES, model.getDoce_bservaciones());
         contentValues.put(pasl_operativo_bd.COLUMN_TRECE, model.getTrece());
+        contentValues.put(pasl_operativo_bd.COLUMN_CATORCE, model.getCatorce());
+        contentValues.put(pasl_operativo_bd.COLUMN_QUINCE, model.getQuince());
         contentValues.put(pasl_operativo_bd.COLUMN_FOTO1, model.getFoto1());
         contentValues.put(pasl_operativo_bd.COLUMN_FOTO2, model.getFoto2());
         contentValues.put(pasl_operativo_bd.COLUMN_LONGITUD, model.getLongitudGeo());

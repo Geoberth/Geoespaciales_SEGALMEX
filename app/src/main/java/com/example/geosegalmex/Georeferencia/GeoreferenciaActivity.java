@@ -21,6 +21,8 @@ import com.example.geosegalmex.LiconsaBeneficiario.Pasl_b_Model;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
+import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
+import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos_Model;
 import com.example.geosegalmex.R;
 import com.example.geosegalmex.dbstorage.Georreferencia;
 import com.example.geosegalmex.drawer.DrawerActivity;
@@ -55,6 +57,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
 
     Pasl_o_Model model;
     Pasl_b_Model model2;
+    PGOperativoEstimulos_Model model3;
 
     String longitudGeo;
     String latitudGeo;
@@ -89,6 +92,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PASL Beneficiario")){
                     agregarPASLbeneficiario();
+                }
+                else if(General.Proyecto.equals("PG Operativo Estimulos")){
+                    agregarPGOperativoEstimulos();
                 }
 
                 finish();
@@ -251,6 +257,25 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
 
     }
 
+    private void agregarPGOperativoEstimulos() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model3 = new PGOperativoEstimulos_Model();
+        model3 = (PGOperativoEstimulos_Model)getIntent().getSerializableExtra("model");
+        model3.setLongitudGeo(longitudGeo);
+        model3.setLatitudGeo(latitudGeo);
+
+        PGOperativoEstimulosBD baseBD;
+        baseBD = new PGOperativoEstimulosBD(this);
+
+        boolean insertarData = baseBD.addPGOperativoEstimulos(model3);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
 
     private void agregarGoerreferencia(String brigadistaGeo, String productorGeo, String longitudGeoGeo, String latitudGeoGeo, String horaActual, String fechaActual, int status) {
 
