@@ -25,9 +25,9 @@ public class PASLBeneficiario extends AppCompatActivity {
     Spinner responde;
     CheckBox beneficiarioa, beneficiariob, beneficiarioc, beneficiariod, beneficiarioe, beneficiariof;
     RadioButton bueno, aceptable, malo, bueno2, aceptable2, malo2, bueno3, aceptable3, malo3,bueno4, aceptable4, malo4,bueno5, aceptable5, malo5,bueno6, aceptable6, malo6,bueno7, aceptable7, malo7;
-    RadioButton bueno8, aceptable8, malo8, bueno9, aceptable9, malo9, bueno10, aceptable10, malo10, bueno11, aceptable11, malo11,bueno12, aceptable12, malo12,bueno13, aceptable13, malo13;
-    CheckBox catorcea, catorceb, catorcec, catorced;
-    EditText catorceotras, quince, dieciseis;
+    RadioButton bueno8, aceptable8, malo8, bueno9, aceptable9, malo9, bueno10, aceptable10, malo10, bueno11, aceptable11, malo11,bueno12, aceptable12, malo12,bueno13, aceptable13, malo13,bueno14, aceptable14, malo14;
+    CheckBox quincea, quinceb, quincec, quinced;
+    EditText quinceotras, quince, dieciseis, diecisiete,  cuatrocom, cincocom, seiscom, sietecom, ochocom, nuevecom, diezcom, oncecom, docecom, trececom, catorcecom;
     Button btnNext;
 
     Pasl_b_Model model;
@@ -74,38 +74,54 @@ public class PASLBeneficiario extends AppCompatActivity {
         aceptable7 = (RadioButton)findViewById(R.id.paslb_ra20);
         malo7 = (RadioButton)findViewById(R.id.paslb_ra21);
 
-        bueno8 = (RadioButton)findViewById(R.id.paslb_ra22);
-        aceptable8 = (RadioButton)findViewById(R.id.paslb_ra23);
-        malo8 = (RadioButton)findViewById(R.id.paslb_ra24);
+        bueno8 = (RadioButton)findViewById(R.id.paslb_ra81);
+        aceptable8 = (RadioButton)findViewById(R.id.paslb_ra82);
 
-        bueno9 = (RadioButton)findViewById(R.id.paslb_ra25);
-        aceptable9 = (RadioButton)findViewById(R.id.paslb_ra26);
+
+        bueno9 = (RadioButton)findViewById(R.id.paslb_ra22);
+        aceptable9 = (RadioButton)findViewById(R.id.paslb_ra23);
         malo9 = (RadioButton)findViewById(R.id.paslb_ra27);
 
-        bueno10 = (RadioButton)findViewById(R.id.paslb_ra28);
-        aceptable10 = (RadioButton)findViewById(R.id.paslb_ra29);
+        bueno10 = (RadioButton)findViewById(R.id.paslb_ra25);
+        aceptable10 = (RadioButton)findViewById(R.id.paslb_ra26);
         malo10 = (RadioButton)findViewById(R.id.paslb_ra30);
 
-        bueno11 = (RadioButton)findViewById(R.id.paslb_ra31);
-        aceptable11 = (RadioButton)findViewById(R.id.paslb_ra32);
+        bueno11 = (RadioButton)findViewById(R.id.paslb_ra28);
+        aceptable11 = (RadioButton)findViewById(R.id.paslb_ra29);
         malo11 = (RadioButton)findViewById(R.id.paslb_ra33);
 
-        bueno12 = (RadioButton)findViewById(R.id.paslb_ra34);
-        aceptable12 = (RadioButton)findViewById(R.id.paslb_ra35);
+        bueno12 = (RadioButton)findViewById(R.id.paslb_ra31);
+        aceptable12 = (RadioButton)findViewById(R.id.paslb_ra32);
         malo12 = (RadioButton)findViewById(R.id.paslb_ra36);
 
-        bueno13 = (RadioButton)findViewById(R.id.paslb_ra37);
-        aceptable13 = (RadioButton)findViewById(R.id.paslb_ra38);
+        bueno13 = (RadioButton)findViewById(R.id.paslb_ra34);
+        aceptable13 = (RadioButton)findViewById(R.id.paslb_ra35);
         malo13 = (RadioButton)findViewById(R.id.paslb_ra39);
 
-        catorcea = (CheckBox)findViewById(R.id.paslb_ch9);
-        catorceb = (CheckBox)findViewById(R.id.paslb_ch7);
-        catorcec = (CheckBox)findViewById(R.id.paslb_ch8);
-        catorced = (CheckBox)findViewById(R.id.paslb_ch10);
+        bueno14 = (RadioButton)findViewById(R.id.paslb_ra37);
+        aceptable14 = (RadioButton)findViewById(R.id.paslb_ra38);
+        malo14 = (RadioButton)findViewById(R.id.paslb_ra39);
 
-        catorceotras = (EditText)findViewById(R.id.paslb_txtotras);
-        quince = (EditText)findViewById(R.id.paslb_txt1);
-        dieciseis = (EditText)findViewById(R.id.paslb_txt2);
+        quincea = (CheckBox)findViewById(R.id.paslb_ch9);
+        quinceb = (CheckBox)findViewById(R.id.paslb_ch7);
+        quincec = (CheckBox)findViewById(R.id.paslb_ch8);
+        quinced = (CheckBox)findViewById(R.id.paslb_ch10);
+
+        quinceotras = (EditText)findViewById(R.id.paslb_txtotras);
+        dieciseis = (EditText)findViewById(R.id.paslb_txt1);
+        diecisiete = (EditText)findViewById(R.id.paslb_txt2);
+        cuatrocom = (EditText)findViewById(R.id.paslb_txt4);
+        cincocom = (EditText)findViewById(R.id.paslb_txt5);
+        seiscom = (EditText)findViewById(R.id.paslb_txt6);
+        sietecom = (EditText)findViewById(R.id.paslb_txt7);
+        ochocom = (EditText)findViewById(R.id.paslb_txt8);
+        nuevecom = (EditText)findViewById(R.id.paslb_txt9);
+        diezcom = (EditText)findViewById(R.id.paslb_txt10);
+        oncecom = (EditText)findViewById(R.id.paslb_txt11);
+        docecom = (EditText)findViewById(R.id.paslb_txt12);
+        trececom = (EditText)findViewById(R.id.paslb_txt13);
+        catorcecom = (EditText)findViewById(R.id.paslb_txt14);
+
 
         btnNext = findViewById(R.id.paslb_sig);
 
@@ -130,15 +146,29 @@ public class PASLBeneficiario extends AppCompatActivity {
                     String once = obtenerRadio(bueno11,aceptable11,malo11);
                     String doce = obtenerRadio(bueno12,aceptable12,malo12);
                     String trece = obtenerRadio(bueno13,aceptable13,malo13);
-                    String catorce = Resultado4();
-                    String obs = catorceotras.getText().toString();
-                    String quin = quince.getText().toString();
-                    String diesi = dieciseis.getText().toString();
+                    String catorce = obtenerRadio(bueno14,aceptable14,malo14);
+                    String quince = Resultado4();
+                    String quinceco = quinceotras.getText().toString();
+                    String dieciseiss = dieciseis.getText().toString();
+                    String diecisietes = diecisiete.getText().toString();
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
+                    String cuatroco = cuatrocom.getText().toString();
+                    String cincoco = cincocom.getText().toString();
+                    String seisco = seiscom.getText().toString();
+                    String sieteco = sietecom.getText().toString();
+                    String ochoco = ochocom.getText().toString();
+                    String nueveco = nuevecom.getText().toString();
+                    String diezco = diezcom.getText().toString();
+                    String onceco = oncecom.getText().toString();
+                    String doceco = docecom.getText().toString();
+                    String trececo = trececom.getText().toString();
+                    String catorceco = catorcecom.getText().toString();
 
 
-                    model = new Pasl_b_Model(fol, res, bene, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, obs, quin, diesi, f1, f2, "", "");
+
+
+                    model = new Pasl_b_Model(fol, res, bene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, f1, f2, "", "");
                     Intent in = new Intent(PASLBeneficiario.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);
@@ -155,11 +185,11 @@ public class PASLBeneficiario extends AppCompatActivity {
         findViewById(R.id.paslb_ch10).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(catorced.isChecked()==true){
-                    catorceotras.setVisibility(View.VISIBLE);
+                if(quinced.isChecked()==true){
+                    quinceotras.setVisibility(View.VISIBLE);
                 }else{
-                    catorceotras.setVisibility(View.GONE);
-                    catorceotras.setText("");
+                    quinceotras.setVisibility(View.GONE);
+                    quinceotras.setText("");
                 }
             }
         });
@@ -209,16 +239,16 @@ public class PASLBeneficiario extends AppCompatActivity {
     public String Resultado4(){
         String cadena="";
         String resultado="";
-        if (catorcea.isChecked()){
+        if (quincea.isChecked()){
             cadena += "a-";
         }
-        if (catorceb.isChecked()){
+        if (quinceb.isChecked()){
             cadena += "b-";
         }
-        if (catorcec.isChecked()){
+        if (quincec.isChecked()){
             cadena += "c-";
         }
-        if (catorced.isChecked()){
+        if (quinced.isChecked()){
             cadena += "d-";
         }
         resultado = cadena.substring(0, cadena.length()-1);
@@ -291,20 +321,20 @@ public class PASLBeneficiario extends AppCompatActivity {
             malo13.setError("Debes seleccionar una opción");
             retorno = false;
         }
-        else if (!catorcea.isChecked() && !catorceb.isChecked() && !catorcec.isChecked() && !catorced.isChecked()) {
-            catorcea.setError("Debes seleccionar almenos una opción");
+        else if (!quincea.isChecked() && !quinceb.isChecked() && !quincec.isChecked() && !quinced.isChecked()) {
+            quincea.setError("Debes seleccionar almenos una opción");
             retorno = false;
         }
-        else if (catorced.isChecked() && catorceotras.getText().toString().isEmpty()) {
-            catorceotras.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if (quince.getText().toString().isEmpty()) {
-            quince.setError("No puede quedar vacio");
+        else if (quinced.isChecked() && quinceotras.getText().toString().isEmpty()) {
+            quinceotras.setError("No puede quedar vacio");
             retorno = false;
         }
         else if (dieciseis.getText().toString().isEmpty()) {
             dieciseis.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (diecisiete.getText().toString().isEmpty()) {
+            diecisiete.setError("No puede quedar vacio");
             retorno = false;
         }
 

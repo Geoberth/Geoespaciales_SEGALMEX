@@ -4,36 +4,49 @@ import java.io.Serializable;
 
 public class Pasl_b_Model implements Serializable {
 
-    private String folio, responde, beneficiarios, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, catorceotrasespecificacion, quince, dieciseis, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, res, bene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, foto1, foto2, longitudGeo, latitudGeo;
 
-    public Pasl_b_Model() {
-    }
-
-    public Pasl_b_Model(String folio, String responde, String beneficiarios, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String trece, String catorce, String catorceotrasespecificacion, String quince, String dieciseis, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public Pasl_b_Model(String folio, String res, String bene, String uno, String dos, String tres, String cuatro, String cuatroco, String cinco, String cincoco, String seis, String seisco, String siete, String sieteco, String ocho, String ochoco, String nueve, String nueveco, String diez, String diezco, String once, String onceco, String doce, String doceco, String trece, String trececo, String catorce, String catorceco, String quince, String quinceco, String dieciseiss, String diecisietes, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
-        this.responde = responde;
-        this.beneficiarios = beneficiarios;
+        this.res = res;
+        this.bene = bene;
         this.uno = uno;
         this.dos = dos;
         this.tres = tres;
         this.cuatro = cuatro;
+        this.cuatroco = cuatroco;
         this.cinco = cinco;
+        this.cincoco = cincoco;
         this.seis = seis;
+        this.seisco = seisco;
         this.siete = siete;
+        this.sieteco = sieteco;
         this.ocho = ocho;
+        this.ochoco = ochoco;
         this.nueve = nueve;
+        this.nueveco = nueveco;
         this.diez = diez;
+        this.diezco = diezco;
         this.once = once;
+        this.onceco = onceco;
         this.doce = doce;
+        this.doceco = doceco;
         this.trece = trece;
+        this.trececo = trececo;
         this.catorce = catorce;
-        this.catorceotrasespecificacion = catorceotrasespecificacion;
+        this.catorceco = catorceco;
         this.quince = quince;
-        this.dieciseis = dieciseis;
+        this.quinceco = quinceco;
+        this.dieciseiss = dieciseiss;
+        this.diecisietes = diecisietes;
         this.foto1 = foto1;
         this.foto2 = foto2;
         this.longitudGeo = longitudGeo;
         this.latitudGeo = latitudGeo;
+    }
+
+    public Pasl_b_Model() {
+
     }
 
     public String getFolio() {
@@ -44,20 +57,20 @@ public class Pasl_b_Model implements Serializable {
         this.folio = folio;
     }
 
-    public String getResponde() {
-        return responde;
+    public String getRes() {
+        return res;
     }
 
-    public void setResponde(String responde) {
-        this.responde = responde;
+    public void setRes(String res) {
+        this.res = res;
     }
 
-    public String getBeneficiarios() {
-        return beneficiarios;
+    public String getBene() {
+        return bene;
     }
 
-    public void setBeneficiarios(String beneficiarios) {
-        this.beneficiarios = beneficiarios;
+    public void setBene(String bene) {
+        this.bene = bene;
     }
 
     public String getUno() {
@@ -92,12 +105,28 @@ public class Pasl_b_Model implements Serializable {
         this.cuatro = cuatro;
     }
 
+    public String getCuatroco() {
+        return cuatroco;
+    }
+
+    public void setCuatroco(String cuatroco) {
+        this.cuatroco = cuatroco;
+    }
+
     public String getCinco() {
         return cinco;
     }
 
     public void setCinco(String cinco) {
         this.cinco = cinco;
+    }
+
+    public String getCincoco() {
+        return cincoco;
+    }
+
+    public void setCincoco(String cincoco) {
+        this.cincoco = cincoco;
     }
 
     public String getSeis() {
@@ -108,12 +137,28 @@ public class Pasl_b_Model implements Serializable {
         this.seis = seis;
     }
 
+    public String getSeisco() {
+        return seisco;
+    }
+
+    public void setSeisco(String seisco) {
+        this.seisco = seisco;
+    }
+
     public String getSiete() {
         return siete;
     }
 
     public void setSiete(String siete) {
         this.siete = siete;
+    }
+
+    public String getSieteco() {
+        return sieteco;
+    }
+
+    public void setSieteco(String sieteco) {
+        this.sieteco = sieteco;
     }
 
     public String getOcho() {
@@ -124,12 +169,28 @@ public class Pasl_b_Model implements Serializable {
         this.ocho = ocho;
     }
 
+    public String getOchoco() {
+        return ochoco;
+    }
+
+    public void setOchoco(String ochoco) {
+        this.ochoco = ochoco;
+    }
+
     public String getNueve() {
         return nueve;
     }
 
     public void setNueve(String nueve) {
         this.nueve = nueve;
+    }
+
+    public String getNueveco() {
+        return nueveco;
+    }
+
+    public void setNueveco(String nueveco) {
+        this.nueveco = nueveco;
     }
 
     public String getDiez() {
@@ -140,12 +201,28 @@ public class Pasl_b_Model implements Serializable {
         this.diez = diez;
     }
 
+    public String getDiezco() {
+        return diezco;
+    }
+
+    public void setDiezco(String diezco) {
+        this.diezco = diezco;
+    }
+
     public String getOnce() {
         return once;
     }
 
     public void setOnce(String once) {
         this.once = once;
+    }
+
+    public String getOnceco() {
+        return onceco;
+    }
+
+    public void setOnceco(String onceco) {
+        this.onceco = onceco;
     }
 
     public String getDoce() {
@@ -156,12 +233,28 @@ public class Pasl_b_Model implements Serializable {
         this.doce = doce;
     }
 
+    public String getDoceco() {
+        return doceco;
+    }
+
+    public void setDoceco(String doceco) {
+        this.doceco = doceco;
+    }
+
     public String getTrece() {
         return trece;
     }
 
     public void setTrece(String trece) {
         this.trece = trece;
+    }
+
+    public String getTrececo() {
+        return trececo;
+    }
+
+    public void setTrececo(String trececo) {
+        this.trececo = trececo;
     }
 
     public String getCatorce() {
@@ -172,12 +265,12 @@ public class Pasl_b_Model implements Serializable {
         this.catorce = catorce;
     }
 
-    public String getCatorceotrasespecificacion() {
-        return catorceotrasespecificacion;
+    public String getCatorceco() {
+        return catorceco;
     }
 
-    public void setCatorceotrasespecificacion(String catorceotrasespecificacion) {
-        this.catorceotrasespecificacion = catorceotrasespecificacion;
+    public void setCatorceco(String catorceco) {
+        this.catorceco = catorceco;
     }
 
     public String getQuince() {
@@ -188,12 +281,28 @@ public class Pasl_b_Model implements Serializable {
         this.quince = quince;
     }
 
-    public String getDieciseis() {
-        return dieciseis;
+    public String getQuinceco() {
+        return quinceco;
     }
 
-    public void setDieciseis(String dieciseis) {
-        this.dieciseis = dieciseis;
+    public void setQuinceco(String quinceco) {
+        this.quinceco = quinceco;
+    }
+
+    public String getDieciseiss() {
+        return dieciseiss;
+    }
+
+    public void setDieciseiss(String dieciseiss) {
+        this.dieciseiss = dieciseiss;
+    }
+
+    public String getDiecisietes() {
+        return diecisietes;
+    }
+
+    public void setDiecisietes(String diecisietes) {
+        this.diecisietes = diecisietes;
     }
 
     public String getFoto1() {
@@ -228,3 +337,4 @@ public class Pasl_b_Model implements Serializable {
         this.latitudGeo = latitudGeo;
     }
 }
+

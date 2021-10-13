@@ -266,22 +266,29 @@
                     android:id="@+id/paslb_ra10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -300,22 +307,29 @@
                     android:id="@+id/paslb_ra13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -334,28 +348,35 @@
                     android:id="@+id/paslb_ra16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="7. ¿Recibe la dotación de leche que le corresponde sin condicionamiento alguno?"
+                android:text="7. ¿Sabe cuál es la dotación máxima de leche que puede comprar a la semana?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -368,28 +389,70 @@
                     android:id="@+id/paslb_ra19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="8. ¿Presenta su tarjeta de beneficiario para poder retirar su dotación de leche?"
+                android:text="8. ¿Le han condicionado la dotación de leche que le conrresponde condicionamiento alguno?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/paslb_ra82"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9. ¿Presenta su tarjeta de beneficiario para poder retirar su dotación de leche?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -402,28 +465,36 @@
                     android:id="@+id/paslb_ra22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="9. ¿Retira su dotación de leche otro día, aunque no se presente el dia que le correspondía?"
+                android:text="10. ¿Retira su dotación de leche otro día, aunque no se presente el dia que le correspondía?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -436,28 +507,35 @@
                     android:id="@+id/paslb_ra25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="10. ¿Acude a los pases de lista y operativos de actualización y depuración del padrón de beneficiarios, previo aviso del personal de promotoría social?"
+                android:text="11. ¿Acude a los pases de lista y operativos de actualización y depuración del padrón de beneficiarios, previo aviso del personal de promotoría social?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -470,29 +548,36 @@
                     android:id="@+id/paslb_ra28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="11. ¿El programa ha tenido representado ahorros para usted?"
+                android:text="12. ¿El programa ha representado ahorros para usted?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -505,28 +590,35 @@
                     android:id="@+id/paslb_ra31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="12. ¿El programa ha tenido efectos en la nutrición de las personas de su familia?"
+                android:text="13. ¿El programa ha tenido efectos en la nutrición de las personas de su familia?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -539,28 +631,35 @@
                     android:id="@+id/paslb_ra34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra36"
                     android:layout_width="wrap_content"
+                    android:visibility="gone"
                     android:layout_height="wrap_content"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="13. En general, ¿Cómo considera el trato recibido por parte del promotor social?"
+                android:text="14. En general, ¿Cómo considera el trato recibido por parte del promotor social?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -573,28 +672,36 @@
                     android:id="@+id/paslb_ra37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Sí" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra38"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="No" />
+
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra39"
                     android:layout_width="wrap_content"
+                    android:visibility="gone"
                     android:layout_height="wrap_content"
                     android:text="Malo" />
             </RadioGroup>
+
+            <EditText
+                android:id="@+id/paslb_txt14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="14. En general, ¿Cuáles son los principales problemas o desventajas que usted identifica en el programa?"
+                android:text="15. En general, ¿Cuáles son los principales problemas o desventajas que usted identifica en el programa?"
                 android:textColor="#000000" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
@@ -645,7 +752,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="15. ¿Cuáles considera son para usted las principales ventajas de este programa?"
+                android:text="16. ¿Cuáles considera son para usted las principales ventajas de este programa?"
                 android:textColor="#000000" />
 
             <EditText
@@ -658,7 +765,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="16. ¿Qué acciones considera que necesita realizar el Programa en el futura para mejorar la atención otorgada?"
+                android:text="17. ¿Qué acciones considera que necesita realizar el Programa en el futura para mejorar la atención otorgada?"
                 android:textColor="#000000" />
 
             <EditText
