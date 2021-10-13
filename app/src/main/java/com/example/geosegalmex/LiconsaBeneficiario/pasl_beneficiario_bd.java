@@ -6,7 +6,7 @@ public class pasl_beneficiario_bd {
 
     public static final String TABLA_BD = "TB_PASL_BENEFICIARIO";
     public static final String COLUMN_FOLIO = "FOLIO";
-    public static final String COLUMN_RESPONDE = "RESPONDE";
+    public static final String COLUMN_RES = "RES";
     public static final String COLUMN_BENEFICIARIOS = "BENEFICIARIOS";
     public static final String COLUMN_UNO = "UNO";
     public static final String COLUMN_DOS = "DOS";
@@ -36,6 +36,7 @@ public class pasl_beneficiario_bd {
     public static final String COLUMN_QUINCE = "QUINCE";
     public static final String COLUMN_QUINCECO = "QUINCECO";
     public static final String COLUMN_DIECISEIS = "DIECISEIS";
+    public static final String COLUMN_DIECISIETE = "DIECISIETE";
     public static final String COLUMN_FOTO1 = "FOTO1";
     public static final String COLUMN_FOTO2 = "FOTO2";
     public static final String COLUMN_LONGITUD = "LONGITUD";
@@ -43,7 +44,7 @@ public class pasl_beneficiario_bd {
 
     public static final String CREAR_TABLA_PASL_BENEFICIARIO= "CREATE TABLE " + TABLA_BD + "("
             + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
-            + COLUMN_RESPONDE + " VARCHAR, "
+            + COLUMN_RES + " VARCHAR, "
             + COLUMN_BENEFICIARIOS + " VARCHAR, "
             + COLUMN_UNO + " VARCHAR, "
             + COLUMN_DOS + " VARCHAR, "
@@ -73,6 +74,7 @@ public class pasl_beneficiario_bd {
             + COLUMN_QUINCE + " VARCHAR, "
             + COLUMN_QUINCECO + "VARCHAR, "
             + COLUMN_DIECISEIS + " VARCHAR, "
+            + COLUMN_DIECISIETE + "VARCHAR, "
             + COLUMN_FOTO1 + " VARCHAR, "
             + COLUMN_FOTO2 + " VARCHAR, "
             + COLUMN_LONGITUD + " VARCHAR, "
