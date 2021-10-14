@@ -79,6 +79,15 @@ public class ExportarFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                final ProgressDialog progressDialog = new ProgressDialog(getActivity());
+                progressDialog.setTitle("Descargando Datos");
+                progressDialog.setCancelable(false);
+                //progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+//        progressDialog.setMax(10);
+                progressDialog.setMessage("Descargando...");
+                progressDialog.show();
+
+
                 try {
                     deployDatabase("PASLOperativo");
                 } catch (IOException e) {
@@ -105,7 +114,8 @@ public class ExportarFragment extends Fragment {
 
                 try {
                     deployDatabase("PGOperativoEstimulos");
-                } catch (IOException e) {
+                }
+                catch (IOException e) {
                     try {
                         deployDatabase("PGOperativoEstimulos");
                     } catch (IOException ex) {
@@ -118,7 +128,9 @@ public class ExportarFragment extends Fragment {
 
                 // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
                 // tareaAsyncTask.execute();
+                progressDialog.dismiss();
             }
+
         });
 
         return vistaExportar;

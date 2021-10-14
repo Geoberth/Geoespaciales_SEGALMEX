@@ -7,6 +7,12 @@
     tools:context=".PARBeneficiario.PARBeneficiario">
 
 
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -14,10 +20,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="16dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -32,7 +34,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="21dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="30dp"
                     android:text="ENCUESTA PARA CONSUMIDORES DE LAS TIENDAS DICONSA"
                     android:textAlignment="center"
                     android:textColor="#000000"
@@ -41,9 +43,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="29dp"
-                    android:layout_marginTop="15dp"
-                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
                     android:text="DATOS DE LA TIENDA DICONSA (PRE-LLENADO)"
+                    android:textStyle="bold"
                     android:textColor="#000000" />
 
                 <TextView
@@ -53,9 +55,9 @@
                     android:layout_height="wrap_content"/>
 
                 <EditText
-                    android:id="@+id/par_txt1"
+                    android:id="@+id/par_ben_txt1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="62dp"
                     android:maxLines="1" />
 
                 <TextView
@@ -65,35 +67,48 @@
                     android:layout_height="wrap_content"/>
 
                 <Spinner
-                    android:id="@+id/par_spin1"
+                    android:id="@+id/par_ben_spin1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/borde"
-                    android:entries="@array/estatus"
                     android:spinnerMode="dialog"/>
 
                 <TextView
-                    android:text="MUNICIPIO/LOCALIDAD"
+                    android:text="MUNICIPIO"
                     android:layout_width="match_parent"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
                 <Spinner
-                    android:id="@+id/par_spin2"
+                    android:id="@+id/par_ben_spin2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/borde"
-                    android:entries="@array/estatus"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="COLONIA/LOCALIDAD"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/par_ben_spin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
                     android:spinnerMode="dialog"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="29dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="30dp"
                     android:text="DATOS DE IDENTIFICACIÓN DE CONSUMIDORES"
                     android:textStyle="bold"
                     android:textColor="#000000" />
@@ -105,9 +120,9 @@
                     android:layout_height="wrap_content"/>
 
                 <EditText
-                    android:id="@+id/par_txt2"
+                    android:id="@+id/par_ben_txt2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="62dp"
                     android:maxLines="1" />
 
                 <TextView
@@ -123,14 +138,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra1"
+                        android:id="@+id/par_ben_ra1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hombre" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra2"
+                        android:id="@+id/par_ben_ra2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mujer" />
@@ -143,8 +158,9 @@
                     android:layout_height="wrap_content"/>
 
                 <EditText
-                    android:id="@+id/par_txt3"
+                    android:id="@+id/par_ben_txt3"
                     android:layout_width="match_parent"
+                    android:hint="Escriba el número"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLines="1" />
@@ -152,75 +168,615 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="30dp"
                     android:text="PREGUNTAS PARA CONSUMIDORES SOBRE LA OPERACIÓN DE LAS TIENDAS"
                     android:textStyle="bold"
                     android:textColor="#000000" />
 
                 <TextView
-                    android:text="1. ¿Compra usted productos SEGALMEX?"
+                    android:text="1. ¿Encuentra los productos que usted necesita en esta tienda?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
                 <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="2. ¿Cuáles son los tres productos que usted compra con mayor frecuencia en la tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="1dp"
 
-                        android:id="@+id/par_ra3"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/par_ben_ch1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="No" />
+                        android:text="Aceite comestible cristal." />
 
-                    <RadioButton
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
 
-                        android:id="@+id/par_ra4"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/par_ben_ch2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sí, ¿Cuáles?"/>
+                        android:text="Aceite mixto Patrona." />
 
-                </RadioGroup>
+                </LinearLayout>
 
-                <Spinner
-                    android:id="@+id/par_spin3"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz super extra." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Quebrado (1/2 grano)." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Agua." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Aceite." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avena." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Azúcar estandar." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Café soluble." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chiles jalapeños enteros." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chocolate en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crema dental." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Detergente en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/par_ben_ch16"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Frijol Negro San luis." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas animalitos." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Marías." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Saladas." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Maíz." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Trigo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de lavandería." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de tocador." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Descremada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semideslactosada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera en Polvo Fortificada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maíz." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera UGT en Bolsa Aséptica" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gelatina." />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch32"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:background="@drawable/borde"
-                    android:entries="@array/estatus"
-                    android:spinnerMode="dialog"/>
+                    android:text="Leche Semidescremada UHT en Bolsa Aséptica." />
 
-            </LinearLayout>
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
 
-                <TextView
-                    android:text="2. ¿Cuáles son los tres productos que usted compra con mayor frecuencia en la tienda? (En caso necesario, refiera al usuario a la lista de los productos de canasta básica DICONSA que debería estar visible en la tienda.)"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <Spinner
-                    android:id="@+id/par_spin4"
+                    android:id="@+id/par_ben_ch33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/borde"
-                    android:entries="@array/estatus"
-                    android:spinnerMode="dialog"/>
+                    android:text="Leche Descremada UHT en Bolsa Aséptica." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Chocolate." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada Sabor Fresa." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miel." />
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Vainilla." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Papel Higiénico 200 H.D." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sal de mesa." />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sardina en Salsa de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenteja." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puré de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Garrafón 20 Lt. Agua." />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (LA COSTEÑA)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (CLEMENTE JACQUES)." />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Huevo." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch47"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soya Texturizada (NUTRICASA)." />
+
+                </LinearLayout>
 
                 <TextView
-                    android:text="3. ¿Considera que la tienda DICONSA está suficientemente surtida?"
+                    android:text="3. ¿Se tienen a la vista los precios de los productos de la canasta básica DICONSA en esta tienda?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -233,21 +789,21 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra5"
+                        android:id="@+id/par_ben_ra5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra6"
+                        android:id="@+id/par_ben_ra6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
                 </RadioGroup>
 
                 <TextView
-                    android:text="4. ¿Encuentra los productos que usted necesita en esta tienda?"
+                    android:text="4. ¿Cómo califica la disponibilidad de productos (de la canasta básica DICONSA) en la tienda?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -260,82 +816,28 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/par_ra8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="5. ¿Se tienen a la vista los precios de los productos de la canasta básica DICONSA en esta tienda?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/par_ra9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/par_ra10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:text="6. ¿Cómo califica la disponibilidad de productos (de la canasta básica DICONSA) en la tienda?"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/par_ra11"
+                        android:id="@+id/par_ben_ra7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Suficiente" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra12"
+                        android:id="@+id/par_ben_ra8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Adecuado" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra13"
+                        android:id="@+id/par_ben_ra80"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Insuficiente" />
                 </RadioGroup>
 
                 <TextView
-                    android:text="7. ¿Qué le parece la calidad de los productos (de la canasta básica DICONSA) que se ofrecen??"
+                    android:text="5. ¿Compra usted productos SEGALMEX?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -348,92 +850,1217 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra14"
+                        android:id="@+id/par_ben_ra9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí, ¿Cuáles?" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No (pase a la pregunta 6)" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="1dp"
+
+                        android:id="@+id/par_ben_ch48"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite comestible cristal." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch49"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite mixto Patrona." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz super extra." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Quebrado (1/2 grano)." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Agua." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Aceite." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avena." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Azúcar estandar." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch57"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Café soluble." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch58"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch59"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chiles jalapeños enteros." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch60"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chocolate en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crema dental." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Detergente en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/par_ben_ch63"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Frijol Negro San luis." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas animalitos." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch65"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Marías." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch66"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Saladas." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch67"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Maíz." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch68"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Trigo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch69"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de lavandería." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch70"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de tocador." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch73"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Descremada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semideslactosada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch75"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera en Polvo Fortificada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch76"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maíz." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch77"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera UGT en Bolsa Aséptica" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch78"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gelatina." />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch79"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada UHT en Bolsa Aséptica." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Descremada UHT en Bolsa Aséptica." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch81"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Chocolate." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch82"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada Sabor Fresa." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch83"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miel." />
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch84"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Vainilla." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch85"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Papel Higiénico 200 H.D." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch86"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sal de mesa." />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch87"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sardina en Salsa de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch88"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenteja." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch89"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puré de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch90"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Garrafón 20 Lt. Agua." />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch91"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (LA COSTEÑA)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch92"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (CLEMENTE JACQUES)." />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch93"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Huevo." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch94"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soya Texturizada (NUTRICASA)." />
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="6. ¿Qué le parece la calidad de los productos (de la canasta básica DICONSA) que se ofrecen?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Buena" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra15"
+                        android:id="@+id/par_ben_ra12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Regular" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra16"
+                        android:id="@+id/par_ben_ra13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mala" />
                 </RadioGroup>
 
                 <TextView
-                    android:text="8. ¿Hay algún producto de la canasta básica que con frecuencia haga falta en la tienda?"
+                    android:text="7. ¿Hay algún producto que con frecuencia haga falta en la tienda?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí (Seleccione 3 productos max)" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="1dp"
+
+                        android:id="@+id/par_ben_ch95"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite comestible cristal." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch96"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite mixto Patrona." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch97"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz super extra." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch98"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Quebrado (1/2 grano)." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch99"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Agua." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch101"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Aceite." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch102"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avena." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch103"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Azúcar estandar." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch104"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Café soluble." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch105"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch106"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chiles jalapeños enteros." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch107"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chocolate en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch108"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crema dental." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch109"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Detergente en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/par_ben_ch110"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Frijol Negro San luis." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch111"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas animalitos." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch112"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Marías." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch113"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Saladas." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch114"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Maíz." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch115"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Trigo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch116"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de lavandería." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch117"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de tocador." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch118"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch119"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch120"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Descremada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch121"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semideslactosada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch122"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera en Polvo Fortificada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch123"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maíz." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch124"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera UGT en Bolsa Aséptica" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch125"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gelatina." />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch126"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada UHT en Bolsa Aséptica." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch127"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Descremada UHT en Bolsa Aséptica." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch128"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Chocolate." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch129"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada Sabor Fresa." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch130"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miel." />
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch131"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Vainilla." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch132"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Papel Higiénico 200 H.D." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch133"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sal de mesa." />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch134"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sardina en Salsa de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch135"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenteja." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch136"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puré de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch137"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Garrafón 20 Lt. Agua." />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch138"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (LA COSTEÑA)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch139"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (CLEMENTE JACQUES)." />
 
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
-                    <RadioGroup
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
 
-                        <RadioButton
-
-                            android:id="@+id/par_ra17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="No" />
-
-                        <RadioButton
-
-                            android:id="@+id/par_ra18"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sí, ¿Cuáles?"/>
-
-                    </RadioGroup>
-
-                    <Spinner
-                        android:id="@+id/par_spin5"
+                        android:id="@+id/par_ben_ch140"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:background="@drawable/borde"
-                        android:entries="@array/estatus"
-                        android:spinnerMode="dialog"/>
+                        android:text="Huevo." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch141"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soya Texturizada (NUTRICASA)." />
 
                 </LinearLayout>
 
                 <TextView
-                    android:text="9. ¿Qué marcas de productos busca y no encuentra en la tienda? (Elija 3 productos máximo)"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <Spinner
-                    android:id="@+id/par_spin6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/borde"
-                    android:entries="@array/estatus"
-                    android:spinnerMode="dialog"/>
-
-                <TextView
-                    android:text="10.	¿Conoce el horario de apertura y cierre de la tienda?"
+                    android:text="8. ¿Cuáles son los productos de la canasta básica de DICONSA que busca y no encuentra en la tienda?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -446,21 +2073,392 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra19"
+                        android:id="@+id/par_ben_ra17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí (Seleccione 3 productos max)"/>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="1dp"
+
+                        android:id="@+id/par_ben_ch142"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch143"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch144"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch145"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avena" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch146"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Azúcar estándar" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch147"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Café Soluble" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch148"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chiles jalapeños enteros" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch149"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chocolate en polvo (bolsa)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch150"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Detergente en polvo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch151"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Frijol negro San Luis" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch152"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch153"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de maíz" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch154"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crema dental" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch155"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de trigo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch156"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/par_ben_ch157"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Leche" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch158"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maíz" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch159"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Papel Higienico 200H.D" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch160"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sal de mesa" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch161"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sardina en salsa de tomate" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch162"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenteja" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch163"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puré de tomate" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch164"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chicharos con zanahoria" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch165"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soya texturizada" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch166"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gelatina" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch167"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Garrafón 20 Lt. Agua" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch168"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Huevo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch169"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miel" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="9. ¿Conoce el horario de apertura y cierre de la tienda?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra20"
+                        android:id="@+id/par_ben_ra20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
                 </RadioGroup>
 
                 <TextView
-                    android:text="11. ¿Considera que el horario de apertura de la tienda es adecuado?"
+                    android:text="10. ¿Considera que el horario de apertura de la tienda es adecuado?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -473,21 +2471,21 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra21"
+                        android:id="@+id/par_ben_ra21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra22"
+                        android:id="@+id/par_ben_ra22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
                 </RadioGroup>
 
                 <TextView
-                    android:text="12. ¿Considera que el horario de cierre de la tienda es adecuado?"
+                    android:text="11. ¿Considera que el horario de cierre de la tienda es adecuado?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -500,21 +2498,21 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra23"
+                        android:id="@+id/par_ben_ra23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra24"
+                        android:id="@+id/par_ben_ra24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
                 </RadioGroup>
 
                 <TextView
-                    android:text="13. En su opinión, ¿La tienda se encuentra limpia y ordenada?"
+                    android:text="12. En su opinión, ¿La tienda se encuentra limpia y ordenada?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -527,21 +2525,21 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra25"
+                        android:id="@+id/par_ben_ra25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra26"
+                        android:id="@+id/par_ben_ra26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
                 </RadioGroup>
 
                 <TextView
-                    android:text="14. Además de comprar productos para su despensa ¿viene a DICONSA por algún otro servicio? En caso de ser así, ¿Cuál?"
+                    android:text="13. Además de comprar productos para su despensa ¿viene a DICONSA por algún otro servicio? En caso de ser así, ¿Cuál?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -554,14 +2552,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra27"
+                        android:id="@+id/par_ben_ra27"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/par_ra28"
+                        android:id="@+id/par_ben_ra28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No (pase a la pregunta 14)" />
@@ -571,7 +2569,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch1"
+                    android:id="@+id/par_ben_ch170"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Apartado de sonido." />
@@ -581,7 +2579,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch2"
+                    android:id="@+id/par_ben_ch171"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Caseta de telefonía." />
@@ -590,7 +2588,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch3"
+                    android:id="@+id/par_ben_ch172"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Tiempo Aire." />
@@ -599,7 +2597,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch4"
+                    android:id="@+id/par_ben_ch173"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Internet." />
@@ -608,7 +2606,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch5"
+                    android:id="@+id/par_ben_ch174"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Pago de servicios (agua, luz, telefonía)." />
@@ -617,7 +2615,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch6"
+                    android:id="@+id/par_ben_ch175"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Pago de apoyos." />
@@ -626,7 +2624,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch7"
+                    android:id="@+id/par_ben_ch176"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Distribución de leche Liconsa." />
@@ -635,7 +2633,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch8"
+                    android:id="@+id/par_ben_ch177"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Papelería (fotocopiadora)." />
@@ -644,13 +2642,13 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch9"
+                    android:id="@+id/par_ben_ch178"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Otros." />
 
                 <TextView
-                    android:text="15. ¿Cuál es el medio de transporte que utiliza para ir a la tienda? (puede ser más de una respuesta)
+                    android:text="14. ¿Cuál es el medio de transporte que utiliza para ir a la tienda? (puede ser más de una respuesta)
 "
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
@@ -661,7 +2659,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch10"
+                    android:id="@+id/par_ben_ch179"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Caminando." />
@@ -671,7 +2669,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch11"
+                    android:id="@+id/par_ben_ch180"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Vehículo propio (carro o camioneta)." />
@@ -680,7 +2678,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch12"
+                    android:id="@+id/par_ben_ch181"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Transporte público (camión)." />
@@ -689,7 +2687,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch13"
+                    android:id="@+id/par_ben_ch182"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Motocicleta." />
@@ -698,7 +2696,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch14"
+                    android:id="@+id/par_ben_ch183"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="A caballo, burro, mula." />
@@ -707,7 +2705,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch15"
+                    android:id="@+id/par_ben_ch184"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bicicleta." />
@@ -716,92 +2714,231 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch16"
+                    android:id="@+id/par_ben_ch185"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Otro." />
 
                 <TextView
-                    android:text="16. ¿Cuánto gasta en transporte para ir a la tienda DICONSA?"
+                    android:text="15. ¿Cuánto gasta en transporte para ir a la tienda DICONSA? (Cantidad en pesos mexicanos MXN.)"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
                 <EditText
-                    android:id="@+id/par_txt4"
+                    android:id="@+id/par_ben_txt4"
+                    android:hint="Escriba la cantidad en pesos"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:layout_height="62dp"
                     android:maxLines="1" />
 
-
-                <TextView
-                    android:text="17. ¿Cuánto tiempo invierte en ir a comprar su mandado a la tienda DICONSA?"
+                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:id="@+id/par_txt5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1" />
-                android:inputType="number"
-
-                <TextView
-                    android:text="18. ¿Sabe de las campañas de difusión que realiza SEGALMEX-DICONSA sobre formas de nutrición saludables y seguras? Por ejemplo: Carteles informativos con el semáforo de la nutrición, revista Nutrición con Sabor, mensajes, pláticas de orientación."
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="24dp"
                     android:orientation="horizontal">
 
-                    <RadioGroup
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra208"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:text="No gasta" />
 
-                        <RadioButton
+                    <RadioButton
 
-                            android:id="@+id/par_ra29"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="No" />
-
-                        <RadioButton
-
-                            android:id="@+id/par_ra30"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sí, ¿Cuáles?"/>
-
-                    </RadioGroup>
-
-                    <Spinner
-                        android:id="@+id/par_spin7"
-                        android:layout_width="match_parent"
+                        android:id="@+id/par_ben_ra209"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:background="@drawable/borde"
-                        android:entries="@array/estatus"
-                        android:spinnerMode="dialog"/>
+                        android:text="1-25" />
 
-                </LinearLayout>
+                    <RadioButton
 
+                        android:id="@+id/par_ben_ra2010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="26-50" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="51-100" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2012"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="101-200" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2013"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Más de 200" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:text="16. ¿Cuánto tiempo invierte en ir a comprar su mandado a la tienda DICONSA?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2014"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0-30 mins" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2015"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="31-60 mins" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2016"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1-2 hrs" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2017"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Más de 2 hrs" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:text="17. ¿Sabe de las campañas de difusión que realiza SEGALMEX-DICONSA sobre formas de nutrición saludables y seguras? Por ejemplo: Carteles informativos con el semáforo de la nutrición, revista Nutrición con Sabor, mensajes, pláticas de orientación."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2018"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí. ¿Cuáles?" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra2019"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ben_ch1086"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carteles informativos con el semáforo de nutrición" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ben_ch1087"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revista 'Nutrición con sabor'" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ben_ch1088"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mensajes o pláticas de orientación" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/par_ben_ch1089"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Otros" />
+
+
+
+                <TextView
+                    android:text="18. ¿Conoce de las campañas institucionales en materia de igualdad de género y prevención de la violencia?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/par_ben_ra30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"/>
+                </RadioGroup>
 
                 <TextView
                     android:text="ENCUESTA DE OPINIÓN"
+                    android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     android:layout_height="wrap_content"/>
 
                 <TextView
@@ -818,25 +2955,586 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra31"
+                        android:id="@+id/par_ben_ra31"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sí ¿De qué tipo?" />
+                        android:text="Sí ¿Cuáles? (Máximo 3)" />
 
 
                     <RadioButton
 
-                        android:id="@+id/par_ra32"
+                        android:id="@+id/par_ben_ra32"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"/>
+                        android:text="No ¿Cuáles? (Máximo 3)"/>
                 </RadioGroup>
 
-                <EditText
-                    android:id="@+id/par_txt6"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="1dp"
+
+                        android:id="@+id/par_ben_ch186"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite comestible cristal." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch187"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceite mixto Patrona." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch188"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz super extra." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch189"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Quebrado (1/2 grano)." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch190"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch191"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Agua." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch192"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Atún en Aceite." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch193"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avena." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch194"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Azúcar estandar." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch195"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Café soluble." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch196"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arroz Comercial." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch197"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chiles jalapeños enteros." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch198"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chocolate en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch199"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crema dental." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch200"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Detergente en polvo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/par_ben_ch201"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Frijol Negro San luis." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch202"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas animalitos." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch203"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Marías." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch204"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Galletas Saladas." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch205"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Maíz." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch206"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harina de Trigo." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch207"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de lavandería." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch208"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabón de tocador." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch209"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch210"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch211"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Descremada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch212"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semideslactosada." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch213"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera en Polvo Fortificada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch214"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maíz." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch215"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Entera UGT en Bolsa Aséptica" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch216"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gelatina." />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch217"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="1" />
+                    android:text="Leche Semidescremada UHT en Bolsa Aséptica." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch218"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Descremada UHT en Bolsa Aséptica." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch219"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Chocolate." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch220"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada Sabor Fresa." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch221"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miel." />
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leche Semidescremada Sabor Vainilla." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch223"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Papel Higiénico 200 H.D." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch224"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sal de mesa." />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch225"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sardina en Salsa de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch226"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenteja." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch227"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puré de Tomate." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch228"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Garrafón 20 Lt. Agua." />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch229"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (LA COSTEÑA)." />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/par_ben_ch230"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chícharos con Zanahoria (CLEMENTE JACQUES)." />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch231"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Huevo." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_ben_ch232"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soya Texturizada (NUTRICASA)." />
+
+                </LinearLayout>
 
                 <TextView
                     android:text="20. En su opinión: ¿La tienda ha representado ahorros para usted y su familia?."
@@ -852,7 +3550,7 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra33"
+                        android:id="@+id/par_ben_ra33"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
@@ -860,7 +3558,7 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra34"
+                        android:id="@+id/par_ben_ra34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"/>
@@ -881,7 +3579,7 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra35"
+                        android:id="@+id/par_ben_ra35"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Más baratos" />
@@ -889,21 +3587,21 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra36"
+                        android:id="@+id/par_ben_ra36"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Más caros"/>
 
                     <RadioButton
 
-                        android:id="@+id/par_ra37"
+                        android:id="@+id/par_ben_ra37"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No hay diferencia"/>
                 </RadioGroup>
 
                 <TextView
-                    android:text="22. ¿Cómo califica la atención que recibe del encargado de la Tienda?."
+                    android:text="22. ¿Cómo califica la atención que recibe del encargado de la Tienda?:."
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -916,7 +3614,7 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra38"
+                        android:id="@+id/par_ben_ra38"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Excelente" />
@@ -924,14 +3622,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra39"
+                        android:id="@+id/par_ben_ra39"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Aceptable"/>
 
                     <RadioButton
 
-                        android:id="@+id/par_ra40"
+                        android:id="@+id/par_ben_ra40"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mala"/>
@@ -951,7 +3649,7 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra41"
+                        android:id="@+id/par_ben_ra41"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
@@ -959,7 +3657,7 @@
 
                     <RadioButton
 
-                        android:id="@+id/par_ra42"
+                        android:id="@+id/par_ben_ra42"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"/>
@@ -976,7 +3674,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch17"
+                    android:id="@+id/par_ben_ch233"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Abasto de productos." />
@@ -986,7 +3684,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch18"
+                    android:id="@+id/par_ben_ch234"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Precio accesible." />
@@ -995,7 +3693,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch19"
+                    android:id="@+id/par_ben_ch235"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ubicación conveniente." />
@@ -1004,7 +3702,7 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch20"
+                    android:id="@+id/par_ben_ch236"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Trato adecuado" />
@@ -1013,20 +3711,20 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch21"
+                    android:id="@+id/par_ben_ch237"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Otro (especificar)." />
+                    android:text="Otros (especificar)." />
 
                 <EditText
-                    android:id="@+id/par_txt7"
+                    android:id="@+id/par_ben_txt7"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Especificar:"
+                    android:hint="Comentarios"
+                    android:layout_height="62dp"
                     android:maxLines="1" />
 
                 <TextView
-                    android:text="25. ¿Cuáles son las principales desventajas de esta Tienda que usted identifica?"
+                    android:text="25. ¿Cuáles son las principales desventajas de esta tienda?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -1036,53 +3734,53 @@
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch22"
+                    android:id="@+id/par_ben_ch238"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="No tiene todos los productos de la canasta básica." />
+                    android:text="Abasto de productos." />
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch23"
+                    android:id="@+id/par_ben_ch239"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="La caducidad de los productos." />
+                    android:text="Los precios no son acccesibles." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch24"
+                    android:id="@+id/par_ben_ch240"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="La inseguridad para llegar a la tienda." />
+                    android:text="La ubicación no es conveniente." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch25"
+                    android:id="@+id/par_ben_ch241"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="La calidad de los productos" />
+                    android:text="El trato no es adecuado" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
                     android:layout_marginTop="5dp"
 
-                    android:id="@+id/par_ch26"
+                    android:id="@+id/par_ben_ch242"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Otro (especificar)." />
+                    android:text="Otros (especificar)." />
 
                 <EditText
-                    android:id="@+id/par_txt8"
+                    android:id="@+id/par_ben_txt8"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Especificar:"
+                    android:hint="Comentarios"
+                    android:layout_height="62dp"
                     android:maxLines="1" />
 
                 <TextView
@@ -1093,25 +3791,27 @@
                     android:layout_height="wrap_content"/>
 
                 <EditText
-                    android:id="@+id/par_txt9"
+                    android:id="@+id/par_ben_txt9"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:hint="Comentarios"
+                    android:layout_height="62dp"
                     android:maxLines="1" />
 
                 <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                    android:id="@+id/paslb_sig"
+                    android:id="@+id/par_ben_sig"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginTop="30dp"
                     android:layout_marginBottom="25dp"
-                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
                     android:text="Siguiente"
-                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:layout_marginTop="30dp"
+                    app:iconPadding="20dp"
                     app:icon="@android:drawable/ic_input_add"
-                    app:iconPadding="20dp" />
+                    />
 
             </LinearLayout>
         </ScrollView>
-
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

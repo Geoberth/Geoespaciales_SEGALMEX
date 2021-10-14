@@ -6,513 +6,525 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml
+8-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml
+9-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml
 10
 11    <uses-feature android:name="android.hardware.camera2.full" />
-11-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:5:5-66
-11-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:5:19-63
+11-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:5:19-63
 12
 13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:7:5-81
-13-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:7:22-78
+13-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:7:22-78
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:8:5-79
-14-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:8:22-76
+14-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:8:22-76
 15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-15-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:9:5-81
-15-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:9:22-78
+15-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:9:5-81
+15-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:9:22-78
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:10:5-79
-16-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:10:22-76
+16-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:10:5-79
+16-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:10:22-76
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:11:5-67
-17-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:11:22-64
+17-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:11:5-67
+17-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:11:22-64
 18
 19    <uses-feature android:name="android.hardware.camera" />
-19-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:13:5-60
-19-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:13:19-57
+19-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:13:5-60
+19-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:13:19-57
 20
 21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-21-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:15:5-80
-21-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:15:22-77
+21-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:15:5-80
+21-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:15:22-77
 22
 23    <uses-feature
-23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\erick.burgos\caches\transforms-3\a2c19718884766a3819cfb174d1e8c8d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+23-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
 24        android:glEsVersion="0x00020000"
-24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\erick.burgos\caches\transforms-3\a2c19718884766a3819cfb174d1e8c8d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+24-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
 25        android:required="true" />
-25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\erick.burgos\caches\transforms-3\a2c19718884766a3819cfb174d1e8c8d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+25-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 26
 27    <application
-27-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:17:5-181:19
+27-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:17:5-187:19
 28        android:allowBackup="true"
-28-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:18:9-35
+28-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:18:9-35
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] C:\Users\erick.burgos\caches\transforms-3\2eb885f97fd035152f7fd48c5013e690\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/iconoapp_liz"
-31-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:19:9-44
+31-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:19:9-44
 32        android:label="GEOSEGALMEX"
-32-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:20:9-36
+32-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:20:9-36
 33        android:requestLegacyExternalStorage="true"
-33-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:21:9-52
+33-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:21:9-52
 34        android:roundIcon="@mipmap/iconoapp_liz_round"
-34-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:22:9-55
+34-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:22:9-55
 35        android:supportsRtl="true"
-35-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:23:9-35
+35-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:23:9-35
 36        android:testOnly="true"
 37        android:theme="@style/AppTheme"
-37-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:24:9-40
+37-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:24:9-40
 38        android:usesCleartextTraffic="true" >
-38-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:25:9-44
+38-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:25:9-44
 39        <activity
-39-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:26:9-28:39
-40            android:name="com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos"
-40-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:27:13-70
+39-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:26:9-28:39
+40            android:name="com.example.geosegalmex.PAROperativo.PAR_Operativo"
+40-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:27:13-55
 41            android:exported="true" />
-41-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:28:13-36
+41-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:28:13-36
 42        <activity
-42-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:29:9-31:39
-43            android:name="com.example.geosegalmex.PARBeneficiario.PARBeneficiario"
-43-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:30:13-60
+42-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:29:9-31:39
+43            android:name="com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos"
+43-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:30:13-71
 44            android:exported="true" />
-44-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:31:13-36
+44-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:31:13-36
 45        <activity
-45-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:32:9-34:39
-46            android:name="com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario"
-46-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:33:13-65
+45-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:32:9-34:39
+46            android:name="com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos"
+46-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:33:13-70
 47            android:exported="true" />
-47-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:34:13-36
+47-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:34:13-36
 48        <activity
-48-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:35:9-37:39
-49            android:name="com.example.geosegalmex.LiconsaVentanilla.PASLOperativo"
-49-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:36:13-60
+48-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:35:9-37:39
+49            android:name="com.example.geosegalmex.PARBeneficiario.PARBeneficiario"
+49-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:36:13-60
 50            android:exported="true" />
-50-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:37:13-36
-51        <activity android:name="com.example.geosegalmex.NewCamara" />
-51-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:38:9-47
-51-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:38:19-44
-52        <activity android:name="com.example.geosegalmex.apicola.HerramientasProteccion" />
-52-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:39:9-68
-52-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:39:19-65
-53        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_4" />
-53-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:40:9-73
-53-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:40:19-70
-54        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_3" />
-54-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:41:9-73
-54-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:41:19-70
-55        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_2" />
-55-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:42:9-73
-55-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:42:19-70
-56        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_1" />
-56-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:43:9-73
-56-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:43:19-70
-57        <activity android:name="com.example.geosegalmex.frutales.frutales_4_0" />
-57-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:44:9-59
-57-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:44:19-56
-58        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_3_1" />
-58-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:45:9-81
-58-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:45:19-78
-59        <activity android:name="com.example.geosegalmex.caracterizacion.variables_caracterizacion.CalendarioDate" />
-59-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:46:9-94
-59-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:46:19-91
-60        <activity android:name="com.example.geosegalmex.unidadproduccion.FuenteAgua" />
-60-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:47:9-65
-60-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:47:19-62
-61        <activity android:name="com.example.geosegalmex.Gps.GpsEnableb" />
-61-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:48:9-52
-61-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:48:19-49
-62        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi" />
-62-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:49:9-84
-62-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:49:19-81
-63        <activity android:name="com.example.geosegalmex.apicola.SanidadApicola" />
-63-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:50:9-60
-63-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:50:19-57
-64        <activity android:name="com.example.geosegalmex.apicola.ReproduccionApicola" />
-64-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:51:9-65
-64-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:51:19-62
-65        <activity android:name="com.example.geosegalmex.apicola.ManejoApicola" />
-65-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:52:9-59
-65-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:52:19-56
-66        <activity android:name="com.example.geosegalmex.apicola.EnfermedadesCambioPanales" />
-66-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:53:9-71
-66-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:53:19-68
-67        <activity android:name="com.example.geosegalmex.apicola.CosechaApicola" />
-67-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:54:9-60
-67-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:54:19-57
-68        <activity android:name="com.example.geosegalmex.apicola.CapacitacionAsistenciaApicola" />
-68-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:55:9-75
-68-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:55:19-72
-69        <activity android:name="com.example.geosegalmex.apicola.AspectosProductivosApicola" />
-69-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:56:9-72
-69-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:56:19-69
-70        <activity android:name="com.example.geosegalmex.apicola.AlimentacionApicola" />
-70-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:57:9-65
-70-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:57:19-62
-71        <activity android:name="com.example.geosegalmex.apicola.ApicolaInicio" />
-71-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:58:9-59
-71-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:58:19-56
-72        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_8" />
-72-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:59:9-79
-72-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:59:19-76
-73        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_7" />
-73-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:60:9-79
-73-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:60:19-76
-74        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_6" />
-74-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:61:9-79
-74-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:61:19-76
-75        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_5" />
-75-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:62:9-79
-75-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:62:19-76
-76        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_4" />
-76-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:63:9-79
-76-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:63:19-76
-77        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_3" />
-77-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:64:9-79
-77-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:64:19-76
-78        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_2" />
-78-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:65:9-79
-78-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:65:19-76
-79        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_1" />
-79-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:66:9-79
-79-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:66:19-76
-80        <activity android:name="com.example.geosegalmex.Productor.ProductorInfo" />
-80-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:67:9-61
-80-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:67:19-58
-81        <activity android:name="com.example.geosegalmex.Productor.ProductorEconom" />
-81-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:68:9-63
-81-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:68:19-60
-82        <activity android:name="com.example.geosegalmex.Productor.IntegranteFamilia" />
-82-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:69:9-65
-82-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:69:19-62
-83        <activity android:name="com.example.geosegalmex.Productor.ProductorFamilia" />
-83-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:70:9-64
-83-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:70:19-61
-84        <activity android:name="com.example.geosegalmex.infraestructura_1" />
-84-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:71:9-55
-84-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:71:19-52
-85        <activity android:name="com.example.geosegalmex.frutales.frutales_14" />
-85-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:72:9-58
-85-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:72:19-55
-86        <activity android:name="com.example.geosegalmex.frutales.frutales_13" />
-86-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:73:9-58
-86-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:73:19-55
-87        <activity android:name="com.example.geosegalmex.frutales.frutales_12" />
-87-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:74:9-58
-87-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:74:19-55
-88        <activity android:name="com.example.geosegalmex.frutales.frutales_11" />
-88-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:75:9-58
-88-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:75:19-55
-89        <activity android:name="com.example.geosegalmex.frutales.frutales_10" />
-89-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:76:9-58
-89-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:76:19-55
-90        <activity android:name="com.example.geosegalmex.frutales.frutales_9" />
-90-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:77:9-57
-90-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:77:19-54
-91        <activity android:name="com.example.geosegalmex.frutales.frutales_8" />
-91-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:78:9-57
-91-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:78:19-54
-92        <activity android:name="com.example.geosegalmex.frutales.frutales_7" />
-92-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:79:9-57
-92-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:79:19-54
-93        <activity android:name="com.example.geosegalmex.frutales.frutales_6" />
-93-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:80:9-57
-93-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:80:19-54
-94        <activity android:name="com.example.geosegalmex.frutales.frutales_5" />
-94-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:81:9-57
-94-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:81:19-54
-95        <activity android:name="com.example.geosegalmex.frutales.frutales_4" />
-95-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:82:9-57
-95-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:82:19-54
-96        <activity android:name="com.example.geosegalmex.frutales.frutales_3" />
-96-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:83:9-57
-96-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:83:19-54
-97        <activity android:name="com.example.geosegalmex.frutales.frutales_2" />
-97-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:84:9-57
-97-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:84:19-54
-98        <activity android:name="com.example.geosegalmex.frutales.frutales_1" />
-98-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:85:9-57
-98-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:85:19-54
-99        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.date.CalendarioActivity" />
-99-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:86:9-93
-99-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:86:19-90
-100        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.TiempoRiego" />
-100-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:87:9-81
-100-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:87:19-78
-101        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.PostCosecha" />
-101-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:88:9-81
-101-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:88:19-78
-102        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.Nutricion" />
-102-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:89:9-79
-102-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:89:19-76
-103        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPvunoD" />
-103-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:90:9-86
-103-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:90:19-83
-104        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPvunoC" />
-104-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:91:9-86
-104-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:91:19-83
-105        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPvunob" />
-105-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:92:9-86
-105-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:92:19-83
-106        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPVuno" />
-106-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:93:9-85
-106-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:93:19-82
-107        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.FoliarRiego" />
-107-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:94:9-81
-107-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:94:19-78
-108        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.CosechaB" />
-108-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:95:9-78
-108-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:95:19-75
-109        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.Cosecha" />
-109-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:96:9-77
-109-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:96:19-74
-110        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermC" />
-110-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:97:9-90
-110-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:97:19-87
-111        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB" />
-111-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:98:9-90
-111-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:98:19-87
-112        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnferm" />
-112-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:99:9-89
-112-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:99:19-86
-113        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlMalezas" />
-113-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:100:9-84
-113-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:100:19-81
-114        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.hortalizas" />
-114-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:101:9-80
-114-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:101:19-77
-115        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion12" />
-115-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:102:9-77
-115-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:102:19-74
-116        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion11" />
-116-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:103:9-77
-116-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:103:19-74
-117        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion10" />
-117-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:104:9-77
-117-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:104:19-74
-118        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion9" />
-118-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:105:9-76
-118-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:105:19-73
-119        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion8" />
-119-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:106:9-76
-119-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:106:19-73
-120        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion7" />
-120-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:107:9-76
-120-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:107:19-73
-121        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion6" />
-121-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:108:9-76
-121-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:108:19-73
-122        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion_tabla" />
-122-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:109:9-81
-122-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:109:19-78
-123        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion5" />
-123-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:110:9-76
-123-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:110:19-73
-124        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion4" />
-124-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:111:9-76
-124-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:111:19-73
-125        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion2" />
-125-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:112:9-76
-125-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:112:19-73
-126        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion" />
-126-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:113:9-75
-126-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:113:19-72
-127        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_carac" />
-127-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:114:9-65
-127-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:114:19-62
-128        <activity android:name="com.example.geosegalmex.unidadproduccion.ModalidadHidrica" />
-128-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:115:9-71
-128-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:115:19-68
-129        <activity android:name="com.example.geosegalmex.unidadproduccion.TenenciaTierra" />
-129-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:116:9-69
-129-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:116:19-66
-130        <activity android:name="com.example.geosegalmex.unidadproduccion.TiposAlimentosTres" />
-130-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:117:9-73
-130-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:117:19-70
-131        <activity android:name="com.example.geosegalmex.unidadproduccion.TiposAlimentosDos" />
-131-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:118:9-72
-131-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:118:19-69
-132        <activity android:name="com.example.geosegalmex.unidadproduccion.TiposAlimentos" />
-132-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:119:9-69
-132-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:119:19-66
-133        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionAcuicola" />
-133-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:120:9-73
-133-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:120:19-70
-134        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionForestal" />
-134-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:121:9-73
-134-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:121:19-70
-135        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionPecuaria" />
-135-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:122:9-73
-135-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:122:19-70
-136        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionAgricola" />
-136-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:123:9-73
-136-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:123:19-70
-137        <activity android:name="com.example.geosegalmex.unidadproduccion.UnidadProduccion" />
-137-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:124:9-71
-137-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:124:19-68
-138        <activity android:name="com.example.geosegalmex.Pecuario.EstructuraDelHato" />
-138-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:125:9-64
-138-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:125:19-61
-139        <activity android:name="com.example.geosegalmex.Pecuario.InventarioGanadoOvino" />
-139-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:126:9-68
-139-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:126:19-65
-140        <activity android:name="com.example.geosegalmex.Pecuario.InventarioGanBovinoLeche" />
-140-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:127:9-71
-140-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:127:19-68
-141        <activity android:name="com.example.geosegalmex.Pecuario.InventarioGanCaprino" />
-141-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:128:9-67
-141-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:128:19-64
-142        <activity android:name="com.example.geosegalmex.Pecuario.ManejoSanitarioOrdenia" />
-142-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:129:9-69
-142-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:129:19-66
-143        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioAgregarAlimentos" />
-143-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:130:9-71
-143-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:130:19-68
-144        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado" />
-144-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:131:9-73
-144-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:131:19-70
-145        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioCaprinos" />
-145-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:132:9-63
-145-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:132:19-60
-146        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioComposicDietaOvinosCaprinos" />
-146-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:133:9-82
-146-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:133:19-79
-147        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioDietaOvinosCaprinosAlimentos" />
-147-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:134:9-83
-147-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:134:19-80
-148        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioEventosUnidadProduccion" />
-148-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:135:9-78
-148-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:135:19-75
-149        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioInicio" />
-149-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:136:9-61
-149-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:136:19-58
-150        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioManejoAgostadero" />
-150-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:137:9-71
-150-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:137:19-68
-151        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioManejoSanGanado" />
-151-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:138:9-70
-151-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:138:19-67
-152        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioOvinos" />
-152-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:139:9-61
-152-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:139:19-58
-153        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioParamProdReproductivos" />
-153-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:140:9-77
-153-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:140:19-74
-154        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica" />
-154-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:141:9-75
-154-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:141:19-72
-155        <activity android:name="com.example.geosegalmex.Gps.GpsTrayectoria" />
-155-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:142:9-56
-155-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:142:19-53
-156        <activity android:name="com.example.geosegalmex.Gps.GpsActivity" />
-156-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:143:9-53
-156-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:143:19-50
-157        <activity
-157-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:144:9-147:59
-158            android:name="com.example.geosegalmex.drawer.DrawerActivity"
-158-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:145:13-50
-159            android:label="Drawer"
-159-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:146:13-35
-160            android:theme="@style/AppTheme.NoActionBar" />
-160-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:147:13-56
-161        <activity android:name="com.example.geosegalmex.Georeferencia.GeoreferenciaActivity" />
-161-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:148:9-73
-161-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:148:19-70
-162        <activity android:name="com.example.geosegalmex.Geo.GeoFotos" />
-162-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:149:9-50
-162-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:149:19-47
-163        <activity android:name="com.example.geosegalmex.Geo.FotoActivityDos" />
-163-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:150:9-57
-163-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:150:19-54
-164        <activity android:name="com.example.geosegalmex.Geo.FotoActivityUno" />
-164-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:151:9-57
-164-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:151:19-54
-165        <activity android:name="com.example.geosegalmex.IdentificacionCuestionario" />
-165-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:152:9-64
-165-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:152:19-61
-166        <activity android:name="com.example.geosegalmex.Segunda" />
-166-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:153:9-45
-166-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:153:19-42
-167        <activity android:name="com.example.geosegalmex.Principal" >
-167-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:154:9-160:20
-167-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:154:19-44
-168            <intent-filter>
-168-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:155:13-159:29
-169                <action android:name="android.intent.action.MAIN" />
-169-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:156:17-69
-169-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:156:25-66
-170
-171                <category android:name="android.intent.category.LAUNCHER" />
-171-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:158:17-77
-171-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:158:27-74
-172            </intent-filter>
-173        </activity>
-174
-175        <meta-data
-175-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:162:9-164:50
-176            android:name="com.google.android.actions"
-176-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:163:13-54
-177            android:resource="@xml/file_paths" />
-177-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:164:13-47
-178        <meta-data
-178-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:165:9-167:69
-179            android:name="com.google.android.gms.version"
-179-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:166:13-58
-180            android:value="@integer/google_play_services_version" />
-180-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:167:13-66
+50-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:37:13-36
+51        <activity
+51-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:38:9-40:39
+52            android:name="com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario"
+52-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:39:13-65
+53            android:exported="true" />
+53-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:40:13-36
+54        <activity
+54-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:41:9-43:39
+55            android:name="com.example.geosegalmex.LiconsaVentanilla.PASLOperativo"
+55-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:42:13-60
+56            android:exported="true" />
+56-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:43:13-36
+57        <activity android:name="com.example.geosegalmex.NewCamara" />
+57-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:44:9-47
+57-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:44:19-44
+58        <activity android:name="com.example.geosegalmex.apicola.HerramientasProteccion" />
+58-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:45:9-68
+58-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:45:19-65
+59        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_4" />
+59-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:46:9-73
+59-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:46:19-70
+60        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_3" />
+60-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:47:9-73
+60-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:47:19-70
+61        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_2" />
+61-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:48:9-73
+61-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:48:19-70
+62        <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_1" />
+62-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:49:9-73
+62-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:49:19-70
+63        <activity android:name="com.example.geosegalmex.frutales.frutales_4_0" />
+63-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:50:9-59
+63-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:50:19-56
+64        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_3_1" />
+64-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:51:9-81
+64-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:51:19-78
+65        <activity android:name="com.example.geosegalmex.caracterizacion.variables_caracterizacion.CalendarioDate" />
+65-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:52:9-94
+65-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:52:19-91
+66        <activity android:name="com.example.geosegalmex.unidadproduccion.FuenteAgua" />
+66-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:53:9-65
+66-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:53:19-62
+67        <activity android:name="com.example.geosegalmex.Gps.GpsEnableb" />
+67-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:54:9-52
+67-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:54:19-49
+68        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi" />
+68-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:55:9-84
+68-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:55:19-81
+69        <activity android:name="com.example.geosegalmex.apicola.SanidadApicola" />
+69-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:56:9-60
+69-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:56:19-57
+70        <activity android:name="com.example.geosegalmex.apicola.ReproduccionApicola" />
+70-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:57:9-65
+70-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:57:19-62
+71        <activity android:name="com.example.geosegalmex.apicola.ManejoApicola" />
+71-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:58:9-59
+71-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:58:19-56
+72        <activity android:name="com.example.geosegalmex.apicola.EnfermedadesCambioPanales" />
+72-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:59:9-71
+72-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:59:19-68
+73        <activity android:name="com.example.geosegalmex.apicola.CosechaApicola" />
+73-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:60:9-60
+73-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:60:19-57
+74        <activity android:name="com.example.geosegalmex.apicola.CapacitacionAsistenciaApicola" />
+74-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:61:9-75
+74-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:61:19-72
+75        <activity android:name="com.example.geosegalmex.apicola.AspectosProductivosApicola" />
+75-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:62:9-72
+75-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:62:19-69
+76        <activity android:name="com.example.geosegalmex.apicola.AlimentacionApicola" />
+76-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:63:9-65
+76-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:63:19-62
+77        <activity android:name="com.example.geosegalmex.apicola.ApicolaInicio" />
+77-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:64:9-59
+77-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:64:19-56
+78        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_8" />
+78-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:65:9-79
+78-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:65:19-76
+79        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_7" />
+79-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:66:9-79
+79-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:66:19-76
+80        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_6" />
+80-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:67:9-79
+80-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:67:19-76
+81        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_5" />
+81-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:68:9-79
+81-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:68:19-76
+82        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_4" />
+82-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:69:9-79
+82-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:69:19-76
+83        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_3" />
+83-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:70:9-79
+83-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:70:19-76
+84        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_2" />
+84-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:71:9-79
+84-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:71:19-76
+85        <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_1" />
+85-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:72:9-79
+85-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:72:19-76
+86        <activity android:name="com.example.geosegalmex.Productor.ProductorInfo" />
+86-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:73:9-61
+86-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:73:19-58
+87        <activity android:name="com.example.geosegalmex.Productor.ProductorEconom" />
+87-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:74:9-63
+87-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:74:19-60
+88        <activity android:name="com.example.geosegalmex.Productor.IntegranteFamilia" />
+88-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:75:9-65
+88-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:75:19-62
+89        <activity android:name="com.example.geosegalmex.Productor.ProductorFamilia" />
+89-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:76:9-64
+89-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:76:19-61
+90        <activity android:name="com.example.geosegalmex.infraestructura_1" />
+90-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:77:9-55
+90-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:77:19-52
+91        <activity android:name="com.example.geosegalmex.frutales.frutales_14" />
+91-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:78:9-58
+91-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:78:19-55
+92        <activity android:name="com.example.geosegalmex.frutales.frutales_13" />
+92-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:79:9-58
+92-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:79:19-55
+93        <activity android:name="com.example.geosegalmex.frutales.frutales_12" />
+93-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:80:9-58
+93-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:80:19-55
+94        <activity android:name="com.example.geosegalmex.frutales.frutales_11" />
+94-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:81:9-58
+94-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:81:19-55
+95        <activity android:name="com.example.geosegalmex.frutales.frutales_10" />
+95-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:82:9-58
+95-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:82:19-55
+96        <activity android:name="com.example.geosegalmex.frutales.frutales_9" />
+96-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:83:9-57
+96-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:83:19-54
+97        <activity android:name="com.example.geosegalmex.frutales.frutales_8" />
+97-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:84:9-57
+97-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:84:19-54
+98        <activity android:name="com.example.geosegalmex.frutales.frutales_7" />
+98-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:85:9-57
+98-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:85:19-54
+99        <activity android:name="com.example.geosegalmex.frutales.frutales_6" />
+99-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:86:9-57
+99-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:86:19-54
+100        <activity android:name="com.example.geosegalmex.frutales.frutales_5" />
+100-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:87:9-57
+100-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:87:19-54
+101        <activity android:name="com.example.geosegalmex.frutales.frutales_4" />
+101-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:88:9-57
+101-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:88:19-54
+102        <activity android:name="com.example.geosegalmex.frutales.frutales_3" />
+102-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:89:9-57
+102-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:89:19-54
+103        <activity android:name="com.example.geosegalmex.frutales.frutales_2" />
+103-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:90:9-57
+103-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:90:19-54
+104        <activity android:name="com.example.geosegalmex.frutales.frutales_1" />
+104-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:91:9-57
+104-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:91:19-54
+105        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.date.CalendarioActivity" />
+105-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:92:9-93
+105-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:92:19-90
+106        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.TiempoRiego" />
+106-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:93:9-81
+106-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:93:19-78
+107        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.PostCosecha" />
+107-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:94:9-81
+107-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:94:19-78
+108        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.Nutricion" />
+108-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:95:9-79
+108-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:95:19-76
+109        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPvunoD" />
+109-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:96:9-86
+109-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:96:19-83
+110        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPvunoC" />
+110-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:97:9-86
+110-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:97:19-83
+111        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPvunob" />
+111-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:98:9-86
+111-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:98:19-83
+112        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPVuno" />
+112-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:99:9-85
+112-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:99:19-82
+113        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.FoliarRiego" />
+113-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:100:9-81
+113-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:100:19-78
+114        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.CosechaB" />
+114-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:101:9-78
+114-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:101:19-75
+115        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.Cosecha" />
+115-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:102:9-77
+115-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:102:19-74
+116        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermC" />
+116-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:103:9-90
+116-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:103:19-87
+117        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB" />
+117-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:104:9-90
+117-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:104:19-87
+118        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnferm" />
+118-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:105:9-89
+118-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:105:19-86
+119        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlMalezas" />
+119-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:106:9-84
+119-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:106:19-81
+120        <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.hortalizas" />
+120-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:107:9-80
+120-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:107:19-77
+121        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion12" />
+121-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:108:9-77
+121-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:108:19-74
+122        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion11" />
+122-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:109:9-77
+122-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:109:19-74
+123        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion10" />
+123-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:110:9-77
+123-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:110:19-74
+124        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion9" />
+124-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:111:9-76
+124-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:111:19-73
+125        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion8" />
+125-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:112:9-76
+125-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:112:19-73
+126        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion7" />
+126-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:113:9-76
+126-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:113:19-73
+127        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion6" />
+127-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:114:9-76
+127-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:114:19-73
+128        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion_tabla" />
+128-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:115:9-81
+128-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:115:19-78
+129        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion5" />
+129-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:116:9-76
+129-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:116:19-73
+130        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion4" />
+130-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:117:9-76
+130-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:117:19-73
+131        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion2" />
+131-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:118:9-76
+131-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:118:19-73
+132        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_caracterizacion" />
+132-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:119:9-75
+132-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:119:19-72
+133        <activity android:name="com.example.geosegalmex.caracterizacion.ciclo_carac" />
+133-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:120:9-65
+133-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:120:19-62
+134        <activity android:name="com.example.geosegalmex.unidadproduccion.ModalidadHidrica" />
+134-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:121:9-71
+134-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:121:19-68
+135        <activity android:name="com.example.geosegalmex.unidadproduccion.TenenciaTierra" />
+135-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:122:9-69
+135-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:122:19-66
+136        <activity android:name="com.example.geosegalmex.unidadproduccion.TiposAlimentosTres" />
+136-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:123:9-73
+136-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:123:19-70
+137        <activity android:name="com.example.geosegalmex.unidadproduccion.TiposAlimentosDos" />
+137-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:124:9-72
+137-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:124:19-69
+138        <activity android:name="com.example.geosegalmex.unidadproduccion.TiposAlimentos" />
+138-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:125:9-69
+138-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:125:19-66
+139        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionAcuicola" />
+139-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:126:9-73
+139-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:126:19-70
+140        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionForestal" />
+140-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:127:9-73
+140-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:127:19-70
+141        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionPecuaria" />
+141-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:128:9-73
+141-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:128:19-70
+142        <activity android:name="com.example.geosegalmex.unidadproduccion.ProduccionAgricola" />
+142-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:129:9-73
+142-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:129:19-70
+143        <activity android:name="com.example.geosegalmex.unidadproduccion.UnidadProduccion" />
+143-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:130:9-71
+143-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:130:19-68
+144        <activity android:name="com.example.geosegalmex.Pecuario.EstructuraDelHato" />
+144-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:131:9-64
+144-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:131:19-61
+145        <activity android:name="com.example.geosegalmex.Pecuario.InventarioGanadoOvino" />
+145-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:132:9-68
+145-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:132:19-65
+146        <activity android:name="com.example.geosegalmex.Pecuario.InventarioGanBovinoLeche" />
+146-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:133:9-71
+146-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:133:19-68
+147        <activity android:name="com.example.geosegalmex.Pecuario.InventarioGanCaprino" />
+147-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:134:9-67
+147-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:134:19-64
+148        <activity android:name="com.example.geosegalmex.Pecuario.ManejoSanitarioOrdenia" />
+148-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:135:9-69
+148-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:135:19-66
+149        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioAgregarAlimentos" />
+149-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:136:9-71
+149-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:136:19-68
+150        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado" />
+150-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:137:9-73
+150-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:137:19-70
+151        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioCaprinos" />
+151-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:138:9-63
+151-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:138:19-60
+152        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioComposicDietaOvinosCaprinos" />
+152-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:139:9-82
+152-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:139:19-79
+153        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioDietaOvinosCaprinosAlimentos" />
+153-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:140:9-83
+153-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:140:19-80
+154        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioEventosUnidadProduccion" />
+154-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:141:9-78
+154-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:141:19-75
+155        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioInicio" />
+155-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:142:9-61
+155-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:142:19-58
+156        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioManejoAgostadero" />
+156-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:143:9-71
+156-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:143:19-68
+157        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioManejoSanGanado" />
+157-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:144:9-70
+157-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:144:19-67
+158        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioOvinos" />
+158-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:145:9-61
+158-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:145:19-58
+159        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioParamProdReproductivos" />
+159-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:146:9-77
+159-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:146:19-74
+160        <activity android:name="com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica" />
+160-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:147:9-75
+160-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:147:19-72
+161        <activity android:name="com.example.geosegalmex.Gps.GpsTrayectoria" />
+161-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:148:9-56
+161-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:148:19-53
+162        <activity android:name="com.example.geosegalmex.Gps.GpsActivity" />
+162-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:149:9-53
+162-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:149:19-50
+163        <activity
+163-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:150:9-153:59
+164            android:name="com.example.geosegalmex.drawer.DrawerActivity"
+164-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:151:13-50
+165            android:label="Drawer"
+165-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:152:13-35
+166            android:theme="@style/AppTheme.NoActionBar" />
+166-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:153:13-56
+167        <activity android:name="com.example.geosegalmex.Georeferencia.GeoreferenciaActivity" />
+167-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:154:9-73
+167-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:154:19-70
+168        <activity android:name="com.example.geosegalmex.Geo.GeoFotos" />
+168-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:155:9-50
+168-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:155:19-47
+169        <activity android:name="com.example.geosegalmex.Geo.FotoActivityDos" />
+169-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:156:9-57
+169-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:156:19-54
+170        <activity android:name="com.example.geosegalmex.Geo.FotoActivityUno" />
+170-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:157:9-57
+170-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:157:19-54
+171        <activity android:name="com.example.geosegalmex.IdentificacionCuestionario" />
+171-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:158:9-64
+171-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:158:19-61
+172        <activity android:name="com.example.geosegalmex.Segunda" />
+172-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:159:9-45
+172-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:159:19-42
+173        <activity android:name="com.example.geosegalmex.Principal" >
+173-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:160:9-166:20
+173-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:160:19-44
+174            <intent-filter>
+174-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:161:13-165:29
+175                <action android:name="android.intent.action.MAIN" />
+175-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:162:17-69
+175-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:162:25-66
+176
+177                <category android:name="android.intent.category.LAUNCHER" />
+177-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:164:17-77
+177-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:164:27-74
+178            </intent-filter>
+179        </activity>
+180
 181        <meta-data
-181-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:168:9-170:71
-182            android:name="com.google.android.geo.API_KEY"
-182-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:169:13-58
-183            android:value="AIzaSyBWRIUBSVY-2SKcteFyw4SaXTfGD9L_UQY" />
-183-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:170:13-68
-184
-185        <provider
-185-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:172:9-180:20
-186            android:name="androidx.core.content.FileProvider"
-186-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:173:13-62
-187            android:authorities="com.example.geosegalmex.fileprovider"
-187-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:174:13-71
-188            android:exported="false"
-188-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:175:13-37
-189            android:grantUriPermissions="true" >
-189-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:176:13-47
-190            <meta-data
-190-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:177:13-179:54
-191                android:name="android.support.FILE_PROVIDER_PATHS"
-191-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:178:17-67
-192                android:resource="@xml/file_paths" />
-192-->C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:179:17-51
-193        </provider>
-194        <!-- Needs to be explicitly declared on P+ -->
-195        <uses-library
-195-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\erick.burgos\caches\transforms-3\a2c19718884766a3819cfb174d1e8c8d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-196            android:name="org.apache.http.legacy"
-196-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\erick.burgos\caches\transforms-3\a2c19718884766a3819cfb174d1e8c8d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-197            android:required="false" />
-197-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\erick.burgos\caches\transforms-3\a2c19718884766a3819cfb174d1e8c8d\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-198
-199        <activity
-199-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\ee92f22a1ee2214579766684575d8b5a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-200            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-200-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\ee92f22a1ee2214579766684575d8b5a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-201            android:exported="false"
-201-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\ee92f22a1ee2214579766684575d8b5a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-202            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-202-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\ee92f22a1ee2214579766684575d8b5a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-203
-204        <provider
-204-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\erick.burgos\caches\transforms-3\c7518ddfb63c38057fe9c3ff1a305a51\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-205            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-205-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\erick.burgos\caches\transforms-3\c7518ddfb63c38057fe9c3ff1a305a51\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-206            android:authorities="com.siap.GeoSegalmex.lifecycle-process"
-206-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\erick.burgos\caches\transforms-3\c7518ddfb63c38057fe9c3ff1a305a51\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+181-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:168:9-170:50
+182            android:name="com.google.android.actions"
+182-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:169:13-54
+183            android:resource="@xml/file_paths" />
+183-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:170:13-47
+184        <meta-data
+184-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:171:9-173:69
+185            android:name="com.google.android.gms.version"
+185-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:172:13-58
+186            android:value="@integer/google_play_services_version" />
+186-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:173:13-66
+187        <meta-data
+187-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:174:9-176:71
+188            android:name="com.google.android.geo.API_KEY"
+188-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:175:13-58
+189            android:value="AIzaSyBWRIUBSVY-2SKcteFyw4SaXTfGD9L_UQY" />
+189-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:176:13-68
+190
+191        <provider
+191-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:178:9-186:20
+192            android:name="androidx.core.content.FileProvider"
+192-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:179:13-62
+193            android:authorities="com.example.geosegalmex.fileprovider"
+193-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:180:13-71
+194            android:exported="false"
+194-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:181:13-37
+195            android:grantUriPermissions="true" >
+195-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:182:13-47
+196            <meta-data
+196-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:183:13-185:54
+197                android:name="android.support.FILE_PROVIDER_PATHS"
+197-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:184:17-67
+198                android:resource="@xml/file_paths" />
+198-->/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/AndroidManifest.xml:185:17-51
+199        </provider>
+200        <!-- Needs to be explicitly declared on P+ -->
+201        <uses-library
+201-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+202            android:name="org.apache.http.legacy"
+202-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+203            android:required="false" />
+203-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/a2c19718884766a3819cfb174d1e8c8d/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+204
+205        <activity
+205-->[com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+206            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+206-->[com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
 207            android:exported="false"
-207-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\erick.burgos\caches\transforms-3\c7518ddfb63c38057fe9c3ff1a305a51\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-208            android:multiprocess="true" />
-208-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\erick.burgos\caches\transforms-3\c7518ddfb63c38057fe9c3ff1a305a51\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-209    </application>
-210
-211</manifest>
+207-->[com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+208            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+208-->[com.google.android.gms:play-services-base:17.0.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/ee92f22a1ee2214579766684575d8b5a/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+209
+210        <provider
+210-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+211            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+211-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+212            android:authorities="com.siap.GeoSegalmex.lifecycle-process"
+212-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+213            android:exported="false"
+213-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+214            android:multiprocess="true" />
+214-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/dti-siap/Library/Android/sdk/caches/transforms-3/c7518ddfb63c38057fe9c3ff1a305a51/transformed/jetified-lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+215    </application>
+216
+217</manifest>

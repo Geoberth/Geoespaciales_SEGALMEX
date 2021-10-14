@@ -6,6 +6,10 @@
     <item>PASL Operativo</item>
     <item>PASL Beneficiario</item>
     <item>PG Operativo Estimulos</item>
+        <item>PG Beneficiario Granos</item>
+        <item>PAR Beneficiario</item>
+        <item>PAR Operativo</item>
+        <item>Liconsa</item>
 
     </string-array>
 

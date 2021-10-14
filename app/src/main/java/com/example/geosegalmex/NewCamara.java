@@ -20,8 +20,12 @@ import android.provider.MediaStore;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.geosegalmex.Liconsa.Liconsa;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
+import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
+import com.example.geosegalmex.PAROperativo.PAR_Operativo;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
 
 import java.io.File;
@@ -153,11 +157,23 @@ public class NewCamara extends AppCompatActivity {
                                 else if(General.Proyecto.equals("PG Operativo Estimulos")){
                                     startActivity(new Intent(getApplication(), PGOperativoEstimulos.class));
                                 }
+                                else if (General.Proyecto.equals("PG Beneficiario Granos")){
+                                    startActivity(new Intent(getApplication(), PGBeneficiariosGranos.class));
+                                }
+                                else if (General.Proyecto.equals("PAR Beneficiario")){
+                                    startActivity(new Intent(getApplication(), PARBeneficiario.class));
+                                }
+                                else if (General.Proyecto.equals("PAR Operativo")){
+                                    startActivity(new Intent(getApplication(), PAR_Operativo.class));
+                                }
+                                else if (General.Proyecto.equals("Liconsa")){
+                                    startActivity(new Intent(getApplication(), Liconsa.class));
+                                }
                                 else{
                                     startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
                                 }
                             }
-                        },1000);
+                        }, 1000);
                     }
                 }
             }

@@ -1,0 +1,2383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Liconsa.Liconsa">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ENCUESTA PARA LA ACTUALIZACIÓN Y COMPLEMENTACIÓN DEL REGISTRO NACIONAL DE PRODUCTORES DE LECHE DE LICONSA"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:text="CUESTIONARIO PARA PRODUCTORES DE LECHE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="INFORMACIÓN PERSONAL"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:text="1. Confirme los datos del productor"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre(s):"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido Paterno:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido Materno:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de nacimiento:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="dd/mm/aaaa"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SEXO:"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hombre" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mujer" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nacionalidad:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CURP:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt6"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RFC:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de identificación:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Número de identificación:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt9"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Electrónico:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt10"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="user@example.com"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt11"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de teléfono:"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch1"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="Casa" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch2"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="Trabajo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch3"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="Celular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DATOS DE DOMICILIO"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:text="2. ¿Cúal es la dirección del productor?"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calle:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt12"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Num Int:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt13"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Num Ext:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt14"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Colonia"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/enc_lic_txt15"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Código Postal"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/enc_lic_txt16"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ENTIDAD FEDERATIVA:"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/enc_lic_spin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clave (Entidad Federativa)"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/enc_lic_txt17"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp"
+                    android:hint="Clave"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MUNICIPIO"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/enc_lic_spin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clave (Municipio)"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt18"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp"
+                    android:hint="Clave"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:text="En caso de ser necesario:"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Asentamiento:"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Urbano" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rural" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de Asentamiento"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt19"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clave (Asentamiento)"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt20"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp"
+                    android:hint="Clave"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de vialidad"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt21"
+                    android:layout_width="300dp"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el nombre"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de vialidad"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calle" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ampliación" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Andador" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avenida" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Boulevard" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Callejón" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calzada" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cerrada" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Circuito" />
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Circunvalación" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Continuación" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eje vial" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Corredor" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diagonal" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pasaje" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Períferico" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prolongación" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privada" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Retorno" />
+
+                </RadioGroup>
+
+                <RadioButton
+
+                    android:id="@+id/enc_lic_ra24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viaducto" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Longitud"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt22"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint=" 15.23456"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Latitud"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt23"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint=" -30.67890"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DATOS DE CARACTERIZACIÓN"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3. ¿Pertenece el productor a alguna asociación campesina u organización de productores? De ser así, proporcione el nombre:"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No  " />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre de asociación"
+                        android:maxLines="1"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Régimen de propiedad:"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pública" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privada" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Social" />
+
+                </RadioGroup>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Discapacidad"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tipo de discapacidad"
+                        android:maxLines="1"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="¿Habla lengua indígena?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No  " />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Declaratoria indígena (Pueblo o comunidad indígena a la que pertenece)"
+                        android:maxLines="1"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DATOS DE PRODUCCIÓN (EXISTENCIAS, PRODUCCIÓN EQUIPO E INSTALACIONES)"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Estatus del productor (¿El productor entrega leche a LICONSA?)"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activo" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inactivo" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clave UPP:"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/enc_lic_txt27"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp"
+                    android:hint="Clave"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:text="EXISTENCIAS"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="1. ¿Cuántas vacas tiene en total?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt28"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Cabezas"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2. Del total de sus vacas ¿Cuántas vacas son sólo para la producción de leche?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt29"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Cabezas"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3. Del total de sus vacas ¿Cuántas vacas son de doble propósito?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt30"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Cabezas"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="4. Del total de sus vacas ¿Cuántas vacas secas tiene?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt31"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Cabezas"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:text="PRODUCCIÓN"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="5. Del total de sus vacas (Doble propósito y producción de leche. ¿Cuánta leche obtiene al día?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt32"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Litros"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="6. En promedio ¿Cuántas vacas ordeña por día?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt33"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Cabezas"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="7. En promedio ¿Cuántos litros diarios de leche obtiene?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt34"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Litros"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="8. En un día ¿Cuántas veces ordeña sus vacas?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt35"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="9. En promedio ¿Cuántos litros de leche vende a LICONSA por día?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt36"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Litros"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="9.1. Indique el tipo de leche que entrega:"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leche fría" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leche caliente" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="9.2. ¿Desde cuándo vende usted su leche a liconsa?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt37"
+                    android:layout_width="160dp"
+                    android:layout_height="62dp"
+                    android:hint="dd/mm/aaaa"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="10. ¿Qué precio le pagan por la venta de su leche?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt38"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Pesos"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="10.1 ¿En cuánto tiempo se le paga?"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt39"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Días"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="10.1 ¿En cuánto tiempo se le paga?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leche fría" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leche caliente" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="11. ¿Considera eficiente el servicio de LICONSA en el centro de acopio?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="12. ¿En cuál de los siguientes aspectos considera que pueden implementase mejoras?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Operación"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Recepción"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Pagos"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Otro"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No " />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Especifique"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="SALAS DE ORDEÑA"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="13. ¿Cuenta con una o más salas de ordeña?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No (Pase a la pregunta 14)" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="i. Entrevistador: Llenar en forma descendente la capacidad de cada una de las salas"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:text=" SALA | CAPACIDAD (Número de vacas ordeñadas simultáneamente)"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Sala 1"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx41"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Cantidad"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Sala 2"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx42"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Cantidad"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Sala 3"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx43"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Cantidad"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Sala 4"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx44"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Cantidad"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Sala 5"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx45"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Cantidad"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="TANQUE DE ENFRIAMIENTO"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="13. ¿Cuenta con uno o más tanques de enfiamiento?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No (Pase a la pregunta 15)" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="i. Entrevistador: Llenar en forma descendente la capacidad de cada uno de los tanques"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:text=" TANQUE | CAPACIDAD (Litros)"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Tanque 1"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx46"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Litros"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Tanque 2"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx47"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Litros"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Tanque 3"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx48"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Litros"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Tanque 4"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx49"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Litros"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Tanque 5"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx50"
+                        android:layout_width="150dp"
+                        android:layout_height="62dp"
+                        android:hint="Litros"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="15. De acuerdo a su experiencia y necesidades. ¿Qué tipo de infraestructura le hace falta?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Maquinaria"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Vehículos"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Refrigeración"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra58"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Otro"
+                        android:textColor="#000000"
+                        android:textStyle="italic|bold" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No " />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Especifique"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="REGISTROS Y CERTIFICACIONES DEL PRODUCTOR"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="16. ¿Cuenta con registro de Unidad de Producción Percuaria (UPP)?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No  " />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Escriba registro"
+                        android:maxLines="1"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="17. ¿Cuenta con registro de Sistema Nacional de Identificación Individual de Ganado (SINIIGA)?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No  " />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Escriba registro"
+                        android:maxLines="1"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="18. ¿Cuenta con algún certificado en buenas prácticas de ordeña?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No  " />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="19. ¿Requiere algún tipo de asistencia técnica u orientación para la certificación?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra68"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra69"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No  " />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="20. ¿Bajo qué régimen fiscal está usted registrado?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Persona Física" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Persona Moral" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sin registro" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nota al Encuestador: "
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="La sección VI deberá haber sido cotejada previamente con el personal de LICONSA para verificar en campo la información del expediente del productor y, en su caso, complementar los campos necesarios para actualizar el registro correspondiente."
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DATOS A VERIFICAR EN EL EXPEDIENTE DEL PRODUCTOR COMO PROVEEDOR DE LICONSA"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="21. ¿El productor está correctamente registrado en el RNPL?"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra73"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra74"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cuenta con código asignado" />
+
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra75"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Requiere actualizar la información" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra76"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+                <RadioButton
+
+                    android:id="@+id/enc_lic_ra77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ha ingresado su solicitud pero no tiene código" />
+
+                <RadioButton
+
+                    android:id="@+id/enc_lic_ra78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No ha ingresado solicitud" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="22. DOCUMENTOS INGRESADOS A SU EXPEDIENTE"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch4"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="RFC." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="CURP" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Estado de cuenta bancaria" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/enc_lic_txt44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CLABE Interbancaria"
+                    android:maxLines="1"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/enc_lic_ch7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Comprobante de domicilio fiscal" />
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/enc_lic_ch8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Comprobante de opinión" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra79"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_height="wrap_content"
+                        android:text="SAT" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra80"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="IMSS" />
+
+                    <RadioButton
+
+                        android:id="@+id/enc_lic_ra81"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_height="wrap_content"
+                        android:text="INFONAVIT" />
+
+                </RadioGroup>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/enc_lic_ch9"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:enabled="true"
+                    android:text="Manifiesto Art. 50 y 60 Ley General de Adquisiciones" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/enc_lic_ch10"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:enabled="true"
+                    android:text="Manifiesto Art. 32-D Código Fiscal de la Federación" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/enc_lic_ch11"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:enabled="true"
+                    android:text="Carta de conformidad con LICONSA" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch12"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="Código contable: " />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt45"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" Especifique."
+                        android:maxLines="1"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/enc_lic_ch13"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="Gerencia o PAS asignado" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_txt46"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" Especifique."
+                        android:maxLines="1"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Tipo de productor:"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <RadioButton
+
+                    android:id="@+id/enc_lic_ra82"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="PEQUEÑO (de 1 – 35 cabezas productoras de leche)" />
+
+                <RadioButton
+
+                    android:id="@+id/enc_lic_ra83"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="MEDIANO (de 36 – 100 cabezas productoras de leche)" />
+
+                <RadioButton
+
+                    android:id="@+id/enc_lic_ra84"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="GRANDE (más DE 100 cabezas productoras de leche)" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DATOS DE LA ORGANIZACIÓN A LA QUE PERTENECE (En caso que aplique):"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/enc_lic_txt47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Empresa"
+                    android:maxLines="1"/>
+
+                <EditText
+                    android:id="@+id/enc_lic_txt48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tipo"
+                    android:maxLines="1"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:text=" N° PREGUNTA | OBSERVACIONES"
+                    android:textColor="#000000"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx59"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"
+                        android:hint="  N°"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx60"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:hint="Observaciones"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx61"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"
+                        android:hint="  N°"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx62"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:hint="Observaciones"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx63"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"
+                        android:hint="  N°"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx64"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:hint="Observaciones"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx65"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"
+                        android:hint="  N°"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx66"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:hint="Observaciones"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx67"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"
+                        android:hint="  N°"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/enc_lic_tx68"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:hint="Observaciones"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/enc_lic_sig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:text="Siguiente"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:icon="@android:drawable/ic_input_add"
+                    app:iconPadding="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

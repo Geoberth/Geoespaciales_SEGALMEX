@@ -173,6 +173,18 @@ public class GpsEnableb extends AppCompatActivity {
                     case 2:
                         textid.setText("PG_O_E_"+folioo);
                         break;
+                    case 3:
+                        textid.setText("PG_B_G_"+folioo);
+                        break;
+                    case 4:
+                        textid.setText("PAR_B_"+folioo);
+                        break;
+                    case 5:
+                        textid.setText("PAR_O_"+folioo);
+                        break;
+                    case 6:
+                        textid.setText("LI_"+folioo);
+                        break;
                 }
             }
             @Override
@@ -381,6 +393,9 @@ public class GpsEnableb extends AppCompatActivity {
             if(insertarData == true) {
             }else{
             }
+        }
+        else if(proy.equals("PG Beneficiario Granos")){
+
         }
 
     }

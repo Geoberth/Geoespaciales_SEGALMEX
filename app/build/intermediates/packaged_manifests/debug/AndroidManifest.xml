@@ -37,6 +37,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.geosegalmex.PAROperativo.PAR_Operativo"
+            android:exported="true" />
+        <activity
+            android:name="com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos"
+            android:exported="true" />
+        <activity
             android:name="com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos"
             android:exported="true" />
         <activity
