@@ -70,7 +70,7 @@ public class NewCamara extends AppCompatActivity {
 
         btnCamara.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if(Integer.parseInt(version)>10){
+                if(Float.parseFloat(version)>11){
                     abrirCamara("1");
                 }
                 else{
@@ -91,7 +91,7 @@ public class NewCamara extends AppCompatActivity {
 
         btnCamara2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if(Integer.parseInt(version)>10){
+                if(Float.parseFloat(version)>11){
                     abrirCamara("2");
                 }
                 else{
@@ -115,7 +115,7 @@ public class NewCamara extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Favor de capturar las fotos",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    if(Integer.parseInt(version)>10){
+                    if(Float.parseFloat(version)>11){
                         archivo = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre);
                         archivo2 = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre2);
                         General.Foto1 = nombre;

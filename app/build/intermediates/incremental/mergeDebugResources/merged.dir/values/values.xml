@@ -3646,6 +3646,7 @@
         <item>PG Beneficiario Granos</item>
         <item>PAR Beneficiario</item>
         <item>PAR Operativo</item>
+        <item>Liconsa</item>
 
     </string-array>
     <string-array name="semillas_cultivo">

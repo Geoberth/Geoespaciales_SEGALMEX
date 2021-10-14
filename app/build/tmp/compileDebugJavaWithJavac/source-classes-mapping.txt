@@ -50,6 +50,7 @@ com/example/geosegalmex/Geo/FotoActivityDos.java
  com.example.geosegalmex.Geo.FotoActivityDos$8
 com/example/geosegalmex/PGBeneficiarioGranos/PGBeneficiariosGranos.java
  com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos
+ com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos$1
 com/example/geosegalmex/unidadcaracterizacionhortalizas/HortalizasPVuno.java
  com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPVuno
  com.example.geosegalmex.unidadcaracterizacionhortalizas.HortalizasPVuno$1
@@ -339,6 +340,8 @@ com/example/geosegalmex/caracterizacion/variables_caracterizacion/ActividadesCos
 com/example/geosegalmex/unidadcomercializacion/comercializacion_8.java
  com.example.geosegalmex.unidadcomercializacion.comercializacion_8
  com.example.geosegalmex.unidadcomercializacion.comercializacion_8$1
+com/example/geosegalmex/Liconsa/Liconsa.java
+ com.example.geosegalmex.Liconsa.Liconsa
 com/example/geosegalmex/Pecuario/ManejoSanitarioOrdenia.java
  com.example.geosegalmex.Pecuario.ManejoSanitarioOrdenia
  com.example.geosegalmex.Pecuario.ManejoSanitarioOrdenia$1

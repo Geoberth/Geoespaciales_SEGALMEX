@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -18,7 +20,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
     RadioButton propeq, promed, pgbr1, pgbr2, pgbr3, pgbr4, pgbr5, pgbr6, pgbr7, pgbr8, pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16, pgbr17, pgbr18, pgbr19, pgbr20, pgbr21, pgbr22, pgbr23, pgbr24, pgbr25, pgbr26, pgbr27, pgbr28, pgbr29, pgbr30, pgbr31, pgbr32, pgbr33, pgbr34, pgbr35, pgbr36, pgbr37, pgbr38, pgbr39, pgbr40, pgbr41, pgbr42, pgbr43, pgbr44, pgbr45, pgbr46, pgbr47, pgbr48, pgbr49, pgbr50, pgbr51, pgbr52, pgbr53, pgbr54, pgbr55, pgbr56, pgbr57, pgbr58, pgbr59, pgbr60, pgbr61, pgbr62, pgbr63, pgbr64, pgbr65, pgbr66, pgbr67, pgbr68, pgbr69, pgbr70, pgbr71, pgbr72, pgbr73, pgbr74, pgbr75, pgbr76, pgbr77, pgbr78, pgbr79, pgbr80, pgbr81, pgbr82, pgbr83, pgbr84, pgbr85, pgbr86, pgbr87, pgbr88;
     Spinner pgbs1, pgbs2, pgbs3, pgbs4;
     CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc7, pgbc8, pgbc9, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19;
-
+    Button btnSiguiente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -212,11 +214,16 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
         pgbt28 = (EditText)findViewById(R.id.pre_garan_granos_txt28);
         pgbt29 = (EditText)findViewById(R.id.pre_garan_granos_txt29);
 
+        btnSiguiente = findViewById(R.id.pre_garan_granos_sig);
+
+        btnSiguiente.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
 
 
 
-
-
+         }
+        });
 
 
 

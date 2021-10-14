@@ -176,6 +176,10 @@
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_calendario.xml"
     },
     {
+        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/layout_activity_liconsa.xml.flat",
+        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_liconsa.xml"
+    },
+    {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/drawable_borde.xml.flat",
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/drawable/borde.xml"
     },
