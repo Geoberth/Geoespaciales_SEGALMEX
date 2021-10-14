@@ -23,6 +23,8 @@ import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos_Model;
+import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
+import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos_Model;
 import com.example.geosegalmex.R;
 import com.example.geosegalmex.dbstorage.Georreferencia;
 import com.example.geosegalmex.drawer.DrawerActivity;
@@ -58,6 +60,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     Pasl_o_Model model;
     Pasl_b_Model model2;
     PGOperativoEstimulos_Model model3;
+    PGOperativoGranos_Model model4;
 
     String longitudGeo;
     String latitudGeo;
@@ -95,6 +98,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PG Operativo Estimulos")){
                     agregarPGOperativoEstimulos();
+                }
+                else if(General.Proyecto.equals("PG Operativo Granos")){
+                    agregarPGOperativoGranos();
                 }
 
                 finish();
@@ -270,6 +276,26 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
         baseBD = new PGOperativoEstimulosBD(this);
 
         boolean insertarData = baseBD.addPGOperativoEstimulos(model3);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void agregarPGOperativoGranos() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model4 = new PGOperativoGranos_Model();
+        model4 = (PGOperativoGranos_Model)getIntent().getSerializableExtra("model");
+        model4.setLongitudGeo(longitudGeo);
+        model4.setLatitudGeo(latitudGeo);
+
+        PGOperativoGranosBD baseBD;
+        baseBD = new PGOperativoGranosBD(this);
+
+        boolean insertarData = baseBD.addPGOperativoGranos(model4);
         if(insertarData == true) {
             Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
         }else{

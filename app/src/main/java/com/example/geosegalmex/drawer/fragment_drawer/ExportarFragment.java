@@ -125,6 +125,17 @@ public class ExportarFragment extends Fragment {
 
                 }
 
+                try {
+                    deployDatabase("PGOperativoGranos");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("PGOperativoGranos");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
 
                 // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
                 // tareaAsyncTask.execute();
@@ -212,7 +223,7 @@ public class ExportarFragment extends Fragment {
 
         String version = Build.VERSION.RELEASE;
 
-        if(Integer.parseInt(version)>10){
+        if(Float.parseFloat(version)>=11){
             File file = new File(getActivity().getExternalFilesDir(null), "/" + DB_NAME + "/");
             if (!file.exists()) {
                 file.mkdirs();

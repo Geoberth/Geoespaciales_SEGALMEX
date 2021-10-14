@@ -35,6 +35,7 @@ import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.NewCamara;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
+import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
 import com.example.geosegalmex.R;
 import com.example.geosegalmex.unidadcaracterizacionhortalizas.db.DatabaseHelper;
 
@@ -174,17 +175,21 @@ public class GpsEnableb extends AppCompatActivity {
                         textid.setText("PG_O_E_"+folioo);
                         break;
                     case 3:
-                        textid.setText("PG_B_G_"+folioo);
+                        textid.setText("PG_O_G_"+folioo);
                         break;
                     case 4:
-                        textid.setText("PAR_B_"+folioo);
+                        textid.setText("PG_B_G_"+folioo);
                         break;
                     case 5:
-                        textid.setText("PAR_O_"+folioo);
+                        textid.setText("PAR_B_"+folioo);
                         break;
                     case 6:
+                        textid.setText("PAR_O_"+folioo);
+                        break;
+                    case 7:
                         textid.setText("LI_"+folioo);
                         break;
+
                 }
             }
             @Override
@@ -395,7 +400,13 @@ public class GpsEnableb extends AppCompatActivity {
             }
         }
         else if(proy.equals("PG Beneficiario Granos")){
-
+            PGOperativoGranosBD db;
+            db = new PGOperativoGranosBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
         }
 
     }

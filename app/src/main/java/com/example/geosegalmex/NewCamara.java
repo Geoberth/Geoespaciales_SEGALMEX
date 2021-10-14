@@ -27,6 +27,7 @@ import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
 import com.example.geosegalmex.PAROperativo.PAR_Operativo;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
+import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos;
 
 import java.io.File;
 import java.io.IOException;
@@ -70,7 +71,7 @@ public class NewCamara extends AppCompatActivity {
 
         btnCamara.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if(Float.parseFloat(version)>11){
+                if(Float.parseFloat(version)>=11){
                     abrirCamara("1");
                 }
                 else{
@@ -91,7 +92,7 @@ public class NewCamara extends AppCompatActivity {
 
         btnCamara2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if(Float.parseFloat(version)>11){
+                if(Float.parseFloat(version)>=11){
                     abrirCamara("2");
                 }
                 else{
@@ -115,7 +116,7 @@ public class NewCamara extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Favor de capturar las fotos",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    if(Float.parseFloat(version)>11){
+                    if(Float.parseFloat(version)>=11){
                         archivo = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre);
                         archivo2 = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre2);
                         General.Foto1 = nombre;
@@ -156,6 +157,9 @@ public class NewCamara extends AppCompatActivity {
                                 }
                                 else if(General.Proyecto.equals("PG Operativo Estimulos")){
                                     startActivity(new Intent(getApplication(), PGOperativoEstimulos.class));
+                                }
+                                else if(General.Proyecto.equals("PG Operativo Granos")){
+                                    startActivity(new Intent(getApplication(), PGOperativoGranos.class));
                                 }
                                 else if (General.Proyecto.equals("PG Beneficiario Granos")){
                                     startActivity(new Intent(getApplication(), PGBeneficiariosGranos.class));

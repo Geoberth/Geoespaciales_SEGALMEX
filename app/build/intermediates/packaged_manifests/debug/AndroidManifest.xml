@@ -37,6 +37,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos"
+            android:exported="false" />
+        <activity
             android:name="com.example.geosegalmex.Liconsa.Liconsa"
             android:exported="true" />
         <activity
