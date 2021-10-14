@@ -233,6 +233,8 @@ com/example/geosegalmex/LiconsaVentanilla/PASLoperativoBD.java
  com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD
 com/example/geosegalmex/drawer/fragment_drawer/bdmunicipios/UtilidadesEdoMunicipios.java
  com.example.geosegalmex.drawer.fragment_drawer.bdmunicipios.UtilidadesEdoMunicipios
+com/example/geosegalmex/PGOperativoLeche/PGOperativoLeche.java
+ com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche
 com/example/geosegalmex/unidadproduccion/ProduccionAcuicola.java
  com.example.geosegalmex.unidadproduccion.ProduccionAcuicola
  com.example.geosegalmex.unidadproduccion.ProduccionAcuicola$1
@@ -393,10 +395,9 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/variables/VariblesGlobal
  com.example.geosegalmex.unidadcaracterizacionhortalizas.variables.VariblesGlobalesHortalizas
 com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulosBD.java
  com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD
-com/example/geosegalmex/drawer/fragment_drawer/ExportarFragment.java
- com.example.geosegalmex.drawer.fragment_drawer.ExportarFragment
- com.example.geosegalmex.drawer.fragment_drawer.ExportarFragment$1
- com.example.geosegalmex.drawer.fragment_drawer.ExportarFragment$TareaAsyncTask
+com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
 com/example/geosegalmex/frutales/frutales_13.java
  com.example.geosegalmex.frutales.frutales_13
  com.example.geosegalmex.frutales.frutales_13$1
@@ -437,9 +438,11 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/ControlPlagasEnfermB.jav
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$1
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$2
-com/example/geosegalmex/drawer/fragment_drawer/MapaFragment.java
- com.example.geosegalmex.drawer.fragment_drawer.MapaFragment
- com.example.geosegalmex.drawer.fragment_drawer.MapaFragment$1
+com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3
 com/example/geosegalmex/frutales/frutales_2.java
  com.example.geosegalmex.frutales.frutales_2
  com.example.geosegalmex.frutales.frutales_2$1
@@ -492,19 +495,25 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/FertilizanteSi.java
 com/example/geosegalmex/Pecuario/PecuarioParamProdReproductivos.java
  com.example.geosegalmex.Pecuario.PecuarioParamProdReproductivos
  com.example.geosegalmex.Pecuario.PecuarioParamProdReproductivos$1
-com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
+com/example/geosegalmex/drawer/fragment_drawer/MapaFragment.java
+ com.example.geosegalmex.drawer.fragment_drawer.MapaFragment
+ com.example.geosegalmex.drawer.fragment_drawer.MapaFragment$1
 com/example/geosegalmex/unidadcomercializacion/comercializacion_4.java
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4$1
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4$2
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4$3
-com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3
+com/example/geosegalmex/Geo/FotoActivityUno.java
+ com.example.geosegalmex.Geo.FotoActivityUno
+ com.example.geosegalmex.Geo.FotoActivityUno$1
+ com.example.geosegalmex.Geo.FotoActivityUno$2
+ com.example.geosegalmex.Geo.FotoActivityUno$3
+ com.example.geosegalmex.Geo.FotoActivityUno$4
+ com.example.geosegalmex.Geo.FotoActivityUno$5
+ com.example.geosegalmex.Geo.FotoActivityUno$6
+ com.example.geosegalmex.Geo.FotoActivityUno$7
+ com.example.geosegalmex.Geo.FotoActivityUno$8
+ com.example.geosegalmex.Geo.FotoActivityUno$9
 com/example/geosegalmex/dbstorage/Georreferencia.java
  com.example.geosegalmex.dbstorage.Georreferencia
 com/example/geosegalmex/unidadcaracterizacionhortalizas/PostCosecha.java
@@ -608,25 +617,6 @@ com/example/geosegalmex/LiconsaVentanilla/Pasl_o_Model.java
 com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
-com/example/geosegalmex/Geo/FotoActivityUno.java
- com.example.geosegalmex.Geo.FotoActivityUno
- com.example.geosegalmex.Geo.FotoActivityUno$1
- com.example.geosegalmex.Geo.FotoActivityUno$2
- com.example.geosegalmex.Geo.FotoActivityUno$3
- com.example.geosegalmex.Geo.FotoActivityUno$4
- com.example.geosegalmex.Geo.FotoActivityUno$5
- com.example.geosegalmex.Geo.FotoActivityUno$6
- com.example.geosegalmex.Geo.FotoActivityUno$7
- com.example.geosegalmex.Geo.FotoActivityUno$8
- com.example.geosegalmex.Geo.FotoActivityUno$9
-com/example/geosegalmex/NewCamara.java
- com.example.geosegalmex.NewCamara
- com.example.geosegalmex.NewCamara$1
- com.example.geosegalmex.NewCamara$1$1
- com.example.geosegalmex.NewCamara$2
- com.example.geosegalmex.NewCamara$2$1
- com.example.geosegalmex.NewCamara$3
- com.example.geosegalmex.NewCamara$3$1
 com/example/geosegalmex/Gps/GpsEnableb.java
  com.example.geosegalmex.Gps.GpsEnableb
  com.example.geosegalmex.Gps.GpsEnableb$1
@@ -641,3 +631,15 @@ com/example/geosegalmex/Gps/GpsEnableb.java
  com.example.geosegalmex.Gps.GpsEnableb$6
  com.example.geosegalmex.Gps.GpsEnableb$7
  com.example.geosegalmex.Gps.GpsEnableb$7$1
+com/example/geosegalmex/NewCamara.java
+ com.example.geosegalmex.NewCamara
+ com.example.geosegalmex.NewCamara$1
+ com.example.geosegalmex.NewCamara$1$1
+ com.example.geosegalmex.NewCamara$2
+ com.example.geosegalmex.NewCamara$2$1
+ com.example.geosegalmex.NewCamara$3
+ com.example.geosegalmex.NewCamara$3$1
+com/example/geosegalmex/drawer/fragment_drawer/ExportarFragment.java
+ com.example.geosegalmex.drawer.fragment_drawer.ExportarFragment
+ com.example.geosegalmex.drawer.fragment_drawer.ExportarFragment$1
+ com.example.geosegalmex.drawer.fragment_drawer.ExportarFragment$TareaAsyncTask

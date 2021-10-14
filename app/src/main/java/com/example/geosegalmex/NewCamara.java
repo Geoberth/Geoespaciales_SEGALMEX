@@ -46,7 +46,8 @@ public class NewCamara extends AppCompatActivity {
     String nombreImagen2 = ""+ lizID + "," + lizbelat + "," + lizbelon + "_2.jpg";
     String rutaImagen;
     String nombre, nombre2;
-    String version = Build.VERSION.RELEASE;
+    String version2 = Build.VERSION.RELEASE;
+    String version = android.os.Build.VERSION.RELEASE;
     String typeproyect;
 
     @Override
@@ -71,11 +72,12 @@ public class NewCamara extends AppCompatActivity {
 
         btnCamara.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if(Float.parseFloat(version)>=11){
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                     abrirCamara("1");
                 }
                 else{
                     tomarFoto(1);
+
                 }
 
                 new Handler().postDelayed(new Runnable() {
@@ -92,11 +94,12 @@ public class NewCamara extends AppCompatActivity {
 
         btnCamara2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if(Float.parseFloat(version)>=11){
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                     abrirCamara("2");
                 }
                 else{
                     tomarFoto(2);
+
                 }
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
@@ -116,7 +119,7 @@ public class NewCamara extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Favor de capturar las fotos",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    if(Float.parseFloat(version)>=11){
+                    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
                         archivo = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre);
                         archivo2 = new File(getExternalFilesDir(null), "/" + typeproyect + "/" + nombre2);
                         General.Foto1 = nombre;

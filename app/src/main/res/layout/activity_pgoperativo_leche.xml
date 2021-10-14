@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PGOperativoLeche.PGOperativoLeche">
+
+    <LinearLayout
+
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PROGRAMA PRECIOS DE GARANTÍA - LECHE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:text="ENCUESTA PARA EL RESPONSABLE DE VENTANILLA (CENTROS DE ACOPIO DE LECHE)"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:text="DÍA/MES/AÑO:"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/pg_vent_txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="30dp"
+                    android:text="DATOS DEL CENTRO DE ACOPIO (PRE-LLENADO)"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Ventanilla:"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="Folio:"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/pg_vent_txt2"
+                    android:layout_width="match_parent"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="Nombre de ventanilla:"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/pg_vent_txt3"
+                    android:layout_width="match_parent"
+                    android:hint="Escriba el nombre."
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+                <TextView
+                    android:text="Número del centro de acopio:"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/pg_vent_txt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="ENTIDAD FEDERATIVA"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/pg_vent_spin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="MUNICIPIO"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/pg_vent_spin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="COLONIA/LOCALIDAD"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/pg_vent_spin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borde"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:text="CALLE"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/pg_vent_txt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="CODIGO POSTAL"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/pg_vent_txt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Escriba el número."
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="ENCUESTA PARA EL PERSONAL OPERATIVO DE VENTANILLA"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:text="1. ¿Conoce las Reglas de Operación del Programa Precios de Garantía a Productos Alimentarios Básicos, en particular en lo relacionado al acopio de leche?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="2. ¿Conoce los Procedimientos para el pago de precio de garantía por la compra de Leche Nacional en Liconsa?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="3. ¿Ha sido capacitado como ventanilla para la operación del programa y el uso del sistema?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="4. ¿Se siguen los procedimientos para el pesaje y reciba de leche de acuerdo a las normas establecidas?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="5. ¿Cuenta este centro de acopio con los instrumentos y reactivos indispensables para evaluar la calidad de la leche en sitio?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="6. ¿Cuenta con la infraestructura suficiente para dar la atención que requieren los beneficiarios?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="7. ¿Considera que la capacidad instalada en este centro de acopio es la adecuada?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="8. ¿Conoce los criterios de elegibilidad para que un productor pueda acceder a los apoyos?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="9. ¿En caso de recibir una solicitud, conoce los procedimientos para registrar a un productor en el padrón?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="10. Marque la información que solicita al productor para abrir expediente:"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="1dp"
+
+                        android:id="@+id/pg_vent_ch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solicitud de ingreso" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/pg_vent_ch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CURP" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/pg_vent_ch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RFC." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/pg_vent_ch4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="INE o Identificación oficial" />
+
+                </LinearLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/pg_vent_ch5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estado de cuenta bancaria con CLABE" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/pg_vent_ch6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comprobante domiciliario" />
+
+
+                <TextView
+                    android:text="11. Se informa al beneficiario acerca de los resultados de la evaluación de su producto?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="11.1 Se informa al beneficiario acerca de los tiempos de pago?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="12. ¿Se toman las medidas de salud procedentes para prevenir cualquier enfermedad, especialmente las contagiosas?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí" />
+
+                    <RadioButton
+
+                        android:id="@+id/pg_vent_ra24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                    <EditText
+                        android:id="@+id/pg_vent_txt18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:hint="Comentarios"
+                        android:maxLines="1" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:text="13. ¿Tiene alguna recomendación para la mejora del Programa o comentarios adicionales que desee hacer?"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/pg_vent_txt19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:hint="Comentarios"
+                    android:maxLines="4" />
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/pg_vent_sig"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="25dp"
+                    android:text="Siguiente"
+                    android:layout_marginTop="30dp"
+                    app:iconPadding="20dp"
+                    app:icon="@android:drawable/ic_input_add"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

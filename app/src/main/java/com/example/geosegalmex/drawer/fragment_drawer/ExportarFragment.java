@@ -223,7 +223,7 @@ public class ExportarFragment extends Fragment {
 
         String version = Build.VERSION.RELEASE;
 
-        if(Float.parseFloat(version)>=11){
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
             File file = new File(getActivity().getExternalFilesDir(null), "/" + DB_NAME + "/");
             if (!file.exists()) {
                 file.mkdirs();
@@ -255,7 +255,7 @@ public class ExportarFragment extends Fragment {
         //String outFileName = Environment.getExternalStorageDirectory() + "/" + DB_NAME;
 
         String outFileName;
-        if(Integer.parseInt(version)>10){
+        if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
             File file = new File(getActivity().getExternalFilesDir(null), "/" + DB_NAME + "/" + DB_NAME);
             try {
                 if (!file.exists()) {

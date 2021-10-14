@@ -24,6 +24,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".PGOperativoLeche.PGOperativoLeche"
+            android:exported="false" />
+        <activity
             android:name=".PGOperativoGranos.PGOperativoGranos"
             android:exported="false" />
         <activity
