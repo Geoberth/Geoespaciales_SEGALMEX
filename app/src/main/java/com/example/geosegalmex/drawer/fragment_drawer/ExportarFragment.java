@@ -136,6 +136,17 @@ public class ExportarFragment extends Fragment {
                     e.printStackTrace();
                 }
 
+                try {
+                    deployDatabase("PGOperativoLeche");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("PGOperativoLeche");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
 
                 // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
                 // tareaAsyncTask.execute();

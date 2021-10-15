@@ -296,4 +296,9 @@ public class PGOperativoEstimulos extends AppCompatActivity {
         return retorno;
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
 }

@@ -354,6 +354,11 @@ public class PASLOperativo extends AppCompatActivity {
         return retorno;
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
 
 
 }

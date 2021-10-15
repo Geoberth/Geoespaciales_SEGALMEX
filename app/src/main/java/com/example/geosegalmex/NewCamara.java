@@ -28,6 +28,7 @@ import com.example.geosegalmex.PAROperativo.PAR_Operativo;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos;
+import com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche;
 
 import java.io.File;
 import java.io.IOException;
@@ -163,6 +164,9 @@ public class NewCamara extends AppCompatActivity {
                                 }
                                 else if(General.Proyecto.equals("PG Operativo Granos")){
                                     startActivity(new Intent(getApplication(), PGOperativoGranos.class));
+                                }
+                                else if(General.Proyecto.equals("PG Operativo Leche")){
+                                    startActivity(new Intent(getApplication(), PGOperativoLeche.class));
                                 }
                                 else if (General.Proyecto.equals("PG Beneficiario Granos")){
                                     startActivity(new Intent(getApplication(), PGBeneficiariosGranos.class));

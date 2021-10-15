@@ -4536,6 +4536,8 @@ id pg_granos_txtLocalidad
 id pg_granos_txtMunicipio
 id pg_granos_txtnombrecentro
 id pg_granos_txtnumcentro
+id pg_leche_tvFech
+id pg_leche_txtFecha
 id pg_vent_ch1
 id pg_vent_ch2
 id pg_vent_ch3
@@ -4567,10 +4569,6 @@ id pg_vent_ra7
 id pg_vent_ra8
 id pg_vent_ra9
 id pg_vent_sig
-id pg_vent_spin1
-id pg_vent_spin2
-id pg_vent_spin3
-id pg_vent_txt1
 id pg_vent_txt10
 id pg_vent_txt11
 id pg_vent_txt12
@@ -4581,14 +4579,12 @@ id pg_vent_txt16
 id pg_vent_txt17
 id pg_vent_txt18
 id pg_vent_txt19
-id pg_vent_txt2
-id pg_vent_txt3
-id pg_vent_txt4
 id pg_vent_txt5
 id pg_vent_txt6
 id pg_vent_txt7
 id pg_vent_txt8
 id pg_vent_txt9
+id pg_vent_txtLocalidad
 id pgb_o_spiEstado
 id pgb_o_spiEstado2
 id pgb_o_spiMunicipio
