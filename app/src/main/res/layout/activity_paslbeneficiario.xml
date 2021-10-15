@@ -430,7 +430,6 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-
                     android:id="@+id/paslb_ra81"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

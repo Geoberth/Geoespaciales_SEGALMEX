@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
+import com.example.geosegalmex.General;
 import com.example.geosegalmex.R;
 
 public class PGBeneficiariosGranos extends AppCompatActivity {
@@ -220,7 +221,8 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
          public void onClick(View v) {
 
           if (validar()){
-           String pgbtt2 = pgbt2.getText().toString();
+              String folio = General.Foliocuestion;
+              String pgbtt2 = pgbt2.getText().toString();
            String pgbtt3 = pgbt3.getText().toString();
            String pgbtt4 = pgbt4.getText().toString();
            String pgbtt5 = pgbt5.getText().toString();
@@ -234,9 +236,14 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
               String pgbtt15 = pgbt15.getText().toString();
               String pgbtt16 = pgbt16.getText().toString();
               String pgbtt17 = pgbt17.getText().toString();
+              String nomedo = pgbs1.getSelectedItem().toString();
+              String cveedo = pgbt11.getText().toString();
+              String nommun = pgbs2.getSelectedItem().toString();
+              String cvemun = pgbt12.getText().toString();
               String pgr1 = obtenerRadio(pgbr1, pgbr2);
+              String pgbtt20 = pgbt20.getText().toString();
               String pgr2 = obtenerRadio(pgbr3, pgbr4);
-
+              String pgr3 = obtenerRadioo(pgbr5,pgbr6,pgbr7,pgbr8,pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16);
 
           }
          }
@@ -249,17 +256,61 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
 //finaliza el oncreate
         }
 
- public String obtenerRadio(RadioButton rbt1, RadioButton rbt2){
+ public String obtenerRadio(RadioButton rbtt1, RadioButton rbtt2){
+    //, RadioButton rbtt3, RadioButton rbtt4, RadioButton rbtt5, RadioButton rbtt6, RadioButton rbtt7, RadioButton rbtt8, RadioButton rbtt9, RadioButton rbtt10, RadioButton rbtt11){
 String respuesta = "";
-if (propeq.isChecked()==true){
- respuesta = rbt1.getText().toString();
+if (rbtt1.isChecked()==true){
+ respuesta = rbtt1.getText().toString();
 }
-else if (promed.isChecked()==true){
- respuesta = rbt2.getText().toString();
+else if (rbtt2.isChecked()==true){
+ respuesta = rbtt2.getText().toString();
 }
   return respuesta;
  }
 
+
+    public String obtenerRadioo(RadioButton rbtt5, RadioButton rbtt6, RadioButton rbtt7, RadioButton rbtt8, RadioButton rbtt9, RadioButton rbtt10, RadioButton rbtt11, RadioButton rbtt12, RadioButton rbtt13, RadioButton rbtt14, RadioButton rbtt15, RadioButton rbtt16){
+
+        String respuesta = "";
+        if (rbtt5.isChecked()==true){
+            respuesta = rbtt5.getText().toString();
+        }
+        else if (rbtt6.isChecked()==true){
+            respuesta = rbtt6.getText().toString();
+        }
+        else if (rbtt7.isChecked()==true){
+            respuesta = rbtt7.getText().toString();
+        }
+        else if (rbtt8.isChecked()==true){
+            respuesta = rbtt8.getText().toString();
+        }
+        else if (rbtt9.isChecked()==true){
+            respuesta = rbtt9.getText().toString();
+        }
+        else if (rbtt10.isChecked()==true){
+            respuesta = rbtt10.getText().toString();
+        }
+        else if (rbtt11.isChecked()==true){
+            respuesta = rbtt11.getText().toString();
+        }
+        else if (rbtt12.isChecked()==true){
+            respuesta = rbtt12.getText().toString();
+        }
+        else if (rbtt13.isChecked()==true){
+            respuesta = rbtt13.getText().toString();
+        }
+        else if (rbtt13.isChecked()==true){
+            respuesta = rbtt14.getText().toString();
+        }
+        else if (rbtt13.isChecked()==true){
+            respuesta = rbtt15.getText().toString();
+        }
+        else if (rbtt13.isChecked()==true){
+            respuesta = rbtt16.getText().toString();
+        }
+
+        return respuesta;
+    }
 
         public boolean validar() {
      boolean retorno = true;
@@ -330,7 +381,10 @@ else if (promed.isChecked()==true){
          pgbr4.setError("Debes seleccionar una opción");
          retorno = false;
      }
-
+     else if (!pgbr5.isChecked() && !pgbr6.isChecked() && !pgbr7.isChecked() && !pgbr8.isChecked() && !pgbr9.isChecked() && !pgbr10.isChecked() && !pgbr11.isChecked() && !pgbr12.isChecked() && !pgbr13.isChecked() && !pgbr14.isChecked() && !pgbr15.isChecked() && !pgbr16.isChecked()) {
+        pgbr16.setError("Debes seleccionar una opción");
+        retorno = false;
+    }
 
 
      return retorno;

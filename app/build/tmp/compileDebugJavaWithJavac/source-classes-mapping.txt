@@ -483,20 +483,21 @@ com/example/geosegalmex/Pecuario/PecuarioInicio.java
  com.example.geosegalmex.Pecuario.PecuarioInicio$3
  com.example.geosegalmex.Pecuario.PecuarioInicio$4
  com.example.geosegalmex.Pecuario.PecuarioInicio$5
-com/example/geosegalmex/Gps/GpsEnableb.java
- com.example.geosegalmex.Gps.GpsEnableb
- com.example.geosegalmex.Gps.GpsEnableb$1
- com.example.geosegalmex.Gps.GpsEnableb$2
- com.example.geosegalmex.Gps.GpsEnableb$3
- com.example.geosegalmex.Gps.GpsEnableb$4
- com.example.geosegalmex.Gps.GpsEnableb$4$1
- com.example.geosegalmex.Gps.GpsEnableb$4$1$1
- com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1
- com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1$1
- com.example.geosegalmex.Gps.GpsEnableb$5
- com.example.geosegalmex.Gps.GpsEnableb$6
- com.example.geosegalmex.Gps.GpsEnableb$7
- com.example.geosegalmex.Gps.GpsEnableb$7$1
+com/example/geosegalmex/LiconsaBeneficiario/PASLBeneficiario.java
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$1
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$10
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$11
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$12
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$13
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$2
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$3
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$4
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$5
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$6
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$7
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$8
+ com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$9
 com/example/geosegalmex/unidadcaracterizacionhortalizas/FertilizanteSi.java
  com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi
  com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi$1
@@ -639,9 +640,17 @@ com/example/geosegalmex/NewCamara.java
  com.example.geosegalmex.NewCamara$2$1
  com.example.geosegalmex.NewCamara$3
  com.example.geosegalmex.NewCamara$3$1
-com/example/geosegalmex/LiconsaBeneficiario/PASLBeneficiario.java
- com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario
- com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$1
- com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$2
- com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$3
- com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario$4
+com/example/geosegalmex/Gps/GpsEnableb.java
+ com.example.geosegalmex.Gps.GpsEnableb
+ com.example.geosegalmex.Gps.GpsEnableb$1
+ com.example.geosegalmex.Gps.GpsEnableb$2
+ com.example.geosegalmex.Gps.GpsEnableb$3
+ com.example.geosegalmex.Gps.GpsEnableb$4
+ com.example.geosegalmex.Gps.GpsEnableb$4$1
+ com.example.geosegalmex.Gps.GpsEnableb$4$1$1
+ com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1
+ com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1$1
+ com.example.geosegalmex.Gps.GpsEnableb$5
+ com.example.geosegalmex.Gps.GpsEnableb$6
+ com.example.geosegalmex.Gps.GpsEnableb$7
+ com.example.geosegalmex.Gps.GpsEnableb$7$1
