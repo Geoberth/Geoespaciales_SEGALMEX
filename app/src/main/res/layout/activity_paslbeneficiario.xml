@@ -372,6 +372,7 @@
                 android:id="@+id/paslb_txt6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:maxLines="1" />
 
             <TextView
@@ -413,6 +414,7 @@
                 android:id="@+id/paslb_txt7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:maxLines="1" />
 
             <TextView
@@ -446,6 +448,7 @@
             <EditText
                 android:id="@+id/paslb_txt8"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
 
@@ -488,6 +491,7 @@
             <EditText
                 android:id="@+id/paslb_txt9"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
 
@@ -530,6 +534,7 @@
             <EditText
                 android:id="@+id/paslb_txt10"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
 
@@ -571,6 +576,7 @@
             <EditText
                 android:id="@+id/paslb_txt11"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
 
@@ -613,6 +619,7 @@
             <EditText
                 android:id="@+id/paslb_txt12"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
 
@@ -655,6 +662,7 @@
                 android:id="@+id/paslb_txt13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:maxLines="1" />
 
             <TextView
@@ -696,6 +704,7 @@
             <EditText
                 android:id="@+id/paslb_txt14"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
 

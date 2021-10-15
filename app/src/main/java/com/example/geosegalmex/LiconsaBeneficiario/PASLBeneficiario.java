@@ -219,6 +219,113 @@ public class PASLBeneficiario extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.paslb_ra17).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable6.isChecked()==true) {
+                    seiscom.setVisibility(View.VISIBLE);
+                }else{
+                    seiscom.setVisibility(View.GONE);
+                    seiscom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra20).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable7.isChecked()==true) {
+                    sietecom.setVisibility(View.VISIBLE);
+                }else{
+                    sietecom.setVisibility(View.GONE);
+                    sietecom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra81).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (bueno8.isChecked()==true) {
+                    ochocom.setVisibility(View.VISIBLE);
+                }else{
+                    ochocom.setVisibility(View.GONE);
+                    ochocom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra23).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable9.isChecked()==true) {
+                    nuevecom.setVisibility(View.VISIBLE);
+                }else{
+                    nuevecom.setVisibility(View.GONE);
+                    nuevecom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra26).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable10.isChecked()==true) {
+                    diezcom.setVisibility(View.VISIBLE);
+                }else{
+                    diezcom.setVisibility(View.GONE);
+                    diezcom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra29).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable11.isChecked()==true) {
+                    oncecom.setVisibility(View.VISIBLE);
+                }else{
+                    oncecom.setVisibility(View.GONE);
+                    oncecom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra32).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable12.isChecked()==true) {
+                    docecom.setVisibility(View.VISIBLE);
+                }else{
+                    docecom.setVisibility(View.GONE);
+                    docecom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra35).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable13.isChecked()==true) {
+                    trececom.setVisibility(View.VISIBLE);
+                }else{
+                    trececom.setVisibility(View.GONE);
+                    trececom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra38).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable14.isChecked()==true) {
+                    catorcecom.setVisibility(View.VISIBLE);
+                }else{
+                    catorcecom.setVisibility(View.GONE);
+                    catorcecom.setText("");
+                }
+            }
+        });
 
 
 
