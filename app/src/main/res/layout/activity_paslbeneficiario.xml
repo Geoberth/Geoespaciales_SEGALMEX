@@ -288,6 +288,7 @@
                 android:id="@+id/paslb_txt4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:maxLines="1" />
 
             <TextView
@@ -329,6 +330,7 @@
                 android:id="@+id/paslb_txt5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:maxLines="1" />
 
             <TextView

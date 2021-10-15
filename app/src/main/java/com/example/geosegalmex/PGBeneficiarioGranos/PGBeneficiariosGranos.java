@@ -3,7 +3,6 @@ package com.example.geosegalmex.PGBeneficiarioGranos;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -220,8 +219,26 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
          @Override
          public void onClick(View v) {
 
+          if (validar()){
+           String pgbtt2 = pgbt2.getText().toString();
+           String pgbtt3 = pgbt3.getText().toString();
+           String pgbtt4 = pgbt4.getText().toString();
+           String pgbtt5 = pgbt5.getText().toString();
+           String tprodu = obtenerRadio(promed,propeq);
+           String pgbtt6 = pgbt6.getText().toString();
+              String pgbtt7 = pgbt7.getText().toString();
+              String pgbtt8 = pgbt8.getText().toString();
+              String pgbtt9 = pgbt9.getText().toString();
+              String pgbtt13 = pgbt13.getText().toString();
+              String pgbtt14= pgbt14.getText().toString();
+              String pgbtt15 = pgbt15.getText().toString();
+              String pgbtt16 = pgbt16.getText().toString();
+              String pgbtt17 = pgbt17.getText().toString();
+              String pgr1 = obtenerRadio(pgbr1, pgbr2);
+              String pgr2 = obtenerRadio(pgbr3, pgbr4);
 
 
+          }
          }
         });
 
@@ -229,9 +246,101 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
 
 
 
-
-
+//finaliza el oncreate
         }
+
+ public String obtenerRadio(RadioButton rbt1, RadioButton rbt2){
+String respuesta = "";
+if (propeq.isChecked()==true){
+ respuesta = rbt1.getText().toString();
+}
+else if (promed.isChecked()==true){
+ respuesta = rbt2.getText().toString();
+}
+  return respuesta;
+ }
+
+
+        public boolean validar() {
+     boolean retorno = true;
+
+     if (pgbt2.getText().toString().isEmpty()){
+      pgbt2.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt3.getText().toString().isEmpty()){
+      pgbt3.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt4.getText().toString().isEmpty()){
+      pgbt4.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt5.getText().toString().isEmpty()){
+      pgbt5.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (!propeq.isChecked() && !promed.isChecked()) {
+      promed.setError("Debes seleccionar una opción");
+      retorno = false;
+     }
+     else if (pgbt6.getText().toString().isEmpty()){
+      pgbt6.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt7.getText().toString().isEmpty()){
+      pgbt7.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt8.getText().toString().isEmpty()){
+      pgbt8.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt9.getText().toString().isEmpty()){
+      pgbt9.setError("No puede quedar vacío");
+      retorno = false;
+     }
+
+     else if (pgbt13.getText().toString().isEmpty()){
+      pgbt13.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt14.getText().toString().isEmpty()){
+      pgbt14.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt15.getText().toString().isEmpty()){
+      pgbt15.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt16.getText().toString().isEmpty()){
+      pgbt16.setError("No puede quedar vacío");
+      retorno = false;
+     }
+     else if (pgbt17.getText().toString().isEmpty()){
+      pgbt17.setError("No puede quedar vacío");
+      retorno = false;
+     }
+
+     else if (!pgbr1.isChecked() && !pgbr2.isChecked()) {
+      pgbr2.setError("Debes seleccionar una opción");
+      retorno = false;
+     }
+     else if (!pgbr3.isChecked() && !pgbr4.isChecked()) {
+         pgbr4.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+
+
+
+     return retorno;
+        }
+
+
+
+
+
+
 
         @Override
         public void onBackPressed() {

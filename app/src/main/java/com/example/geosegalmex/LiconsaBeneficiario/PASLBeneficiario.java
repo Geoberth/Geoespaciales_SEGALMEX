@@ -195,6 +195,33 @@ public class PASLBeneficiario extends AppCompatActivity {
         });
 
 
+        findViewById(R.id.paslb_ra11).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable4.isChecked()==true) {
+                    cuatrocom.setVisibility(View.VISIBLE);
+                }else{
+                    cuatrocom.setVisibility(View.GONE);
+                    cuatrocom.setText("");
+                }
+            }
+        });
+
+        findViewById(R.id.paslb_ra14).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (aceptable5.isChecked()==true) {
+                    cincocom.setVisibility(View.VISIBLE);
+                }else{
+                    cincocom.setVisibility(View.GONE);
+                    cincocom.setText("");
+                }
+            }
+        });
+
+
+
+
     }
 
     public String Resultado(){
@@ -266,7 +293,7 @@ public class PASLBeneficiario extends AppCompatActivity {
             retorno = false;
         }
         else if (!beneficiarioa.isChecked() && !beneficiariob.isChecked() && !beneficiarioc.isChecked() && !beneficiariod.isChecked() && !beneficiarioe.isChecked() && !beneficiariof.isChecked()) {
-            beneficiarioa.setError("Debes seleccionar almenos una opción");
+            beneficiarioa.setError("Debes seleccionar al menos una opción");
             retorno = false;
         }
         else if (!bueno.isChecked() && !aceptable.isChecked() && !malo.isChecked()) {
