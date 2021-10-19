@@ -9,6 +9,7 @@ public class pasl_operativo_bd {
     public static final String COLUMN_ESTADO = "ESTADO";
     public static final String COLUMN_CVEMUNICIPIO = "CVEMUNICIPIO";
     public static final String COLUMN_MUNICIPIO = "MUNICIPIO";
+    public static final String COLUMN_CVELOCALIDAD = "CVELOC";
     public static final String COLUMN_LOCALIDAD = "LOCALIDAD";
     public static final String COLUMN_NOMBRE = "NOMBRE";
     public static final String COLUMN_APATERNO = "APATERNO";
@@ -43,6 +44,7 @@ public class pasl_operativo_bd {
             + COLUMN_ESTADO + " VARCHAR, "
             + COLUMN_CVEMUNICIPIO + " VARCHAR, "
             + COLUMN_MUNICIPIO + " VARCHAR, "
+            + COLUMN_CVELOCALIDAD + " VARCHAR, "
             + COLUMN_LOCALIDAD + " VARCHAR, "
             + COLUMN_NOMBRE + " VARCHAR, "
             + COLUMN_APATERNO + " VARCHAR, "

@@ -4,19 +4,20 @@ import java.io.Serializable;
 
 public class Pasl_o_Model implements Serializable {
 
-    private String folio, fecha, cveestado, estado, cvemunicipio, municipio, localidad, nombre, apaterno, amaterno, sexo, edad, tiempo, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, fecha, cveestado, estado, cvemunicipio, municipio, cvelocalidad, localidad, nombre, apaterno, amaterno, sexo, edad, tiempo, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince, foto1, foto2, longitudGeo, latitudGeo;
 
     public Pasl_o_Model() {
     }
 
 
-    public Pasl_o_Model(String folio, String fecha, String cveestado, String estado, String cvemunicipio, String municipio, String localidad, String nombre, String apaterno, String amaterno, String sexo, String edad, String tiempo, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String trece, String catorce, String quince, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public Pasl_o_Model(String folio, String fecha, String cveestado, String estado, String cvemunicipio, String municipio, String cvelocalidad,  String localidad, String nombre, String apaterno, String amaterno, String sexo, String edad, String tiempo, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String diez, String once, String doce, String trece, String catorce, String quince, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
         this.cveestado = cveestado;
         this.estado = estado;
         this.cvemunicipio = cvemunicipio;
         this.municipio = municipio;
+        this.cvelocalidad = cvelocalidad;
         this.localidad = localidad;
         this.nombre = nombre;
         this.apaterno = apaterno;
@@ -92,6 +93,14 @@ public class Pasl_o_Model implements Serializable {
 
     public void setMunicipio(String municipio) {
         this.municipio = municipio;
+    }
+
+    public String getCvelocalidad() {
+        return cvelocalidad;
+    }
+
+    public void setCvelocalidad(String cvelocalidad) {
+        this.cvelocalidad = cvelocalidad;
     }
 
     public String getLocalidad() {

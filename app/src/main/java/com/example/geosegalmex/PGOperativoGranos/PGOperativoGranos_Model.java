@@ -4,12 +4,12 @@ import java.io.Serializable;
 
 public class PGOperativoGranos_Model implements Serializable {
 
-    private String folio, fecha, cveventanilla, ventanilla, cveestado, estado, cvemunicipio, municipio, localidad, calle, cp, uno, unosobs, dos, dosobs, tres, tresobs, cuatroa, cuatrob, cuatroc, cuatrod, cincoa, cincob, cincoc, cincod, cincoe, cincof, cincoobs, seis, seisobs, siete, sieteobs, ocho, ochoobs, nueve, nueveobs, diez, diezobs, once, onceobs, doce, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, fecha, cveventanilla, ventanilla, cveestado, estado, cvemunicipio, municipio, cvelocalidad, localidad, calle, cp, uno, unosobs, dos, dosobs, tres, tresobs, cuatroa, cuatrob, cuatroc, cuatrod, cincoa, cincob, cincoc, cincod, cincoe, cincof, cincoobs, seis, seisobs, siete, sieteobs, ocho, ochoobs, nueve, nueveobs, diez, diezobs, once, onceobs, doce, foto1, foto2, longitudGeo, latitudGeo;
 
     public PGOperativoGranos_Model() {
     }
 
-    public PGOperativoGranos_Model(String folio, String fecha, String cveventanilla, String ventanilla, String cveestado, String estado, String cvemunicipio, String municipio, String localidad, String calle, String cp, String uno, String unosobs, String dos, String dosobs, String tres, String tresobs, String cuatroa, String cuatrob, String cuatroc, String cuatrod, String cincoa, String cincob, String cincoc, String cincod, String cincoe, String cincof, String cincoobs, String seis, String seisobs, String siete, String sieteobs, String ocho, String ochoobs, String nueve, String nueveobs, String diez, String diezobs, String once, String onceobs, String doce, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public PGOperativoGranos_Model(String folio, String fecha, String cveventanilla, String ventanilla, String cveestado, String estado, String cvemunicipio, String municipio, String cvelocalidad, String localidad, String calle, String cp, String uno, String unosobs, String dos, String dosobs, String tres, String tresobs, String cuatroa, String cuatrob, String cuatroc, String cuatrod, String cincoa, String cincob, String cincoc, String cincod, String cincoe, String cincof, String cincoobs, String seis, String seisobs, String siete, String sieteobs, String ocho, String ochoobs, String nueve, String nueveobs, String diez, String diezobs, String once, String onceobs, String doce, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
         this.cveventanilla = cveventanilla;
@@ -18,6 +18,7 @@ public class PGOperativoGranos_Model implements Serializable {
         this.estado = estado;
         this.cvemunicipio = cvemunicipio;
         this.municipio = municipio;
+        this.cvelocalidad = localidad;
         this.localidad = localidad;
         this.calle = calle;
         this.cp = cp;
@@ -119,6 +120,14 @@ public class PGOperativoGranos_Model implements Serializable {
 
     public void setMunicipio(String municipio) {
         this.municipio = municipio;
+    }
+
+    public String getCvelocalidad() {
+        return cvelocalidad;
+    }
+
+    public void setCvelocalidad(String cvelocalidad) {
+        this.cvelocalidad = cvelocalidad;
     }
 
     public String getLocalidad() {

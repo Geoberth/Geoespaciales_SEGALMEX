@@ -10,7 +10,7 @@ import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 
 public class PGBgranosBD extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "PGBeneficiario_Granos";
+    public static final String DB_NAME = "PGBeneficiarioGranos";
     public static final int DB_VERSION = 1;
 
     public PGBgranosBD(Context context) {super(context, DB_NAME, null, DB_VERSION);}

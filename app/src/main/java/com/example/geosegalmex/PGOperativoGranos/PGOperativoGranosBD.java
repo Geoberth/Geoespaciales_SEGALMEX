@@ -42,6 +42,7 @@ public class PGOperativoGranosBD extends SQLiteOpenHelper {
         contentValues.put(PGOperativoGranos_bd.COLUMN_ESTADO, model.getEstado());
         contentValues.put(PGOperativoGranos_bd.COLUMN_CVEMUNICIPIO, model.getCvemunicipio());
         contentValues.put(PGOperativoGranos_bd.COLUMN_MUNICIPIO, model.getMunicipio());
+        contentValues.put(PGOperativoGranos_bd.COLUMN_CVELOCALIDAD, model.getCvelocalidad());
         contentValues.put(PGOperativoGranos_bd.COLUMN_LOCALIDAD, model.getLocalidad());
         contentValues.put(PGOperativoGranos_bd.COLUMN_CALLE, model.getCalle());
         contentValues.put(PGOperativoGranos_bd.COLUMN_CP, model.getCp());

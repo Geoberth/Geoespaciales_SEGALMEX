@@ -26,8 +26,10 @@ import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
 import com.example.geosegalmex.PAROperativo.PAR_Operativo;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos;
+import com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,8 +44,8 @@ public class NewCamara extends AppCompatActivity {
     String lizbelat = General.Latini;
     String lizbelon = General.Lonini;
     String lizID = General.Foliocuestion;
-    String nombreImagen = ""+ lizID + "," + lizbelat + "," + lizbelon + "_1.jpg";
-    String nombreImagen2 = ""+ lizID + "," + lizbelat + "," + lizbelon + "_2.jpg";
+    String nombreImagen = ""+ lizID + "-" + lizbelat + "-" + lizbelon + "_1.jpg";
+    String nombreImagen2 = ""+ lizID + "-" + lizbelat + "-" + lizbelon + "_2.jpg";
     String rutaImagen;
     String nombre, nombre2;
     String version2 = Build.VERSION.RELEASE;
@@ -164,6 +166,12 @@ public class NewCamara extends AppCompatActivity {
                                 else if(General.Proyecto.equals("PG Operativo Granos")){
                                     startActivity(new Intent(getApplication(), PGOperativoGranos.class));
                                 }
+                                else if(General.Proyecto.equals("PG Operativo Leche")){
+                                    startActivity(new Intent(getApplication(), PGOperativoLeche.class));
+                                }
+                                else if(General.Proyecto.equals("PG Beneficiario Leche")){
+                                    startActivity(new Intent(getApplication(), PGBeneficiarioLeche.class));
+                                }
                                 else if (General.Proyecto.equals("PG Beneficiario Granos")){
                                     startActivity(new Intent(getApplication(), PGBeneficiariosGranos.class));
                                 }
@@ -211,7 +219,7 @@ public class NewCamara extends AppCompatActivity {
         String lizbelat = General.Latini;
         String lizbelon = General.Lonini;
         String lizID = General.Foliocuestion;
-        String nombreImagen = ""+ lizID + "," + lizbelat + "," + lizbelon + "_" + id + "_";
+        String nombreImagen = ""+ lizID + "-" + lizbelat + "-" + lizbelon + "_" + id + "_";
 
         File file = new File(getExternalFilesDir(null), "/" + typeproyect + "/");
         if (!file.exists()) {
@@ -235,7 +243,7 @@ public class NewCamara extends AppCompatActivity {
         String lizbelat = General.Latini;
         String lizbelon = General.Lonini;
         String lizID = General.Foliocuestion;
-        String nombreImagennn = ""+ lizID + "," + lizbelat + "," + lizbelon + "_" + id + ".jpg";
+        String nombreImagennn = ""+ lizID + "-" + lizbelat + "-" + lizbelon + "_" + id + ".jpg";
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
 

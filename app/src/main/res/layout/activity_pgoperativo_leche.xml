@@ -6,21 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".PGOperativoLeche.PGOperativoLeche">
 
-    <LinearLayout
-
-        android:padding="16dp"
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-361dp">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -34,160 +33,154 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="15dp"
                     android:text="ENCUESTA PARA EL RESPONSABLE DE VENTANILLA (CENTROS DE ACOPIO DE LECHE)"
                     android:textAlignment="center"
-                    android:textStyle="bold"
                     android:textColor="#000000"
                     android:textSize="16dp" />
 
-                <TextView
-                    android:text="DÍA/MES/AÑO:"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/pg_vent_txt1"
+                <TextView
+                    android:id="@+id/pg_leche_tvFech"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/pg_leche_txtFecha"
                     android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="29dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="15dp"
                     android:text="DATOS DEL CENTRO DE ACOPIO (PRE-LLENADO)"
                     android:textStyle="bold"
                     android:textColor="#000000" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
-                    android:text="Ventanilla:"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Nombre del centro de acopio:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/pre_garan_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords|textAutoCorrect"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Número del centro de acopio:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Entidad Federativa:"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/pre_garan_spin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Municipio:"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/pre_garan_spin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Localidad:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pg_vent_txtLocalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapWords|textAutoCorrect" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Calle:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pg_vent_txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords|textAutoCorrect"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Código Postal:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pg_vent_txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1" />
 
                 <TextView
-                    android:text="Folio:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:id="@+id/pg_vent_txt2"
-                    android:layout_width="match_parent"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:text="Nombre de ventanilla:"
-                    android:layout_marginTop="15dp"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:id="@+id/pg_vent_txt3"
-                    android:layout_width="match_parent"
-                    android:hint="Escriba el nombre."
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-                <TextView
-                    android:text="Número del centro de acopio:"
-                    android:layout_marginTop="15dp"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:id="@+id/pg_vent_txt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:text="ENTIDAD FEDERATIVA"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <Spinner
-                    android:id="@+id/pg_vent_spin1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/borde"
-                    android:spinnerMode="dialog"/>
-
-                <TextView
-                    android:text="MUNICIPIO"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <Spinner
-                    android:id="@+id/pg_vent_spin2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/borde"
-                    android:spinnerMode="dialog"/>
-
-                <TextView
-                    android:text="COLONIA/LOCALIDAD"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <Spinner
-                    android:id="@+id/pg_vent_spin3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/borde"
-                    android:spinnerMode="dialog"/>
-
-                <TextView
-                    android:text="CALLE"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:id="@+id/pg_vent_txt5"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:text="CODIGO POSTAL"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
-
-                <EditText
-                    android:id="@+id/pg_vent_txt6"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
                     android:text="ENCUESTA PARA EL PERSONAL OPERATIVO DE VENTANILLA"
                     android:textStyle="bold"
                     android:textColor="#000000" />
@@ -222,7 +215,7 @@
                         android:id="@+id/pg_vent_txt7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -258,7 +251,7 @@
                         android:id="@+id/pg_vent_txt8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -294,7 +287,7 @@
                         android:id="@+id/pg_vent_txt9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -330,7 +323,7 @@
                         android:id="@+id/pg_vent_txt10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -366,7 +359,7 @@
                         android:id="@+id/pg_vent_txt11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -402,7 +395,7 @@
                         android:id="@+id/pg_vent_txt12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -438,7 +431,7 @@
                         android:id="@+id/pg_vent_txt13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -474,7 +467,7 @@
                         android:id="@+id/pg_vent_txt14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -510,7 +503,7 @@
                         android:id="@+id/pg_vent_txt15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -523,55 +516,41 @@
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="1dp"
+
+                    android:id="@+id/pg_vent_ch1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="Solicitud de ingreso" />
 
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:enabled="true"
-                        android:layout_marginTop="1dp"
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
 
-                        android:id="@+id/pg_vent_ch1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Solicitud de ingreso" />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:enabled="true"
-                        android:layout_marginTop="0dp"
-
-                        android:id="@+id/pg_vent_ch2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="CURP" />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:enabled="true"
-                        android:layout_marginTop="0dp"
-
-                        android:id="@+id/pg_vent_ch3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="RFC." />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:id="@+id/pg_vent_ch2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="CURP" />
 
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:enabled="true"
-                        android:layout_marginTop="0dp"
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
 
-                        android:id="@+id/pg_vent_ch4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="INE o Identificación oficial" />
+                    android:id="@+id/pg_vent_ch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RFC" />
 
-                </LinearLayout>
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:enabled="true"
+                    android:layout_marginTop="0dp"
+
+                    android:id="@+id/pg_vent_ch4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INE o Identificación oficial" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -622,7 +601,7 @@
                         android:id="@+id/pg_vent_txt16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -658,7 +637,7 @@
                         android:id="@+id/pg_vent_txt17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -694,7 +673,7 @@
                         android:id="@+id/pg_vent_txt18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
+                        android:layout_marginLeft="5dp"
                         android:hint="Comentarios"
                         android:maxLines="1" />
 
@@ -710,9 +689,8 @@
                 <EditText
                     android:id="@+id/pg_vent_txt19"
                     android:layout_width="match_parent"
+                    android:inputType="textCapWords|textAutoCorrect"
                     android:layout_height="wrap_content"
-                    android:textStyle="italic"
-                    android:hint="Comentarios"
                     android:maxLines="4" />
 
 
@@ -725,13 +703,11 @@
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginBottom="25dp"
                     android:text="Siguiente"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="15dp"
                     app:iconPadding="20dp"
                     app:icon="@android:drawable/ic_input_add"/>
 
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

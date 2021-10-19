@@ -11,6 +11,7 @@ public class PGOperativoGranos_bd {
     public static final String COLUMN_ESTADO = "ENTIDAD";
     public static final String COLUMN_CVEMUNICIPIO = "CVEMUN";
     public static final String COLUMN_MUNICIPIO = "MUNICIPIO";
+    public static final String COLUMN_CVELOCALIDAD = "CVELOC";
     public static final String COLUMN_LOCALIDAD = "LOCALIDAD";
     public static final String COLUMN_CALLE = "CALLE";
     public static final String COLUMN_CP = "CP";
@@ -58,6 +59,7 @@ public class PGOperativoGranos_bd {
             + COLUMN_ESTADO + " VARCHAR, "
             + COLUMN_CVEMUNICIPIO + " VARCHAR, "
             + COLUMN_MUNICIPIO + " VARCHAR, "
+            + COLUMN_CVELOCALIDAD + " VARCHAR, "
             + COLUMN_LOCALIDAD + " VARCHAR, "
             + COLUMN_CALLE + " VARCHAR, "
             + COLUMN_CP + " VARCHAR, "

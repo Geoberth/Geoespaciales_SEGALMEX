@@ -137,10 +137,32 @@ public class ExportarFragment extends Fragment {
                 }
 
                 try {
-                    deployDatabase("PGBeneficiaroGranos");
+                    deployDatabase("PGOperativoLeche");
                 } catch (IOException e) {
                     try {
-                        deployDatabase("PGBeneficiaroGranos");
+                        deployDatabase("PGOperativoLeche");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
+                try {
+                    deployDatabase("PGBeneficiarioGranos");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("PGBeneficiarioGranos");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
+                try {
+                    deployDatabase("PGBeneficiarioLeche");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("PGBeneficiarioLeche");
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }

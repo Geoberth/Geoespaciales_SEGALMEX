@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -91,17 +92,8 @@ public class PGOperativoGranos extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.pre_garan_ch10).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(cincof.isChecked()==true){
-                    ed5.setVisibility(View.VISIBLE);
-                }else{
-                    ed5.setVisibility(View.GONE);
-                    ed5.setText("");
-                }
-            }
-        });
+        //Funcion para ocultar y mostrar las Observaciones en cada pregunta
+        eventos();
 
         avanzar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -149,7 +141,7 @@ public class PGOperativoGranos extends AppCompatActivity {
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
 
-                    model = new PGOperativoGranos_Model(fol, General.fechaenc, cveven, nomven, cveedo, nomedo, cvemun,  nommun, loc, call, codp, uno, unoObs, dos, dosObs, tres, tresObs, cuatroA, cuatroB,
+                    model = new PGOperativoGranos_Model(fol, General.fechaenc, cveven, nomven, cveedo, nomedo, cvemun,  nommun, "", loc, call, codp, uno, unoObs, dos, dosObs, tres, tresObs, cuatroA, cuatroB,
                             cuatroC, cuatroD, cincoA, cincoB, cincoC, cincoD, cincoE, cincoF, cincoObs, seis, seisObs, siete, sieteObs, ocho, ochoObs, nueve, nueveObs, diez, diezObs, once, onceObs,
                             doce, f1, f2, "", "");
                     Intent in = new Intent(PGOperativoGranos.this, GeoreferenciaActivity.class);
@@ -350,6 +342,146 @@ public class PGOperativoGranos extends AppCompatActivity {
         }
 
         return retorno;
+    }
+
+    public void eventos(){
+        findViewById(R.id.pre_garan_ch10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cincof.isChecked()==true){
+                    ed5.setVisibility(View.VISIBLE);
+                }else{
+                    ed5.setVisibility(View.GONE);
+                    ed5.setText("");
+                }
+            }
+        });
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.rg1);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si.isChecked()==true || na.isChecked()==true){
+                    ed1.setVisibility(View.GONE);
+                    ed1.setText("");
+                }else{
+                    ed1.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.rg2);
+        radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si2.isChecked()==true || na2.isChecked()==true){
+                    ed2.setVisibility(View.GONE);
+                    ed2.setText("");
+                }else{
+                    ed2.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup3 = (RadioGroup) findViewById(R.id.rg3);
+        radioGroup3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si3.isChecked()==true || na3.isChecked()==true){
+                    ed3.setVisibility(View.GONE);
+                    ed3.setText("");
+                }else{
+                    ed3.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup6 = (RadioGroup) findViewById(R.id.rg6);
+        radioGroup6.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si6.isChecked()==true || na6.isChecked()==true){
+                    ed6.setVisibility(View.GONE);
+                    ed6.setText("");
+                }else{
+                    ed6.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup7 = (RadioGroup) findViewById(R.id.rg7);
+        radioGroup7.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si7.isChecked()==true || na7.isChecked()==true){
+                    ed7.setVisibility(View.GONE);
+                    ed7.setText("");
+                }else{
+                    ed7.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup8 = (RadioGroup) findViewById(R.id.rg8);
+        radioGroup8.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si8.isChecked()==true || na8.isChecked()==true){
+                    ed8.setVisibility(View.GONE);
+                    ed8.setText("");
+                }else{
+                    ed8.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup9 = (RadioGroup) findViewById(R.id.rg9);
+        radioGroup9.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si9.isChecked()==true || na9.isChecked()==true){
+                    ed9.setVisibility(View.GONE);
+                    ed9.setText("");
+                }else{
+                    ed9.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup10 = (RadioGroup) findViewById(R.id.rg10);
+        radioGroup10.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si10.isChecked()==true || na10.isChecked()==true){
+                    ed10.setVisibility(View.GONE);
+                    ed10.setText("");
+                }else{
+                    ed10.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        RadioGroup radioGroup11 = (RadioGroup) findViewById(R.id.rg11);
+        radioGroup11.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(si11.isChecked()==true || na11.isChecked()==true){
+                    ed11.setVisibility(View.GONE);
+                    ed11.setText("");
+                }else{
+                    ed11.setVisibility(View.VISIBLE);
+                }
+            }
+        });
     }
 
     @Override

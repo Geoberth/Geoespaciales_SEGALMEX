@@ -6,1983 +6,1935 @@
     android:layout_height="match_parent"
     tools:context=".PGBeneficiarioGranos.PGBeneficiariosGranos">
 
-    <LinearLayout
-
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-183dp">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROGRAMA PRECIOS DE GARANTÍA A PRODUCTOS ALIMENTARIOS BÁSICOS"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:text="ENCUESTA DE OPINIÓN AL PRODUCTOR BENEFICIARIO (GRANOS)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/pg_leche_tvFech"
+                    android:layout_width="178dp"
                     android:layout_height="wrap_content"
-                    android:text="PROGRAMA PRECIOS DE GARANTÍA A PRODUCTOS ALIMENTARIOS BÁSICOS"
-                    android:textAlignment="center"
+                    android:text="Fecha:"
                     android:textColor="#000000"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="30dp"
-                    android:text="ENCUESTA DE OPINIÓN AL PRODUCTOR BENEFICIARIO (GRANOS)"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="FECHA:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt1"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="dd/mm/aaaa"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:text="INFORMACIÓN DEL BENEFICIARIO (PRE-LLENADO)"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
-                    android:text="Datos del productor:"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre(s):"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt2"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Apellido Paterno:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt3"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Apellido Materno:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="CURP:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt5"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="INDIQUE QUE TIPO DE PRODUCTOR ES:"
-                    android:textStyle="bold"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Pequeño productor" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mediano productor" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
-                    android:text="Dirección del Beneficiario:"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Calle:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt6"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Num Int:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt7"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Num Ext:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt8"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colonia/Localidad"
-                    android:textColor="#000000" />
-
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt9"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Código Postal"
-                    android:textColor="#000000" />
-
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt10"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ENTIDAD FEDERATIVA"
-                    android:textColor="#000000" />
-
-                <Spinner
-                    android:id="@+id/pgb_o_spiEstado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/borde"
-                    android:entries="@array/Estados2021"
-                    android:spinnerMode="dropdown"
                     android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/pg_leche_txtFecha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Clave (Entidad Federativa)"
-                    android:textColor="#000000" />
-
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt11"
-                    android:layout_width="160dp"
-                    android:layout_height="62dp"
-                    android:hint="Clave"
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="MUNICIPIO"
-                    android:textColor="#000000" />
-
-                <Spinner
-                    android:id="@+id/pgb_o_spiMunicipio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/borde"
-                    android:enabled="false"
-                    android:entries="@array/Aguascalientes2021"
-                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#000000"
                     android:textSize="15sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Clave (Municipio)"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt12"
-                    android:layout_width="160dp"
-                    android:layout_height="62dp"
-                    android:hint="Clave"
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
-                    android:text="Dirección de producción"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Calle:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt13"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Num Int:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt14"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Num Ext:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt15"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Colonia/Localidad"
-                    android:textColor="#000000" />
-
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt16"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Código Postal"
-                    android:textColor="#000000" />
-
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt17"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ENTIDAD FEDERATIVA"
-                    android:textColor="#000000" />
-
-                <Spinner
-                    android:id="@+id/pgb_o_spiEstado2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/borde"
-                    android:entries="@array/Estados2021"
-                    android:spinnerMode="dropdown"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Clave (Entidad Federativa)"
-                    android:textColor="#000000" />
-
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt18"
-                    android:layout_width="160dp"
-                    android:layout_height="62dp"
-                    android:hint="Clave"
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="MUNICIPIO"
-                    android:textColor="#000000" />
-
-                <Spinner
-                    android:id="@+id/pgb_o_spiMunicipio2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/borde"
-                    android:enabled="false"
-                    android:entries="@array/Aguascalientes2021"
-                    android:spinnerMode="dropdown"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Clave (Municipio)"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt19"
-                    android:layout_width="160dp"
-                    android:layout_height="62dp"
-                    android:hint="Clave"
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:text="INFORMACIÓN SOCIOECONÓMICA"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
-                    android:text="Seleccione la opción qué corresponda"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="SEXO:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra2_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Hombre" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra2_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mujer" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Años cumplidos"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt20"
-                    android:layout_width="160dp"
-                    android:layout_height="62dp"
-                    android:hint="Escriba el número"
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿Sabe leer y escribir?"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Indique el último nivel o grado de estudio que cursó en la escuela"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ninguna" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Primaria incompleta" />
-
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Primaria completa" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Secundaria incompleta" />
-
-                </RadioGroup>
-
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Secundaria completa" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nivel Medio Superior incompleto (Bachillerato general, Bachillerato especializado o tecnológico)" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nivel Medio Superior completo" />
-
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Licenciatura inconclusa" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Licenciatura concluida" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Posgrado inconcluso" />
-
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Posgrado Concluido" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Otros" />
-
-                </RadioGroup>
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Especifique"
-                    android:maxLines="1"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:text="INFORMACIÓN DE ACOPIO"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:text="Nombre del producto:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Arroz" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Maíz" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Frijol" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Trigo" />
-
-                </RadioGroup>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="Peso Bruto"
-                        android:textColor="#000000"
-                        android:textStyle="italic|bold" />
-
-                    <EditText
-                        android:id="@+id/pre_garan_granos_tx22"
-                        android:layout_width="150dp"
-                        android:layout_height="62dp"
-                        android:hint="Cantidad (Kg)"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="Peso Tara de camión"
-                        android:textColor="#000000"
-                        android:textStyle="italic|bold" />
-
-                    <EditText
-                        android:id="@+id/pre_garan_granos_tx23"
-                        android:layout_width="150dp"
-                        android:layout_height="62dp"
-                        android:hint="Cantidad (Kg)"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="Peso Neto"
-                        android:textColor="#000000"
-                        android:textStyle="italic|bold" />
-
-                    <EditText
-                        android:id="@+id/pre_garan_granos_tx24"
-                        android:layout_width="150dp"
-                        android:layout_height="62dp"
-                        android:hint="Cantidad (kg)"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="SELECCIONE LA INFORMACIÓN QUE CONOCE DEL APOYO:"
-                    android:textStyle="bold"
-                    android:textColor="#000000" />
-
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch1"
-                    android:layout_width="match_parent"
-
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="1dp"
-                    android:enabled="true"
-                    android:text="Duración de acopio" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Monto total de dinero a recibir" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Fechas de entrega del apoyo" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch4"
-                    android:layout_width="match_parent"
-
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="1dp"
-                    android:enabled="true"
-                    android:text="Acciones fundamentales para la operación" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Precios de compra" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Requisitos para ser beneficiario" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch7"
-                    android:layout_width="match_parent"
-
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="1dp"
-                    android:enabled="true"
-                    android:text="Dependencias del gobierno federal que participan en el apoyo" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Donde canalizar sus quejas o denuncias" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Fechas de apertura y cierre del programa" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Mecánica operativa" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="SELECCIONE LA DOCUMENTACIÓN QUE ENTREGÓ PARA REGISTRARSE EN EL PROGRAMA:"
-                    android:textStyle="bold"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Identificación oficial vigente:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="CURP:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra23"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra24"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Número de cuenta CLABE o algún método de pago:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra25"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra26"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Documento o folio que acredite su registro en alguno de los siguientes padrones: Censo del Bienestar, producción para el Bienestar:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra27"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra28"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Documento que acredite la posesión del predio sembrado o la renta del mismo:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra29"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra30"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="SELECCIONE LA OPCIÓN QUE CORRESPONDA A SU OPINIÓN DEL APOYO:"
-                    android:textStyle="bold"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="El pago le fue entregado completo:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra31"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra32"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="El pago se realizó de acuerdo a la fecha programada:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra33"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra34"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Le fue condicionada la recepción del grano:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra35"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra36"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Le entregaron el resultado de la calidad de la muestra y las deducciones que serán aplicadas:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra37"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra38"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="La compra de su cosecha representó una mejora para su localidad, su familia o para usted:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra39"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra40"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="En su opinión ¿El pago lo reciben las personas que lo necesitan?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra41"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra42"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿Le entregaron el formato/comprobante de recepción de documentos?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra43"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra44"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿Se le dio a conocer el precio de garantía?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra45"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra46"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿Identifica alguna diferencia entre el precio al que compran los acopiadores privados y el precio de garantía?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra47"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra48"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿La información difundida del programa fue suficiente, clara y oportuna?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra49"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra50"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview1"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:visibility="visible"
-                    android:text="PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE FRIJOL Y MAÍZ PEQUEÑOS PRODUCTORES"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Le entregaron el Documento de Compra (DC-01) que indica la calidad y el pesaje del grano firmada por el jefe de centro de acopio?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra51"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra52"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview3"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:visibility="visible"
-                    android:text="PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE ESTÍMULOS (ARROZ, TRIGO Y MAÍZ MEDIANOS PRODUCTORES)"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Conoce el precio de referencia sobre el cual se calcula el estímulo?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra53"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra54"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra55"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Aplica" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Conoce el monto del estímulo que se le está pagando?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra56"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra57"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra58"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Aplica" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="Para el caso de los beneficiarios de maíz de medianos productores y trigo cristalino. ¿Conoce el apoyo que se otorga para la Adquisición de Instrumentos de Administración de Riesgos?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra59"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra60"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra61"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Aplica" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Recibió formato/comprobante de recepción de documentos?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra62"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra63"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra64"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Aplica" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Recibió factura que indica el volumen comercializado?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra65"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra66"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra67"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Aplica" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:visibility="visible"
-                    android:text="ENCUESTA DE OPINIÓN:"
-                    android:textStyle="bold"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Seleccione la opción que corresponda a su opinión:"
-                    android:textStyle="bold"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="La atención de los encargados del Centro de Acopio fue:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra68"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra69"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra70"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra71"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra72"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra73"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cómo considera el proceso para acceder al apoyo?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra74"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra75"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra76"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cómo considera el tiempo transcurrido para recibir el pago?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra77"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra78"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra79"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cómo considera el monto pagado?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra80"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra81"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra82"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra83"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra84"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra85"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/pre_garan_granos_ra86"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bueno" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra87"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Aceptable" />
-
-                    <RadioButton
-
-                        android:id="@+id/pre_garan_granos_ra88"
-                        android:visibility="visible"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Malo" />
-                </RadioGroup>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview18"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="0dp"
-                    android:text="Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview177"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cómo se enteró del Programa y los requisitos?:"
-                    android:textColor="#000000" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/pre_garan_granos_ch11"
-                        android:visibility="visible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="Carteles informativos" />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/pre_garan_granos_ch12"
-                        android:visibility="visible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="Periódico" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/pre_garan_granos_ch13"
-                        android:visibility="visible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="Radio" />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/pre_garan_granos_ch14"
-                        android:visibility="visible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="Televisión" />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/pre_garan_granos_ch15"
-                        android:visibility="visible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="Otros productores" />
-
-                </LinearLayout>
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch16"
-                    android:visibility="visible"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Sitio oficial/Medios oficiales" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch17"
-                    android:visibility="visible"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Redes sociales, Internet" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_granos_ch18"
-                    android:visibility="visible"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Autoridades o instituciones locales" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/pre_garan_granos_ch19"
-                        android:visibility="visible"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="Otro  " />
-
-                    <EditText
-                        android:id="@+id/pre_garan_granos_tx25"
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:visibility="visible"
-                        android:hint="Especifique"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:layout_marginTop="5dp"
-                    android:text="¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt26"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Escriba su respuesta"
-                    android:maxLines="1"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cuáles considera son para usted las ventajas de este Programa?:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt27"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Escriba su respuesta"
-                    android:maxLines="1"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cuáles considera son las principales desventajas del Programa?:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt28"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Escriba su respuesta"
-                    android:maxLines="1"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:id="@+id/pre_garan_granos_txtview22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="visible"
-                    android:text="¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/pre_garan_granos_txt29"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Escriba su respuesta"
-                    android:maxLines="1"
-                    android:textStyle="italic" />
-
-                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                    android:id="@+id/pre_garan_granos_sig"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="25dp"
-                    android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
-                    android:text="Siguiente"
-                    android:theme="@style/Theme.MaterialComponents.Light"
-                    app:icon="@android:drawable/ic_input_add"
-                    app:iconPadding="20dp" />
 
             </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="INFORMACIÓN DEL BENEFICIARIO (PRE-LLENADO)"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:text="Datos del productor:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre(s):"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellido Paterno:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellido Materno:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURP:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt5"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="INDIQUE QUE TIPO DE PRODUCTOR ES:"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pequeño productor" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mediano productor" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:text="Dirección del Beneficiario:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calle:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt6"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num Int:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt7"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:hint="Escriba el número."
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num Ext:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt8"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:hint="Escriba el número."
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colonia/Localidad"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt9"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código Postal"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt10"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:hint="Escriba el número."
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTIDAD FEDERATIVA"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/pgb_o_spiEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MUNICIPIO"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/pgb_o_spiMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:enabled="false"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:text="Dirección de producción"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calle:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt13"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num Int:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt14"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:hint="Escriba el número."
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num Ext:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt15"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:hint="Escriba el número."
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colonia/Localidad"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt16"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código Postal"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt17"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:hint="Escriba el número."
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTIDAD FEDERATIVA"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/pgb_o_spiEstado2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MUNICIPIO"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/pgb_o_spiMunicipio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:enabled="false"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="INFORMACIÓN SOCIOECONÓMICA"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:text="Seleccione la opción qué corresponda"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEXO:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Años cumplidos"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt20"
+                android:layout_width="160dp"
+                android:layout_height="62dp"
+                android:hint="Escriba el número"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Sabe leer y escribir?"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Indique el último nivel o grado de estudio que cursó en la escuela"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ninguna" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primaria incompleta" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primaria completa" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secundaria incompleta" />
+
+            </RadioGroup>
+
+
+            <RadioButton
+
+                android:id="@+id/pre_garan_granos_ra9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secundaria completa" />
+
+            <RadioButton
+
+                android:id="@+id/pre_garan_granos_ra10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivel Medio Superior incompleto (Bachillerato general, Bachillerato especializado o tecnológico)" />
+
+            <RadioButton
+
+                android:id="@+id/pre_garan_granos_ra11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nivel Medio Superior completo" />
+
+
+            <RadioButton
+
+                android:id="@+id/pre_garan_granos_ra12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licenciatura inconclusa" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Licenciatura concluida" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posgrado inconcluso" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posgrado Concluido" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Otros" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especifique"
+                android:maxLines="1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="INFORMACIÓN DE ACOPIO"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Nombre del producto:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arroz" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maíz" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frijol" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trigo" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Peso Bruto"
+                    android:textColor="#000000"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/pre_garan_granos_tx22"
+                    android:layout_width="150dp"
+                    android:layout_height="62dp"
+                    android:hint="Cantidad (Kg)"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Peso Tara de camión"
+                    android:textColor="#000000"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/pre_garan_granos_tx23"
+                    android:layout_width="150dp"
+                    android:layout_height="62dp"
+                    android:hint="Cantidad (Kg)"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Peso Neto"
+                    android:textColor="#000000"
+                    android:textStyle="italic|bold" />
+
+                <EditText
+                    android:id="@+id/pre_garan_granos_tx24"
+                    android:layout_width="150dp"
+                    android:layout_height="62dp"
+                    android:hint="Cantidad (kg)"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="SELECCIONE LA INFORMACIÓN QUE CONOCE DEL APOYO:"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:enabled="true"
+                android:text="Duración de acopio" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Monto total de dinero a recibir" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Fechas de entrega del apoyo" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch4"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:enabled="true"
+                android:text="Acciones fundamentales para la operación" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Precios de compra" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Requisitos para ser beneficiario" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch7"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:enabled="true"
+                android:text="Dependencias del gobierno federal que participan en el apoyo" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Donde canalizar sus quejas o denuncias" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Fechas de apertura y cierre del programa" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Mecánica operativa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="SELECCIONE LA DOCUMENTACIÓN QUE ENTREGÓ PARA REGISTRARSE EN EL PROGRAMA:"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Identificación oficial vigente:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURP:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de cuenta CLABE o algún método de pago:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documento o folio que acredite su registro en alguno de los siguientes padrones: Censo del Bienestar, producción para el Bienestar:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documento que acredite la posesión del predio sembrado o la renta del mismo:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="SELECCIONE LA OPCIÓN QUE CORRESPONDA A SU OPINIÓN DEL APOYO:"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El pago le fue entregado completo:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El pago se realizó de acuerdo a la fecha programada:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Le fue condicionada la recepción del grano:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Le entregaron el resultado de la calidad de la muestra y las deducciones que serán aplicadas:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La compra de su cosecha representó una mejora para su localidad, su familia o para usted:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En su opinión ¿El pago lo reciben las personas que lo necesitan?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Le entregaron el formato/comprobante de recepción de documentos?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Se le dio a conocer el precio de garantía?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Identifica alguna diferencia entre el precio al que compran los acopiadores privados y el precio de garantía?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿La información difundida del programa fue suficiente, clara y oportuna?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible"
+                android:text="PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE FRIJOL Y MAÍZ PEQUEÑOS PRODUCTORES"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Le entregaron el Documento de Compra (DC-01) que indica la calidad y el pesaje del grano firmada por el jefe de centro de acopio?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra51"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra52"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible"
+                android:text="PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE ESTÍMULOS (ARROZ, TRIGO Y MAÍZ MEDIANOS PRODUCTORES)"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Conoce el precio de referencia sobre el cual se calcula el estímulo?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra53"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra54"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra55"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Aplica" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Conoce el monto del estímulo que se le está pagando?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra56"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra57"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra58"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Aplica" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="Para el caso de los beneficiarios de maíz de medianos productores y trigo cristalino. ¿Conoce el apoyo que se otorga para la Adquisición de Instrumentos de Administración de Riesgos?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra59"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra60"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra61"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Aplica" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Recibió formato/comprobante de recepción de documentos?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra62"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra63"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra64"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Aplica" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Recibió factura que indica el volumen comercializado?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra65"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra66"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra67"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Aplica" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible"
+                android:text="ENCUESTA DE OPINIÓN:"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Seleccione la opción que corresponda a su opinión:"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="La atención de los encargados del Centro de Acopio fue:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra68"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra69"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra70"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra71"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra72"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra73"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cómo considera el proceso para acceder al apoyo?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra74"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra75"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra76"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cómo considera el tiempo transcurrido para recibir el pago?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra77"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra78"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra79"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cómo considera el monto pagado?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra80"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra81"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra82"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra83"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra84"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra85"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pre_garan_granos_ra86"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bueno" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra87"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptable" />
+
+                <RadioButton
+
+                    android:id="@+id/pre_garan_granos_ra88"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malo" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview18"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:text="Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview177"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cómo se enteró del Programa y los requisitos?:"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/pre_garan_granos_ch11"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Carteles informativos" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/pre_garan_granos_ch12"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Periódico" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/pre_garan_granos_ch13"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Radio" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/pre_garan_granos_ch14"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Televisión" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/pre_garan_granos_ch15"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Otros productores" />
+
+            </LinearLayout>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch16"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Sitio oficial/Medios oficiales" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch17"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Redes sociales, Internet" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_granos_ch18"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Autoridades o instituciones locales" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/pre_garan_granos_ch19"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:enabled="true"
+                    android:text="Otro  " />
+
+                <EditText
+                    android:id="@+id/pre_garan_granos_tx25"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:hint="Especifique"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:text="¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba su respuesta"
+                android:maxLines="1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cuáles considera son para usted las ventajas de este Programa?:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba su respuesta"
+                android:maxLines="1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cuáles considera son las principales desventajas del Programa?:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba su respuesta"
+                android:maxLines="1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/pre_garan_granos_txtview22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_granos_txt29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba su respuesta"
+                android:maxLines="1"
+                android:textStyle="italic" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/pre_garan_granos_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+                android:text="Siguiente"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconPadding="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

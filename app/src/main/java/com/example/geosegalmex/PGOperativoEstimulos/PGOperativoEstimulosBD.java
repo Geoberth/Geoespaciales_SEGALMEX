@@ -43,6 +43,7 @@ public class PGOperativoEstimulosBD extends SQLiteOpenHelper {
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_ESTADO, model.getEstado());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_CVEMUNICIPIO, model.getCvemunicipio());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_MUNICIPIO, model.getMunicipio());
+        contentValues.put(PGOperativoEstimulos_bd.COLUMN_CVELOCALIDAD, model.getCvelocalidad());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_LOCALIDAD, model.getLocalidad());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_CALLE, model.getCalle());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_CP, model.getCp());

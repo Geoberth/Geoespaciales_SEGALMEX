@@ -4,12 +4,12 @@ import java.io.Serializable;
 
 public class PGOperativoEstimulos_Model implements Serializable {
 
-    private String folio, fecha, cveventanilla, ventanilla, cveestado, estado, cvemunicipio, municipio, localidad, calle, cp, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, fecha, cveventanilla, ventanilla, cveestado, estado, cvemunicipio, municipio, cvelocalidad, localidad, calle, cp, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, foto1, foto2, longitudGeo, latitudGeo;
 
     public PGOperativoEstimulos_Model() {
     }
 
-    public PGOperativoEstimulos_Model(String folio, String fecha, String cveventanilla, String ventanilla, String cveestado, String estado, String cvemunicipio, String municipio, String localidad, String calle, String cp, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public PGOperativoEstimulos_Model(String folio, String fecha, String cveventanilla, String ventanilla, String cveestado, String estado, String cvemunicipio, String municipio, String cvelocalidad, String localidad, String calle, String cp, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
         this.cveventanilla = cveventanilla;
@@ -18,6 +18,7 @@ public class PGOperativoEstimulos_Model implements Serializable {
         this.estado = estado;
         this.cvemunicipio = cvemunicipio;
         this.municipio = municipio;
+        this.cvelocalidad = cvelocalidad;
         this.localidad = localidad;
         this.calle = calle;
         this.cp = cp;
@@ -98,6 +99,14 @@ public class PGOperativoEstimulos_Model implements Serializable {
 
     public void setMunicipio(String municipio) {
         this.municipio = municipio;
+    }
+
+    public String getCvelocalidad() {
+        return cvelocalidad;
+    }
+
+    public void setCvelocalidad(String cvelocalidad) {
+        this.cvelocalidad = cvelocalidad;
     }
 
     public String getLocalidad() {

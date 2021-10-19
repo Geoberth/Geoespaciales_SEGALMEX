@@ -475,4 +475,9 @@ public class PASLBeneficiario extends AppCompatActivity {
         return retorno;
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
 }

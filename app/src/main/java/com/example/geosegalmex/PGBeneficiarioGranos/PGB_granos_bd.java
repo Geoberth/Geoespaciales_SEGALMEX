@@ -29,7 +29,7 @@ public class PGB_granos_bd {
     public static final String COLUMN_PGBTT20 = "PGBTT20";
     public static final String COLUMN_PGR2 = "PGR2";
     public static final String COLUMN_PGR3 = "PGR3";
-    public static final String COLUMN_PGBTT21 = "PGBT21";
+    public static final String COLUMN_PGBTT21 = "PGBTT21";
     public static final String COLUMN_PGR4 = "PGR4";
     public static final String COLUMN_PGBTT22 = "PGBTT22";
     public static final String COLUMN_PGBTT23 = "PGBTT23";
@@ -102,6 +102,9 @@ public class PGB_granos_bd {
             + COLUMN_PGBTT7 + " VARCHAR, "
             + COLUMN_PGBTT8 + " VARCHAR, "
             + COLUMN_PGBTT9 + " VARCHAR, "
+            + COLUMN_PGBTT10 + " VARCHAR, "
+            + COLUMN_PGBTT11 + " VARCHAR, "
+            + COLUMN_PGBTT12 + " VARCHAR, "
             + COLUMN_PGBTT13 + " VARCHAR, "
             + COLUMN_PGBTT14 + " VARCHAR, "
             + COLUMN_PGBTT15 + " VARCHAR, "
@@ -115,7 +118,7 @@ public class PGB_granos_bd {
             + COLUMN_PGBTT20 + " VARCHAR, "
             + COLUMN_PGR2 + " VARCHAR,"
             + COLUMN_PGR3 + " VARHCAR, "
-            + COLUMN_PGBTT21 + "VARCHAR, "
+            + COLUMN_PGBTT21 + " VARCHAR, "
             + COLUMN_PGR4 + " VARCHAR, "
             + COLUMN_PGBTT22 + " VARCHAR, "
             + COLUMN_PGBTT23  + " VARCHAR, "
@@ -143,7 +146,6 @@ public class PGB_granos_bd {
             + COLUMN_PGR15 + " VARCHAR, "
             + COLUMN_PGR16 + " VARCHAR, "
             + COLUMN_PGR17 + " VARCHAR, "
-            + COLUMN_PGR18 + " VARCHAR, "
             + COLUMN_PGR18 + " VARCHAR, "
             + COLUMN_PGR19 + " VARCHAR, "
             + COLUMN_PGR20 + " VARCHAR, "
@@ -176,7 +178,7 @@ public class PGB_granos_bd {
             + COLUMN_FOTO1 + " VARCHAR, "
             + COLUMN_FOTO2 + " VARCHAR, "
             + COLUMN_LONGITUDGEO + " VARCHAR, "
-            + COLUMN_LATITUDGEO + " VARCHAR, " ;
+            + COLUMN_LATITUDGEO + " VARCHAR); " ;
 
 
 
