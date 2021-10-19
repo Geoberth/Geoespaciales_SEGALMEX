@@ -21,6 +21,9 @@ import com.example.geosegalmex.LiconsaBeneficiario.Pasl_b_Model;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGB_granos_model;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos_Model;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
@@ -61,6 +64,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     Pasl_b_Model model2;
     PGOperativoEstimulos_Model model3;
     PGOperativoGranos_Model model4;
+    PGB_granos_model model5;
 
     String longitudGeo;
     String latitudGeo;
@@ -101,6 +105,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PG Operativo Granos")){
                     agregarPGOperativoGranos();
+                }
+                else if(General.Proyecto.equals("PG Beneficiario Granos")){
+                    agregarPGBeneficiariosGranos();
                 }
 
                 finish();
@@ -296,6 +303,26 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
         baseBD = new PGOperativoGranosBD(this);
 
         boolean insertarData = baseBD.addPGOperativoGranos(model4);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void agregarPGBeneficiariosGranos() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model5 = new PGB_granos_model();
+        model5 = (PGB_granos_model) getIntent().getSerializableExtra("model");
+        model5.setLongitudGeo(longitudGeo);
+        model5.setLatitudGeo(latitudGeo);
+
+        PGBgranosBD baseBD;
+        baseBD = new PGBgranosBD(this);
+
+        boolean insertarData = baseBD.addPGBeneficiarioGranos(model5);
         if(insertarData == true) {
             Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
         }else{
