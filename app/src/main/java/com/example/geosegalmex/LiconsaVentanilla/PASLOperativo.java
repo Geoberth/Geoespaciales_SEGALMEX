@@ -148,7 +148,7 @@ public class PASLOperativo extends AppCompatActivity {
                 String eda = edad.getText().toString();
                     String año = años.getText().toString();
                     String mes = meses.getText().toString();
-                String tie = año + " años, " + mes + " meses";
+                String tie = año + " años-" + mes + " meses";
                 String uno = obtenerResultado(si, no);
                 String dos = obtenerResultado(si2, no2);
                 String tres = obtenerResultado(si3, no3);
@@ -168,7 +168,7 @@ public class PASLOperativo extends AppCompatActivity {
                 String f2 = General.Foto2;
 
                 if(validar()){
-                    model = new Pasl_o_Model(fol, General.fechaenc, cveedo, nomedo, cvemun,  nommun, loc, nom, apa, ama, sexo, eda, tie, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, cator, quin, f1, f2, "", "");
+                    model = new Pasl_o_Model(fol, General.fechaenc, cveedo, nomedo, cvemun,  nommun, "", loc, nom, apa, ama, sexo, eda, tie, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, cator, quin, f1, f2, "", "");
                     Intent in = new Intent(PASLOperativo.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);

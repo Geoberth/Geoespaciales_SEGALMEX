@@ -604,6 +604,10 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_gps_enableb.xml"
     },
     {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pgbeneficiario_leche.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pgbeneficiario_leche.xml"
+    },
+    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_menu_gallery.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
     },

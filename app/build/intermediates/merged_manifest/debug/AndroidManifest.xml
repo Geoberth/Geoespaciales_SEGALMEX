@@ -39,6 +39,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche"
+            android:exported="false" />
+        <activity
             android:name="com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche"
             android:exported="false" />
         <activity

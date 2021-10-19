@@ -154,7 +154,7 @@ public class PGOperativoEstimulos extends AppCompatActivity {
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
 
-                    model = new PGOperativoEstimulos_Model(fol, General.fechaenc, cveven, nomven, cveedo, nomedo, cvemun,  nommun, loc, call, codp, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, f1, f2, "", "");
+                    model = new PGOperativoEstimulos_Model(fol, General.fechaenc, cveven, nomven, cveedo, nomedo, cvemun,  nommun, "", loc, call, codp, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, f1, f2, "", "");
                     Intent in = new Intent(PGOperativoEstimulos.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);

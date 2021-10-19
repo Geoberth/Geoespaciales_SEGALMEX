@@ -138,7 +138,7 @@ public class PGOperativoLeche extends AppCompatActivity {
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
 
-                    model = new PGOperativoLeche_Model(fol, General.fechaenc, cveven, nomven, cveedo, nomedo, cvemun,  nommun, loc, call, codp, uno, unoObs, dos, dosObs, tres, tresObs, cuatro, cuatroObs,
+                    model = new PGOperativoLeche_Model(fol, General.fechaenc, cveven, nomven, cveedo, nomedo, cvemun,  nommun, "", loc, call, codp, uno, unoObs, dos, dosObs, tres, tresObs, cuatro, cuatroObs,
                             cinco, cincoObs, seis, seisObs, siete, sieteObs, ocho, ochoObs, nueve, nueveObs, diezA, diezB, diezC, diezD, diezE, diezF, once, onceObs, onceb, oncebObs, doce, doceObs, trece,
                             f1, f2, "", "");
 

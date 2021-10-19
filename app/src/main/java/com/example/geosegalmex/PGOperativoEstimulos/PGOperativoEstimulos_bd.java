@@ -11,6 +11,7 @@ public class PGOperativoEstimulos_bd {
         public static final String COLUMN_ESTADO = "ESTADO";
         public static final String COLUMN_CVEMUNICIPIO = "CVEMUNICIPIO";
         public static final String COLUMN_MUNICIPIO = "MUNICIPIO";
+        public static final String COLUMN_CVELOCALIDAD = "CVELOC";
         public static final String COLUMN_LOCALIDAD = "LOCALIDAD";
         public static final String COLUMN_CALLE = "CALLE";
         public static final String COLUMN_CP = "CP";
@@ -37,6 +38,7 @@ public class PGOperativoEstimulos_bd {
                 + COLUMN_ESTADO + " VARCHAR, "
                 + COLUMN_CVEMUNICIPIO + " VARCHAR, "
                 + COLUMN_MUNICIPIO + " VARCHAR, "
+                + COLUMN_CVELOCALIDAD + " VARCHAR, "
                 + COLUMN_LOCALIDAD + " VARCHAR, "
                 + COLUMN_CALLE + " VARCHAR, "
                 + COLUMN_CP + " VARCHAR, "

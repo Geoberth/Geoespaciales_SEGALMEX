@@ -42,6 +42,7 @@ public class PGOperativoLecheBD extends SQLiteOpenHelper {
         contentValues.put(PGOperativoLeche_bd.COLUMN_ESTADO, model.getEstado());
         contentValues.put(PGOperativoLeche_bd.COLUMN_CVEMUNICIPIO, model.getCvemunicipio());
         contentValues.put(PGOperativoLeche_bd.COLUMN_MUNICIPIO, model.getMunicipio());
+        contentValues.put(PGOperativoLeche_bd.COLUMN_CVELOCALIDAD, model.getCvelocalidad());
         contentValues.put(PGOperativoLeche_bd.COLUMN_LOCALIDAD, model.getLocalidad());
         contentValues.put(PGOperativoLeche_bd.COLUMN_CALLE, model.getCalle());
         contentValues.put(PGOperativoLeche_bd.COLUMN_CP, model.getCp());

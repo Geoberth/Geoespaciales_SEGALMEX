@@ -34,6 +34,8 @@ import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.NewCamara;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
 import com.example.geosegalmex.PGOperativoLeche.PGOperativoLecheBD;
@@ -182,15 +184,18 @@ public class GpsEnableb extends AppCompatActivity {
                         textid.setText("PG_O_L_"+folioo);
                         break;
                     case 5:
-                        textid.setText("PG_B_G_"+folioo);
+                        textid.setText("PG_B_L_"+folioo);
                         break;
                     case 6:
-                        textid.setText("PAR_B_"+folioo);
+                        textid.setText("PG_B_G_"+folioo);
                         break;
                     case 7:
-                        textid.setText("PAR_O_"+folioo);
+                        textid.setText("PAR_B_"+folioo);
                         break;
                     case 8:
+                        textid.setText("PAR_O_"+folioo);
+                        break;
+                    case 9:
                         textid.setText("LI_"+folioo);
                         break;
 
@@ -404,8 +409,8 @@ public class GpsEnableb extends AppCompatActivity {
             }
         }
         else if(proy.equals("PG Beneficiario Granos")){
-            PGOperativoGranosBD db;
-            db = new PGOperativoGranosBD(this);
+            PGBgranosBD db;
+            db = new PGBgranosBD(this);
             boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
             db.close();
             if(insertarData == true) {
@@ -415,6 +420,15 @@ public class GpsEnableb extends AppCompatActivity {
         else if(proy.equals("PG Operativo Leche")){
             PGOperativoLecheBD db;
             db = new PGOperativoLecheBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
+        }
+        else if(proy.equals("PG Beneficiario Leche")){
+            PGBeneficiarioLecheBD db;
+            db = new PGBeneficiarioLecheBD(this);
             boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
             db.close();
             if(insertarData == true) {

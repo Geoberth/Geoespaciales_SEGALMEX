@@ -42,6 +42,7 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
         contentValues.put(pasl_operativo_bd.COLUMN_ESTADO, model.getEstado());
         contentValues.put(pasl_operativo_bd.COLUMN_CVEMUNICIPIO, model.getCvemunicipio());
         contentValues.put(pasl_operativo_bd.COLUMN_MUNICIPIO, model.getMunicipio());
+        contentValues.put(pasl_operativo_bd.COLUMN_CVELOCALIDAD, model.getCvelocalidad());
         contentValues.put(pasl_operativo_bd.COLUMN_LOCALIDAD, model.getLocalidad());
         contentValues.put(pasl_operativo_bd.COLUMN_NOMBRE, model.getNombre());
         contentValues.put(pasl_operativo_bd.COLUMN_APATERNO, model.getApaterno());

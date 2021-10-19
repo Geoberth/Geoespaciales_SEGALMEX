@@ -21,6 +21,10 @@ import com.example.geosegalmex.LiconsaBeneficiario.Pasl_b_Model;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGB_granos_model;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche_Model;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos_Model;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
@@ -64,6 +68,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     PGOperativoEstimulos_Model model3;
     PGOperativoGranos_Model model4;
     PGOperativoLeche_Model model5;
+    PGB_granos_model model6;
+    PGBeneficiarioLeche_Model model7;
 
     String longitudGeo;
     String latitudGeo;
@@ -107,6 +113,12 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PG Operativo Leche")){
                     agregarPGOperativoLeche();
+                }
+                else if(General.Proyecto.equals("PG Beneficiario Granos")){
+                    agregarPGBeneficiarioGranos();
+                }
+                else if(General.Proyecto.equals("PG Beneficiario Leche")){
+                    agregarPGBeneficiarioLeche();
                 }
 
                 finish();
@@ -328,6 +340,47 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
         }
     }
+
+    private void agregarPGBeneficiarioGranos() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model6 = new PGB_granos_model();
+        model6 = (PGB_granos_model)getIntent().getSerializableExtra("model");
+        model6.setLongitudGeo(longitudGeo);
+        model6.setLatitudGeo(latitudGeo);
+
+        PGBgranosBD baseBD;
+        baseBD = new PGBgranosBD(this);
+
+        boolean insertarData = baseBD.addPGBeneficiarioGranos(model6);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void agregarPGBeneficiarioLeche() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model7 = new PGBeneficiarioLeche_Model();
+        model7 = (PGBeneficiarioLeche_Model)getIntent().getSerializableExtra("model");
+        model7.setLongitudGeo(longitudGeo);
+        model7.setLatitudGeo(latitudGeo);
+
+        PGBeneficiarioLecheBD baseBD;
+        baseBD = new PGBeneficiarioLecheBD(this);
+
+        boolean insertarData = baseBD.addPGBeneficiarioLeche(model7);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
 
     private void agregarGoerreferencia(String brigadistaGeo, String productorGeo, String longitudGeoGeo, String latitudGeoGeo, String horaActual, String fechaActual, int status) {
 
