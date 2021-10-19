@@ -2,6 +2,8 @@ package com.example.geosegalmex.PGBeneficiarioGranos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,8 +11,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.example.geosegalmex.General;
+import com.example.geosegalmex.Georeferencia.GeoreferenciaActivity;
 import com.example.geosegalmex.R;
 
 public class PGBeneficiariosGranos extends AppCompatActivity {
@@ -21,6 +25,8 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
     Spinner pgbs1, pgbs2, pgbs3, pgbs4;
     CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc7, pgbc8, pgbc9, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19;
     Button btnSiguiente;
+
+    PGB_granos_model model;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -244,6 +250,79 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
               String pgbtt20 = pgbt20.getText().toString();
               String pgr2 = obtenerRadio(pgbr3, pgbr4);
               String pgr3 = obtenerRadioo(pgbr5,pgbr6,pgbr7,pgbr8,pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16);
+              String pgbtt21 = pgbt21.getText().toString();
+              String pgr4 = obtenerRadiooo(pgbr17, pgbr18, pgbr19, pgbr20);
+              //cantidad kg
+              String pgbtt22 = pgbt22.getText().toString();
+              String pgbtt23 = pgbt23.getText().toString();
+              String pgbtt24 = pgbt24.getText().toString();
+              String pgapoyo1 = apoyo1();
+              String pgapoyo2 = apoyo2();
+              String pgapoyo3 = apoyo3();
+              String pgapoyo4 = apoyo4();
+              String pgapoyo5 = apoyo5();
+              String pgapoyo6 = apoyo6();
+              String pgapoyo7 = apoyo7();
+              String pgapoyo8 = apoyo8();
+              String pgapoyo9 = apoyo9();
+              String pgapoyo10 = apoyo10();
+              //Documentación que entrego
+              String pgr5 = obtenerRadio(pgbr21, pgbr22);
+              String pgr6 = obtenerRadio(pgbr23, pgbr24);
+              String pgr7 = obtenerRadio(pgbr25, pgbr26);
+              String pgr8 = obtenerRadio(pgbr27, pgbr28);
+              String pgr9 = obtenerRadio(pgbr29, pgbr30);
+              String pgr10 = obtenerRadio(pgbr31, pgbr32);
+              String pgr11 = obtenerRadio(pgbr33, pgbr34);
+              String pgr12 = obtenerRadio(pgbr35, pgbr36);
+              String pgr13 = obtenerRadio(pgbr37, pgbr38);
+              String pgr14 = obtenerRadio(pgbr39, pgbr40);
+              String pgr15 = obtenerRadio(pgbr41, pgbr42);
+              String pgr16 = obtenerRadio(pgbr43, pgbr44);
+              String pgr17 = obtenerRadio(pgbr45, pgbr46);
+              String pgr18 = obtenerRadio(pgbr47, pgbr48);
+              String pgr19 = obtenerRadio(pgbr49, pgbr50);
+              String pgr20 = obtenerRadio(pgbr51, pgbr52);
+
+              String pgr21 = obtenerRadioooo(pgbr53, pgbr54, pgbr55);
+              String pgr22 = obtenerRadioooo(pgbr56, pgbr57, pgbr58);
+              String pgr23 = obtenerRadioooo(pgbr59, pgbr60, pgbr61);
+              String pgr24 = obtenerRadioooo(pgbr62, pgbr63, pgbr64);
+              String pgr25 = obtenerRadioooo(pgbr65, pgbr66, pgbr67);
+              String pgr26 = obtenerRadioooo(pgbr68, pgbr68, pgbr70);
+              String pgr27 = obtenerRadioooo(pgbr71, pgbr72, pgbr73);
+              String pgr28 = obtenerRadioooo(pgbr74, pgbr75, pgbr76);
+              String pgr29 = obtenerRadioooo(pgbr77, pgbr78, pgbr79);
+              String pgr30 = obtenerRadioooo(pgbr80, pgbr81, pgbr82);
+              String pgr31 = obtenerRadioooo(pgbr83, pgbr84, pgbr85);
+              String pgr32 = obtenerRadioooo(pgbr86, pgbr87, pgbr88);
+
+              //REquisitos
+              String pgre1 = pgreq1();
+              String pgre2 = pgreq2();
+              String pgre3 = pgreq3();
+              String pgre4 = pgreq4();
+              String pgre5 = pgreq5();
+              String pgre6 = pgreq6();
+              String pgre7 = pgreq7();
+              String pgre8 = pgreq8();
+              String pgre9 = pgreq9();
+              //otro
+              String pgbtt25 = pgbt25.getText().toString();
+
+              //abiertas
+              String pgbtt26 = pgbt26.getText().toString();
+              String pgbtt27 = pgbt27.getText().toString();
+              String pgbtt28 = pgbt28.getText().toString();
+              String pgbtt29 = pgbt29.getText().toString();
+
+              String f1 = General.Foto1;
+              String f2 = General.Foto2;
+
+              model = new PGB_granos_model(folio, pgbtt2, pgbtt3, pgbtt4, pgbtt5, tprodu, pgbtt6, pgbtt7, pgbtt8, pgbtt9, pgbtt13, pgbtt14, pgbtt15, pgbtt16, pgbtt17, nomedo, cveedo, nommun, cvemun, pgr1, pgbtt20, pgr2, pgr3, pgbtt21, pgr4, pgbtt22, pgbtt23, pgbtt24, pgapoyo1, pgapoyo2, pgapoyo3, pgapoyo4, pgapoyo5, pgapoyo6, pgapoyo7, pgapoyo9, pgapoyo10, pgr5, pgr6, pgr7, pgr8, pgr9, pgr10, pgr11, pgr12, pgr13, pgr14, pgr15, pgr16, pgr17, pgr18, pgr19, pgr20, pgr21, pgr22, pgr23, pgr24, pgr25, pgr26, pgr27, pgr28, pgr29, pgr30, pgr31, pgr32, pgre1, pgre2, pgre3, pgre4, pgre5, pgre6, pgre7, pgre8, pgre9, pgbtt25, pgbtt26, pgbtt27, pgbtt28, pgbtt29, f1, f2, "", "");
+              Intent in = new Intent(PGBeneficiariosGranos.this, GeoreferenciaActivity.class);
+              in.putExtra("model", model);
+              startActivity(in);
 
           }
          }
@@ -309,6 +388,40 @@ else if (rbtt2.isChecked()==true){
             respuesta = rbtt16.getText().toString();
         }
 
+        return respuesta;
+    }
+
+
+    public String obtenerRadiooo(RadioButton rbtt18, RadioButton rbtt19, RadioButton rbtt20, RadioButton rbtt21){
+
+        String respuesta = "";
+        if (rbtt18.isChecked()==true){
+            respuesta = rbtt18.getText().toString();
+        }
+        else if (rbtt19.isChecked()==true){
+            respuesta = rbtt19.getText().toString();
+        }
+        else if (rbtt20.isChecked()==true){
+            respuesta = rbtt20.getText().toString();
+        }
+        else if (rbtt21.isChecked()==true){
+            respuesta = rbtt21.getText().toString();
+        }
+        return respuesta;
+    }
+
+    public String obtenerRadioooo(RadioButton rbtt22, RadioButton rbtt23, RadioButton rbtt24){
+
+        String respuesta = "";
+        if (rbtt22.isChecked()==true){
+            respuesta = rbtt22.getText().toString();
+        }
+        else if (rbtt23.isChecked()==true){
+            respuesta = rbtt23.getText().toString();
+        }
+        else if (rbtt24.isChecked()==true){
+            respuesta = rbtt24.getText().toString();
+        }
         return respuesta;
     }
 
@@ -385,10 +498,286 @@ else if (rbtt2.isChecked()==true){
         pgbr16.setError("Debes seleccionar una opción");
         retorno = false;
     }
+     else if (!pgbr17.isChecked() && !pgbr18.isChecked() && !pgbr19.isChecked() && !pgbr20.isChecked()){
+         pgbr20.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
 
+     else if (!pgbc1.isChecked() && !pgbc2.isChecked() && !pgbc3.isChecked() && !pgbc4.isChecked() && !pgbc5.isChecked() && !pgbc6.isChecked() && !pgbc7.isChecked() && !pgbc8.isChecked() && !pgbc9.isChecked() && !pgbc10.isChecked()){
+         pgbc10.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr21.isChecked() && !pgbr22.isChecked()) {
+         pgbr22.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr23.isChecked() && !pgbr24.isChecked()) {
+         pgbr24.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr25.isChecked() && !pgbr26.isChecked()) {
+         pgbr26.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr27.isChecked() && !pgbr28.isChecked()) {
+         pgbr28.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr29.isChecked() && !pgbr30.isChecked()) {
+         pgbr30.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr31.isChecked() && !pgbr32.isChecked()) {
+         pgbr32.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr33.isChecked() && !pgbr34.isChecked()) {
+         pgbr34.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr35.isChecked() && !pgbr36.isChecked()) {
+         pgbr36.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr37.isChecked() && !pgbr38.isChecked()) {
+         pgbr38.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr39.isChecked() && !pgbr40.isChecked()) {
+         pgbr40.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr41.isChecked() && !pgbr42.isChecked()) {
+         pgbr42.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr43.isChecked() && !pgbr44.isChecked()) {
+         pgbr44.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr45.isChecked() && !pgbr46.isChecked()) {
+         pgbr46.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr47.isChecked() && !pgbr48.isChecked()) {
+         pgbr48.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr49.isChecked() && !pgbr50.isChecked()) {
+         pgbr50.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr51.isChecked() && !pgbr52.isChecked()) {
+         pgbr52.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr53.isChecked() && !pgbr54.isChecked() && !pgbr55.isChecked()) {
+         pgbr55.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr56.isChecked() && !pgbr57.isChecked() && !pgbr58.isChecked()) {
+         pgbr58.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr59.isChecked() && !pgbr60.isChecked() && !pgbr61.isChecked()) {
+         pgbr61.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr62.isChecked() && !pgbr63.isChecked() && !pgbr64.isChecked()) {
+         pgbr64.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr65.isChecked() && !pgbr66.isChecked() && !pgbr67.isChecked()) {
+         pgbr67.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr68.isChecked() && !pgbr69.isChecked() && !pgbr70.isChecked()) {
+         pgbr70.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr71.isChecked() && !pgbr72.isChecked() && !pgbr73.isChecked()) {
+         pgbr73.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr74.isChecked() && !pgbr75.isChecked() && !pgbr76.isChecked()) {
+         pgbr76.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr77.isChecked() && !pgbr78.isChecked() && !pgbr79.isChecked()) {
+         pgbr79.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr80.isChecked() && !pgbr81.isChecked() && !pgbr82.isChecked()) {
+         pgbr82.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr83.isChecked() && !pgbr84.isChecked() && !pgbr85.isChecked()) {
+         pgbr85.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
+     else if (!pgbr86.isChecked() && !pgbr87.isChecked() && !pgbr88.isChecked()) {
+         pgbr88.setError("Debes seleccionar una opción");
+         retorno = false;
+     }
 
      return retorno;
         }
+
+
+        public String apoyo1(){
+        String resultado1 = "";
+        if (pgbc1.isChecked()){
+            resultado1 = "X";
+        }
+        return resultado1;
+        }
+
+    public String apoyo2(){
+        String resultado2 = "";
+        if (pgbc2.isChecked()){
+            resultado2 = "X";
+        }
+        return resultado2;
+    }
+
+    public String apoyo3(){
+        String resultado3 = "";
+        if (pgbc3.isChecked()){
+            resultado3 = "X";
+        }
+        return resultado3;
+    }
+
+    public String apoyo4(){
+        String resultado4 = "";
+        if (pgbc4.isChecked()){
+            resultado4 = "X";
+        }
+        return resultado4;
+    }
+
+    public String apoyo5(){
+        String resultado5 = "";
+        if (pgbc5.isChecked()){
+            resultado5 = "X";
+        }
+        return resultado5;
+    }
+
+    public String apoyo6(){
+        String resultado6 = "";
+        if (pgbc6.isChecked()){
+            resultado6 = "X";
+        }
+        return resultado6;
+    }
+
+    public String apoyo7(){
+        String resultado7 = "";
+        if (pgbc7.isChecked()){
+            resultado7 = "X";
+        }
+        return resultado7;
+    }
+
+    public String apoyo8(){
+        String resultado8 = "";
+        if (pgbc8.isChecked()){
+            resultado8 = "X";
+        }
+        return resultado8;
+    }
+
+    public String apoyo9(){
+        String resultado9 = "";
+        if (pgbc9.isChecked()){
+            resultado9 = "X";
+        }
+        return resultado9;
+    }
+
+    public String apoyo10(){
+        String resultado10 = "";
+        if (pgbc10.isChecked()){
+            resultado10 = "X";
+        }
+        return resultado10;
+    }
+
+
+    public String pgreq1(){
+        String resultado11 = "";
+        if (pgbc11.isChecked()){
+            resultado11 = "X";
+        }
+        return resultado11;
+    }
+
+    public String pgreq2(){
+        String resultado12 = "";
+        if (pgbc12.isChecked()){
+            resultado12 = "X";
+        }
+        return resultado12;
+    }
+
+    public String pgreq3(){
+        String resultado13 = "";
+        if (pgbc13.isChecked()){
+            resultado13 = "X";
+        }
+        return resultado13;
+    }
+
+    public String pgreq4(){
+        String resultado14 = "";
+        if (pgbc14.isChecked()){
+            resultado14 = "X";
+        }
+        return resultado14;
+    }
+
+    public String pgreq5(){
+        String resultado15 = "";
+        if (pgbc15.isChecked()){
+            resultado15 = "X";
+        }
+        return resultado15;
+    }
+
+    public String pgreq6(){
+        String resultado16 = "";
+        if (pgbc16.isChecked()){
+            resultado16 = "X";
+        }
+        return resultado16;
+    }
+
+    public String pgreq7(){
+        String resultado17 = "";
+        if (pgbc17.isChecked()){
+            resultado17 = "X";
+        }
+        return resultado17;
+    }
+
+    public String pgreq8(){
+        String resultado18 = "";
+        if (pgbc18.isChecked()){
+            resultado18 = "X";
+        }
+        return resultado18;
+    }
+
+    public String pgreq9(){
+        String resultado19 = "";
+        if (pgbc19.isChecked()){
+            resultado19 = "X";
+        }
+        return resultado19;
+    }
+
+
 
 
 
