@@ -4763,17 +4763,12 @@ int id pre_garan_granos_tx22 0x7f090c7c
 int id pre_garan_granos_tx23 0x7f090c7d
 int id pre_garan_granos_tx24 0x7f090c7e
 int id pre_garan_granos_tx25 0x7f090c7f
-int id pre_garan_granos_txt1 0x7f090c80
 int id pre_garan_granos_txt10 0x7f090c81
-int id pre_garan_granos_txt11 0x7f090c82
-int id pre_garan_granos_txt12 0x7f090c83
 int id pre_garan_granos_txt13 0x7f090c84
 int id pre_garan_granos_txt14 0x7f090c85
 int id pre_garan_granos_txt15 0x7f090c86
 int id pre_garan_granos_txt16 0x7f090c87
 int id pre_garan_granos_txt17 0x7f090c88
-int id pre_garan_granos_txt18 0x7f090c89
-int id pre_garan_granos_txt19 0x7f090c8a
 int id pre_garan_granos_txt2 0x7f090c8b
 int id pre_garan_granos_txt20 0x7f090c8c
 int id pre_garan_granos_txt21 0x7f090c8d

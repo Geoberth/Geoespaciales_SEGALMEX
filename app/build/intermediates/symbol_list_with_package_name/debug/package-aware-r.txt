@@ -4764,17 +4764,12 @@ id pre_garan_granos_tx22
 id pre_garan_granos_tx23
 id pre_garan_granos_tx24
 id pre_garan_granos_tx25
-id pre_garan_granos_txt1
 id pre_garan_granos_txt10
-id pre_garan_granos_txt11
-id pre_garan_granos_txt12
 id pre_garan_granos_txt13
 id pre_garan_granos_txt14
 id pre_garan_granos_txt15
 id pre_garan_granos_txt16
 id pre_garan_granos_txt17
-id pre_garan_granos_txt18
-id pre_garan_granos_txt19
 id pre_garan_granos_txt2
 id pre_garan_granos_txt20
 id pre_garan_granos_txt21

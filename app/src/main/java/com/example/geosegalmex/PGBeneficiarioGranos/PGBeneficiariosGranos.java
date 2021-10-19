@@ -6,21 +6,28 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Georeferencia.GeoreferenciaActivity;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
 import com.example.geosegalmex.R;
+
+import java.util.Calendar;
 
 public class PGBeneficiariosGranos extends AppCompatActivity {
 
-
- EditText fec, pgbt2, pgbt3, pgbt4, pgbt5, pgbt6, pgbt7, pgbt8, pgbt9, pgbt10, pgbt11, pgbt12, pgbt13, pgbt14, pgbt15, pgbt16, pgbt17, pgbt18, pgbt19, pgbt20, pgbt21, pgbt22, pgbt23, pgbt24, pgbt25, pgbt26, pgbt27, pgbt28, pgbt29, pgbt30;
+ TextView textFecha;
+ int dia, mes, anio;
+ EditText  pgbt2, pgbt3, pgbt4, pgbt5, pgbt6, pgbt7, pgbt8, pgbt9, pgbt10, pgbt13, pgbt14, pgbt15, pgbt16, pgbt17, pgbt20, pgbt21, pgbt22, pgbt23, pgbt24, pgbt25, pgbt26, pgbt27, pgbt28, pgbt29, pgbt30;
  RadioButton propeq, promed, pgbr1, pgbr2, pgbr3, pgbr4, pgbr5, pgbr6, pgbr7, pgbr8, pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16, pgbr17, pgbr18, pgbr19, pgbr20, pgbr21, pgbr22, pgbr23, pgbr24, pgbr25, pgbr26, pgbr27, pgbr28, pgbr29, pgbr30, pgbr31, pgbr32, pgbr33, pgbr34, pgbr35, pgbr36, pgbr37, pgbr38, pgbr39, pgbr40, pgbr41, pgbr42, pgbr43, pgbr44, pgbr45, pgbr46, pgbr47, pgbr48, pgbr49, pgbr50, pgbr51, pgbr52, pgbr53, pgbr54, pgbr55, pgbr56, pgbr57, pgbr58, pgbr59, pgbr60, pgbr61, pgbr62, pgbr63, pgbr64, pgbr65, pgbr66, pgbr67, pgbr68, pgbr69, pgbr70, pgbr71, pgbr72, pgbr73, pgbr74, pgbr75, pgbr76, pgbr77, pgbr78, pgbr79, pgbr80, pgbr81, pgbr82, pgbr83, pgbr84, pgbr85, pgbr86, pgbr87, pgbr88;
  Spinner pgbs1, pgbs2, pgbs3, pgbs4;
  CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc7, pgbc8, pgbc9, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19;
@@ -28,12 +35,44 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
 
  PGB_granos_model model;
 
+ String cveedo = "";
+ String nomedo = "";
+ String cvemun = "";
+ String nommun = "";
+ int[] idmunicipios = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+         , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+         , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+         , R.array.Yucatán2021, R.array.Zacatecas2021};
+ int[] idcvemunicipios = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+         , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+         , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+         , R.array.cveYucatán2021, R.array.cveZacatecas2021
+ };
+ String[] municipios;
+ String[] cvemunicipios;
+
+ String cveedo2 = "";
+ String nomedo2 = "";
+ String cvemun2 = "";
+ String nommun2 = "";
+ int[] idmunicipios2 = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+         , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+         , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+         , R.array.Yucatán2021, R.array.Zacatecas2021};
+ int[] idcvemunicipios2 = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+         , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+         , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+         , R.array.cveYucatán2021, R.array.cveZacatecas2021
+ };
+ String[] municipios2;
+ String[] cvemunicipios2;
+
  @Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_pgbeneficiarios_granos);
 
-  fec = (EditText)findViewById(R.id.pre_garan_granos_txt1);
+  textFecha=(TextView)findViewById(R.id.pg_leche_txtFecha);
   pgbt2 = (EditText)findViewById(R.id.pre_garan_granos_txt2);
   pgbt3 = (EditText)findViewById(R.id.pre_garan_granos_txt3);
   pgbt4 = (EditText)findViewById(R.id.pre_garan_granos_txt4);
@@ -50,10 +89,8 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   pgbt10 = (EditText)findViewById(R.id.pre_garan_granos_txt10);
 
   pgbs1 = (Spinner)findViewById(R.id.pgb_o_spiEstado);
-  pgbt11 = (EditText)findViewById(R.id.pre_garan_granos_txt11);
-
   pgbs2 = (Spinner)findViewById(R.id.pgb_o_spiMunicipio);
-  pgbt12 = (EditText)findViewById(R.id.pre_garan_granos_txt12);
+
 
   //Dirección producción
   pgbt13 = (EditText)findViewById(R.id.pre_garan_granos_txt13);
@@ -63,10 +100,8 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   pgbt17 = (EditText)findViewById(R.id.pre_garan_granos_txt17);
 
   pgbs3 = (Spinner)findViewById(R.id.pgb_o_spiEstado2);
-  pgbt18 = (EditText)findViewById(R.id.pre_garan_granos_txt18);
 
   pgbs4 = (Spinner)findViewById(R.id.pgb_o_spiMunicipio2);
-  pgbt19 = (EditText)findViewById(R.id.pre_garan_granos_txt19);
 
   //sexo
   pgbr1 = (RadioButton)findViewById(R.id.pre_garan_granos_ra2_1);
@@ -222,12 +257,88 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
 
   btnSiguiente = findViewById(R.id.pre_garan_granos_sig);
 
+  muestrafecha();
+
+  pgbs1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+   public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+    String[] estados = getResources().getStringArray(R.array.Estados2021);
+    String[] cveestados = getResources().getStringArray(R.array.cveEstados2021);
+
+    cveedo = cveestados[position];
+    nomedo = estados[position];
+
+    municipios = getResources().getStringArray(idmunicipios[position]);
+    cvemunicipios = getResources().getStringArray(idcvemunicipios[position]);
+
+    ArrayAdapter<String> adapter = new ArrayAdapter<String>(PGBeneficiariosGranos.this, android.R.layout.simple_spinner_item, municipios);
+    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    pgbs2.setAdapter(adapter);
+    pgbs2.setEnabled(true);
+   }
+   public void onNothingSelected(AdapterView<?> adapterView) {
+    return;
+   }
+  });
+
+  pgbs2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+   public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+    nommun = municipios[position];
+    cvemun = cvemunicipios[position];
+   }
+   public void onNothingSelected(AdapterView<?> adapterView) {
+    return;
+   }
+  });
+
+  pgbs3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+   public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+    String[] estados2 = getResources().getStringArray(R.array.Estados2021);
+    String[] cveestados2 = getResources().getStringArray(R.array.cveEstados2021);
+
+    cveedo2 = cveestados2[position];
+    nomedo2 = estados2[position];
+
+    municipios2 = getResources().getStringArray(idmunicipios2[position]);
+    cvemunicipios2 = getResources().getStringArray(idcvemunicipios2[position]);
+
+    ArrayAdapter<String> adapter = new ArrayAdapter<String>(PGBeneficiariosGranos.this, android.R.layout.simple_spinner_item, municipios2);
+    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    pgbs4.setAdapter(adapter);
+    pgbs4.setEnabled(true);
+   }
+   public void onNothingSelected(AdapterView<?> adapterView) {
+    return;
+   }
+  });
+
+  pgbs4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+   public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+    nommun2 = municipios2[position];
+    cvemun2 = cvemunicipios2[position];
+   }
+   public void onNothingSelected(AdapterView<?> adapterView) {
+    return;
+   }
+  });
+
+
   btnSiguiente.setOnClickListener(new View.OnClickListener() {
    @Override
    public void onClick(View v) {
 
-    //if (validar()){
+    if (validar()){
      String folio = General.Foliocuestion;
+
+     General.fechaenc = textFecha.getText().toString();
+     String claveEdo = cveedo;
+     String nomEdo = nomedo;
+     String claveMun = cvemun;
+     String nomMun = nommun;
+     String claveEdo2 = cveedo2;
+     String nomEdo2 = nomedo2;
+     String claveMun2 = cvemun2;
+     String nomMun2 = nommun2;
+
      String pgbtt2 = pgbt2.getText().toString();
      String pgbtt3 = pgbt3.getText().toString();
      String pgbtt4 = pgbt4.getText().toString();
@@ -243,9 +354,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String pgbtt16 = pgbt16.getText().toString();
      String pgbtt17 = pgbt17.getText().toString();
      String nomedo = pgbs1.getSelectedItem().toString();
-     String cveedo = pgbt11.getText().toString();
      String nommun = pgbs2.getSelectedItem().toString();
-     String cvemun = pgbt12.getText().toString();
      String pgr1 = obtenerRadio(pgbr1, pgbr2);
      String pgbtt20 = pgbt20.getText().toString();
      String pgr2 = obtenerRadio(pgbr3, pgbr4);
@@ -324,7 +433,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      in.putExtra("model", model);
      startActivity(in);
 
-    //}
+    }
    }
   });
 
@@ -777,6 +886,13 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   return resultado19;
  }
 
+ public void muestrafecha(){
+  Calendar fecha = Calendar.getInstance();
+  dia = fecha.get(Calendar.DAY_OF_MONTH);
+  mes = fecha.get(Calendar.MONTH);
+  anio = fecha.get(Calendar.YEAR);
+  textFecha.setText(""+dia+"/"+(mes+1)+"/"+anio);
+ }
 
 
 
