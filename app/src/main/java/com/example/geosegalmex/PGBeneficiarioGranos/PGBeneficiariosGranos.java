@@ -348,6 +348,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String pgbtt7 = pgbt7.getText().toString();
      String pgbtt8 = pgbt8.getText().toString();
      String pgbtt9 = pgbt9.getText().toString();
+     String pgbtt10 = pgbt10.getText().toString();
      String pgbtt13 = pgbt13.getText().toString();
      String pgbtt14= pgbt14.getText().toString();
      String pgbtt15 = pgbt15.getText().toString();
@@ -428,7 +429,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String f1 = General.Foto1;
      String f2 = General.Foto2;
 
-     model = new PGB_granos_model(folio, pgbtt2, pgbtt3, pgbtt4, pgbtt5, tprodu, pgbtt6, pgbtt7, pgbtt8, pgbtt9, pgbtt13, pgbtt14, pgbtt15, pgbtt16, pgbtt17, nomedo, cveedo, nommun, cvemun, pgr1, pgbtt20, pgr2, pgr3, pgbtt21, pgr4, pgbtt22, pgbtt23, pgbtt24, pgapoyo1, pgapoyo2, pgapoyo3, pgapoyo4, pgapoyo5, pgapoyo6, pgapoyo7, pgapoyo9, pgapoyo10, pgr5, pgr6, pgr7, pgr8, pgr9, pgr10, pgr11, pgr12, pgr13, pgr14, pgr15, pgr16, pgr17, pgr18, pgr19, pgr20, pgr21, pgr22, pgr23, pgr24, pgr25, pgr26, pgr27, pgr28, pgr29, pgr30, pgr31, pgr32, pgre1, pgre2, pgre3, pgre4, pgre5, pgre6, pgre7, pgre8, pgre9, pgbtt25, pgbtt26, pgbtt27, pgbtt28, pgbtt29, f1, f2, "", "");
+     model = new PGB_granos_model(folio, General.fechaenc, pgbtt2, pgbtt3, pgbtt4, pgbtt5, tprodu, pgbtt6, pgbtt7, pgbtt8, pgbtt9, pgbtt10, nomedo, cveedo, nommun, cvemun, pgbtt13, pgbtt14, pgbtt15, pgbtt16, pgbtt17, nomedo2, cveedo2, nommun2, cvemun2, pgr1, pgbtt20, pgr2, pgr3, pgbtt21, pgr4, pgbtt22, pgbtt23, pgbtt24, pgapoyo1, pgapoyo2, pgapoyo3, pgapoyo4, pgapoyo5, pgapoyo6, pgapoyo7,pgapoyo8, pgapoyo9, pgapoyo10, pgr5, pgr6, pgr7, pgr8, pgr9, pgr10, pgr11, pgr12, pgr13, pgr14, pgr15, pgr16, pgr17, pgr18, pgr19, pgr20, pgr21, pgr22, pgr23, pgr24, pgr25, pgr26, pgr27, pgr28, pgr29, pgr30, pgr31, pgr32, pgre1, pgre2, pgre3, pgre4, pgre5, pgre6, pgre7, pgre8, pgre9, pgbtt25, pgbtt26, pgbtt27, pgbtt28, pgbtt29, f1, f2, "", "");
      Intent in = new Intent(PGBeneficiariosGranos.this, GeoreferenciaActivity.class);
      in.putExtra("model", model);
      startActivity(in);
