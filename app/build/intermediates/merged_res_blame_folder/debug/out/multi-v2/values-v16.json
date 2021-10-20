@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/2eb885f97fd035152f7fd48c5013e690/transformed/core-1.1.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/a9510940d39f390620534476a057ab2b/transformed/appcompat-1.1.0-alpha05/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\a9510940d39f390620534476a057ab2b\\transformed\\appcompat-1.1.0-alpha05\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\2eb885f97fd035152f7fd48c5013e690\\transformed\\core-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

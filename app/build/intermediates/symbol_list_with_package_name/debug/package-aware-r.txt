@@ -181,6 +181,7 @@ array produccionagricola
 array producto_apicola
 array proteccion_apicola
 array pueblo_originario
+array responde
 array selectproyect
 array semillas_cultivo
 array siniestro_esti
@@ -1574,6 +1575,7 @@ id Pecuariootroalimentocosto
 id Pecuariosalmineralcosto
 id Pecuarioseleniocosto
 id Pecuariovitaminascosto
+id RG1
 id SHIFT
 id SYM
 id TextView_brand

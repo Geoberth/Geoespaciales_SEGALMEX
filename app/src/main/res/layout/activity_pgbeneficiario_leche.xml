@@ -331,19 +331,20 @@
                 android:text="Indique el último nivel o grado de estudio que cursó en la escuela"
                 android:textColor="#000000" />
 
-                <RadioGroup
+            <RadioGroup
+                android:id="@+id/RG1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ninguna" />
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra6"
                     android:layout_width="wrap_content"
@@ -351,14 +352,14 @@
                     android:text="Primaria incompleta" />
 
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Primaria completa" />
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra8"
                     android:layout_width="wrap_content"
@@ -366,21 +367,21 @@
                     android:text="Secundaria incompleta" />
 
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Secundaria completa" />
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nivel Medio Superior incompleto (Bachillerato general, Bachillerato especializado o tecnológico)" />
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra11"
                     android:layout_width="wrap_content"
@@ -388,7 +389,7 @@
                     android:text="Nivel Medio Superior completo" />
 
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra12"
                     android:layout_width="wrap_content"
@@ -396,14 +397,14 @@
                     android:text="Licenciatura inconclusa" />
 
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Licenciatura concluida" />
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra14"
                     android:layout_width="wrap_content"
@@ -411,27 +412,28 @@
                     android:text="Posgrado inconcluso" />
 
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Posgrado Concluido" />
 
-                    <RadioButton
+                <RadioButton
 
                     android:id="@+id/pre_garan_leche_ra16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Otro" />
 
-                </RadioGroup>
+            </RadioGroup>
 
             <EditText
                 android:id="@+id/pre_garan_leche_txt21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Especifique"
+                android:visibility="gone"
                 android:inputType="textCapWords|textAutoCorrect"
                 android:maxLines="1" />
 
@@ -1320,50 +1322,50 @@
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_leche_ch9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Carteles informativos"
-                    android:visibility="visible" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_leche_ch9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Carteles informativos"
+                android:visibility="visible" />
 
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_leche_ch10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Periódico"
-                    android:visibility="visible" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_leche_ch10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Periódico"
+                android:visibility="visible" />
 
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_leche_ch11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Radio"
-                    android:visibility="visible" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_leche_ch11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Radio"
+                android:visibility="visible" />
 
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_leche_ch12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Televisión"
-                    android:visibility="visible" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_leche_ch12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Televisión"
+                android:visibility="visible" />
 
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_leche_ch13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Otros productores"
-                    android:visibility="visible" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_leche_ch13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Otros productores"
+                android:visibility="visible" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/pre_garan_leche_ch14"
@@ -1392,23 +1394,23 @@
                 android:text="Autoridades o instituciones locales"
                 android:visibility="visible" />
 
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/pre_garan_leche_ch17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Otro  "
-                    android:visibility="visible" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/pre_garan_leche_ch17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Otro  "
+                android:visibility="visible" />
 
-                <EditText
-                    android:id="@+id/pre_garan_leche_txt24"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Especifique"
-                    android:inputType="textCapWords|textAutoCorrect"
-                    android:maxLines="1"
-                    android:visibility="visible" />
+            <EditText
+                android:id="@+id/pre_garan_leche_txt24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especifique"
+                android:inputType="textCapWords|textAutoCorrect"
+                android:maxLines="1"
+                android:visibility="gone" />
 
             <TextView
                 android:layout_width="match_parent"

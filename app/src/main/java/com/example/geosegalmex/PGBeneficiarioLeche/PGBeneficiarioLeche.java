@@ -10,19 +10,23 @@ import com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche_Model;
 import com.example.geosegalmex.R;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
+import java.util.regex.Pattern;
 
 public class PGBeneficiarioLeche extends AppCompatActivity {
 
@@ -95,8 +99,8 @@ public class PGBeneficiarioLeche extends AppCompatActivity {
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //if(validar()){
 
+                if(validar()){
                     String fol = General.Foliocuestion;
                     General.fechaenc = textFecha.getText().toString();
                     String nom = pgblt2.getText().toString();
@@ -117,14 +121,14 @@ public class PGBeneficiarioLeche extends AppCompatActivity {
                     String volumen = pgblt22.getText().toString();
                     String cabezas = pgblt23.getText().toString();
                     String vacas = obtenerResultado3(rd1, rd2,rd3);
-                        String apoyoa = (pgblc1.isChecked())? "1" : "";
-                        String apoyob = (pgblc2.isChecked())? "1" : "";
-                        String apoyoc = (pgblc3.isChecked())? "1" : "";
-                        String apoyod = (pgblc4.isChecked())? "1" : "";
-                        String apoyoe = (pgblc5.isChecked())? "1" : "";
-                        String apoyof = (pgblc6.isChecked())? "1" : "";
-                        String apoyog = (pgblc7.isChecked())? "1" : "";
-                        String apoyoh = (pgblc8.isChecked())? "1" : "";
+                    String apoyoa = (pgblc1.isChecked())? "1" : "";
+                    String apoyob = (pgblc2.isChecked())? "1" : "";
+                    String apoyoc = (pgblc3.isChecked())? "1" : "";
+                    String apoyod = (pgblc4.isChecked())? "1" : "";
+                    String apoyoe = (pgblc5.isChecked())? "1" : "";
+                    String apoyof = (pgblc6.isChecked())? "1" : "";
+                    String apoyog = (pgblc7.isChecked())? "1" : "";
+                    String apoyoh = (pgblc8.isChecked())? "1" : "";
                     String docine = obtenerResultado(pgblr19, pgblr20);
                     String doccurp = obtenerResultado(pgblr21, pgblr22);
                     String docclabe = obtenerResultado(pgblr23, pgblr24);
@@ -147,16 +151,16 @@ public class PGBeneficiarioLeche extends AppCompatActivity {
                     String reac5 = obtenerResultado3(pgblr61, pgblr62, pgblr63);
                     String reac6 = obtenerResultado3(pgblr64, pgblr65, pgblr66);
                     String reac7 = obtenerResultado3(pgblr67, pgblr68, pgblr69);
-                        String react8a = (pgblc9.isChecked())? "1" : "";
-                        String react8b = (pgblc10.isChecked())? "1" : "";
-                        String react8c = (pgblc11.isChecked())? "1" : "";
-                        String react8d = (pgblc12.isChecked())? "1" : "";
-                        String react8e = (pgblc13.isChecked())? "1" : "";
-                        String react8f = (pgblc14.isChecked())? "1" : "";
-                        String react8g = (pgblc15.isChecked())? "1" : "";
-                        String react8h = (pgblc16.isChecked())? "1" : "";
-                        String react8i = (pgblc17.isChecked())? "1" : "";
-                        String react8otro = pgblt24.getText().toString();
+                    String react8a = (pgblc9.isChecked())? "1" : "";
+                    String react8b = (pgblc10.isChecked())? "1" : "";
+                    String react8c = (pgblc11.isChecked())? "1" : "";
+                    String react8d = (pgblc12.isChecked())? "1" : "";
+                    String react8e = (pgblc13.isChecked())? "1" : "";
+                    String react8f = (pgblc14.isChecked())? "1" : "";
+                    String react8g = (pgblc15.isChecked())? "1" : "";
+                    String react8h = (pgblc16.isChecked())? "1" : "";
+                    String react8i = (pgblc17.isChecked())? "1" : "";
+                    String react8otro = pgblt24.getText().toString();
                     String reac9 = pgblt25.getText().toString();
                     String reac10 = pgblt26.getText().toString();
                     String reac11 = pgblt27.getText().toString();
@@ -173,10 +177,39 @@ public class PGBeneficiarioLeche extends AppCompatActivity {
                     Intent in = new Intent(PGBeneficiarioLeche.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);
-               // }
+                }
+
 
             }
         });
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.RG1);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(pgblr16.isChecked()==true){
+                    pgblt21.setVisibility(View.VISIBLE);
+
+                }else{
+                    pgblt21.setVisibility(View.GONE);
+                    pgblt21.setText("");
+                }
+            }
+        });
+
+        pgblc17.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                                               @Override
+                                               public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
+                                                   if(pgblc17.isChecked()==true){
+                                                       pgblt24.setVisibility(View.VISIBLE);
+                                                   }else{
+                                                       pgblt24.setVisibility(View.GONE);
+                                                       pgblt24.setText("");
+                                                   }
+                                               }
+                                           }
+        );
 
 
     }
@@ -418,6 +451,214 @@ public class PGBeneficiarioLeche extends AppCompatActivity {
         }
         return  respuesta;
     }
+
+    public boolean validarCURP(String curp)
+    { String regex =
+            "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
+                    "(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
+                    "[HM]{1}" +
+                    "(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
+                    "[B-DF-HJ-NP-TV-Z]{3}" +
+                    "[0-9A-Z]{1}[0-9]{1}$";
+
+        Pattern patron = Pattern.compile(regex);
+        if(!patron.matcher(curp).matches())
+        { return false;
+        }else
+        { return true;
+        }
+    }
+
+    public boolean validar(){
+        boolean retorno=true;
+
+        if(pgblt2.getText().toString().isEmpty()){
+            pgblt2.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt3.getText().toString().isEmpty()){
+            pgblt3.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt4.getText().toString().isEmpty()){
+            pgblt4.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt5.getText().toString().isEmpty()){
+            pgblt5.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(!validarCURP(pgblt5.getText().toString())){
+            pgblt5.setError("CURP invalido");
+            retorno=false;
+        }
+        else if(pgblt6.getText().toString().isEmpty()){
+            pgblt6.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt9.getText().toString().isEmpty()){
+            pgblt9.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt10.getText().toString().isEmpty()){
+            pgblt10.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(!pgblr1.isChecked() && !pgblr2.isChecked()){
+            pgblr1.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(pgblt20.getText().toString().isEmpty()){
+            pgblt20.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(!pgblr3.isChecked() && !pgblr4.isChecked()){
+            pgblr3.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr5.isChecked() && !pgblr6.isChecked() && !pgblr7.isChecked() && !pgblr8.isChecked() && !pgblr9.isChecked() && !pgblr10.isChecked() && !pgblr11.isChecked() && !pgblr12.isChecked() && !pgblr13.isChecked() && !pgblr14.isChecked() && !pgblr15.isChecked() && !pgblr16.isChecked()){
+            pgblr5.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(pgblr16.isChecked() && pgblt21.getText().toString().isEmpty()){
+            pgblt21.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(!pgblr17.isChecked() && !pgblr18.isChecked()){
+            pgblr17.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(pgblt22.getText().toString().isEmpty()){
+            pgblt22.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt23.getText().toString().isEmpty()){
+            pgblt23.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(!rd1.isChecked() && !rd2.isChecked() && !rd3.isChecked()){
+            rd1.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (!pgblc1.isChecked() && !pgblc2.isChecked() && !pgblc3.isChecked() && !pgblc4.isChecked() && !pgblc5.isChecked() && !pgblc6.isChecked() && !pgblc7.isChecked() && !pgblc8.isChecked()) {
+            pgblc1.setError("Debes seleccionar almenos una opción");
+            retorno = false;
+        }
+        else if(!pgblr19.isChecked() && !pgblr20.isChecked()){
+            pgblr19.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr21.isChecked() && !pgblr22.isChecked()){
+            pgblr21.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr23.isChecked() && !pgblr24.isChecked()){
+            pgblr23.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr25.isChecked() && !pgblr26.isChecked()){
+            pgblr25.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr27.isChecked() && !pgblr28.isChecked()){
+            pgblr27.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr29.isChecked() && !pgblr30.isChecked()){
+            pgblr29.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr31.isChecked() && !pgblr32.isChecked()){
+            pgblr31.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr33.isChecked() && !pgblr34.isChecked()){
+            pgblr33.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr35.isChecked() && !pgblr36.isChecked()){
+            pgblr35.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr37.isChecked() && !pgblr38.isChecked()){
+            pgblr37.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr39.isChecked() && !pgblr40.isChecked()){
+            pgblr39.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr41.isChecked() && !pgblr42.isChecked()){
+            pgblr41.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr43.isChecked() && !pgblr44.isChecked()){
+            pgblr43.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr45.isChecked() && !pgblr46.isChecked()){
+            pgblr45.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr47.isChecked() && !pgblr48.isChecked()){
+            pgblr47.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr49.isChecked() && !pgblr50.isChecked() && !pgblr51.isChecked()){
+            pgblr49.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr52.isChecked() && !pgblr53.isChecked() && !pgblr54.isChecked()){
+            pgblr52.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr55.isChecked() && !pgblr56.isChecked() && !pgblr57.isChecked()){
+            pgblr55.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr58.isChecked() && !pgblr59.isChecked() && !pgblr60.isChecked()){
+            pgblr58.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr61.isChecked() && !pgblr62.isChecked() && !pgblr63.isChecked()){
+            pgblr61.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr64.isChecked() && !pgblr65.isChecked() && !pgblr66.isChecked()){
+            pgblr64.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!pgblr67.isChecked() && !pgblr68.isChecked() && !pgblr69.isChecked()){
+            pgblr67.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (!pgblc9.isChecked() && !pgblc10.isChecked() && !pgblc11.isChecked() && !pgblc12.isChecked() && !pgblc13.isChecked() && !pgblc14.isChecked() && !pgblc15.isChecked() && !pgblc16.isChecked() && !pgblc17.isChecked()) {
+            pgblc9.setError("Debes seleccionar almenos una opción");
+            retorno = false;
+        }
+        else if(pgblc17.isChecked() && pgblt24.getText().toString().isEmpty()){
+            pgblt24.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt25.getText().toString().isEmpty()){
+            pgblt25.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt26.getText().toString().isEmpty()){
+            pgblt26.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt27.getText().toString().isEmpty()){
+            pgblt27.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(pgblt28.getText().toString().isEmpty()){
+            pgblt28.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        return retorno;
+    }
+
 
     @Override
     public void onBackPressed() {
