@@ -4,6 +4,7 @@ public class PGB_granos_bd {
 
     public static final String TABLA_BD = "TB_PG_BENEFICIARIO_GRANOS";
     public static final String COLUMN_FOLIO = "FOLIO";
+    public static final String COLUMN_FECHAENC = "FECHAENC";
     public static final String COLUMN_PGBTT2 = "PGBTT2";
     public static final String COLUMN_PGBTT3 = "PGBTT3";
     public static final String COLUMN_PGBTT4 = "PGBTT4";
@@ -14,17 +15,19 @@ public class PGB_granos_bd {
     public static final String COLUMN_PGBTT8 = "PGBTT8";
     public static final String COLUMN_PGBTT9 = "PGBTT9";
     public static final String COLUMN_PGBTT10 = "PGBTT10";
-    public static final String COLUMN_PGBTT11 = "PGBTT11";
-    public static final String COLUMN_PGBTT12 = "PGBTT12";
+    public static final String COLUMN_NOMEDO = "NOMEDO";
+    public static final String COLUMN_CVEEDO = "CVEEDO";
+    public static final String COLUMN_NOMMUN = "NOMMUN";
+    public static final String COLUMN_CVEMUN = "CVEMUN";
     public static final String COLUMN_PGBTT13 = "PGBTT13";
     public static final String COLUMN_PGBTT14 = "PGBTT14";
     public static final String COLUMN_PGBTT15 = "PGBTT15";
     public static final String COLUMN_PGBTT16 = "PGBTT16";
     public static final String COLUMN_PGBTT17 = "PGBTT17";
-    public static final String COLUMN_NOMEDO = "NOMEDO";
-    public static final String COLUMN_CVEEDO = "CVEEDO";
-    public static final String COLUMN_NOMMUN = "NOMMUN";
-    public static final String COLUMN_CVEMUN = "CVEMUN";
+    public static final String COLUMN_NOMEDO2 = "NOMEDO2";
+    public static final String COLUMN_CVEEDO2 = "CVEEDO2";
+    public static final String COLUMN_NOMMUN2 = "NOMMUN2";
+    public static final String COLUMN_CVEMUN2 = "CVEMUN2";
     public static final String COLUMN_PGR1 = "PGR1";
     public static final String COLUMN_PGBTT20 = "PGBTT20";
     public static final String COLUMN_PGR2 = "PGR2";
@@ -93,6 +96,7 @@ public class PGB_granos_bd {
 
     public static final String CREAR_TABLA_PGBENEFICIARIO_GRANOS = "CREATE TABLE " + TABLA_BD + "("
             + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
+            + COLUMN_FECHAENC + " VARCHAR, "
             + COLUMN_PGBTT2 + " VARCHAR, "
             + COLUMN_PGBTT3 + " VARCHAR, "
             + COLUMN_PGBTT4 + " VARCHAR, "
@@ -103,17 +107,19 @@ public class PGB_granos_bd {
             + COLUMN_PGBTT8 + " VARCHAR, "
             + COLUMN_PGBTT9 + " VARCHAR, "
             + COLUMN_PGBTT10 + " VARCHAR, "
-            + COLUMN_PGBTT11 + " VARCHAR, "
-            + COLUMN_PGBTT12 + " VARCHAR, "
+            + COLUMN_NOMEDO + " VARCHAR, "
+            + COLUMN_CVEEDO + " VARCHAR, "
+            + COLUMN_NOMMUN + " VARCHAR, "
+            + COLUMN_CVEMUN + " VARCHAR, "
             + COLUMN_PGBTT13 + " VARCHAR, "
             + COLUMN_PGBTT14 + " VARCHAR, "
             + COLUMN_PGBTT15 + " VARCHAR, "
             + COLUMN_PGBTT16 + " VARCHAR, "
             + COLUMN_PGBTT17 + " VARCHAR, "
-            + COLUMN_NOMEDO + " VARCHAR, "
-            + COLUMN_CVEEDO + " VARCHAR, "
-            + COLUMN_NOMMUN + " VARCHAR, "
-            + COLUMN_CVEMUN + " VARCHAR, "
+            + COLUMN_NOMEDO2 + " VARCHAR, "
+            + COLUMN_CVEEDO2 + " VARCHAR, "
+            + COLUMN_NOMMUN2 + " VARCHAR, "
+            + COLUMN_CVEMUN2 + " VARCHAR, "
             + COLUMN_PGR1 + " VARCHAR, "
             + COLUMN_PGBTT20 + " VARCHAR, "
             + COLUMN_PGR2 + " VARCHAR,"

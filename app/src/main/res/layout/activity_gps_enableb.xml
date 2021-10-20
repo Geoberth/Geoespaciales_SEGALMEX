@@ -178,7 +178,7 @@
                 android:layout_centerInParent="true"
                 android:textColor="#0C0C0C"
                 android:visibility="gone"
-                android:text="Autenticando!" />
+                android:text="Cargando" />
 
         </RelativeLayout>
 

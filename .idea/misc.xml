@@ -29,11 +29,7 @@
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pasl_operativo.xml" value="0.24924012158054712" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_paslbeneficiario.xml" value="0.32078239608801956" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pecuario_agregar_alimentos.xml" value="0.521875" />
-        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pgbeneficiario_leche.xml" value="0.22001262626262627" />
-        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pgbeneficiarios_granos.xml" value="0.33242753623188404" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pgoperativo_estimulos.xml" value="0.3416666666666667" />
-        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pgoperativo_granos.xml" value="0.33695652173913043" />
-        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pgoperativo_leche.xml" value="0.3230272265805261" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_produccion_acuicola.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_produccion_agricola.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_produccion_forestal.xml" value="0.521875" />
@@ -42,19 +38,28 @@
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_productor_familia.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_unidad_produccion.xml" value="0.5197916666666667" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/fragment_exportar.xml" value="0.4990942028985507" />
+        <entry key="app/src/main/res/drawable/borde.xml" value="0.3814814814814815" />
+        <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.3814814814814815" />
+        <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.34074074074074073" />
         <entry key="app/src/main/res/layout/activity_foto_uno.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/activity_gps.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/activity_gps_enableb.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/activity_gps_trayectoria.xml" value="0.40806159420289856" />
+        <entry key="app/src/main/res/layout/activity_herramientas_proteccion.xml" value="0.33611111111111114" />
+        <entry key="app/src/main/res/layout/activity_identificacion_cuestionario.xml" value="0.3611111111111111" />
         <entry key="app/src/main/res/layout/activity_liconsa.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_new_camara.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/activity_par_operativo.xml" value="0.3611111111111111" />
         <entry key="app/src/main/res/layout/activity_parbeneficiario.xml" value="0.2573454913880446" />
         <entry key="app/src/main/res/layout/activity_pasl_operativo.xml" value="0.271286231884058" />
-        <entry key="app/src/main/res/layout/activity_paslbeneficiario.xml" value="0.2388888888888889" />
-        <entry key="app/src/main/res/layout/activity_pgbeneficiarios_granos.xml" value="0.5138461538461538" />
+        <entry key="app/src/main/res/layout/activity_paslbeneficiario.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pgbeneficiarios_granos.xml" value="0.5302564102564102" />
         <entry key="app/src/main/res/layout/activity_principal.xml" value="0.271286231884058" />
         <entry key="app/src/main/res/layout/activity_segunda.xml" value="0.30416666666666664" />
+        <entry key="app/src/main/res/layout/nav_header_drawer.xml" value="0.33611111111111114" />
+        <entry key="app/src/main/res/menu/activity_drawer_drawer.xml" value="0.5205128205128206" />
+        <entry key="app/src/main/res/menu/drawer.xml" value="0.33611111111111114" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/iconoapp_liz.xml" value="0.3814814814814815" />
       </map>
     </option>
   </component>
