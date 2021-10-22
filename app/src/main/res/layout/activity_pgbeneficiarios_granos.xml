@@ -126,6 +126,7 @@
             <EditText
                 android:id="@+id/pre_garan_granos_txt5"
                 android:layout_width="match_parent"
+                android:inputType="textCapCharacters"
                 android:layout_height="62dp"
                 android:maxLines="1" />
 
@@ -472,7 +473,7 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <RadioButton
 
@@ -488,12 +489,6 @@
                     android:layout_height="wrap_content"
                     android:text="Primaria incompleta" />
 
-            </RadioGroup>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
                 <RadioButton
 
@@ -509,7 +504,6 @@
                     android:layout_height="wrap_content"
                     android:text="Secundaria incompleta" />
 
-            </RadioGroup>
 
 
             <RadioButton
@@ -541,10 +535,6 @@
                 android:layout_height="wrap_content"
                 android:text="Licenciatura inconclusa" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
                 <RadioButton
 
@@ -560,12 +550,6 @@
                     android:layout_height="wrap_content"
                     android:text="Posgrado inconcluso" />
 
-            </RadioGroup>
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
                 <RadioButton
 

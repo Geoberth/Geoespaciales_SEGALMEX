@@ -30,14 +30,16 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/iconoapp_liz"
+        android:icon="@mipmap/iconoapp_lizz"
         android:label="GEOSEGALMEX"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/iconoapp_liz_round"
+        android:roundIcon="@mipmap/iconoapp_lizz_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.geosegalmex.Liconsa2.LiconsaVerificacion"
+            android:exported="false" />
         <activity
             android:name="com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche"
             android:exported="false" />

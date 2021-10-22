@@ -10,9 +10,10 @@
     <item>PG Operativo Leche</item>
     <item>PG Beneficiario Leche</item>
     <item>PG Beneficiario Granos</item>
-        <item>PAR Beneficiario</item>
-        <item>PAR Operativo</item>
-        <item>Liconsa</item>
+    <item>PAR Beneficiario</item>
+    <item>PAR Operativo</item>
+    <item>RNPL Productor</item>
+    <item>RNPL Expediente</item>
 
     </string-array>
 

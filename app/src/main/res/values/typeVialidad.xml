@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vialidad">
+        <item>Calle</item>
+        <item>mpliación</item>
+        <item>Andador</item>
+        <item>Avenida</item>
+        <item>Boulevard</item>
+        <item>Calle</item>
+        <item>Callejón</item>
+        <item>Calzada</item>
+        <item>Cerrada</item>
+        <item>Circuito</item>
+        <item>Circunvalación</item>
+        <item>Continuación</item>
+        <item>Corredor</item>
+        <item>Diagonal</item>
+        <item>Eje</item>
+        <item>Vial</item>
+        <item>Pasaje</item>
+        <item>Peatonal</item>
+        <item>Periférico</item>
+        <item>Privada</item>
+        <item>Prolongación</item>
+        <item>Retorno</item>
+        <item>Viaducto</item>
+
+    </string-array>
+</resources>

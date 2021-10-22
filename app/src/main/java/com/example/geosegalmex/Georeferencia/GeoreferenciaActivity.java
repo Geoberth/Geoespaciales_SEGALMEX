@@ -21,6 +21,8 @@ import com.example.geosegalmex.LiconsaBeneficiario.Pasl_b_Model;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
+import com.example.geosegalmex.PARBeneficiario.PARBeneficiarioBD;
+import com.example.geosegalmex.PARBeneficiario.PARBeneficiario_Model;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGB_granos_model;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
@@ -70,6 +72,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     PGOperativoLeche_Model model5;
     PGB_granos_model model6;
     PGBeneficiarioLeche_Model model7;
+    PARBeneficiario_Model model8;
 
     String longitudGeo;
     String latitudGeo;
@@ -119,6 +122,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PG Beneficiario Leche")){
                     agregarPGBeneficiarioLeche();
+                }
+                else if(General.Proyecto.equals("PAR Beneficiario")){
+                    agregarPARBeneficiario();
                 }
 
                 finish();
@@ -374,6 +380,26 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
         baseBD = new PGBeneficiarioLecheBD(this);
 
         boolean insertarData = baseBD.addPGBeneficiarioLeche(model7);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void agregarPARBeneficiario() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model8 = new PARBeneficiario_Model();
+        model8 = (PARBeneficiario_Model)getIntent().getSerializableExtra("model");
+        model8.setLongitudGeo(longitudGeo);
+        model8.setLatitudGeo(latitudGeo);
+
+        PARBeneficiarioBD baseBD;
+        baseBD = new PARBeneficiarioBD(this);
+
+        boolean insertarData = baseBD.addPARBeneficiario(model8);
         if(insertarData == true) {
             Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
         }else{

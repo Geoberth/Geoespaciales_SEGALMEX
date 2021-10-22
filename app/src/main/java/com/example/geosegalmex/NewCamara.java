@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.geosegalmex.Liconsa.Liconsa;
+import com.example.geosegalmex.Liconsa2.LiconsaVerificacion;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
@@ -147,48 +148,68 @@ public class NewCamara extends AppCompatActivity {
                         txt2.setVisibility(View.GONE);
                     }
                     else{
-                        txt1.setText("Foto 1 guardada correctamente");
-                        txt2.setText("Foto 2 guardada correctamente");
-                        btnNext.setEnabled(false);
-                        new Handler().postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                //Toast.makeText(getApplicationContext(), "Podemos avanzar",Toast.LENGTH_SHORT).show();
-                                if(General.Proyecto.equals("PASL Operativo")){
-                                    startActivity(new Intent(getApplication(), PASLOperativo.class));
+                        int file_size = Integer.parseInt(String.valueOf(archivo.length()/1024));
+                        int file_size2 = Integer.parseInt(String.valueOf(archivo2.length()/1024));
+                        if(file_size<=1){
+                            Toast.makeText(getApplicationContext(), "Error en la Foto 1, favor de repetirla.",Toast.LENGTH_SHORT).show();
+                            btnCamara.setVisibility(View.VISIBLE);
+                            logo1.setVisibility(View.GONE);
+                            txt1.setVisibility(View.GONE);
+                        }
+                        else if(file_size2<=1){
+                            Toast.makeText(getApplicationContext(), "Error en la Foto 2, favor de repetirla.",Toast.LENGTH_SHORT).show();
+                            btnCamara2.setVisibility(View.VISIBLE);
+                            logo2.setVisibility(View.GONE);
+                            txt2.setVisibility(View.GONE);
+                        }
+                        else{
+                            txt1.setText("Foto 1 guardada correctamente");
+                            txt2.setText("Foto 2 guardada correctamente");
+                            btnNext.setEnabled(false);
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    //Toast.makeText(getApplicationContext(), "Podemos avanzar",Toast.LENGTH_SHORT).show();
+                                    if(General.Proyecto.equals("PASL Operativo")){
+                                        startActivity(new Intent(getApplication(), PASLOperativo.class));
+                                    }
+                                    else if(General.Proyecto.equals("PASL Beneficiario")){
+                                        startActivity(new Intent(getApplication(), PASLBeneficiario.class));
+                                    }
+                                    else if(General.Proyecto.equals("PG Operativo Estimulos")){
+                                        startActivity(new Intent(getApplication(), PGOperativoEstimulos.class));
+                                    }
+                                    else if(General.Proyecto.equals("PG Operativo Granos")){
+                                        startActivity(new Intent(getApplication(), PGOperativoGranos.class));
+                                    }
+                                    else if(General.Proyecto.equals("PG Operativo Leche")){
+                                        startActivity(new Intent(getApplication(), PGOperativoLeche.class));
+                                    }
+                                    else if(General.Proyecto.equals("PG Beneficiario Leche")){
+                                        startActivity(new Intent(getApplication(), PGBeneficiarioLeche.class));
+                                    }
+                                    else if (General.Proyecto.equals("PG Beneficiario Granos")){
+                                        startActivity(new Intent(getApplication(), PGBeneficiariosGranos.class));
+                                    }
+                                    else if (General.Proyecto.equals("PAR Beneficiario")){
+                                        startActivity(new Intent(getApplication(), PARBeneficiario.class));
+                                    }
+                                    else if (General.Proyecto.equals("PAR Operativo")){
+                                        startActivity(new Intent(getApplication(), PAR_Operativo.class));
+                                    }
+                                    else if (General.Proyecto.equals("RNPL Productor")){
+                                        startActivity(new Intent(getApplication(), Liconsa.class));
+                                    }
+                                    else if (General.Proyecto.equals("RNPL Expediente")){
+                                        startActivity(new Intent(getApplication(), LiconsaVerificacion.class));
+                                    }
+                                    else{
+                                        startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
+                                    }
                                 }
-                                else if(General.Proyecto.equals("PASL Beneficiario")){
-                                    startActivity(new Intent(getApplication(), PASLBeneficiario.class));
-                                }
-                                else if(General.Proyecto.equals("PG Operativo Estimulos")){
-                                    startActivity(new Intent(getApplication(), PGOperativoEstimulos.class));
-                                }
-                                else if(General.Proyecto.equals("PG Operativo Granos")){
-                                    startActivity(new Intent(getApplication(), PGOperativoGranos.class));
-                                }
-                                else if(General.Proyecto.equals("PG Operativo Leche")){
-                                    startActivity(new Intent(getApplication(), PGOperativoLeche.class));
-                                }
-                                else if(General.Proyecto.equals("PG Beneficiario Leche")){
-                                    startActivity(new Intent(getApplication(), PGBeneficiarioLeche.class));
-                                }
-                                else if (General.Proyecto.equals("PG Beneficiario Granos")){
-                                    startActivity(new Intent(getApplication(), PGBeneficiariosGranos.class));
-                                }
-                                else if (General.Proyecto.equals("PAR Beneficiario")){
-                                    startActivity(new Intent(getApplication(), PARBeneficiario.class));
-                                }
-                                else if (General.Proyecto.equals("PAR Operativo")){
-                                    startActivity(new Intent(getApplication(), PAR_Operativo.class));
-                                }
-                                else if (General.Proyecto.equals("Liconsa")){
-                                    startActivity(new Intent(getApplication(), Liconsa.class));
-                                }
-                                else{
-                                    startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));
-                                }
-                            }
-                        }, 1000);
+                            }, 1000);
+                        }
+
                     }
                 }
             }

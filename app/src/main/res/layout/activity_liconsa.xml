@@ -6,22 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Liconsa.Liconsa">
 
-
-    <LinearLayout
-
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="25dp">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -65,7 +63,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt1"
+                    android:id="@+id/ernpl_prod_txt1"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -77,7 +75,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt2"
+                    android:id="@+id/ernpl_prod_txt2"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -89,7 +87,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt3"
+                    android:id="@+id/ernpl_prod_txt3"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -101,10 +99,11 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt4"
+                    android:id="@+id/ernpl_prod_txt4"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
-                    android:hint="dd/mm/aaaa"
+                    android:focusable="false"
+                    android:clickable="true"
                     android:maxLines="1" />
 
                 <TextView
@@ -120,14 +119,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra1"
+                        android:id="@+id/ernpl_prod_ra1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hombre" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra2"
+                        android:id="@+id/ernpl_prod_ra2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mujer" />
@@ -140,7 +139,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt5"
+                    android:id="@+id/ernpl_prod_txt5"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -152,9 +151,9 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt6"
+                    android:id="@+id/ernpl_prod_txt6"
                     android:layout_width="match_parent"
-
+                    android:inputType="textCapCharacters"
                     android:layout_height="62dp"
                     android:maxLines="1" />
 
@@ -165,7 +164,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt7"
+                    android:id="@+id/ernpl_prod_txt7"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -177,7 +176,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt8"
+                    android:id="@+id/ernpl_prod_txt8"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -189,7 +188,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt9"
+                    android:id="@+id/ernpl_prod_txt9"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Escriba el número."
@@ -203,7 +202,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt10"
+                    android:id="@+id/ernpl_prod_txt10"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="user@example.com"
@@ -216,7 +215,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt11"
+                    android:id="@+id/ernpl_prod_txt11"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Escriba el número."
@@ -229,39 +228,33 @@
                     android:text="Tipo de teléfono:"
                     android:textColor="#000000" />
 
-                <LinearLayout
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/par_ben_ra1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="Casa" />
 
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch1"
-                        android:layout_width="match_parent"
+                <RadioButton
 
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:enabled="true"
-                        android:text="Casa" />
+                    android:id="@+id/par_ben_ra2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trabajo" />
 
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch2"
-                        android:layout_width="match_parent"
+                <RadioButton
 
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:enabled="true"
-                        android:text="Trabajo" />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch3"
-                        android:layout_width="match_parent"
-
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:enabled="true"
-                        android:text="Celular" />
-
-                </LinearLayout>
+                    android:id="@+id/par_ben_ra3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Celular" />
+            </RadioGroup>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -286,7 +279,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt12"
+                    android:id="@+id/ernpl_prod_txt12"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -298,7 +291,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt13"
+                    android:id="@+id/ernpl_prod_txt13"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Escriba el número."
@@ -312,7 +305,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt14"
+                    android:id="@+id/ernpl_prod_txt14"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Escriba el número."
@@ -327,7 +320,7 @@
 
 
                 <EditText
-                    android:id="@+id/enc_lic_txt15"
+                    android:id="@+id/ernpl_prod_txt15"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -340,7 +333,7 @@
 
 
                 <EditText
-                    android:id="@+id/enc_lic_txt16"
+                    android:id="@+id/ernpl_prod_txt16"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Escriba el número."
@@ -354,28 +347,15 @@
                     android:textColor="#000000" />
 
                 <Spinner
-                    android:id="@+id/enc_lic_spin2"
+                    android:id="@+id/ernpl_prod_spin1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:entries="@array/Estados2021"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borde"
                     android:spinnerMode="dialog" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Clave (Entidad Federativa)"
-                    android:textColor="#000000" />
-
-
-                <EditText
-                    android:id="@+id/enc_lic_txt17"
-                    android:layout_width="160dp"
-                    android:layout_height="62dp"
-                    android:hint="Clave"
-                    android:inputType="number"
-                    android:maxLines="1" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -384,27 +364,15 @@
                     android:textColor="#000000" />
 
                 <Spinner
-                    android:id="@+id/enc_lic_spin3"
+                    android:id="@+id/ernpl_prod_spin2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:entries="@array/Aguascalientes2021"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/borde"
                     android:spinnerMode="dialog" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Clave (Municipio)"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/enc_lic_txt18"
-                    android:layout_width="160dp"
-                    android:layout_height="62dp"
-                    android:hint="Clave"
-                    android:inputType="number"
-                    android:maxLines="1" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -427,14 +395,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra3"
+                        android:id="@+id/ernpl_prod_ra3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Urbano" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra4"
+                        android:id="@+id/ernpl_prod_ra4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rural" />
@@ -447,7 +415,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt19"
+                    android:id="@+id/ernpl_prod_txt19"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:maxLines="1" />
@@ -459,7 +427,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt20"
+                    android:id="@+id/ernpl_prod_txt20"
                     android:layout_width="160dp"
                     android:layout_height="62dp"
                     android:hint="Clave"
@@ -473,7 +441,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt21"
+                    android:id="@+id/ernpl_prod_txt21"
                     android:layout_width="300dp"
                     android:layout_height="62dp"
                     android:hint="Escriba el nombre"
@@ -485,208 +453,15 @@
                     android:text="Tipo de vialidad"
                     android:textColor="#000000" />
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calle" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ampliación" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Andador" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Avenida" />
-
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Boulevard" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Callejón" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calzada" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cerrada" />
-
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Circuito" />
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Circunvalación" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Continuación" />
-
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Eje vial" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra17"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Corredor" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra18"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Diagonal" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Pasaje" />
-
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Períferico" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Prolongación" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Privada" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra23"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Retorno" />
-
-                </RadioGroup>
-
-                <RadioButton
-
-                    android:id="@+id/enc_lic_ra24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Viaducto" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Longitud"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/enc_lic_txt22"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint=" 15.23456"
-                    android:inputType="numberDecimal"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Latitud"
-                    android:textColor="#000000" />
-
-                <EditText
-                    android:id="@+id/enc_lic_txt23"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:hint=" -30.67890"
-                    android:inputType="numberDecimal"
-                    android:maxLines="1" />
+            <Spinner
+                android:id="@+id/par_ben_spin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/vialidad"
+                android:background="@drawable/borde"
+                android:spinnerMode="dialog"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -705,25 +480,26 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
+                    android:id="@+id/ernpl_prod_ra21"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra25"
+                        android:id="@+id/ernpl_prod_ra25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra26"
+                        android:id="@+id/ernpl_prod_ra26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No  " />
 
                     <EditText
-                        android:id="@+id/enc_lic_txt24"
+                        android:id="@+id/ernpl_prod_txt24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Nombre de asociación"
@@ -745,27 +521,26 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra27"
+                        android:id="@+id/ernpl_prod_ra27"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pública" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra28"
+                        android:id="@+id/ernpl_prod_ra28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Privada" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra29"
+                        android:id="@+id/ernpl_prod_ra29"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Social" />
 
                 </RadioGroup>
-
 
 
                 <TextView
@@ -777,25 +552,26 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
+                    android:id="@+id/ernpl_prod_rg"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra30"
+                        android:id="@+id/ernpl_prod_ra30"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra31"
+                        android:id="@+id/ernpl_prod_ra31"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
 
                     <EditText
-                        android:id="@+id/enc_lic_txt25"
+                        android:id="@+id/ernpl_prod_txt25"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Tipo de discapacidad"
@@ -812,25 +588,26 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
+                    android:id="@+id/rglengua"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra32"
+                        android:id="@+id/ernpl_prod_ra32"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra33"
+                        android:id="@+id/ernpl_prod_ra33"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No  " />
 
                     <EditText
-                        android:id="@+id/enc_lic_txt26"
+                        android:id="@+id/ernpl_prod_txt26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Declaratoria indígena (Pueblo o comunidad indígena a la que pertenece)"
@@ -860,14 +637,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra34"
+                        android:id="@+id/ernpl_prod_ra34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Activo" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra35"
+                        android:id="@+id/ernpl_prod_ra35"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Inactivo" />
@@ -881,7 +658,7 @@
 
 
                 <EditText
-                    android:id="@+id/enc_lic_txt27"
+                    android:id="@+id/ernpl_prod_txt27"
                     android:layout_width="160dp"
                     android:layout_height="62dp"
                     android:hint="Clave"
@@ -904,7 +681,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt28"
+                    android:id="@+id/ernpl_prod_txt28"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Cabezas"
@@ -919,7 +696,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt29"
+                    android:id="@+id/ernpl_prod_txt29"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Cabezas"
@@ -934,7 +711,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt30"
+                    android:id="@+id/ernpl_prod_txt30"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Cabezas"
@@ -949,7 +726,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt31"
+                    android:id="@+id/ernpl_prod_txt31"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Cabezas"
@@ -972,7 +749,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt32"
+                    android:id="@+id/ernpl_prod_txt32"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Litros"
@@ -987,7 +764,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt33"
+                    android:id="@+id/ernpl_prod_txt33"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Cabezas"
@@ -1002,7 +779,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt34"
+                    android:id="@+id/ernpl_prod_txt34"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Litros"
@@ -1017,7 +794,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt35"
+                    android:id="@+id/ernpl_prod_txt35"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Cantidad"
@@ -1032,7 +809,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt36"
+                    android:id="@+id/ernpl_prod_txt36"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Litros"
@@ -1053,14 +830,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra36"
+                        android:id="@+id/ernpl_prod_ra36"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Leche fría" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra37"
+                        android:id="@+id/ernpl_prod_ra37"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Leche caliente" />
@@ -1074,7 +851,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt37"
+                    android:id="@+id/ernpl_prod_txt37"
                     android:layout_width="160dp"
                     android:layout_height="62dp"
                     android:hint="dd/mm/aaaa"
@@ -1088,7 +865,7 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt38"
+                    android:id="@+id/ernpl_prod_txt38"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Pesos"
@@ -1103,40 +880,13 @@
                     android:textColor="#000000" />
 
                 <EditText
-                    android:id="@+id/enc_lic_txt39"
+                    android:id="@+id/ernpl_prod_txt39"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:hint="Días"
                     android:inputType="number"
                     android:maxLines="1" />
 
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="10.1 ¿En cuánto tiempo se le paga?"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra38"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Leche fría" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra39"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Leche caliente" />
-                </RadioGroup>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1152,14 +902,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra40"
+                        android:id="@+id/ernpl_prod_ra38"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra41"
+                        android:id="@+id/ernpl_prod_ra39"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
@@ -1187,14 +937,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra42"
+                        android:id="@+id/ernpl_prod_ra40"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra43"
+                        android:id="@+id/ernpl_prod_ra41"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
@@ -1215,14 +965,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra44"
+                        android:id="@+id/ernpl_prod_ra42"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra45"
+                        android:id="@+id/ernpl_prod_ra43"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
@@ -1243,14 +993,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra46"
+                        android:id="@+id/ernpl_prod_ra44"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra47"
+                        android:id="@+id/ernpl_prod_ra45"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
@@ -1258,6 +1008,7 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
+                    android:id="@+id/rg3"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
@@ -1271,20 +1022,20 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra48"
+                        android:id="@+id/ernpl_prod_ra46"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra49"
+                        android:id="@+id/ernpl_prod_ra47"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No " />
 
                     <EditText
-                        android:id="@+id/enc_lic_txt40"
+                        android:id="@+id/ernpl_prod_txt40"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint=" Especifique"
@@ -1309,25 +1060,32 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
+                    android:id="@+id/rg13"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra50"
+                        android:id="@+id/ernpl_prod_ra48"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra51"
+                        android:id="@+id/ernpl_prod_ra49"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No (Pase a la pregunta 14)" />
+                        android:text="No" />
                 </RadioGroup>
 
-                <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_marginTop="20dp"
@@ -1358,7 +1116,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx41"
+                        android:id="@+id/ernpl_prod_txt41"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Cantidad"
@@ -1381,7 +1139,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx42"
+                        android:id="@+id/ernpl_prod_txt42"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Cantidad"
@@ -1404,7 +1162,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx43"
+                        android:id="@+id/ernpl_prod_txt43"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Cantidad"
@@ -1427,7 +1185,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx44"
+                        android:id="@+id/ernpl_prod_txt44"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Cantidad"
@@ -1450,7 +1208,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx45"
+                        android:id="@+id/ernpl_prod_txt45"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Cantidad"
@@ -1458,6 +1216,13 @@
                         android:maxLines="1" />
 
                 </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1471,28 +1236,35 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="13. ¿Cuenta con uno o más tanques de enfiamiento?"
+                    android:text="14. ¿Cuenta con uno o más tanques de enfiamiento?"
                     android:textColor="#000000" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/rg14"
                     android:orientation="horizontal">
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra52"
+                        android:id="@+id/ernpl_prod_ra50"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra53"
+                        android:id="@+id/ernpl_prod_ra51"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No (Pase a la pregunta 15)" />
+                        android:text="No" />
                 </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1525,7 +1297,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx46"
+                        android:id="@+id/ernpl_prod_txt46"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Litros"
@@ -1548,7 +1320,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx47"
+                        android:id="@+id/ernpl_prod_txt47"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Litros"
@@ -1571,7 +1343,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx48"
+                        android:id="@+id/ernpl_prod_txt48"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Litros"
@@ -1594,7 +1366,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx49"
+                        android:id="@+id/ernpl_prod_txt49"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Litros"
@@ -1617,7 +1389,7 @@
                         android:textStyle="italic|bold" />
 
                     <EditText
-                        android:id="@+id/enc_lic_tx50"
+                        android:id="@+id/ernpl_prod_txt50"
                         android:layout_width="150dp"
                         android:layout_height="62dp"
                         android:hint="Litros"
@@ -1625,6 +1397,7 @@
                         android:maxLines="1" />
 
                 </LinearLayout>
+        </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1648,14 +1421,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra54"
+                        android:id="@+id/ernpl_prod_ra52"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra55"
+                        android:id="@+id/ernpl_prod_ra53"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
@@ -1676,14 +1449,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra56"
+                        android:id="@+id/ernpl_prod_ra54"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra57"
+                        android:id="@+id/ernpl_prod_ra55"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
@@ -1704,14 +1477,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra58"
+                        android:id="@+id/ernpl_prod_ra56"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra59"
+                        android:id="@+id/ernpl_prod_ra57"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No" />
@@ -1720,6 +1493,7 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/rg4"
                     android:orientation="horizontal">
 
                     <TextView
@@ -1732,20 +1506,20 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra60"
+                        android:id="@+id/ernpl_prod_ra58"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra61"
+                        android:id="@+id/ernpl_prod_ra59"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No " />
 
                     <EditText
-                        android:id="@+id/enc_lic_txt41"
+                        android:id="@+id/ernpl_prod_txt51"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint=" Especifique"
@@ -1771,24 +1545,25 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/rg5"
                     android:orientation="horizontal">
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra62"
+                        android:id="@+id/ernpl_prod_ra60"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra63"
+                        android:id="@+id/ernpl_prod_ra61"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No  " />
 
                     <EditText
-                        android:id="@+id/enc_lic_txt42"
+                        android:id="@+id/ernpl_prod_txt52"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Escriba registro"
@@ -1806,24 +1581,25 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/rg6"
                     android:orientation="horizontal">
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra64"
+                        android:id="@+id/ernpl_prod_ra62"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra65"
+                        android:id="@+id/ernpl_prod_ra63"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No  " />
 
                     <EditText
-                        android:id="@+id/enc_lic_txt43"
+                        android:id="@+id/ernpl_prod_txt53"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Escriba registro"
@@ -1845,14 +1621,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra66"
+                        android:id="@+id/ernpl_prod_ra64"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra67"
+                        android:id="@+id/ernpl_prod_ra65"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No  " />
@@ -1873,14 +1649,14 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra68"
+                        android:id="@+id/ernpl_prod_ra66"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sí" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra69"
+                        android:id="@+id/ernpl_prod_ra67"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No  " />
@@ -1901,463 +1677,37 @@
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra70"
+                        android:id="@+id/ernpl_prod_ra68"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Persona Física" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra71"
+                        android:id="@+id/ernpl_prod_ra69"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Persona Moral" />
 
                     <RadioButton
 
-                        android:id="@+id/enc_lic_ra72"
+                        android:id="@+id/ernpl_prod_ra70"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sin registro" />
 
                 </RadioGroup>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Nota al Encuestador: "
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:text="La sección VI deberá haber sido cotejada previamente con el personal de LICONSA para verificar en campo la información del expediente del productor y, en su caso, complementar los campos necesarios para actualizar el registro correspondiente."
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:text="DATOS A VERIFICAR EN EL EXPEDIENTE DEL PRODUCTOR COMO PROVEEDOR DE LICONSA"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="21. ¿El productor está correctamente registrado en el RNPL?"
-                    android:textColor="#000000" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra73"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sí" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra74"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cuenta con código asignado" />
-
-
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra75"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Requiere actualizar la información" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra76"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No" />
-
-
-                </RadioGroup>
-
-                <RadioButton
-
-                    android:id="@+id/enc_lic_ra77"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ha ingresado su solicitud pero no tiene código" />
-
-                <RadioButton
-
-                    android:id="@+id/enc_lic_ra78"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No ha ingresado solicitud" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="22. DOCUMENTOS INGRESADOS A SU EXPEDIENTE"
-                    android:textColor="#000000" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch4"
-                        android:layout_width="match_parent"
-
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:enabled="true"
-                        android:text="RFC." />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="CURP" />
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:enabled="true"
-                        android:text="Estado de cuenta bancaria" />
-
-                </LinearLayout>
 
                 <EditText
-                    android:id="@+id/enc_lic_txt44"
+                    android:id="@+id/ernpl_prod_txt54"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="CLABE Interbancaria"
-                    android:maxLines="1"
-                    android:textStyle="italic" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/enc_lic_ch7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Comprobante de domicilio fiscal" />
-
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/enc_lic_ch8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:enabled="true"
-                    android:text="Comprobante de opinión" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra79"
-                        android:layout_width="wrap_content"
-                        android:layout_gravity="left"
-                        android:layout_height="wrap_content"
-                        android:text="SAT" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra80"
-                        android:layout_width="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_height="wrap_content"
-                        android:text="IMSS" />
-
-                    <RadioButton
-
-                        android:id="@+id/enc_lic_ra81"
-                        android:layout_width="wrap_content"
-                        android:layout_gravity="right"
-                        android:layout_height="wrap_content"
-                        android:text="INFONAVIT" />
-
-                </RadioGroup>
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/enc_lic_ch9"
-                    android:layout_width="match_parent"
-
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="1dp"
-                    android:enabled="true"
-                    android:text="Manifiesto Art. 50 y 60 Ley General de Adquisiciones" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/enc_lic_ch10"
-                    android:layout_width="match_parent"
-
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="1dp"
-                    android:enabled="true"
-                    android:text="Manifiesto Art. 32-D Código Fiscal de la Federación" />
-
-                <com.google.android.material.checkbox.MaterialCheckBox
-                    android:id="@+id/enc_lic_ch11"
-                    android:layout_width="match_parent"
-
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="1dp"
-                    android:enabled="true"
-                    android:text="Carta de conformidad con LICONSA" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch12"
-                        android:layout_width="match_parent"
-
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:enabled="true"
-                        android:text="Código contable: " />
-
-                    <EditText
-                        android:id="@+id/enc_lic_txt45"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:hint=" Especifique."
-                        android:maxLines="1"
-                        android:textStyle="italic" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:id="@+id/enc_lic_ch13"
-                        android:layout_width="match_parent"
-
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:enabled="true"
-                        android:text="Gerencia o PAS asignado" />
-
-                    <EditText
-                        android:id="@+id/enc_lic_txt46"
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:hint=" Especifique."
-                        android:maxLines="1"
-                        android:textStyle="italic" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Tipo de productor:"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <RadioButton
-
-                    android:id="@+id/enc_lic_ra82"
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_height="wrap_content"
-                    android:text="PEQUEÑO (de 1 – 35 cabezas productoras de leche)" />
-
-                <RadioButton
-
-                    android:id="@+id/enc_lic_ra83"
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_height="wrap_content"
-                    android:text="MEDIANO (de 36 – 100 cabezas productoras de leche)" />
-
-                <RadioButton
-
-                    android:id="@+id/enc_lic_ra84"
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_height="wrap_content"
-                    android:text="GRANDE (más DE 100 cabezas productoras de leche)" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:text="DATOS DE LA ORGANIZACIÓN A LA QUE PERTENECE (En caso que aplique):"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/enc_lic_txt47"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Nombre Empresa"
-                    android:maxLines="1"/>
-
-                <EditText
-                    android:id="@+id/enc_lic_txt48"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Tipo"
-                    android:maxLines="1"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:text=" N° PREGUNTA | OBSERVACIONES"
-                    android:textColor="#000000"
-                    android:textStyle="bold|italic" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx59"
-                        android:layout_width="50dp"
-                        android:layout_height="62dp"
-                        android:hint="  N°"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx60"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
-                        android:hint="Observaciones"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx61"
-                        android:layout_width="50dp"
-                        android:layout_height="62dp"
-                        android:hint="  N°"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx62"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
-                        android:hint="Observaciones"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx63"
-                        android:layout_width="50dp"
-                        android:layout_height="62dp"
-                        android:hint="  N°"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx64"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
-                        android:hint="Observaciones"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx65"
-                        android:layout_width="50dp"
-                        android:layout_height="62dp"
-                        android:hint="  N°"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx66"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
-                        android:hint="Observaciones"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx67"
-                        android:layout_width="50dp"
-                        android:layout_height="62dp"
-                        android:hint="  N°"
-                        android:inputType="number"
-                        android:maxLines="1" />
-
-                    <EditText
-                        android:id="@+id/enc_lic_tx68"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
-                        android:hint="Observaciones"
-                        android:maxLines="1" />
-
-                </LinearLayout>
-
+                    android:hint="Observaciones y/o comentarios"
+                    android:maxLines="4" />
 
                 <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-                    android:id="@+id/enc_lic_sig"
+                    android:id="@+id/ernpl_prod_sig"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
@@ -2368,16 +1718,6 @@
                     android:theme="@style/Theme.MaterialComponents.Light"
                     app:icon="@android:drawable/ic_input_add"
                     app:iconPadding="20dp" />
-
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
-
-
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

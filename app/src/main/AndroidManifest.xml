@@ -18,13 +18,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/iconoapp_liz"
+        android:icon="@mipmap/iconoapp_lizz"
         android:label="GEOSEGALMEX"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/iconoapp_liz_round"
+        android:roundIcon="@mipmap/iconoapp_lizz_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Liconsa2.LiconsaVerificacion"
+            android:exported="false" />
         <activity
             android:name=".PGBeneficiarioLeche.PGBeneficiarioLeche"
             android:exported="false" />

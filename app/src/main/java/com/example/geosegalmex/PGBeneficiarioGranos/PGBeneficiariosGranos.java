@@ -22,6 +22,7 @@ import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
 import com.example.geosegalmex.R;
 
 import java.util.Calendar;
+import java.util.regex.Pattern;
 
 public class PGBeneficiariosGranos extends AppCompatActivity {
 
@@ -501,6 +502,23 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   return respuesta;
  }
 
+ public boolean validarCURP(String curp)
+  { String regex =
+          "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
+                  "(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
+                  "[HM]{1}" +
+                  "(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
+                  "[B-DF-HJ-NP-TV-Z]{3}" +
+                  "[0-9A-Z]{1}[0-9]{1}$";
+
+   Pattern patron = Pattern.compile(regex);
+   if(!patron.matcher(curp).matches())
+   { return false;
+   }else
+   { return true;
+   }
+ }
+
 
  public String obtenerRadiooo(RadioButton rbtt18, RadioButton rbtt19, RadioButton rbtt20, RadioButton rbtt21){
 
@@ -553,6 +571,10 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   else if (pgbt5.getText().toString().isEmpty()){
    pgbt5.setError("No puede quedar vacío");
    retorno = false;
+  }
+  else if(!validarCURP(pgbt5.getText().toString())){
+   pgbt5.setError("CURP invalido");
+   retorno=false;
   }
   else if (!propeq.isChecked() && !promed.isChecked()) {
    promed.setError("Debes seleccionar una opción");

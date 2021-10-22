@@ -169,6 +169,17 @@ public class ExportarFragment extends Fragment {
                     e.printStackTrace();
                 }
 
+                try {
+                    deployDatabase("PARBeneficiario");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("PARBeneficiario");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
 
                 // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
                 // tareaAsyncTask.execute();
