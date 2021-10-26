@@ -3371,6 +3371,7 @@ id ernpl_prod_txt13
 id ernpl_prod_txt14
 id ernpl_prod_txt15
 id ernpl_prod_txt16
+id ernpl_prod_txt17
 id ernpl_prod_txt19
 id ernpl_prod_txt2
 id ernpl_prod_txt20
@@ -3933,6 +3934,8 @@ id par_ben_ra13
 id par_ben_ra14
 id par_ben_ra15
 id par_ben_ra16
+id par_ben_ra17
+id par_ben_ra18
 id par_ben_ra19
 id par_ben_ra198
 id par_ben_ra199
@@ -4198,7 +4201,6 @@ id par_et_ra9
 id par_et_sig
 id par_et_txt008
 id par_et_txt08
-id par_et_txt1
 id par_et_txt10
 id par_et_txt11
 id par_et_txt1119
@@ -4210,7 +4212,6 @@ id par_et_txt16
 id par_et_txt17
 id par_et_txt18
 id par_et_txt19
-id par_et_txt2
 id par_et_txt20
 id par_et_txt3
 id par_et_txt4
@@ -5269,8 +5270,10 @@ id rentada
 id rg1
 id rg10
 id rg11
+id rg12
 id rg13
 id rg14
+id rg15
 id rg2
 id rg3
 id rg4

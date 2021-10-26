@@ -15,6 +15,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.geosegalmex.General;
+import com.example.geosegalmex.Liconsa.LiconsaBD;
+import com.example.geosegalmex.Liconsa.Liconsa_Model;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
 import com.example.geosegalmex.LiconsaBeneficiario.Pasl_b_Model;
@@ -23,6 +25,8 @@ import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiarioBD;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiario_Model;
+import com.example.geosegalmex.PAROperativo.PAR_operativo_model;
+import com.example.geosegalmex.PAROperativo.PARoperativoBD;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGB_granos_model;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
@@ -73,6 +77,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     PGB_granos_model model6;
     PGBeneficiarioLeche_Model model7;
     PARBeneficiario_Model model8;
+    Liconsa_Model model9;
+    PAR_operativo_model model10;
 
     String longitudGeo;
     String latitudGeo;
@@ -125,6 +131,12 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PAR Beneficiario")){
                     agregarPARBeneficiario();
+                }
+                else if(General.Proyecto.equals("RNPL Productor")){
+                    agregarRNPLProductor();
+                }
+                else if(General.Proyecto.equals("PAR Operativo")){
+                    agregarPAROperativo();
                 }
 
                 finish();
@@ -406,6 +418,48 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
         }
     }
+
+    private void agregarRNPLProductor() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model9 = new Liconsa_Model();
+        model9 = (Liconsa_Model)getIntent().getSerializableExtra("model");
+        model9.setLongitudGeo(longitudGeo);
+        model9.setLatitudGeo(latitudGeo);
+
+        LiconsaBD baseBD;
+        baseBD = new LiconsaBD(this);
+
+        boolean insertarData = baseBD.addRNPLProductor(model9);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void agregarPAROperativo() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model10 = new PAR_operativo_model();
+        model10 = (PAR_operativo_model)getIntent().getSerializableExtra("model");
+        model10.setLongitudGeo(longitudGeo);
+        model10.setLatitudGeo(latitudGeo);
+
+        PARoperativoBD baseBD;
+        baseBD = new PARoperativoBD(this);
+
+        boolean insertarData = baseBD.addPAR_Operativo(model10);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
+
 
 
     private void agregarGoerreferencia(String brigadistaGeo, String productorGeo, String longitudGeoGeo, String latitudGeoGeo, String horaActual, String fechaActual, int status) {

@@ -8,12 +8,12 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_control_plagas_enferm_c.xml"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_ciclo_caracterizacion2.xml.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_ciclo_caracterizacion2.xml"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_foto_dos.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_foto_dos.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_ciclo_caracterizacion2.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_ciclo_caracterizacion2.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_frutales_12.xml.flat",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-hdpi\\iconoapp_lizz_round.png"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_iconoapp_lizz_round.png.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-xhdpi\\iconoapp_lizz_round.png"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_control_malezas.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_control_malezas.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_iconoapp_lizz_round.png.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-xhdpi\\iconoapp_lizz_round.png"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_control_plagas_enferm_b.xml.flat",
@@ -88,12 +88,12 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_capacitacion_asistencia_apicola.xml"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_iconoapp_lizz.png.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-xxxhdpi\\iconoapp_lizz.png"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_new_camara.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_new_camara.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_iconoapp_lizz.png.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-xxxhdpi\\iconoapp_lizz.png"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_frutales_11.xml.flat",
@@ -120,20 +120,20 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-xxhdpi\\iconoapp_liz_foreground.png"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_apicola_inicio.xml.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_apicola_inicio.xml"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_tipos_alimentos_tres.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_tipos_alimentos_tres.xml"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular.xml.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\circular.xml"
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_apicola_inicio.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_apicola_inicio.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_comercializacion_5.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_comercializacion_5.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\circular.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_iconoapp_lizz.png.flat",
@@ -336,12 +336,12 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_frutales_8.xml"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_frutales_14.xml.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_frutales_14.xml"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_produccion_pecuaria.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_produccion_pecuaria.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_frutales_14.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_frutales_14.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_gps_trayectoria.xml.flat",
@@ -368,12 +368,12 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_ciclo_caracterizacion.xml"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_iconoapp_lizz_foreground.png.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-mdpi\\iconoapp_lizz_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_inventario_ganado_ovino.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_inventario_ganado_ovino.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_iconoapp_lizz_foreground.png.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-mdpi\\iconoapp_lizz_foreground.png"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_apicultura_3.xml.flat",
@@ -400,24 +400,24 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_frutales_2.xml.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_frutales_2.xml"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_content_drawer.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\content_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_frutales_2.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_frutales_2.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_iconoapp_lizz_foreground.png.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-xhdpi\\iconoapp_lizz_foreground.png"
     },
     {
-        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pecuario_param_prod_reproductivos.xml.flat",
-        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pecuario_param_prod_reproductivos.xml"
-    },
-    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pecuario_ovinos.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pecuario_ovinos.xml"
+    },
+    {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pecuario_param_prod_reproductivos.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pecuario_param_prod_reproductivos.xml"
     },
     {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pgoperativo_estimulos.xml.flat",

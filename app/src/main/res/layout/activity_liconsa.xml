@@ -98,15 +98,15 @@
                     android:text="Fecha de nacimiento:"
                     android:textColor="#000000" />
 
-                <EditText
-                    android:id="@+id/ernpl_prod_txt4"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:focusable="false"
-                    android:clickable="true"
-                    android:maxLines="1" />
+            <EditText
+                android:id="@+id/ernpl_prod_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:maxLines="1" />
 
-                <TextView
+            <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="SEXO:"
@@ -166,6 +166,7 @@
                 <EditText
                     android:id="@+id/ernpl_prod_txt7"
                     android:layout_width="match_parent"
+                    android:inputType="textCapCharacters"
                     android:layout_height="62dp"
                     android:maxLines="1" />
 
@@ -852,9 +853,10 @@
 
                 <EditText
                     android:id="@+id/ernpl_prod_txt37"
-                    android:layout_width="160dp"
+                    android:layout_width="match_parent"
                     android:layout_height="62dp"
-                    android:hint="dd/mm/aaaa"
+                    android:clickable="true"
+                    android:focusable="false"
                     android:maxLines="1" />
 
                 <TextView

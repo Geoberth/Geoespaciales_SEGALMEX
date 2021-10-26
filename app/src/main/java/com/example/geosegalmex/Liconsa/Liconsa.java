@@ -2,6 +2,7 @@ package com.example.geosegalmex.Liconsa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -20,8 +22,11 @@ import com.example.geosegalmex.General;
 import com.example.geosegalmex.Georeferencia.GeoreferenciaActivity;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiario_Model;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche_Model;
 import com.example.geosegalmex.R;
 
+import java.util.Calendar;
 import java.util.regex.Pattern;
 
 public class Liconsa extends AppCompatActivity {
@@ -31,6 +36,10 @@ public class Liconsa extends AppCompatActivity {
     CheckBox ernplpc1, ernplpc2, ernplpc3;
     Button btnSiguiente;
     LinearLayout ll1, ll2;
+
+    Calendar c, c2;
+    DatePickerDialog dpd, dpd2;
+    Liconsa_Model model;
 
     String cveedo = "";
     String nomedo = "";
@@ -55,6 +64,7 @@ public class Liconsa extends AppCompatActivity {
         setContentView(R.layout.activity_liconsa);
 
         Declaracion();
+        Eventos();
         ernplpt40.setVisibility(View.GONE);
         ernplpt26.setVisibility(View.GONE);
         ernplpt25.setVisibility(View.GONE);
@@ -127,7 +137,7 @@ public class Liconsa extends AppCompatActivity {
                     String Mun = nommun;
                     String cveLoc = "";
                     String colonia = ernplpt15.getText().toString();
-                    String tipoasen = obtenerResultado(ernplpr3, ernplpr4);
+                    String tipoasen = (ernplpr3.isChecked()==true || ernplpr4.isChecked()==true)? obtenerResultado(ernplpr3, ernplpr4) : "" ;
                     String nomasen = ernplpt19.getText().toString();
                     String cveasen = ernplpt20.getText().toString();
                     String vialidad = ernplpt21.getText().toString();
@@ -185,10 +195,58 @@ public class Liconsa extends AppCompatActivity {
                     String p19 = obtenerResultado(ernplpr66, ernplpr67);
                     String p20 = obtenerResultado3(ernplpr68, ernplpr69, ernplpr70);
                     String observaciones = ernplpt54.getText().toString();
+
+                    String f1 = General.Foto1;
+                    String f2 = General.Foto2;
+
+                    model = new Liconsa_Model(fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipotel,calle,ext,inte,cp,cveEdo,Edo,cveMun,Mun,cveLoc,colonia,tipoasen,nomasen,cveasen,vialidad,tipovialidad,asociacion,nomaso,regimen,
+                            discapacidad,nomdiscapacidad,indigena,declaindigena,estatus,upp,p1,p2,p3,p4,p5,p6,p7,p8,p9,p9_1,p9_2,p10,p10_1,p11,p12_1,p12_2,p12_3,p12_4,p12_4otros,p13,p13_1,p13_2,p13_3,p13_4,p13_5,p14,p14_1,p14_2,
+                            p14_3,p14_4,p14_5,p15_1,p15_2,p15_3,p15_4,p15_4otros,p16,p16_registro,p17,p17_registro,p18,p19,p20,observaciones, f1, f2, "", "");
+
+                    Intent in = new Intent(Liconsa.this, GeoreferenciaActivity.class);
+                    in.putExtra("model", model);
+                    startActivity(in);
+
                 }
 
 
 
+            }
+        });
+
+        ernplpt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                c = Calendar.getInstance();
+                int day = c.get(Calendar.DAY_OF_MONTH);
+                int month = c.get(Calendar.MONTH);
+                int year = c.get(Calendar.YEAR);
+
+                dpd = new DatePickerDialog(Liconsa.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker datePicker, int mYear, int mMonth, int mDay) {
+                        ernplpt4.setText(mDay +"/"+ (mMonth+1) +"/"+ mYear);
+                    }
+                }, year, month, day);
+                dpd.show();
+            }
+        });
+
+        ernplpt37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                c2 = Calendar.getInstance();
+                int day2 = c2.get(Calendar.DAY_OF_MONTH);
+                int month2 = c2.get(Calendar.MONTH);
+                int year2 = c2.get(Calendar.YEAR);
+
+                dpd2 = new DatePickerDialog(Liconsa.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker datePicker, int mYear2, int mMonth2, int mDay2) {
+                        ernplpt37.setText(mDay2 +"/"+ (mMonth2+1) +"/"+ mYear2);
+                    }
+                }, year2, month2, day2);
+                dpd2.show();
             }
         });
 
@@ -546,6 +604,10 @@ public class Liconsa extends AppCompatActivity {
             ernplpt7.setError("No puede quedar vacio");
             retorno = false;
         }
+        else if(!validarRFC(ernplpt7.getText().toString())){
+            ernplpt7.setError("RFC invalido");
+            retorno=false;
+        }
         else if(ernplpt8.getText().toString().isEmpty()) {
             ernplpt8.setError("No puede quedar vacio");
             retorno = false;
@@ -576,22 +638,6 @@ public class Liconsa extends AppCompatActivity {
         }
         else if(ernplpt15.getText().toString().isEmpty()) {
             ernplpt15.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if(!ernplpr3.isChecked() && !ernplpr4.isChecked()){
-            ernplpr3.setError("Debes seleccionar una opción");
-            retorno=false;
-        }
-        else if(ernplpt19.getText().toString().isEmpty()) {
-            ernplpt19.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if(ernplpt20.getText().toString().isEmpty()) {
-            ernplpt20.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if(ernplpt21.getText().toString().isEmpty()) {
-            ernplpt21.setError("No puede quedar vacio");
             retorno = false;
         }
         else if(!ernplpr25.isChecked() && !ernplpr26.isChecked()){
@@ -757,6 +803,20 @@ public class Liconsa extends AppCompatActivity {
 
         Pattern patron = Pattern.compile(regex);
         if(!patron.matcher(curp).matches())
+        { return false;
+        }else
+        { return true;
+        }
+    }
+
+    public boolean validarRFC(String rfc)
+    { String regex =
+            "[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
+                    "(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
+                    "[0-9A-Z]{3}$";
+
+        Pattern patron = Pattern.compile(regex);
+        if(!patron.matcher(rfc).matches())
         { return false;
         }else
         { return true;

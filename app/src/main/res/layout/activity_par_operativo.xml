@@ -6,21 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".PAROperativo.PAR_Operativo">
 
-    <LinearLayout
-
-        android:padding="16dp"
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="25dp">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -49,31 +48,32 @@
                     android:textStyle="bold"
                     android:textColor="#000000" />
 
-                <TextView
-                    android:text="FOLIO:"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/par_et_txt1"
+                <TextView
+                    android:id="@+id/pg_leche_tvFech"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/pg_leche_txtFecha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Escriba el número."
-                    android:inputType="number"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:text="DIA/MES/AÑO"
-                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
                     android:textColor="#000000"
-                    android:layout_height="wrap_content"/>
+                    android:textSize="15sp" />
 
-                <EditText
-                    android:id="@+id/par_et_txt2"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:maxLines="1" />
+            </LinearLayout>
+
+
 
                 <TextView
                     android:text="ESTADO"
@@ -486,7 +486,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Especifique"
-                    android:inputType="number"
+                    android:visibility="gone"
                     android:maxLines="1" />
 
                 <TextView
@@ -564,7 +564,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Especifique"
-                    android:inputType="number"
+                    android:visibility="gone"
+
                     android:maxLines="1" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -683,6 +684,7 @@
                         android:id="@+id/par_et_txt9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         android:maxLines="1" />
 
                 </RadioGroup>
@@ -754,14 +756,6 @@
                         android:layout_height="wrap_content"
                         android:text="Mensual"/>
 
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
                     <RadioButton
 
                         android:id="@+id/par_et_ra29"
@@ -769,13 +763,18 @@
                         android:layout_height="wrap_content"
                         android:text="Otro (Especifique)"/>
 
-                    <EditText
-                        android:id="@+id/par_et_txt10"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:maxLines="1" />
-
                 </RadioGroup>
+
+
+
+                <EditText
+                    android:id="@+id/par_et_txt10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:maxLines="1" />
+
+
 
                 <TextView
                     android:text="15. ¿Cuáles son los productos que más fallan en surtir?"
@@ -2192,6 +2191,7 @@
                         android:id="@+id/par_et_txt16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         android:maxLines="1" />
 
                 </RadioGroup>
@@ -2371,6 +2371,7 @@
                     android:id="@+id/par_et_txt1119"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:maxLines="1" />
 
 
@@ -4962,6 +4963,5 @@
                     los nombres de los catalogos y actividades-->
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

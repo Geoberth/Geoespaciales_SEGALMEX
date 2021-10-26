@@ -35,42 +35,56 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/iconoapp_lizz_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.geosegalmex.Liconsa2.LiconsaVerificacion"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.Liconsa.Liconsa"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PAROperativo.PAR_Operativo"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PARBeneficiario.PARBeneficiario"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.LiconsaVentanilla.PASLOperativo"
-            android:exported="true" />
-        <activity android:name="com.example.geosegalmex.NewCamara" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.geosegalmex.NewCamara"
+            android:screenOrientation="portrait" />
         <activity android:name="com.example.geosegalmex.apicola.HerramientasProteccion" />
         <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_4" />
         <activity android:name="com.example.geosegalmex.unidadcomercializacion.Apicultura_3" />
@@ -80,7 +94,9 @@
         <activity android:name="com.example.geosegalmex.unidadcomercializacion.comercializacion_3_1" />
         <activity android:name="com.example.geosegalmex.caracterizacion.variables_caracterizacion.CalendarioDate" />
         <activity android:name="com.example.geosegalmex.unidadproduccion.FuenteAgua" />
-        <activity android:name="com.example.geosegalmex.Gps.GpsEnableb" />
+        <activity
+            android:name="com.example.geosegalmex.Gps.GpsEnableb"
+            android:screenOrientation="portrait" />
         <activity android:name="com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi" />
         <activity android:name="com.example.geosegalmex.apicola.SanidadApicola" />
         <activity android:name="com.example.geosegalmex.apicola.ReproduccionApicola" />
@@ -185,8 +201,12 @@
         <activity android:name="com.example.geosegalmex.Geo.FotoActivityDos" />
         <activity android:name="com.example.geosegalmex.Geo.FotoActivityUno" />
         <activity android:name="com.example.geosegalmex.IdentificacionCuestionario" />
-        <activity android:name="com.example.geosegalmex.Segunda" />
-        <activity android:name="com.example.geosegalmex.Principal" >
+        <activity
+            android:name="com.example.geosegalmex.Segunda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.geosegalmex.Principal"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

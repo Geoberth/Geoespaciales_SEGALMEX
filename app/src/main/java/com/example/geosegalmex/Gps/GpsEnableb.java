@@ -29,12 +29,14 @@ import android.widget.Toast;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.IdentificacionCuestionario;
+import com.example.geosegalmex.Liconsa.LiconsaBD;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
 import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.NewCamara;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiarioBD;
+import com.example.geosegalmex.PAROperativo.PARoperativoBD;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
@@ -446,7 +448,23 @@ public class GpsEnableb extends AppCompatActivity {
             }
         }
         else if(proy.equals("RNPL Productor")){
+            LiconsaBD db;
+            db = new LiconsaBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
+        }
 
+        else if(proy.equals("PAR Operativo")){
+            PARoperativoBD db;
+            db = new PARoperativoBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
         }
 
     }

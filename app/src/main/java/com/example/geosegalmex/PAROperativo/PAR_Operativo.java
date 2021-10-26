@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -13,14 +15,19 @@ import android.widget.Spinner;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Georeferencia.GeoreferenciaActivity;
+import com.example.geosegalmex.Liconsa.Liconsa;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
 import com.example.geosegalmex.R;
 import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.geosegalmex.R;
 
+import java.util.Calendar;
+
 public class PAR_Operativo extends AppCompatActivity {
-    EditText folio, fec, paret3, paret4, paret5, paret6, paret7, paret8, paret08, paret008, paret9, paret10, paret11, paret12, paret13, paret14, paret15, paret16, paret17, paret18, paret19,  paret20;
+    EditText fec, paret3, paret4, paret5, paret6, paret7, paret8, paret08, paret008, paret9, paret10, paret11, paret12, paret13, paret14, paret15, paret16, paret17, paret18, paret19,  paret20;
 
     //Variables de precios de los productos Liconsa (tabla de productos)
     EditText pprolic1, pprolic2, paret1119, pprolic3, pprolic4, pprolic5, pprolic6, pprolic7, pprolic8, pprolic9, pprolic10, pprolic11, pprolic12, pprolic13, pprolic14, pprolic15, pprolic16, pprolic17, pprolic18, pprolic19, pprolic20, pprolic21, pprolic22, pprolic23, pprolic24, pprolic25, pprolic26, pprolic27, pprolic28, pprolic29, pprolic30, pprolic31, pprolic32, pprolic33, pprolic34, pprolic35, pprolic36, pprolic37, pprolic38, pprolic39, pprolic40, pprolic41, pprolic42, pprolic43, pprolic44, pprolic45, pprolic46, pprolic47, pares3;
@@ -29,16 +36,35 @@ public class PAR_Operativo extends AppCompatActivity {
     Spinner pares1, pares2;
     CheckBox parec1, parec2, parec3, parec4, parec5, parec6, parec7, parec8, parec9, parec10, parec11, parec12, parec13, parec14, parec15, parec16, parec17, parec18, parec19, parec20, parec21, parec22, parec23, parec24, parec25, parec26, parec27, parec28, parec29, parec30, parec31, parec32, parec33, parec34, parec35, parec36, parec37, parec38, parec39, parec40, parec41, parec42, parec43, parec44, parec45, parec46, parec47, parec48, parec49, parec50, parec51, parec52, parec53, parec54, parec55, parec56, parec57, parec58, parec59, parec60, parec61, parec62, parec63, parec64, parec65, parec66, parec67, parec68, parec69, parec70, parec71, parec72, parec73, parec74, parec75, parec76, parec77, parec78, parec79, parec80, parec81, parec82, parec83, parec84, parec85, parec86, parec87, parec88, parec89, parec90, parec91, parec92, parec93, parec94, parec95, parec96, parec97, parec98, parec99, parec100, parec101, parec102, parec103, parec104, parec105, parec106, parec107, parec108, parec109, parec110, parec111, parec112, parec113, parec114, parec115, parec116, parec117, parec118, parec119, parec120, parec121, parec122, parec123, parec124, parec125, parec126, parec127, parec128, parec129, parec130, parec131, parec132, parec133, parec134, parec135, parec136, parec137, parec138, parec139, parec140;
     Button btnSiguiente, btnCamara;
+    TextView textFecha;
+    int dia, mes, anio;
 
     PAR_operativo_model model;
+
+    String cveedo2 = "";
+    String nomedo2 = "";
+    String cvemun2 = "";
+    String nommun2 = "";
+    int[] idmunicipios = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+            , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+            , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021, R.array.Zacatecas2021};
+    int[] idcvemunicipios = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+            , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021, R.array.cveZacatecas2021
+    };
+    String[] municipios;
+    String[] cvemunicipios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_par_operativo);
 
-        folio=(EditText)findViewById(R.id.par_et_txt1);
-        fec=(EditText)findViewById(R.id.par_et_txt2);
+
+        //folio=(EditText)findViewById(R.id.par_et_txt1);
+        textFecha = (TextView)findViewById(R.id.pg_leche_txtFecha);
 
         //DATOS DE LA TIENDA DICONSA (PRE-LLENADO)
 
@@ -384,127 +410,194 @@ public class PAR_Operativo extends AppCompatActivity {
         //BOTON SIGUIENTE
 
         btnSiguiente = findViewById(R.id.par_et_sig);
+        muestrafecha();
+        eventos33();
+        eventos34();
+        eventos35();
+        eventos36();
+        eventos37();
+        eventos38();
+
+        pares1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String[] estados = getResources().getStringArray(R.array.Estados2021);
+                String[] cveestados = getResources().getStringArray(R.array.cveEstados2021);
+
+                cveedo2 = cveestados[position];
+                nomedo2 = estados[position];
+
+                municipios = getResources().getStringArray(idmunicipios[position]);
+                cvemunicipios = getResources().getStringArray(idcvemunicipios[position]);
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(PAR_Operativo.this, android.R.layout.simple_spinner_item, municipios);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                pares2.setAdapter(adapter);
+                pares2.setEnabled(true);
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pares2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                nommun2 = municipios[position];
+                cvemun2 = cvemunicipios[position];
+                //Toast.makeText(getApplicationContext(), "cveEdo: " + cveedo + "\n Edo: " + nomedo + "\n cveMun: " + nommun + "\n Mun: " + cvemun,Toast.LENGTH_SHORT).show();
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+
 
         btnSiguiente.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
-                String folio = General.Foliocuestion;
-                General.fechaenc = fec.getText().toString();
-                String noment = "";
-                String cveedo = "";
-                String nommun = "";
-                String cvemun = "";
-                //nombre
-                String parnom = paret3.getText().toString();
-                String parape = paret4.getText().toString();
-                String parapem = paret5.getText().toString();
-                String parrad1 = obtenerRadio(parer1, parer2);
-                String pare6 = paret6.getText().toString();
-                String pare7 = paret7.getText().toString();
-                String parrad2 = obtenerRadio(parer3, parer4);
-                String parrad3 = obtenerRadio(parer5, parer6);
-                String parrad4 = obtenerRadio(parer7, parer8);
-                String parrad5 = obtenerRadio(parer9, parer10);
-                String parrad6 = obtenerRadio(parer11, parer12);
-                String parrad7 = obtenerRadio(parer13, parer14);
-                String pare8 = paret8.getText().toString();
-                //Checkbox
-                String pare9 = capa();
-                String pare10 = paret08.getText().toString();
-                //Checkbox
-                String pare11 = capa2();
-                String pare12 = paret008.getText().toString();
-                //
-                String pare13 = obtenerRadio(parer15, parer16);
-                String pare14 = obtenerRadio(parer17, parer18);
-                String pare15 = obtenerRadio4(parer19, parer20, parer21, parer22);
-                String pare16 = obtenerRadio3(parer23, parer24, parer25);
-                String pare17 = obtenerRadio4(parer26, parer27, parer28, parer29);
-                String pare18 = capa3();
-                String pare19 = capa4();
-                String pare20 = obtenerRadio3(parer30, parer31, parer32);
-                String pare21 = obtenerRadio4(parer33, parer34, parer35, parer36);
-                String pare22 = obtenerRadio4(parer37, parer38, parer39, parer40);
-                String pare23 = obtenerRadio4(parer41, parer42, parer43, parer44);
-                String pare24 = paret11.getText().toString();
-                String pare25 = paret12.getText().toString();
-                String pare26 = paret13.getText().toString();
-                String pare27 = paret14.getText().toString();
-                String pare28 = paret15.getText().toString();
-                String pare29 = obtenerRadio4(parer45, parer46, parer47, parer48);
-                String pare30 = paret16.getText().toString();
-                String pare31 = paret17.getText().toString();
-                String pare32 = paret18.getText().toString();
-                String pare33 = capa5();
-                String pare34 = capa6();
-                String pare35 = paret1119.getText().toString();
-                String pare36 = obtenerRadio(parer49, parer50);
-                String pare37 = paret19.getText().toString();
-                String pare38 = obtenerRadio(parer51, parer52);
-                String pare39 = capa7();
-                String pare40 = capa8();
-                String pare41 = obtenerRadio4(parer53, parer54, parer55, parer56);
-                String pare42 = obtenerRadio3(parer57, parer58, parer59);
-                String pare43 = paret20.getText().toString();
-                String pare44 = obtenerRadio(parer60, parer61);
-                String pare45 = obtenerRadio(parer62, parer63);
-                String pare46 = obtenerRadio(parer64, parer65);
-                String pare47 = obtenerRadio(parer66, parer67);
-                String pare48 = obtenerRadio(parer68, parer69);
-                //Productos
-                String pare49 = pprolic1.getText().toString();
-                String pare50 = pprolic2.getText().toString();
-                String pare51 = pprolic3.getText().toString();
-                String pare52 = pprolic4.getText().toString();
-                String pare53 = pprolic5.getText().toString();
-                String pare54 = pprolic7.getText().toString();
-                String pare55 = pprolic8.getText().toString();
-                String pare56 = pprolic9.getText().toString();
-                String pare57 = pprolic10.getText().toString();
-                String pare58 = pprolic11.getText().toString();
-                String pare59 = pprolic12.getText().toString();
-                String pare60 = pprolic13.getText().toString();
-                String pare61 = pprolic14.getText().toString();
-                String pare62 = pprolic15.getText().toString();
-                String pare63 = pprolic16.getText().toString();
-                String pare64 = pprolic17.getText().toString();
-                String pare65 = pprolic18.getText().toString();
-                String pare66 = pprolic19.getText().toString();
-                String pare67 = pprolic20.getText().toString();
-                String pare68 = pprolic21.getText().toString();
-                String pare69 = pprolic22.getText().toString();
-                String pare70 = pprolic23.getText().toString();
-                String pare71 = pprolic24.getText().toString();
-                String pare72 = pprolic25.getText().toString();
-                String pare73 = pprolic26.getText().toString();
-                String pare74 = pprolic27.getText().toString();
-                String pare75 = pprolic28.getText().toString();
-                String pare76 = pprolic29.getText().toString();
-                String pare77 = pprolic30.getText().toString();
-                String pare78 = pprolic31.getText().toString();
-                String pare79 = pprolic32.getText().toString();
-                String pare80 = pprolic33.getText().toString();
-                String pare81 = pprolic34.getText().toString();
-                String pare82 = pprolic35.getText().toString();
-                String pare84 = pprolic36.getText().toString();
-                String pare85 = pprolic37.getText().toString();
-                String pare86 = pprolic38.getText().toString();
-                String pare87 = pprolic39.getText().toString();
-                String pare88 = pprolic40.getText().toString();
-                String pare89 = pprolic41.getText().toString();
-                String pare90 = pprolic42.getText().toString();
-                String pare91 = pprolic43.getText().toString();
-                String pare92 = pprolic44.getText().toString();
-                String pare93 = pprolic45.getText().toString();
-                String pare94 = pprolic46.getText().toString();
-                String pare95 = pprolic47.getText().toString();
 
-                model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94);
-                Intent in = new Intent(PAR_Operativo.this, GeoreferenciaActivity.class);
-                in.putExtra("model", model);
-                startActivity(in);
+                if(validar()) {
+                    if(validarcapa1()) {
+                        if (validarcapa2()) {
+                            if (validarcapa3()) {
+                                if (validarcapa4()) {
+                                    String folio = General.Foliocuestion;
+                                    General.fechaenc = textFecha.getText().toString();
+                                    String noment = nomedo2;
+                                    String cveedo = cveedo2;
+                                    String nommun = nommun2;
+                                    String cvemun = cvemun2;
+                                    //nombre
+                                    String parnom = paret3.getText().toString();
+                                    String parape = paret4.getText().toString();
+                                    String parapem = paret5.getText().toString();
+                                    String parrad1 = obtenerRadio(parer1, parer2);
+                                    String pare6 = paret6.getText().toString();
+                                    String pare7 = paret7.getText().toString();
+                                    String parrad2 = obtenerRadio(parer3, parer4);
+                                    String parrad3 = obtenerRadio(parer5, parer6);
+                                    String parrad4 = obtenerRadio(parer7, parer8);
+                                    String parrad5 = obtenerRadio(parer9, parer10);
+                                    String parrad6 = obtenerRadio(parer11, parer12);
+                                    String parrad7 = obtenerRadio(parer13, parer14);
+                                    String pare8 = paret8.getText().toString();
+                                    //Checkbox
+                                    String pare9 = capa();
+                                    String pare10 = paret08.getText().toString();
+                                    //Checkbox
+                                    String pare11 = capa2();
+                                    String pare12 = paret008.getText().toString();
+                                    //
+                                    String pare13 = obtenerRadio(parer15, parer16);
+                                    String pare14 = obtenerRadio(parer17, parer18);
+                                    String pare15 = obtenerRadio4(parer19, parer20, parer21, parer22);
+                                    String pare16 = obtenerRadio3(parer23, parer24, parer25);
+                                    String pare17 = obtenerRadio4(parer26, parer27, parer28, parer29);
+                                    String pare18 = capa3();
+                                    String pare19 = capa4();
+                                    String pare20 = obtenerRadio3(parer30, parer31, parer32);
+                                    String pare21 = obtenerRadio4(parer33, parer34, parer35, parer36);
+                                    String pare22 = obtenerRadio4(parer37, parer38, parer39, parer40);
+                                    String pare23 = obtenerRadio4(parer41, parer42, parer43, parer44);
+                                    String pare24 = paret11.getText().toString();
+                                    String pare25 = paret12.getText().toString();
+                                    String pare26 = paret13.getText().toString();
+                                    String pare27 = paret14.getText().toString();
+                                    String pare28 = paret15.getText().toString();
+                                    String pare29 = obtenerRadio4(parer45, parer46, parer47, parer48);
+                                    String pare30 = paret16.getText().toString();
+                                    String pare31 = paret17.getText().toString();
+                                    String pare32 = paret18.getText().toString();
+                                    String pare33 = capa5();
+                                    String pare34 = capa6();
+                                    String pare35 = paret1119.getText().toString();
+                                    String pare36 = obtenerRadio(parer49, parer50);
+                                    String pare37 = paret19.getText().toString();
+                                    String pare38 = obtenerRadio(parer51, parer52);
+                                    String pare39 = capa7();
+                                    String pare40 = capa8();
+                                    String pare41 = obtenerRadio4(parer53, parer54, parer55, parer56);
+                                    String pare42 = obtenerRadio3(parer57, parer58, parer59);
+                                    String pare43 = paret20.getText().toString();
+                                    String pare44 = obtenerRadio(parer60, parer61);
+                                    String pare45 = obtenerRadio(parer62, parer63);
+                                    String pare46 = obtenerRadio(parer64, parer65);
+                                    String pare47 = obtenerRadio(parer66, parer67);
+                                    String pare48 = obtenerRadio(parer68, parer69);
+                                    //Productos
+                                    String pare49 = pprolic1.getText().toString();
+                                    String pare50 = pprolic2.getText().toString();
+                                    String pare51 = pprolic3.getText().toString();
+                                    String pare52 = pprolic4.getText().toString();
+                                    String pare53 = pprolic5.getText().toString();
+                                    String pare54 = pprolic7.getText().toString();
+                                    String pare55 = pprolic8.getText().toString();
+                                    String pare56 = pprolic9.getText().toString();
+                                    String pare57 = pprolic10.getText().toString();
+                                    String pare58 = pprolic11.getText().toString();
+                                    String pare59 = pprolic12.getText().toString();
+                                    String pare60 = pprolic13.getText().toString();
+                                    String pare61 = pprolic14.getText().toString();
+                                    String pare62 = pprolic15.getText().toString();
+                                    String pare63 = pprolic16.getText().toString();
+                                    String pare64 = pprolic17.getText().toString();
+                                    String pare65 = pprolic18.getText().toString();
+                                    String pare66 = pprolic19.getText().toString();
+                                    String pare67 = pprolic20.getText().toString();
+                                    String pare68 = pprolic21.getText().toString();
+                                    String pare69 = pprolic22.getText().toString();
+                                    String pare70 = pprolic23.getText().toString();
+                                    String pare71 = pprolic24.getText().toString();
+                                    String pare72 = pprolic25.getText().toString();
+                                    String pare73 = pprolic26.getText().toString();
+                                    String pare74 = pprolic27.getText().toString();
+                                    String pare75 = pprolic28.getText().toString();
+                                    String pare76 = pprolic29.getText().toString();
+                                    String pare77 = pprolic30.getText().toString();
+                                    String pare78 = pprolic31.getText().toString();
+                                    String pare79 = pprolic32.getText().toString();
+                                    String pare80 = pprolic33.getText().toString();
+                                    String pare81 = pprolic34.getText().toString();
+                                    String pare82 = pprolic35.getText().toString();
+                                    String pare84 = pprolic36.getText().toString();
+                                    String pare85 = pprolic37.getText().toString();
+                                    String pare86 = pprolic38.getText().toString();
+                                    String pare87 = pprolic39.getText().toString();
+                                    String pare88 = pprolic40.getText().toString();
+                                    String pare89 = pprolic41.getText().toString();
+                                    String pare90 = pprolic42.getText().toString();
+                                    String pare91 = pprolic43.getText().toString();
+                                    String pare92 = pprolic44.getText().toString();
+                                    String pare93 = pprolic45.getText().toString();
+                                    String pare94 = pprolic46.getText().toString();
+                                    String pare95 = pprolic47.getText().toString();
+                                    String f1 = General.Foto1;
+                                    String f2 = General.Foto2;
 
+                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, f1, f2, "", "");
+                                    Intent in = new Intent(PAR_Operativo.this, GeoreferenciaActivity.class);
+                                    in.putExtra("model", model);
+                                    startActivity(in);
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "Debe seleccionar por lo menos una opción", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                            else{
+                                Toast.makeText(getApplicationContext(), "Maximo puede seleccionar tres opciones",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(), "Maximo puede seleccionar cinco opciones",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    else{
+                        Toast.makeText(getApplicationContext(), "Maximo puede seleccionar cinco opciones",Toast.LENGTH_SHORT).show();
+                    }
+
+
+
+                }
             }
         });
 
@@ -519,7 +612,247 @@ public class PAR_Operativo extends AppCompatActivity {
         });
 
 
+
+
+
 //TERMINA ONCREATE
+    }
+
+    public boolean validar(){
+        boolean retorno=true;
+
+        if (paret3.getText().toString().isEmpty()){
+            paret3.setError("Debe registrar su nombre");
+            retorno = false;
+        }
+        else if (paret4.getText().toString().isEmpty()){
+            paret4.setError("Debe registrar su apellido");
+            retorno = false;
+        }
+        else if (paret5.getText().toString().isEmpty()){
+            paret5.setError("Debe registrar su apellido");
+            retorno = false;
+        }
+        else if(!parer1.isChecked() && !parer2.isChecked()){
+            parer2.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (paret6.getText().toString().isEmpty()){
+            paret6.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret7.getText().toString().isEmpty()){
+            paret7.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(!parer3.isChecked() && !parer4.isChecked()){
+            parer4.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer5.isChecked() && !parer6.isChecked()){
+            parer6.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer7.isChecked() && !parer8.isChecked()){
+            parer8.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer9.isChecked() && !parer10.isChecked()){
+            parer10.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer11.isChecked() && !parer12.isChecked()){
+            parer12.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer13.isChecked() && !parer14.isChecked()){
+            parer14.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (paret8.getText().toString().isEmpty()){
+            paret8.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(validarcapa5_5() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+        else if(validarcapa6_6() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+        else if(validarcapa7_7() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+        else if(validarcapa8_8() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+
+        else if(validarcapa1_1() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+        else if(validarcapa2_2() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+        else if(validarcapa3_3() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+        else if(validarcapa4_4() == 0){
+            parec1.setError("Debe seleccionar cuando menos una opción");
+            retorno=false;
+        }
+        /*
+        else if (paret08.getText().toString().isEmpty()){
+            paret08.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret008.getText().toString().isEmpty()){
+            paret008.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        */
+
+
+
+
+
+
+
+        else if(!parer15.isChecked() && !parer16.isChecked()){
+            parer16.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer17.isChecked() && !parer18.isChecked()){
+            parer18.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer19.isChecked() && !parer20.isChecked() && !parer21.isChecked() && !parer22.isChecked()){
+            parer22.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer23.isChecked() && !parer24.isChecked() && !parer25.isChecked()){
+            parer25.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer26.isChecked() && !parer27.isChecked() && !parer28.isChecked() && !parer29.isChecked()){
+            parer29.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer30.isChecked() && !parer31.isChecked() && !parer32.isChecked()){
+            parer32.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer33.isChecked() && !parer34.isChecked() && !parer35.isChecked() && !parer36.isChecked()){
+            parer36.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer37.isChecked() && !parer38.isChecked() && !parer39.isChecked() && !parer40.isChecked()){
+            parer40.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer41.isChecked() && !parer42.isChecked() && !parer43.isChecked() && !parer44.isChecked()){
+            parer44.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (paret11.getText().toString().isEmpty()){
+            paret11.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret12.getText().toString().isEmpty()){
+            paret12.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret13.getText().toString().isEmpty()){
+            paret13.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret14.getText().toString().isEmpty()){
+            paret14.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret15.getText().toString().isEmpty()){
+            paret15.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(!parer45.isChecked() && !parer46.isChecked() && !parer47.isChecked() && !parer48.isChecked()){
+            parer48.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (paret16.getText().toString().isEmpty()){
+            paret16.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret17.getText().toString().isEmpty()){
+            paret17.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if (paret18.getText().toString().isEmpty()){
+            paret18.setError("No puede quedar vacio");
+            retorno = false;
+        }
+
+
+        else if (paret1119.getText().toString().isEmpty()){
+            paret1119.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(!parer49.isChecked() && !parer50.isChecked()){
+            parer50.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (paret19.getText().toString().isEmpty()){
+            paret19.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(!parer51.isChecked() && !parer52.isChecked()){
+            parer52.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+
+
+
+
+        else if(!parer53.isChecked() && !parer54.isChecked() && !parer55.isChecked() && !parer56.isChecked()){
+            parer56.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer57.isChecked() && !parer58.isChecked() && !parer59.isChecked()){
+            parer59.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if (paret20.getText().toString().isEmpty()){
+            paret20.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(!parer60.isChecked() && !parer61.isChecked()){
+            parer61.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer62.isChecked() && !parer63.isChecked()){
+            parer63.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer64.isChecked() && !parer65.isChecked()){
+            parer65.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer66.isChecked() && !parer67.isChecked()){
+            parer67.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+        else if(!parer68.isChecked() && !parer69.isChecked()){
+            parer69.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
+
+
+
+        return retorno;
     }
 
     public String obtenerRadio(RadioButton radio1, RadioButton radio2){
@@ -564,6 +897,331 @@ public class PAR_Operativo extends AppCompatActivity {
         return respuesta4;
     }
 
+
+    public boolean validarcapa1(){
+        boolean retorno=true;
+        int count=0;
+
+        if(parec1.isChecked()){count = count + 1;}
+        if(parec2.isChecked()){count = count + 1;}
+        if(parec3.isChecked()){count = count + 1;}
+        if(parec4.isChecked()){count = count + 1;}
+        if(parec5.isChecked()){count = count + 1;}
+        if(parec6.isChecked()){count = count + 1;}
+        if(parec7.isChecked()){count = count + 1;}
+
+        if(count<=7) {
+            retorno = true;
+        }
+        else{
+            retorno=false;
+        }
+        return retorno;
+    }
+
+    public int validarcapa1_1(){
+
+        int count=0;
+
+        if(parec1.isChecked()){count = count + 1;}
+        if(parec2.isChecked()){count = count + 1;}
+        if(parec3.isChecked()){count = count + 1;}
+        if(parec4.isChecked()){count = count + 1;}
+        if(parec5.isChecked()){count = count + 1;}
+        if(parec6.isChecked()){count = count + 1;}
+        if(parec7.isChecked()){count = count + 1;}
+
+
+        return count;
+    }
+
+
+    public boolean validarcapa2(){
+        boolean retorno=true;
+        int count=0;
+
+        if(parec9.isChecked()){count = count + 1;}
+        if(parec10.isChecked()){count = count + 1;}
+        if(parec11.isChecked()){count = count + 1;}
+        if(parec12.isChecked()){count = count + 1;}
+        if(parec13.isChecked()){count = count + 1;}
+        if(parec14.isChecked()){count = count + 1;}
+
+        if(count<=3) {
+            retorno = true;
+        }
+        else{
+            retorno=false;
+        }
+        return retorno;
+    }
+
+    public int validarcapa2_2(){
+
+        int count=0;
+
+        if(parec9.isChecked()){count = count + 1;}
+        if(parec10.isChecked()){count = count + 1;}
+        if(parec11.isChecked()){count = count + 1;}
+        if(parec12.isChecked()){count = count + 1;}
+        if(parec13.isChecked()){count = count + 1;}
+        if(parec14.isChecked()){count = count + 1;}
+
+        return count;
+    }
+
+
+
+    public boolean validarcapa3(){
+        boolean retorno=true;
+        int count=0;
+        if(parec17.isChecked()){count = count + 1;}
+        if(parec18.isChecked()){count = count + 1;}
+        if(parec19.isChecked()){count = count + 1;}
+        if(parec20.isChecked()){count = count + 1;}
+        if(parec21.isChecked()){count = count + 1;}
+        if(parec22.isChecked()){count = count + 1;}
+        if(parec23.isChecked()){count = count + 1;}
+        if(parec24.isChecked()){count = count + 1;}
+        if(parec25.isChecked()){count = count + 1;}
+        if(parec26.isChecked()){count = count + 1;}
+        if(parec27.isChecked()){count = count + 1;}
+        if(parec28.isChecked()){count = count + 1;}
+        if(parec29.isChecked()){count = count + 1;}
+        if(parec30.isChecked()){count = count + 1;}
+        if(parec31.isChecked()){count = count + 1;}
+        if(parec32.isChecked()){count = count + 1;}
+        if(parec33.isChecked()){count = count + 1;}
+        if(parec34.isChecked()){count = count + 1;}
+        if(parec35.isChecked()){count = count + 1;}
+        if(parec36.isChecked()){count = count + 1;}
+        if(parec37.isChecked()){count = count + 1;}
+        if(parec38.isChecked()){count = count + 1;}
+        if(parec39.isChecked()){count = count + 1;}
+        if(parec40.isChecked()){count = count + 1;}
+        if(parec41.isChecked()){count = count + 1;}
+        if(parec42.isChecked()){count = count + 1;}
+        if(parec43.isChecked()){count = count + 1;}
+        if(parec44.isChecked()){count = count + 1;}
+        if(parec45.isChecked()){count = count + 1;}
+        if(parec46.isChecked()){count = count + 1;}
+        if(parec47.isChecked()){count = count + 1;}
+        if(parec48.isChecked()){count = count + 1;}
+        if(parec49.isChecked()){count = count + 1;}
+        if(parec50.isChecked()){count = count + 1;}
+        if(parec51.isChecked()){count = count + 1;}
+        if(parec52.isChecked()){count = count + 1;}
+        if(parec53.isChecked()){count = count + 1;}
+        if(parec54.isChecked()){count = count + 1;}
+        if(parec55.isChecked()){count = count + 1;}
+        if(parec56.isChecked()){count = count + 1;}
+        if(parec57.isChecked()){count = count + 1;}
+        if(parec58.isChecked()){count = count + 1;}
+        if(parec59.isChecked()){count = count + 1;}
+        if(parec60.isChecked()){count = count + 1;}
+        if(parec61.isChecked()){count = count + 1;}
+        if(parec62.isChecked()){count = count + 1;}
+        if(parec63.isChecked()){count = count + 1;}
+
+        if(count<=5) {
+            retorno = true;
+        }
+        else{
+            retorno=false;
+        }
+        return retorno;
+    }
+
+    public int validarcapa3_3(){
+
+        int count=0;
+        if(parec17.isChecked()){count = count + 1;}
+        if(parec18.isChecked()){count = count + 1;}
+        if(parec19.isChecked()){count = count + 1;}
+        if(parec20.isChecked()){count = count + 1;}
+        if(parec21.isChecked()){count = count + 1;}
+        if(parec22.isChecked()){count = count + 1;}
+        if(parec23.isChecked()){count = count + 1;}
+        if(parec24.isChecked()){count = count + 1;}
+        if(parec25.isChecked()){count = count + 1;}
+        if(parec26.isChecked()){count = count + 1;}
+        if(parec27.isChecked()){count = count + 1;}
+        if(parec28.isChecked()){count = count + 1;}
+        if(parec29.isChecked()){count = count + 1;}
+        if(parec30.isChecked()){count = count + 1;}
+        if(parec31.isChecked()){count = count + 1;}
+        if(parec32.isChecked()){count = count + 1;}
+        if(parec33.isChecked()){count = count + 1;}
+        if(parec34.isChecked()){count = count + 1;}
+        if(parec35.isChecked()){count = count + 1;}
+        if(parec36.isChecked()){count = count + 1;}
+        if(parec37.isChecked()){count = count + 1;}
+        if(parec38.isChecked()){count = count + 1;}
+        if(parec39.isChecked()){count = count + 1;}
+        if(parec40.isChecked()){count = count + 1;}
+        if(parec41.isChecked()){count = count + 1;}
+        if(parec42.isChecked()){count = count + 1;}
+        if(parec43.isChecked()){count = count + 1;}
+        if(parec44.isChecked()){count = count + 1;}
+        if(parec45.isChecked()){count = count + 1;}
+        if(parec46.isChecked()){count = count + 1;}
+        if(parec47.isChecked()){count = count + 1;}
+        if(parec48.isChecked()){count = count + 1;}
+        if(parec49.isChecked()){count = count + 1;}
+        if(parec50.isChecked()){count = count + 1;}
+        if(parec51.isChecked()){count = count + 1;}
+        if(parec52.isChecked()){count = count + 1;}
+        if(parec53.isChecked()){count = count + 1;}
+        if(parec54.isChecked()){count = count + 1;}
+        if(parec55.isChecked()){count = count + 1;}
+        if(parec56.isChecked()){count = count + 1;}
+        if(parec57.isChecked()){count = count + 1;}
+        if(parec58.isChecked()){count = count + 1;}
+        if(parec59.isChecked()){count = count + 1;}
+        if(parec60.isChecked()){count = count + 1;}
+        if(parec61.isChecked()){count = count + 1;}
+        if(parec62.isChecked()){count = count + 1;}
+        if(parec63.isChecked()){count = count + 1;}
+
+        return count;
+    }
+
+    public boolean validarcapa4(){
+        boolean retorno=true;
+        int count=0;
+
+        if(parec64.isChecked()){count = count + 1;}
+        if(parec65.isChecked()){count = count + 1;}
+        if(parec66.isChecked()){count = count + 1;}
+        if(parec67.isChecked()){count = count + 1;}
+        if(parec68.isChecked()){count = count + 1;}
+        if(parec69.isChecked()){count = count + 1;}
+        if(parec70.isChecked()){count = count + 1;}
+        if(parec71.isChecked()){count = count + 1;}
+        if(parec72.isChecked()){count = count + 1;}
+        if(parec73.isChecked()){count = count + 1;}
+        if(parec74.isChecked()){count = count + 1;}
+        if(parec75.isChecked()){count = count + 1;}
+        if(parec76.isChecked()){count = count + 1;}
+        if(parec77.isChecked()){count = count + 1;}
+        if(parec78.isChecked()){count = count + 1;}
+        if(parec79.isChecked()){count = count + 1;}
+        if(parec80.isChecked()){count = count + 1;}
+        if(parec81.isChecked()){count = count + 1;}
+        if(parec82.isChecked()){count = count + 1;}
+        if(parec83.isChecked()){count = count + 1;}
+        if(parec84.isChecked()){count = count + 1;}
+        if(parec85.isChecked()){count = count + 1;}
+        if(parec86.isChecked()){count = count + 1;}
+        if(parec87.isChecked()){count = count + 1;}
+        if(parec88.isChecked()){count = count + 1;}
+        if(parec89.isChecked()){count = count + 1;}
+        if(parec90.isChecked()){count = count + 1;}
+        if(parec91.isChecked()){count = count + 1;}
+        if(parec92.isChecked()){count = count + 1;}
+        if(parec93.isChecked()){count = count + 1;}
+        if(parec94.isChecked()){count = count + 1;}
+        if(parec95.isChecked()){count = count + 1;}
+        if(parec96.isChecked()){count = count + 1;}
+        if(parec97.isChecked()){count = count + 1;}
+        if(parec98.isChecked()){count = count + 1;}
+        if(parec99.isChecked()){count = count + 1;}
+        if(parec100.isChecked()){count = count + 1;}
+        if(parec101.isChecked()){count = count + 1;}
+        if(parec102.isChecked()){count = count + 1;}
+        if(parec103.isChecked()){count = count + 1;}
+        if(parec104.isChecked()){count = count + 1;}
+        if(parec105.isChecked()){count = count + 1;}
+        if(parec106.isChecked()){count = count + 1;}
+        if(parec107.isChecked()){count = count + 1;}
+        if(parec108.isChecked()){count = count + 1;}
+        if(parec109.isChecked()){count = count + 1;}
+        if(parec110.isChecked()){count = count + 1;}
+        if(parec111.isChecked()){count = count + 1;}
+        if(parec112.isChecked()){count = count + 1;}
+        if(parec113.isChecked()){count = count + 1;}
+        if(parec114.isChecked()){count = count + 1;}
+        if(parec115.isChecked()){count = count + 1;}
+        if(parec116.isChecked()){count = count + 1;}
+        if(parec117.isChecked()){count = count + 1;}
+        if(parec118.isChecked()){count = count + 1;}
+        if(parec119.isChecked()){count = count + 1;}
+
+        if(count<=5) {
+            retorno = true;
+        }
+        else{
+            retorno=false;
+        }
+        return retorno;
+    }
+
+
+
+    public int validarcapa4_4(){
+
+        int count=0;
+
+        if(parec64.isChecked()){count = count + 1;}
+        if(parec65.isChecked()){count = count + 1;}
+        if(parec66.isChecked()){count = count + 1;}
+        if(parec67.isChecked()){count = count + 1;}
+        if(parec68.isChecked()){count = count + 1;}
+        if(parec69.isChecked()){count = count + 1;}
+        if(parec70.isChecked()){count = count + 1;}
+        if(parec71.isChecked()){count = count + 1;}
+        if(parec72.isChecked()){count = count + 1;}
+        if(parec73.isChecked()){count = count + 1;}
+        if(parec74.isChecked()){count = count + 1;}
+        if(parec75.isChecked()){count = count + 1;}
+        if(parec76.isChecked()){count = count + 1;}
+        if(parec77.isChecked()){count = count + 1;}
+        if(parec78.isChecked()){count = count + 1;}
+        if(parec79.isChecked()){count = count + 1;}
+        if(parec80.isChecked()){count = count + 1;}
+        if(parec81.isChecked()){count = count + 1;}
+        if(parec82.isChecked()){count = count + 1;}
+        if(parec83.isChecked()){count = count + 1;}
+        if(parec84.isChecked()){count = count + 1;}
+        if(parec85.isChecked()){count = count + 1;}
+        if(parec86.isChecked()){count = count + 1;}
+        if(parec87.isChecked()){count = count + 1;}
+        if(parec88.isChecked()){count = count + 1;}
+        if(parec89.isChecked()){count = count + 1;}
+        if(parec90.isChecked()){count = count + 1;}
+        if(parec91.isChecked()){count = count + 1;}
+        if(parec92.isChecked()){count = count + 1;}
+        if(parec93.isChecked()){count = count + 1;}
+        if(parec94.isChecked()){count = count + 1;}
+        if(parec95.isChecked()){count = count + 1;}
+        if(parec96.isChecked()){count = count + 1;}
+        if(parec97.isChecked()){count = count + 1;}
+        if(parec98.isChecked()){count = count + 1;}
+        if(parec99.isChecked()){count = count + 1;}
+        if(parec100.isChecked()){count = count + 1;}
+        if(parec101.isChecked()){count = count + 1;}
+        if(parec102.isChecked()){count = count + 1;}
+        if(parec103.isChecked()){count = count + 1;}
+        if(parec104.isChecked()){count = count + 1;}
+        if(parec105.isChecked()){count = count + 1;}
+        if(parec106.isChecked()){count = count + 1;}
+        if(parec107.isChecked()){count = count + 1;}
+        if(parec108.isChecked()){count = count + 1;}
+        if(parec109.isChecked()){count = count + 1;}
+        if(parec110.isChecked()){count = count + 1;}
+        if(parec111.isChecked()){count = count + 1;}
+        if(parec112.isChecked()){count = count + 1;}
+        if(parec113.isChecked()){count = count + 1;}
+        if(parec114.isChecked()){count = count + 1;}
+        if(parec115.isChecked()){count = count + 1;}
+        if(parec116.isChecked()){count = count + 1;}
+        if(parec117.isChecked()){count = count + 1;}
+        if(parec118.isChecked()){count = count + 1;}
+        if(parec119.isChecked()){count = count + 1;}
+
+        return count;
+    }
+
     public String capa(){
         String cadena = "";
         String resultado1 = "";
@@ -591,6 +1249,21 @@ public class PAR_Operativo extends AppCompatActivity {
         }
         resultado1 = cadena.substring(0, cadena.length()-1);
         return resultado1;
+    }
+
+    public int validarcapa_(){
+
+        int count=0;
+
+        if(parec1.isChecked()){count = count + 1;}
+        if(parec2.isChecked()){count = count + 1;}
+        if(parec3.isChecked()){count = count + 1;}
+        if(parec4.isChecked()){count = count + 1;}
+        if(parec5.isChecked()){count = count + 1;}
+        if(parec6.isChecked()){count = count + 1;}
+        if(parec7.isChecked()){count = count + 1;}
+
+        return count;
     }
 
     public String capa2(){
@@ -622,6 +1295,8 @@ public class PAR_Operativo extends AppCompatActivity {
         return resultado1;
     }
 
+
+
     public String capa5(){
         String cadena5 = "";
         String resultado5 = "";
@@ -652,6 +1327,21 @@ public class PAR_Operativo extends AppCompatActivity {
         return resultado5;
     }
 
+    public int validarcapa5_5(){
+
+        int count=0;
+
+        if(parec111.isChecked()){count = count + 1;}
+        if(parec112.isChecked()){count = count + 1;}
+        if(parec113.isChecked()){count = count + 1;}
+        if(parec114.isChecked()){count = count + 1;}
+        if(parec115.isChecked()){count = count + 1;}
+        if(parec116.isChecked()){count = count + 1;}
+        if(parec117.isChecked()){count = count + 1;}
+
+        return count;
+    }
+
     public String capa6(){
         String cadena6 = "";
         String resultado6 = "";
@@ -675,6 +1365,19 @@ public class PAR_Operativo extends AppCompatActivity {
         resultado6 = cadena6.substring(0, cadena6.length()-1);
         return resultado6;
 
+    }
+
+    public int validarcapa6_6(){
+
+        int count=0;
+
+        if(parec118.isChecked()){count = count + 1;}
+        if(parec119.isChecked()){count = count + 1;}
+        if(parec120.isChecked()){count = count + 1;}
+        if(parec121.isChecked()){count = count + 1;}
+        if(parec122.isChecked()){count = count + 1;}
+
+        return count;
     }
 
 
@@ -712,6 +1415,23 @@ public class PAR_Operativo extends AppCompatActivity {
 
         resultado7 = cadena7.substring(0, cadena7.length()-1);
         return resultado7;
+    }
+
+    public int validarcapa7_7(){
+
+        int count=0;
+
+        if(parec123.isChecked()){count = count + 1;}
+        if(parec124.isChecked()){count = count + 1;}
+        if(parec125.isChecked()){count = count + 1;}
+        if(parec126.isChecked()){count = count + 1;}
+        if(parec127.isChecked()){count = count + 1;}
+        if(parec128.isChecked()){count = count + 1;}
+        if(parec129.isChecked()){count = count + 1;}
+        if(parec130.isChecked()){count = count + 1;}
+        if(parec131.isChecked()){count = count + 1;}
+
+        return count;
     }
 
 
@@ -752,6 +1472,22 @@ public class PAR_Operativo extends AppCompatActivity {
         return resultado8;
     }
 
+    public int validarcapa8_8(){
+
+        int count=0;
+
+        if(parec132.isChecked()){count = count + 1;}
+        if(parec133.isChecked()){count = count + 1;}
+        if(parec134.isChecked()){count = count + 1;}
+        if(parec135.isChecked()){count = count + 1;}
+        if(parec136.isChecked()){count = count + 1;}
+        if(parec137.isChecked()){count = count + 1;}
+        if(parec138.isChecked()){count = count + 1;}
+        if(parec139.isChecked()){count = count + 1;}
+        if(parec140.isChecked()){count = count + 1;}
+
+        return count;
+    }
 
 
 
@@ -1054,6 +1790,104 @@ public class PAR_Operativo extends AppCompatActivity {
 
         resultado4 = cadena4.substring(0, cadena4.length() - 1);
         return resultado4;
-
     }
+
+
+
+    public void eventos34(){
+        findViewById(R.id.par_et_ch15).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(parec15.isChecked()==true){
+                    paret008.setVisibility(View.VISIBLE);
+                }else{
+                    paret008.setVisibility(View.GONE);
+                    paret008.setText("");
+                }
+            }
+        });
+    }
+
+    public void eventos33(){
+        findViewById(R.id.par_et_ch7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(parec7.isChecked()==true){
+                    paret08.setVisibility(View.VISIBLE);
+                }else{
+                    paret08.setVisibility(View.GONE);
+                    paret08.setText("");
+                }
+            }
+        });
+    }
+
+    public void eventos35(){
+        findViewById(R.id.par_et_ra22).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(parer22.isChecked()==true){
+                    paret9.setVisibility(View.VISIBLE);
+                }else{
+                    paret9.setVisibility(View.GONE);
+                    paret9.setText("");
+                }
+            }
+        });
+    }
+
+    public void eventos36(){
+        findViewById(R.id.par_et_ra29).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(parer29.isChecked()==true){
+                    paret10.setVisibility(View.VISIBLE);
+                }else{
+                    paret10.setVisibility(View.GONE);
+                    paret10.setText("");
+                }
+            }
+        });
+    }
+
+    public void eventos37(){
+        findViewById(R.id.par_et_ra48).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(parer48.isChecked()==true){
+                    paret16.setVisibility(View.VISIBLE);
+                }else{
+                    paret16.setVisibility(View.GONE);
+                    paret16.setText("");
+                }
+            }
+        });
+    }
+
+    public void eventos38(){
+        findViewById(R.id.par_et_ch121).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(parec121.isChecked()==true){
+                    paret1119.setVisibility(View.VISIBLE);
+                }else{
+                    paret1119.setVisibility(View.GONE);
+                    paret1119.setText("");
+                }
+            }
+        });
+    }
+
+
+    //Metodo para extraer la fecha actual
+    public void muestrafecha(){
+        Calendar fecha = Calendar.getInstance();
+        dia = fecha.get(Calendar.DAY_OF_MONTH);
+        mes = fecha.get(Calendar.MONTH);
+        anio = fecha.get(Calendar.YEAR);
+        textFecha.setText(""+dia+"/"+(mes+1)+"/"+anio);
+    }
+
+
+
 }

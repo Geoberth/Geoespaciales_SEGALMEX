@@ -6,4 +6,755 @@
     android:layout_height="match_parent"
     tools:context=".Liconsa2.LiconsaVerificacion">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENCUESTA PARA LA ACTUALIZACIÓN Y COMPLEMENTACIÓN DEL REGISTRO NACIONAL DE PRODUCTORES DE LECHE DE LICONSA"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:text="CUESTIONARIO PARA VERIFICACIÓN DE LECHE"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:text="INFORMACIÓN PERSONAL"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="0dp"
+            android:text="1. Confirme los datos del productor"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre(s):"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido Paterno:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido Materno:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt3"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de nacimiento:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt4"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEXO:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/ernpl_prod_ra1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hombre" />
+
+            <RadioButton
+
+                android:id="@+id/ernpl_prod_ra2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mujer" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nacionalidad:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt5"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CURP:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt6"
+            android:layout_width="match_parent"
+            android:inputType="textCapCharacters"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RFC:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt7"
+            android:layout_width="match_parent"
+            android:inputType="textCapCharacters"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de identificación:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt8"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de identificación:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt9"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="Escriba el número."
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo Electrónico:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt10"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="user@example.com"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt11"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="Escriba el número."
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de teléfono:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casa" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trabajo" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Celular" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:text="DATOS A VERIFICAR EN EL EXPEDIENTE DEL PRODUCTOR COMO PROVEEDOR DE LICONSA"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de teléfono:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUENTA CON CÓDIGO ASIGNADO" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REQUIERE ACTUALIZAR LA INFORMACIÓN" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HA INGRESADO SU SOLICITUD, PERO NO TIENE CÓDIGO" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO HA INGRESADO SOLICITUD" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="DOCUMENTOS INGRESADOS A SU EXPEDIENTE"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="RFC:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CURP:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ESTADO DE CUENTA BANCARIA:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt12"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="CLABE INTERBANCARIA:"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="COMPROBANTE DE DOMICILIO FISCAL:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAT" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMSSS" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFONAVIT" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="MANIFIESTO ART. 50 Y 60 LEY GENERAL DE ADQUISICIONES:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="MANIFIESTO ART. 32-D CÓDIGO FISCAL DE LA FEDERACIÓN:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CARTA DE CONFORMIDAD CON LICONSA:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CÓDIGO CONTABLE:"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt13"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="GERENCIA O PAS ASIGNADO: "
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt14"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TIPO DE PRODUCTOR: "
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rg15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PEQUEÑO" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEDIANO" />
+
+            <RadioButton
+
+                android:id="@+id/par_ben_ra33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRANDE" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:text="DATOS DE LA ORGANIZACIÓN A LA QUE PERTENECE (En caso de que aplique) "
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt15"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo:"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt16"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/ernpl_prod_txt17"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:hint="Observaciones"
+            android:maxLines="1" />
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/ernpl_prod_sig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/mtrl_on_primary_emphasis_high_type"
+            android:text="Siguiente"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconPadding="20dp" />
+    </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

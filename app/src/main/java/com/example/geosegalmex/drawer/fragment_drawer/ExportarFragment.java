@@ -180,6 +180,29 @@ public class ExportarFragment extends Fragment {
                     e.printStackTrace();
                 }
 
+                try {
+                    deployDatabase("RNPLProductor");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("RNPLProductor");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
+                try {
+                    deployDatabase("PAROperativo");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("PAROperativo");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
+
 
                 // TareaAsyncTask tareaAsyncTask = new TareaAsyncTask();
                 // tareaAsyncTask.execute();
