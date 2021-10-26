@@ -118,6 +118,7 @@ public class LiconsaBD extends SQLiteOpenHelper {
         contentValues.put(Liconsa_bd.COLUMN_OBSERV     , model.getObservaciones());
         contentValues.put(Liconsa_bd.COLUMN_FOTO1, model.getFoto1());
         contentValues.put(Liconsa_bd.COLUMN_FOTO2, model.getFoto2());
+        contentValues.put(Liconsa_bd.COLUMN_FOTO3, model.getFoto3());
         contentValues.put(Liconsa_bd.COLUMN_LONGITUD, model.getLongitudGeo());
         contentValues.put(Liconsa_bd.COLUMN_LATITUD, model.getLatitudGeo());
 

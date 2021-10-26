@@ -87,6 +87,7 @@ public class Liconsa_bd {
     public static final String COLUMN_OBSERV     = "OBSERV";
     public static final String COLUMN_FOTO1 = "FOTO1";
     public static final String COLUMN_FOTO2 = "FOTO2";
+    public static final String COLUMN_FOTO3 = "FOTO3";
     public static final String COLUMN_LONGITUD = "LONGITUD";
     public static final String COLUMN_LATITUD = "LATITUD";
 
@@ -175,6 +176,7 @@ public class Liconsa_bd {
             + COLUMN_OBSERV    + " VARCHAR, "
             + COLUMN_FOTO1 + " VARCHAR, "
             + COLUMN_FOTO2 + " VARCHAR, "
+            + COLUMN_FOTO3 + " VARCHAR, "
             + COLUMN_LONGITUD + " VARCHAR, "
             + COLUMN_LATITUD + " VARCHAR); " ;
 

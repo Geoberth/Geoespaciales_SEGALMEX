@@ -164,7 +164,9 @@ public class PGOperativoEstimulos extends AppCompatActivity {
                             + "\n Tres: " + model.getTres() + "\n Cuatro: " + model.getCuatro() + "\n Cinco: " + model.getCinco() + "\n Seis: " + model.getSeis() + "\n Siete: " + model.getSiete()
                             + "\n Ocho: " + model.getOcho() + "\n Nueve: " + model.getNueve() + "\n F1: " + model.getFoto1() + "\n F2: " + model.getFoto2(),Toast.LENGTH_SHORT).show();*/
                 }
-
+                else{
+                    Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

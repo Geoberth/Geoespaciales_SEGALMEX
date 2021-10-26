@@ -11,6 +11,7 @@ public class General {
     public static String Lonini;
     public static String Foto1;
     public static String Foto2;
+    public static String Foto3;
 
     //Ambas encuestas
     public static String Foliocuestion;//1

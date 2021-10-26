@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.geosegalmex.General;
@@ -36,6 +37,7 @@ public class Liconsa extends AppCompatActivity {
     CheckBox ernplpc1, ernplpc2, ernplpc3;
     Button btnSiguiente;
     LinearLayout ll1, ll2;
+    TextView tv1, tv2;
 
     Calendar c, c2;
     DatePickerDialog dpd, dpd2;
@@ -198,17 +200,20 @@ public class Liconsa extends AppCompatActivity {
 
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
+                    String f3 = General.Foto3;
 
                     model = new Liconsa_Model(fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipotel,calle,ext,inte,cp,cveEdo,Edo,cveMun,Mun,cveLoc,colonia,tipoasen,nomasen,cveasen,vialidad,tipovialidad,asociacion,nomaso,regimen,
                             discapacidad,nomdiscapacidad,indigena,declaindigena,estatus,upp,p1,p2,p3,p4,p5,p6,p7,p8,p9,p9_1,p9_2,p10,p10_1,p11,p12_1,p12_2,p12_3,p12_4,p12_4otros,p13,p13_1,p13_2,p13_3,p13_4,p13_5,p14,p14_1,p14_2,
-                            p14_3,p14_4,p14_5,p15_1,p15_2,p15_3,p15_4,p15_4otros,p16,p16_registro,p17,p17_registro,p18,p19,p20,observaciones, f1, f2, "", "");
+                            p14_3,p14_4,p14_5,p15_1,p15_2,p15_3,p15_4,p15_4otros,p16,p16_registro,p17,p17_registro,p18,p19,p20,observaciones, f1, f2, f3, "", "");
 
                     Intent in = new Intent(Liconsa.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);
 
                 }
-
+                else{
+                    Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
+                }
 
 
             }
@@ -250,12 +255,30 @@ public class Liconsa extends AppCompatActivity {
             }
         });
 
+        tv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ernplpt6.setText("AAAA990131MDFZZZ00");
+            }
+        });
+
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ernplpt7.setText("AAAA990131ZZ9");
+            }
+        });
+
+
 
     }
 
     public void Declaracion(){
         ll1 = (LinearLayout) findViewById(R.id.ll1);
         ll2 = (LinearLayout) findViewById(R.id.ll2);
+
+        tv1 = (TextView) findViewById(R.id.TV1);
+        tv2 = (TextView) findViewById(R.id.TV2);
 
         //INFORMACION PERSONAL
 
@@ -537,6 +560,8 @@ public class Liconsa extends AppCompatActivity {
                 }
             }
         });
+
+
 
     }
 

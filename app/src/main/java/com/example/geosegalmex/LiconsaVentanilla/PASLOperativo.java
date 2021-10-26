@@ -179,7 +179,9 @@ public class PASLOperativo extends AppCompatActivity {
                             + "\n Seis: " + model.getSeis() + "\n Siete: " + model.getSiete() + "\n Ocho: " + model.getOcho() + "\n Nueve: " + model.getNueve()
                             + "\n Diez: " + model.getDiez() + "\n Once: " + model.getOnce() + "\n Doce: " + model.getDoce() + "\n Trece: " + model.getTrece() + "\n Catorce: " + model.getCatorce() +  "\n Quince: " + model.getQuince(),Toast.LENGTH_SHORT).show();*/
                 }
-
+                else{
+                    Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

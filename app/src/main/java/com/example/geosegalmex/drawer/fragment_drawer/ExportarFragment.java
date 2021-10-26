@@ -43,6 +43,7 @@ public class ExportarFragment extends Fragment {
     private TextView tvProgreso;
 
     ExtendedFloatingActionButton fabExportar;
+    TextView ed1, ed2, ed3, ed4, ed5, ed6, ed7, ed8, ed9, ed10, ed11;
     private ProgressDialog progressDialog;
 
     public ExportarFragment() {
@@ -196,6 +197,17 @@ public class ExportarFragment extends Fragment {
                 } catch (IOException e) {
                     try {
                         deployDatabase("PAROperativo");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    e.printStackTrace();
+                }
+
+                try {
+                    deployDatabase("RNPLExpediente");
+                } catch (IOException e) {
+                    try {
+                        deployDatabase("RNPLExpediente");
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
@@ -356,5 +368,7 @@ public class ExportarFragment extends Fragment {
         myInput.close();
 
         Toast.makeText(getContext(), "Base de datos: " + DB_NAME + " exportada", Toast.LENGTH_LONG).show();
+
+
     }
 }

@@ -598,6 +598,9 @@ public class PAR_Operativo extends AppCompatActivity {
 
 
                 }
+                else{
+                    Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

@@ -145,9 +145,10 @@
                     android:maxLines="1" />
 
                 <TextView
+                    android:id="@+id/TV1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CURP:"
+                    android:text="CURP: [?]"
                     android:textColor="#000000" />
 
                 <EditText
@@ -158,9 +159,10 @@
                     android:maxLines="1" />
 
                 <TextView
+                    android:id="@+id/TV2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RFC:"
+                    android:text="RFC: [?]"
                     android:textColor="#000000" />
 
                 <EditText
@@ -379,7 +381,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_marginTop="0dp"
-                    android:text="En caso de ser necesario:"
+                    android:text="Ubicación de la unidad de producción"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -921,7 +923,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="12. ¿En cuál de los siguientes aspectos considera que pueden implementase mejoras?"
+                    android:text="12. ¿En cuál de los siguientes aspectos considera que pueden implementarse mejoras?"
                     android:textColor="#000000" />
 
                 <RadioGroup
@@ -1541,7 +1543,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="16. ¿Cuenta con registro de Unidad de Producción Percuaria (UPP)?"
+                    android:text="16. ¿Cuenta con registro de Unidad de Producción Pecuaria (UPP)?"
                     android:textColor="#000000" />
 
                 <RadioGroup

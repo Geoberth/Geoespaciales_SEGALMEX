@@ -192,6 +192,9 @@ public class PARBeneficiario extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "La pregunta 2 solo admite máximo 3 selecciones!",Toast.LENGTH_SHORT).show();
                     }
                 }
+                else{
+                    Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

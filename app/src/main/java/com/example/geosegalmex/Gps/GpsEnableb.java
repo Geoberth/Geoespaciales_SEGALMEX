@@ -30,6 +30,8 @@ import android.widget.Toast;
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.IdentificacionCuestionario;
 import com.example.geosegalmex.Liconsa.LiconsaBD;
+import com.example.geosegalmex.Liconsa2.LiconsaVerificacion;
+import com.example.geosegalmex.Liconsa2.LiconsaVerificacionBD;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
@@ -201,6 +203,9 @@ public class GpsEnableb extends AppCompatActivity {
                     case 9:
                         textid.setText("LI_"+folioo);
                         break;
+                    case 10:
+                        textid.setText("LI_E_"+folioo);
+                        break;
 
                 }
             }
@@ -269,7 +274,12 @@ public class GpsEnableb extends AppCompatActivity {
                                                     General.Latini = "" + latitudeGPS;
                                                     General.Lonini = "" + longitudeGPS;
                                                     aggTrayectoriaGps();
-                                                    startActivity(new Intent(getApplication(), NewCamara.class));
+                                                    if (General.Proyecto.equals("RNPL Expediente")){
+                                                        startActivity(new Intent(getApplication(), LiconsaVerificacion.class));
+                                                    }
+                                                    else{
+                                                        startActivity(new Intent(getApplication(), NewCamara.class));
+                                                    }
                                                 }
                                             }
                                         },1900);
@@ -460,6 +470,16 @@ public class GpsEnableb extends AppCompatActivity {
         else if(proy.equals("PAR Operativo")){
             PARoperativoBD db;
             db = new PARoperativoBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
+        }
+
+        else if(proy.equals("RNPL Expediente")){
+            LiconsaVerificacionBD db;
+            db = new LiconsaVerificacionBD(this);
             boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
             db.close();
             if(insertarData == true) {

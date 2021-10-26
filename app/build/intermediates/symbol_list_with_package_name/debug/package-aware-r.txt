@@ -1581,6 +1581,8 @@ id Pecuariovitaminascosto
 id RG1
 id SHIFT
 id SYM
+id TV1
+id TV2
 id TextView_brand
 id TextView_g_presentacion
 id TextView_idproducto
@@ -1699,6 +1701,7 @@ id btnAgrfamilia
 id btnAgrproda
 id btnCamara
 id btnCamara2
+id btnCamara3
 id btnCuestionario
 id btnGeoloc
 id btnGuardarInt
@@ -3630,6 +3633,7 @@ id localidadpar
 id locationControllerGPS
 id logo1
 id logo2
+id logo3
 id longitudeTextGPS
 id longitudeValueGPS
 id maiz_amarillo
@@ -5272,15 +5276,22 @@ id rg10
 id rg11
 id rg12
 id rg13
+id rg1313
 id rg14
+id rg1414
 id rg15
 id rg2
+id rg222
 id rg3
+id rg333
 id rg4
+id rg444
 id rg5
 id rg6
 id rg7
+id rg777
 id rg8
+id rg888
 id rg9
 id rg_cnd_rig_frt
 id rg_com_acabara
@@ -5745,6 +5756,7 @@ id txtfeno_esti
 id txtingredalimcantcolonia
 id txtlogo1
 id txtlogo2
+id txtlogo3
 id txtmaleza_esti
 id txtmodalidad
 id txtmodalidad_esti

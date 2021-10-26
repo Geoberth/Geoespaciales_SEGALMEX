@@ -436,6 +436,9 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      startActivity(in);
 
     }
+    else{
+     Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
+    }
    }
   });
 

@@ -17,6 +17,8 @@ import android.widget.Toast;
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Liconsa.LiconsaBD;
 import com.example.geosegalmex.Liconsa.Liconsa_Model;
+import com.example.geosegalmex.Liconsa2.LiconsaVerificacionBD;
+import com.example.geosegalmex.Liconsa2.LiconsaVerificacion_Model;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
 import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
 import com.example.geosegalmex.LiconsaBeneficiario.Pasl_b_Model;
@@ -79,6 +81,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     PARBeneficiario_Model model8;
     Liconsa_Model model9;
     PAR_operativo_model model10;
+    LiconsaVerificacion_Model model11;
 
     String longitudGeo;
     String latitudGeo;
@@ -137,6 +140,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PAR Operativo")){
                     agregarPAROperativo();
+                }
+                else if(General.Proyecto.equals("RNPL Expediente")){
+                    agregarRNPLExpediente();
                 }
 
                 finish();
@@ -452,6 +458,26 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
         baseBD = new PARoperativoBD(this);
 
         boolean insertarData = baseBD.addPAR_Operativo(model10);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void agregarRNPLExpediente() {
+        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+
+        model11 = new LiconsaVerificacion_Model();
+        model11 = (LiconsaVerificacion_Model)getIntent().getSerializableExtra("model");
+        model11.setLongitudGeo(longitudGeo);
+        model11.setLatitudGeo(latitudGeo);
+
+        LiconsaVerificacionBD baseBD;
+        baseBD = new LiconsaVerificacionBD(this);
+
+        boolean insertarData = baseBD.addRNPLExpediente(model11);
         if(insertarData == true) {
             Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
         }else{

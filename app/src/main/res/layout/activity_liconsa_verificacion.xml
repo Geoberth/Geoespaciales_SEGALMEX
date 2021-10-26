@@ -94,171 +94,6 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fecha de nacimiento:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt4"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:clickable="true"
-            android:focusable="false"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SEXO:"
-            android:textColor="#000000" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-
-                android:id="@+id/ernpl_prod_ra1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hombre" />
-
-            <RadioButton
-
-                android:id="@+id/ernpl_prod_ra2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mujer" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nacionalidad:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt5"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CURP:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt6"
-            android:layout_width="match_parent"
-            android:inputType="textCapCharacters"
-            android:layout_height="62dp"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RFC:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt7"
-            android:layout_width="match_parent"
-            android:inputType="textCapCharacters"
-            android:layout_height="62dp"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tipo de identificación:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt8"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Número de identificación:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt9"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:hint="Escriba el número."
-            android:inputType="number"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Correo Electrónico:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt10"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:hint="user@example.com"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Teléfono:"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/ernpl_prod_txt11"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:hint="Escriba el número."
-            android:inputType="number"
-            android:maxLines="1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tipo de teléfono:"
-            android:textColor="#000000" />
-
-        <RadioGroup
-            android:id="@+id/rg1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-
-                android:id="@+id/par_ben_ra1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Casa" />
-
-            <RadioButton
-
-                android:id="@+id/par_ben_ra2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trabajo" />
-
-            <RadioButton
-
-                android:id="@+id/par_ben_ra3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Celular" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="20dp"
             android:text="DATOS A VERIFICAR EN EL EXPEDIENTE DEL PRODUCTOR COMO PROVEEDOR DE LICONSA"
@@ -268,11 +103,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tipo de teléfono:"
+            android:text="¿EL PRODUCTOR ESTÁ REGISTRADO CORRECTAMENTE EN EL RNPL?"
             android:textColor="#000000" />
 
         <RadioGroup
-            android:id="@+id/rg2"
+            android:id="@+id/rg222"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -295,7 +130,7 @@
         </RadioGroup>
 
         <RadioGroup
-            android:id="@+id/rg3"
+            android:id="@+id/rg333"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -317,7 +152,7 @@
         </RadioGroup>
 
         <RadioGroup
-            android:id="@+id/rg4"
+            android:id="@+id/rg444"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -413,7 +248,7 @@
             android:textColor="#000000" />
 
         <RadioGroup
-            android:id="@+id/rg7"
+            android:id="@+id/rg777"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -451,7 +286,7 @@
             android:textColor="#000000" />
 
         <RadioGroup
-            android:id="@+id/rg8"
+            android:id="@+id/rg888"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -597,7 +432,7 @@
             android:textColor="#000000" />
 
         <RadioGroup
-            android:id="@+id/rg13"
+            android:id="@+id/rg1313"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -613,7 +448,7 @@
 
                 android:id="@+id/par_ben_ra28"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="No" />
 
         </RadioGroup>
@@ -632,7 +467,7 @@
             android:textColor="#000000" />
 
         <RadioGroup
-            android:id="@+id/rg14"
+            android:id="@+id/rg1414"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

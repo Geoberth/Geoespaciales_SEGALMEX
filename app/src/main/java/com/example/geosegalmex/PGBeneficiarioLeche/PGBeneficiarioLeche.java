@@ -178,7 +178,9 @@ public class PGBeneficiarioLeche extends AppCompatActivity {
                     in.putExtra("model", model);
                     startActivity(in);
                 }
-
+                else{
+                    Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
