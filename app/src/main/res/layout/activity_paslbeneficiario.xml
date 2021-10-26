@@ -682,21 +682,21 @@
                     android:id="@+id/paslb_ra37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sí" />
+                    android:text="Bueno" />
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra38"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="Aceptable" />
 
 
                 <RadioButton
 
                     android:id="@+id/paslb_ra39"
                     android:layout_width="wrap_content"
-                    android:visibility="gone"
+
                     android:layout_height="wrap_content"
                     android:text="Malo" />
             </RadioGroup>
@@ -776,7 +776,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="17. ¿Qué acciones considera que necesita realizar el Programa en el futura para mejorar la atención otorgada?"
+                android:text="17. ¿Qué acciones considera que necesita realizar el Programa en el futuro para mejorar la atención otorgada?"
                 android:textColor="#000000" />
 
             <EditText

@@ -98,7 +98,6 @@
                 android:id="@+id/pre_garan_txt4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:maxLines="1" />
 
             <TextView

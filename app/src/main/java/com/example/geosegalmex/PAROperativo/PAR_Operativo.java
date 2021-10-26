@@ -674,19 +674,19 @@ public class PAR_Operativo extends AppCompatActivity {
             retorno = false;
         }
         else if(validarcapa5_5() == 0){
-            parec1.setError("Debe seleccionar cuando menos una opción");
+            parec117.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
         else if(validarcapa6_6() == 0){
-            parec1.setError("Debe seleccionar cuando menos una opción");
+            parec122.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
         else if(validarcapa7_7() == 0){
-            parec1.setError("Debe seleccionar cuando menos una opción");
+            parec123.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
         else if(validarcapa8_8() == 0){
-            parec1.setError("Debe seleccionar cuando menos una opción");
+            parec132.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
 
@@ -695,15 +695,15 @@ public class PAR_Operativo extends AppCompatActivity {
             retorno=false;
         }
         else if(validarcapa2_2() == 0){
-            parec1.setError("Debe seleccionar cuando menos una opción");
+            parec14.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
         else if(validarcapa3_3() == 0){
-            parec1.setError("Debe seleccionar cuando menos una opción");
+            parec63.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
         else if(validarcapa4_4() == 0){
-            parec1.setError("Debe seleccionar cuando menos una opción");
+            parec119.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
         /*
@@ -783,10 +783,12 @@ public class PAR_Operativo extends AppCompatActivity {
             parer48.setError("Debes seleccionar una opción");
             retorno=false;
         }
+        /*
         else if (paret16.getText().toString().isEmpty()){
             paret16.setError("No puede quedar vacio");
             retorno = false;
         }
+         */
         else if (paret17.getText().toString().isEmpty()){
             paret17.setError("No puede quedar vacio");
             retorno = false;

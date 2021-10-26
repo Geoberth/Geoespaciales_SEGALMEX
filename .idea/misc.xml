@@ -57,11 +57,14 @@
         <entry key="app/src/main/res/layout/activity_identificacion_cuestionario.xml" value="0.3611111111111111" />
         <entry key="app/src/main/res/layout/activity_liconsa.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_new_camara.xml" value="0.30416666666666664" />
-        <entry key="app/src/main/res/layout/activity_par_operativo.xml" value="0.3611111111111111" />
+        <entry key="app/src/main/res/layout/activity_par_operativo.xml" value="0.1391029168959824" />
         <entry key="app/src/main/res/layout/activity_parbeneficiario.xml" value="0.2573454913880446" />
         <entry key="app/src/main/res/layout/activity_pasl_operativo.xml" value="0.271286231884058" />
-        <entry key="app/src/main/res/layout/activity_paslbeneficiario.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_pgbeneficiarios_granos.xml" value="0.5302564102564102" />
+        <entry key="app/src/main/res/layout/activity_paslbeneficiario.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_pgbeneficiario_leche.xml" value="0.5184615384615384" />
+        <entry key="app/src/main/res/layout/activity_pgbeneficiarios_granos.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/activity_pgoperativo_granos.xml" value="0.3453703703703704" />
+        <entry key="app/src/main/res/layout/activity_pgoperativo_leche.xml" value="0.28888888888888886" />
         <entry key="app/src/main/res/layout/activity_principal.xml" value="0.271286231884058" />
         <entry key="app/src/main/res/layout/activity_segunda.xml" value="0.30416666666666664" />
         <entry key="app/src/main/res/layout/nav_header_drawer.xml" value="0.33611111111111114" />

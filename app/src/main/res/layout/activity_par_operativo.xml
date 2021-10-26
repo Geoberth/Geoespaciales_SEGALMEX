@@ -76,7 +76,8 @@
 
 
                 <TextView
-                    android:text="ESTADO"
+                    android:text="Entidad:"
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
@@ -93,7 +94,7 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:text="MUNICIPIO"
+                    android:text="Municipio:"
                     android:layout_width="match_parent"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
@@ -111,7 +112,7 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:text="COLONIA/LOCALIDAD"
+                    android:text="Colonia/Localidad:"
                     android:layout_width="match_parent"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
@@ -180,14 +181,14 @@
                     <RadioButton
 
                         android:id="@+id/par_et_ra1"
-                        android:layout_width="wrap_content"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:text="Hombre" />
 
                     <RadioButton
 
                         android:id="@+id/par_et_ra2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="Mujer" />
                 </RadioGroup>
@@ -733,7 +734,7 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <RadioButton
 
@@ -2172,13 +2173,6 @@
                         android:layout_height="wrap_content"
                         android:text="Mensual"/>
 
-                </RadioGroup>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
 
                     <RadioButton
 
@@ -2451,7 +2445,7 @@
                     android:id="@+id/par_et_ch123"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Apartado de sonido." />
+                    android:text="Aparato de sonido." />
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -2506,7 +2500,7 @@
                     android:id="@+id/par_et_ch129"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Distribución de leche Liconsa." />
+                    android:text="Distribución de leche LICONSA." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2540,7 +2534,7 @@
                     android:id="@+id/par_et_ch132"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Apartado de sonido." />
+                    android:text="Aparato de sonido." />
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -2595,7 +2589,7 @@
                     android:id="@+id/par_et_ch138"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Distribución de leche Liconsa." />
+                    android:text="Distribución de leche LICONSA." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2677,7 +2671,7 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <RadioButton
 

@@ -165,7 +165,7 @@
                 android:id="@+id/pre_garan_leche_txt7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+
                 android:maxLines="1" />
 
             <TextView
@@ -178,7 +178,7 @@
                 android:id="@+id/pre_garan_leche_txt8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+
                 android:maxLines="1" />
 
             <TextView
