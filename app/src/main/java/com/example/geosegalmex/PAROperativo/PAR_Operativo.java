@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import com.example.geosegalmex.General;
@@ -412,11 +413,14 @@ public class PAR_Operativo extends AppCompatActivity {
         muestrafecha();
         eventos33();
         eventos34();
-        eventos35();
-        eventos36();
+        //eventos35();
+        //eventos36();
         eventos37();
         eventos38();
-        eventos39();
+        //eventos39();
+        eventos40();
+        eventos41();
+        eventos42();
 
         pares1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
@@ -1902,6 +1906,57 @@ public class PAR_Operativo extends AppCompatActivity {
             }
         });
     }
+
+    public void eventos40() {
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.group1);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (parer22.isChecked() == true) {
+                    paret9.setVisibility(View.VISIBLE);
+                } else {
+                    paret9.setVisibility(View.GONE);
+                    paret9.setText("");
+                }
+            }
+        });
+    }
+
+
+    public void eventos41() {
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.group2);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (parer29.isChecked() == true) {
+                    paret10.setVisibility(View.VISIBLE);
+                } else {
+                    paret10.setVisibility(View.GONE);
+                    paret10.setText("");
+                }
+            }
+        });
+    }
+
+    public void eventos42() {
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.group3);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (parer50.isChecked() == true) {
+                    paret19.setVisibility(View.VISIBLE);
+                } else {
+                    paret19.setVisibility(View.GONE);
+                    paret19.setText("");
+                }
+            }
+        });
+    }
+
+
 
 
     //Metodo para extraer la fecha actual
