@@ -116,6 +116,7 @@ public class PAR_operativo_bd {
 
     public static final String CREAR_TABLA_PAR_OPERATIVO= "CREATE TABLE " + TABLA_BD + "("
             + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
+            + COLUMN_FECHA + " VARCHAR, "
             + COLUMN_NOMENT + " VARCHAR, "
             + COLUMN_CVEEDO + " VARCHAR, "
             + COLUMN_NOMMUN + " VARCHAR, "

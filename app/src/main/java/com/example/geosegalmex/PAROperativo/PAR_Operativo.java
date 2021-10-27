@@ -297,7 +297,6 @@ public class PAR_Operativo extends AppCompatActivity {
 
         paret1119=(EditText)findViewById(R.id.par_et_txt1119);
 
-
         parer49=(RadioButton)findViewById(R.id.par_et_ra49);
         parer50=(RadioButton)findViewById(R.id.par_et_ra50);
 
@@ -417,6 +416,7 @@ public class PAR_Operativo extends AppCompatActivity {
         eventos36();
         eventos37();
         eventos38();
+        eventos39();
 
         pares1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
@@ -801,19 +801,23 @@ public class PAR_Operativo extends AppCompatActivity {
             retorno = false;
         }
 
-
+/*
         else if (paret1119.getText().toString().isEmpty()){
             paret1119.setError("No puede quedar vacio");
             retorno = false;
         }
+        */
+
         else if(!parer49.isChecked() && !parer50.isChecked()){
             parer50.setError("Debes seleccionar una opción");
             retorno=false;
         }
+        /*
         else if (paret19.getText().toString().isEmpty()){
             paret19.setError("No puede quedar vacio");
             retorno = false;
         }
+        */
         else if(!parer51.isChecked() && !parer52.isChecked()){
             parer52.setError("Debes seleccionar una opción");
             retorno=false;
@@ -1847,7 +1851,8 @@ public class PAR_Operativo extends AppCompatActivity {
             public void onClick(View v) {
                 if(parer29.isChecked()==true){
                     paret10.setVisibility(View.VISIBLE);
-                }else{
+                }
+                if(parer29.isChecked()==false){
                     paret10.setVisibility(View.GONE);
                     paret10.setText("");
                 }
@@ -1861,7 +1866,8 @@ public class PAR_Operativo extends AppCompatActivity {
             public void onClick(View v) {
                 if(parer48.isChecked()==true){
                     paret16.setVisibility(View.VISIBLE);
-                }else{
+                }
+                if(parer48.isChecked()==false){
                     paret16.setVisibility(View.GONE);
                     paret16.setText("");
                 }
@@ -1878,6 +1884,20 @@ public class PAR_Operativo extends AppCompatActivity {
                 }else{
                     paret1119.setVisibility(View.GONE);
                     paret1119.setText("");
+                }
+            }
+        });
+    }
+
+    public void eventos39(){
+        findViewById(R.id.par_et_ra50).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(parer50.isChecked()==true){
+                    paret19.setVisibility(View.VISIBLE);
+                }else{
+                    paret19.setVisibility(View.GONE);
+                    paret19.setText("");
                 }
             }
         });

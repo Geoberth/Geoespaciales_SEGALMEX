@@ -331,6 +331,7 @@ com/example/geosegalmex/PAROperativo/PAR_Operativo.java
  com.example.geosegalmex.PAROperativo.PAR_Operativo
  com.example.geosegalmex.PAROperativo.PAR_Operativo$1
  com.example.geosegalmex.PAROperativo.PAR_Operativo$10
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$11
  com.example.geosegalmex.PAROperativo.PAR_Operativo$2
  com.example.geosegalmex.PAROperativo.PAR_Operativo$3
  com.example.geosegalmex.PAROperativo.PAR_Operativo$4
