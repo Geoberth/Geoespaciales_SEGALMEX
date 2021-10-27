@@ -179,6 +179,7 @@ array produccioacuicola
 array produccion_leche
 array produccionagricola
 array producto_apicola
+array productos
 array proteccion_apicola
 array pueblo_originario
 array responde
@@ -895,9 +896,10 @@ color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
 color abc_btn_colored_text_material
 color abc_color_highlight_material
+color abc_decor_view_status_guard
+color abc_decor_view_status_guard_light
 color abc_hint_foreground_material_dark
 color abc_hint_foreground_material_light
-color abc_input_method_navigation_guard
 color abc_primary_text_disable_only_material_dark
 color abc_primary_text_disable_only_material_light
 color abc_primary_text_material_dark
@@ -916,6 +918,8 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color androidx_core_ripple_material_light
+color androidx_core_secondary_text_default_material_light
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1517,6 +1521,7 @@ drawable design_snackbar_background
 drawable frontera
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_baseline_monetization_on_24
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -3681,6 +3686,7 @@ id nav_controller_view_tag
 id nav_exportar
 id nav_home
 id nav_host_fragment
+id nav_liconsa
 id nav_sync_municipio
 id nav_sync_usuarios
 id nav_view
@@ -5368,6 +5374,8 @@ id snap
 id snapMargins
 id sorgo_b
 id sorgo_r
+id sp1
+id sp2
 id sp_color
 id sp_llenado
 id sp_otro_mr_cp
@@ -5545,6 +5553,9 @@ id trata_no
 id trata_si
 id trigo_b
 id trigo_d
+id tv1
+id tv2
+id tv3
 id tx_tit_cm
 id tx_tit_cm_agr_cm
 id tx_tit_cm_agr_cs
@@ -5991,6 +6002,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_exportar
+layout fragment_liconsa_precios
 layout fragment_mapa
 layout fragment_sync_mun
 layout fragment_sync_user
@@ -6583,6 +6595,7 @@ style Theme_AppCompat_Dialog
 style Theme_AppCompat_Dialog_Alert
 style Theme_AppCompat_Dialog_MinWidth
 style Theme_AppCompat_DialogWhenLarge
+style Theme_AppCompat_Empty
 style Theme_AppCompat_Light
 style Theme_AppCompat_Light_DarkActionBar
 style Theme_AppCompat_Light_Dialog

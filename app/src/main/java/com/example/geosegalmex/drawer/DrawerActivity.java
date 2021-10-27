@@ -65,7 +65,7 @@ public class DrawerActivity extends AppCompatActivity {
  */
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_sync_municipio, R.id.nav_sync_usuarios,
-                R.id.nav_exportar)
+                R.id.nav_exportar, R.id.nav_liconsa)
                 .setDrawerLayout(drawer)
                 .build();
 

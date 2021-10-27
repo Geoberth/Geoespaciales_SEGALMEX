@@ -2,12 +2,16 @@ package com.example.geosegalmex.PAROperativo;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos_bd;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PARoperativoBD  extends SQLiteOpenHelper {
 
@@ -175,5 +179,39 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
             return true;
         }
     }
+
+    public List<PAR_operativo_model> getEveryone(){
+
+        List<PAR_operativo_model> returnList = new ArrayList<>();
+
+        String queryString = "SELECT * FROM " + PAR_operativo_bd.TABLA_BD;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(queryString, null);
+
+        if(cursor.moveToFirst()){
+            do{
+                String folio = cursor.getString(0);
+                String fecha = cursor.getString(1);
+                String entidad = cursor.getString(2);
+                String cveenti = cursor.getString(3);
+                String muni = cursor.getString(4);
+                String cvemuni = cursor.getString(5);
+                String nom = cursor.getString(6);
+                String ape = cursor.getString(7);
+                String apem = cursor.getString(8);
+
+                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, nom, ape, apem,"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
+                returnList.add(newCuastomer);
+
+            }while(cursor.moveToNext());
+        }
+        else{
+
+        }
+        cursor.close();
+        db.close();
+        return returnList;
+    }
+
 
 }

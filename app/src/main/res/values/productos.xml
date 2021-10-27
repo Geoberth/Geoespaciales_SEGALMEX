@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="productos">
+        <item>Aceite comestible cristal</item>
+        <item>Aceite mixto Patrona</item>
+        <item>Arroz súper extra</item>
+        <item>Arroz Quebrado</item>
+        <item>Arroz Comercial</item>
+        <item>Atún Agua</item>
+        <item>Atún en Aceite</item>
+        <item>Avena</item>
+        <item>Azúcar estándar</item>
+        <item>Café soluble</item>
+        <item>Chiles jalapeños enteros</item>
+        <item>Chocolate en polvo bolsa</item>
+        <item>Crema dental</item>
+        <item>Detergente en polvo</item>
+        <item>Frijol Negro San Luis</item>
+        <item>Galletas animalitos</item>
+        <item>Gallera Marías</item>
+        <item>Galletas Saladas</item>
+        <item>Harina de Maíz</item>
+        <item>Harina de Trigo</item>
+        <item>Jabón de lavandería</item>
+        <item>Jabón de tocador</item>
+        <item>Leche Entera</item>
+        <item>Leche Semidescremada</item>
+        <item>Leche Descremada</item>
+        <item>Leche Entera en Polvo Fortificada</item>
+        <item>Leche Semidescremada en Polvo Fortificada</item>
+        <item>Leche Entera UGT en Bolsa Aséptica</item>
+        <item>Leche Semidescremada UHT en Bolsa Aséptica</item>
+        <item>Leche Descremada UHT en Bolsa Aséptica</item>
+        <item>Leche Semidescremada Sabor Chocolate</item>
+        <item>Leche Semidescremada Sabor Fresa</item>
+        <item>Leche Semidescremada Sabor Vainilla</item>
+        <item>Maíz</item>
+        <item>Papel Higiénico 200 HD</item>
+        <item>Sal de mesa</item>
+        <item>Sardina en Salsa de Tomate</item>
+        <item>Lenteja</item>
+        <item>Puré de Tomate</item>
+        <item>Chícharos con Zanahoria</item>
+        <item>Chícharos con Zanahoria</item>
+        <item>Soya Texturizada</item>
+        <item>Gelatina</item>
+        <item>Garrafón 20 Lt Agua</item>
+        <item>Huevo</item>
+        <item>Miel</item>
+    </string-array>
+
+</resources>

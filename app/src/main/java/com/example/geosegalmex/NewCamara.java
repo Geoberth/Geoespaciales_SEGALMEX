@@ -6,6 +6,8 @@ import androidx.core.content.FileProvider;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -33,7 +35,9 @@ import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos;
 import com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class NewCamara extends AppCompatActivity {
 
@@ -368,5 +372,6 @@ public class NewCamara extends AppCompatActivity {
         }
         return false;
     }
+    
 
 }
