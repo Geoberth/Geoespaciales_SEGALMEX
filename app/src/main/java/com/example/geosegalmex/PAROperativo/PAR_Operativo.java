@@ -766,6 +766,7 @@ public class PAR_Operativo extends AppCompatActivity {
             parer44.setError("Debes seleccionar una opción");
             retorno=false;
         }
+        /*
         else if (paret11.getText().toString().isEmpty()){
             paret11.setError("No puede quedar vacio");
             retorno = false;
@@ -786,16 +787,16 @@ public class PAR_Operativo extends AppCompatActivity {
             paret15.setError("No puede quedar vacio");
             retorno = false;
         }
+         */
+
         else if(!parer45.isChecked() && !parer46.isChecked() && !parer47.isChecked() && !parer48.isChecked()){
             parer48.setError("Debes seleccionar una opción");
             retorno=false;
         }
-        /*
         else if (paret16.getText().toString().isEmpty()){
             paret16.setError("No puede quedar vacio");
             retorno = false;
         }
-         */
         else if (paret17.getText().toString().isEmpty()){
             paret17.setError("No puede quedar vacio");
             retorno = false;
@@ -838,10 +839,14 @@ public class PAR_Operativo extends AppCompatActivity {
             parer59.setError("Debes seleccionar una opción");
             retorno=false;
         }
+
+        /*
         else if (paret20.getText().toString().isEmpty()){
             paret20.setError("No puede quedar vacio");
             retorno = false;
         }
+        */
+
         else if(!parer60.isChecked() && !parer61.isChecked()){
             parer61.setError("Debes seleccionar una opción");
             retorno=false;

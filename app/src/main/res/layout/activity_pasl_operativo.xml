@@ -781,6 +781,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="¿A qué precio?"
+                    android:maxLength="6"
                     android:inputType="number|numberDecimal"
                     android:visibility="gone" />
 

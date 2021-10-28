@@ -340,6 +340,11 @@ public class PASLOperativo extends AppCompatActivity {
             observ.setError("No puede quedar vacio");
             retorno=false;
         }
+        else if(si12.isChecked() && Float.parseFloat(observ.getText().toString()) > 100){
+            observ.setError("El precio no puede ser mayor a $100.00 pesos");
+            retorno=false;
+        }
+
         else if(!si14.isChecked() && !no14.isChecked()){
             si14.setError("Debes seleccionar una opción");
             retorno=false;
