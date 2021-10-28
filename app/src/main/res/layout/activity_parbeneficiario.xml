@@ -1512,7 +1512,7 @@
                     android:id="@+id/par_ben_ch149"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chocolate en polvo" />
+                    android:text="Chocolate en polvo en bolsa" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1866,7 +1866,7 @@
                     android:id="@+id/par_ben_ch170"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Apartado de sonido." />
+                    android:text="Aparato de sonido." />
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -3047,7 +3047,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:inputType="textCapWords|textAutoCorrect"
+                    android:inputType="textAutoCorrect"
                     android:textColor="#000000"/>
 
                 <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton

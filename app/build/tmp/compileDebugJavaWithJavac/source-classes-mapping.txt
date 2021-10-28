@@ -501,22 +501,13 @@ com/example/geosegalmex/apicola/ManejoApicola.java
  com.example.geosegalmex.apicola.ManejoApicola
  com.example.geosegalmex.apicola.ManejoApicola$1
  com.example.geosegalmex.apicola.ManejoApicola$2
-com/example/geosegalmex/PAROperativo/PAR_Operativo.java
- com.example.geosegalmex.PAROperativo.PAR_Operativo
- com.example.geosegalmex.PAROperativo.PAR_Operativo$1
- com.example.geosegalmex.PAROperativo.PAR_Operativo$10
- com.example.geosegalmex.PAROperativo.PAR_Operativo$11
- com.example.geosegalmex.PAROperativo.PAR_Operativo$12
- com.example.geosegalmex.PAROperativo.PAR_Operativo$13
- com.example.geosegalmex.PAROperativo.PAR_Operativo$14
- com.example.geosegalmex.PAROperativo.PAR_Operativo$2
- com.example.geosegalmex.PAROperativo.PAR_Operativo$3
- com.example.geosegalmex.PAROperativo.PAR_Operativo$4
- com.example.geosegalmex.PAROperativo.PAR_Operativo$5
- com.example.geosegalmex.PAROperativo.PAR_Operativo$6
- com.example.geosegalmex.PAROperativo.PAR_Operativo$7
- com.example.geosegalmex.PAROperativo.PAR_Operativo$8
- com.example.geosegalmex.PAROperativo.PAR_Operativo$9
+com/example/geosegalmex/LiconsaVentanilla/PASLOperativo.java
+ com.example.geosegalmex.LiconsaVentanilla.PASLOperativo
+ com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$1
+ com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$2
+ com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$3
+ com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$4
+ com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$5
 com/example/geosegalmex/unidadcomercializacion/comercializacion_5.java
  com.example.geosegalmex.unidadcomercializacion.comercializacion_5
  com.example.geosegalmex.unidadcomercializacion.comercializacion_5$1
@@ -771,10 +762,19 @@ com/example/geosegalmex/NewCamara.java
  com.example.geosegalmex.NewCamara$3$1
  com.example.geosegalmex.NewCamara$4
  com.example.geosegalmex.NewCamara$4$1
-com/example/geosegalmex/LiconsaVentanilla/PASLOperativo.java
- com.example.geosegalmex.LiconsaVentanilla.PASLOperativo
- com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$1
- com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$2
- com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$3
- com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$4
- com.example.geosegalmex.LiconsaVentanilla.PASLOperativo$5
+com/example/geosegalmex/PAROperativo/PAR_Operativo.java
+ com.example.geosegalmex.PAROperativo.PAR_Operativo
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$1
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$10
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$11
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$12
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$13
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$14
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$2
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$3
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$4
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$5
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$6
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$7
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$8
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$9

@@ -793,10 +793,14 @@ public class PAR_Operativo extends AppCompatActivity {
             parer48.setError("Debes seleccionar una opción");
             retorno=false;
         }
+
+        /*
         else if (paret16.getText().toString().isEmpty()){
             paret16.setError("No puede quedar vacio");
             retorno = false;
         }
+        */
+
         else if (paret17.getText().toString().isEmpty()){
             paret17.setError("No puede quedar vacio");
             retorno = false;

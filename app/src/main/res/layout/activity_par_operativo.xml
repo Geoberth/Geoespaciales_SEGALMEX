@@ -882,14 +882,7 @@
                         android:layout_height="wrap_content"
                         android:text="Café soluble." />
 
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:enabled="true"
-                        android:layout_marginTop="0dp"
 
-                        android:id="@+id/par_et_ch27"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Arroz Comercial." />
 
 
                     <com.google.android.material.checkbox.MaterialCheckBox
@@ -1058,6 +1051,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Leche Entera en Polvo Fortificada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_et_ch27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada en Polvo Fortificada." />
 
                     <com.google.android.material.checkbox.MaterialCheckBox
                         android:enabled="true"
@@ -1358,15 +1360,6 @@
                         android:layout_height="wrap_content"
                         android:text="Café soluble." />
 
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:enabled="true"
-                        android:layout_marginTop="0dp"
-
-                        android:id="@+id/par_et_ch74"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Arroz Comercial." />
-
 
 
                     <com.google.android.material.checkbox.MaterialCheckBox
@@ -1536,6 +1529,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Leche Entera en Polvo Fortificada." />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:enabled="true"
+                        android:layout_marginTop="0dp"
+
+                        android:id="@+id/par_et_ch74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leche Semidescremada en Polvo Fortificada" />
 
                     <com.google.android.material.checkbox.MaterialCheckBox
                         android:enabled="true"
