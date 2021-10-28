@@ -65,7 +65,7 @@
         <EditText
             android:id="@+id/ernpl_prod_txt1"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:maxLines="1" />
 
         <TextView
@@ -77,7 +77,7 @@
         <EditText
             android:id="@+id/ernpl_prod_txt2"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:maxLines="1" />
 
         <TextView
@@ -89,7 +89,7 @@
         <EditText
             android:id="@+id/ernpl_prod_txt3"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:maxLines="1" />
 
         <TextView
@@ -273,7 +273,7 @@
         <EditText
             android:id="@+id/ernpl_prod_txt12"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:hint="CLABE INTERBANCARIA:"
             android:inputType="number"
             android:maxLines="1" />
@@ -456,7 +456,7 @@
         <EditText
             android:id="@+id/ernpl_prod_txt13"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:maxLines="1" />
 
         <TextView
@@ -491,7 +491,7 @@
         <EditText
             android:id="@+id/ernpl_prod_txt14"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:maxLines="1" />
 
         <TextView
@@ -547,7 +547,7 @@
         <EditText
             android:id="@+id/ernpl_prod_txt15"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:maxLines="1" />
 
         <TextView
@@ -559,13 +559,13 @@
         <EditText
             android:id="@+id/ernpl_prod_txt16"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:maxLines="1" />
 
         <EditText
             android:id="@+id/ernpl_prod_txt17"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:hint="Observaciones"
             android:maxLines="1" />
 

@@ -1,8 +1,11 @@
 package com.example.geosegalmex.drawer.fragment_drawer;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -27,21 +30,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.geosegalmex.General;
-import com.example.geosegalmex.IdentificacionCuestionario;
-import com.example.geosegalmex.Liconsa.Liconsa;
-import com.example.geosegalmex.LiconsaBeneficiario.PASLBeneficiario;
-import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
-import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
-import com.example.geosegalmex.PAROperativo.PAR_Operativo;
 import com.example.geosegalmex.PAROperativo.PAR_operativo_model;
 import com.example.geosegalmex.PAROperativo.PARoperativoBD;
-import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
-import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
-import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
-import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos;
-import com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche;
 import com.example.geosegalmex.R;
 import com.example.geosegalmex.drawer.DrawerActivity;
 
@@ -84,6 +74,7 @@ public class LiconsaPrecios extends Fragment {
         tv2 = vistaExportar.findViewById(R.id.logo1);
         cam = vistaExportar.findViewById(R.id.btnCamara);
         next = vistaExportar.findViewById(R.id.btnNext);
+        next.setVisibility(View.GONE);
 
         //Permisos de almacenamiento
         if (ContextCompat.checkSelfPermission(getContext(),
@@ -132,26 +123,27 @@ public class LiconsaPrecios extends Fragment {
         cam.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                    if(everyone.size() == 0){
-                        Toast.makeText(getContext(), "No tienes registros guardados!" ,Toast.LENGTH_SHORT).show();
+                if(everyone.size() == 0){
+                    Toast.makeText(getContext(), "No tienes registros guardados!" ,Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                        abrirCamara("1");
                     }
                     else{
-                        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                            abrirCamara("1");
-                        }
-                        else{
-                            tomarFoto(1);
+                        tomarFoto(1);
 
-                        }
-
-                        new Handler().postDelayed(new Runnable() {
-                            public void run() {
-                                cam.setVisibility(View.GONE);
-                                tv1.setVisibility(View.VISIBLE);
-                                tv2.setVisibility(View.VISIBLE);
-                            }
-                        },2000);
                     }
+
+                    new Handler().postDelayed(new Runnable() {
+                        public void run() {
+                            cam.setVisibility(View.GONE);
+                            tv1.setVisibility(View.VISIBLE);
+                            tv2.setVisibility(View.VISIBLE);
+                            next.setVisibility(View.VISIBLE);
+                        }
+                    },2000);
+                }
 
 
             }
@@ -181,6 +173,7 @@ public class LiconsaPrecios extends Fragment {
                             cam.setVisibility(View.VISIBLE);
                             tv1.setVisibility(View.GONE);
                             tv2.setVisibility(View.GONE);
+                            next.setVisibility(View.GONE);
                         }
                         else{
                             int file_size = Integer.parseInt(String.valueOf(archivo.length()/1024));
@@ -189,6 +182,7 @@ public class LiconsaPrecios extends Fragment {
                                 cam.setVisibility(View.VISIBLE);
                                 tv1.setVisibility(View.GONE);
                                 tv2.setVisibility(View.GONE);
+                                next.setVisibility(View.GONE);
                             }
                             else{
                                 tv1.setText("Foto guardada correctamente");
@@ -264,15 +258,19 @@ public class LiconsaPrecios extends Fragment {
             File foto = new File(getActivity().getExternalFilesDir(null), "../../../../" + typeproyect + "/" + nombreImagennn);
             intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
             startActivity(intento1);
+            rutaImagen = foto.getAbsolutePath();
         }
         else{
             Intent intento1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             File foto = new File(getActivity().getExternalFilesDir(null), "../../../../" + typeproyect + "/" + nombreImagennn);
             intento1.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(foto));
             startActivity(intento1);
+            rutaImagen = foto.getAbsolutePath();
         }
 
+
     }
+
 
 
 }

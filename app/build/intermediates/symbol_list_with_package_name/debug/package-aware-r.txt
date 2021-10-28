@@ -90,6 +90,8 @@ array Yucatán2021
 array Zacatecas2021
 array alimentos_pecuario
 array alimentos_procesados
+array año
+array año2
 array bovino_cebu
 array bovino_cruzas
 array bovino_europeas
@@ -145,6 +147,7 @@ array cveTlaxcala2021
 array cveVeracruzdeIgnaciodelaLlave2021
 array cveYucatán2021
 array cveZacatecas2021
+array dia
 array especiepecuaria
 array estado_Aguascalientes
 array estado_Jalisco
@@ -161,11 +164,14 @@ array frecuencia_asistencia
 array frutales
 array fuenteagua
 array grado_estudios
+array hora
 array infraestructura
 array infraestructura_condicion
 array maleza_esti
 array material_piso
 array material_techo
+array mes
+array min
 array mod_uso
 array modalidad
 array modalidad_esti
@@ -187,6 +193,7 @@ array selectproyect
 array semillas_cultivo
 array siniestro_esti
 array suelo_esti
+array typeide
 array vialidad
 attr action
 attr actionBarDivider
@@ -2802,6 +2809,7 @@ id direct
 id directo_productor
 id disableHome
 id doble_h
+id docespecifique
 id drawer_layout
 id dropdown_menu
 id edProyec
@@ -5382,6 +5390,12 @@ id sp_llenado
 id sp_otro_mr_cp
 id sp_tam
 id spacer
+id spaño
+id spaño2
+id spdia
+id spdia2
+id sphora
+id sphora2
 id spi_edo
 id spi_mun
 id spicobertura
@@ -5412,6 +5426,10 @@ id spisiniestro_esti
 id spisuelo_esti
 id spisur_esti
 id split_action_bar
+id spmes
+id spmes2
+id spmin
+id spmin2
 id spn_agr_ct
 id spn_edo_upf
 id spn_frt_frt_stab

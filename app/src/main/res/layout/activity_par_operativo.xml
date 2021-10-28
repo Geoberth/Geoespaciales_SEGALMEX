@@ -1998,11 +1998,44 @@
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sphora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/hora"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:id="@+id/spmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/min"
+                    android:spinnerMode="dialog" />
+
                 <EditText
                     android:id="@+id/par_et_txt17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="1" />
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:visibility="gone"
+                    android:maxLines="1"/>
+
+
+            </LinearLayout>
+
 
                 <TextView
                     android:text="22. ¿A qué hora cierra la tienda?"
@@ -2011,11 +2044,43 @@
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sphora2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/hora"
+                    android:spinnerMode="dialog" />
+
+                <Spinner
+                    android:id="@+id/spmin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/borde"
+                    android:entries="@array/min"
+                    android:spinnerMode="dialog" />
+
                 <EditText
                     android:id="@+id/par_et_txt18"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="1" />
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:visibility="gone"
+                    android:maxLines="1"/>
+
+
+            </LinearLayout>
+
 
                 <TextView
                     android:text="23. ¿En qué días abre la tienda?"

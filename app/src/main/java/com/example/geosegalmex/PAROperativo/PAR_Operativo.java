@@ -34,7 +34,7 @@ public class PAR_Operativo extends AppCompatActivity {
     EditText pprolic1, pprolic2, paret1119, pprolic3, pprolic4, pprolic5, pprolic6, pprolic7, pprolic8, pprolic9, pprolic10, pprolic11, pprolic12, pprolic13, pprolic14, pprolic15, pprolic16, pprolic17, pprolic18, pprolic19, pprolic20, pprolic21, pprolic22, pprolic23, pprolic24, pprolic25, pprolic26, pprolic27, pprolic28, pprolic29, pprolic30, pprolic31, pprolic32, pprolic33, pprolic34, pprolic35, pprolic36, pprolic37, pprolic38, pprolic39, pprolic40, pprolic41, pprolic42, pprolic43, pprolic44, pprolic45, pprolic46, pprolic47, pares3;
 
     RadioButton parer1, parer2, parer3, parer4, parer5, parer6, parer7, parer8, parer9, parer10, parer11, parer12, parer13, parer14, parer15, parer16, parer17, parer18, parer19, parer20, parer21, parer22, parer23, parer24, parer25, parer26, parer27, parer28, parer29, parer30, parer31, parer32, parer33, parer34, parer35, parer36, parer37, parer38, parer39, parer40, parer41, parer42, parer43, parer44, parer45, parer46, parer47, parer48, parer49, parer50, parer51, parer52, parer53, parer54, parer55, parer56, parer57, parer58, parer59, parer60, parer61, parer62, parer63, parer64, parer65, parer66, parer67, parer68, parer69;
-    Spinner pares1, pares2;
+    Spinner pares1, pares2, hora, min, hora2, min2;
     CheckBox parec1, parec2, parec3, parec4, parec5, parec6, parec7, parec8, parec9, parec10, parec11, parec12, parec13, parec14, parec15, parec16, parec17, parec18, parec19, parec20, parec21, parec22, parec23, parec24, parec25, parec26, parec27, parec28, parec29, parec30, parec31, parec32, parec33, parec34, parec35, parec36, parec37, parec38, parec39, parec40, parec41, parec42, parec43, parec44, parec45, parec46, parec47, parec48, parec49, parec50, parec51, parec52, parec53, parec54, parec55, parec56, parec57, parec58, parec59, parec60, parec61, parec62, parec63, parec64, parec65, parec66, parec67, parec68, parec69, parec70, parec71, parec72, parec73, parec74, parec75, parec76, parec77, parec78, parec79, parec80, parec81, parec82, parec83, parec84, parec85, parec86, parec87, parec88, parec89, parec90, parec91, parec92, parec93, parec94, parec95, parec96, parec97, parec98, parec99, parec100, parec101, parec102, parec103, parec104, parec105, parec106, parec107, parec108, parec109, parec110, parec111, parec112, parec113, parec114, parec115, parec116, parec117, parec118, parec119, parec120, parec121, parec122, parec123, parec124, parec125, parec126, parec127, parec128, parec129, parec130, parec131, parec132, parec133, parec134, parec135, parec136, parec137, parec138, parec139, parec140;
     Button btnSiguiente, btnCamara;
     TextView textFecha;
@@ -72,6 +72,11 @@ public class PAR_Operativo extends AppCompatActivity {
         pares1=(Spinner)findViewById(R.id.pgb_o_spiEstado1); //Estado
         pares2=(Spinner)findViewById(R.id.pgb_o_spiMunicipio1); //Municipio
         pares3=(EditText)findViewById(R.id.localidadpar); //Localidad/colonia
+
+        hora=(Spinner)findViewById(R.id.sphora);
+        min=(Spinner)findViewById(R.id.spmin);
+        hora2=(Spinner)findViewById(R.id.sphora2);
+        min2=(Spinner)findViewById(R.id.spmin2);
 
         //DATOS DE ENCARGADO DE TIENDA
 
@@ -421,6 +426,7 @@ public class PAR_Operativo extends AppCompatActivity {
         eventos40();
         eventos41();
         eventos42();
+        Eventos_Hora();
 
         pares1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
@@ -1963,6 +1969,55 @@ public class PAR_Operativo extends AppCompatActivity {
         anio = fecha.get(Calendar.YEAR);
         textFecha.setText(""+dia+"/"+(mes+1)+"/"+anio);
     }
+
+    public void Eventos_Hora(){
+
+        hora.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                paret17.setText(hora.getSelectedItem().toString() + ":" + min.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        min.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                paret17.setText(hora.getSelectedItem().toString() + ":" + min.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        hora2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                paret18.setText(hora2.getSelectedItem().toString() + ":" + min2.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        min2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                paret18.setText(hora2.getSelectedItem().toString() + ":" + min2.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+    }
+
 
 
 

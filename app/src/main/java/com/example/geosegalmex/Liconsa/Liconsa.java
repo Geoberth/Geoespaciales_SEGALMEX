@@ -31,9 +31,9 @@ import java.util.Calendar;
 import java.util.regex.Pattern;
 
 public class Liconsa extends AppCompatActivity {
-    EditText ernplpt1, ernplpt2, ernplpt3, ernplpt4, ernplpt5, ernplpt6, ernplpt7, ernplpt8, ernplpt9, ernplpt10, ernplpt11, ernplpt12, ernplpt13, ernplpt14, ernplpt15, ernplpt16, ernplpt17, ernplpt18, ernplpt19, ernplpt20, ernplpt21, ernplpt22, ernplpt23, ernplpt24, ernplpt25, ernplpt26, ernplpt27, ernplpt28, ernplpt29, ernplpt30, ernplpt31, ernplpt32, ernplpt33, ernplpt34, ernplpt35, ernplpt36, ernplpt37, ernplpt38, ernplpt39, ernplpt40, ernplpt41, ernplpt42, ernplpt43, ernplpt44, ernplpt45, ernplpt46, ernplpt47, ernplpt48, ernplpt49, ernplpt50, ernplpt51, ernplpt52, ernplpt53, ernplpt54;
+    EditText especifique, ernplpt1, ernplpt2, ernplpt3, ernplpt4, ernplpt5, ernplpt6, ernplpt7, ernplpt9, ernplpt10, ernplpt11, ernplpt12, ernplpt13, ernplpt14, ernplpt15, ernplpt16, ernplpt17, ernplpt18, ernplpt19, ernplpt20, ernplpt21, ernplpt22, ernplpt23, ernplpt24, ernplpt25, ernplpt26, ernplpt27, ernplpt28, ernplpt29, ernplpt30, ernplpt31, ernplpt32, ernplpt33, ernplpt34, ernplpt35, ernplpt36, ernplpt37, ernplpt38, ernplpt39, ernplpt40, ernplpt41, ernplpt42, ernplpt43, ernplpt44, ernplpt45, ernplpt46, ernplpt47, ernplpt48, ernplpt49, ernplpt50, ernplpt51, ernplpt52, ernplpt53, ernplpt54;
     RadioButton ernplpr1, ernplpr2, ernplpr3, ernplpr4, type1, type2, type3, ernplpr8, ernplpr9, ernplpr10, ernplpr11, ernplpr12, ernplpr13, ernplpr14, ernplpr15, ernplpr16, ernplpr17, ernplpr18, ernplpr19, ernplpr20, ernplpr21, ernplpr22, ernplpr23, ernplpr24, ernplpr25, ernplpr26, ernplpr27, ernplpr28, ernplpr29, ernplpr30, ernplpr31, ernplpr32, ernplpr33, ernplpr34, ernplpr35, ernplpr36, ernplpr37, ernplpr38, ernplpr39, ernplpr40, ernplpr41, ernplpr42, ernplpr43, ernplpr44, ernplpr45, ernplpr46, ernplpr47, ernplpr48, ernplpr49, ernplpr50, ernplpr51, ernplpr52, ernplpr53, ernplpr54, ernplpr55, ernplpr56, ernplpr57, ernplpr58, ernplpr59, ernplpr60, ernplpr61, ernplpr62, ernplpr63, ernplpr64, ernplpr65, ernplpr66, ernplpr67, ernplpr68, ernplpr69, ernplpr70, ernplpr71, ernplpr72;
-    Spinner ernplps1, ernplps2, spn;
+    Spinner ernplps1, ernplps2, spn, ernplpt8, spmes, spdia, spaño, spmes2, spdia2, spaño2;
     CheckBox ernplpc1, ernplpc2, ernplpc3;
     Button btnSiguiente;
     LinearLayout ll1, ll2;
@@ -124,7 +124,7 @@ public class Liconsa extends AppCompatActivity {
                     String nacion = ernplpt5.getText().toString();
                     String curp = ernplpt6.getText().toString();
                     String rfc = ernplpt7.getText().toString();
-                    String tipoide = ernplpt8.getText().toString();
+                    String tipoide = (ernplpt8.getSelectedItem().toString().equals("Otro"))? "Otro: " + especifique.getText().toString() : ernplpt8.getSelectedItem().toString() ;
                     String numide = ernplpt9.getText().toString();
                     String email = ernplpt10.getText().toString();
                     String tel = ernplpt11.getText().toString();
@@ -280,6 +280,15 @@ public class Liconsa extends AppCompatActivity {
         tv1 = (TextView) findViewById(R.id.TV1);
         tv2 = (TextView) findViewById(R.id.TV2);
 
+        especifique = (EditText)findViewById(R.id.docespecifique);
+        spdia = (Spinner) findViewById(R.id.spdia);
+        spmes = (Spinner) findViewById(R.id.spmes);
+        spaño = (Spinner) findViewById(R.id.spaño);
+
+        spdia2 = (Spinner) findViewById(R.id.spdia2);
+        spmes2 = (Spinner) findViewById(R.id.spmes2);
+        spaño2 = (Spinner) findViewById(R.id.spaño2);
+
         //INFORMACION PERSONAL
 
         ernplpt1 = (EditText)findViewById(R.id.ernpl_prod_txt1);
@@ -294,7 +303,7 @@ public class Liconsa extends AppCompatActivity {
         ernplpt5 = (EditText)findViewById(R.id.ernpl_prod_txt5);
         ernplpt6 = (EditText)findViewById(R.id.ernpl_prod_txt6);
         ernplpt7 = (EditText)findViewById(R.id.ernpl_prod_txt7);
-        ernplpt8 = (EditText)findViewById(R.id.ernpl_prod_txt8);
+        ernplpt8 = (Spinner)findViewById(R.id.ernpl_prod_txt8);
         ernplpt9 = (EditText)findViewById(R.id.ernpl_prod_txt9);
         ernplpt10 = (EditText)findViewById(R.id.ernpl_prod_txt10);
         ernplpt11 = (EditText)findViewById(R.id.ernpl_prod_txt11);
@@ -561,6 +570,92 @@ public class Liconsa extends AppCompatActivity {
             }
         });
 
+        ernplpt8.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 6:
+                        especifique.setVisibility(View.VISIBLE);
+                        break;
+                    default:
+                        especifique.setVisibility(View.GONE);
+                        break;
+                }
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spdia.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ernplpt4.setText(spdia.getSelectedItem().toString() + "/" + spmes.getSelectedItem().toString() + "/" + spaño.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spmes.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ernplpt4.setText(spdia.getSelectedItem().toString() + "/" + spmes.getSelectedItem().toString() + "/" + spaño.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spaño.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ernplpt4.setText(spdia.getSelectedItem().toString() + "/" + spmes.getSelectedItem().toString() + "/" + spaño.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        spdia2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ernplpt37.setText(spdia2.getSelectedItem().toString() + "/" + spmes2.getSelectedItem().toString() + "/" + spaño2.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spmes2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ernplpt37.setText(spdia2.getSelectedItem().toString() + "/" + spmes2.getSelectedItem().toString() + "/" + spaño2.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        spaño2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ernplpt37.setText(spdia2.getSelectedItem().toString() + "/" + spmes2.getSelectedItem().toString() + "/" + spaño2.getSelectedItem().toString());
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
 
 
     }
@@ -592,7 +687,6 @@ public class Liconsa extends AppCompatActivity {
 
     public boolean validar(){
         boolean retorno=true;
-
         if(ernplpt1.getText().toString().isEmpty()) {
             ernplpt1.setError("No puede quedar vacio");
             retorno = false;
@@ -633,20 +727,12 @@ public class Liconsa extends AppCompatActivity {
             ernplpt7.setError("RFC invalido");
             retorno=false;
         }
-        else if(ernplpt8.getText().toString().isEmpty()) {
-            ernplpt8.setError("No puede quedar vacio");
-            retorno = false;
+        else if(ernplpt8.getSelectedItem().toString().equals("Otro") && especifique.getText().toString().isEmpty()){
+            especifique.setError("No puede quedar vacio");
+            retorno=false;
         }
         else if(ernplpt9.getText().toString().isEmpty()) {
             ernplpt9.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if(ernplpt10.getText().toString().isEmpty()) {
-            ernplpt10.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if(ernplpt11.getText().toString().isEmpty()) {
-            ernplpt11.setError("No puede quedar vacio");
             retorno = false;
         }
         else if(!type1.isChecked() && !type2.isChecked() && !type3.isChecked()){

@@ -344,18 +344,6 @@ public class LiconsaVerificacion extends AppCompatActivity {
             c10.setError("Debes seleccionar una opción");
             retorno=false;
         }
-        else if(et11.getText().toString().isEmpty()) {
-            et11.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if(et12.getText().toString().isEmpty()) {
-            et12.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if(et13.getText().toString().isEmpty()) {
-            et13.setError("No puede quedar vacio");
-            retorno = false;
-        }
 
 
         return retorno;

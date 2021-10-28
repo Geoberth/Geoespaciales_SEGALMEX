@@ -78,6 +78,7 @@ public class GpsEnableb extends AppCompatActivity {
     String horaActual;
     Spinner proyecto;
     public String folioo;
+    int flag = 0;
 
     private ProgressBar miprogress, miprogress2;
     private ObjectAnimator anim, anim2;
@@ -205,6 +206,7 @@ public class GpsEnableb extends AppCompatActivity {
                         break;
                     case 10:
                         textid.setText("LI_E_"+folioo);
+                        flag = 1;
                         break;
 
                 }
@@ -221,6 +223,9 @@ public class GpsEnableb extends AppCompatActivity {
                 proyecto.setEnabled(false);
                 btnGPsEna.setVisibility(View.VISIBLE);
                 bertbeth.setVisibility(View.VISIBLE);
+                if (flag == 1){
+                    btnGPsEna.setText("Iniciar Cuestionario");
+                }
                 autoMatico();
                 btnSele.setEnabled(false);
             }

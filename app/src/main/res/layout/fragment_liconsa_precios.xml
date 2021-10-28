@@ -90,20 +90,14 @@
                 android:spinnerMode="dropdown"
                 android:textSize="8sp" />
 
-            <Button
-                android:id="@+id/btnCamara"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:text="Capturar Foto"/>
 
             <ImageView
                 android:id="@+id/logo1"
-                android:layout_width="200dp"
+                android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:src="@drawable/image_icon_compact_camera_pic_512x512"
                 android:visibility="gone"
+                android:layout_marginTop="5dp"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
@@ -117,13 +111,23 @@
                 android:textSize="15sp" />
 
             <Button
+                android:id="@+id/btnCamara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Capturar Foto"/>
+
+            <Button
                 android:id="@+id/btnNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#000000"
                 android:layout_marginTop="10dp"
-                android:text="Tomar Evidencia"/>
+                android:text="Guardar Evidencia"/>
+
+
 
 
         </LinearLayout>
