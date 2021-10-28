@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -304,7 +305,7 @@ public class PASLBeneficiario extends AppCompatActivity {
                 }
             }
         });
-
+        /*
         findViewById(R.id.paslb_ra35).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -316,6 +317,21 @@ public class PASLBeneficiario extends AppCompatActivity {
                 }
             }
         });
+       */
+
+            RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogroup1);
+            radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                    // checkedId is the RadioButton selected
+                    if (aceptable13.isChecked() == true) {
+                        trececom.setVisibility(View.VISIBLE);
+                    } else {
+                        trececom.setVisibility(View.GONE);
+                        trececom.setText("");
+                    }
+                }
+            });
+
 
         findViewById(R.id.paslb_ra38).setOnClickListener(new View.OnClickListener() {
             @Override

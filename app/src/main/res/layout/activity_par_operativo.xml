@@ -1280,8 +1280,6 @@
                         android:layout_height="wrap_content"
                         android:text="Aceite mixto Patrona." />
 
-
-
                     <com.google.android.material.checkbox.MaterialCheckBox
                         android:enabled="true"
                         android:layout_marginTop="0dp"

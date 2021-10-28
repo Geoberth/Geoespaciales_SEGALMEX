@@ -272,12 +272,28 @@ public class PASLOperativo extends AppCompatActivity {
             edad.setError("No puede quedar vacio");
             retorno=false;
         }
+        else if(Float.parseFloat(edad.getText().toString()) > 100){
+            edad.setError("No es un rango aceptable");
+            retorno=false;
+        }
+        else if(Float.parseFloat(edad.getText().toString()) < 10){
+            edad.setError("No es un rango aceptable");
+            retorno=false;
+        }
         else if(años.getText().toString().isEmpty()){
             años.setError("No puede quedar vacio");
             retorno=false;
         }
         else if(meses.getText().toString().isEmpty()){
             meses.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(Float.parseFloat(meses.getText().toString()) < 0){
+            meses.setError("No es un rango aceptable");
+            retorno=false;
+        }
+        else if(Float.parseFloat(meses.getText().toString()) > 12){
+            meses.setError("No es un rango aceptable");
             retorno=false;
         }
         else if(!sexo1.isChecked() && !sexo2.isChecked()){
@@ -344,6 +360,7 @@ public class PASLOperativo extends AppCompatActivity {
             observ.setError("El precio no puede ser mayor a $100.00 pesos");
             retorno=false;
         }
+
 
         else if(!si14.isChecked() && !no14.isChecked()){
             si14.setError("Debes seleccionar una opción");

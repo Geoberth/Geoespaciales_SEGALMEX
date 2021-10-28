@@ -584,7 +584,7 @@ public class PAR_Operativo extends AppCompatActivity {
                                     in.putExtra("model", model);
                                     startActivity(in);
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Debe seleccionar por lo menos una opción", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "Maximo puede seleccionar cinco opciones", Toast.LENGTH_SHORT).show();
                                 }
                             }
                             else{
@@ -598,7 +598,6 @@ public class PAR_Operativo extends AppCompatActivity {
                     else{
                         Toast.makeText(getApplicationContext(), "Maximo puede seleccionar cinco opciones",Toast.LENGTH_SHORT).show();
                     }
-
 
 
                 }
@@ -713,23 +712,6 @@ public class PAR_Operativo extends AppCompatActivity {
             parec119.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
-        /*
-        else if (paret08.getText().toString().isEmpty()){
-            paret08.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        else if (paret008.getText().toString().isEmpty()){
-            paret008.setError("No puede quedar vacio");
-            retorno = false;
-        }
-        */
-
-
-
-
-
-
-
         else if(!parer15.isChecked() && !parer16.isChecked()){
             parer16.setError("Debes seleccionar una opción");
             retorno=false;
@@ -996,7 +978,9 @@ public class PAR_Operativo extends AppCompatActivity {
 
     public boolean validarcapa3(){
         boolean retorno=true;
+
         int count=0;
+
         if(parec17.isChecked()){count = count + 1;}
         if(parec18.isChecked()){count = count + 1;}
         if(parec19.isChecked()){count = count + 1;}
@@ -1110,71 +1094,74 @@ public class PAR_Operativo extends AppCompatActivity {
 
     public boolean validarcapa4(){
         boolean retorno=true;
-        int count=0;
+        /*
+        int counte=0;
 
-        if(parec64.isChecked()){count = count + 1;}
-        if(parec65.isChecked()){count = count + 1;}
-        if(parec66.isChecked()){count = count + 1;}
-        if(parec67.isChecked()){count = count + 1;}
-        if(parec68.isChecked()){count = count + 1;}
-        if(parec69.isChecked()){count = count + 1;}
-        if(parec70.isChecked()){count = count + 1;}
-        if(parec71.isChecked()){count = count + 1;}
-        if(parec72.isChecked()){count = count + 1;}
-        if(parec73.isChecked()){count = count + 1;}
-        if(parec74.isChecked()){count = count + 1;}
-        if(parec75.isChecked()){count = count + 1;}
-        if(parec76.isChecked()){count = count + 1;}
-        if(parec77.isChecked()){count = count + 1;}
-        if(parec78.isChecked()){count = count + 1;}
-        if(parec79.isChecked()){count = count + 1;}
-        if(parec80.isChecked()){count = count + 1;}
-        if(parec81.isChecked()){count = count + 1;}
-        if(parec82.isChecked()){count = count + 1;}
-        if(parec83.isChecked()){count = count + 1;}
-        if(parec84.isChecked()){count = count + 1;}
-        if(parec85.isChecked()){count = count + 1;}
-        if(parec86.isChecked()){count = count + 1;}
-        if(parec87.isChecked()){count = count + 1;}
-        if(parec88.isChecked()){count = count + 1;}
-        if(parec89.isChecked()){count = count + 1;}
-        if(parec90.isChecked()){count = count + 1;}
-        if(parec91.isChecked()){count = count + 1;}
-        if(parec92.isChecked()){count = count + 1;}
-        if(parec93.isChecked()){count = count + 1;}
-        if(parec94.isChecked()){count = count + 1;}
-        if(parec95.isChecked()){count = count + 1;}
-        if(parec96.isChecked()){count = count + 1;}
-        if(parec97.isChecked()){count = count + 1;}
-        if(parec98.isChecked()){count = count + 1;}
-        if(parec99.isChecked()){count = count + 1;}
-        if(parec100.isChecked()){count = count + 1;}
-        if(parec101.isChecked()){count = count + 1;}
-        if(parec102.isChecked()){count = count + 1;}
-        if(parec103.isChecked()){count = count + 1;}
-        if(parec104.isChecked()){count = count + 1;}
-        if(parec105.isChecked()){count = count + 1;}
-        if(parec106.isChecked()){count = count + 1;}
-        if(parec107.isChecked()){count = count + 1;}
-        if(parec108.isChecked()){count = count + 1;}
-        if(parec109.isChecked()){count = count + 1;}
-        if(parec110.isChecked()){count = count + 1;}
-        if(parec111.isChecked()){count = count + 1;}
-        if(parec112.isChecked()){count = count + 1;}
-        if(parec113.isChecked()){count = count + 1;}
-        if(parec114.isChecked()){count = count + 1;}
-        if(parec115.isChecked()){count = count + 1;}
-        if(parec116.isChecked()){count = count + 1;}
-        if(parec117.isChecked()){count = count + 1;}
-        if(parec118.isChecked()){count = count + 1;}
-        if(parec119.isChecked()){count = count + 1;}
+        if(parec64.isChecked()){counte = counte + 1;}
+        if(parec65.isChecked()){counte = counte + 1;}
+        if(parec66.isChecked()){counte = counte + 1;}
+        if(parec67.isChecked()){counte = counte + 1;}
+        if(parec68.isChecked()){counte = counte + 1;}
+        if(parec69.isChecked()){counte = counte + 1;}
+        if(parec70.isChecked()){counte = counte + 1;}
+        if(parec71.isChecked()){counte = counte + 1;}
+        if(parec72.isChecked()){counte = counte + 1;}
+        if(parec73.isChecked()){counte = counte + 1;}
+        if(parec74.isChecked()){counte = counte + 1;}
+        if(parec75.isChecked()){counte = counte + 1;}
+        if(parec76.isChecked()){counte = counte + 1;}
+        if(parec77.isChecked()){counte = counte + 1;}
+        if(parec78.isChecked()){counte = counte + 1;}
+        if(parec79.isChecked()){counte = counte + 1;}
+        if(parec80.isChecked()){counte = counte + 1;}
+        if(parec81.isChecked()){counte = counte + 1;}
+        if(parec82.isChecked()){counte = counte + 1;}
+        if(parec83.isChecked()){counte = counte + 1;}
+        if(parec84.isChecked()){counte = counte + 1;}
+        if(parec85.isChecked()){counte = counte + 1;}
+        if(parec86.isChecked()){counte = counte + 1;}
+        if(parec87.isChecked()){counte = counte + 1;}
+        if(parec88.isChecked()){counte = counte + 1;}
+        if(parec89.isChecked()){counte = counte + 1;}
+        if(parec90.isChecked()){counte = counte + 1;}
+        if(parec91.isChecked()){counte = counte + 1;}
+        if(parec92.isChecked()){counte = counte + 1;}
+        if(parec93.isChecked()){counte = counte + 1;}
+        if(parec94.isChecked()){counte = counte + 1;}
+        if(parec95.isChecked()){counte = counte + 1;}
+        if(parec96.isChecked()){counte = counte + 1;}
+        if(parec97.isChecked()){counte = counte + 1;}
+        if(parec98.isChecked()){counte = counte + 1;}
+        if(parec99.isChecked()){counte = counte + 1;}
+        if(parec100.isChecked()){counte = counte + 1;}
+        if(parec101.isChecked()){counte = counte + 1;}
+        if(parec102.isChecked()){counte = counte + 1;}
+        if(parec103.isChecked()){counte = counte + 1;}
+        if(parec104.isChecked()){counte = counte + 1;}
+        if(parec105.isChecked()){counte = counte + 1;}
+        if(parec106.isChecked()){counte = counte + 1;}
+        if(parec107.isChecked()){counte = counte + 1;}
+        if(parec108.isChecked()){counte = counte + 1;}
+        if(parec109.isChecked()){counte = counte + 1;}
+        if(parec110.isChecked()){counte = counte + 1;}
+        if(parec111.isChecked()){counte = counte + 1;}
+        if(parec112.isChecked()){counte = counte + 1;}
+        if(parec113.isChecked()){counte = counte + 1;}
+        if(parec114.isChecked()){counte = counte + 1;}
+        if(parec115.isChecked()){counte = counte + 1;}
+        if(parec116.isChecked()){counte = counte + 1;}
+        if(parec117.isChecked()){counte = counte + 1;}
+        if(parec118.isChecked()){counte = counte + 1;}
+        if(parec119.isChecked()){counte = counte + 1;}
 
-        if(count<=5) {
+        if(counte<=5) {
             retorno = true;
         }
         else{
             retorno=false;
         }
+
+         */
         return retorno;
     }
 

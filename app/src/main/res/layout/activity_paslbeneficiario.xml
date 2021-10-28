@@ -631,6 +631,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -705,6 +706,7 @@
                 android:id="@+id/paslb_txt14"
                 android:layout_width="match_parent"
                 android:visibility="gone"
+                android:hint="¿Porque?"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
 
