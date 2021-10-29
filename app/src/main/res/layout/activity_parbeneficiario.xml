@@ -164,6 +164,7 @@
                     android:id="@+id/par_ben_txt3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:maxLength="2"
                     android:inputType="number"
                     android:maxLines="1" />
 
@@ -210,11 +211,16 @@
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
 
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/combo2"
                 android:orientation="vertical">
+
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -326,7 +332,8 @@
                     android:layout_row="6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Arroz Comercial." />
+                    android:textSize="12sp"
+                    android:text="Leche semidescremada en polvo fortificada." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -336,7 +343,7 @@
                     android:layout_row="6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chiles jalapeños \nenteros." />
+                    android:text="Chiles jalapeños enteros." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -503,7 +510,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:text="Leche Entera en \nPolvo Fortificada." />
+                    android:text="Leche Entera en Polvo Fortificada." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -524,7 +531,7 @@
                     android:id="@+id/par_ben_ch30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Entera UGT en \nBolsa Aséptica" />
+                    android:text="Leche Entera UGT en Bolsa Aséptica" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -545,7 +552,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Semidescremada \nUHT en Bolsa Aséptica." />
+                    android:text="Leche Semidescremada UHT en Bolsa Aséptica." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -556,7 +563,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Descremada \nUHT en Bolsa Aséptica." />
+                    android:text="Leche Descremada UHT en Bolsa Aséptica." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -567,7 +574,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Semidescremada \nSabor Chocolate." />
+                    android:text="Leche Semidescremada Sabor Chocolate." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -577,7 +584,7 @@
                     android:id="@+id/par_ben_ch35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Semidescremada \nSabor Fresa." />
+                    android:text="Leche Semidescremada Sabor Fresa." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -598,7 +605,7 @@
                     android:id="@+id/par_ben_ch37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Semidescremada \nSabor Vainilla." />
+                    android:text="Leche Semidescremada Sabor Vainilla." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -630,7 +637,7 @@
                     android:id="@+id/par_ben_ch40"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sardina en Salsa \nde Tomate." />
+                    android:text="Sardina en Salsa de Tomate." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -671,7 +678,7 @@
                     android:id="@+id/par_ben_ch44"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chícharos con Zanahoria \n(LA COSTEÑA)." />
+                    android:text="Chícharos con Zanahoria (LA COSTEÑA)." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -682,7 +689,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Chícharos con Zanahoria \n(CLEMENTE JACQUES)." />
+                    android:text="Chícharos con Zanahoria (CLEMENTE JACQUES)." />
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -703,10 +710,13 @@
                     android:id="@+id/par_ben_ch47"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Soya Texturizada \n(NUTRICASA)." />
+                    android:text="Soya Texturizada (NUTRICASA)." />
+
 
 
             </GridLayout>
+
+            </HorizontalScrollView>
 
                 <TextView
                     android:text="3. ¿Se tienen a la vista los precios de los productos de la canasta básica DICONSA en esta tienda?"
@@ -797,6 +807,10 @@
                         android:text="No" />
                 </RadioGroup>
 
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -854,6 +868,7 @@
                     android:text="Garrafón 20 Lt. Agua." />
 
             </GridLayout>
+            </HorizontalScrollView>
 
                 <TextView
                     android:text="6. ¿Qué le parece la calidad de los productos (de la canasta básica DICONSA) que se ofrecen?"
@@ -917,6 +932,10 @@
                         android:text="Sí" />
 
                 </RadioGroup>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -1034,7 +1053,8 @@
                     android:layout_row="6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Arroz Comercial." />
+                    android:textSize="12sp"
+                    android:text="Leche semidescremada en polvo fortificada."/>
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1044,7 +1064,7 @@
                     android:layout_row="6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chiles jalapeños \nenteros." />
+                    android:text="Chiles jalapeños enteros." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1211,7 +1231,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Entera en Polvo \nFortificada." />
+                    android:text="Leche Entera en Polvo Fortificada." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1232,7 +1252,7 @@
                     android:id="@+id/par_ben_ch82"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Entera UGT en \nBolsa Aséptica" />
+                    android:text="Leche Entera UGT en Bolsa Aséptica" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1253,7 +1273,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Semidescremada \nUHT en Bolsa Aséptica." />
+                    android:text="Leche Semidescremada UHT en Bolsa Aséptica." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1264,7 +1284,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Descremada \nUHT en Bolsa Aséptica." />
+                    android:text="Leche Descremada UHT en Bolsa Aséptica." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1275,7 +1295,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Semidescremada \nSabor Chocolate." />
+                    android:text="Leche Semidescremada Sabor Chocolate." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1285,7 +1305,7 @@
                     android:id="@+id/par_ben_ch87"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Semidescremada \nSabor Fresa." />
+                    android:text="Leche Semidescremada Sabor Fresa." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1306,7 +1326,7 @@
                     android:id="@+id/par_ben_ch89"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Semidescremada \nSabor Vainilla." />
+                    android:text="Leche Semidescremada Sabor Vainilla." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1338,7 +1358,7 @@
                     android:id="@+id/par_ben_ch92"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sardina en Salsa \nde Tomate." />
+                    android:text="Sardina en Salsa de Tomate." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1380,7 +1400,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Chícharos con Zanahoria \n(LA COSTEÑA)." />
+                    android:text="Chícharos con Zanahoria (LA COSTEÑA)." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1390,7 +1410,7 @@
                     android:id="@+id/par_ben_ch97"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chícharos con Zanahoria \n(CLEMENTE JACQUES)." />
+                    android:text="Chícharos con Zanahoria (CLEMENTE JACQUES)." />
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -1411,9 +1431,10 @@
                     android:id="@+id/par_ben_ch99"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Soya Texturizada \n(NUTRICASA)." />
+                    android:text="Soya Texturizada (NUTRICASA)." />
 
             </GridLayout>
+            </HorizontalScrollView>
 
 
 
@@ -1425,6 +1446,10 @@
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
                     android:layout_height="wrap_content"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -1441,7 +1466,7 @@
                     android:layout_row="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceite" />
+                    android:text="Aceite comestible" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1512,6 +1537,7 @@
                     android:id="@+id/par_ben_ch149"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="12sp"
                     android:text="Chocolate en polvo en bolsa" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -1632,7 +1658,7 @@
                     android:id="@+id/par_ben_ch161"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sardina en salsa \nde tomate" />
+                    android:text="Sardina en salsa de tomate" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -1716,6 +1742,7 @@
 
 
             </GridLayout>
+            </HorizontalScrollView>
 
                 <TextView
                     android:text="9. ¿Conoce el horario de apertura y cierre de la tienda?"
@@ -2255,6 +2282,10 @@
                         android:text="No"/>
                 </RadioGroup>
 
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -2370,7 +2401,8 @@
                     android:layout_row="6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Arroz Comercial." />
+                    android:textSize="12sp"
+                    android:text="Leche semidescremada en polvo fortificada."/>
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2380,7 +2412,7 @@
                     android:layout_row="6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chiles jalapeños \nenteros." />
+                    android:text="Chiles jalapeños enteros." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2547,7 +2579,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:text="Leche Entera en Polvo \nFortificada." />
+                    android:text="Leche Entera en Polvo Fortificada." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2568,7 +2600,7 @@
                     android:id="@+id/par_ben_ch219"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Entera UGT en \nBolsa Aséptica" />
+                    android:text="Leche Entera UGT en Bolsa Aséptica" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2589,7 +2621,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Semidescremada \nUHT en Bolsa Aséptica." />
+                    android:text="Leche Semidescremada UHT en Bolsa Aséptica." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2600,7 +2632,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Descremada \nUHT en Bolsa Aséptica." />
+                    android:text="Leche Descremada UHT en Bolsa Aséptica." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2611,7 +2643,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Leche Semidescremada \nSabor Chocolate." />
+                    android:text="Leche Semidescremada Sabor Chocolate." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2621,7 +2653,7 @@
                     android:id="@+id/par_ben_ch224"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Semidescremada \nSabor Fresa." />
+                    android:text="Leche Semidescremada Sabor Fresa." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2642,7 +2674,7 @@
                     android:id="@+id/par_ben_ch226"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leche Semidescremada \nSabor Vainilla." />
+                    android:text="Leche Semidescremada Sabor Vainilla." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2674,7 +2706,7 @@
                     android:id="@+id/par_ben_ch229"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sardina en Salsa \nde Tomate." />
+                    android:text="Sardina en Salsa de Tomate." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2715,7 +2747,7 @@
                     android:id="@+id/par_ben_ch233"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chícharos con Zanahoria \n(LA COSTEÑA)." />
+                    android:text="Chícharos con Zanahoria (LA COSTEÑA)." />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
@@ -2726,7 +2758,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="Chícharos con Zanahoria \n(CLEMENTE JACQUES)." />
+                    android:text="Chícharos con Zanahoria (CLEMENTE JACQUES)." />
 
 
                 <com.google.android.material.checkbox.MaterialCheckBox
@@ -2747,9 +2779,10 @@
                     android:id="@+id/par_ben_ch236"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Soya Texturizada \n(NUTRICASA)." />
+                    android:text="Soya Texturizada (NUTRICASA)." />
 
             </GridLayout>
+            </HorizontalScrollView>
 
 
 
@@ -2976,7 +3009,7 @@
                     android:maxLines="1" />
 
                 <TextView
-                    android:text="26. ¿Cuáles son las principales desventajas de esta tienda?"
+                    android:text="26. ¿Cuáles son las principales desventajas de esta tienda que usted identifica?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -3047,7 +3080,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:inputType="textAutoCorrect"
+                    android:capitalize="sentences"
                     android:textColor="#000000"/>
 
                 <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
