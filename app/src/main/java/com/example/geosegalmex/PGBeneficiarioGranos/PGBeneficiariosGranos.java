@@ -10,8 +10,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -257,6 +259,33 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   pgbt29 = (EditText)findViewById(R.id.pre_garan_granos_txt29);
 
   btnSiguiente = findViewById(R.id.pre_garan_granos_sig);
+  pgbt21.setVisibility(View.GONE);
+  pgbr17.setEnabled(false);
+  pgbr18.setEnabled(false);
+  pgbr19.setEnabled(false);
+  pgbr20.setEnabled(false);
+  pgbr51.setEnabled(false);
+  pgbr52.setEnabled(false);
+  pgbr53.setEnabled(false);
+  pgbr54.setEnabled(false);
+  pgbr55.setEnabled(false);
+  pgbr56.setEnabled(false);
+  pgbr57.setEnabled(false);
+  pgbr58.setEnabled(false);
+  pgbr59.setEnabled(false);
+  pgbr60.setEnabled(false);
+  pgbr61.setEnabled(false);
+  pgbr62.setEnabled(false);
+  pgbr63.setEnabled(false);
+  pgbr64.setEnabled(false);
+  pgbr65.setEnabled(false);
+  pgbr66.setEnabled(false);
+  pgbr67.setEnabled(false);
+  pgbt25.setVisibility(View.GONE);
+  pgbr68.setEnabled(false);
+  pgbr69.setEnabled(false);
+  pgbr70.setEnabled(false);
+
 
   muestrafecha();
 
@@ -321,6 +350,130 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
     return;
    }
   });
+
+
+  RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radg1);
+  radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+  {
+   public void onCheckedChanged(RadioGroup group, int checkedId) {
+    // checkedId is the RadioButton selected
+    if(pgbr16.isChecked()==true){
+     pgbt21.setVisibility(View.VISIBLE);
+    }else{
+     pgbt21.setVisibility(View.GONE);
+    }
+   }
+  });
+
+  RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.rad2);
+  radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+  {
+   public void onCheckedChanged(RadioGroup group, int checkedId) {
+    // checkedId is the RadioButton selected
+    if(propeq.isChecked()==true){
+     //solo maiz o frijol
+      pgbr18.setEnabled(true);
+      pgbr19.setEnabled(true);
+      pgbr20.setEnabled(false);
+      pgbr20.setChecked(false);
+      pgbr17.setEnabled(false);
+      pgbr17.setChecked(false);
+      //Bloquear PREGUNTAS ADICIONALES MEDIANO
+      pgbr53.setEnabled(false);
+      pgbr54.setEnabled(false);
+      pgbr55.setEnabled(false);
+      pgbr56.setEnabled(false);
+      pgbr57.setEnabled(false);
+      pgbr58.setEnabled(false);
+      pgbr59.setEnabled(false);
+      pgbr60.setEnabled(false);
+      pgbr61.setEnabled(false);
+      pgbr62.setEnabled(false);
+      pgbr63.setEnabled(false);
+      pgbr64.setEnabled(false);
+      pgbr65.setEnabled(false);
+      pgbr66.setEnabled(false);
+      pgbr67.setEnabled(false);
+     //Limpiar PREGUNTAS ADICIONALES MEDIANO
+      pgbr53.setChecked(false);
+      pgbr54.setChecked(false);
+      pgbr55.setChecked(false);
+      pgbr56.setChecked(false);
+      pgbr57.setChecked(false);
+      pgbr58.setChecked(false);
+      pgbr59.setChecked(false);
+      pgbr60.setChecked(false);
+      pgbr61.setChecked(false);
+      pgbr62.setChecked(false);
+      pgbr63.setChecked(false);
+      pgbr64.setChecked(false);
+      pgbr65.setChecked(false);
+      pgbr66.setChecked(false);
+      pgbr67.setChecked(false);
+      //DESBLOQUEAR PREGUNTA EXCLUSIVA DE PEQUEÑO PRODUCTOR
+      pgbr51.setEnabled(true);
+      pgbr52.setEnabled(true);
+
+     pgbr68.setEnabled(false);
+     pgbr69.setEnabled(false);
+     pgbr70.setEnabled(false);
+     pgbr68.setChecked(false);
+     pgbr69.setChecked(false);
+     pgbr70.setChecked(false);
+
+    }else{
+
+     //Excluir frijol
+     pgbr17.setEnabled(true);
+     pgbr18.setEnabled(true);
+     pgbr20.setEnabled(true);
+     pgbr19.setEnabled(false);
+     pgbr19.setChecked(false);
+     //Desbloquear PREGUNTAS ADICIONALES MEDIANO
+     pgbr53.setEnabled(true);
+     pgbr54.setEnabled(true);
+     pgbr55.setEnabled(true);
+     pgbr56.setEnabled(true);
+     pgbr57.setEnabled(true);
+     pgbr58.setEnabled(true);
+     pgbr59.setEnabled(true);
+     pgbr60.setEnabled(true);
+     pgbr61.setEnabled(true);
+     pgbr62.setEnabled(true);
+     pgbr63.setEnabled(true);
+     pgbr64.setEnabled(true);
+     pgbr65.setEnabled(true);
+     pgbr66.setEnabled(true);
+     pgbr67.setEnabled(true);
+     //BLOQUEAR Y LIMPIAR PREGUNTA EXCLUSIVA DE PEQUEÑO PRODUCTOR
+     pgbr51.setEnabled(false);
+     pgbr52.setEnabled(false);
+     pgbr51.setChecked(false);
+     pgbr52.setChecked(false);
+
+     pgbr68.setEnabled(true);
+     pgbr69.setEnabled(true);
+     pgbr70.setEnabled(true);
+
+
+    }
+   }
+  });
+
+  pgbc19.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+   @Override
+   public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
+     if(pgbc19.isChecked()==true){
+      pgbt25.setVisibility(View.VISIBLE);
+     }else{
+      pgbt25.setVisibility(View.GONE);
+      pgbt25.setText("");
+     }
+    }
+   }
+  );
+
+
 
 
   btnSiguiente.setOnClickListener(new View.OnClickListener() {
@@ -393,14 +546,13 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String pgr17 = obtenerRadio(pgbr45, pgbr46);
      String pgr18 = obtenerRadio(pgbr47, pgbr48);
      String pgr19 = obtenerRadio(pgbr49, pgbr50);
-     String pgr20 = obtenerRadio(pgbr51, pgbr52);
-
-     String pgr21 = obtenerRadioooo(pgbr53, pgbr54, pgbr55);
-     String pgr22 = obtenerRadioooo(pgbr56, pgbr57, pgbr58);
-     String pgr23 = obtenerRadioooo(pgbr59, pgbr60, pgbr61);
-     String pgr24 = obtenerRadioooo(pgbr62, pgbr63, pgbr64);
-     String pgr25 = obtenerRadioooo(pgbr65, pgbr66, pgbr67);
-     String pgr26 = obtenerRadioooo(pgbr68, pgbr68, pgbr70);
+     String pgr20 = (propeq.isChecked()==true)? obtenerRadio(pgbr51, pgbr52) : "" ;
+     String pgr21 = (promed.isChecked()==true)? obtenerRadioooo(pgbr53, pgbr54, pgbr55) : "" ;
+     String pgr22 = (promed.isChecked()==true)? obtenerRadioooo(pgbr56, pgbr57, pgbr58) : "" ;
+     String pgr23 = (promed.isChecked()==true)? obtenerRadioooo(pgbr59, pgbr60, pgbr61) : "" ;
+     String pgr24 = (promed.isChecked()==true)? obtenerRadioooo(pgbr62, pgbr63, pgbr64) : "" ;
+     String pgr25 = (promed.isChecked()==true)? obtenerRadioooo(pgbr65, pgbr66, pgbr67) : "" ;
+     String pgr26 = (promed.isChecked()==true)? obtenerRadioooo(pgbr68, pgbr69, pgbr70) : "" ;
      String pgr27 = obtenerRadioooo(pgbr71, pgbr72, pgbr73);
      String pgr28 = obtenerRadioooo(pgbr74, pgbr75, pgbr76);
      String pgr29 = obtenerRadioooo(pgbr77, pgbr78, pgbr79);
@@ -587,14 +739,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
    pgbt6.setError("No puede quedar vacío");
    retorno = false;
   }
-  else if (pgbt7.getText().toString().isEmpty()){
-   pgbt7.setError("No puede quedar vacío");
-   retorno = false;
-  }
-  else if (pgbt8.getText().toString().isEmpty()){
-   pgbt8.setError("No puede quedar vacío");
-   retorno = false;
-  }
   else if (pgbt9.getText().toString().isEmpty()){
    pgbt9.setError("No puede quedar vacío");
    retorno = false;
@@ -602,14 +746,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
 
   else if (pgbt13.getText().toString().isEmpty()){
    pgbt13.setError("No puede quedar vacío");
-   retorno = false;
-  }
-  else if (pgbt14.getText().toString().isEmpty()){
-   pgbt14.setError("No puede quedar vacío");
-   retorno = false;
-  }
-  else if (pgbt15.getText().toString().isEmpty()){
-   pgbt15.setError("No puede quedar vacío");
    retorno = false;
   }
   else if (pgbt16.getText().toString().isEmpty()){
@@ -702,31 +838,31 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
    pgbr50.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr51.isChecked() && !pgbr52.isChecked()) {
+  else if (!pgbr51.isChecked() && !pgbr52.isChecked() && propeq.isChecked()) {
    pgbr52.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr53.isChecked() && !pgbr54.isChecked() && !pgbr55.isChecked()) {
+  else if (!pgbr53.isChecked() && !pgbr54.isChecked() && !pgbr55.isChecked() && promed.isChecked()) {
    pgbr55.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr56.isChecked() && !pgbr57.isChecked() && !pgbr58.isChecked()) {
+  else if (!pgbr56.isChecked() && !pgbr57.isChecked() && !pgbr58.isChecked() && promed.isChecked()) {
    pgbr58.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr59.isChecked() && !pgbr60.isChecked() && !pgbr61.isChecked()) {
+  else if (!pgbr59.isChecked() && !pgbr60.isChecked() && !pgbr61.isChecked() && promed.isChecked()) {
    pgbr61.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr62.isChecked() && !pgbr63.isChecked() && !pgbr64.isChecked()) {
+  else if (!pgbr62.isChecked() && !pgbr63.isChecked() && !pgbr64.isChecked() && promed.isChecked()) {
    pgbr64.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr65.isChecked() && !pgbr66.isChecked() && !pgbr67.isChecked()) {
+  else if (!pgbr65.isChecked() && !pgbr66.isChecked() && !pgbr67.isChecked() && promed.isChecked()) {
    pgbr67.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr68.isChecked() && !pgbr69.isChecked() && !pgbr70.isChecked()) {
+  else if (!pgbr68.isChecked() && !pgbr69.isChecked() && !pgbr70.isChecked() && promed.isChecked()) {
    pgbr70.setError("Debes seleccionar una opción");
    retorno = false;
   }

@@ -331,9 +331,26 @@ com/example/geosegalmex/Pecuario/PecuarioManejoAgostadero.java
  com.example.geosegalmex.Pecuario.PecuarioManejoAgostadero
  com.example.geosegalmex.Pecuario.PecuarioManejoAgostadero$1
  com.example.geosegalmex.Pecuario.PecuarioManejoAgostadero$2
-com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
+com/example/geosegalmex/PAROperativo/PAR_Operativo.java
+ com.example.geosegalmex.PAROperativo.PAR_Operativo
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$1
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$10
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$11
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$12
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$13
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$14
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$15
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$16
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$17
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$18
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$2
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$3
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$4
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$5
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$6
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$7
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$8
+ com.example.geosegalmex.PAROperativo.PAR_Operativo$9
 com/example/geosegalmex/Productor/ProductorInfo.java
  com.example.geosegalmex.Productor.ProductorInfo
  com.example.geosegalmex.Productor.ProductorInfo$1
@@ -420,6 +437,9 @@ com/example/geosegalmex/PGBeneficiarioGranos/PGBeneficiariosGranos.java
  com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos$3
  com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos$4
  com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos$5
+ com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos$6
+ com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos$7
+ com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos$8
 com/example/geosegalmex/Liconsa2/LiconsaVerificacion.java
  com.example.geosegalmex.Liconsa2.LiconsaVerificacion
  com.example.geosegalmex.Liconsa2.LiconsaVerificacion$1
@@ -643,11 +663,16 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/ControlPlagasEnfermB.jav
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$1
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$2
-com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3
+com/example/geosegalmex/NewCamara.java
+ com.example.geosegalmex.NewCamara
+ com.example.geosegalmex.NewCamara$1
+ com.example.geosegalmex.NewCamara$1$1
+ com.example.geosegalmex.NewCamara$2
+ com.example.geosegalmex.NewCamara$2$1
+ com.example.geosegalmex.NewCamara$3
+ com.example.geosegalmex.NewCamara$3$1
+ com.example.geosegalmex.NewCamara$4
+ com.example.geosegalmex.NewCamara$4$1
 com/example/geosegalmex/unidadcomercializacion/comercializacion_6.java
  com.example.geosegalmex.unidadcomercializacion.comercializacion_6
  com.example.geosegalmex.unidadcomercializacion.comercializacion_6$1
@@ -759,33 +784,11 @@ com/example/geosegalmex/Gps/Trayectoria.java
 com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
-com/example/geosegalmex/NewCamara.java
- com.example.geosegalmex.NewCamara
- com.example.geosegalmex.NewCamara$1
- com.example.geosegalmex.NewCamara$1$1
- com.example.geosegalmex.NewCamara$2
- com.example.geosegalmex.NewCamara$2$1
- com.example.geosegalmex.NewCamara$3
- com.example.geosegalmex.NewCamara$3$1
- com.example.geosegalmex.NewCamara$4
- com.example.geosegalmex.NewCamara$4$1
-com/example/geosegalmex/PAROperativo/PAR_Operativo.java
- com.example.geosegalmex.PAROperativo.PAR_Operativo
- com.example.geosegalmex.PAROperativo.PAR_Operativo$1
- com.example.geosegalmex.PAROperativo.PAR_Operativo$10
- com.example.geosegalmex.PAROperativo.PAR_Operativo$11
- com.example.geosegalmex.PAROperativo.PAR_Operativo$12
- com.example.geosegalmex.PAROperativo.PAR_Operativo$13
- com.example.geosegalmex.PAROperativo.PAR_Operativo$14
- com.example.geosegalmex.PAROperativo.PAR_Operativo$15
- com.example.geosegalmex.PAROperativo.PAR_Operativo$16
- com.example.geosegalmex.PAROperativo.PAR_Operativo$17
- com.example.geosegalmex.PAROperativo.PAR_Operativo$18
- com.example.geosegalmex.PAROperativo.PAR_Operativo$2
- com.example.geosegalmex.PAROperativo.PAR_Operativo$3
- com.example.geosegalmex.PAROperativo.PAR_Operativo$4
- com.example.geosegalmex.PAROperativo.PAR_Operativo$5
- com.example.geosegalmex.PAROperativo.PAR_Operativo$6
- com.example.geosegalmex.PAROperativo.PAR_Operativo$7
- com.example.geosegalmex.PAROperativo.PAR_Operativo$8
- com.example.geosegalmex.PAROperativo.PAR_Operativo$9
+com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
+com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3

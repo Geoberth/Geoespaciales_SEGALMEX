@@ -155,18 +155,6 @@
                 android:inputType="textCapWords|textAutoCorrect"
                 android:maxLines="1" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Num Int:"
-                android:textColor="#000000" />
-
-            <EditText
-                android:id="@+id/pre_garan_leche_txt7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -176,6 +164,19 @@
 
             <EditText
                 android:id="@+id/pre_garan_leche_txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num Int:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pre_garan_leche_txt7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
@@ -441,7 +442,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="20dp"
-                android:text="INFORMACIÓN DE ACOPIO"
+                android:text="INFORMACIÓN DEL CENTRO DE ACOPIO DE LECHE"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -1322,6 +1323,14 @@
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="¿Cómo se entero del Programa y los requisitos?:"
+                android:textColor="#000000"
+                android:visibility="visible" />
+
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/pre_garan_leche_ch9"
                 android:layout_width="match_parent"
@@ -1424,7 +1433,7 @@
                 android:id="@+id/pre_garan_leche_txt25"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textCapWords|textAutoCorrect"
+                android:capitalize="sentences"
                 android:maxLines="1" />
 
             <TextView
@@ -1438,7 +1447,7 @@
                 android:id="@+id/pre_garan_leche_txt26"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textCapWords|textAutoCorrect"
+                android:capitalize="sentences"
                 android:maxLines="1" />
 
             <TextView
@@ -1452,7 +1461,7 @@
                 android:id="@+id/pre_garan_leche_txt27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textCapWords|textAutoCorrect"
+                android:capitalize="sentences"
                 android:maxLines="1" />
 
             <TextView
@@ -1466,7 +1475,7 @@
                 android:id="@+id/pre_garan_leche_txt28"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textCapWords|textAutoCorrect"
+                android:capitalize="sentences"
                 android:maxLines="1" />
 
             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton

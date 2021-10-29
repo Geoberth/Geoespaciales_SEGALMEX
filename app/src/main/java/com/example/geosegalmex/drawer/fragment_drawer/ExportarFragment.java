@@ -3,14 +3,18 @@ package com.example.geosegalmex.drawer.fragment_drawer;
 
 import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
 import android.os.Environment;
@@ -371,4 +375,9 @@ public class ExportarFragment extends Fragment {
 
 
     }
+
+
+
+
+
 }

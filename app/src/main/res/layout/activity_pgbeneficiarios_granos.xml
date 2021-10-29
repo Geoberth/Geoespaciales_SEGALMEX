@@ -140,6 +140,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/rad2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -471,6 +472,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radg1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">

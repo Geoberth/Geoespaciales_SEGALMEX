@@ -4909,6 +4909,8 @@ int id propoleo_tresdos 0x7f090cfe
 int id proveedor_tiempo 0x7f090cff
 int id pv_agr_1 0x7f090d00
 int id pv_oi_agr_3 0x7f090d01
+int id rad2 0x7f09108c
+int id radg1 0x7f09108d
 int id radio 0x7f090d02
 int id radio13 0x7f090d03
 int id radio17 0x7f090d04

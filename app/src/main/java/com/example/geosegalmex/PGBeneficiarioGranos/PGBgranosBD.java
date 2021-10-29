@@ -61,6 +61,7 @@ public class PGBgranosBD extends SQLiteOpenHelper {
         contentValues.put(PGB_granos_bd.COLUMN_PGR2, model.getPgr2());
         contentValues.put(PGB_granos_bd.COLUMN_PGR3, model.getPgr3());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT21, model.getPgbtt21());
+        contentValues.put(PGB_granos_bd.COLUMN_PGR4, model.getPgr4());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT22, model.getPgbtt22());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT23, model.getPgbtt23());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT24, model.getPgbtt24());
