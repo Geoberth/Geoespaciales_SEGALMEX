@@ -2,11 +2,10 @@
 <resources>
     <string-array name="vialidad">
         <item>Calle</item>
-        <item>mpliación</item>
+        <item>Ampliación</item>
         <item>Andador</item>
         <item>Avenida</item>
         <item>Boulevard</item>
-        <item>Calle</item>
         <item>Callejón</item>
         <item>Calzada</item>
         <item>Cerrada</item>

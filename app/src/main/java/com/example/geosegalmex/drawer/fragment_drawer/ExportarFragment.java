@@ -63,6 +63,8 @@ public class ExportarFragment extends Fragment {
 
         // tvProgreso = vistaExportar.findViewById(R.id.tvProgreso);
         fabExportar = vistaExportar.findViewById(R.id.fab_exportar);
+        ed1 = vistaExportar.findViewById(R.id.pasl_o_tvTitulo55);
+        ed1.setVisibility(View.GONE);
 
         int permissionCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
         if (ContextCompat.checkSelfPermission(getContext(),
@@ -217,6 +219,8 @@ public class ExportarFragment extends Fragment {
                     }
                     e.printStackTrace();
                 }
+
+                ed1.setVisibility(View.VISIBLE);
 
 
 

@@ -735,10 +735,6 @@ public class Liconsa extends AppCompatActivity {
             ernplpt9.setError("No puede quedar vacio");
             retorno = false;
         }
-        else if(!type1.isChecked() && !type2.isChecked() && !type3.isChecked()){
-            type1.setError("Debes seleccionar una opción");
-            retorno=false;
-        }
         else if(ernplpt12.getText().toString().isEmpty()) {
             ernplpt12.setError("No puede quedar vacio");
             retorno = false;

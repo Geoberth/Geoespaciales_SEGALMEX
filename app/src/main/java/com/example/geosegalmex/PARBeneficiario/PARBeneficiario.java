@@ -1,17 +1,10 @@
 package com.example.geosegalmex.PARBeneficiario;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Georeferencia.GeoreferenciaActivity;
-import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
-import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
-import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche_Model;
-import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
-import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos_Model;
 import com.example.geosegalmex.R;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,6 +21,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Calendar;
 
 public class PARBeneficiario extends AppCompatActivity {
@@ -41,8 +36,17 @@ public class PARBeneficiario extends AppCompatActivity {
     EditText parbs3, parbt23, parbt27;
     TextView textFecha;
     CheckBox parbc1, parbc2, parbc3, parbc4, parbc5, parbc6, parbc7, parbc8, parbc9, parbc10, parbc11, parbc12, parbc13, parbc14, parbc15, parbc16, parbc17, parbc18, parbc19, parbc20, parbc21, parbc22, parbc23, parbc24, parbc25, parbc26, parbc27, parbc28, parbc29, parbc30, parbc31, parbc32, parbc33, parbc34, parbc35, parbc36, parbc37, parbc38, parbc39, parbc40, parbc41, parbc42, parbc43, parbc44, parbc45, parbc46, parbc47, parbc48, parbc49, parbc50, parbc51, parbc52, parbc53, parbc54, parbc55, parbc56, parbc57, parbc58, parbc59, parbc60, parbc61, parbc62, parbc63, parbc64, parbc65, parbc66, parbc67, parbc68, parbc69, parbc70, parbc71, parbc72, parbc73, parbc74, parbc75, parbc76, parbc77, parbc78, parbc79, parbc80, parbc81, parbc82, parbc83, parbc84, parbc85, parbc86, parbc87, parbc88, parbc89, parbc90, parbc91, parbc92, parbc93, parbc94, parbc95, parbc96, parbc97, parbc98, parbc99, parbc100, parbc101, parbc102, parbc103, parbc104, parbc105, parbc106, parbc107, parbc108, parbc109, parbc110, parbc111, parbc112, parbc113, parbc114, parbc115, parbc116, parbc117, parbc118, parbc119, parbc120, parbc121, parbc122, parbc123, parbc124, parbc125, parbc126, parbc127, parbc128, parbc129, parbc130, parbc131, parbc132, parbc133, parbc134, parbc135, parbc136, parbc137, parbc138, parbc139, parbc140, parbc141, parbc142, parbc143, parbc144, parbc145, parbc146, parbc147, parbc148, parbc149, parbc150, parbc151, parbc152, parbc153, parbc154, parbc155, parbc156, parbc157, parbc158, parbc159, parbc160, parbc161, parbc162, parbc163, parbc164, parbc165, parbc166, parbc167, parbc168, parbc169, parbc170, parbc171, parbc172, parbc173, parbc174, parbc175, parbc176, parbc177, parbc178, parbc179, parbc180, parbc181, parbc182, parbc183, parbc184, parbc185, parbc186, parbc187, parbc188, parbc189, parbc190, parbc191, parbc192, parbc193, parbc194, parbc195, parbc196, parbc197, parbc198, parbc199, parbc200, parbc201, parbc202, parbc203, parbc204, parbc205, parbc206, parbc207, parbc208, parbc209, parbc210, parbc211, parbc212, parbc213, parbc214, parbc215, parbc216, parbc217, parbc218, parbc219, parbc220, parbc221, parbc222, parbc223, parbc224, parbc225, parbc226, parbc227, parbc228, parbc229, parbc230, parbc231, parbc232, parbc233, parbc234, parbc235, parbc236, parbc237, parbc238, parbc239, parbc240, parbc241, parbc242, parbc243, parbc244, parbc245, parbc246;
+    CheckBox parbc47_1,parbc47_2,parbc47_3,parbc47_4,parbc47_5,parbc47_6,parbc47_7,parbc47_8,parbc47_9,parbc47_10,parbc47_11,parbc47_12,parbc47_13,parbc47_14,parbc47_15,parbc47_16,parbc47_17,parbc47_18,parbc47_19,parbc47_20
+            ,parbc47_21,parbc47_22,parbc47_23,parbc47_24,parbc47_25,parbc47_26,parbc47_27,parbc47_28,parbc47_29,parbc47_30,parbc47_31,parbc47_32,parbc47_33,parbc47_34,parbc47_35,parbc47_36,parbc47_37,parbc47_38,parbc47_39
+            ,parbc47_40,parbc47_41,parbc47_42,parbc47_43,parbc47_44,parbc47_45,parbc47_46,parbc47_47,parbc47_48,parbc47_49,parbc47_50,parbc47_51,parbc47_52,parbc47_53,parbc47_54,parbc47_55,parbc47_56,parbc47_57
+            ,parbc9_1,parbc9_2,parbc9_3,parbc9_4,parbc9_5,parbc9_6,parbc9_7,parbc9_8,parbc9_9,parbc9_10,parbc9_11,parbc9_12,parbc9_13,parbc9_14,parbc9_15,parbc9_16,parbc9_17,parbc9_18
+            ,parbc9_19,parbc9_20,parbc9_21,parbc9_22,parbc9_23,parbc9_24,parbc9_25,parbc9_26,parbc9_27,parbc9_28,parbc9_29,parbc9_30,parbc9_31,parbc9_32,parbc9_33,parbc9_34
+            ,parbc9_35,parbc9_36,parbc9_37,parbc9_38,parbc9_39,parbc9_40,parbc9_41,parbc9_42,parbc9_43,parbc9_44,parbc9_45,parbc9_46,parbc9_47,parbc9_48,parbc9_49,parbc9_50
+            ,parbc9_51,parbc9_52,parbc9_53,parbc9_54,parbc9_55,parbc9_56,parbc9_57,parbc236_1,parbc236_2,parbc236_3,parbc236_4,parbc236_5,parbc236_6,parbc236_7,parbc236_8,parbc236_9,parbc236_10,parbc236_11,parbc236_12,parbc236_13,parbc236_14,parbc236_15,parbc236_16,parbc236_17,parbc236_18,parbc236_19,parbc236_20,parbc236_21,parbc236_22
+            ,parbc236_23,parbc236_24,parbc236_25,parbc236_26,parbc236_27,parbc236_28,parbc236_29,parbc236_30,parbc236_31,parbc236_32,parbc236_33,parbc236_34,parbc236_35,parbc236_36,parbc236_37,parbc236_38,parbc236_39,parbc236_40,parbc236_41,parbc236_42,parbc236_43,parbc236_44,parbc236_45,parbc236_46,parbc236_47,parbc236_48,parbc236_49,parbc236_50,parbc236_51,parbc236_52,parbc236_53,parbc236_54
+            ,parbc236_55,parbc236_56,parbc236_57;
     Button btnSiguiente;
-    GridLayout cinco, siete, ocho, diesinueve;
+    GridLayout cinco, siete, ocho, diesinueve, dos;
     LinearLayout trece, diesiciete;
     RadioButton parbr198, parbr199;
     String cveedo = "";
@@ -157,8 +161,6 @@ public class PARBeneficiario extends AppCompatActivity {
                                     String ventiuno = obtenerResultado3(parbr47, parbr48, parbr49);
                                     String ventidos = obtenerResultado3(parbr50, parbr51, parbr52);
                                     String ventitres = obtenerResultado(parbr53, parbr54);
-
-                                    //Sentencia condicionante
                                     String explique23 = (parbr54.isChecked()==true)? parbt23.getText().toString() : "" ;
                                     String venticuatro = obtenerResultado(parbr198, parbr199);
                                     String venticinco = Resultado25();
@@ -210,7 +212,7 @@ public class PARBeneficiario extends AppCompatActivity {
         trece=(LinearLayout) findViewById(R.id.combo13);
         diesiciete=(LinearLayout)findViewById(R.id.combo17);
         cinco=(GridLayout)findViewById(R.id.combo5);
-
+        dos=(GridLayout)findViewById(R.id.combo2);
 
         textFecha=(TextView)findViewById(R.id.pasl_o_txtFecha);
 
@@ -282,6 +284,66 @@ public class PARBeneficiario extends AppCompatActivity {
         parbc45=(CheckBox)findViewById(R.id.par_ben_ch45);
         parbc46=(CheckBox)findViewById(R.id.par_ben_ch46);
         parbc47=(CheckBox)findViewById(R.id.par_ben_ch47);
+        parbc47_1=(CheckBox)findViewById(R.id.par_ben_ch47_1);
+        parbc47_2=(CheckBox)findViewById(R.id.par_ben_ch47_2);
+        parbc47_3=(CheckBox)findViewById(R.id.par_ben_ch47_3);
+        parbc47_4=(CheckBox)findViewById(R.id.par_ben_ch47_4);
+        parbc47_5=(CheckBox)findViewById(R.id.par_ben_ch47_5);
+        parbc47_6=(CheckBox)findViewById(R.id.par_ben_ch47_6);
+        parbc47_7=(CheckBox)findViewById(R.id.par_ben_ch47_7);
+        parbc47_8=(CheckBox)findViewById(R.id.par_ben_ch47_8);
+        parbc47_9=(CheckBox)findViewById(R.id.par_ben_ch47_9);
+        parbc47_10=(CheckBox)findViewById(R.id.par_ben_ch47_10);
+        parbc47_11=(CheckBox)findViewById(R.id.par_ben_ch47_11);
+        parbc47_12=(CheckBox)findViewById(R.id.par_ben_ch47_12);
+        parbc47_13=(CheckBox)findViewById(R.id.par_ben_ch47_13);
+        parbc47_14=(CheckBox)findViewById(R.id.par_ben_ch47_14);
+        parbc47_15=(CheckBox)findViewById(R.id.par_ben_ch47_15);
+        parbc47_16=(CheckBox)findViewById(R.id.par_ben_ch47_16);
+        parbc47_17=(CheckBox)findViewById(R.id.par_ben_ch47_17);
+        parbc47_18=(CheckBox)findViewById(R.id.par_ben_ch47_18);
+        parbc47_19=(CheckBox)findViewById(R.id.par_ben_ch47_19);
+        parbc47_20=(CheckBox)findViewById(R.id.par_ben_ch47_20);
+        parbc47_21=(CheckBox)findViewById(R.id.par_ben_ch47_21);
+        parbc47_22=(CheckBox)findViewById(R.id.par_ben_ch47_22);
+        parbc47_23=(CheckBox)findViewById(R.id.par_ben_ch47_23);
+        parbc47_24=(CheckBox)findViewById(R.id.par_ben_ch47_24);
+        parbc47_25=(CheckBox)findViewById(R.id.par_ben_ch47_25);
+        parbc47_26=(CheckBox)findViewById(R.id.par_ben_ch47_26);
+        parbc47_27=(CheckBox)findViewById(R.id.par_ben_ch47_27);
+        parbc47_28=(CheckBox)findViewById(R.id.par_ben_ch47_28);
+        parbc47_29=(CheckBox)findViewById(R.id.par_ben_ch47_29);
+        parbc47_30=(CheckBox)findViewById(R.id.par_ben_ch47_30);
+        parbc47_31=(CheckBox)findViewById(R.id.par_ben_ch47_31);
+        parbc47_32=(CheckBox)findViewById(R.id.par_ben_ch47_32);
+        parbc47_33=(CheckBox)findViewById(R.id.par_ben_ch47_33);
+        parbc47_34=(CheckBox)findViewById(R.id.par_ben_ch47_34);
+        parbc47_35=(CheckBox)findViewById(R.id.par_ben_ch47_35);
+        parbc47_36=(CheckBox)findViewById(R.id.par_ben_ch47_36);
+        parbc47_37=(CheckBox)findViewById(R.id.par_ben_ch47_37);
+        parbc47_38=(CheckBox)findViewById(R.id.par_ben_ch47_38);
+        parbc47_39=(CheckBox)findViewById(R.id.par_ben_ch47_39);
+        parbc47_40=(CheckBox)findViewById(R.id.par_ben_ch47_40);
+        parbc47_41=(CheckBox)findViewById(R.id.par_ben_ch47_41);
+        parbc47_42=(CheckBox)findViewById(R.id.par_ben_ch47_42);
+        parbc47_43=(CheckBox)findViewById(R.id.par_ben_ch47_43);
+        parbc47_44=(CheckBox)findViewById(R.id.par_ben_ch47_44);
+        parbc47_45=(CheckBox)findViewById(R.id.par_ben_ch47_45);
+        parbc47_46=(CheckBox)findViewById(R.id.par_ben_ch47_46);
+        parbc47_47=(CheckBox)findViewById(R.id.par_ben_ch47_47);
+        parbc47_48=(CheckBox)findViewById(R.id.par_ben_ch47_48);
+        parbc47_49=(CheckBox)findViewById(R.id.par_ben_ch47_49);
+        parbc47_50=(CheckBox)findViewById(R.id.par_ben_ch47_50);
+        parbc47_51=(CheckBox)findViewById(R.id.par_ben_ch47_51);
+        parbc47_52=(CheckBox)findViewById(R.id.par_ben_ch47_52);
+        parbc47_53=(CheckBox)findViewById(R.id.par_ben_ch47_53);
+        parbc47_54=(CheckBox)findViewById(R.id.par_ben_ch47_54);
+        parbc47_55=(CheckBox)findViewById(R.id.par_ben_ch47_55);
+        parbc47_56=(CheckBox)findViewById(R.id.par_ben_ch47_56);
+        parbc47_57=(CheckBox)findViewById(R.id.par_ben_ch47_57);
+
+
+
         //Fin checkboxes
 
         parbr5=(RadioButton)findViewById(R.id.par_ben_ra5);
@@ -358,6 +420,65 @@ public class PARBeneficiario extends AppCompatActivity {
         parbc97=(CheckBox)findViewById(R.id.par_ben_ch97);
         parbc98=(CheckBox)findViewById(R.id.par_ben_ch98);
         parbc99=(CheckBox)findViewById(R.id.par_ben_ch99);
+
+        parbc9_1=(CheckBox)findViewById(R.id.par_ben_ch99_1);
+        parbc9_2=(CheckBox)findViewById(R.id.par_ben_ch99_2);
+        parbc9_3=(CheckBox)findViewById(R.id.par_ben_ch99_3);
+        parbc9_4=(CheckBox)findViewById(R.id.par_ben_ch99_4);
+        parbc9_5=(CheckBox)findViewById(R.id.par_ben_ch99_5);
+        parbc9_6=(CheckBox)findViewById(R.id.par_ben_ch99_6);
+        parbc9_7=(CheckBox)findViewById(R.id.par_ben_ch99_7);
+        parbc9_8=(CheckBox)findViewById(R.id.par_ben_ch99_8);
+        parbc9_9=(CheckBox)findViewById(R.id.par_ben_ch99_9);
+        parbc9_10=(CheckBox)findViewById(R.id.par_ben_ch99_10);
+        parbc9_11=(CheckBox)findViewById(R.id.par_ben_ch99_11);
+        parbc9_12=(CheckBox)findViewById(R.id.par_ben_ch99_12);
+        parbc9_13=(CheckBox)findViewById(R.id.par_ben_ch99_13);
+        parbc9_14=(CheckBox)findViewById(R.id.par_ben_ch99_14);
+        parbc9_15=(CheckBox)findViewById(R.id.par_ben_ch99_15);
+        parbc9_16=(CheckBox)findViewById(R.id.par_ben_ch99_16);
+        parbc9_17=(CheckBox)findViewById(R.id.par_ben_ch99_17);
+        parbc9_18=(CheckBox)findViewById(R.id.par_ben_ch99_18);
+        parbc9_19=(CheckBox)findViewById(R.id.par_ben_ch99_19);
+        parbc9_20=(CheckBox)findViewById(R.id.par_ben_ch99_20);
+        parbc9_21=(CheckBox)findViewById(R.id.par_ben_ch99_21);
+        parbc9_22=(CheckBox)findViewById(R.id.par_ben_ch99_22);
+        parbc9_23=(CheckBox)findViewById(R.id.par_ben_ch99_23);
+        parbc9_24=(CheckBox)findViewById(R.id.par_ben_ch99_24);
+        parbc9_25=(CheckBox)findViewById(R.id.par_ben_ch99_25);
+        parbc9_26=(CheckBox)findViewById(R.id.par_ben_ch99_26);
+        parbc9_27=(CheckBox)findViewById(R.id.par_ben_ch99_27);
+        parbc9_28=(CheckBox)findViewById(R.id.par_ben_ch99_28);
+        parbc9_29=(CheckBox)findViewById(R.id.par_ben_ch99_29);
+        parbc9_30=(CheckBox)findViewById(R.id.par_ben_ch99_30);
+        parbc9_31=(CheckBox)findViewById(R.id.par_ben_ch99_31);
+        parbc9_32=(CheckBox)findViewById(R.id.par_ben_ch99_32);
+        parbc9_33=(CheckBox)findViewById(R.id.par_ben_ch99_33);
+        parbc9_34=(CheckBox)findViewById(R.id.par_ben_ch99_34);
+        parbc9_35=(CheckBox)findViewById(R.id.par_ben_ch99_35);
+        parbc9_36=(CheckBox)findViewById(R.id.par_ben_ch99_36);
+        parbc9_37=(CheckBox)findViewById(R.id.par_ben_ch99_37);
+        parbc9_38=(CheckBox)findViewById(R.id.par_ben_ch99_38);
+        parbc9_39=(CheckBox)findViewById(R.id.par_ben_ch99_39);
+        parbc9_40=(CheckBox)findViewById(R.id.par_ben_ch99_40);
+        parbc9_41=(CheckBox)findViewById(R.id.par_ben_ch99_41);
+        parbc9_42=(CheckBox)findViewById(R.id.par_ben_ch99_42);
+        parbc9_43=(CheckBox)findViewById(R.id.par_ben_ch99_43);
+        parbc9_44=(CheckBox)findViewById(R.id.par_ben_ch99_44);
+        parbc9_45=(CheckBox)findViewById(R.id.par_ben_ch99_45);
+        parbc9_46=(CheckBox)findViewById(R.id.par_ben_ch99_46);
+        parbc9_47=(CheckBox)findViewById(R.id.par_ben_ch99_47);
+        parbc9_48=(CheckBox)findViewById(R.id.par_ben_ch99_48);
+        parbc9_49=(CheckBox)findViewById(R.id.par_ben_ch99_49);
+        parbc9_50=(CheckBox)findViewById(R.id.par_ben_ch99_50);
+        parbc9_51=(CheckBox)findViewById(R.id.par_ben_ch99_51);
+        parbc9_52=(CheckBox)findViewById(R.id.par_ben_ch99_52);
+        parbc9_53=(CheckBox)findViewById(R.id.par_ben_ch99_53);
+        parbc9_54=(CheckBox)findViewById(R.id.par_ben_ch99_54);
+        parbc9_55=(CheckBox)findViewById(R.id.par_ben_ch99_55);
+        parbc9_56=(CheckBox)findViewById(R.id.par_ben_ch99_56);
+        parbc9_57=(CheckBox)findViewById(R.id.par_ben_ch99_57);
+
 
         //8. ¿Cuáles son los productos de la canasta básica de DICONSA que busca y no encuentra en la tienda?
 
@@ -496,6 +617,64 @@ public class PARBeneficiario extends AppCompatActivity {
         parbc234=(CheckBox)findViewById(R.id.par_ben_ch234);
         parbc235=(CheckBox)findViewById(R.id.par_ben_ch235);
         parbc236=(CheckBox)findViewById(R.id.par_ben_ch236);
+
+        parbc236_1=(CheckBox)findViewById(R.id.par_ben_ch236_1);
+        parbc236_2=(CheckBox)findViewById(R.id.par_ben_ch236_2);
+        parbc236_3=(CheckBox)findViewById(R.id.par_ben_ch236_3);
+        parbc236_4=(CheckBox)findViewById(R.id.par_ben_ch236_4);
+        parbc236_5=(CheckBox)findViewById(R.id.par_ben_ch236_5);
+        parbc236_6=(CheckBox)findViewById(R.id.par_ben_ch236_6);
+        parbc236_7=(CheckBox)findViewById(R.id.par_ben_ch236_7);
+        parbc236_8=(CheckBox)findViewById(R.id.par_ben_ch236_8);
+        parbc236_9=(CheckBox)findViewById(R.id.par_ben_ch236_9);
+        parbc236_10=(CheckBox)findViewById(R.id.par_ben_ch236_10);
+        parbc236_11=(CheckBox)findViewById(R.id.par_ben_ch236_11);
+        parbc236_12=(CheckBox)findViewById(R.id.par_ben_ch236_12);
+        parbc236_13=(CheckBox)findViewById(R.id.par_ben_ch236_13);
+        parbc236_14=(CheckBox)findViewById(R.id.par_ben_ch236_14);
+        parbc236_15=(CheckBox)findViewById(R.id.par_ben_ch236_15);
+        parbc236_16=(CheckBox)findViewById(R.id.par_ben_ch236_16);
+        parbc236_17=(CheckBox)findViewById(R.id.par_ben_ch236_17);
+        parbc236_18=(CheckBox)findViewById(R.id.par_ben_ch236_18);
+        parbc236_19=(CheckBox)findViewById(R.id.par_ben_ch236_19);
+        parbc236_20=(CheckBox)findViewById(R.id.par_ben_ch236_20);
+        parbc236_21=(CheckBox)findViewById(R.id.par_ben_ch236_21);
+        parbc236_22=(CheckBox)findViewById(R.id.par_ben_ch236_22);
+        parbc236_23=(CheckBox)findViewById(R.id.par_ben_ch236_23);
+        parbc236_24=(CheckBox)findViewById(R.id.par_ben_ch236_24);
+        parbc236_25=(CheckBox)findViewById(R.id.par_ben_ch236_25);
+        parbc236_26=(CheckBox)findViewById(R.id.par_ben_ch236_26);
+        parbc236_27=(CheckBox)findViewById(R.id.par_ben_ch236_27);
+        parbc236_28=(CheckBox)findViewById(R.id.par_ben_ch236_28);
+        parbc236_29=(CheckBox)findViewById(R.id.par_ben_ch236_29);
+        parbc236_30=(CheckBox)findViewById(R.id.par_ben_ch236_30);
+        parbc236_31=(CheckBox)findViewById(R.id.par_ben_ch236_31);
+        parbc236_32=(CheckBox)findViewById(R.id.par_ben_ch236_32);
+        parbc236_33=(CheckBox)findViewById(R.id.par_ben_ch236_33);
+        parbc236_34=(CheckBox)findViewById(R.id.par_ben_ch236_34);
+        parbc236_35=(CheckBox)findViewById(R.id.par_ben_ch236_35);
+        parbc236_36=(CheckBox)findViewById(R.id.par_ben_ch236_36);
+        parbc236_37=(CheckBox)findViewById(R.id.par_ben_ch236_37);
+        parbc236_38=(CheckBox)findViewById(R.id.par_ben_ch236_38);
+        parbc236_39=(CheckBox)findViewById(R.id.par_ben_ch236_39);
+        parbc236_40=(CheckBox)findViewById(R.id.par_ben_ch236_40);
+        parbc236_41=(CheckBox)findViewById(R.id.par_ben_ch236_41);
+        parbc236_42=(CheckBox)findViewById(R.id.par_ben_ch236_42);
+        parbc236_43=(CheckBox)findViewById(R.id.par_ben_ch236_43);
+        parbc236_44=(CheckBox)findViewById(R.id.par_ben_ch236_44);
+        parbc236_45=(CheckBox)findViewById(R.id.par_ben_ch236_45);
+        parbc236_46=(CheckBox)findViewById(R.id.par_ben_ch236_46);
+        parbc236_47=(CheckBox)findViewById(R.id.par_ben_ch236_47);
+        parbc236_48=(CheckBox)findViewById(R.id.par_ben_ch236_48);
+        parbc236_49=(CheckBox)findViewById(R.id.par_ben_ch236_49);
+        parbc236_50=(CheckBox)findViewById(R.id.par_ben_ch236_50);
+        parbc236_51=(CheckBox)findViewById(R.id.par_ben_ch236_51);
+        parbc236_52=(CheckBox)findViewById(R.id.par_ben_ch236_52);
+        parbc236_53=(CheckBox)findViewById(R.id.par_ben_ch236_53);
+        parbc236_54=(CheckBox)findViewById(R.id.par_ben_ch236_54);
+        parbc236_55=(CheckBox)findViewById(R.id.par_ben_ch236_55);
+        parbc236_56=(CheckBox)findViewById(R.id.par_ben_ch236_56);
+        parbc236_57=(CheckBox)findViewById(R.id.par_ben_ch236_57);
         //Fin checkboxes
 
         parbr45=(RadioButton)findViewById(R.id.par_ben_ra45);
@@ -611,29 +790,29 @@ public class PARBeneficiario extends AppCompatActivity {
         });
 
         parbc241.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
-                    if(parbc241.isChecked()==true){
-                        parbt5.setVisibility(View.VISIBLE);
-                    }else{
-                        parbt5.setVisibility(View.GONE);
-                        parbt5.setText("");
-                    }
-                }
-            }
+                                                @Override
+                                                public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
+                                                    if(parbc241.isChecked()==true){
+                                                        parbt5.setVisibility(View.VISIBLE);
+                                                    }else{
+                                                        parbt5.setVisibility(View.GONE);
+                                                        parbt5.setText("");
+                                                    }
+                                                }
+                                            }
         );
 
         parbc246.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-                public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
-                    if(parbc246.isChecked()==true){
-                        parbt6.setVisibility(View.VISIBLE);
-                    }else{
-                        parbt6.setVisibility(View.GONE);
-                        parbt6.setText("");
-                    }
-                }
-            }
+                                                @Override
+                                                public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
+                                                    if(parbc246.isChecked()==true){
+                                                        parbt6.setVisibility(View.VISIBLE);
+                                                    }else{
+                                                        parbt6.setVisibility(View.GONE);
+                                                        parbt6.setText("");
+                                                    }
+                                                }
+                                            }
         );
 
     }
@@ -689,6 +868,63 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc45.isChecked()){count = count + 1;}
         if(parbc46.isChecked()){count = count + 1;}
         if(parbc47.isChecked()){count = count + 1;}
+        if(parbc47_1.isChecked()){count = count + 1;}
+        if(parbc47_2.isChecked()){count = count + 1;}
+        if(parbc47_3.isChecked()){count = count + 1;}
+        if(parbc47_4.isChecked()){count = count + 1;}
+        if(parbc47_5.isChecked()){count = count + 1;}
+        if(parbc47_6.isChecked()){count = count + 1;}
+        if(parbc47_7.isChecked()){count = count + 1;}
+        if(parbc47_8.isChecked()){count = count + 1;}
+        if(parbc47_9.isChecked()){count = count + 1;}
+        if(parbc47_10.isChecked()){count = count + 1;}
+        if(parbc47_11.isChecked()){count = count + 1;}
+        if(parbc47_12.isChecked()){count = count + 1;}
+        if(parbc47_13.isChecked()){count = count + 1;}
+        if(parbc47_14.isChecked()){count = count + 1;}
+        if(parbc47_15.isChecked()){count = count + 1;}
+        if(parbc47_16.isChecked()){count = count + 1;}
+        if(parbc47_17.isChecked()){count = count + 1;}
+        if(parbc47_18.isChecked()){count = count + 1;}
+        if(parbc47_19.isChecked()){count = count + 1;}
+        if(parbc47_20.isChecked()){count = count + 1;}
+        if(parbc47_21.isChecked()){count = count + 1;}
+        if(parbc47_22.isChecked()){count = count + 1;}
+        if(parbc47_23.isChecked()){count = count + 1;}
+        if(parbc47_24.isChecked()){count = count + 1;}
+        if(parbc47_25.isChecked()){count = count + 1;}
+        if(parbc47_26.isChecked()){count = count + 1;}
+        if(parbc47_27.isChecked()){count = count + 1;}
+        if(parbc47_28.isChecked()){count = count + 1;}
+        if(parbc47_29.isChecked()){count = count + 1;}
+        if(parbc47_30.isChecked()){count = count + 1;}
+        if(parbc47_31.isChecked()){count = count + 1;}
+        if(parbc47_32.isChecked()){count = count + 1;}
+        if(parbc47_33.isChecked()){count = count + 1;}
+        if(parbc47_34.isChecked()){count = count + 1;}
+        if(parbc47_35.isChecked()){count = count + 1;}
+        if(parbc47_36.isChecked()){count = count + 1;}
+        if(parbc47_37.isChecked()){count = count + 1;}
+        if(parbc47_38.isChecked()){count = count + 1;}
+        if(parbc47_39.isChecked()){count = count + 1;}
+        if(parbc47_40.isChecked()){count = count + 1;}
+        if(parbc47_41.isChecked()){count = count + 1;}
+        if(parbc47_42.isChecked()){count = count + 1;}
+        if(parbc47_43.isChecked()){count = count + 1;}
+        if(parbc47_44.isChecked()){count = count + 1;}
+        if(parbc47_45.isChecked()){count = count + 1;}
+        if(parbc47_46.isChecked()){count = count + 1;}
+        if(parbc47_47.isChecked()){count = count + 1;}
+        if(parbc47_48.isChecked()){count = count + 1;}
+        if(parbc47_49.isChecked()){count = count + 1;}
+        if(parbc47_50.isChecked()){count = count + 1;}
+        if(parbc47_51.isChecked()){count = count + 1;}
+        if(parbc47_52.isChecked()){count = count + 1;}
+        if(parbc47_53.isChecked()){count = count + 1;}
+        if(parbc47_54.isChecked()){count = count + 1;}
+        if(parbc47_55.isChecked()){count = count + 1;}
+        if(parbc47_56.isChecked()){count = count + 1;}
+        if(parbc47_57.isChecked()){count = count + 1;}
 
         if(count<=3){
             retorno=true;
@@ -749,6 +985,64 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc97.isChecked()){count = count + 1;}
         if(parbc98.isChecked()){count = count + 1;}
         if(parbc99.isChecked()){count = count + 1;}
+        if(parbc9_1.isChecked()){count = count + 1;}
+        if(parbc9_2.isChecked()){count = count + 1;}
+        if(parbc9_3.isChecked()){count = count + 1;}
+        if(parbc9_4.isChecked()){count = count + 1;}
+        if(parbc9_5.isChecked()){count = count + 1;}
+        if(parbc9_6.isChecked()){count = count + 1;}
+        if(parbc9_7.isChecked()){count = count + 1;}
+        if(parbc9_8.isChecked()){count = count + 1;}
+        if(parbc9_9.isChecked()){count = count + 1;}
+        if(parbc9_10.isChecked()){count = count + 1;}
+        if(parbc9_11.isChecked()){count = count + 1;}
+        if(parbc9_12.isChecked()){count = count + 1;}
+        if(parbc9_13.isChecked()){count = count + 1;}
+        if(parbc9_14.isChecked()){count = count + 1;}
+        if(parbc9_15.isChecked()){count = count + 1;}
+        if(parbc9_16.isChecked()){count = count + 1;}
+        if(parbc9_17.isChecked()){count = count + 1;}
+        if(parbc9_18.isChecked()){count = count + 1;}
+        if(parbc9_19.isChecked()){count = count + 1;}
+        if(parbc9_20.isChecked()){count = count + 1;}
+        if(parbc9_21.isChecked()){count = count + 1;}
+        if(parbc9_22.isChecked()){count = count + 1;}
+        if(parbc9_23.isChecked()){count = count + 1;}
+        if(parbc9_24.isChecked()){count = count + 1;}
+        if(parbc9_25.isChecked()){count = count + 1;}
+        if(parbc9_26.isChecked()){count = count + 1;}
+        if(parbc9_27.isChecked()){count = count + 1;}
+        if(parbc9_28.isChecked()){count = count + 1;}
+        if(parbc9_29.isChecked()){count = count + 1;}
+        if(parbc9_30.isChecked()){count = count + 1;}
+        if(parbc9_31.isChecked()){count = count + 1;}
+        if(parbc9_32.isChecked()){count = count + 1;}
+        if(parbc9_33.isChecked()){count = count + 1;}
+        if(parbc9_34.isChecked()){count = count + 1;}
+        if(parbc9_35.isChecked()){count = count + 1;}
+        if(parbc9_36.isChecked()){count = count + 1;}
+        if(parbc9_37.isChecked()){count = count + 1;}
+        if(parbc9_38.isChecked()){count = count + 1;}
+        if(parbc9_39.isChecked()){count = count + 1;}
+        if(parbc9_40.isChecked()){count = count + 1;}
+        if(parbc9_41.isChecked()){count = count + 1;}
+        if(parbc9_42.isChecked()){count = count + 1;}
+        if(parbc9_43.isChecked()){count = count + 1;}
+        if(parbc9_44.isChecked()){count = count + 1;}
+        if(parbc9_45.isChecked()){count = count + 1;}
+        if(parbc9_46.isChecked()){count = count + 1;}
+        if(parbc9_47.isChecked()){count = count + 1;}
+        if(parbc9_48.isChecked()){count = count + 1;}
+        if(parbc9_49.isChecked()){count = count + 1;}
+        if(parbc9_50.isChecked()){count = count + 1;}
+        if(parbc9_51.isChecked()){count = count + 1;}
+        if(parbc9_52.isChecked()){count = count + 1;}
+        if(parbc9_53.isChecked()){count = count + 1;}
+        if(parbc9_54.isChecked()){count = count + 1;}
+        if(parbc9_55.isChecked()){count = count + 1;}
+        if(parbc9_56.isChecked()){count = count + 1;}
+        if(parbc9_57.isChecked()){count = count + 1;}
+
         if(count<=3){
             retorno=true;
         }
@@ -848,6 +1142,64 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc234.isChecked()){count = count + 1;}
         if(parbc235.isChecked()){count = count + 1;}
         if(parbc236.isChecked()){count = count + 1;}
+        if(parbc236_1.isChecked()){count = count + 1;}
+        if(parbc236_2.isChecked()){count = count + 1;}
+        if(parbc236_3.isChecked()){count = count + 1;}
+        if(parbc236_4.isChecked()){count = count + 1;}
+        if(parbc236_5.isChecked()){count = count + 1;}
+        if(parbc236_6.isChecked()){count = count + 1;}
+        if(parbc236_7.isChecked()){count = count + 1;}
+        if(parbc236_8.isChecked()){count = count + 1;}
+        if(parbc236_9.isChecked()){count = count + 1;}
+        if(parbc236_10.isChecked()){count = count + 1;}
+        if(parbc236_11.isChecked()){count = count + 1;}
+        if(parbc236_12.isChecked()){count = count + 1;}
+        if(parbc236_13.isChecked()){count = count + 1;}
+        if(parbc236_14.isChecked()){count = count + 1;}
+        if(parbc236_15.isChecked()){count = count + 1;}
+        if(parbc236_16.isChecked()){count = count + 1;}
+        if(parbc236_17.isChecked()){count = count + 1;}
+        if(parbc236_18.isChecked()){count = count + 1;}
+        if(parbc236_19.isChecked()){count = count + 1;}
+        if(parbc236_20.isChecked()){count = count + 1;}
+        if(parbc236_21.isChecked()){count = count + 1;}
+        if(parbc236_22.isChecked()){count = count + 1;}
+        if(parbc236_23.isChecked()){count = count + 1;}
+        if(parbc236_24.isChecked()){count = count + 1;}
+        if(parbc236_25.isChecked()){count = count + 1;}
+        if(parbc236_26.isChecked()){count = count + 1;}
+        if(parbc236_27.isChecked()){count = count + 1;}
+        if(parbc236_28.isChecked()){count = count + 1;}
+        if(parbc236_29.isChecked()){count = count + 1;}
+        if(parbc236_30.isChecked()){count = count + 1;}
+        if(parbc236_31.isChecked()){count = count + 1;}
+        if(parbc236_32.isChecked()){count = count + 1;}
+        if(parbc236_33.isChecked()){count = count + 1;}
+        if(parbc236_34.isChecked()){count = count + 1;}
+        if(parbc236_35.isChecked()){count = count + 1;}
+        if(parbc236_36.isChecked()){count = count + 1;}
+        if(parbc236_37.isChecked()){count = count + 1;}
+        if(parbc236_38.isChecked()){count = count + 1;}
+        if(parbc236_39.isChecked()){count = count + 1;}
+        if(parbc236_40.isChecked()){count = count + 1;}
+        if(parbc236_41.isChecked()){count = count + 1;}
+        if(parbc236_42.isChecked()){count = count + 1;}
+        if(parbc236_43.isChecked()){count = count + 1;}
+        if(parbc236_44.isChecked()){count = count + 1;}
+        if(parbc236_45.isChecked()){count = count + 1;}
+        if(parbc236_46.isChecked()){count = count + 1;}
+        if(parbc236_47.isChecked()){count = count + 1;}
+        if(parbc236_48.isChecked()){count = count + 1;}
+        if(parbc236_49.isChecked()){count = count + 1;}
+        if(parbc236_50.isChecked()){count = count + 1;}
+        if(parbc236_51.isChecked()){count = count + 1;}
+        if(parbc236_52.isChecked()){count = count + 1;}
+        if(parbc236_53.isChecked()){count = count + 1;}
+        if(parbc236_54.isChecked()){count = count + 1;}
+        if(parbc236_55.isChecked()){count = count + 1;}
+        if(parbc236_56.isChecked()){count = count + 1;}
+        if(parbc236_57.isChecked()){count = count + 1;}
+
         if(count<=3){
             retorno=true;
         }
@@ -870,6 +1222,10 @@ public class PARBeneficiario extends AppCompatActivity {
         }
         else if(parbt3.getText().toString().isEmpty()){
             parbt3.setError("No puede quedar vacio");
+            retorno=false;
+        }
+        else if(Integer.parseInt(parbt3.getText().toString()) <= 9){
+            parbt3.setError("No puede ser menor de 10 años");
             retorno=false;
         }
         else if(!parbr3.isChecked() && !parbr4.isChecked()){
@@ -1066,6 +1422,64 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc45.isChecked()){count = count + 1;}
         if(parbc46.isChecked()){count = count + 1;}
         if(parbc47.isChecked()){count = count + 1;}
+        if(parbc47_1.isChecked()){count = count + 1;}
+        if(parbc47_2.isChecked()){count = count + 1;}
+        if(parbc47_3.isChecked()){count = count + 1;}
+        if(parbc47_4.isChecked()){count = count + 1;}
+        if(parbc47_5.isChecked()){count = count + 1;}
+        if(parbc47_6.isChecked()){count = count + 1;}
+        if(parbc47_7.isChecked()){count = count + 1;}
+        if(parbc47_8.isChecked()){count = count + 1;}
+        if(parbc47_9.isChecked()){count = count + 1;}
+        if(parbc47_10.isChecked()){count = count + 1;}
+        if(parbc47_11.isChecked()){count = count + 1;}
+        if(parbc47_12.isChecked()){count = count + 1;}
+        if(parbc47_13.isChecked()){count = count + 1;}
+        if(parbc47_14.isChecked()){count = count + 1;}
+        if(parbc47_15.isChecked()){count = count + 1;}
+        if(parbc47_16.isChecked()){count = count + 1;}
+        if(parbc47_17.isChecked()){count = count + 1;}
+        if(parbc47_18.isChecked()){count = count + 1;}
+        if(parbc47_19.isChecked()){count = count + 1;}
+        if(parbc47_20.isChecked()){count = count + 1;}
+        if(parbc47_21.isChecked()){count = count + 1;}
+        if(parbc47_22.isChecked()){count = count + 1;}
+        if(parbc47_23.isChecked()){count = count + 1;}
+        if(parbc47_24.isChecked()){count = count + 1;}
+        if(parbc47_25.isChecked()){count = count + 1;}
+        if(parbc47_26.isChecked()){count = count + 1;}
+        if(parbc47_27.isChecked()){count = count + 1;}
+        if(parbc47_28.isChecked()){count = count + 1;}
+        if(parbc47_29.isChecked()){count = count + 1;}
+        if(parbc47_30.isChecked()){count = count + 1;}
+        if(parbc47_31.isChecked()){count = count + 1;}
+        if(parbc47_32.isChecked()){count = count + 1;}
+        if(parbc47_33.isChecked()){count = count + 1;}
+        if(parbc47_34.isChecked()){count = count + 1;}
+        if(parbc47_35.isChecked()){count = count + 1;}
+        if(parbc47_36.isChecked()){count = count + 1;}
+        if(parbc47_37.isChecked()){count = count + 1;}
+        if(parbc47_38.isChecked()){count = count + 1;}
+        if(parbc47_39.isChecked()){count = count + 1;}
+        if(parbc47_40.isChecked()){count = count + 1;}
+        if(parbc47_41.isChecked()){count = count + 1;}
+        if(parbc47_42.isChecked()){count = count + 1;}
+        if(parbc47_43.isChecked()){count = count + 1;}
+        if(parbc47_44.isChecked()){count = count + 1;}
+        if(parbc47_45.isChecked()){count = count + 1;}
+        if(parbc47_46.isChecked()){count = count + 1;}
+        if(parbc47_47.isChecked()){count = count + 1;}
+        if(parbc47_48.isChecked()){count = count + 1;}
+        if(parbc47_49.isChecked()){count = count + 1;}
+        if(parbc47_50.isChecked()){count = count + 1;}
+        if(parbc47_51.isChecked()){count = count + 1;}
+        if(parbc47_52.isChecked()){count = count + 1;}
+        if(parbc47_53.isChecked()){count = count + 1;}
+        if(parbc47_54.isChecked()){count = count + 1;}
+        if(parbc47_55.isChecked()){count = count + 1;}
+        if(parbc47_56.isChecked()){count = count + 1;}
+        if(parbc47_57.isChecked()){count = count + 1;}
+
 
         return count;
     }
@@ -1132,6 +1546,63 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc97.isChecked()){count = count + 1;}
         if(parbc98.isChecked()){count = count + 1;}
         if(parbc99.isChecked()){count = count + 1;}
+        if(parbc9_1.isChecked()){count = count + 1;}
+        if(parbc9_2.isChecked()){count = count + 1;}
+        if(parbc9_3.isChecked()){count = count + 1;}
+        if(parbc9_4.isChecked()){count = count + 1;}
+        if(parbc9_5.isChecked()){count = count + 1;}
+        if(parbc9_6.isChecked()){count = count + 1;}
+        if(parbc9_7.isChecked()){count = count + 1;}
+        if(parbc9_8.isChecked()){count = count + 1;}
+        if(parbc9_9.isChecked()){count = count + 1;}
+        if(parbc9_10.isChecked()){count = count + 1;}
+        if(parbc9_11.isChecked()){count = count + 1;}
+        if(parbc9_12.isChecked()){count = count + 1;}
+        if(parbc9_13.isChecked()){count = count + 1;}
+        if(parbc9_14.isChecked()){count = count + 1;}
+        if(parbc9_15.isChecked()){count = count + 1;}
+        if(parbc9_16.isChecked()){count = count + 1;}
+        if(parbc9_17.isChecked()){count = count + 1;}
+        if(parbc9_18.isChecked()){count = count + 1;}
+        if(parbc9_19.isChecked()){count = count + 1;}
+        if(parbc9_20.isChecked()){count = count + 1;}
+        if(parbc9_21.isChecked()){count = count + 1;}
+        if(parbc9_22.isChecked()){count = count + 1;}
+        if(parbc9_23.isChecked()){count = count + 1;}
+        if(parbc9_24.isChecked()){count = count + 1;}
+        if(parbc9_25.isChecked()){count = count + 1;}
+        if(parbc9_26.isChecked()){count = count + 1;}
+        if(parbc9_27.isChecked()){count = count + 1;}
+        if(parbc9_28.isChecked()){count = count + 1;}
+        if(parbc9_29.isChecked()){count = count + 1;}
+        if(parbc9_30.isChecked()){count = count + 1;}
+        if(parbc9_31.isChecked()){count = count + 1;}
+        if(parbc9_32.isChecked()){count = count + 1;}
+        if(parbc9_33.isChecked()){count = count + 1;}
+        if(parbc9_34.isChecked()){count = count + 1;}
+        if(parbc9_35.isChecked()){count = count + 1;}
+        if(parbc9_36.isChecked()){count = count + 1;}
+        if(parbc9_37.isChecked()){count = count + 1;}
+        if(parbc9_38.isChecked()){count = count + 1;}
+        if(parbc9_39.isChecked()){count = count + 1;}
+        if(parbc9_40.isChecked()){count = count + 1;}
+        if(parbc9_41.isChecked()){count = count + 1;}
+        if(parbc9_42.isChecked()){count = count + 1;}
+        if(parbc9_43.isChecked()){count = count + 1;}
+        if(parbc9_44.isChecked()){count = count + 1;}
+        if(parbc9_45.isChecked()){count = count + 1;}
+        if(parbc9_46.isChecked()){count = count + 1;}
+        if(parbc9_47.isChecked()){count = count + 1;}
+        if(parbc9_48.isChecked()){count = count + 1;}
+        if(parbc9_49.isChecked()){count = count + 1;}
+        if(parbc9_50.isChecked()){count = count + 1;}
+        if(parbc9_51.isChecked()){count = count + 1;}
+        if(parbc9_52.isChecked()){count = count + 1;}
+        if(parbc9_53.isChecked()){count = count + 1;}
+        if(parbc9_54.isChecked()){count = count + 1;}
+        if(parbc9_55.isChecked()){count = count + 1;}
+        if(parbc9_56.isChecked()){count = count + 1;}
+        if(parbc9_57.isChecked()){count = count + 1;}
 
         return count;
     }
@@ -1262,6 +1733,63 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc234.isChecked()){count = count + 1;}
         if(parbc235.isChecked()){count = count + 1;}
         if(parbc236.isChecked()){count = count + 1;}
+        if(parbc236_1.isChecked()){count = count + 1;}
+        if(parbc236_2.isChecked()){count = count + 1;}
+        if(parbc236_3.isChecked()){count = count + 1;}
+        if(parbc236_4.isChecked()){count = count + 1;}
+        if(parbc236_5.isChecked()){count = count + 1;}
+        if(parbc236_6.isChecked()){count = count + 1;}
+        if(parbc236_7.isChecked()){count = count + 1;}
+        if(parbc236_8.isChecked()){count = count + 1;}
+        if(parbc236_9.isChecked()){count = count + 1;}
+        if(parbc236_10.isChecked()){count = count + 1;}
+        if(parbc236_11.isChecked()){count = count + 1;}
+        if(parbc236_12.isChecked()){count = count + 1;}
+        if(parbc236_13.isChecked()){count = count + 1;}
+        if(parbc236_14.isChecked()){count = count + 1;}
+        if(parbc236_15.isChecked()){count = count + 1;}
+        if(parbc236_16.isChecked()){count = count + 1;}
+        if(parbc236_17.isChecked()){count = count + 1;}
+        if(parbc236_18.isChecked()){count = count + 1;}
+        if(parbc236_19.isChecked()){count = count + 1;}
+        if(parbc236_20.isChecked()){count = count + 1;}
+        if(parbc236_21.isChecked()){count = count + 1;}
+        if(parbc236_22.isChecked()){count = count + 1;}
+        if(parbc236_23.isChecked()){count = count + 1;}
+        if(parbc236_24.isChecked()){count = count + 1;}
+        if(parbc236_25.isChecked()){count = count + 1;}
+        if(parbc236_26.isChecked()){count = count + 1;}
+        if(parbc236_27.isChecked()){count = count + 1;}
+        if(parbc236_28.isChecked()){count = count + 1;}
+        if(parbc236_29.isChecked()){count = count + 1;}
+        if(parbc236_30.isChecked()){count = count + 1;}
+        if(parbc236_31.isChecked()){count = count + 1;}
+        if(parbc236_32.isChecked()){count = count + 1;}
+        if(parbc236_33.isChecked()){count = count + 1;}
+        if(parbc236_34.isChecked()){count = count + 1;}
+        if(parbc236_35.isChecked()){count = count + 1;}
+        if(parbc236_36.isChecked()){count = count + 1;}
+        if(parbc236_37.isChecked()){count = count + 1;}
+        if(parbc236_38.isChecked()){count = count + 1;}
+        if(parbc236_39.isChecked()){count = count + 1;}
+        if(parbc236_40.isChecked()){count = count + 1;}
+        if(parbc236_41.isChecked()){count = count + 1;}
+        if(parbc236_42.isChecked()){count = count + 1;}
+        if(parbc236_43.isChecked()){count = count + 1;}
+        if(parbc236_44.isChecked()){count = count + 1;}
+        if(parbc236_45.isChecked()){count = count + 1;}
+        if(parbc236_46.isChecked()){count = count + 1;}
+        if(parbc236_47.isChecked()){count = count + 1;}
+        if(parbc236_48.isChecked()){count = count + 1;}
+        if(parbc236_49.isChecked()){count = count + 1;}
+        if(parbc236_50.isChecked()){count = count + 1;}
+        if(parbc236_51.isChecked()){count = count + 1;}
+        if(parbc236_52.isChecked()){count = count + 1;}
+        if(parbc236_53.isChecked()){count = count + 1;}
+        if(parbc236_54.isChecked()){count = count + 1;}
+        if(parbc236_55.isChecked()){count = count + 1;}
+        if(parbc236_56.isChecked()){count = count + 1;}
+        if(parbc236_57.isChecked()){count = count + 1;}
 
         return count;
     }
@@ -1406,6 +1934,67 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc45.isChecked()){cadena += "" + parbc45.getText().toString() + "-";}
         if(parbc46.isChecked()){cadena += "" + parbc46.getText().toString() + "-";}
         if(parbc47.isChecked()){cadena += "" + parbc47.getText().toString() + "-";}
+        if(parbc47_1.isChecked()){cadena += "" + parbc47_1.getText().toString() + "-";}
+        if(parbc47_2.isChecked()){cadena += "" + parbc47_2.getText().toString() + "-";}
+        if(parbc47_3.isChecked()){cadena += "" + parbc47_3.getText().toString() + "-";}
+        if(parbc47_4.isChecked()){cadena += "" + parbc47_4.getText().toString() + "-";}
+        if(parbc47_5.isChecked()){cadena += "" + parbc47_5.getText().toString() + "-";}
+        if(parbc47_6.isChecked()){cadena += "" + parbc47_6.getText().toString() + "-";}
+        if(parbc47_7.isChecked()){cadena += "" + parbc47_7.getText().toString() + "-";}
+        if(parbc47_8.isChecked()){cadena += "" + parbc47_8.getText().toString() + "-";}
+        if(parbc47_9.isChecked()){cadena += "" + parbc47_9.getText().toString() + "-";}
+        if(parbc47_10.isChecked()){cadena += "" + parbc47_10.getText().toString() + "-";}
+        if(parbc47_11.isChecked()){cadena += "" + parbc47_11.getText().toString() + "-";}
+        if(parbc47_12.isChecked()){cadena += "" + parbc47_12.getText().toString() + "-";}
+        if(parbc47_13.isChecked()){cadena += "" + parbc47_13.getText().toString() + "-";}
+        if(parbc47_14.isChecked()){cadena += "" + parbc47_14.getText().toString() + "-";}
+        if(parbc47_15.isChecked()){cadena += "" + parbc47_15.getText().toString() + "-";}
+        if(parbc47_16.isChecked()){cadena += "" + parbc47_16.getText().toString() + "-";}
+        if(parbc47_17.isChecked()){cadena += "" + parbc47_17.getText().toString() + "-";}
+        if(parbc47_18.isChecked()){cadena += "" + parbc47_18.getText().toString() + "-";}
+        if(parbc47_19.isChecked()){cadena += "" + parbc47_19.getText().toString() + "-";}
+        if(parbc47_20.isChecked()){cadena += "" + parbc47_20.getText().toString() + "-";}
+        if(parbc47_21.isChecked()){cadena += "" + parbc47_21.getText().toString() + "-";}
+        if(parbc47_22.isChecked()){cadena += "" + parbc47_22.getText().toString() + "-";}
+        if(parbc47_23.isChecked()){cadena += "" + parbc47_23.getText().toString() + "-";}
+        if(parbc47_24.isChecked()){cadena += "" + parbc47_24.getText().toString() + "-";}
+        if(parbc47_25.isChecked()){cadena += "" + parbc47_25.getText().toString() + "-";}
+        if(parbc47_26.isChecked()){cadena += "" + parbc47_26.getText().toString() + "-";}
+        if(parbc47_27.isChecked()){cadena += "" + parbc47_27.getText().toString() + "-";}
+        if(parbc47_28.isChecked()){cadena += "" + parbc47_28.getText().toString() + "-";}
+        if(parbc47_29.isChecked()){cadena += "" + parbc47_29.getText().toString() + "-";}
+        if(parbc47_30.isChecked()){cadena += "" + parbc47_30.getText().toString() + "-";}
+        if(parbc47_31.isChecked()){cadena += "" + parbc47_31.getText().toString() + "-";}
+        if(parbc47_32.isChecked()){cadena += "" + parbc47_32.getText().toString() + "-";}
+        if(parbc47_33.isChecked()){cadena += "" + parbc47_33.getText().toString() + "-";}
+        if(parbc47_34.isChecked()){cadena += "" + parbc47_34.getText().toString() + "-";}
+        if(parbc47_35.isChecked()){cadena += "" + parbc47_35.getText().toString() + "-";}
+        if(parbc47_36.isChecked()){cadena += "" + parbc47_36.getText().toString() + "-";}
+        if(parbc47_37.isChecked()){cadena += "" + parbc47_37.getText().toString() + "-";}
+        if(parbc47_38.isChecked()){cadena += "" + parbc47_38.getText().toString() + "-";}
+        if(parbc47_39.isChecked()){cadena += "" + parbc47_39.getText().toString() + "-";}
+        if(parbc47_40.isChecked()){cadena += "" + parbc47_40.getText().toString() + "-";}
+        if(parbc47_41.isChecked()){cadena += "" + parbc47_41.getText().toString() + "-";}
+        if(parbc47_42.isChecked()){cadena += "" + parbc47_42.getText().toString() + "-";}
+        if(parbc47_43.isChecked()){cadena += "" + parbc47_43.getText().toString() + "-";}
+        if(parbc47_44.isChecked()){cadena += "" + parbc47_44.getText().toString() + "-";}
+        if(parbc47_45.isChecked()){cadena += "" + parbc47_45.getText().toString() + "-";}
+        if(parbc47_46.isChecked()){cadena += "" + parbc47_46.getText().toString() + "-";}
+        if(parbc47_47.isChecked()){cadena += "" + parbc47_47.getText().toString() + "-";}
+        if(parbc47_48.isChecked()){cadena += "" + parbc47_48.getText().toString() + "-";}
+        if(parbc47_49.isChecked()){cadena += "" + parbc47_49.getText().toString() + "-";}
+        if(parbc47_50.isChecked()){cadena += "" + parbc47_50.getText().toString() + "-";}
+        if(parbc47_51.isChecked()){cadena += "" + parbc47_51.getText().toString() + "-";}
+        if(parbc47_52.isChecked()){cadena += "" + parbc47_52.getText().toString() + "-";}
+        if(parbc47_53.isChecked()){cadena += "" + parbc47_53.getText().toString() + "-";}
+        if(parbc47_54.isChecked()){cadena += "" + parbc47_54.getText().toString() + "-";}
+        if(parbc47_55.isChecked()){cadena += "" + parbc47_55.getText().toString() + "-";}
+        if(parbc47_56.isChecked()){cadena += "" + parbc47_56.getText().toString() + "-";}
+        if(parbc47_57.isChecked()){cadena += "" + parbc47_57.getText().toString() + "-";}
+
+
+
+
         resultado = cadena.substring(0, cadena.length()-1);
         return resultado;
     }
@@ -1472,6 +2061,64 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc97.isChecked()){cadena += "" + parbc97.getText().toString() + "-";}
         if(parbc98.isChecked()){cadena += "" + parbc98.getText().toString() + "-";}
         if(parbc99.isChecked()){cadena += "" + parbc99.getText().toString() + "-";}
+        if(parbc9_1.isChecked()){cadena += "" + parbc9_1.getText().toString() + "-";}
+        if(parbc9_2.isChecked()){cadena += "" + parbc9_2.getText().toString() + "-";}
+        if(parbc9_3.isChecked()){cadena += "" + parbc9_3.getText().toString() + "-";}
+        if(parbc9_4.isChecked()){cadena += "" + parbc9_4.getText().toString() + "-";}
+        if(parbc9_5.isChecked()){cadena += "" + parbc9_5.getText().toString() + "-";}
+        if(parbc9_6.isChecked()){cadena += "" + parbc9_6.getText().toString() + "-";}
+        if(parbc9_7.isChecked()){cadena += "" + parbc9_7.getText().toString() + "-";}
+        if(parbc9_8.isChecked()){cadena += "" + parbc9_8.getText().toString() + "-";}
+        if(parbc9_9.isChecked()){cadena += "" + parbc9_9.getText().toString() + "-";}
+        if(parbc9_10.isChecked()){cadena += "" + parbc9_10.getText().toString() + "-";}
+        if(parbc9_11.isChecked()){cadena += "" + parbc9_11.getText().toString() + "-";}
+        if(parbc9_12.isChecked()){cadena += "" + parbc9_12.getText().toString() + "-";}
+        if(parbc9_13.isChecked()){cadena += "" + parbc9_13.getText().toString() + "-";}
+        if(parbc9_14.isChecked()){cadena += "" + parbc9_14.getText().toString() + "-";}
+        if(parbc9_15.isChecked()){cadena += "" + parbc9_15.getText().toString() + "-";}
+        if(parbc9_16.isChecked()){cadena += "" + parbc9_16.getText().toString() + "-";}
+        if(parbc9_17.isChecked()){cadena += "" + parbc9_17.getText().toString() + "-";}
+        if(parbc9_18.isChecked()){cadena += "" + parbc9_18.getText().toString() + "-";}
+        if(parbc9_19.isChecked()){cadena += "" + parbc9_19.getText().toString() + "-";}
+        if(parbc9_20.isChecked()){cadena += "" + parbc9_20.getText().toString() + "-";}
+        if(parbc9_21.isChecked()){cadena += "" + parbc9_21.getText().toString() + "-";}
+        if(parbc9_22.isChecked()){cadena += "" + parbc9_22.getText().toString() + "-";}
+        if(parbc9_23.isChecked()){cadena += "" + parbc9_23.getText().toString() + "-";}
+        if(parbc9_24.isChecked()){cadena += "" + parbc9_24.getText().toString() + "-";}
+        if(parbc9_25.isChecked()){cadena += "" + parbc9_25.getText().toString() + "-";}
+        if(parbc9_26.isChecked()){cadena += "" + parbc9_26.getText().toString() + "-";}
+        if(parbc9_27.isChecked()){cadena += "" + parbc9_27.getText().toString() + "-";}
+        if(parbc9_28.isChecked()){cadena += "" + parbc9_28.getText().toString() + "-";}
+        if(parbc9_29.isChecked()){cadena += "" + parbc9_29.getText().toString() + "-";}
+        if(parbc9_30.isChecked()){cadena += "" + parbc9_30.getText().toString() + "-";}
+        if(parbc9_31.isChecked()){cadena += "" + parbc9_31.getText().toString() + "-";}
+        if(parbc9_32.isChecked()){cadena += "" + parbc9_32.getText().toString() + "-";}
+        if(parbc9_33.isChecked()){cadena += "" + parbc9_33.getText().toString() + "-";}
+        if(parbc9_34.isChecked()){cadena += "" + parbc9_34.getText().toString() + "-";}
+        if(parbc9_35.isChecked()){cadena += "" + parbc9_35.getText().toString() + "-";}
+        if(parbc9_36.isChecked()){cadena += "" + parbc9_36.getText().toString() + "-";}
+        if(parbc9_37.isChecked()){cadena += "" + parbc9_37.getText().toString() + "-";}
+        if(parbc9_38.isChecked()){cadena += "" + parbc9_38.getText().toString() + "-";}
+        if(parbc9_39.isChecked()){cadena += "" + parbc9_39.getText().toString() + "-";}
+        if(parbc9_40.isChecked()){cadena += "" + parbc9_40.getText().toString() + "-";}
+        if(parbc9_41.isChecked()){cadena += "" + parbc9_41.getText().toString() + "-";}
+        if(parbc9_42.isChecked()){cadena += "" + parbc9_42.getText().toString() + "-";}
+        if(parbc9_43.isChecked()){cadena += "" + parbc9_43.getText().toString() + "-";}
+        if(parbc9_44.isChecked()){cadena += "" + parbc9_44.getText().toString() + "-";}
+        if(parbc9_45.isChecked()){cadena += "" + parbc9_45.getText().toString() + "-";}
+        if(parbc9_46.isChecked()){cadena += "" + parbc9_46.getText().toString() + "-";}
+        if(parbc9_47.isChecked()){cadena += "" + parbc9_47.getText().toString() + "-";}
+        if(parbc9_48.isChecked()){cadena += "" + parbc9_48.getText().toString() + "-";}
+        if(parbc9_49.isChecked()){cadena += "" + parbc9_49.getText().toString() + "-";}
+        if(parbc9_50.isChecked()){cadena += "" + parbc9_50.getText().toString() + "-";}
+        if(parbc9_51.isChecked()){cadena += "" + parbc9_51.getText().toString() + "-";}
+        if(parbc9_52.isChecked()){cadena += "" + parbc9_52.getText().toString() + "-";}
+        if(parbc9_53.isChecked()){cadena += "" + parbc9_53.getText().toString() + "-";}
+        if(parbc9_54.isChecked()){cadena += "" + parbc9_54.getText().toString() + "-";}
+        if(parbc9_55.isChecked()){cadena += "" + parbc9_55.getText().toString() + "-";}
+        if(parbc9_56.isChecked()){cadena += "" + parbc9_56.getText().toString() + "-";}
+        if(parbc9_57.isChecked()){cadena += "" + parbc9_57.getText().toString() + "-";}
+
         resultado = cadena.substring(0, cadena.length()-1);
         return resultado;
     }
@@ -1602,6 +2249,64 @@ public class PARBeneficiario extends AppCompatActivity {
         if(parbc234.isChecked()){cadena += "" + parbc234.getText().toString() + "-";}
         if(parbc235.isChecked()){cadena += "" + parbc235.getText().toString() + "-";}
         if(parbc236.isChecked()){cadena += "" + parbc236.getText().toString() + "-";}
+        if(parbc236_1.isChecked()){cadena += "" + parbc236_1.getText().toString() + "-";}
+        if(parbc236_2.isChecked()){cadena += "" + parbc236_2.getText().toString() + "-";}
+        if(parbc236_3.isChecked()){cadena += "" + parbc236_3.getText().toString() + "-";}
+        if(parbc236_4.isChecked()){cadena += "" + parbc236_4.getText().toString() + "-";}
+        if(parbc236_5.isChecked()){cadena += "" + parbc236_5.getText().toString() + "-";}
+        if(parbc236_6.isChecked()){cadena += "" + parbc236_6.getText().toString() + "-";}
+        if(parbc236_7.isChecked()){cadena += "" + parbc236_7.getText().toString() + "-";}
+        if(parbc236_8.isChecked()){cadena += "" + parbc236_8.getText().toString() + "-";}
+        if(parbc236_9.isChecked()){cadena += "" + parbc236_9.getText().toString() + "-";}
+        if(parbc236_10.isChecked()){cadena += "" + parbc236_10.getText().toString() + "-";}
+        if(parbc236_11.isChecked()){cadena += "" + parbc236_11.getText().toString() + "-";}
+        if(parbc236_12.isChecked()){cadena += "" + parbc236_12.getText().toString() + "-";}
+        if(parbc236_13.isChecked()){cadena += "" + parbc236_13.getText().toString() + "-";}
+        if(parbc236_14.isChecked()){cadena += "" + parbc236_14.getText().toString() + "-";}
+        if(parbc236_15.isChecked()){cadena += "" + parbc236_15.getText().toString() + "-";}
+        if(parbc236_16.isChecked()){cadena += "" + parbc236_16.getText().toString() + "-";}
+        if(parbc236_17.isChecked()){cadena += "" + parbc236_17.getText().toString() + "-";}
+        if(parbc236_18.isChecked()){cadena += "" + parbc236_18.getText().toString() + "-";}
+        if(parbc236_19.isChecked()){cadena += "" + parbc236_19.getText().toString() + "-";}
+        if(parbc236_20.isChecked()){cadena += "" + parbc236_20.getText().toString() + "-";}
+        if(parbc236_21.isChecked()){cadena += "" + parbc236_21.getText().toString() + "-";}
+        if(parbc236_22.isChecked()){cadena += "" + parbc236_22.getText().toString() + "-";}
+        if(parbc236_23.isChecked()){cadena += "" + parbc236_23.getText().toString() + "-";}
+        if(parbc236_24.isChecked()){cadena += "" + parbc236_24.getText().toString() + "-";}
+        if(parbc236_25.isChecked()){cadena += "" + parbc236_25.getText().toString() + "-";}
+        if(parbc236_26.isChecked()){cadena += "" + parbc236_26.getText().toString() + "-";}
+        if(parbc236_27.isChecked()){cadena += "" + parbc236_27.getText().toString() + "-";}
+        if(parbc236_28.isChecked()){cadena += "" + parbc236_28.getText().toString() + "-";}
+        if(parbc236_29.isChecked()){cadena += "" + parbc236_29.getText().toString() + "-";}
+        if(parbc236_30.isChecked()){cadena += "" + parbc236_30.getText().toString() + "-";}
+        if(parbc236_31.isChecked()){cadena += "" + parbc236_31.getText().toString() + "-";}
+        if(parbc236_32.isChecked()){cadena += "" + parbc236_32.getText().toString() + "-";}
+        if(parbc236_33.isChecked()){cadena += "" + parbc236_33.getText().toString() + "-";}
+        if(parbc236_34.isChecked()){cadena += "" + parbc236_34.getText().toString() + "-";}
+        if(parbc236_35.isChecked()){cadena += "" + parbc236_35.getText().toString() + "-";}
+        if(parbc236_36.isChecked()){cadena += "" + parbc236_36.getText().toString() + "-";}
+        if(parbc236_37.isChecked()){cadena += "" + parbc236_37.getText().toString() + "-";}
+        if(parbc236_38.isChecked()){cadena += "" + parbc236_38.getText().toString() + "-";}
+        if(parbc236_39.isChecked()){cadena += "" + parbc236_39.getText().toString() + "-";}
+        if(parbc236_40.isChecked()){cadena += "" + parbc236_40.getText().toString() + "-";}
+        if(parbc236_41.isChecked()){cadena += "" + parbc236_41.getText().toString() + "-";}
+        if(parbc236_42.isChecked()){cadena += "" + parbc236_42.getText().toString() + "-";}
+        if(parbc236_43.isChecked()){cadena += "" + parbc236_43.getText().toString() + "-";}
+        if(parbc236_44.isChecked()){cadena += "" + parbc236_44.getText().toString() + "-";}
+        if(parbc236_45.isChecked()){cadena += "" + parbc236_45.getText().toString() + "-";}
+        if(parbc236_46.isChecked()){cadena += "" + parbc236_46.getText().toString() + "-";}
+        if(parbc236_47.isChecked()){cadena += "" + parbc236_47.getText().toString() + "-";}
+        if(parbc236_48.isChecked()){cadena += "" + parbc236_48.getText().toString() + "-";}
+        if(parbc236_49.isChecked()){cadena += "" + parbc236_49.getText().toString() + "-";}
+        if(parbc236_50.isChecked()){cadena += "" + parbc236_50.getText().toString() + "-";}
+        if(parbc236_51.isChecked()){cadena += "" + parbc236_51.getText().toString() + "-";}
+        if(parbc236_52.isChecked()){cadena += "" + parbc236_52.getText().toString() + "-";}
+        if(parbc236_53.isChecked()){cadena += "" + parbc236_53.getText().toString() + "-";}
+        if(parbc236_54.isChecked()){cadena += "" + parbc236_54.getText().toString() + "-";}
+        if(parbc236_55.isChecked()){cadena += "" + parbc236_55.getText().toString() + "-";}
+        if(parbc236_56.isChecked()){cadena += "" + parbc236_56.getText().toString() + "-";}
+        if(parbc236_57.isChecked()){cadena += "" + parbc236_57.getText().toString() + "-";}
+
         resultado = cadena.substring(0, cadena.length()-1);
         return resultado;
     }

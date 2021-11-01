@@ -8,6 +8,16 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <TextView
+        android:id="@+id/pasl_o_tvTitulo55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listo!"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/fab_exportar"
