@@ -21,7 +21,7 @@
         <item
             android:id="@+id/nav_liconsa"
             android:icon="@drawable/ic_baseline_monetization_on_24"
-            android:title="Liconsa Precios" />
+            android:title="Diconsa Precios" />
         <item
             android:id="@+id/nav_exportar"
             android:icon="@drawable/ic_menu_manage"

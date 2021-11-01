@@ -216,6 +216,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -258,6 +259,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -300,6 +302,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -335,6 +338,7 @@
                 android:maxLines="1" />
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -342,6 +346,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -384,6 +389,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -426,6 +432,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -461,6 +468,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -504,6 +512,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -546,6 +555,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -589,6 +599,7 @@
                 android:textColor="#000000" />
 
             <RadioGroup
+                android:id="@+id/radiogroup2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">

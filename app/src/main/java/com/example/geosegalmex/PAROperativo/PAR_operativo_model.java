@@ -4,12 +4,12 @@ import java.io.Serializable;
 
 public class PAR_operativo_model implements Serializable {
 
-    private String folio, fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, f1, f2, longitudGeo, latitudGeo;
+    private String folio, fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, f1, f2, longitudGeo, latitudGeo;
 
     public PAR_operativo_model() {
     }
 
-    public PAR_operativo_model(String folio, String fechaenc, String noment, String cveedo, String nommun, String cvemun, String parnom, String parape, String parapem, String parrad1, String pare6, String pare7, String parrad2, String parrad3, String parrad4, String parrad5, String parrad6, String parrad7, String pare8, String pare9, String pare10, String pare11, String pare12, String pare13, String pare14, String pare15, String pare16, String pare17, String pare18, String pare19, String pare20, String pare21, String pare22, String pare23, String pare24, String pare25, String pare26, String pare27, String pare28, String pare29, String pare30, String pare31, String pare32, String pare33, String pare34, String pare35, String pare36, String pare37, String pare38, String pare39, String pare40, String pare41, String pare42, String pare43, String pare44, String pare45, String pare46, String pare47, String pare48, String pare49, String pare50, String pare51, String pare52, String pare53, String pare54, String pare55, String pare56, String pare57, String pare58, String pare59, String pare60, String pare61, String pare62, String pare63, String pare64, String pare65, String pare66, String pare67, String pare68, String pare69, String pare70, String pare71, String pare72, String pare73, String pare74, String pare75, String pare76, String pare77, String pare78, String pare79, String pare80, String pare81, String pare82, String pare84, String pare85, String pare86, String pare87, String pare88, String pare89, String pare90, String pare91, String pare92, String pare93, String pare94, String pare95, String f1, String f2, String longitudGeo, String latitudGeo) {
+    public PAR_operativo_model(String folio, String fechaenc, String noment, String cveedo, String nommun, String cvemun, String parnom, String parape, String parapem, String parrad1, String edad, String pare6, String pare7, String parrad2, String parrad3, String parrad4, String parrad5, String parrad6, String parrad7, String pare8, String pare9, String pare10, String pare11, String pare12, String pare13, String pare14, String pare15, String pare16, String pare17, String pare18, String pare19, String pare20, String pare21, String pare22, String pare23, String pare24, String pare25, String pare26, String pare27, String pare28, String pare29, String pare30, String pare31, String pare32, String pare33, String pare34, String pare35, String pare36, String pare37, String pare38, String pare39, String pare40, String pare41, String pare42, String pare43, String pare44, String pare45, String pare46, String pare47, String pare48, String pare49, String pare50, String pare51, String pare52, String pare53, String pare54, String pare55, String pare56, String pare57, String pare58, String pare59, String pare60, String pare61, String pare62, String pare63, String pare64, String pare65, String pare66, String pare67, String pare68, String pare69, String pare70, String pare71, String pare72, String pare73, String pare74, String pare75, String pare76, String pare77, String pare78, String pare79, String pare80, String pare81, String pare82, String pare84, String pare85, String pare86, String pare87, String pare88, String pare89, String pare90, String pare91, String pare92, String pare93, String pare94, String pare95, String f1, String f2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fechaenc = fechaenc;
         this.noment = noment;
@@ -20,6 +20,7 @@ public class PAR_operativo_model implements Serializable {
         this.parape = parape;
         this.parapem = parapem;
         this.parrad1 = parrad1;
+        this.edad = edad;
         this.pare6 = pare6;
         this.pare7 = pare7;
         this.parrad2 = parrad2;
@@ -199,6 +200,14 @@ public class PAR_operativo_model implements Serializable {
 
     public void setParrad1(String parrad1) {
         this.parrad1 = parrad1;
+    }
+
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
     }
 
     public String getPare6() {

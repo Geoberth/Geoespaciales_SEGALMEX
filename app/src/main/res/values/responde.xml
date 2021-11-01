@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="responde">
-        <item>Niñas y niños de 6 meses a 12 años de edad</item>
-        <item>Mujeres y hombres adolescentes de 13 a 15 años</item>
-        <item>Mujeres en período de gestación o lactancia</item>
-        <item>Mujeres de 45 a 59 años</item>
-        <item>Personas con enfermedades crónicas y personas con discapacidad</item>
-        <item>Personas adultas de 60 y más años de edad</item>
+        <item>Beneficiario</item>
+        <item>Familiar</item>
+        <item>Otro</item>
+
     </string-array>
 </resources>
 

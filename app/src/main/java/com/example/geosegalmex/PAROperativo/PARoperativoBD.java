@@ -50,6 +50,7 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
         contentValues.put(PAR_operativo_bd.COLUMN_PARAPE, model.getParape());
         contentValues.put(PAR_operativo_bd.COLUMN_PARAPEM, model.getParapem());
         contentValues.put(PAR_operativo_bd.COLUMN_PARRAD1, model.getParrad1());
+        contentValues.put(PAR_operativo_bd.COLUMN_EDAD, model.getEdad());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE6, model.getPare6());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE7, model.getPare7());
         contentValues.put(PAR_operativo_bd.COLUMN_PARRAD2, model.getParrad2());
@@ -200,7 +201,7 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
                 String ape = cursor.getString(7);
                 String apem = cursor.getString(8);
 
-                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, nom, ape, apem,"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
+                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, nom, ape, apem,"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
                 returnList.add(newCuastomer);
 
             }while(cursor.moveToNext());

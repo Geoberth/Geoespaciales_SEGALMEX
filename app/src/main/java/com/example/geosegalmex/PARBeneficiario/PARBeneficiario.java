@@ -157,6 +157,8 @@ public class PARBeneficiario extends AppCompatActivity {
                                     String ventiuno = obtenerResultado3(parbr47, parbr48, parbr49);
                                     String ventidos = obtenerResultado3(parbr50, parbr51, parbr52);
                                     String ventitres = obtenerResultado(parbr53, parbr54);
+
+                                    //Sentencia condicionante
                                     String explique23 = (parbr54.isChecked()==true)? parbt23.getText().toString() : "" ;
                                     String venticuatro = obtenerResultado(parbr198, parbr199);
                                     String venticinco = Resultado25();
