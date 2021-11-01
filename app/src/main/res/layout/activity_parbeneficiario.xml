@@ -2254,7 +2254,7 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:text="19. ¿Los productos de la canasta básica DICONSA han tenido efectos favorables en la nutrición de las personas de su familia?."
+                    android:text="19. ¿Los productos de la canasta básica DICONSA han tenido efectos favorables en la nutrición de las personas de su familia?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -2787,7 +2787,7 @@
 
 
                 <TextView
-                    android:text="20. En su opinión: ¿La tienda ha representado ahorros para usted y su familia?."
+                    android:text="20. En su opinión: ¿La tienda ha representado ahorros para usted y su familia?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -2815,8 +2815,7 @@
                 </RadioGroup>
 
                 <TextView
-                    android:text="21. En comparación con otras tiendas de la localidad considera que los precios de los productos de canasta básica aquí son:
-."
+                    android:text="21. En comparación con otras tiendas de la localidad considera que los precios de los productos de canasta básica aquí son:"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -2851,7 +2850,7 @@
                 </RadioGroup>
 
                 <TextView
-                    android:text="22. ¿Cómo califica la atención que recibe del encargado de la Tienda?:."
+                    android:text="22. ¿Cómo califica la atención que recibe del encargado de la Tienda?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"
@@ -2922,7 +2921,7 @@
                 </RadioGroup>
 
             <TextView
-                android:text="24. ¿Se le ha condicionado alguna vez la compra de productos en la Tienda?."
+                android:text="24. ¿Se le ha condicionado alguna vez la compra de productos en la Tienda?"
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
                 android:textColor="#000000"

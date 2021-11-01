@@ -193,6 +193,19 @@
                         android:text="Mujer" />
                 </RadioGroup>
 
+            <TextView
+                android:text="Edad:"
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/par_et_txtedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -403,13 +416,88 @@
                     android:text="7. ¿Cuántas capacitaciones ha recibido este año?:"
                     android:textColor="#000000" />
 
+
+            <RadioGroup
+                android:id="@+id/group7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/parrad0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <RadioButton
+
+                    android:id="@+id/parrad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+
+                <RadioButton
+
+                    android:id="@+id/parrad2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+
+                <RadioButton
+
+                    android:id="@+id/parrad3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+
+                <RadioButton
+                    android:id="@+id/parrad4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"/>
+
+                <RadioButton
+
+                    android:id="@+id/parrad5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"/>
+                <RadioButton
+
+                    android:id="@+id/parrad6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"/>
+
+                <RadioButton
+
+                    android:id="@+id/parrad7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"/>
+
+            </RadioGroup>
+
+
                 <EditText
                     android:id="@+id/par_et_txt8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Escriba el número."
+                    android:visibility="gone"
+                    android:hint="Escriba el número de capacitaciones."
                     android:inputType="number"
                     android:maxLines="1" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -421,7 +509,6 @@
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:enabled="true"
                     android:layout_marginTop="5dp"
-
                     android:id="@+id/par_et_ch1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -578,6 +665,8 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone"
                     android:text="Ninguna" />
+
+        </LinearLayout>
 
                 <TextView
                     android:text="10. ¿Estaría dispuesto a capacitarse en temas de orientación al consumo?"
@@ -1755,14 +1844,14 @@
                     android:id="@+id/par_et_ra31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="(Toda la canasta DICONSA y hasta 20 articulos adicionales)."/>
+                    android:text="Medianamente suficiente (Toda la canasta DICONSA y hasta 20 articulos adicionales)."/>
 
                 <RadioButton
 
                     android:id="@+id/par_et_ra32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No dispone de toda la Canasta DICONSA."/>
+                    android:text="Insuficiente (No dispone de toda la Canasta DICONSA)."/>
 
             </RadioGroup>
 
@@ -1810,7 +1899,7 @@
                         android:id="@+id/par_et_ra36"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Malo"/>
+                        android:text="Mala"/>
 
                 </RadioGroup>
 
@@ -1894,7 +1983,7 @@
                         android:id="@+id/par_et_ra44"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Malo"/>
+                        android:text="Mala"/>
 
                 </RadioGroup>
 
@@ -1949,6 +2038,7 @@
                     android:layout_height="wrap_content"/>
 
                 <RadioGroup
+                    android:id="@+id/group8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -2253,7 +2343,7 @@
                         android:id="@+id/par_et_ra49"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No"/>
+                        android:text="Ninguna"/>
 
                     <RadioButton
 
@@ -2267,6 +2357,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:visibility="gone"
+                        android:maxLength="2"
+                        android:inputType="number"
                         android:maxLines="1" />
 
                 </RadioGroup>
@@ -2625,7 +2717,7 @@
                     android:text="Adjuntar foto" />
 
                 <TextView
-                    android:text="33. ¿En la tienda se venden productos como alcohol, tabaco en cualquier presentación"
+                    android:text="33. ¿En la tienda se venden productos como alcohol, tabaco en cualquier presentación?"
                     android:layout_width="match_parent"
                     android:layout_marginTop="10dp"
                     android:textColor="#000000"

@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -31,9 +33,9 @@ public class PAR_Operativo extends AppCompatActivity {
     EditText fec, paret3, paret4, paret5, paret6, paret7, paret8, paret08, paret008, paret9, paret10, paret11, paret12, paret13, paret14, paret15, paret16, paret17, paret18, paret19,  paret20;
 
     //Variables de precios de los productos Liconsa (tabla de productos)
-    EditText pprolic1, pprolic2, paret1119, pprolic3, pprolic4, pprolic5, pprolic6, pprolic7, pprolic8, pprolic9, pprolic10, pprolic11, pprolic12, pprolic13, pprolic14, pprolic15, pprolic16, pprolic17, pprolic18, pprolic19, pprolic20, pprolic21, pprolic22, pprolic23, pprolic24, pprolic25, pprolic26, pprolic27, pprolic28, pprolic29, pprolic30, pprolic31, pprolic32, pprolic33, pprolic34, pprolic35, pprolic36, pprolic37, pprolic38, pprolic39, pprolic40, pprolic41, pprolic42, pprolic43, pprolic44, pprolic45, pprolic46, pprolic47, pares3;
+    EditText edadd, pprolic1, pprolic2, paret1119, pprolic3, pprolic4, pprolic5, pprolic6, pprolic7, pprolic8, pprolic9, pprolic10, pprolic11, pprolic12, pprolic13, pprolic14, pprolic15, pprolic16, pprolic17, pprolic18, pprolic19, pprolic20, pprolic21, pprolic22, pprolic23, pprolic24, pprolic25, pprolic26, pprolic27, pprolic28, pprolic29, pprolic30, pprolic31, pprolic32, pprolic33, pprolic34, pprolic35, pprolic36, pprolic37, pprolic38, pprolic39, pprolic40, pprolic41, pprolic42, pprolic43, pprolic44, pprolic45, pprolic46, pprolic47, pares3;
 
-    RadioButton parer1, parer2, parer3, parer4, parer5, parer6, parer7, parer8, parer9, parer10, parer11, parer12, parer13, parer14, parer15, parer16, parer17, parer18, parer19, parer20, parer21, parer22, parer23, parer24, parer25, parer26, parer27, parer28, parer29, parer30, parer31, parer32, parer33, parer34, parer35, parer36, parer37, parer38, parer39, parer40, parer41, parer42, parer43, parer44, parer45, parer46, parer47, parer48, parer49, parer50, parer51, parer52, parer53, parer54, parer55, parer56, parer57, parer58, parer59, parer60, parer61, parer62, parer63, parer64, parer65, parer66, parer67, parer68, parer69;
+    RadioButton parer1, parer2, parer3, parer4, parer5, parer6, parer7, parer8, parer9, parer10, parer11, parer12, parer13, parer14, parer15, parer16, parer17, parer18, parer19, parer20, parer21, parer22, parer23, parer24, parer25, parer26, parer27, parer28, parer29, parer30, parer31, parer32, parer33, parer34, parer35, parer36, parer37, parer38, parer39, parer40, parer41, parer42, parer43, parer44, parer45, parer46, parer47, parer48, parer49, parer50, parer51, parer52, parer53, parer54, parer55, parer56, parer57, parer58, parer59, parer60, parer61, parer62, parer63, parer64, parer65, parer66, parer67, parer68, parer69, parra0, parra1, parra2, parra3, parra4, parra5, parra6, parra7;
     Spinner pares1, pares2, hora, min, hora2, min2;
     CheckBox parec1, parec2, parec3, parec4, parec5, parec6, parec7, parec8, parec9, parec10, parec11, parec12, parec13, parec14, parec15, parec16, parec17, parec18, parec19, parec20, parec21, parec22, parec23, parec24, parec25, parec26, parec27, parec28, parec29, parec30, parec31, parec32, parec33, parec34, parec35, parec36, parec37, parec38, parec39, parec40, parec41, parec42, parec43, parec44, parec45, parec46, parec47, parec48, parec49, parec50, parec51, parec52, parec53, parec54, parec55, parec56, parec57, parec58, parec59, parec60, parec61, parec62, parec63, parec64, parec65, parec66, parec67, parec68, parec69, parec70, parec71, parec72, parec73, parec74, parec75, parec76, parec77, parec78, parec79, parec80, parec81, parec82, parec83, parec84, parec85, parec86, parec87, parec88, parec89, parec90, parec91, parec92, parec93, parec94, parec95, parec96, parec97, parec98, parec99, parec100, parec101, parec102, parec103, parec104, parec105, parec106, parec107, parec108, parec109, parec110, parec111, parec112, parec113, parec114, parec115, parec116, parec117, parec118, parec119, parec120, parec121, parec122, parec123, parec124, parec125, parec126, parec127, parec128, parec129, parec130, parec131, parec132, parec133, parec134, parec135, parec136, parec137, parec138, parec139, parec140;
     Button btnSiguiente, btnCamara;
@@ -87,6 +89,8 @@ public class PAR_Operativo extends AppCompatActivity {
         //Sexo
         parer1=(RadioButton)findViewById(R.id.par_et_ra1);
         parer2=(RadioButton)findViewById(R.id.par_et_ra2);
+
+        edadd =(EditText)findViewById(R.id.par_et_txtedad);
 
         paret6=(EditText)findViewById(R.id.par_et_txt6);
         paret7=(EditText)findViewById(R.id.par_et_txt7);
@@ -412,6 +416,15 @@ public class PAR_Operativo extends AppCompatActivity {
         pprolic46=(EditText)findViewById(R.id.dic_pre_46);
         pprolic47=(EditText)findViewById(R.id.dic_pre_47);
 
+        parra0 =(RadioButton)findViewById(R.id.parrad0);
+        parra1 =(RadioButton)findViewById(R.id.parrad1);
+        parra2 =(RadioButton)findViewById(R.id.parrad2);
+        parra3 =(RadioButton)findViewById(R.id.parrad3);
+        parra4 =(RadioButton)findViewById(R.id.parrad4);
+        parra5 =(RadioButton)findViewById(R.id.parrad5);
+        parra6 =(RadioButton)findViewById(R.id.parrad6);
+        parra7 =(RadioButton)findViewById(R.id.parrad7);
+
         //BOTON SIGUIENTE
 
         btnSiguiente = findViewById(R.id.par_et_sig);
@@ -420,13 +433,15 @@ public class PAR_Operativo extends AppCompatActivity {
         eventos34();
         //eventos35();
         //eventos36();
-        eventos37();
+        eventos44();
         eventos38();
         //eventos39();
         eventos40();
         eventos41();
         eventos42();
+        eventos43();
         Eventos_Hora();
+
 
         pares1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
@@ -466,6 +481,7 @@ public class PAR_Operativo extends AppCompatActivity {
         {
             @Override
             public void onClick(View view) {
+                capacitaciones();
 
                 if(validar()) {
                     if(validarcapa1()) {
@@ -483,6 +499,7 @@ public class PAR_Operativo extends AppCompatActivity {
                                     String parape = paret4.getText().toString();
                                     String parapem = paret5.getText().toString();
                                     String parrad1 = obtenerRadio(parer1, parer2);
+                                    String edad = edadd.getText().toString();
                                     String pare6 = paret6.getText().toString();
                                     String pare7 = paret7.getText().toString();
                                     String parrad2 = obtenerRadio(parer3, parer4);
@@ -585,7 +602,7 @@ public class PAR_Operativo extends AppCompatActivity {
                                     String f1 = General.Foto1;
                                     String f2 = General.Foto2;
 
-                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, f1, f2, "", "");
+                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, f1, f2, "", "");
                                     Intent in = new Intent(PAR_Operativo.this, GeoreferenciaActivity.class);
                                     in.putExtra("model", model);
                                     startActivity(in);
@@ -653,6 +670,30 @@ public class PAR_Operativo extends AppCompatActivity {
             paret6.setError("No puede quedar vacio");
             retorno = false;
         }
+        else if (edadd.getText().toString().isEmpty()){
+            edadd.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(Float.parseFloat(paret6.getText().toString()) > 30){
+            paret6.setError("No es un rango aceptable");
+            retorno=false;
+        }
+        else if(Float.parseFloat(paret7.getText().toString()) > 13){
+            paret7.setError("No es un rango aceptable");
+            retorno=false;
+        }
+        else if(Float.parseFloat(paret7.getText().toString()) < 0){
+            paret7.setError("No es un rango aceptable");
+            retorno=false;
+        }
+        else if(Float.parseFloat(edadd.getText().toString()) > 100){
+            edadd.setError("No es un rango aceptable");
+            retorno=false;
+        }
+        else if(Float.parseFloat(edadd.getText().toString()) < 10){
+            edadd.setError("No es un rango aceptable");
+            retorno=false;
+        }
         else if (paret7.getText().toString().isEmpty()){
             paret7.setError("No puede quedar vacio");
             retorno = false;
@@ -681,10 +722,8 @@ public class PAR_Operativo extends AppCompatActivity {
             parer14.setError("Debes seleccionar una opción");
             retorno=false;
         }
-        else if (paret8.getText().toString().isEmpty()){
-            paret8.setError("No puede quedar vacio");
-            retorno = false;
-        }
+
+
         else if(validarcapa5_5() == 0){
             parec117.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
@@ -701,7 +740,7 @@ public class PAR_Operativo extends AppCompatActivity {
             parec132.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
-
+/*
         else if(validarcapa1_1() == 0){
             parec1.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
@@ -710,6 +749,8 @@ public class PAR_Operativo extends AppCompatActivity {
             parec14.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
         }
+
+ */
         else if(validarcapa3_3() == 0){
             parec63.setError("Debe seleccionar cuando menos una opción");
             retorno=false;
@@ -906,6 +947,8 @@ public class PAR_Operativo extends AppCompatActivity {
         }
         return respuesta4;
     }
+
+
 
 
     public boolean validarcapa1(){
@@ -1262,6 +1305,9 @@ public class PAR_Operativo extends AppCompatActivity {
         if (parec7.isChecked()){
             cadena = "7-";
         }
+        if (!parec7.isChecked() && !parec6.isChecked() && !parec5.isChecked() && !parec4.isChecked() && !parec3.isChecked() && !parec2.isChecked() && !parec1.isChecked()){
+            cadena = "No aplica";
+        }
         resultado1 = cadena.substring(0, cadena.length()-1);
         return resultado1;
     }
@@ -1305,6 +1351,9 @@ public class PAR_Operativo extends AppCompatActivity {
         }
         if (parec15.isChecked()){
             cadena = "7-";
+        }
+        if (!parec9.isChecked() && !parec10.isChecked() && !parec11.isChecked() && !parec12.isChecked() && !parec13.isChecked() && !parec14.isChecked() && !parec15.isChecked()){
+            cadena = "No aplica";
         }
         resultado1 = cadena.substring(0, cadena.length()-1);
         return resultado1;
@@ -1866,20 +1915,6 @@ public class PAR_Operativo extends AppCompatActivity {
         });
     }
 
-    public void eventos37(){
-        findViewById(R.id.par_et_ra48).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(parer48.isChecked()==true){
-                    paret16.setVisibility(View.VISIBLE);
-                }
-                if(parer48.isChecked()==false){
-                    paret16.setVisibility(View.GONE);
-                    paret16.setText("");
-                }
-            }
-        });
-    }
 
     public void eventos38(){
         findViewById(R.id.par_et_ch121).setOnClickListener(new View.OnClickListener() {
@@ -1958,6 +1993,79 @@ public class PAR_Operativo extends AppCompatActivity {
         });
     }
 
+    public void eventos43() {
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.group7);
+        LinearLayout layout = (LinearLayout) findViewById(R.id.layout1);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (parra0.isChecked() == true) {
+                    layout.setVisibility(View.GONE);
+                } else {
+                    layout.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+    }
+
+
+    public void eventos44() {
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.group8);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (parer48.isChecked() == true) {
+                    paret16.setVisibility(View.VISIBLE);
+                } else {
+                    paret16.setVisibility(View.GONE);
+                    paret16.setText("");
+                }
+            }
+        });
+    }
+
+
+
+    public void capacitaciones(){
+       String nocapa = "0";
+       if (parra0.isChecked()){
+           nocapa = "0";
+           paret8.setText(nocapa);
+       }
+        if (parra1.isChecked()){
+            nocapa = "1";
+            paret8.setText(nocapa);
+        }
+        if (parra2.isChecked()){
+            nocapa = "2";
+            paret8.setText(nocapa);
+        }
+        if (parra3.isChecked()){
+            nocapa = "3";
+            paret8.setText(nocapa);
+        }
+        if (parra4.isChecked()){
+            nocapa = "4";
+            paret8.setText(nocapa);
+        }
+        if (parra5.isChecked()){
+            nocapa = "5";
+            paret8.setText(nocapa);
+        }
+        if (parra6.isChecked()){
+            nocapa = "6";
+            paret8.setText(nocapa);
+        }
+        if (parra7.isChecked()){
+            nocapa = "7";
+            paret8.setText(nocapa);
+        }
+
+    }
+
+
 
 
 
@@ -2018,6 +2126,10 @@ public class PAR_Operativo extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 
 
 

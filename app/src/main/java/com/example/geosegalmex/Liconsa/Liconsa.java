@@ -934,4 +934,8 @@ public class Liconsa extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 }

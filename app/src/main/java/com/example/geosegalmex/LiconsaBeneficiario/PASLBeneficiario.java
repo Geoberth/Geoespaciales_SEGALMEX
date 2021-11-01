@@ -198,43 +198,138 @@ public class PASLBeneficiario extends AppCompatActivity {
         });
 
 
-        findViewById(R.id.paslb_ra11).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (aceptable4.isChecked()==true) {
+
+
+        RadioGroup radiogroup4 = (RadioGroup) findViewById(R.id.radiogroup4);
+        radiogroup4.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable4.isChecked() == true) {
                     cuatrocom.setVisibility(View.VISIBLE);
-                }else{
+                } else {
                     cuatrocom.setVisibility(View.GONE);
                     cuatrocom.setText("");
                 }
             }
         });
 
-        findViewById(R.id.paslb_ra14).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (aceptable5.isChecked()==true) {
+        RadioGroup radiogroup5 = (RadioGroup) findViewById(R.id.radiogroup5);
+        radiogroup5.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable5.isChecked() == true) {
                     cincocom.setVisibility(View.VISIBLE);
-                }else{
+                } else {
                     cincocom.setVisibility(View.GONE);
                     cincocom.setText("");
                 }
             }
         });
 
-        findViewById(R.id.paslb_ra17).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (aceptable6.isChecked()==true) {
+
+        RadioGroup radiogroup6 = (RadioGroup) findViewById(R.id.radiogroup6);
+        radiogroup6.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable6.isChecked() == true) {
                     seiscom.setVisibility(View.VISIBLE);
-                }else{
+                } else {
                     seiscom.setVisibility(View.GONE);
                     seiscom.setText("");
                 }
             }
         });
 
-        findViewById(R.id.paslb_ra20).setOnClickListener(new View.OnClickListener() {
+
+        RadioGroup radiogroup7 = (RadioGroup) findViewById(R.id.radiogroup7);
+        radiogroup7.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable7.isChecked() == true) {
+                    sietecom.setVisibility(View.VISIBLE);
+                } else {
+                    sietecom.setVisibility(View.GONE);
+                    sietecom.setText("");
+                }
+            }
+        });
+
+
+        RadioGroup radiogroup8 = (RadioGroup) findViewById(R.id.radiogroup8);
+        radiogroup8.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (bueno8.isChecked() == true) {
+                    ochocom.setVisibility(View.VISIBLE);
+                } else {
+                    ochocom.setVisibility(View.GONE);
+                    ochocom.setText("");
+                }
+            }
+        });
+
+
+        RadioGroup radiogroup9 = (RadioGroup) findViewById(R.id.radiogroup9);
+        radiogroup9.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable9.isChecked() == true) {
+                    nuevecom.setVisibility(View.VISIBLE);
+                } else {
+                    nuevecom.setVisibility(View.GONE);
+                    nuevecom.setText("");
+                }
+            }
+        });
+
+
+        RadioGroup radiogroup10 = (RadioGroup) findViewById(R.id.radiogroup10);
+        radiogroup10.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable10.isChecked() == true) {
+                    diezcom.setVisibility(View.VISIBLE);
+                } else {
+                    diezcom.setVisibility(View.GONE);
+                    diezcom.setText("");
+                }
+            }
+        });
+
+
+        RadioGroup radiogroup11 = (RadioGroup) findViewById(R.id.radiogroup11);
+        radiogroup11.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable11.isChecked() == true) {
+                    oncecom.setVisibility(View.VISIBLE);
+                } else {
+                    oncecom.setVisibility(View.GONE);
+                    oncecom.setText("");
+                }
+            }
+        });
+
+
+        RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.radiogroup2);
+        radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup radioGroup1, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (aceptable12.isChecked() == true) {
+                    docecom.setVisibility(View.VISIBLE);
+                } else {
+                    docecom.setVisibility(View.GONE);
+                    docecom.setText("");
+                }
+            }
+        });
+
+
+/*
+
+
+
+findViewById(R.id.paslb_ra20).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (aceptable7.isChecked()==true) {
@@ -246,31 +341,7 @@ public class PASLBeneficiario extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.paslb_ra81).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (bueno8.isChecked()==true) {
-                    ochocom.setVisibility(View.VISIBLE);
-                }else{
-                    ochocom.setVisibility(View.GONE);
-                    ochocom.setText("");
-                }
-            }
-        });
-
-        findViewById(R.id.paslb_ra23).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (aceptable9.isChecked()==true) {
-                    nuevecom.setVisibility(View.VISIBLE);
-                }else{
-                    nuevecom.setVisibility(View.GONE);
-                    nuevecom.setText("");
-                }
-            }
-        });
-
-        findViewById(R.id.paslb_ra26).setOnClickListener(new View.OnClickListener() {
+ findViewById(R.id.paslb_ra26).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (aceptable10.isChecked()==true) {
@@ -282,7 +353,7 @@ public class PASLBeneficiario extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.paslb_ra29).setOnClickListener(new View.OnClickListener() {
+ findViewById(R.id.paslb_ra29).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (aceptable11.isChecked()==true) {
@@ -293,6 +364,7 @@ public class PASLBeneficiario extends AppCompatActivity {
                 }
             }
         });
+
 
         findViewById(R.id.paslb_ra32).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -305,7 +377,8 @@ public class PASLBeneficiario extends AppCompatActivity {
                 }
             }
         });
-        /*
+
+
         findViewById(R.id.paslb_ra35).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
