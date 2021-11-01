@@ -37,7 +37,8 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
 
         contentValues.put(pasl_beneficiario_bd.COLUMN_FOLIO, model.getFolio());
         contentValues.put(pasl_beneficiario_bd.COLUMN_RES, model.getRes());
-        contentValues.put(pasl_beneficiario_bd.COLUMN_BENEFICIARIOS, model.getBene());
+        contentValues.put(pasl_beneficiario_bd.COLUMN_BENEFI, model.getBene());
+        contentValues.put(pasl_beneficiario_bd.COLUMN_OBENEFI, model.getObene());
         contentValues.put(pasl_beneficiario_bd.COLUMN_UNO, model.getUno());
         contentValues.put(pasl_beneficiario_bd.COLUMN_DOS, model.getDos());
         contentValues.put(pasl_beneficiario_bd.COLUMN_TRES, model.getTres());

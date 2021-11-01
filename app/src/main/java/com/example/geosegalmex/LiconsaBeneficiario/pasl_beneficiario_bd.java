@@ -7,7 +7,8 @@ public class pasl_beneficiario_bd {
     public static final String TABLA_BD = "TB_PASL_BENEFICIARIO";
     public static final String COLUMN_FOLIO = "FOLIO";
     public static final String COLUMN_RES = "RES";
-    public static final String COLUMN_BENEFICIARIOS = "BENEFICIARIOS";
+    public static final String COLUMN_BENEFI = "BENEFI";
+    public static final String COLUMN_OBENEFI = "OBENEFI";
     public static final String COLUMN_UNO = "UNO";
     public static final String COLUMN_DOS = "DOS";
     public static final String COLUMN_TRES = "TRES";
@@ -45,7 +46,8 @@ public class pasl_beneficiario_bd {
     public static final String CREAR_TABLA_PASL_BENEFICIARIO= "CREATE TABLE " + TABLA_BD + "("
             + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
             + COLUMN_RES + " VARCHAR, "
-            + COLUMN_BENEFICIARIOS + " VARCHAR, "
+            + COLUMN_BENEFI + " VARCHAR, "
+            + COLUMN_OBENEFI + " VARCHAR, "
             + COLUMN_UNO + " VARCHAR, "
             + COLUMN_DOS + " VARCHAR, "
             + COLUMN_TRES + " VARCHAR, "

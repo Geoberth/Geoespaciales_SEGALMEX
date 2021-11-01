@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -25,10 +26,10 @@ public class PASLBeneficiario extends AppCompatActivity {
 
     Spinner responde;
     CheckBox beneficiarioa, beneficiariob, beneficiarioc, beneficiariod, beneficiarioe, beneficiariof;
-    RadioButton bueno, aceptable, malo, bueno2, aceptable2, malo2, bueno3, aceptable3, malo3,bueno4, aceptable4, malo4,bueno5, aceptable5, malo5,bueno6, aceptable6, malo6,bueno7, aceptable7, malo7;
+    RadioButton radi1, radi2, radi3, bueno, aceptable, malo, bueno2, aceptable2, malo2, bueno3, aceptable3, malo3,bueno4, aceptable4, malo4,bueno5, aceptable5, malo5,bueno6, aceptable6, malo6,bueno7, aceptable7, malo7;
     RadioButton bueno8, aceptable8, malo8, bueno9, aceptable9, malo9, bueno10, aceptable10, malo10, bueno11, aceptable11, malo11,bueno12, aceptable12, malo12,bueno13, aceptable13, malo13,bueno14, aceptable14, malo14;
     CheckBox quincea, quinceb, quincec, quinced;
-    EditText quinceotras, quince, dieciseis, diecisiete,  cuatrocom, cincocom, seiscom, sietecom, ochocom, nuevecom, diezcom, oncecom, docecom, trececom, catorcecom;
+    EditText otrobene, quinceotras, quince, dieciseis, diecisiete,  cuatrocom, cincocom, seiscom, sietecom, ochocom, nuevecom, diezcom, oncecom, docecom, trececom, catorcecom;
     Button btnNext;
 
     Pasl_b_Model model;
@@ -39,6 +40,12 @@ public class PASLBeneficiario extends AppCompatActivity {
         setContentView(R.layout.activity_paslbeneficiario);
 
         responde = (Spinner)findViewById(R.id.paslb_spin1);
+
+        radi1 = (RadioButton)findViewById(R.id.radio1);
+        radi2 = (RadioButton)findViewById(R.id.radio2);
+        radi3 = (RadioButton)findViewById(R.id.radio3);
+
+        otrobene = (EditText)findViewById(R.id.paslb_txtbene);
 
         beneficiarioa = (CheckBox)findViewById(R.id.paslb_ch1);
         beneficiariob = (CheckBox)findViewById(R.id.paslb_ch2);
@@ -126,6 +133,9 @@ public class PASLBeneficiario extends AppCompatActivity {
 
         btnNext = findViewById(R.id.paslb_sig);
 
+        eventos01();
+
+
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,7 +143,8 @@ public class PASLBeneficiario extends AppCompatActivity {
                 if(validar()){
                     String fol = General.Foliocuestion;
                     String res = responde.getSelectedItem().toString();
-                    String bene = Resultado();
+                    String bene = obtenerRadio(radi1, radi2, radi3);
+                    String obene = otrobene.getText().toString();
                     String uno = obtenerRadio(bueno,aceptable,malo);
                     String dos = obtenerRadio(bueno2,aceptable2,malo2);
                     String tres = obtenerRadio(bueno3,aceptable3,malo3);
@@ -169,7 +180,7 @@ public class PASLBeneficiario extends AppCompatActivity {
 
 
 
-                    model = new Pasl_b_Model(fol, res, bene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, f1, f2, "", "");
+                    model = new Pasl_b_Model(fol, res, bene, obene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, f1, f2, "", "");
                     Intent in = new Intent(PASLBeneficiario.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);
@@ -565,6 +576,24 @@ findViewById(R.id.paslb_ra20).setOnClickListener(new View.OnClickListener() {
 
         return retorno;
     }
+
+    public void eventos01(){
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiog);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if (radi3.isChecked() == true) {
+                    otrobene.setVisibility(View.VISIBLE);
+                } else {
+                    otrobene.setVisibility(View.GONE);
+                    otrobene.setText("");
+                }
+            }
+        });
+    }
+
+
 
     @Override
     public void onBackPressed() {

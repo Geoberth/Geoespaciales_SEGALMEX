@@ -4,12 +4,13 @@ import java.io.Serializable;
 
 public class Pasl_b_Model implements Serializable {
 
-    private String folio, res, bene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, res, bene, obene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, foto1, foto2, longitudGeo, latitudGeo;
 
-    public Pasl_b_Model(String folio, String res, String bene, String uno, String dos, String tres, String cuatro, String cuatroco, String cinco, String cincoco, String seis, String seisco, String siete, String sieteco, String ocho, String ochoco, String nueve, String nueveco, String diez, String diezco, String once, String onceco, String doce, String doceco, String trece, String trececo, String catorce, String catorceco, String quince, String quinceco, String dieciseiss, String diecisietes, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public Pasl_b_Model(String folio, String res, String bene, String obene, String uno, String dos, String tres, String cuatro, String cuatroco, String cinco, String cincoco, String seis, String seisco, String siete, String sieteco, String ocho, String ochoco, String nueve, String nueveco, String diez, String diezco, String once, String onceco, String doce, String doceco, String trece, String trececo, String catorce, String catorceco, String quince, String quinceco, String dieciseiss, String diecisietes, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.res = res;
         this.bene = bene;
+        this.obene = obene;
         this.uno = uno;
         this.dos = dos;
         this.tres = tres;
@@ -71,6 +72,14 @@ public class Pasl_b_Model implements Serializable {
 
     public void setBene(String bene) {
         this.bene = bene;
+    }
+
+    public String getObene() {
+        return obene;
+    }
+
+    public void setObene(String obene) {
+        this.obene = obene;
     }
 
     public String getUno() {

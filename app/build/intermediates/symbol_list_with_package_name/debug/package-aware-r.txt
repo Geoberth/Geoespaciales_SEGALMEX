@@ -4575,6 +4575,7 @@ id paslb_txt6
 id paslb_txt7
 id paslb_txt8
 id paslb_txt9
+id paslb_txtbene
 id paslb_txtotras
 id password_toggle
 id pecu_next_pecuario_alimentos
@@ -5097,10 +5098,13 @@ id pv_oi_agr_3
 id rad2
 id radg1
 id radio
+id radio1
 id radio13
 id radio17
 id radio19
+id radio2
 id radio23
+id radio3
 id radio5
 id radio7
 id radioAdobepard
@@ -5341,6 +5345,7 @@ id radioapisociedad
 id radioautmunic
 id radiofigjurno
 id radiofigjursi
+id radiog
 id radiogroup1
 id radiogroup10
 id radiogroup11
