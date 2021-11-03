@@ -192,7 +192,9 @@
         <activity android:name="com.example.geosegalmex.Gps.GpsActivity" />
         <activity
             android:name="com.example.geosegalmex.drawer.DrawerActivity"
+            android:exported="true"
             android:label="Drawer"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.geosegalmex.Georeferencia.GeoreferenciaActivity" />
         <activity android:name="com.example.geosegalmex.Geo.GeoFotos" />
