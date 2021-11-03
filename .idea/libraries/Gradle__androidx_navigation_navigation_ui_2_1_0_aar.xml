@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-ui:2.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/res" />
-      <root url="file://$USER_HOME$/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/Library/Android/sdk/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/Library/Android/sdk/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/res" />
       <root url="file://$USER_HOME$/Library/Android/sdk/caches/transforms-3/b937d9213ac0eb6ed3df0898bfe5d182/transformed/navigation-ui-2.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/caches/transforms-3/e3050ad80704eac4e633addea2f69b17/transformed/navigation-ui-2.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/caches/transforms-3/e3050ad80704eac4e633addea2f69b17/transformed/navigation-ui-2.1.0/res" />
+      <root url="jar://$USER_HOME$/caches/transforms-3/e3050ad80704eac4e633addea2f69b17/transformed/navigation-ui-2.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

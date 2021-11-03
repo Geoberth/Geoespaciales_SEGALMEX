@@ -18,6 +18,7 @@ import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
 import android.os.Environment;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -85,6 +86,7 @@ public class ExportarFragment extends Fragment {
         fabExportar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ed1.setVisibility(View.GONE);
 
                 final ProgressDialog progressDialog = new ProgressDialog(getActivity());
                 progressDialog.setTitle("Descargando Datos");
@@ -94,133 +96,138 @@ public class ExportarFragment extends Fragment {
                 progressDialog.setMessage("Descargando...");
                 progressDialog.show();
 
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        try {
+                            deployDatabase("PASLOperativo");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PASLOperativo");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
 
-                try {
-                    deployDatabase("PASLOperativo");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PASLOperativo");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("PASLBeneficiario");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PASLBeneficiario");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+
+                        }
+
+                        try {
+                            deployDatabase("PGOperativoEstimulos");
+                        }
+                        catch (IOException e) {
+                            try {
+                                deployDatabase("PGOperativoEstimulos");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+
+                        }
+
+                        try {
+                            deployDatabase("PGOperativoGranos");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PGOperativoGranos");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("PGOperativoLeche");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PGOperativoLeche");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("PGBeneficiarioGranos");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PGBeneficiarioGranos");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("PGBeneficiarioLeche");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PGBeneficiarioLeche");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("PARBeneficiario");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PARBeneficiario");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("RNPLProductor");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("RNPLProductor");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("PAROperativo");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PAROperativo");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("RNPLExpediente");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("RNPLExpediente");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        ed1.setVisibility(View.VISIBLE);
                     }
-                    e.printStackTrace();
+                },2000);
 
-                }
 
-                try {
-                    deployDatabase("PASLBeneficiario");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PASLBeneficiario");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-
-                }
-
-                try {
-                    deployDatabase("PGOperativoEstimulos");
-                }
-                catch (IOException e) {
-                    try {
-                        deployDatabase("PGOperativoEstimulos");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-
-                }
-
-                try {
-                    deployDatabase("PGOperativoGranos");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PGOperativoGranos");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                try {
-                    deployDatabase("PGOperativoLeche");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PGOperativoLeche");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                try {
-                    deployDatabase("PGBeneficiarioGranos");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PGBeneficiarioGranos");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                try {
-                    deployDatabase("PGBeneficiarioLeche");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PGBeneficiarioLeche");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                try {
-                    deployDatabase("PARBeneficiario");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PARBeneficiario");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                try {
-                    deployDatabase("RNPLProductor");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("RNPLProductor");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                try {
-                    deployDatabase("PAROperativo");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("PAROperativo");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                try {
-                    deployDatabase("RNPLExpediente");
-                } catch (IOException e) {
-                    try {
-                        deployDatabase("RNPLExpediente");
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                    e.printStackTrace();
-                }
-
-                ed1.setVisibility(View.VISIBLE);
 
 
 
@@ -374,8 +381,6 @@ public class ExportarFragment extends Fragment {
         myOutput.flush();
         myOutput.close();
         myInput.close();
-
-        Toast.makeText(getContext(), "Base de datos: " + DB_NAME + " exportada", Toast.LENGTH_LONG).show();
 
 
     }

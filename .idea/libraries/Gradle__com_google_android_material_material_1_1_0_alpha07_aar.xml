@@ -1,16 +1,16 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.material:material:1.1.0-alpha07@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/annotations.zip!/" />
       <root url="jar://$USER_HOME$/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/caches/transforms-3/fc882a94a476be9589a043bb919b0ff0/transformed/material-1.1.0-alpha07/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/res" />
-      <root url="file://$USER_HOME$/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/res" />
       <root url="file://$USER_HOME$/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/caches/transforms-3/fc882a94a476be9589a043bb919b0ff0/transformed/material-1.1.0-alpha07/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/caches/transforms-3/fc882a94a476be9589a043bb919b0ff0/transformed/material-1.1.0-alpha07/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/caches/transforms-3/fc882a94a476be9589a043bb919b0ff0/transformed/material-1.1.0-alpha07/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

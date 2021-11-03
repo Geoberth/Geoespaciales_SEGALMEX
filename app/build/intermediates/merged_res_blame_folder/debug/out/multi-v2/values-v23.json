@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/e83c61d08e7d6a18054b889d35435de4/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "200"
-                    },
-                    "to": {
-                        "startLines": "50",
-                        "startColumns": "4",
-                        "startOffsets": "3524",
-                        "endLines": "52",
-                        "endColumns": "12",
-                        "endOffsets": "3669"
-                    }
-                },
-                {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/3109fa55ae143c0f8f7eeab21d745e0d/transformed/appcompat-1.2.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\d76f35a08c08216004feed386d7db8d0\\transformed\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/02c2eb78642995a8923fc1cd56a1d1f6/transformed/material-1.1.0-alpha07/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\fc882a94a476be9589a043bb919b0ff0\\transformed\\material-1.1.0-alpha07\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,6,9,12,16,19",
                         "startColumns": "4,4,4,4,4,4",
@@ -50,6 +31,25 @@
                         "endLines": "56,59,62,66,69,72",
                         "endColumns": "10,10,10,10,10,10",
                         "endOffsets": "3944,4116,4276,4559,4735,4904"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\1bc1de6a32330280351f65a0393bdf57\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "50",
+                        "startColumns": "4",
+                        "startOffsets": "3524",
+                        "endLines": "52",
+                        "endColumns": "12",
+                        "endOffsets": "3669"
                     }
                 }
             ]

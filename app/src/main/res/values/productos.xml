@@ -1,52 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="productos">
-        <item>Aceite comestible cristal</item>
-        <item>Aceite mixto Patrona</item>
-        <item>Arroz súper extra</item>
-        <item>Arroz Quebrado</item>
-        <item>Arroz Comercial</item>
-        <item>Atún Agua</item>
-        <item>Atún en Aceite</item>
-        <item>Avena</item>
-        <item>Azúcar estándar</item>
-        <item>Café soluble</item>
-        <item>Chiles jalapeños enteros</item>
-        <item>Chocolate en polvo bolsa</item>
-        <item>Crema dental</item>
-        <item>Detergente en polvo</item>
-        <item>Frijol Negro San Luis</item>
-        <item>Galletas animalitos</item>
-        <item>Gallera Marías</item>
-        <item>Galletas Saladas</item>
-        <item>Harina de Maíz</item>
-        <item>Harina de Trigo</item>
-        <item>Jabón de lavandería</item>
-        <item>Jabón de tocador</item>
-        <item>Leche Entera</item>
-        <item>Leche Semidescremada</item>
-        <item>Leche Descremada</item>
-        <item>Leche Entera en Polvo Fortificada</item>
-        <item>Leche Semidescremada en Polvo Fortificada</item>
-        <item>Leche Entera UGT en Bolsa Aséptica</item>
-        <item>Leche Semidescremada UHT en Bolsa Aséptica</item>
-        <item>Leche Descremada UHT en Bolsa Aséptica</item>
-        <item>Leche Semidescremada Sabor Chocolate</item>
-        <item>Leche Semidescremada Sabor Fresa</item>
-        <item>Leche Semidescremada Sabor Vainilla</item>
-        <item>Maíz</item>
-        <item>Papel Higiénico 200 HD</item>
-        <item>Sal de mesa</item>
-        <item>Sardina en Salsa de Tomate</item>
-        <item>Lenteja</item>
-        <item>Puré de Tomate</item>
-        <item>Chícharos con Zanahoria</item>
-        <item>Chícharos con Zanahoria</item>
-        <item>Soya Texturizada</item>
-        <item>Gelatina</item>
-        <item>Garrafón 20 Lt Agua</item>
-        <item>Huevo</item>
-        <item>Miel</item>
+        <item>Aceite comestible Cristal</item>
+        <item>Aceite comestible Patrona</item>
+        <item>Aceite comestible El Faro</item>
+        <item>Agua purificada Pascual</item>
+        <item>Agua purificada Bonafont</item>
+        <item>Agua purificada Gugar</item>
+        <item>Arroz a granel (varias)</item>
+        <item>Crema dental Colgate</item>
+        <item>Crema dental Crest</item>
+        <item>Atún Tuny</item>
+        <item>Atún El Dorado</item>
+        <item>Atún Dolores</item>
+        <item>Avena GRANVITA</item>
+        <item>Avena Sureña</item>
+        <item>Avena Cunduacan</item>
+        <item>Azúcar estándar a granel (varias)</item>
+        <item>Blanqueador Cloralex</item>
+        <item>Blanqueador Clarasol</item>
+        <item>Blanqueador Bandera</item>
+        <item>Café Nescafé</item>
+        <item>Café Dolca</item>
+        <item>Café Único</item>
+        <item>Caldo de pollo D Alianza</item>
+        <item>Caldo de pollo Knorr</item>
+        <item>Caldo de pollo Riko Pollo</item>
+        <item>Cereal en hojuelas Michel</item>
+        <item>Cereal en hojuelas Nestle</item>
+        <item>Cereal en hojuelas Golden Foods</item>
+        <item>Chiles procesados La Costeña</item>
+        <item>Chiles procesados La Moderna</item>
+        <item>Chiles procesados San Marcos</item>
+        <item>Chocolate de mesa Ideal</item>
+        <item>Chocolate de mesa Abuelita</item>
+        <item>Chocolate de mesa La Soledad</item>
+        <item>Chocolate en polvo Chocomilk</item>
+        <item>Chocolate en polvo SEGALMEX</item>
+        <item>Chocolate en polvo Chocoideal</item>
+        <item>Detergente en polvo Foca</item>
+        <item>Detergente en polvo Blanca Nieves</item>
+        <item>Detergente en polvo Útil</item>
+        <item>Ensalada de verduras La Costeña</item>
+        <item>Frijol a granel (Varias)</item>
+        <item>Galletas básicas Cuetara</item>
+        <item>Galletas básicas Marible</item>
+        <item>Galletas básicas La Moderna</item>
+        <item>Gelatina D Gari</item>
+        <item>Gelatina Pronto</item>
+        <item>Gelatina Guy</item>
+        <item>Harina de maíz SEGALMEX</item>
+        <item>Harina de maíz MASECA</item>
+        <item>Harina de maíz HARIMASA</item>
+        <item>Harina de trigo Selecta</item>
+        <item>Harina de trigo Globo</item>
+        <item>Harina de trigo San Blas</item>
+        <item>Huevo (varias)</item>
+        <item>Insecticida y raticida OKO</item>
+        <item>Insecticida y raticida OFF</item>
+        <item>Insecticida y raticida RAID</item>
+        <item>Jabón de tocador Rosa Venus</item>
+        <item>Jabón de tocador Tepeyac</item>
+        <item>Jabón de tocador Lirio</item>
+        <item>Jabón de lavandería ZOTE</item>
+        <item>Jabón de lavandería Princesa</item>
+        <item>Jabón de lavandería León</item>
+        <item>Jugo y néctar JUMEX</item>
+        <item>Jugo y néctar Kermato</item>
+        <item>Jugo y néctar HERDEZ</item>
+        <item>Leche LICONSA</item>
+        <item>Leche DELITE</item>
+        <item>Leche Nutri Rindes</item>
+        <item>Lentejas El Labrador</item>
+        <item>Lentejas El Fresno</item>
+        <item>Lentejas PROMEXA</item>
+        <item>Limpiador líquido PINOL</item>
+        <item>Limpiador líquido Fabuloso</item>
+        <item>Limpiador líquido Flash</item>
+        <item>Maíz a granel (varias)</item>
+        <item>Pañales desechables ABSORSEC</item>
+        <item>Pañales desechables Peque</item>
+        <item>Pañales desechables SUAVELASTIC</item>
+        <item>Papel higiénico Big Roll</item>
+        <item>Papel higiénico Premier</item>
+        <item>Papel higiénico Maxima</item>
+        <item>Pasta para sopa Italpasta</item>
+        <item>Pasta para sopa La Moderna</item>
+        <item>Pasta para sopa Yemina</item>
+        <item>Puré de tomate HERDEZ</item>
+        <item>Puré de tomate La Costeña</item>
+        <item>Puré de tomate La Morena</item>
+        <item>Sal de mesa La Fina</item>
+        <item>Sal de mesa Roche</item>
+        <item>Sal de mesa Sol</item>
+        <item>Sardina Fresh Label</item>
+        <item>Sardina GUAYMEX</item>
+        <item>Sardina CALMEX</item>
+        <item>Servilletas Petalo</item>
+        <item>Servilletas Lys</item>
+        <item>Servilletas ELITE</item>
+        <item>Soya texturizada NUTRICASA</item>
+        <item>Soya texturizada PRODEA</item>
+        <item>Soya texturizada Clase Foods</item>
+        <item>Toallas sanitarias SABA</item>
+        <item>Toallas sanitarias Kotex</item>
+        <item>Toallas sanitarias Naturella</item>
     </string-array>
 
 </resources>
