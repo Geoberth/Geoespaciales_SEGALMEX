@@ -83,8 +83,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     PAR_operativo_model model10;
     LiconsaVerificacion_Model model11;
 
-    String longitudGeo;
-    String latitudGeo;
+    String longitudGeo="";
+    String latitudGeo="";
+    int bandera = 2;
     //---------
 
     Location mlocationBeta;
@@ -223,6 +224,10 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                     SupportMapFragment supportMapFragment =(SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapasdos_beta);
 
                     supportMapFragment.getMapAsync(GeoreferenciaActivity.this);
+                    bandera = 1;
+                }
+                else{
+                    bandera = 2;
                 }
             }
         });
@@ -251,8 +256,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPASLoperativo() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model = new Pasl_o_Model();
         model = (Pasl_o_Model)getIntent().getSerializableExtra("model");
@@ -279,8 +290,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPASLbeneficiario() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model2 = new Pasl_b_Model();
         model2 = (Pasl_b_Model)getIntent().getSerializableExtra("model");
@@ -306,8 +323,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPGOperativoEstimulos() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model3 = new PGOperativoEstimulos_Model();
         model3 = (PGOperativoEstimulos_Model)getIntent().getSerializableExtra("model");
@@ -326,8 +349,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPGOperativoGranos() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model4 = new PGOperativoGranos_Model();
         model4 = (PGOperativoGranos_Model)getIntent().getSerializableExtra("model");
@@ -346,8 +375,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPGOperativoLeche() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model5 = new PGOperativoLeche_Model();
         model5 = (PGOperativoLeche_Model)getIntent().getSerializableExtra("model");
@@ -366,8 +401,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPGBeneficiarioGranos() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model6 = new PGB_granos_model();
         model6 = (PGB_granos_model)getIntent().getSerializableExtra("model");
@@ -386,8 +427,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPGBeneficiarioLeche() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model7 = new PGBeneficiarioLeche_Model();
         model7 = (PGBeneficiarioLeche_Model)getIntent().getSerializableExtra("model");
@@ -406,8 +453,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPARBeneficiario() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model8 = new PARBeneficiario_Model();
         model8 = (PARBeneficiario_Model)getIntent().getSerializableExtra("model");
@@ -426,8 +479,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarRNPLProductor() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model9 = new Liconsa_Model();
         model9 = (Liconsa_Model)getIntent().getSerializableExtra("model");
@@ -446,8 +505,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarPAROperativo() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model10 = new PAR_operativo_model();
         model10 = (PAR_operativo_model)getIntent().getSerializableExtra("model");
@@ -466,8 +531,14 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     }
 
     private void agregarRNPLExpediente() {
-        longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-        latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
 
         model11 = new LiconsaVerificacion_Model();
         model11 = (LiconsaVerificacion_Model)getIntent().getSerializableExtra("model");
