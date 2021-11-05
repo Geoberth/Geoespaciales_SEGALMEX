@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "C:\\Users\\SIAP\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/dti-siap/Library/Android/sdk/caches/transforms-3/fc882a94a476be9589a043bb919b0ff0/transformed/material-1.1.0-alpha07/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\SIAP\\.gradle\\caches\\transforms-3\\fc882a94a476be9589a043bb919b0ff0\\transformed\\material-1.1.0-alpha07\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
