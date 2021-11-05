@@ -372,6 +372,11 @@ public class NewCamara extends AppCompatActivity {
         }
         return false;
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
     
 
 }
