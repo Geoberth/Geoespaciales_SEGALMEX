@@ -2,6 +2,7 @@ package com.example.geosegalmex.Georeferencia;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.solver.widgets.Helper;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 

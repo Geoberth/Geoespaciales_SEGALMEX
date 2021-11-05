@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SIAP\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw480dp-v13\\values-sw480dp-v13.xml",
+            "outputFile": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw480dp-v13\\values-sw480dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SIAP\\.gradle\\caches\\transforms-3\\fc882a94a476be9589a043bb919b0ff0\\transformed\\material-1.1.0-alpha07\\res\\values-sw480dp-v13\\values-sw480dp-v13.xml",
+                    "source": "C:\\Users\\erick.burgos\\caches\\transforms-3\\fc882a94a476be9589a043bb919b0ff0\\transformed\\material-1.1.0-alpha07\\res\\values-sw480dp-v13\\values-sw480dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
