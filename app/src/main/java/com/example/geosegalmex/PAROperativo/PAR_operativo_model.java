@@ -4,12 +4,13 @@ import java.io.Serializable;
 
 public class PAR_operativo_model implements Serializable {
 
-    private String folio, fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, f1, f2, longitudGeo, latitudGeo;
+    private String folio, fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, longitudGeo, latitudGeo;
 
     public PAR_operativo_model() {
     }
 
-    public PAR_operativo_model(String folio, String fechaenc, String noment, String cveedo, String nommun, String cvemun, String parnom, String parape, String parapem, String parrad1, String edad, String pare6, String pare7, String parrad2, String parrad3, String parrad4, String parrad5, String parrad6, String parrad7, String pare8, String pare9, String pare10, String pare11, String pare12, String pare13, String pare14, String pare15, String pare16, String pare17, String pare18, String pare19, String pare20, String pare21, String pare22, String pare23, String pare24, String pare25, String pare26, String pare27, String pare28, String pare29, String pare30, String pare31, String pare32, String pare33, String pare34, String pare35, String pare36, String pare37, String pare38, String pare39, String pare40, String pare41, String pare42, String pare43, String pare44, String pare45, String pare46, String pare47, String pare48, String pare49, String pare50, String pare51, String pare52, String pare53, String pare54, String pare55, String pare56, String pare57, String pare58, String pare59, String pare60, String pare61, String pare62, String pare63, String pare64, String pare65, String pare66, String pare67, String pare68, String pare69, String pare70, String pare71, String pare72, String pare73, String pare74, String pare75, String pare76, String pare77, String pare78, String pare79, String pare80, String pare81, String pare82, String pare84, String pare85, String pare86, String pare87, String pare88, String pare89, String pare90, String pare91, String pare92, String pare93, String pare94, String pare95, String f1, String f2, String longitudGeo, String latitudGeo) {
+
+    public PAR_operativo_model(String folio, String fechaenc, String noment, String cveedo, String nommun, String cvemun, String parnom, String parape, String parapem, String parrad1, String edad, String pare6, String pare7, String parrad2, String parrad3, String parrad4, String parrad5, String parrad6, String parrad7, String pare8, String pare9, String pare10, String pare11, String pare12, String pare13, String pare14, String pare15, String pare16, String pare17, String pare18, String pare19, String pare20, String pare21, String pare22, String pare23, String pare24, String pare25, String pare26, String pare27, String pare28, String pare29, String pare30, String pare31, String pare32, String pare33, String pare34, String pare35, String pare36, String pare37, String pare38, String pare39, String pare40, String pare41, String pare42, String pare43, String pare44, String pare45, String pare46, String pare47, String pare48, String pare49, String pare50, String pare51, String pare52, String pare53, String pare54, String pare55, String pare56, String pare57, String pare58, String pare59, String pare60, String pare61, String pare62, String pare63, String pare64, String pare65, String pare66, String pare67, String pare68, String pare69, String pare70, String pare71, String pare72, String pare73, String pare74, String pare75, String pare76, String pare77, String pare78, String pare79, String pare80, String pare81, String pare82, String pare84, String pare85, String pare86, String pare87, String pare88, String pare89, String pare90, String pare91, String pare92, String pare93, String pare94, String pare95, String pare96, String pare97, String pare98, String pare99, String pare100, String pare101, String pare102, String pare103, String pare104, String pare105, String pare106, String pare107, String pare108, String pare109, String pare110, String pare111, String pare112, String pare113, String pare114, String pare115, String pare116, String pare117, String pare118, String pare119, String pare120, String pare121, String pare122, String pare123, String pare124, String pare125, String pare126, String pare127, String pare128, String pare129, String pare130, String pare131, String pare132, String pare133, String pare134, String pare135, String pare136, String pare137, String pare138, String pare139, String pare140, String pare141, String pare142, String pare143, String pare144, String pare145, String pare146, String pare147, String pare148, String pare149, String pare150, String pare151, String pare152, String f1, String f2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fechaenc = fechaenc;
         this.noment = noment;
@@ -116,6 +117,63 @@ public class PAR_operativo_model implements Serializable {
         this.pare93 = pare93;
         this.pare94 = pare94;
         this.pare95 = pare95;
+        this.pare96 = pare96;
+        this.pare97 = pare97;
+        this.pare98 = pare98;
+        this.pare99 = pare99;
+        this.pare100 = pare100;
+        this.pare101 = pare101;
+        this.pare102 = pare102;
+        this.pare103 = pare103;
+        this.pare104 = pare104;
+        this.pare105 = pare105;
+        this.pare106 = pare106;
+        this.pare107 = pare107;
+        this.pare108 = pare108;
+        this.pare109 = pare109;
+        this.pare110 = pare110;
+        this.pare111 = pare111;
+        this.pare112 = pare112;
+        this.pare113 = pare113;
+        this.pare114 = pare114;
+        this.pare115 = pare115;
+        this.pare116 = pare116;
+        this.pare117 = pare117;
+        this.pare118 = pare118;
+        this.pare119 = pare119;
+        this.pare120 = pare120;
+        this.pare121 = pare121;
+        this.pare122 = pare122;
+        this.pare123 = pare123;
+        this.pare124 = pare124;
+        this.pare125 = pare125;
+        this.pare126 = pare126;
+        this.pare127 = pare127;
+        this.pare128 = pare128;
+        this.pare129 = pare129;
+        this.pare130 = pare130;
+        this.pare131 = pare131;
+        this.pare132 = pare132;
+        this.pare133 = pare133;
+        this.pare134 = pare134;
+        this.pare135 = pare135;
+        this.pare136 = pare136;
+        this.pare137 = pare137;
+        this.pare138 = pare138;
+        this.pare139 = pare139;
+        this.pare140 = pare140;
+        this.pare141 = pare141;
+        this.pare142 = pare142;
+        this.pare143 = pare143;
+        this.pare144 = pare144;
+        this.pare145 = pare145;
+        this.pare146 = pare146;
+        this.pare147 = pare147;
+        this.pare148 = pare148;
+        this.pare149 = pare149;
+        this.pare150 = pare150;
+        this.pare151 = pare151;
+        this.pare152 = pare152;
         this.f1 = f1;
         this.f2 = f2;
         this.longitudGeo = longitudGeo;
@@ -968,6 +1026,462 @@ public class PAR_operativo_model implements Serializable {
 
     public void setPare95(String pare95) {
         this.pare95 = pare95;
+    }
+
+    public String getPare96() {
+        return pare96;
+    }
+
+    public void setPare96(String pare96) {
+        this.pare96 = pare96;
+    }
+
+    public String getPare97() {
+        return pare97;
+    }
+
+    public void setPare97(String pare97) {
+        this.pare97 = pare97;
+    }
+
+    public String getPare98() {
+        return pare98;
+    }
+
+    public void setPare98(String pare98) {
+        this.pare98 = pare98;
+    }
+
+    public String getPare99() {
+        return pare99;
+    }
+
+    public void setPare99(String pare99) {
+        this.pare99 = pare99;
+    }
+
+    public String getPare100() {
+        return pare100;
+    }
+
+    public void setPare100(String pare100) {
+        this.pare100 = pare100;
+    }
+
+    public String getPare101() {
+        return pare101;
+    }
+
+    public void setPare101(String pare101) {
+        this.pare101 = pare101;
+    }
+
+    public String getPare102() {
+        return pare102;
+    }
+
+    public void setPare102(String pare102) {
+        this.pare102 = pare102;
+    }
+
+    public String getPare103() {
+        return pare103;
+    }
+
+    public void setPare103(String pare103) {
+        this.pare103 = pare103;
+    }
+
+    public String getPare104() {
+        return pare104;
+    }
+
+    public void setPare104(String pare104) {
+        this.pare104 = pare104;
+    }
+
+    public String getPare105() {
+        return pare105;
+    }
+
+    public void setPare105(String pare105) {
+        this.pare105 = pare105;
+    }
+
+    public String getPare106() {
+        return pare106;
+    }
+
+    public void setPare106(String pare106) {
+        this.pare106 = pare106;
+    }
+
+    public String getPare107() {
+        return pare107;
+    }
+
+    public void setPare107(String pare107) {
+        this.pare107 = pare107;
+    }
+
+    public String getPare108() {
+        return pare108;
+    }
+
+    public void setPare108(String pare108) {
+        this.pare108 = pare108;
+    }
+
+    public String getPare109() {
+        return pare109;
+    }
+
+    public void setPare109(String pare109) {
+        this.pare109 = pare109;
+    }
+
+    public String getPare110() {
+        return pare110;
+    }
+
+    public void setPare110(String pare110) {
+        this.pare110 = pare110;
+    }
+
+    public String getPare111() {
+        return pare111;
+    }
+
+    public void setPare111(String pare111) {
+        this.pare111 = pare111;
+    }
+
+    public String getPare112() {
+        return pare112;
+    }
+
+    public void setPare112(String pare112) {
+        this.pare112 = pare112;
+    }
+
+    public String getPare113() {
+        return pare113;
+    }
+
+    public void setPare113(String pare113) {
+        this.pare113 = pare113;
+    }
+
+    public String getPare114() {
+        return pare114;
+    }
+
+    public void setPare114(String pare114) {
+        this.pare114 = pare114;
+    }
+
+    public String getPare115() {
+        return pare115;
+    }
+
+    public void setPare115(String pare115) {
+        this.pare115 = pare115;
+    }
+
+    public String getPare116() {
+        return pare116;
+    }
+
+    public void setPare116(String pare116) {
+        this.pare116 = pare116;
+    }
+
+    public String getPare117() {
+        return pare117;
+    }
+
+    public void setPare117(String pare117) {
+        this.pare117 = pare117;
+    }
+
+    public String getPare118() {
+        return pare118;
+    }
+
+    public void setPare118(String pare118) {
+        this.pare118 = pare118;
+    }
+
+    public String getPare119() {
+        return pare119;
+    }
+
+    public void setPare119(String pare119) {
+        this.pare119 = pare119;
+    }
+
+    public String getPare120() {
+        return pare120;
+    }
+
+    public void setPare120(String pare120) {
+        this.pare120 = pare120;
+    }
+
+    public String getPare121() {
+        return pare121;
+    }
+
+    public void setPare121(String pare121) {
+        this.pare121 = pare121;
+    }
+
+    public String getPare122() {
+        return pare122;
+    }
+
+    public void setPare122(String pare122) {
+        this.pare122 = pare122;
+    }
+
+    public String getPare123() {
+        return pare123;
+    }
+
+    public void setPare123(String pare123) {
+        this.pare123 = pare123;
+    }
+
+    public String getPare124() {
+        return pare124;
+    }
+
+    public void setPare124(String pare124) {
+        this.pare124 = pare124;
+    }
+
+    public String getPare125() {
+        return pare125;
+    }
+
+    public void setPare125(String pare125) {
+        this.pare125 = pare125;
+    }
+
+    public String getPare126() {
+        return pare126;
+    }
+
+    public void setPare126(String pare126) {
+        this.pare126 = pare126;
+    }
+
+    public String getPare127() {
+        return pare127;
+    }
+
+    public void setPare127(String pare127) {
+        this.pare127 = pare127;
+    }
+
+    public String getPare128() {
+        return pare128;
+    }
+
+    public void setPare128(String pare128) {
+        this.pare128 = pare128;
+    }
+
+    public String getPare129() {
+        return pare129;
+    }
+
+    public void setPare129(String pare129) {
+        this.pare129 = pare129;
+    }
+
+    public String getPare130() {
+        return pare130;
+    }
+
+    public void setPare130(String pare130) {
+        this.pare130 = pare130;
+    }
+
+    public String getPare131() {
+        return pare131;
+    }
+
+    public void setPare131(String pare131) {
+        this.pare131 = pare131;
+    }
+
+    public String getPare132() {
+        return pare132;
+    }
+
+    public void setPare132(String pare132) {
+        this.pare132 = pare132;
+    }
+
+    public String getPare133() {
+        return pare133;
+    }
+
+    public void setPare133(String pare133) {
+        this.pare133 = pare133;
+    }
+
+    public String getPare134() {
+        return pare134;
+    }
+
+    public void setPare134(String pare134) {
+        this.pare134 = pare134;
+    }
+
+    public String getPare135() {
+        return pare135;
+    }
+
+    public void setPare135(String pare135) {
+        this.pare135 = pare135;
+    }
+
+    public String getPare136() {
+        return pare136;
+    }
+
+    public void setPare136(String pare136) {
+        this.pare136 = pare136;
+    }
+
+    public String getPare137() {
+        return pare137;
+    }
+
+    public void setPare137(String pare137) {
+        this.pare137 = pare137;
+    }
+
+    public String getPare138() {
+        return pare138;
+    }
+
+    public void setPare138(String pare138) {
+        this.pare138 = pare138;
+    }
+
+    public String getPare139() {
+        return pare139;
+    }
+
+    public void setPare139(String pare139) {
+        this.pare139 = pare139;
+    }
+
+    public String getPare140() {
+        return pare140;
+    }
+
+    public void setPare140(String pare140) {
+        this.pare140 = pare140;
+    }
+
+    public String getPare141() {
+        return pare141;
+    }
+
+    public void setPare141(String pare141) {
+        this.pare141 = pare141;
+    }
+
+    public String getPare142() {
+        return pare142;
+    }
+
+    public void setPare142(String pare142) {
+        this.pare142 = pare142;
+    }
+
+    public String getPare143() {
+        return pare143;
+    }
+
+    public void setPare143(String pare143) {
+        this.pare143 = pare143;
+    }
+
+    public String getPare144() {
+        return pare144;
+    }
+
+    public void setPare144(String pare144) {
+        this.pare144 = pare144;
+    }
+
+    public String getPare145() {
+        return pare145;
+    }
+
+    public void setPare145(String pare145) {
+        this.pare145 = pare145;
+    }
+
+    public String getPare146() {
+        return pare146;
+    }
+
+    public void setPare146(String pare146) {
+        this.pare146 = pare146;
+    }
+
+    public String getPare147() {
+        return pare147;
+    }
+
+    public void setPare147(String pare147) {
+        this.pare147 = pare147;
+    }
+
+    public String getPare148() {
+        return pare148;
+    }
+
+    public void setPare148(String pare148) {
+        this.pare148 = pare148;
+    }
+
+    public String getPare149() {
+        return pare149;
+    }
+
+    public void setPare149(String pare149) {
+        this.pare149 = pare149;
+    }
+
+    public String getPare150() {
+        return pare150;
+    }
+
+    public void setPare150(String pare150) {
+        this.pare150 = pare150;
+    }
+
+    public String getPare151() {
+        return pare151;
+    }
+
+    public void setPare151(String pare151) {
+        this.pare151 = pare151;
+    }
+
+    public String getPare152() {
+        return pare152;
+    }
+
+    public void setPare152(String pare152) {
+        this.pare152 = pare152;
     }
 
     public String getF1() {

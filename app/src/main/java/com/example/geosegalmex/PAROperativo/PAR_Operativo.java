@@ -33,11 +33,11 @@ public class PAR_Operativo extends AppCompatActivity {
     EditText fec, paret3, paret4, paret5, paret6, paret7, paret8, paret08, paret008, paret9, paret10, paret11, paret12, paret13, paret14, paret15, paret16, paret17, paret18, paret19,  paret20;
 
     //Variables de precios de los productos Liconsa (tabla de productos)
-    EditText edadd, pprolic1, pprolic2, paret1119, pprolic3, pprolic4, pprolic5, pprolic6, pprolic7, pprolic8, pprolic9, pprolic10, pprolic11, pprolic12, pprolic13, pprolic14, pprolic15, pprolic16, pprolic17, pprolic18, pprolic19, pprolic20, pprolic21, pprolic22, pprolic23, pprolic24, pprolic25, pprolic26, pprolic27, pprolic28, pprolic29, pprolic30, pprolic31, pprolic32, pprolic33, pprolic34, pprolic35, pprolic36, pprolic37, pprolic38, pprolic39, pprolic40, pprolic41, pprolic42, pprolic43, pprolic44, pprolic45, pprolic46, pprolic47, pares3;
+    EditText edadd, pprolic1, pprolic2, paret1119, pprolic3, pprolic4, pprolic5, pprolic6, pprolic7, pprolic8, pprolic9, pprolic10, pprolic11, pprolic12, pprolic13, pprolic14, pprolic15, pprolic16, pprolic17, pprolic18, pprolic19, pprolic20, pprolic21, pprolic22, pprolic23, pprolic24, pprolic25, pprolic26, pprolic27, pprolic28, pprolic29, pprolic30, pprolic31, pprolic32, pprolic33, pprolic34, pprolic35, pprolic36, pprolic37, pprolic38, pprolic39, pprolic40, pprolic41, pprolic42, pprolic43, pprolic44, pprolic45, pprolic46, pprolic47, pprolic48, pprolic49, pprolic50, pprolic51, pprolic52, pprolic53, pprolic54, pprolic55, pprolic56, pprolic57, pprolic58, pprolic59, pprolic60, pprolic61, pprolic62, pprolic63, pprolic64, pprolic65, pprolic66, pprolic67, pprolic68, pprolic69, pprolic70, pprolic71, pprolic72, pprolic73, pprolic74, pprolic75, pprolic76, pprolic77, pprolic78, pprolic79, pprolic80, pprolic81, pprolic82, pprolic83, pprolic84, pprolic85, pprolic86, pprolic87, pprolic88, pprolic89, pprolic90, pprolic91, pprolic92, pprolic93, pprolic94, pprolic95, pprolic96, pprolic97, pprolic98, pprolic99, pprolic100, pprolic101, pprolic102, pprolic103, pprolic104, pares3;
 
     RadioButton  parer1, parer2, parer3, parer4, parer5, parer6, parer7, parer8, parer9, parer10, parer11, parer12, parer13, parer14, parer15, parer16, parer17, parer18, parer19, parer20, parer21, parer22, parer23, parer24, parer25, parer26, parer27, parer28, parer29, parer30, parer31, parer32, parer33, parer34, parer35, parer36, parer37, parer38, parer39, parer40, parer41, parer42, parer43, parer44, parer45, parer46, parer47, parer48, parer49, parer50, parer51, parer52, parer53, parer54, parer55, parer56, parer57, parer58, parer59, parer60, parer61, parer62, parer63, parer64, parer65, parer66, parer67, parer68, parer69, parra0, parra1, parra2, parra3, parra4, parra5, parra6, parra7;
     Spinner pares1, pares2, hora, min, hora2, min2;
-    CheckBox parec1, parec2, parec3, parec4, parec5, parec6, parec7, parec8, parec9, parec10, parec11, parec12, parec13, parec14, parec15, parec16, parec17, parec18, parec19, parec20, parec21, parec22, parec23, parec24, parec25, parec26, parec27, parec28, parec29, parec30, parec31, parec32, parec33, parec34, parec35, parec36, parec37, parec38, parec39, parec40, parec41, parec42, parec43, parec44, parec45, parec46, parec47, parec48, parec49, parec50, parec51, parec52, parec53, parec54, parec55, parec56, parec57, parec58, parec59, parec60, parec61, parec62, parec63, parec64, parec65, parec66, parec67, parec68, parec69, parec70, parec71, parec72, parec73, parec74, parec75, parec76, parec77, parec78, parec79, parec80, parec81, parec82, parec83, parec84, parec85, parec86, parec87, parec88, parec89, parec90, parec91, parec92, parec93, parec94, parec95, parec96, parec97, parec98, parec99, parec100, parec101, parec102, parec103, parec104, parec105, parec106, parec107, parec108, parec109, parec110, parec111, parec112, parec113, parec114, parec115, parec116, parec117, parec118, parec119, parec120, parec121, parec122, parec123, parec124, parec125, parec126, parec127, parec128, parec129, parec130, parec131, parec132, parec133, parec134, parec135, parec136, parec137, parec138, parec139, parec140;
+    CheckBox parec1, parec2, parec3, parec4, parec5, parec6, parec7, parec8, parec9, parec10, parec11, parec12, parec13, parec14, parec15, parec16, parec17, parec18, parec19, parec20, parec21, parec22, parec23, parec24, parec25, parec26, parec27, parec28, parec29, parec30, parec31, parec32, parec33, parec34, parec35, parec36, parec37, parec38, parec39, parec40, parec41, parec42, parec43, parec44, parec45, parec46, parec47, parec48, parec49, parec50, parec51, parec52, parec53, parec54, parec55, parec56, parec57, parec58, parec59, parec60, parec61, parec62, parec63, parec64, parec65, parec66, parec67, parec68, parec69, parec70, parec71, parec72, parec73, parec74, parec75, parec76, parec77, parec78, parec79, parec80, parec81, parec82, parec83, parec84, parec85, parec86, parec87, parec88, parec89, parec90, parec91, parec92, parec93, parec94, parec95, parec96, parec97, parec98, parec99, parec100, parec101, parec102, parec103, parec104, parec105, parec106, parec107, parec108, parec109, parec110, parec111, parec112, parec113, parec114, parec115, parec116, parec117, parec118, parec119, parec120, parec121, parec122, parec123, parec124, parec125, parec126, parec127, parec128, parec129, parec130, parec131, parec132, parec133, parec134, parec135, parec136, parec137, parec138, parec139, parec140, pa63_1, pa63_2, pa63_3, pa63_4, pa63_5, pa63_6, pa63_7, pa63_8, pa63_9, pa63_10, pa63_11, pa63_12, pa63_13, pa63_14, pa63_15, pa63_16, pa63_17, pa63_18, pa63_19, pa63_20, pa63_21, pa63_22, pa63_23, pa63_24, pa63_25, pa63_26, pa63_27, pa63_28, pa63_29, pa63_30, pa63_31, pa63_32, pa63_33, pa63_34, pa63_35, pa63_36, pa63_37, pa63_38, pa63_39, pa63_40, pa63_41, pa63_42, pa63_43, pa63_44, pa63_45, pa63_46, pa63_47, pa63_48, pa63_49, pa63_50, pa63_51, pa63_52, pa63_53, pa63_54, pa63_55, pa63_56, pa63_57, pa110_1, pa110_2, pa110_3, pa110_4, pa110_5, pa110_6, pa110_7, pa110_8, pa110_9, pa110_10, pa110_11, pa110_12, pa110_13, pa110_14, pa110_15, pa110_16, pa110_17, pa110_18, pa110_19, pa110_20, pa110_21, pa110_22, pa110_23, pa110_24, pa110_25, pa110_26, pa110_27, pa110_28, pa110_29, pa110_30, pa110_31, pa110_32, pa110_33, pa110_34, pa110_35, pa110_36, pa110_37, pa110_38, pa110_39, pa110_40, pa110_41, pa110_42, pa110_43, pa110_44, pa110_45, pa110_46, pa110_47, pa110_48, pa110_49, pa110_50, pa110_51, pa110_52, pa110_53, pa110_54, pa110_55, pa110_56, pa110_57;
     Button btnSiguiente, btnCamara;
     TextView textFecha;
     int dia, mes, anio;
@@ -207,6 +207,63 @@ public class PAR_Operativo extends AppCompatActivity {
         parec61=(CheckBox)findViewById(R.id.par_et_ch61);
         parec62=(CheckBox)findViewById(R.id.par_et_ch62);
         parec63=(CheckBox)findViewById(R.id.par_et_ch63);
+        pa63_1=(CheckBox)findViewById(R.id.par_et_ch63_1);
+        pa63_2=(CheckBox)findViewById(R.id.par_et_ch63_2);
+        pa63_3=(CheckBox)findViewById(R.id.par_et_ch63_3);
+        pa63_4=(CheckBox)findViewById(R.id.par_et_ch63_4);
+        pa63_5=(CheckBox)findViewById(R.id.par_et_ch63_5);
+        pa63_6=(CheckBox)findViewById(R.id.par_et_ch63_6);
+        pa63_7=(CheckBox)findViewById(R.id.par_et_ch63_7);
+        pa63_8=(CheckBox)findViewById(R.id.par_et_ch63_8);
+        pa63_9=(CheckBox)findViewById(R.id.par_et_ch63_9);
+        pa63_10=(CheckBox)findViewById(R.id.par_et_ch63_10);
+        pa63_11=(CheckBox)findViewById(R.id.par_et_ch63_11);
+        pa63_12=(CheckBox)findViewById(R.id.par_et_ch63_12);
+        pa63_13=(CheckBox)findViewById(R.id.par_et_ch63_13);
+        pa63_14=(CheckBox)findViewById(R.id.par_et_ch63_14);
+        pa63_15=(CheckBox)findViewById(R.id.par_et_ch63_15);
+        pa63_16=(CheckBox)findViewById(R.id.par_et_ch63_16);
+        pa63_17=(CheckBox)findViewById(R.id.par_et_ch63_17);
+        pa63_18=(CheckBox)findViewById(R.id.par_et_ch63_18);
+        pa63_19=(CheckBox)findViewById(R.id.par_et_ch63_19);
+        pa63_20=(CheckBox)findViewById(R.id.par_et_ch63_20);
+        pa63_21=(CheckBox)findViewById(R.id.par_et_ch63_21);
+        pa63_22=(CheckBox)findViewById(R.id.par_et_ch63_22);
+        pa63_23=(CheckBox)findViewById(R.id.par_et_ch63_23);
+        pa63_24=(CheckBox)findViewById(R.id.par_et_ch63_24);
+        pa63_25=(CheckBox)findViewById(R.id.par_et_ch63_25);
+        pa63_26=(CheckBox)findViewById(R.id.par_et_ch63_26);
+        pa63_27=(CheckBox)findViewById(R.id.par_et_ch63_27);
+        pa63_28=(CheckBox)findViewById(R.id.par_et_ch63_28);
+        pa63_29=(CheckBox)findViewById(R.id.par_et_ch63_29);
+        pa63_30=(CheckBox)findViewById(R.id.par_et_ch63_30);
+        pa63_31=(CheckBox)findViewById(R.id.par_et_ch63_31);
+        pa63_32=(CheckBox)findViewById(R.id.par_et_ch63_32);
+        pa63_33=(CheckBox)findViewById(R.id.par_et_ch63_33);
+        pa63_34=(CheckBox)findViewById(R.id.par_et_ch63_34);
+        pa63_35=(CheckBox)findViewById(R.id.par_et_ch63_35);
+        pa63_36=(CheckBox)findViewById(R.id.par_et_ch63_36);
+        pa63_37=(CheckBox)findViewById(R.id.par_et_ch63_37);
+        pa63_38=(CheckBox)findViewById(R.id.par_et_ch63_38);
+        pa63_39=(CheckBox)findViewById(R.id.par_et_ch63_39);
+        pa63_40=(CheckBox)findViewById(R.id.par_et_ch63_40);
+        pa63_41=(CheckBox)findViewById(R.id.par_et_ch63_41);
+        pa63_42=(CheckBox)findViewById(R.id.par_et_ch63_42);
+        pa63_43=(CheckBox)findViewById(R.id.par_et_ch63_43);
+        pa63_44=(CheckBox)findViewById(R.id.par_et_ch63_44);
+        pa63_45=(CheckBox)findViewById(R.id.par_et_ch63_45);
+        pa63_46=(CheckBox)findViewById(R.id.par_et_ch63_46);
+        pa63_47=(CheckBox)findViewById(R.id.par_et_ch63_47);
+        pa63_48=(CheckBox)findViewById(R.id.par_et_ch63_48);
+        pa63_49=(CheckBox)findViewById(R.id.par_et_ch63_49);
+        pa63_50=(CheckBox)findViewById(R.id.par_et_ch63_50);
+        pa63_51=(CheckBox)findViewById(R.id.par_et_ch63_51);
+        pa63_52=(CheckBox)findViewById(R.id.par_et_ch63_52);
+        pa63_53=(CheckBox)findViewById(R.id.par_et_ch63_53);
+        pa63_54=(CheckBox)findViewById(R.id.par_et_ch63_54);
+        pa63_55=(CheckBox)findViewById(R.id.par_et_ch63_55);
+        pa63_56=(CheckBox)findViewById(R.id.par_et_ch63_56);
+        pa63_57=(CheckBox)findViewById(R.id.par_et_ch63_57);
 
         //16. ¿Cuáles son los cinco productos de la canasta básica DICONSA que más se venden en la tienda?
 
@@ -258,6 +315,66 @@ public class PAR_Operativo extends AppCompatActivity {
         parec108=(CheckBox)findViewById(R.id.par_et_ch108);
         parec109=(CheckBox)findViewById(R.id.par_et_ch109);
         parec110=(CheckBox)findViewById(R.id.par_et_ch110);
+
+        pa110_1=(CheckBox)findViewById(R.id.par_et_ch63_1);
+        pa110_2=(CheckBox)findViewById(R.id.par_et_ch63_2);
+        pa110_3=(CheckBox)findViewById(R.id.par_et_ch63_3);
+        pa110_4=(CheckBox)findViewById(R.id.par_et_ch63_4);
+        pa110_5=(CheckBox)findViewById(R.id.par_et_ch63_5);
+        pa110_6=(CheckBox)findViewById(R.id.par_et_ch63_6);
+        pa110_7=(CheckBox)findViewById(R.id.par_et_ch63_7);
+        pa110_8=(CheckBox)findViewById(R.id.par_et_ch63_8);
+        pa110_9=(CheckBox)findViewById(R.id.par_et_ch63_9);
+        pa110_10=(CheckBox)findViewById(R.id.par_et_ch63_10);
+        pa110_11=(CheckBox)findViewById(R.id.par_et_ch63_11);
+        pa110_12=(CheckBox)findViewById(R.id.par_et_ch63_12);
+        pa110_13=(CheckBox)findViewById(R.id.par_et_ch63_13);
+        pa110_14=(CheckBox)findViewById(R.id.par_et_ch63_14);
+        pa110_15=(CheckBox)findViewById(R.id.par_et_ch63_15);
+        pa110_16=(CheckBox)findViewById(R.id.par_et_ch63_16);
+        pa110_17=(CheckBox)findViewById(R.id.par_et_ch63_17);
+        pa110_18=(CheckBox)findViewById(R.id.par_et_ch63_18);
+        pa110_19=(CheckBox)findViewById(R.id.par_et_ch63_19);
+        pa110_20=(CheckBox)findViewById(R.id.par_et_ch63_20);
+        pa110_21=(CheckBox)findViewById(R.id.par_et_ch63_21);
+        pa110_22=(CheckBox)findViewById(R.id.par_et_ch63_22);
+        pa110_23=(CheckBox)findViewById(R.id.par_et_ch63_23);
+        pa110_24=(CheckBox)findViewById(R.id.par_et_ch63_24);
+        pa110_25=(CheckBox)findViewById(R.id.par_et_ch63_25);
+        pa110_26=(CheckBox)findViewById(R.id.par_et_ch63_26);
+        pa110_27=(CheckBox)findViewById(R.id.par_et_ch63_27);
+        pa110_28=(CheckBox)findViewById(R.id.par_et_ch63_28);
+        pa110_29=(CheckBox)findViewById(R.id.par_et_ch63_29);
+        pa110_30=(CheckBox)findViewById(R.id.par_et_ch63_30);
+        pa110_31=(CheckBox)findViewById(R.id.par_et_ch63_31);
+        pa110_32=(CheckBox)findViewById(R.id.par_et_ch63_32);
+        pa110_33=(CheckBox)findViewById(R.id.par_et_ch63_33);
+        pa110_34=(CheckBox)findViewById(R.id.par_et_ch63_34);
+        pa110_35=(CheckBox)findViewById(R.id.par_et_ch63_35);
+        pa110_36=(CheckBox)findViewById(R.id.par_et_ch63_36);
+        pa110_37=(CheckBox)findViewById(R.id.par_et_ch63_37);
+        pa110_38=(CheckBox)findViewById(R.id.par_et_ch63_38);
+        pa110_39=(CheckBox)findViewById(R.id.par_et_ch63_39);
+        pa110_40=(CheckBox)findViewById(R.id.par_et_ch63_40);
+        pa110_41=(CheckBox)findViewById(R.id.par_et_ch63_41);
+        pa110_42=(CheckBox)findViewById(R.id.par_et_ch63_42);
+        pa110_43=(CheckBox)findViewById(R.id.par_et_ch63_43);
+        pa110_44=(CheckBox)findViewById(R.id.par_et_ch63_44);
+        pa110_45=(CheckBox)findViewById(R.id.par_et_ch63_45);
+        pa110_46=(CheckBox)findViewById(R.id.par_et_ch63_46);
+        pa110_47=(CheckBox)findViewById(R.id.par_et_ch63_47);
+        pa110_48=(CheckBox)findViewById(R.id.par_et_ch63_48);
+        pa110_49=(CheckBox)findViewById(R.id.par_et_ch63_49);
+        pa110_50=(CheckBox)findViewById(R.id.par_et_ch63_50);
+        pa110_51=(CheckBox)findViewById(R.id.par_et_ch63_51);
+        pa110_52=(CheckBox)findViewById(R.id.par_et_ch63_52);
+        pa110_53=(CheckBox)findViewById(R.id.par_et_ch63_53);
+        pa110_54=(CheckBox)findViewById(R.id.par_et_ch63_54);
+        pa110_55=(CheckBox)findViewById(R.id.par_et_ch63_55);
+        pa110_56=(CheckBox)findViewById(R.id.par_et_ch63_56);
+        pa110_57=(CheckBox)findViewById(R.id.par_et_ch63_57);
+
+
         //Fin checkboxes
 
         parer30=(RadioButton)findViewById(R.id.par_et_ra30);
@@ -415,6 +532,63 @@ public class PAR_Operativo extends AppCompatActivity {
         pprolic45=(EditText)findViewById(R.id.dic_pre_45);
         pprolic46=(EditText)findViewById(R.id.dic_pre_46);
         pprolic47=(EditText)findViewById(R.id.dic_pre_47);
+        pprolic48=(EditText)findViewById(R.id.dic_pre_48);
+        pprolic49=(EditText)findViewById(R.id.dic_pre_49);
+        pprolic50=(EditText)findViewById(R.id.dic_pre_50);
+        pprolic51=(EditText)findViewById(R.id.dic_pre_51);
+        pprolic52=(EditText)findViewById(R.id.dic_pre_52);
+        pprolic53=(EditText)findViewById(R.id.dic_pre_53);
+        pprolic54=(EditText)findViewById(R.id.dic_pre_54);
+        pprolic55=(EditText)findViewById(R.id.dic_pre_55);
+        pprolic56=(EditText)findViewById(R.id.dic_pre_56);
+        pprolic57=(EditText)findViewById(R.id.dic_pre_57);
+        pprolic58=(EditText)findViewById(R.id.dic_pre_58);
+        pprolic59=(EditText)findViewById(R.id.dic_pre_59);
+        pprolic60=(EditText)findViewById(R.id.dic_pre_60);
+        pprolic61=(EditText)findViewById(R.id.dic_pre_61);
+        pprolic62=(EditText)findViewById(R.id.dic_pre_62);
+        pprolic63=(EditText)findViewById(R.id.dic_pre_63);
+        pprolic64=(EditText)findViewById(R.id.dic_pre_64);
+        pprolic65=(EditText)findViewById(R.id.dic_pre_65);
+        pprolic66=(EditText)findViewById(R.id.dic_pre_66);
+        pprolic67=(EditText)findViewById(R.id.dic_pre_67);
+        pprolic68=(EditText)findViewById(R.id.dic_pre_68);
+        pprolic69=(EditText)findViewById(R.id.dic_pre_69);
+        pprolic70=(EditText)findViewById(R.id.dic_pre_70);
+        pprolic71=(EditText)findViewById(R.id.dic_pre_71);
+        pprolic72=(EditText)findViewById(R.id.dic_pre_72);
+        pprolic73=(EditText)findViewById(R.id.dic_pre_73);
+        pprolic74=(EditText)findViewById(R.id.dic_pre_74);
+        pprolic75=(EditText)findViewById(R.id.dic_pre_75);
+        pprolic76=(EditText)findViewById(R.id.dic_pre_76);
+        pprolic77=(EditText)findViewById(R.id.dic_pre_77);
+        pprolic78=(EditText)findViewById(R.id.dic_pre_78);
+        pprolic79=(EditText)findViewById(R.id.dic_pre_79);
+        pprolic80=(EditText)findViewById(R.id.dic_pre_80);
+        pprolic81=(EditText)findViewById(R.id.dic_pre_81);
+        pprolic82=(EditText)findViewById(R.id.dic_pre_82);
+        pprolic83=(EditText)findViewById(R.id.dic_pre_83);
+        pprolic84=(EditText)findViewById(R.id.dic_pre_84);
+        pprolic85=(EditText)findViewById(R.id.dic_pre_85);
+        pprolic86=(EditText)findViewById(R.id.dic_pre_86);
+        pprolic87=(EditText)findViewById(R.id.dic_pre_87);
+        pprolic88=(EditText)findViewById(R.id.dic_pre_88);
+        pprolic89=(EditText)findViewById(R.id.dic_pre_89);
+        pprolic90=(EditText)findViewById(R.id.dic_pre_90);
+        pprolic91=(EditText)findViewById(R.id.dic_pre_91);
+        pprolic92=(EditText)findViewById(R.id.dic_pre_92);
+        pprolic93=(EditText)findViewById(R.id.dic_pre_93);
+        pprolic94=(EditText)findViewById(R.id.dic_pre_94);
+        pprolic95=(EditText)findViewById(R.id.dic_pre_95);
+        pprolic96=(EditText)findViewById(R.id.dic_pre_96);
+        pprolic97=(EditText)findViewById(R.id.dic_pre_97);
+        pprolic98=(EditText)findViewById(R.id.dic_pre_98);
+        pprolic99=(EditText)findViewById(R.id.dic_pre_99);
+        pprolic100=(EditText)findViewById(R.id.dic_pre_100);
+        pprolic101=(EditText)findViewById(R.id.dic_pre_101);
+        pprolic102=(EditText)findViewById(R.id.dic_pre_102);
+        pprolic103=(EditText)findViewById(R.id.dic_pre_103);
+        pprolic104=(EditText)findViewById(R.id.dic_pre_104);
 
         parra0 =(RadioButton)findViewById(R.id.parrad0);
         parra1 =(RadioButton)findViewById(R.id.parrad1);
@@ -599,10 +773,67 @@ public class PAR_Operativo extends AppCompatActivity {
                                     String pare93 = pprolic45.getText().toString();
                                     String pare94 = pprolic46.getText().toString();
                                     String pare95 = pprolic47.getText().toString();
+                                    String pare96 = pprolic48.getText().toString();
+                                    String pare97 = pprolic49.getText().toString();
+                                    String pare98 = pprolic50.getText().toString();
+                                    String pare99 = pprolic51.getText().toString();
+                                    String pare100 = pprolic52.getText().toString();
+                                    String pare101 = pprolic53.getText().toString();
+                                    String pare102 = pprolic54.getText().toString();
+                                    String pare103 = pprolic55.getText().toString();
+                                    String pare104 = pprolic56.getText().toString();
+                                    String pare105 = pprolic57.getText().toString();
+                                    String pare106 = pprolic58.getText().toString();
+                                    String pare107 = pprolic59.getText().toString();
+                                    String pare108 = pprolic60.getText().toString();
+                                    String pare109 = pprolic61.getText().toString();
+                                    String pare110 = pprolic62.getText().toString();
+                                    String pare111 = pprolic63.getText().toString();
+                                    String pare112 = pprolic64.getText().toString();
+                                    String pare113 = pprolic65.getText().toString();
+                                    String pare114 = pprolic66.getText().toString();
+                                    String pare115 = pprolic67.getText().toString();
+                                    String pare116 = pprolic68.getText().toString();
+                                    String pare117 = pprolic69.getText().toString();
+                                    String pare118 = pprolic70.getText().toString();
+                                    String pare119 = pprolic71.getText().toString();
+                                    String pare120 = pprolic72.getText().toString();
+                                    String pare121 = pprolic73.getText().toString();
+                                    String pare122 = pprolic74.getText().toString();
+                                    String pare123 = pprolic75.getText().toString();
+                                    String pare124 = pprolic76.getText().toString();
+                                    String pare125 = pprolic77.getText().toString();
+                                    String pare126 = pprolic78.getText().toString();
+                                    String pare127 = pprolic79.getText().toString();
+                                    String pare128 = pprolic80.getText().toString();
+                                    String pare129 = pprolic81.getText().toString();
+                                    String pare130 = pprolic82.getText().toString();
+                                    String pare131 = pprolic83.getText().toString();
+                                    String pare132 = pprolic84.getText().toString();
+                                    String pare133 = pprolic85.getText().toString();
+                                    String pare134 = pprolic86.getText().toString();
+                                    String pare135 = pprolic87.getText().toString();
+                                    String pare136 = pprolic88.getText().toString();
+                                    String pare137 = pprolic89.getText().toString();
+                                    String pare138 = pprolic90.getText().toString();
+                                    String pare139 = pprolic91.getText().toString();
+                                    String pare140 = pprolic92.getText().toString();
+                                    String pare141 = pprolic93.getText().toString();
+                                    String pare142 = pprolic94.getText().toString();
+                                    String pare143 = pprolic95.getText().toString();
+                                    String pare144 = pprolic96.getText().toString();
+                                    String pare145 = pprolic97.getText().toString();
+                                    String pare146 = pprolic98.getText().toString();
+                                    String pare147 = pprolic99.getText().toString();
+                                    String pare148 = pprolic100.getText().toString();
+                                    String pare149 = pprolic101.getText().toString();
+                                    String pare150 = pprolic102.getText().toString();
+                                    String pare151 = pprolic103.getText().toString();
+                                    String pare152 = pprolic104.getText().toString();
                                     String f1 = General.Foto1;
                                     String f2 = General.Foto2;
 
-                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, f1, f2, "", "");
+                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, "", "");
                                     Intent in = new Intent(PAR_Operativo.this, GeoreferenciaActivity.class);
                                     in.putExtra("model", model);
                                     startActivity(in);
@@ -1137,6 +1368,64 @@ public class PAR_Operativo extends AppCompatActivity {
         if(parec61.isChecked()){count = count + 1;}
         if(parec62.isChecked()){count = count + 1;}
         if(parec63.isChecked()){count = count + 1;}
+        if(pa63_1.isChecked()){count = count + 1;}
+        if(pa63_2.isChecked()){count = count + 1;}
+        if(pa63_3.isChecked()){count = count + 1;}
+        if(pa63_4.isChecked()){count = count + 1;}
+        if(pa63_5.isChecked()){count = count + 1;}
+        if(pa63_6.isChecked()){count = count + 1;}
+        if(pa63_7.isChecked()){count = count + 1;}
+        if(pa63_8.isChecked()){count = count + 1;}
+        if(pa63_9.isChecked()){count = count + 1;}
+        if(pa63_10.isChecked()){count = count + 1;}
+        if(pa63_11.isChecked()){count = count + 1;}
+        if(pa63_12.isChecked()){count = count + 1;}
+        if(pa63_13.isChecked()){count = count + 1;}
+        if(pa63_14.isChecked()){count = count + 1;}
+        if(pa63_15.isChecked()){count = count + 1;}
+        if(pa63_16.isChecked()){count = count + 1;}
+        if(pa63_17.isChecked()){count = count + 1;}
+        if(pa63_18.isChecked()){count = count + 1;}
+        if(pa63_19.isChecked()){count = count + 1;}
+        if(pa63_20.isChecked()){count = count + 1;}
+        if(pa63_21.isChecked()){count = count + 1;}
+        if(pa63_22.isChecked()){count = count + 1;}
+        if(pa63_23.isChecked()){count = count + 1;}
+        if(pa63_24.isChecked()){count = count + 1;}
+        if(pa63_25.isChecked()){count = count + 1;}
+        if(pa63_26.isChecked()){count = count + 1;}
+        if(pa63_27.isChecked()){count = count + 1;}
+        if(pa63_28.isChecked()){count = count + 1;}
+        if(pa63_29.isChecked()){count = count + 1;}
+        if(pa63_30.isChecked()){count = count + 1;}
+        if(pa63_31.isChecked()){count = count + 1;}
+        if(pa63_32.isChecked()){count = count + 1;}
+        if(pa63_33.isChecked()){count = count + 1;}
+        if(pa63_34.isChecked()){count = count + 1;}
+        if(pa63_35.isChecked()){count = count + 1;}
+        if(pa63_36.isChecked()){count = count + 1;}
+        if(pa63_37.isChecked()){count = count + 1;}
+        if(pa63_38.isChecked()){count = count + 1;}
+        if(pa63_39.isChecked()){count = count + 1;}
+        if(pa63_40.isChecked()){count = count + 1;}
+        if(pa63_41.isChecked()){count = count + 1;}
+        if(pa63_42.isChecked()){count = count + 1;}
+        if(pa63_43.isChecked()){count = count + 1;}
+        if(pa63_44.isChecked()){count = count + 1;}
+        if(pa63_45.isChecked()){count = count + 1;}
+        if(pa63_46.isChecked()){count = count + 1;}
+        if(pa63_47.isChecked()){count = count + 1;}
+        if(pa63_48.isChecked()){count = count + 1;}
+        if(pa63_49.isChecked()){count = count + 1;}
+        if(pa63_50.isChecked()){count = count + 1;}
+        if(pa63_51.isChecked()){count = count + 1;}
+        if(pa63_52.isChecked()){count = count + 1;}
+        if(pa63_53.isChecked()){count = count + 1;}
+        if(pa63_54.isChecked()){count = count + 1;}
+        if(pa63_55.isChecked()){count = count + 1;}
+        if(pa63_56.isChecked()){count = count + 1;}
+        if(pa63_57.isChecked()){count = count + 1;}
+
 
         return count;
     }
@@ -1202,6 +1491,64 @@ public class PAR_Operativo extends AppCompatActivity {
         if(parec117.isChecked()){counte = counte + 1;}
         if(parec118.isChecked()){counte = counte + 1;}
         if(parec119.isChecked()){counte = counte + 1;}
+
+        if(pa110_1.isChecked()){count = count + 1;}
+if(pa110_2.isChecked()){count = count + 1;}
+if(pa110_3.isChecked()){count = count + 1;}
+if(pa110_4.isChecked()){count = count + 1;}
+if(pa110_5.isChecked()){count = count + 1;}
+if(pa110_6.isChecked()){count = count + 1;}
+if(pa110_7.isChecked()){count = count + 1;}
+if(pa110_8.isChecked()){count = count + 1;}
+if(pa110_9.isChecked()){count = count + 1;}
+if(pa110_10.isChecked()){count = count + 1;}
+if(pa110_11.isChecked()){count = count + 1;}
+if(pa110_12.isChecked()){count = count + 1;}
+if(pa110_13.isChecked()){count = count + 1;}
+if(pa110_14.isChecked()){count = count + 1;}
+if(pa110_15.isChecked()){count = count + 1;}
+if(pa110_16.isChecked()){count = count + 1;}
+if(pa110_17.isChecked()){count = count + 1;}
+if(pa110_18.isChecked()){count = count + 1;}
+if(pa110_19.isChecked()){count = count + 1;}
+if(pa110_20.isChecked()){count = count + 1;}
+if(pa110_21.isChecked()){count = count + 1;}
+if(pa110_22.isChecked()){count = count + 1;}
+if(pa110_23.isChecked()){count = count + 1;}
+if(pa110_24.isChecked()){count = count + 1;}
+if(pa110_25.isChecked()){count = count + 1;}
+if(pa110_26.isChecked()){count = count + 1;}
+if(pa110_27.isChecked()){count = count + 1;}
+if(pa110_28.isChecked()){count = count + 1;}
+if(pa110_29.isChecked()){count = count + 1;}
+if(pa110_30.isChecked()){count = count + 1;}
+if(pa110_31.isChecked()){count = count + 1;}
+if(pa110_32.isChecked()){count = count + 1;}
+if(pa110_33.isChecked()){count = count + 1;}
+if(pa110_34.isChecked()){count = count + 1;}
+if(pa110_35.isChecked()){count = count + 1;}
+if(pa110_36.isChecked()){count = count + 1;}
+if(pa110_37.isChecked()){count = count + 1;}
+if(pa110_38.isChecked()){count = count + 1;}
+if(pa110_39.isChecked()){count = count + 1;}
+if(pa110_40.isChecked()){count = count + 1;}
+if(pa110_41.isChecked()){count = count + 1;}
+if(pa110_42.isChecked()){count = count + 1;}
+if(pa110_43.isChecked()){count = count + 1;}
+if(pa110_44.isChecked()){count = count + 1;}
+if(pa110_45.isChecked()){count = count + 1;}
+if(pa110_46.isChecked()){count = count + 1;}
+if(pa110_47.isChecked()){count = count + 1;}
+if(pa110_48.isChecked()){count = count + 1;}
+if(pa110_49.isChecked()){count = count + 1;}
+if(pa110_50.isChecked()){count = count + 1;}
+if(pa110_51.isChecked()){count = count + 1;}
+if(pa110_52.isChecked()){count = count + 1;}
+if(pa110_53.isChecked()){count = count + 1;}
+if(pa110_54.isChecked()){count = count + 1;}
+if(pa110_55.isChecked()){count = count + 1;}
+if(pa110_56.isChecked()){count = count + 1;}
+if(pa110_57.isChecked()){count = count + 1;}
 
         if(counte<=5) {
             retorno = true;
@@ -1702,6 +2049,179 @@ public class PAR_Operativo extends AppCompatActivity {
             cadena3 = "47-Soya Texturizada (NUTRICASA).";
         }
 
+        if (pa63_1.isChecked()) {
+            cadena3 = "48-Soya Texturizada (NUTRICASA).";
+        }
+        if (pa63_2.isChecked()) {
+            cadena3 = "48-Soya Texturizada (NUTRICASA).";
+        }
+        if (pa63_3.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_4.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_5.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_6.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_7.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_8.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_9.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_10.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_11.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_12.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_13.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_14.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_15.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_16.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_17.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_18.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_19.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_20.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_21.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_22.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_23.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_24.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_25.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_26.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_27.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_28.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_29.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_30.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_31.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_32.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_33.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_34.isChecked()) {
+            cadena3 = "1";
+        }if (pa63_35.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_36.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_37.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_38.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_39.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_40.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_41.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_42.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_43.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_44.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_45.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_46.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_47.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_48.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_49.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_50.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_51.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_52.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_53.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_54.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_55.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_56.isChecked()) {
+            cadena3 = "1";
+        }
+        if (pa63_57.isChecked()) {
+            cadena3 = "1";
+        }
+
+
+
         resultado3 = cadena3.substring(0, cadena3.length()-1);
         return resultado3;
     }
@@ -1851,6 +2371,178 @@ public class PAR_Operativo extends AppCompatActivity {
         if (parec110.isChecked()) {
             cadena4 = "47-Soya Texturizada (NUTRICASA).";
         }
+        if (pa110_1.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_2.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_3.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_4.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_5.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_6.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_7.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_8.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_9.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_10.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_11.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_12.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_13.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_14.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_15.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_16.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_17.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_18.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_19.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_20.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_21.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_22.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_23.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_24.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_25.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_26.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_27.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_28.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_29.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_30.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_31.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_32.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_33.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_34.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_35.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_36.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_37.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_38.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_39.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_40.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_41.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_42.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_43.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_44.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_45.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_46.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_47.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_48.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_49.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_50.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_51.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_52.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_53.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_54.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_55.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_56.isChecked()) {
+            cadena4 = "2";
+        }
+        if (pa110_57.isChecked()) {
+            cadena4 = "2";
+        }
+
 
         resultado4 = cadena4.substring(0, cadena4.length() - 1);
         return resultado4;

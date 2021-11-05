@@ -16,7 +16,7 @@ import java.util.List;
 public class PARoperativoBD  extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "PAROperativo";
-    public static final int DB_VERSION = 2;
+    public static final int DB_VERSION = 4;
 
     public PARoperativoBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -146,6 +146,63 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
         contentValues.put(PAR_operativo_bd.COLUMN_PARE93, model.getPare93());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE94, model.getPare94());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE95, model.getPare95());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE96, model.getPare96());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE97, model.getPare97());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE98, model.getPare98());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE99, model.getPare99());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE100, model.getPare100());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE101, model.getPare101());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE102, model.getPare102());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE103, model.getPare103());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE104, model.getPare104());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE105, model.getPare105());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE106, model.getPare106());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE107, model.getPare107());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE108, model.getPare108());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE109, model.getPare109());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE110, model.getPare110());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE111, model.getPare111());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE112, model.getPare112());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE113, model.getPare113());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE114, model.getPare114());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE115, model.getPare115());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE116, model.getPare116());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE117, model.getPare117());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE118, model.getPare118());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE119, model.getPare119());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE120, model.getPare120());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE121, model.getPare121());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE122, model.getPare122());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE123, model.getPare123());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE124, model.getPare124());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE125, model.getPare125());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE126, model.getPare126());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE127, model.getPare127());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE128, model.getPare128());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE129, model.getPare129());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE130, model.getPare130());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE131, model.getPare131());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE132, model.getPare132());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE133, model.getPare133());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE134, model.getPare134());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE135, model.getPare135());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE136, model.getPare136());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE137, model.getPare137());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE138, model.getPare138());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE139, model.getPare139());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE140, model.getPare140());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE141, model.getPare141());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE142, model.getPare142());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE143, model.getPare143());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE144, model.getPare144());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE145, model.getPare145());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE146, model.getPare146());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE147, model.getPare147());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE148, model.getPare148());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE149, model.getPare149());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE150, model.getPare150());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE151, model.getPare151());
+        contentValues.put(PAR_operativo_bd.COLUMN_PARE152, model.getPare152());contentValues.put(PAR_operativo_bd.COLUMN_PARE95, model.getPare152());
         contentValues.put(PAR_operativo_bd.COLUMN_FOTO1, model.getF1());
         contentValues.put(PAR_operativo_bd.COLUMN_FOTO2, model.getF2());
         contentValues.put(PAR_operativo_bd.COLUMN_LONGITUD, model.getLongitudGeo());
@@ -201,7 +258,7 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
                 String ape = cursor.getString(7);
                 String apem = cursor.getString(8);
 
-                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, nom, ape, apem,"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
+                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, nom, ape, apem, "","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
                 returnList.add(newCuastomer);
 
             }while(cursor.moveToNext());

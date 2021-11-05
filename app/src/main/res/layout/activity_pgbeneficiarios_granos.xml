@@ -384,22 +384,6 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="20dp"
-                android:text="INFORMACIÓN SOCIOECONÓMICA"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="0dp"
-                android:text="Seleccione la opción qué corresponda"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SEXO:"
                 android:textColor="#000000" />
@@ -436,12 +420,30 @@
                 android:layout_height="62dp"
                 android:hint="Escriba el número"
                 android:inputType="number"
+                android:maxLength="2"
                 android:maxLines="1" />
 
             <TextView
                 android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="INFORMACIÓN SOCIOECONÓMICA"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:text="Seleccione la opción qué corresponda"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="¿Sabe leer y escribir?"
+                android:text="1. ¿Sabe leer y escribir?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -468,7 +470,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Indique el último nivel o grado de estudio que cursó en la escuela"
+                android:text="2. Indique el último nivel o grado de estudio que cursó en la escuela"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -508,34 +510,34 @@
 
 
 
-            <RadioButton
+                <RadioButton
 
-                android:id="@+id/pre_garan_granos_ra9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Secundaria completa" />
+                    android:id="@+id/pre_garan_granos_ra9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secundaria completa" />
 
-            <RadioButton
+                <RadioButton
 
-                android:id="@+id/pre_garan_granos_ra10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nivel Medio Superior incompleto (Bachillerato general, Bachillerato especializado o tecnológico)" />
+                    android:id="@+id/pre_garan_granos_ra10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nivel Medio Superior incompleto (Bachillerato general, Bachillerato especializado o tecnológico)" />
 
-            <RadioButton
+                <RadioButton
 
-                android:id="@+id/pre_garan_granos_ra11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nivel Medio Superior completo" />
+                    android:id="@+id/pre_garan_granos_ra11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nivel Medio Superior completo" />
 
 
-            <RadioButton
+                <RadioButton
 
-                android:id="@+id/pre_garan_granos_ra12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Licenciatura inconclusa" />
+                    android:id="@+id/pre_garan_granos_ra12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Licenciatura inconclusa" />
 
 
                 <RadioButton
@@ -589,7 +591,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:text="Nombre del producto:"
+                android:text="3. Nombre del producto:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -701,7 +703,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="SELECCIONE LA INFORMACIÓN QUE CONOCE DEL APOYO:"
+                android:text="4. SELECCIONE LA INFORMACIÓN QUE CONOCE DEL APOYO:"
                 android:textStyle="bold"
                 android:textColor="#000000" />
 
@@ -794,14 +796,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="SELECCIONE LA DOCUMENTACIÓN QUE ENTREGÓ PARA REGISTRARSE EN EL PROGRAMA:"
+                android:text="5. SELECCIONE LA DOCUMENTACIÓN QUE ENTREGÓ PARA REGISTRARSE EN EL PROGRAMA:"
                 android:textStyle="bold"
                 android:textColor="#000000" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Identificación oficial vigente:"
+                android:text="5.1 Identificación oficial vigente:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -827,7 +829,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CURP:"
+                android:text="5.2 CURP:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -853,7 +855,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Número de cuenta CLABE o algún método de pago:"
+                android:text="5.3 Número de cuenta CLABE o algún método de pago:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -879,7 +881,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Documento o folio que acredite su registro en alguno de los siguientes padrones: Censo del Bienestar, producción para el Bienestar:"
+                android:text="5.4 Documento o folio que acredite su registro en alguno de los siguientes padrones: Censo del Bienestar, producción para el Bienestar:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -905,7 +907,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Documento que acredite la posesión del predio sembrado o la renta del mismo:"
+                android:text="5.5 Documento que acredite la posesión del predio sembrado o la renta del mismo:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -933,14 +935,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="SELECCIONE LA OPCIÓN QUE CORRESPONDA A SU OPINIÓN DEL APOYO:"
+                android:text="6. SELECCIONE LA OPCIÓN QUE CORRESPONDA A SU OPINIÓN DEL APOYO:"
                 android:textStyle="bold"
                 android:textColor="#000000" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="El pago le fue entregado completo:"
+                android:text="6.1 El pago le fue entregado completo:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -966,7 +968,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="El pago se realizó de acuerdo a la fecha programada:"
+                android:text="6.2 El pago se realizó de acuerdo a la fecha programada:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -992,7 +994,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Le fue condicionada la recepción del grano:"
+                android:text="6.3 Le fue condicionada la recepción del grano:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1018,7 +1020,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Le entregaron el resultado de la calidad de la muestra y las deducciones que serán aplicadas:"
+                android:text="6.4 Le entregaron el resultado de la calidad de la muestra y las deducciones que serán aplicadas:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1070,7 +1072,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="En su opinión ¿El pago lo reciben las personas que lo necesitan?:"
+                android:text="6.5 En su opinión ¿El pago lo reciben las personas que lo necesitan?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1096,7 +1098,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="¿Le entregaron el formato/comprobante de recepción de documentos?:"
+                android:text="6.6 ¿Le entregaron el formato/comprobante de recepción de documentos?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1122,7 +1124,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="¿Se le dio a conocer el precio de garantía?:"
+                android:text="6.7 ¿Se le dio a conocer el precio de garantía?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1148,7 +1150,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="¿Identifica alguna diferencia entre el precio al que compran los acopiadores privados y el precio de garantía?:"
+                android:text="6.8 ¿Identifica alguna diferencia entre el precio al que compran los acopiadores privados y el precio de garantía?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1174,7 +1176,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="¿La información difundida del programa fue suficiente, clara y oportuna?:"
+                android:text="6.9 ¿La información difundida del programa fue suficiente, clara y oportuna?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1200,11 +1202,11 @@
             <TextView
                 android:id="@+id/pre_garan_granos_txtview1"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:visibility="visible"
-                android:text="PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE FRIJOL Y MAÍZ PEQUEÑOS PRODUCTORES"
+                android:text="7. PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE FRIJOL Y MAÍZ PEQUEÑOS PRODUCTORES"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -1213,7 +1215,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Le entregaron el Documento de Compra (DC-01) que indica la calidad y el pesaje del grano firmada por el jefe de centro de acopio?:"
+                android:text="7.1 ¿Le entregaron el Documento de Compra (DC-01) que indica la calidad y el pesaje del grano firmada por el jefe de centro de acopio?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1240,11 +1242,11 @@
             <TextView
                 android:id="@+id/pre_garan_granos_txtview3"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
                 android:visibility="visible"
-                android:text="PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE ESTÍMULOS (ARROZ, TRIGO Y MAÍZ MEDIANOS PRODUCTORES)"
+                android:text="8. PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE ESTÍMULOS (ARROZ, TRIGO Y MAÍZ MEDIANOS PRODUCTORES)"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -1253,7 +1255,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Conoce el precio de referencia sobre el cual se calcula el estímulo?:"
+                android:text="8.1 ¿Conoce el precio de referencia sobre el cual se calcula el estímulo?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1290,7 +1292,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Conoce el monto del estímulo que se le está pagando?:"
+                android:text="8.2 ¿Conoce el monto del estímulo que se le está pagando?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1327,7 +1329,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="Para el caso de los beneficiarios de maíz de medianos productores y trigo cristalino. ¿Conoce el apoyo que se otorga para la Adquisición de Instrumentos de Administración de Riesgos?:"
+                android:text="8.3 Para el caso de los beneficiarios de maíz de medianos productores y trigo cristalino. ¿Conoce el apoyo que se otorga para la Adquisición de Instrumentos de Administración de Riesgos?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1364,7 +1366,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Recibió formato/comprobante de recepción de documentos?:"
+                android:text="8.4 ¿Recibió formato/comprobante de recepción de documentos?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1401,7 +1403,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Recibió factura que indica el volumen comercializado?:"
+                android:text="8.5 ¿Recibió factura que indica el volumen comercializado?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1440,7 +1442,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:visibility="visible"
-                android:text="ENCUESTA DE OPINIÓN:"
+                android:text="9. ENCUESTA DE OPINIÓN:"
                 android:textStyle="bold"
                 android:textColor="#000000" />
 
@@ -1459,7 +1461,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="La atención de los encargados del Centro de Acopio fue:"
+                android:text="9.1 La atención de los encargados del Centro de Acopio fue:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1496,7 +1498,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="9.2 ¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1533,7 +1535,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cómo considera el proceso para acceder al apoyo?:"
+                android:text="9.3 ¿Cómo considera el proceso para acceder al apoyo?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1570,7 +1572,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cómo considera el tiempo transcurrido para recibir el pago?:"
+                android:text="9.4 ¿Cómo considera el tiempo transcurrido para recibir el pago?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1607,7 +1609,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cómo considera el monto pagado?:"
+                android:text="9.5 ¿Cómo considera el monto pagado?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1644,7 +1646,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
+                android:text="9.6 ¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1681,7 +1683,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="9.7 En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1718,7 +1720,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="0dp"
-                android:text="Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
+                android:text="10. Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -1727,15 +1729,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cómo se enteró del Programa y los requisitos?:"
+                android:text="10.1 ¿Cómo se enteró del Programa y los requisitos?:"
                 android:textColor="#000000" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
-
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/pre_garan_granos_ch11"
@@ -1848,7 +1848,7 @@
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:layout_marginTop="5dp"
-                android:text="¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
+                android:text="10.2 ¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
                 android:textColor="#000000" />
 
             <EditText
@@ -1864,7 +1864,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cuáles considera son para usted las ventajas de este Programa?:"
+                android:text="10.3 ¿Cuáles considera son para usted las ventajas de este Programa?:"
                 android:textColor="#000000" />
 
             <EditText
@@ -1880,7 +1880,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cuáles considera son las principales desventajas del Programa?:"
+                android:text="10.4 ¿Cuáles considera son las principales desventajas del Programa?:"
                 android:textColor="#000000" />
 
             <EditText
@@ -1896,7 +1896,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="10.5 ¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000" />
 
             <EditText
