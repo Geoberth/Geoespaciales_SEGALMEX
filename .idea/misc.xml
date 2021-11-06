@@ -100,6 +100,8 @@
         <entry key="app/src/main/res/layout/nav_header_drawer.xml" value="0.33611111111111114" />
         <entry key="app/src/main/res/menu/activity_drawer_drawer.xml" value="0.5205128205128206" />
         <entry key="app/src/main/res/menu/drawer.xml" value="0.33611111111111114" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16574074074074074" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/iconoapp_liz.xml" value="0.3814814814814815" />
       </map>
     </option>

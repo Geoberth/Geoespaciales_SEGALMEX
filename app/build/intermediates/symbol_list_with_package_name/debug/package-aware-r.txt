@@ -1005,8 +1005,10 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color icono_SIAP_background
 color iconoapp_liz_background
+color icononor2_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1531,7 +1533,6 @@ drawable googleg_standard_color_18
 drawable ic_baseline_monetization_on_24
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
-drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_launcher_round_background
 drawable ic_menu_arrow_down_black_24dp
@@ -6446,12 +6447,18 @@ layout test_toolbar_elevation
 layout test_toolbar_surface
 menu activity_drawer_drawer
 menu drawer
+mipmap ic_launcher
+mipmap ic_launcher_round
 mipmap iconoapp_liz
 mipmap iconoapp_liz_foreground
 mipmap iconoapp_liz_round
 mipmap iconoapp_lizz
 mipmap iconoapp_lizz_foreground
 mipmap iconoapp_lizz_round
+mipmap iconoliz2
+mipmap icononor2
+mipmap icononor2_foreground
+mipmap icononor2_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description
 raw f87a0836b68c13b0
