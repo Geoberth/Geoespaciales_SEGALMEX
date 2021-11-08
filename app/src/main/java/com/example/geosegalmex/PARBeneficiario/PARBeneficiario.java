@@ -46,6 +46,7 @@ public class PARBeneficiario extends AppCompatActivity {
             ,parbc236_23,parbc236_24,parbc236_25,parbc236_26,parbc236_27,parbc236_28,parbc236_29,parbc236_30,parbc236_31,parbc236_32,parbc236_33,parbc236_34,parbc236_35,parbc236_36,parbc236_37,parbc236_38,parbc236_39,parbc236_40,parbc236_41,parbc236_42,parbc236_43,parbc236_44,parbc236_45,parbc236_46,parbc236_47,parbc236_48,parbc236_49,parbc236_50,parbc236_51,parbc236_52,parbc236_53,parbc236_54
             ,parbc236_55,parbc236_56,parbc236_57;
     Button btnSiguiente;
+    int bandera = 0, bandera2 = 0, bandera3 = 0, bandera4 = 0;
     GridLayout cinco, siete, ocho, diesinueve, dos;
     LinearLayout trece, diesiciete;
     RadioButton parbr198, parbr199;
@@ -119,82 +120,62 @@ public class PARBeneficiario extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(validar()){
-                    if(Validarsolo3_2()){
-                        if(Validarsolo3_7()){
-                            if(Validarsolo3_8()){
-                                if(Validarsolo3_19()){
-                                    String fol = General.Foliocuestion;
-                                    General.fechaenc = textFecha.getText().toString();
-                                    String cveEdo = cveedo;
-                                    String Edo = nomedo;
-                                    String cveMun = cvemun;
-                                    String Mun = nommun;
-                                    String cveLoc = "";
-                                    String Loc = parbs3.getText().toString();
-                                    String sexo = obtenerResultado(parbr1, parbr2);
-                                    String edad = parbt3.getText().toString();
-                                    String uno = obtenerResultado(parbr3, parbr4);
-                                    String dos = Resultado2();
-                                    String tres = obtenerResultado(parbr5, parbr6);
-                                    String cuatro = obtenerResultado3(parbr7, parbr8, parbr9);
-                                    String cinco = obtenerResultado(parbr10, parbr11);
-                                    String cincocuales = (parbr10.isChecked()==true)? Resultado5() : "" ;
-                                    String seis = obtenerResultado3(parbr12, parbr13, parbr14);
-                                    String siete = obtenerResultado(parbr15, parbr16);
-                                    String sietecuales = (parbr16.isChecked()==true)? Resultado7() : "" ;
-                                    String ocho = Resultado8();
-                                    String nueve = obtenerResultado(parbr19, parbr20);
-                                    String diez = obtenerResultado(parbr21, parbr22);
-                                    String once = obtenerResultado(parbr23, parbr24);
-                                    String doce = obtenerResultado(parbr25, parbr26);
-                                    String trece = obtenerResultado(parbr27, parbr28);
-                                    String trececuales = (parbr27.isChecked()==true)? Resultado13() : "" ;
-                                    String catorce = Resultado14();
-                                    String quince = obtenerResultado6(parbr29, parbr30, parbr31, parbr32, parbr33, parbr34);
-                                    String dieciseis = obtenerResultado4(parbr35, parbr36, parbr37, parbr38);
-                                    String diecisiete = obtenerResultado(parbr39, parbr40);
-                                    String cuales17 = (parbr39.isChecked()==true)? Resultado17() : "" ;
-                                    String dieciocho = obtenerResultado(parbr41, parbr42);
-                                    String diecinueve = obtenerResultado(parbr43, parbr44);
-                                    String cuales19 = Resultado19();
-                                    String veinte = obtenerResultado(parbr45, parbr46);
-                                    String ventiuno = obtenerResultado3(parbr47, parbr48, parbr49);
-                                    String ventidos = obtenerResultado3(parbr50, parbr51, parbr52);
-                                    String ventitres = obtenerResultado(parbr53, parbr54);
-                                    String explique23 = (parbr54.isChecked()==true)? parbt23.getText().toString() : "" ;
-                                    String venticuatro = obtenerResultado(parbr198, parbr199);
-                                    String venticinco = Resultado25();
-                                    String otro25 = parbt5.getText().toString();
-                                    String ventiseis = Resultado26();
-                                    String otro26 = parbt6.getText().toString();
-                                    String ventisiete = parbt27.getText().toString();
-                                    String f1 = General.Foto1;
-                                    String f2 = General.Foto2;
+                    String fol = General.Foliocuestion;
+                    General.fechaenc = textFecha.getText().toString();
+                    String cveEdo = cveedo;
+                    String Edo = nomedo;
+                    String cveMun = cvemun;
+                    String Mun = nommun;
+                    String cveLoc = "";
+                    String Loc = parbs3.getText().toString();
+                    String sexo = obtenerResultado(parbr1, parbr2);
+                    String edad = parbt3.getText().toString();
+                    String uno = obtenerResultado(parbr3, parbr4);
+                    String dos = Resultado2();
+                    String tres = obtenerResultado(parbr5, parbr6);
+                    String cuatro = obtenerResultado3(parbr7, parbr8, parbr9);
+                    String cinco = obtenerResultado(parbr10, parbr11);
+                    String cincocuales = (parbr10.isChecked()==true)? Resultado5() : "" ;
+                    String seis = obtenerResultado3(parbr12, parbr13, parbr14);
+                    String siete = obtenerResultado(parbr15, parbr16);
+                    String sietecuales = (parbr16.isChecked()==true)? Resultado7() : "" ;
+                    String ocho = Resultado8();
+                    String nueve = obtenerResultado(parbr19, parbr20);
+                    String diez = obtenerResultado(parbr21, parbr22);
+                    String once = obtenerResultado(parbr23, parbr24);
+                    String doce = obtenerResultado(parbr25, parbr26);
+                    String trece = obtenerResultado(parbr27, parbr28);
+                    String trececuales = (parbr27.isChecked()==true)? Resultado13() : "" ;
+                    String catorce = Resultado14();
+                    String quince = obtenerResultado6(parbr29, parbr30, parbr31, parbr32, parbr33, parbr34);
+                    String dieciseis = obtenerResultado4(parbr35, parbr36, parbr37, parbr38);
+                    String diecisiete = obtenerResultado(parbr39, parbr40);
+                    String cuales17 = (parbr39.isChecked()==true)? Resultado17() : "" ;
+                    String dieciocho = obtenerResultado(parbr41, parbr42);
+                    String diecinueve = obtenerResultado(parbr43, parbr44);
+                    String cuales19 = Resultado19();
+                    String veinte = obtenerResultado(parbr45, parbr46);
+                    String ventiuno = obtenerResultado3(parbr47, parbr48, parbr49);
+                    String ventidos = obtenerResultado3(parbr50, parbr51, parbr52);
+                    String ventitres = obtenerResultado(parbr53, parbr54);
+                    String explique23 = (parbr54.isChecked()==true)? parbt23.getText().toString() : "" ;
+                    String venticuatro = obtenerResultado(parbr198, parbr199);
+                    String venticinco = Resultado25();
+                    String otro25 = parbt5.getText().toString();
+                    String ventiseis = Resultado26();
+                    String otro26 = parbt6.getText().toString();
+                    String ventisiete = parbt27.getText().toString();
+                    String f1 = General.Foto1;
+                    String f2 = General.Foto2;
 
-                                    model = new PARBeneficiario_Model(fol, General.fechaenc, cveEdo, Edo, cveMun, Mun, cveLoc, Loc, sexo, edad, uno, dos, tres, cuatro, cinco, cincocuales, seis, siete, sietecuales,
-                                            ocho, nueve, diez, once, doce, trece, trececuales, catorce, quince, dieciseis, diecisiete, cuales17, dieciocho, diecinueve, cuales19, veinte, ventiuno, ventidos, ventitres,
-                                            explique23, venticuatro, venticinco, otro25, ventiseis, otro26, ventisiete, f1, f2, "", "");
+                    model = new PARBeneficiario_Model(fol, General.fechaenc, cveEdo, Edo, cveMun, Mun, cveLoc, Loc, sexo, edad, uno, dos, tres, cuatro, cinco, cincocuales, seis, siete, sietecuales,
+                            ocho, nueve, diez, once, doce, trece, trececuales, catorce, quince, dieciseis, diecisiete, cuales17, dieciocho, diecinueve, cuales19, veinte, ventiuno, ventidos, ventitres,
+                            explique23, venticuatro, venticinco, otro25, ventiseis, otro26, ventisiete, f1, f2, "", "");
 
-                                    Intent in = new Intent(PARBeneficiario.this, GeoreferenciaActivity.class);
-                                    in.putExtra("model", model);
-                                    startActivity(in);
+                    Intent in = new Intent(PARBeneficiario.this, GeoreferenciaActivity.class);
+                    in.putExtra("model", model);
+                    startActivity(in);
 
-                                }
-                                else{
-                                    Toast.makeText(getApplicationContext(), "La pregunta 19 solo admite máximo 3 selecciones!",Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                            else{
-                                Toast.makeText(getApplicationContext(), "La pregunta 8 solo admite máximo 3 selecciones!",Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                        else{
-                            Toast.makeText(getApplicationContext(), "La pregunta 7 solo admite máximo 3 selecciones!",Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    else{
-                        Toast.makeText(getApplicationContext(), "La pregunta 2 solo admite máximo 3 selecciones!",Toast.LENGTH_SHORT).show();
-                    }
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "Faltan respuestas",Toast.LENGTH_SHORT).show();
@@ -815,398 +796,757 @@ public class PARBeneficiario extends AppCompatActivity {
                                             }
         );
 
+
+
     }
 
-    public boolean Validarsolo3_2(){
-        boolean retorno=true;
-        int count=0;
-
-        if(parbc1.isChecked()){count = count + 1;}
-        if(parbc2.isChecked()){count = count + 1;}
-        if(parbc3.isChecked()){count = count + 1;}
-        if(parbc4.isChecked()){count = count + 1;}
-        if(parbc5.isChecked()){count = count + 1;}
-        if(parbc6.isChecked()){count = count + 1;}
-        if(parbc7.isChecked()){count = count + 1;}
-        if(parbc8.isChecked()){count = count + 1;}
-        if(parbc9.isChecked()){count = count + 1;}
-        if(parbc10.isChecked()){count = count + 1;}
-        if(parbc11.isChecked()){count = count + 1;}
-        if(parbc12.isChecked()){count = count + 1;}
-        if(parbc13.isChecked()){count = count + 1;}
-        if(parbc14.isChecked()){count = count + 1;}
-        if(parbc15.isChecked()){count = count + 1;}
-        if(parbc16.isChecked()){count = count + 1;}
-        if(parbc17.isChecked()){count = count + 1;}
-        if(parbc18.isChecked()){count = count + 1;}
-        if(parbc19.isChecked()){count = count + 1;}
-        if(parbc20.isChecked()){count = count + 1;}
-        if(parbc21.isChecked()){count = count + 1;}
-        if(parbc22.isChecked()){count = count + 1;}
-        if(parbc23.isChecked()){count = count + 1;}
-        if(parbc24.isChecked()){count = count + 1;}
-        if(parbc25.isChecked()){count = count + 1;}
-        if(parbc26.isChecked()){count = count + 1;}
-        if(parbc27.isChecked()){count = count + 1;}
-        if(parbc28.isChecked()){count = count + 1;}
-        if(parbc29.isChecked()){count = count + 1;}
-        if(parbc30.isChecked()){count = count + 1;}
-        if(parbc31.isChecked()){count = count + 1;}
-        if(parbc32.isChecked()){count = count + 1;}
-        if(parbc33.isChecked()){count = count + 1;}
-        if(parbc34.isChecked()){count = count + 1;}
-        if(parbc35.isChecked()){count = count + 1;}
-        if(parbc36.isChecked()){count = count + 1;}
-        if(parbc37.isChecked()){count = count + 1;}
-        if(parbc38.isChecked()){count = count + 1;}
-        if(parbc39.isChecked()){count = count + 1;}
-        if(parbc40.isChecked()){count = count + 1;}
-        if(parbc41.isChecked()){count = count + 1;}
-        if(parbc42.isChecked()){count = count + 1;}
-        if(parbc43.isChecked()){count = count + 1;}
-        if(parbc44.isChecked()){count = count + 1;}
-        if(parbc45.isChecked()){count = count + 1;}
-        if(parbc46.isChecked()){count = count + 1;}
-        if(parbc47.isChecked()){count = count + 1;}
-        if(parbc47_1.isChecked()){count = count + 1;}
-        if(parbc47_2.isChecked()){count = count + 1;}
-        if(parbc47_3.isChecked()){count = count + 1;}
-        if(parbc47_4.isChecked()){count = count + 1;}
-        if(parbc47_5.isChecked()){count = count + 1;}
-        if(parbc47_6.isChecked()){count = count + 1;}
-        if(parbc47_7.isChecked()){count = count + 1;}
-        if(parbc47_8.isChecked()){count = count + 1;}
-        if(parbc47_9.isChecked()){count = count + 1;}
-        if(parbc47_10.isChecked()){count = count + 1;}
-        if(parbc47_11.isChecked()){count = count + 1;}
-        if(parbc47_12.isChecked()){count = count + 1;}
-        if(parbc47_13.isChecked()){count = count + 1;}
-        if(parbc47_14.isChecked()){count = count + 1;}
-        if(parbc47_15.isChecked()){count = count + 1;}
-        if(parbc47_16.isChecked()){count = count + 1;}
-        if(parbc47_17.isChecked()){count = count + 1;}
-        if(parbc47_18.isChecked()){count = count + 1;}
-        if(parbc47_19.isChecked()){count = count + 1;}
-        if(parbc47_20.isChecked()){count = count + 1;}
-        if(parbc47_21.isChecked()){count = count + 1;}
-        if(parbc47_22.isChecked()){count = count + 1;}
-        if(parbc47_23.isChecked()){count = count + 1;}
-        if(parbc47_24.isChecked()){count = count + 1;}
-        if(parbc47_25.isChecked()){count = count + 1;}
-        if(parbc47_26.isChecked()){count = count + 1;}
-        if(parbc47_27.isChecked()){count = count + 1;}
-        if(parbc47_28.isChecked()){count = count + 1;}
-        if(parbc47_29.isChecked()){count = count + 1;}
-        if(parbc47_30.isChecked()){count = count + 1;}
-        if(parbc47_31.isChecked()){count = count + 1;}
-        if(parbc47_32.isChecked()){count = count + 1;}
-        if(parbc47_33.isChecked()){count = count + 1;}
-        if(parbc47_34.isChecked()){count = count + 1;}
-        if(parbc47_35.isChecked()){count = count + 1;}
-        if(parbc47_36.isChecked()){count = count + 1;}
-        if(parbc47_37.isChecked()){count = count + 1;}
-        if(parbc47_38.isChecked()){count = count + 1;}
-        if(parbc47_39.isChecked()){count = count + 1;}
-        if(parbc47_40.isChecked()){count = count + 1;}
-        if(parbc47_41.isChecked()){count = count + 1;}
-        if(parbc47_42.isChecked()){count = count + 1;}
-        if(parbc47_43.isChecked()){count = count + 1;}
-        if(parbc47_44.isChecked()){count = count + 1;}
-        if(parbc47_45.isChecked()){count = count + 1;}
-        if(parbc47_46.isChecked()){count = count + 1;}
-        if(parbc47_47.isChecked()){count = count + 1;}
-        if(parbc47_48.isChecked()){count = count + 1;}
-        if(parbc47_49.isChecked()){count = count + 1;}
-        if(parbc47_50.isChecked()){count = count + 1;}
-        if(parbc47_51.isChecked()){count = count + 1;}
-        if(parbc47_52.isChecked()){count = count + 1;}
-        if(parbc47_53.isChecked()){count = count + 1;}
-        if(parbc47_54.isChecked()){count = count + 1;}
-        if(parbc47_55.isChecked()){count = count + 1;}
-        if(parbc47_56.isChecked()){count = count + 1;}
-        if(parbc47_57.isChecked()){count = count + 1;}
-
-        if(count<=3){
-            retorno=true;
+    public void itemClicked(View v) {
+        //code to check if this checkbox is checked!
+        CheckBox checkBox = (CheckBox)v;
+        if(checkBox.isChecked()){
+            bandera = bandera + 1;
         }
         else{
-            retorno=false;
+            bandera = bandera - 1;
         }
-        return retorno;
+
+        if(bandera >= 3){
+            if(parbc1.isChecked()){parbc1.setEnabled(true);}else{parbc1.setEnabled(false);}
+            if(parbc2.isChecked()){parbc2.setEnabled(true);}else{parbc2.setEnabled(false);}
+            if(parbc3.isChecked()){parbc3.setEnabled(true);}else{parbc3.setEnabled(false);}
+            if(parbc4.isChecked()){parbc4.setEnabled(true);}else{parbc4.setEnabled(false);}
+            if(parbc5.isChecked()){parbc5.setEnabled(true);}else{parbc5.setEnabled(false);}
+            if(parbc6.isChecked()){parbc6.setEnabled(true);}else{parbc6.setEnabled(false);}
+            if(parbc7.isChecked()){parbc7.setEnabled(true);}else{parbc7.setEnabled(false);}
+            if(parbc8.isChecked()){parbc8.setEnabled(true);}else{parbc8.setEnabled(false);}
+            if(parbc9.isChecked()){parbc9.setEnabled(true);}else{parbc9.setEnabled(false);}
+            if(parbc10.isChecked()){parbc10.setEnabled(true);}else{parbc10.setEnabled(false);}
+            if(parbc11.isChecked()){parbc11.setEnabled(true);}else{parbc11.setEnabled(false);}
+            if(parbc12.isChecked()){parbc12.setEnabled(true);}else{parbc12.setEnabled(false);}
+            if(parbc13.isChecked()){parbc13.setEnabled(true);}else{parbc13.setEnabled(false);}
+            if(parbc14.isChecked()){parbc14.setEnabled(true);}else{parbc14.setEnabled(false);}
+            if(parbc15.isChecked()){parbc15.setEnabled(true);}else{parbc15.setEnabled(false);}
+            if(parbc16.isChecked()){parbc16.setEnabled(true);}else{parbc16.setEnabled(false);}
+            if(parbc17.isChecked()){parbc17.setEnabled(true);}else{parbc17.setEnabled(false);}
+            if(parbc18.isChecked()){parbc18.setEnabled(true);}else{parbc18.setEnabled(false);}
+            if(parbc19.isChecked()){parbc19.setEnabled(true);}else{parbc19.setEnabled(false);}
+            if(parbc20.isChecked()){parbc20.setEnabled(true);}else{parbc20.setEnabled(false);}
+            if(parbc21.isChecked()){parbc21.setEnabled(true);}else{parbc21.setEnabled(false);}
+            if(parbc22.isChecked()){parbc22.setEnabled(true);}else{parbc22.setEnabled(false);}
+            if(parbc23.isChecked()){parbc23.setEnabled(true);}else{parbc23.setEnabled(false);}
+            if(parbc24.isChecked()){parbc24.setEnabled(true);}else{parbc24.setEnabled(false);}
+            if(parbc25.isChecked()){parbc25.setEnabled(true);}else{parbc25.setEnabled(false);}
+            if(parbc26.isChecked()){parbc26.setEnabled(true);}else{parbc26.setEnabled(false);}
+            if(parbc27.isChecked()){parbc27.setEnabled(true);}else{parbc27.setEnabled(false);}
+            if(parbc28.isChecked()){parbc28.setEnabled(true);}else{parbc28.setEnabled(false);}
+            if(parbc29.isChecked()){parbc29.setEnabled(true);}else{parbc29.setEnabled(false);}
+            if(parbc30.isChecked()){parbc30.setEnabled(true);}else{parbc30.setEnabled(false);}
+            if(parbc31.isChecked()){parbc31.setEnabled(true);}else{parbc31.setEnabled(false);}
+            if(parbc32.isChecked()){parbc32.setEnabled(true);}else{parbc32.setEnabled(false);}
+            if(parbc33.isChecked()){parbc33.setEnabled(true);}else{parbc33.setEnabled(false);}
+            if(parbc34.isChecked()){parbc34.setEnabled(true);}else{parbc34.setEnabled(false);}
+            if(parbc35.isChecked()){parbc35.setEnabled(true);}else{parbc35.setEnabled(false);}
+            if(parbc36.isChecked()){parbc36.setEnabled(true);}else{parbc36.setEnabled(false);}
+            if(parbc37.isChecked()){parbc37.setEnabled(true);}else{parbc37.setEnabled(false);}
+            if(parbc38.isChecked()){parbc38.setEnabled(true);}else{parbc38.setEnabled(false);}
+            if(parbc39.isChecked()){parbc39.setEnabled(true);}else{parbc39.setEnabled(false);}
+            if(parbc40.isChecked()){parbc40.setEnabled(true);}else{parbc40.setEnabled(false);}
+            if(parbc41.isChecked()){parbc41.setEnabled(true);}else{parbc41.setEnabled(false);}
+            if(parbc42.isChecked()){parbc42.setEnabled(true);}else{parbc42.setEnabled(false);}
+            if(parbc43.isChecked()){parbc43.setEnabled(true);}else{parbc43.setEnabled(false);}
+            if(parbc44.isChecked()){parbc44.setEnabled(true);}else{parbc44.setEnabled(false);}
+            if(parbc45.isChecked()){parbc45.setEnabled(true);}else{parbc45.setEnabled(false);}
+            if(parbc46.isChecked()){parbc46.setEnabled(true);}else{parbc46.setEnabled(false);}
+            if(parbc47.isChecked()){parbc47.setEnabled(true);}else{parbc47.setEnabled(false);}
+            if(parbc47_1.isChecked()){parbc47_1.setEnabled(true);}else{parbc47_1.setEnabled(false);}
+            if(parbc47_2.isChecked()){parbc47_2.setEnabled(true);}else{parbc47_2.setEnabled(false);}
+            if(parbc47_3.isChecked()){parbc47_3.setEnabled(true);}else{parbc47_3.setEnabled(false);}
+            if(parbc47_4.isChecked()){parbc47_4.setEnabled(true);}else{parbc47_4.setEnabled(false);}
+            if(parbc47_5.isChecked()){parbc47_5.setEnabled(true);}else{parbc47_5.setEnabled(false);}
+            if(parbc47_6.isChecked()){parbc47_6.setEnabled(true);}else{parbc47_6.setEnabled(false);}
+            if(parbc47_7.isChecked()){parbc47_7.setEnabled(true);}else{parbc47_7.setEnabled(false);}
+            if(parbc47_8.isChecked()){parbc47_8.setEnabled(true);}else{parbc47_8.setEnabled(false);}
+            if(parbc47_9.isChecked()){parbc47_9.setEnabled(true);}else{parbc47_9.setEnabled(false);}
+            if(parbc47_10.isChecked()){parbc47_10.setEnabled(true);}else{parbc47_10.setEnabled(false);}
+            if(parbc47_11.isChecked()){parbc47_11.setEnabled(true);}else{parbc47_11.setEnabled(false);}
+            if(parbc47_12.isChecked()){parbc47_12.setEnabled(true);}else{parbc47_12.setEnabled(false);}
+            if(parbc47_13.isChecked()){parbc47_13.setEnabled(true);}else{parbc47_13.setEnabled(false);}
+            if(parbc47_14.isChecked()){parbc47_14.setEnabled(true);}else{parbc47_14.setEnabled(false);}
+            if(parbc47_15.isChecked()){parbc47_15.setEnabled(true);}else{parbc47_15.setEnabled(false);}
+            if(parbc47_16.isChecked()){parbc47_16.setEnabled(true);}else{parbc47_16.setEnabled(false);}
+            if(parbc47_17.isChecked()){parbc47_17.setEnabled(true);}else{parbc47_17.setEnabled(false);}
+            if(parbc47_18.isChecked()){parbc47_18.setEnabled(true);}else{parbc47_18.setEnabled(false);}
+            if(parbc47_19.isChecked()){parbc47_19.setEnabled(true);}else{parbc47_19.setEnabled(false);}
+            if(parbc47_20.isChecked()){parbc47_20.setEnabled(true);}else{parbc47_20.setEnabled(false);}
+            if(parbc47_21.isChecked()){parbc47_21.setEnabled(true);}else{parbc47_21.setEnabled(false);}
+            if(parbc47_22.isChecked()){parbc47_22.setEnabled(true);}else{parbc47_22.setEnabled(false);}
+            if(parbc47_23.isChecked()){parbc47_23.setEnabled(true);}else{parbc47_23.setEnabled(false);}
+            if(parbc47_24.isChecked()){parbc47_24.setEnabled(true);}else{parbc47_24.setEnabled(false);}
+            if(parbc47_25.isChecked()){parbc47_25.setEnabled(true);}else{parbc47_25.setEnabled(false);}
+            if(parbc47_26.isChecked()){parbc47_26.setEnabled(true);}else{parbc47_26.setEnabled(false);}
+            if(parbc47_27.isChecked()){parbc47_27.setEnabled(true);}else{parbc47_27.setEnabled(false);}
+            if(parbc47_28.isChecked()){parbc47_28.setEnabled(true);}else{parbc47_28.setEnabled(false);}
+            if(parbc47_29.isChecked()){parbc47_29.setEnabled(true);}else{parbc47_29.setEnabled(false);}
+            if(parbc47_30.isChecked()){parbc47_30.setEnabled(true);}else{parbc47_30.setEnabled(false);}
+            if(parbc47_31.isChecked()){parbc47_31.setEnabled(true);}else{parbc47_31.setEnabled(false);}
+            if(parbc47_32.isChecked()){parbc47_32.setEnabled(true);}else{parbc47_32.setEnabled(false);}
+            if(parbc47_33.isChecked()){parbc47_33.setEnabled(true);}else{parbc47_33.setEnabled(false);}
+            if(parbc47_34.isChecked()){parbc47_34.setEnabled(true);}else{parbc47_34.setEnabled(false);}
+            if(parbc47_35.isChecked()){parbc47_35.setEnabled(true);}else{parbc47_35.setEnabled(false);}
+            if(parbc47_36.isChecked()){parbc47_36.setEnabled(true);}else{parbc47_36.setEnabled(false);}
+            if(parbc47_37.isChecked()){parbc47_37.setEnabled(true);}else{parbc47_37.setEnabled(false);}
+            if(parbc47_38.isChecked()){parbc47_38.setEnabled(true);}else{parbc47_38.setEnabled(false);}
+            if(parbc47_39.isChecked()){parbc47_39.setEnabled(true);}else{parbc47_39.setEnabled(false);}
+            if(parbc47_40.isChecked()){parbc47_40.setEnabled(true);}else{parbc47_40.setEnabled(false);}
+            if(parbc47_41.isChecked()){parbc47_41.setEnabled(true);}else{parbc47_41.setEnabled(false);}
+            if(parbc47_42.isChecked()){parbc47_42.setEnabled(true);}else{parbc47_42.setEnabled(false);}
+            if(parbc47_43.isChecked()){parbc47_43.setEnabled(true);}else{parbc47_43.setEnabled(false);}
+            if(parbc47_44.isChecked()){parbc47_44.setEnabled(true);}else{parbc47_44.setEnabled(false);}
+            if(parbc47_45.isChecked()){parbc47_45.setEnabled(true);}else{parbc47_45.setEnabled(false);}
+            if(parbc47_46.isChecked()){parbc47_46.setEnabled(true);}else{parbc47_46.setEnabled(false);}
+            if(parbc47_47.isChecked()){parbc47_47.setEnabled(true);}else{parbc47_47.setEnabled(false);}
+            if(parbc47_48.isChecked()){parbc47_48.setEnabled(true);}else{parbc47_48.setEnabled(false);}
+            if(parbc47_49.isChecked()){parbc47_49.setEnabled(true);}else{parbc47_49.setEnabled(false);}
+            if(parbc47_50.isChecked()){parbc47_50.setEnabled(true);}else{parbc47_50.setEnabled(false);}
+            if(parbc47_51.isChecked()){parbc47_51.setEnabled(true);}else{parbc47_51.setEnabled(false);}
+            if(parbc47_52.isChecked()){parbc47_52.setEnabled(true);}else{parbc47_52.setEnabled(false);}
+            if(parbc47_53.isChecked()){parbc47_53.setEnabled(true);}else{parbc47_53.setEnabled(false);}
+            if(parbc47_54.isChecked()){parbc47_54.setEnabled(true);}else{parbc47_54.setEnabled(false);}
+            if(parbc47_55.isChecked()){parbc47_55.setEnabled(true);}else{parbc47_55.setEnabled(false);}
+            if(parbc47_56.isChecked()){parbc47_56.setEnabled(true);}else{parbc47_56.setEnabled(false);}
+            if(parbc47_57.isChecked()){parbc47_57.setEnabled(true);}else{parbc47_57.setEnabled(false);}
+        }
+        else{
+            parbc1.setEnabled(true);
+            parbc2.setEnabled(true);
+            parbc3.setEnabled(true);
+            parbc4.setEnabled(true);
+            parbc5.setEnabled(true);
+            parbc6.setEnabled(true);
+            parbc7.setEnabled(true);
+            parbc8.setEnabled(true);
+            parbc9.setEnabled(true);
+            parbc10.setEnabled(true);
+            parbc11.setEnabled(true);
+            parbc12.setEnabled(true);
+            parbc13.setEnabled(true);
+            parbc14.setEnabled(true);
+            parbc15.setEnabled(true);
+            parbc16.setEnabled(true);
+            parbc17.setEnabled(true);
+            parbc18.setEnabled(true);
+            parbc19.setEnabled(true);
+            parbc20.setEnabled(true);
+            parbc21.setEnabled(true);
+            parbc22.setEnabled(true);
+            parbc23.setEnabled(true);
+            parbc24.setEnabled(true);
+            parbc25.setEnabled(true);
+            parbc26.setEnabled(true);
+            parbc27.setEnabled(true);
+            parbc28.setEnabled(true);
+            parbc29.setEnabled(true);
+            parbc30.setEnabled(true);
+            parbc31.setEnabled(true);
+            parbc32.setEnabled(true);
+            parbc33.setEnabled(true);
+            parbc34.setEnabled(true);
+            parbc35.setEnabled(true);
+            parbc36.setEnabled(true);
+            parbc37.setEnabled(true);
+            parbc38.setEnabled(true);
+            parbc39.setEnabled(true);
+            parbc40.setEnabled(true);
+            parbc41.setEnabled(true);
+            parbc42.setEnabled(true);
+            parbc43.setEnabled(true);
+            parbc44.setEnabled(true);
+            parbc45.setEnabled(true);
+            parbc46.setEnabled(true);
+            parbc47.setEnabled(true);
+            parbc47_1.setEnabled(true);
+            parbc47_2.setEnabled(true);
+            parbc47_3.setEnabled(true);
+            parbc47_4.setEnabled(true);
+            parbc47_5.setEnabled(true);
+            parbc47_6.setEnabled(true);
+            parbc47_7.setEnabled(true);
+            parbc47_8.setEnabled(true);
+            parbc47_9.setEnabled(true);
+            parbc47_10.setEnabled(true);
+            parbc47_11.setEnabled(true);
+            parbc47_12.setEnabled(true);
+            parbc47_13.setEnabled(true);
+            parbc47_14.setEnabled(true);
+            parbc47_15.setEnabled(true);
+            parbc47_16.setEnabled(true);
+            parbc47_17.setEnabled(true);
+            parbc47_18.setEnabled(true);
+            parbc47_19.setEnabled(true);
+            parbc47_20.setEnabled(true);
+            parbc47_21.setEnabled(true);
+            parbc47_22.setEnabled(true);
+            parbc47_23.setEnabled(true);
+            parbc47_24.setEnabled(true);
+            parbc47_25.setEnabled(true);
+            parbc47_26.setEnabled(true);
+            parbc47_27.setEnabled(true);
+            parbc47_28.setEnabled(true);
+            parbc47_29.setEnabled(true);
+            parbc47_30.setEnabled(true);
+            parbc47_31.setEnabled(true);
+            parbc47_32.setEnabled(true);
+            parbc47_33.setEnabled(true);
+            parbc47_34.setEnabled(true);
+            parbc47_35.setEnabled(true);
+            parbc47_36.setEnabled(true);
+            parbc47_37.setEnabled(true);
+            parbc47_38.setEnabled(true);
+            parbc47_39.setEnabled(true);
+            parbc47_40.setEnabled(true);
+            parbc47_41.setEnabled(true);
+            parbc47_42.setEnabled(true);
+            parbc47_43.setEnabled(true);
+            parbc47_44.setEnabled(true);
+            parbc47_45.setEnabled(true);
+            parbc47_46.setEnabled(true);
+            parbc47_47.setEnabled(true);
+            parbc47_48.setEnabled(true);
+            parbc47_49.setEnabled(true);
+            parbc47_50.setEnabled(true);
+            parbc47_51.setEnabled(true);
+            parbc47_52.setEnabled(true);
+            parbc47_53.setEnabled(true);
+            parbc47_54.setEnabled(true);
+            parbc47_55.setEnabled(true);
+            parbc47_56.setEnabled(true);
+            parbc47_57.setEnabled(true);
+        }
+
+
     }
 
-    public boolean Validarsolo3_7(){
-        boolean retorno=true;
-        int count=0;
-        if(parbc53.isChecked()){count = count + 1;}
-        if(parbc54.isChecked()){count = count + 1;}
-        if(parbc55.isChecked()){count = count + 1;}
-        if(parbc56.isChecked()){count = count + 1;}
-        if(parbc57.isChecked()){count = count + 1;}
-        if(parbc58.isChecked()){count = count + 1;}
-        if(parbc59.isChecked()){count = count + 1;}
-        if(parbc60.isChecked()){count = count + 1;}
-        if(parbc61.isChecked()){count = count + 1;}
-        if(parbc62.isChecked()){count = count + 1;}
-        if(parbc63.isChecked()){count = count + 1;}
-        if(parbc64.isChecked()){count = count + 1;}
-        if(parbc65.isChecked()){count = count + 1;}
-        if(parbc66.isChecked()){count = count + 1;}
-        if(parbc67.isChecked()){count = count + 1;}
-        if(parbc68.isChecked()){count = count + 1;}
-        if(parbc69.isChecked()){count = count + 1;}
-        if(parbc70.isChecked()){count = count + 1;}
-        if(parbc71.isChecked()){count = count + 1;}
-        if(parbc72.isChecked()){count = count + 1;}
-        if(parbc73.isChecked()){count = count + 1;}
-        if(parbc74.isChecked()){count = count + 1;}
-        if(parbc75.isChecked()){count = count + 1;}
-        if(parbc76.isChecked()){count = count + 1;}
-        if(parbc77.isChecked()){count = count + 1;}
-        if(parbc78.isChecked()){count = count + 1;}
-        if(parbc79.isChecked()){count = count + 1;}
-        if(parbc80.isChecked()){count = count + 1;}
-        if(parbc81.isChecked()){count = count + 1;}
-        if(parbc82.isChecked()){count = count + 1;}
-        if(parbc83.isChecked()){count = count + 1;}
-        if(parbc84.isChecked()){count = count + 1;}
-        if(parbc85.isChecked()){count = count + 1;}
-        if(parbc86.isChecked()){count = count + 1;}
-        if(parbc87.isChecked()){count = count + 1;}
-        if(parbc88.isChecked()){count = count + 1;}
-        if(parbc89.isChecked()){count = count + 1;}
-        if(parbc90.isChecked()){count = count + 1;}
-        if(parbc91.isChecked()){count = count + 1;}
-        if(parbc92.isChecked()){count = count + 1;}
-        if(parbc93.isChecked()){count = count + 1;}
-        if(parbc94.isChecked()){count = count + 1;}
-        if(parbc95.isChecked()){count = count + 1;}
-        if(parbc96.isChecked()){count = count + 1;}
-        if(parbc97.isChecked()){count = count + 1;}
-        if(parbc98.isChecked()){count = count + 1;}
-        if(parbc99.isChecked()){count = count + 1;}
-        if(parbc9_1.isChecked()){count = count + 1;}
-        if(parbc9_2.isChecked()){count = count + 1;}
-        if(parbc9_3.isChecked()){count = count + 1;}
-        if(parbc9_4.isChecked()){count = count + 1;}
-        if(parbc9_5.isChecked()){count = count + 1;}
-        if(parbc9_6.isChecked()){count = count + 1;}
-        if(parbc9_7.isChecked()){count = count + 1;}
-        if(parbc9_8.isChecked()){count = count + 1;}
-        if(parbc9_9.isChecked()){count = count + 1;}
-        if(parbc9_10.isChecked()){count = count + 1;}
-        if(parbc9_11.isChecked()){count = count + 1;}
-        if(parbc9_12.isChecked()){count = count + 1;}
-        if(parbc9_13.isChecked()){count = count + 1;}
-        if(parbc9_14.isChecked()){count = count + 1;}
-        if(parbc9_15.isChecked()){count = count + 1;}
-        if(parbc9_16.isChecked()){count = count + 1;}
-        if(parbc9_17.isChecked()){count = count + 1;}
-        if(parbc9_18.isChecked()){count = count + 1;}
-        if(parbc9_19.isChecked()){count = count + 1;}
-        if(parbc9_20.isChecked()){count = count + 1;}
-        if(parbc9_21.isChecked()){count = count + 1;}
-        if(parbc9_22.isChecked()){count = count + 1;}
-        if(parbc9_23.isChecked()){count = count + 1;}
-        if(parbc9_24.isChecked()){count = count + 1;}
-        if(parbc9_25.isChecked()){count = count + 1;}
-        if(parbc9_26.isChecked()){count = count + 1;}
-        if(parbc9_27.isChecked()){count = count + 1;}
-        if(parbc9_28.isChecked()){count = count + 1;}
-        if(parbc9_29.isChecked()){count = count + 1;}
-        if(parbc9_30.isChecked()){count = count + 1;}
-        if(parbc9_31.isChecked()){count = count + 1;}
-        if(parbc9_32.isChecked()){count = count + 1;}
-        if(parbc9_33.isChecked()){count = count + 1;}
-        if(parbc9_34.isChecked()){count = count + 1;}
-        if(parbc9_35.isChecked()){count = count + 1;}
-        if(parbc9_36.isChecked()){count = count + 1;}
-        if(parbc9_37.isChecked()){count = count + 1;}
-        if(parbc9_38.isChecked()){count = count + 1;}
-        if(parbc9_39.isChecked()){count = count + 1;}
-        if(parbc9_40.isChecked()){count = count + 1;}
-        if(parbc9_41.isChecked()){count = count + 1;}
-        if(parbc9_42.isChecked()){count = count + 1;}
-        if(parbc9_43.isChecked()){count = count + 1;}
-        if(parbc9_44.isChecked()){count = count + 1;}
-        if(parbc9_45.isChecked()){count = count + 1;}
-        if(parbc9_46.isChecked()){count = count + 1;}
-        if(parbc9_47.isChecked()){count = count + 1;}
-        if(parbc9_48.isChecked()){count = count + 1;}
-        if(parbc9_49.isChecked()){count = count + 1;}
-        if(parbc9_50.isChecked()){count = count + 1;}
-        if(parbc9_51.isChecked()){count = count + 1;}
-        if(parbc9_52.isChecked()){count = count + 1;}
-        if(parbc9_53.isChecked()){count = count + 1;}
-        if(parbc9_54.isChecked()){count = count + 1;}
-        if(parbc9_55.isChecked()){count = count + 1;}
-        if(parbc9_56.isChecked()){count = count + 1;}
-        if(parbc9_57.isChecked()){count = count + 1;}
-
-        if(count<=3){
-            retorno=true;
+    public void itemClicked2(View v) {
+        //code to check if this checkbox is checked!
+        CheckBox checkBox = (CheckBox)v;
+        if(checkBox.isChecked()){
+            bandera2 = bandera2 + 1;
         }
         else{
-            retorno=false;
+            bandera2 = bandera2 - 1;
         }
-        return retorno;
+
+        if(bandera2 >= 3){
+            if(parbc53.isChecked()){parbc53.setEnabled(true);}else{parbc53.setEnabled(false);}
+            if(parbc54.isChecked()){parbc54.setEnabled(true);}else{parbc54.setEnabled(false);}
+            if(parbc55.isChecked()){parbc55.setEnabled(true);}else{parbc55.setEnabled(false);}
+            if(parbc56.isChecked()){parbc56.setEnabled(true);}else{parbc56.setEnabled(false);}
+            if(parbc57.isChecked()){parbc57.setEnabled(true);}else{parbc57.setEnabled(false);}
+            if(parbc58.isChecked()){parbc58.setEnabled(true);}else{parbc58.setEnabled(false);}
+            if(parbc59.isChecked()){parbc59.setEnabled(true);}else{parbc59.setEnabled(false);}
+            if(parbc60.isChecked()){parbc60.setEnabled(true);}else{parbc60.setEnabled(false);}
+            if(parbc61.isChecked()){parbc61.setEnabled(true);}else{parbc61.setEnabled(false);}
+            if(parbc62.isChecked()){parbc62.setEnabled(true);}else{parbc62.setEnabled(false);}
+            if(parbc63.isChecked()){parbc63.setEnabled(true);}else{parbc63.setEnabled(false);}
+            if(parbc64.isChecked()){parbc64.setEnabled(true);}else{parbc64.setEnabled(false);}
+            if(parbc65.isChecked()){parbc65.setEnabled(true);}else{parbc65.setEnabled(false);}
+            if(parbc66.isChecked()){parbc66.setEnabled(true);}else{parbc66.setEnabled(false);}
+            if(parbc67.isChecked()){parbc67.setEnabled(true);}else{parbc67.setEnabled(false);}
+            if(parbc68.isChecked()){parbc68.setEnabled(true);}else{parbc68.setEnabled(false);}
+            if(parbc69.isChecked()){parbc69.setEnabled(true);}else{parbc69.setEnabled(false);}
+            if(parbc70.isChecked()){parbc70.setEnabled(true);}else{parbc70.setEnabled(false);}
+            if(parbc71.isChecked()){parbc71.setEnabled(true);}else{parbc71.setEnabled(false);}
+            if(parbc72.isChecked()){parbc72.setEnabled(true);}else{parbc72.setEnabled(false);}
+            if(parbc73.isChecked()){parbc73.setEnabled(true);}else{parbc73.setEnabled(false);}
+            if(parbc74.isChecked()){parbc74.setEnabled(true);}else{parbc74.setEnabled(false);}
+            if(parbc75.isChecked()){parbc75.setEnabled(true);}else{parbc75.setEnabled(false);}
+            if(parbc76.isChecked()){parbc76.setEnabled(true);}else{parbc76.setEnabled(false);}
+            if(parbc77.isChecked()){parbc77.setEnabled(true);}else{parbc77.setEnabled(false);}
+            if(parbc78.isChecked()){parbc78.setEnabled(true);}else{parbc78.setEnabled(false);}
+            if(parbc79.isChecked()){parbc79.setEnabled(true);}else{parbc79.setEnabled(false);}
+            if(parbc80.isChecked()){parbc80.setEnabled(true);}else{parbc80.setEnabled(false);}
+            if(parbc81.isChecked()){parbc81.setEnabled(true);}else{parbc81.setEnabled(false);}
+            if(parbc82.isChecked()){parbc82.setEnabled(true);}else{parbc82.setEnabled(false);}
+            if(parbc83.isChecked()){parbc83.setEnabled(true);}else{parbc83.setEnabled(false);}
+            if(parbc84.isChecked()){parbc84.setEnabled(true);}else{parbc84.setEnabled(false);}
+            if(parbc85.isChecked()){parbc85.setEnabled(true);}else{parbc85.setEnabled(false);}
+            if(parbc86.isChecked()){parbc86.setEnabled(true);}else{parbc86.setEnabled(false);}
+            if(parbc87.isChecked()){parbc87.setEnabled(true);}else{parbc87.setEnabled(false);}
+            if(parbc88.isChecked()){parbc88.setEnabled(true);}else{parbc88.setEnabled(false);}
+            if(parbc89.isChecked()){parbc89.setEnabled(true);}else{parbc89.setEnabled(false);}
+            if(parbc90.isChecked()){parbc90.setEnabled(true);}else{parbc90.setEnabled(false);}
+            if(parbc91.isChecked()){parbc91.setEnabled(true);}else{parbc91.setEnabled(false);}
+            if(parbc92.isChecked()){parbc92.setEnabled(true);}else{parbc92.setEnabled(false);}
+            if(parbc93.isChecked()){parbc93.setEnabled(true);}else{parbc93.setEnabled(false);}
+            if(parbc94.isChecked()){parbc94.setEnabled(true);}else{parbc94.setEnabled(false);}
+            if(parbc95.isChecked()){parbc95.setEnabled(true);}else{parbc95.setEnabled(false);}
+            if(parbc96.isChecked()){parbc96.setEnabled(true);}else{parbc96.setEnabled(false);}
+            if(parbc97.isChecked()){parbc97.setEnabled(true);}else{parbc97.setEnabled(false);}
+            if(parbc98.isChecked()){parbc98.setEnabled(true);}else{parbc98.setEnabled(false);}
+            if(parbc99.isChecked()){parbc99.setEnabled(true);}else{parbc99.setEnabled(false);}
+            if(parbc9_1.isChecked()){parbc9_1.setEnabled(true);}else{parbc9_1.setEnabled(false);}
+            if(parbc9_2.isChecked()){parbc9_2.setEnabled(true);}else{parbc9_2.setEnabled(false);}
+            if(parbc9_3.isChecked()){parbc9_3.setEnabled(true);}else{parbc9_3.setEnabled(false);}
+            if(parbc9_4.isChecked()){parbc9_4.setEnabled(true);}else{parbc9_4.setEnabled(false);}
+            if(parbc9_5.isChecked()){parbc9_5.setEnabled(true);}else{parbc9_5.setEnabled(false);}
+            if(parbc9_6.isChecked()){parbc9_6.setEnabled(true);}else{parbc9_6.setEnabled(false);}
+            if(parbc9_7.isChecked()){parbc9_7.setEnabled(true);}else{parbc9_7.setEnabled(false);}
+            if(parbc9_8.isChecked()){parbc9_8.setEnabled(true);}else{parbc9_8.setEnabled(false);}
+            if(parbc9_9.isChecked()){parbc9_9.setEnabled(true);}else{parbc9_9.setEnabled(false);}
+            if(parbc9_10.isChecked()){parbc9_10.setEnabled(true);}else{parbc9_10.setEnabled(false);}
+            if(parbc9_11.isChecked()){parbc9_11.setEnabled(true);}else{parbc9_11.setEnabled(false);}
+            if(parbc9_12.isChecked()){parbc9_12.setEnabled(true);}else{parbc9_12.setEnabled(false);}
+            if(parbc9_13.isChecked()){parbc9_13.setEnabled(true);}else{parbc9_13.setEnabled(false);}
+            if(parbc9_14.isChecked()){parbc9_14.setEnabled(true);}else{parbc9_14.setEnabled(false);}
+            if(parbc9_15.isChecked()){parbc9_15.setEnabled(true);}else{parbc9_15.setEnabled(false);}
+            if(parbc9_16.isChecked()){parbc9_16.setEnabled(true);}else{parbc9_16.setEnabled(false);}
+            if(parbc9_17.isChecked()){parbc9_17.setEnabled(true);}else{parbc9_17.setEnabled(false);}
+            if(parbc9_18.isChecked()){parbc9_18.setEnabled(true);}else{parbc9_18.setEnabled(false);}
+            if(parbc9_19.isChecked()){parbc9_19.setEnabled(true);}else{parbc9_19.setEnabled(false);}
+            if(parbc9_20.isChecked()){parbc9_20.setEnabled(true);}else{parbc9_20.setEnabled(false);}
+            if(parbc9_21.isChecked()){parbc9_21.setEnabled(true);}else{parbc9_21.setEnabled(false);}
+            if(parbc9_22.isChecked()){parbc9_22.setEnabled(true);}else{parbc9_22.setEnabled(false);}
+            if(parbc9_23.isChecked()){parbc9_23.setEnabled(true);}else{parbc9_23.setEnabled(false);}
+            if(parbc9_24.isChecked()){parbc9_24.setEnabled(true);}else{parbc9_24.setEnabled(false);}
+            if(parbc9_25.isChecked()){parbc9_25.setEnabled(true);}else{parbc9_25.setEnabled(false);}
+            if(parbc9_26.isChecked()){parbc9_26.setEnabled(true);}else{parbc9_26.setEnabled(false);}
+            if(parbc9_27.isChecked()){parbc9_27.setEnabled(true);}else{parbc9_27.setEnabled(false);}
+            if(parbc9_28.isChecked()){parbc9_28.setEnabled(true);}else{parbc9_28.setEnabled(false);}
+            if(parbc9_29.isChecked()){parbc9_29.setEnabled(true);}else{parbc9_29.setEnabled(false);}
+            if(parbc9_30.isChecked()){parbc9_30.setEnabled(true);}else{parbc9_30.setEnabled(false);}
+            if(parbc9_31.isChecked()){parbc9_31.setEnabled(true);}else{parbc9_31.setEnabled(false);}
+            if(parbc9_32.isChecked()){parbc9_32.setEnabled(true);}else{parbc9_32.setEnabled(false);}
+            if(parbc9_33.isChecked()){parbc9_33.setEnabled(true);}else{parbc9_33.setEnabled(false);}
+            if(parbc9_34.isChecked()){parbc9_34.setEnabled(true);}else{parbc9_34.setEnabled(false);}
+            if(parbc9_35.isChecked()){parbc9_35.setEnabled(true);}else{parbc9_35.setEnabled(false);}
+            if(parbc9_36.isChecked()){parbc9_36.setEnabled(true);}else{parbc9_36.setEnabled(false);}
+            if(parbc9_37.isChecked()){parbc9_37.setEnabled(true);}else{parbc9_37.setEnabled(false);}
+            if(parbc9_38.isChecked()){parbc9_38.setEnabled(true);}else{parbc9_38.setEnabled(false);}
+            if(parbc9_39.isChecked()){parbc9_39.setEnabled(true);}else{parbc9_39.setEnabled(false);}
+            if(parbc9_40.isChecked()){parbc9_40.setEnabled(true);}else{parbc9_40.setEnabled(false);}
+            if(parbc9_41.isChecked()){parbc9_41.setEnabled(true);}else{parbc9_41.setEnabled(false);}
+            if(parbc9_42.isChecked()){parbc9_42.setEnabled(true);}else{parbc9_42.setEnabled(false);}
+            if(parbc9_43.isChecked()){parbc9_43.setEnabled(true);}else{parbc9_43.setEnabled(false);}
+            if(parbc9_44.isChecked()){parbc9_44.setEnabled(true);}else{parbc9_44.setEnabled(false);}
+            if(parbc9_45.isChecked()){parbc9_45.setEnabled(true);}else{parbc9_45.setEnabled(false);}
+            if(parbc9_46.isChecked()){parbc9_46.setEnabled(true);}else{parbc9_46.setEnabled(false);}
+            if(parbc9_47.isChecked()){parbc9_47.setEnabled(true);}else{parbc9_47.setEnabled(false);}
+            if(parbc9_48.isChecked()){parbc9_48.setEnabled(true);}else{parbc9_48.setEnabled(false);}
+            if(parbc9_49.isChecked()){parbc9_49.setEnabled(true);}else{parbc9_49.setEnabled(false);}
+            if(parbc9_50.isChecked()){parbc9_50.setEnabled(true);}else{parbc9_50.setEnabled(false);}
+            if(parbc9_51.isChecked()){parbc9_51.setEnabled(true);}else{parbc9_51.setEnabled(false);}
+            if(parbc9_52.isChecked()){parbc9_52.setEnabled(true);}else{parbc9_52.setEnabled(false);}
+            if(parbc9_53.isChecked()){parbc9_53.setEnabled(true);}else{parbc9_53.setEnabled(false);}
+            if(parbc9_54.isChecked()){parbc9_54.setEnabled(true);}else{parbc9_54.setEnabled(false);}
+            if(parbc9_55.isChecked()){parbc9_55.setEnabled(true);}else{parbc9_55.setEnabled(false);}
+            if(parbc9_56.isChecked()){parbc9_56.setEnabled(true);}else{parbc9_56.setEnabled(false);}
+            if(parbc9_57.isChecked()){parbc9_57.setEnabled(true);}else{parbc9_57.setEnabled(false);}
+        }
+        else{
+            parbc53.setEnabled(true);
+            parbc54.setEnabled(true);
+            parbc55.setEnabled(true);
+            parbc56.setEnabled(true);
+            parbc57.setEnabled(true);
+            parbc58.setEnabled(true);
+            parbc59.setEnabled(true);
+            parbc60.setEnabled(true);
+            parbc61.setEnabled(true);
+            parbc62.setEnabled(true);
+            parbc63.setEnabled(true);
+            parbc64.setEnabled(true);
+            parbc65.setEnabled(true);
+            parbc66.setEnabled(true);
+            parbc67.setEnabled(true);
+            parbc68.setEnabled(true);
+            parbc69.setEnabled(true);
+            parbc70.setEnabled(true);
+            parbc71.setEnabled(true);
+            parbc72.setEnabled(true);
+            parbc73.setEnabled(true);
+            parbc74.setEnabled(true);
+            parbc75.setEnabled(true);
+            parbc76.setEnabled(true);
+            parbc77.setEnabled(true);
+            parbc78.setEnabled(true);
+            parbc79.setEnabled(true);
+            parbc80.setEnabled(true);
+            parbc81.setEnabled(true);
+            parbc82.setEnabled(true);
+            parbc83.setEnabled(true);
+            parbc84.setEnabled(true);
+            parbc85.setEnabled(true);
+            parbc86.setEnabled(true);
+            parbc87.setEnabled(true);
+            parbc88.setEnabled(true);
+            parbc89.setEnabled(true);
+            parbc90.setEnabled(true);
+            parbc91.setEnabled(true);
+            parbc92.setEnabled(true);
+            parbc93.setEnabled(true);
+            parbc94.setEnabled(true);
+            parbc95.setEnabled(true);
+            parbc96.setEnabled(true);
+            parbc97.setEnabled(true);
+            parbc98.setEnabled(true);
+            parbc99.setEnabled(true);
+            parbc9_1.setEnabled(true);
+            parbc9_2.setEnabled(true);
+            parbc9_3.setEnabled(true);
+            parbc9_4.setEnabled(true);
+            parbc9_5.setEnabled(true);
+            parbc9_6.setEnabled(true);
+            parbc9_7.setEnabled(true);
+            parbc9_8.setEnabled(true);
+            parbc9_9.setEnabled(true);
+            parbc9_10.setEnabled(true);
+            parbc9_11.setEnabled(true);
+            parbc9_12.setEnabled(true);
+            parbc9_13.setEnabled(true);
+            parbc9_14.setEnabled(true);
+            parbc9_15.setEnabled(true);
+            parbc9_16.setEnabled(true);
+            parbc9_17.setEnabled(true);
+            parbc9_18.setEnabled(true);
+            parbc9_19.setEnabled(true);
+            parbc9_20.setEnabled(true);
+            parbc9_21.setEnabled(true);
+            parbc9_22.setEnabled(true);
+            parbc9_23.setEnabled(true);
+            parbc9_24.setEnabled(true);
+            parbc9_25.setEnabled(true);
+            parbc9_26.setEnabled(true);
+            parbc9_27.setEnabled(true);
+            parbc9_28.setEnabled(true);
+            parbc9_29.setEnabled(true);
+            parbc9_30.setEnabled(true);
+            parbc9_31.setEnabled(true);
+            parbc9_32.setEnabled(true);
+            parbc9_33.setEnabled(true);
+            parbc9_34.setEnabled(true);
+            parbc9_35.setEnabled(true);
+            parbc9_36.setEnabled(true);
+            parbc9_37.setEnabled(true);
+            parbc9_38.setEnabled(true);
+            parbc9_39.setEnabled(true);
+            parbc9_40.setEnabled(true);
+            parbc9_41.setEnabled(true);
+            parbc9_42.setEnabled(true);
+            parbc9_43.setEnabled(true);
+            parbc9_44.setEnabled(true);
+            parbc9_45.setEnabled(true);
+            parbc9_46.setEnabled(true);
+            parbc9_47.setEnabled(true);
+            parbc9_48.setEnabled(true);
+            parbc9_49.setEnabled(true);
+            parbc9_50.setEnabled(true);
+            parbc9_51.setEnabled(true);
+            parbc9_52.setEnabled(true);
+            parbc9_53.setEnabled(true);
+            parbc9_54.setEnabled(true);
+            parbc9_55.setEnabled(true);
+            parbc9_56.setEnabled(true);
+            parbc9_57.setEnabled(true);
+        }
+
     }
 
-    public boolean Validarsolo3_8(){
-        boolean retorno=true;
-        int count=0;
-        if(parbc142.isChecked()){count = count + 1;}
-        if(parbc143.isChecked()){count = count + 1;}
-        if(parbc144.isChecked()){count = count + 1;}
-        if(parbc145.isChecked()){count = count + 1;}
-        if(parbc146.isChecked()){count = count + 1;}
-        if(parbc147.isChecked()){count = count + 1;}
-        if(parbc148.isChecked()){count = count + 1;}
-        if(parbc149.isChecked()){count = count + 1;}
-        if(parbc150.isChecked()){count = count + 1;}
-        if(parbc151.isChecked()){count = count + 1;}
-        if(parbc152.isChecked()){count = count + 1;}
-        if(parbc153.isChecked()){count = count + 1;}
-        if(parbc154.isChecked()){count = count + 1;}
-        if(parbc155.isChecked()){count = count + 1;}
-        if(parbc156.isChecked()){count = count + 1;}
-        if(parbc157.isChecked()){count = count + 1;}
-        if(parbc158.isChecked()){count = count + 1;}
-        if(parbc159.isChecked()){count = count + 1;}
-        if(parbc160.isChecked()){count = count + 1;}
-        if(parbc161.isChecked()){count = count + 1;}
-        if(parbc162.isChecked()){count = count + 1;}
-        if(parbc163.isChecked()){count = count + 1;}
-        if(parbc164.isChecked()){count = count + 1;}
-        if(parbc165.isChecked()){count = count + 1;}
-        if(parbc166.isChecked()){count = count + 1;}
-        if(parbc167.isChecked()){count = count + 1;}
-        if(parbc168.isChecked()){count = count + 1;}
-        if(parbc169.isChecked()){count = count + 1;}
-        if(count<=3){
-            retorno=true;
+    public void itemClicked3(View v) {
+        //code to check if this checkbox is checked!
+        CheckBox checkBox = (CheckBox)v;
+        if(checkBox.isChecked()){
+            bandera3 = bandera3 + 1;
         }
         else{
-            retorno=false;
+            bandera3 = bandera3 - 1;
         }
-        return retorno;
+
+        if(bandera3 >= 3){
+            if(parbc142.isChecked()){parbc142.setEnabled(true);}else{parbc142.setEnabled(false);}
+            if(parbc143.isChecked()){parbc143.setEnabled(true);}else{parbc143.setEnabled(false);}
+            if(parbc144.isChecked()){parbc144.setEnabled(true);}else{parbc144.setEnabled(false);}
+            if(parbc145.isChecked()){parbc145.setEnabled(true);}else{parbc145.setEnabled(false);}
+            if(parbc146.isChecked()){parbc146.setEnabled(true);}else{parbc146.setEnabled(false);}
+            if(parbc147.isChecked()){parbc147.setEnabled(true);}else{parbc147.setEnabled(false);}
+            if(parbc148.isChecked()){parbc148.setEnabled(true);}else{parbc148.setEnabled(false);}
+            if(parbc149.isChecked()){parbc149.setEnabled(true);}else{parbc149.setEnabled(false);}
+            if(parbc150.isChecked()){parbc150.setEnabled(true);}else{parbc150.setEnabled(false);}
+            if(parbc151.isChecked()){parbc151.setEnabled(true);}else{parbc151.setEnabled(false);}
+            if(parbc152.isChecked()){parbc152.setEnabled(true);}else{parbc152.setEnabled(false);}
+            if(parbc153.isChecked()){parbc153.setEnabled(true);}else{parbc153.setEnabled(false);}
+            if(parbc154.isChecked()){parbc154.setEnabled(true);}else{parbc154.setEnabled(false);}
+            if(parbc155.isChecked()){parbc155.setEnabled(true);}else{parbc155.setEnabled(false);}
+            if(parbc156.isChecked()){parbc156.setEnabled(true);}else{parbc156.setEnabled(false);}
+            if(parbc157.isChecked()){parbc157.setEnabled(true);}else{parbc157.setEnabled(false);}
+            if(parbc158.isChecked()){parbc158.setEnabled(true);}else{parbc158.setEnabled(false);}
+            if(parbc159.isChecked()){parbc159.setEnabled(true);}else{parbc159.setEnabled(false);}
+            if(parbc160.isChecked()){parbc160.setEnabled(true);}else{parbc160.setEnabled(false);}
+            if(parbc161.isChecked()){parbc161.setEnabled(true);}else{parbc161.setEnabled(false);}
+            if(parbc162.isChecked()){parbc162.setEnabled(true);}else{parbc162.setEnabled(false);}
+            if(parbc163.isChecked()){parbc163.setEnabled(true);}else{parbc163.setEnabled(false);}
+            if(parbc164.isChecked()){parbc164.setEnabled(true);}else{parbc164.setEnabled(false);}
+            if(parbc165.isChecked()){parbc165.setEnabled(true);}else{parbc165.setEnabled(false);}
+            if(parbc166.isChecked()){parbc166.setEnabled(true);}else{parbc166.setEnabled(false);}
+            if(parbc167.isChecked()){parbc167.setEnabled(true);}else{parbc167.setEnabled(false);}
+            if(parbc168.isChecked()){parbc168.setEnabled(true);}else{parbc168.setEnabled(false);}
+            if(parbc169.isChecked()){parbc169.setEnabled(true);}else{parbc169.setEnabled(false);}
+        }
+        else{
+            parbc142.setEnabled(true);
+            parbc143.setEnabled(true);
+            parbc144.setEnabled(true);
+            parbc145.setEnabled(true);
+            parbc146.setEnabled(true);
+            parbc147.setEnabled(true);
+            parbc148.setEnabled(true);
+            parbc149.setEnabled(true);
+            parbc150.setEnabled(true);
+            parbc151.setEnabled(true);
+            parbc152.setEnabled(true);
+            parbc153.setEnabled(true);
+            parbc154.setEnabled(true);
+            parbc155.setEnabled(true);
+            parbc156.setEnabled(true);
+            parbc157.setEnabled(true);
+            parbc158.setEnabled(true);
+            parbc159.setEnabled(true);
+            parbc160.setEnabled(true);
+            parbc161.setEnabled(true);
+            parbc162.setEnabled(true);
+            parbc163.setEnabled(true);
+            parbc164.setEnabled(true);
+            parbc165.setEnabled(true);
+            parbc166.setEnabled(true);
+            parbc167.setEnabled(true);
+            parbc168.setEnabled(true);
+            parbc169.setEnabled(true);
+
+        }
+
     }
 
-    public boolean Validarsolo3_19(){
-        boolean retorno=true;
-        int count=0;
-        if(parbc190.isChecked()){count = count + 1;}
-        if(parbc191.isChecked()){count = count + 1;}
-        if(parbc192.isChecked()){count = count + 1;}
-        if(parbc193.isChecked()){count = count + 1;}
-        if(parbc194.isChecked()){count = count + 1;}
-        if(parbc195.isChecked()){count = count + 1;}
-        if(parbc196.isChecked()){count = count + 1;}
-        if(parbc197.isChecked()){count = count + 1;}
-        if(parbc198.isChecked()){count = count + 1;}
-        if(parbc199.isChecked()){count = count + 1;}
-        if(parbc200.isChecked()){count = count + 1;}
-        if(parbc201.isChecked()){count = count + 1;}
-        if(parbc202.isChecked()){count = count + 1;}
-        if(parbc203.isChecked()){count = count + 1;}
-        if(parbc204.isChecked()){count = count + 1;}
-        if(parbc205.isChecked()){count = count + 1;}
-        if(parbc206.isChecked()){count = count + 1;}
-        if(parbc207.isChecked()){count = count + 1;}
-        if(parbc208.isChecked()){count = count + 1;}
-        if(parbc209.isChecked()){count = count + 1;}
-        if(parbc210.isChecked()){count = count + 1;}
-        if(parbc211.isChecked()){count = count + 1;}
-        if(parbc212.isChecked()){count = count + 1;}
-        if(parbc213.isChecked()){count = count + 1;}
-        if(parbc214.isChecked()){count = count + 1;}
-        if(parbc215.isChecked()){count = count + 1;}
-        if(parbc216.isChecked()){count = count + 1;}
-        if(parbc217.isChecked()){count = count + 1;}
-        if(parbc218.isChecked()){count = count + 1;}
-        if(parbc219.isChecked()){count = count + 1;}
-        if(parbc220.isChecked()){count = count + 1;}
-        if(parbc221.isChecked()){count = count + 1;}
-        if(parbc222.isChecked()){count = count + 1;}
-        if(parbc223.isChecked()){count = count + 1;}
-        if(parbc224.isChecked()){count = count + 1;}
-        if(parbc225.isChecked()){count = count + 1;}
-        if(parbc226.isChecked()){count = count + 1;}
-        if(parbc227.isChecked()){count = count + 1;}
-        if(parbc228.isChecked()){count = count + 1;}
-        if(parbc229.isChecked()){count = count + 1;}
-        if(parbc230.isChecked()){count = count + 1;}
-        if(parbc231.isChecked()){count = count + 1;}
-        if(parbc232.isChecked()){count = count + 1;}
-        if(parbc233.isChecked()){count = count + 1;}
-        if(parbc234.isChecked()){count = count + 1;}
-        if(parbc235.isChecked()){count = count + 1;}
-        if(parbc236.isChecked()){count = count + 1;}
-        if(parbc236_1.isChecked()){count = count + 1;}
-        if(parbc236_2.isChecked()){count = count + 1;}
-        if(parbc236_3.isChecked()){count = count + 1;}
-        if(parbc236_4.isChecked()){count = count + 1;}
-        if(parbc236_5.isChecked()){count = count + 1;}
-        if(parbc236_6.isChecked()){count = count + 1;}
-        if(parbc236_7.isChecked()){count = count + 1;}
-        if(parbc236_8.isChecked()){count = count + 1;}
-        if(parbc236_9.isChecked()){count = count + 1;}
-        if(parbc236_10.isChecked()){count = count + 1;}
-        if(parbc236_11.isChecked()){count = count + 1;}
-        if(parbc236_12.isChecked()){count = count + 1;}
-        if(parbc236_13.isChecked()){count = count + 1;}
-        if(parbc236_14.isChecked()){count = count + 1;}
-        if(parbc236_15.isChecked()){count = count + 1;}
-        if(parbc236_16.isChecked()){count = count + 1;}
-        if(parbc236_17.isChecked()){count = count + 1;}
-        if(parbc236_18.isChecked()){count = count + 1;}
-        if(parbc236_19.isChecked()){count = count + 1;}
-        if(parbc236_20.isChecked()){count = count + 1;}
-        if(parbc236_21.isChecked()){count = count + 1;}
-        if(parbc236_22.isChecked()){count = count + 1;}
-        if(parbc236_23.isChecked()){count = count + 1;}
-        if(parbc236_24.isChecked()){count = count + 1;}
-        if(parbc236_25.isChecked()){count = count + 1;}
-        if(parbc236_26.isChecked()){count = count + 1;}
-        if(parbc236_27.isChecked()){count = count + 1;}
-        if(parbc236_28.isChecked()){count = count + 1;}
-        if(parbc236_29.isChecked()){count = count + 1;}
-        if(parbc236_30.isChecked()){count = count + 1;}
-        if(parbc236_31.isChecked()){count = count + 1;}
-        if(parbc236_32.isChecked()){count = count + 1;}
-        if(parbc236_33.isChecked()){count = count + 1;}
-        if(parbc236_34.isChecked()){count = count + 1;}
-        if(parbc236_35.isChecked()){count = count + 1;}
-        if(parbc236_36.isChecked()){count = count + 1;}
-        if(parbc236_37.isChecked()){count = count + 1;}
-        if(parbc236_38.isChecked()){count = count + 1;}
-        if(parbc236_39.isChecked()){count = count + 1;}
-        if(parbc236_40.isChecked()){count = count + 1;}
-        if(parbc236_41.isChecked()){count = count + 1;}
-        if(parbc236_42.isChecked()){count = count + 1;}
-        if(parbc236_43.isChecked()){count = count + 1;}
-        if(parbc236_44.isChecked()){count = count + 1;}
-        if(parbc236_45.isChecked()){count = count + 1;}
-        if(parbc236_46.isChecked()){count = count + 1;}
-        if(parbc236_47.isChecked()){count = count + 1;}
-        if(parbc236_48.isChecked()){count = count + 1;}
-        if(parbc236_49.isChecked()){count = count + 1;}
-        if(parbc236_50.isChecked()){count = count + 1;}
-        if(parbc236_51.isChecked()){count = count + 1;}
-        if(parbc236_52.isChecked()){count = count + 1;}
-        if(parbc236_53.isChecked()){count = count + 1;}
-        if(parbc236_54.isChecked()){count = count + 1;}
-        if(parbc236_55.isChecked()){count = count + 1;}
-        if(parbc236_56.isChecked()){count = count + 1;}
-        if(parbc236_57.isChecked()){count = count + 1;}
-
-        if(count<=3){
-            retorno=true;
+    public void itemClicked4(View v) {
+        //code to check if this checkbox is checked!
+        CheckBox checkBox = (CheckBox)v;
+        if(checkBox.isChecked()){
+            bandera4 = bandera4 + 1;
         }
         else{
-            retorno=false;
+            bandera4 = bandera4 - 1;
         }
-        return retorno;
+
+        if(bandera4 >= 3){
+            if(parbc190.isChecked()){parbc190.setEnabled(true);}else{parbc190.setEnabled(false);}
+            if(parbc191.isChecked()){parbc191.setEnabled(true);}else{parbc191.setEnabled(false);}
+            if(parbc192.isChecked()){parbc192.setEnabled(true);}else{parbc192.setEnabled(false);}
+            if(parbc193.isChecked()){parbc193.setEnabled(true);}else{parbc193.setEnabled(false);}
+            if(parbc194.isChecked()){parbc194.setEnabled(true);}else{parbc194.setEnabled(false);}
+            if(parbc195.isChecked()){parbc195.setEnabled(true);}else{parbc195.setEnabled(false);}
+            if(parbc196.isChecked()){parbc196.setEnabled(true);}else{parbc196.setEnabled(false);}
+            if(parbc197.isChecked()){parbc197.setEnabled(true);}else{parbc197.setEnabled(false);}
+            if(parbc198.isChecked()){parbc198.setEnabled(true);}else{parbc198.setEnabled(false);}
+            if(parbc199.isChecked()){parbc199.setEnabled(true);}else{parbc199.setEnabled(false);}
+            if(parbc200.isChecked()){parbc200.setEnabled(true);}else{parbc200.setEnabled(false);}
+            if(parbc201.isChecked()){parbc201.setEnabled(true);}else{parbc201.setEnabled(false);}
+            if(parbc202.isChecked()){parbc202.setEnabled(true);}else{parbc202.setEnabled(false);}
+            if(parbc203.isChecked()){parbc203.setEnabled(true);}else{parbc203.setEnabled(false);}
+            if(parbc204.isChecked()){parbc204.setEnabled(true);}else{parbc204.setEnabled(false);}
+            if(parbc205.isChecked()){parbc205.setEnabled(true);}else{parbc205.setEnabled(false);}
+            if(parbc206.isChecked()){parbc206.setEnabled(true);}else{parbc206.setEnabled(false);}
+            if(parbc207.isChecked()){parbc207.setEnabled(true);}else{parbc207.setEnabled(false);}
+            if(parbc208.isChecked()){parbc208.setEnabled(true);}else{parbc208.setEnabled(false);}
+            if(parbc209.isChecked()){parbc209.setEnabled(true);}else{parbc209.setEnabled(false);}
+            if(parbc210.isChecked()){parbc210.setEnabled(true);}else{parbc210.setEnabled(false);}
+            if(parbc211.isChecked()){parbc211.setEnabled(true);}else{parbc211.setEnabled(false);}
+            if(parbc212.isChecked()){parbc212.setEnabled(true);}else{parbc212.setEnabled(false);}
+            if(parbc213.isChecked()){parbc213.setEnabled(true);}else{parbc213.setEnabled(false);}
+            if(parbc214.isChecked()){parbc214.setEnabled(true);}else{parbc214.setEnabled(false);}
+            if(parbc215.isChecked()){parbc215.setEnabled(true);}else{parbc215.setEnabled(false);}
+            if(parbc216.isChecked()){parbc216.setEnabled(true);}else{parbc216.setEnabled(false);}
+            if(parbc217.isChecked()){parbc217.setEnabled(true);}else{parbc217.setEnabled(false);}
+            if(parbc218.isChecked()){parbc218.setEnabled(true);}else{parbc218.setEnabled(false);}
+            if(parbc219.isChecked()){parbc219.setEnabled(true);}else{parbc219.setEnabled(false);}
+            if(parbc220.isChecked()){parbc220.setEnabled(true);}else{parbc220.setEnabled(false);}
+            if(parbc221.isChecked()){parbc221.setEnabled(true);}else{parbc221.setEnabled(false);}
+            if(parbc222.isChecked()){parbc222.setEnabled(true);}else{parbc222.setEnabled(false);}
+            if(parbc223.isChecked()){parbc223.setEnabled(true);}else{parbc223.setEnabled(false);}
+            if(parbc224.isChecked()){parbc224.setEnabled(true);}else{parbc224.setEnabled(false);}
+            if(parbc225.isChecked()){parbc225.setEnabled(true);}else{parbc225.setEnabled(false);}
+            if(parbc226.isChecked()){parbc226.setEnabled(true);}else{parbc226.setEnabled(false);}
+            if(parbc227.isChecked()){parbc227.setEnabled(true);}else{parbc227.setEnabled(false);}
+            if(parbc228.isChecked()){parbc228.setEnabled(true);}else{parbc228.setEnabled(false);}
+            if(parbc229.isChecked()){parbc229.setEnabled(true);}else{parbc229.setEnabled(false);}
+            if(parbc230.isChecked()){parbc230.setEnabled(true);}else{parbc230.setEnabled(false);}
+            if(parbc231.isChecked()){parbc231.setEnabled(true);}else{parbc231.setEnabled(false);}
+            if(parbc232.isChecked()){parbc232.setEnabled(true);}else{parbc232.setEnabled(false);}
+            if(parbc233.isChecked()){parbc233.setEnabled(true);}else{parbc233.setEnabled(false);}
+            if(parbc234.isChecked()){parbc234.setEnabled(true);}else{parbc234.setEnabled(false);}
+            if(parbc235.isChecked()){parbc235.setEnabled(true);}else{parbc235.setEnabled(false);}
+            if(parbc236.isChecked()){parbc236.setEnabled(true);}else{parbc236.setEnabled(false);}
+            if(parbc236_1.isChecked()){parbc236_1.setEnabled(true);}else{parbc236_1.setEnabled(false);}
+            if(parbc236_2.isChecked()){parbc236_2.setEnabled(true);}else{parbc236_2.setEnabled(false);}
+            if(parbc236_3.isChecked()){parbc236_3.setEnabled(true);}else{parbc236_3.setEnabled(false);}
+            if(parbc236_4.isChecked()){parbc236_4.setEnabled(true);}else{parbc236_4.setEnabled(false);}
+            if(parbc236_5.isChecked()){parbc236_5.setEnabled(true);}else{parbc236_5.setEnabled(false);}
+            if(parbc236_6.isChecked()){parbc236_6.setEnabled(true);}else{parbc236_6.setEnabled(false);}
+            if(parbc236_7.isChecked()){parbc236_7.setEnabled(true);}else{parbc236_7.setEnabled(false);}
+            if(parbc236_8.isChecked()){parbc236_8.setEnabled(true);}else{parbc236_8.setEnabled(false);}
+            if(parbc236_9.isChecked()){parbc236_9.setEnabled(true);}else{parbc236_9.setEnabled(false);}
+            if(parbc236_10.isChecked()){parbc236_10.setEnabled(true);}else{parbc236_10.setEnabled(false);}
+            if(parbc236_11.isChecked()){parbc236_11.setEnabled(true);}else{parbc236_11.setEnabled(false);}
+            if(parbc236_12.isChecked()){parbc236_12.setEnabled(true);}else{parbc236_12.setEnabled(false);}
+            if(parbc236_13.isChecked()){parbc236_13.setEnabled(true);}else{parbc236_13.setEnabled(false);}
+            if(parbc236_14.isChecked()){parbc236_14.setEnabled(true);}else{parbc236_14.setEnabled(false);}
+            if(parbc236_15.isChecked()){parbc236_15.setEnabled(true);}else{parbc236_15.setEnabled(false);}
+            if(parbc236_16.isChecked()){parbc236_16.setEnabled(true);}else{parbc236_16.setEnabled(false);}
+            if(parbc236_17.isChecked()){parbc236_17.setEnabled(true);}else{parbc236_17.setEnabled(false);}
+            if(parbc236_18.isChecked()){parbc236_18.setEnabled(true);}else{parbc236_18.setEnabled(false);}
+            if(parbc236_19.isChecked()){parbc236_19.setEnabled(true);}else{parbc236_19.setEnabled(false);}
+            if(parbc236_20.isChecked()){parbc236_20.setEnabled(true);}else{parbc236_20.setEnabled(false);}
+            if(parbc236_21.isChecked()){parbc236_21.setEnabled(true);}else{parbc236_21.setEnabled(false);}
+            if(parbc236_22.isChecked()){parbc236_22.setEnabled(true);}else{parbc236_22.setEnabled(false);}
+            if(parbc236_23.isChecked()){parbc236_23.setEnabled(true);}else{parbc236_23.setEnabled(false);}
+            if(parbc236_24.isChecked()){parbc236_24.setEnabled(true);}else{parbc236_24.setEnabled(false);}
+            if(parbc236_25.isChecked()){parbc236_25.setEnabled(true);}else{parbc236_25.setEnabled(false);}
+            if(parbc236_26.isChecked()){parbc236_26.setEnabled(true);}else{parbc236_26.setEnabled(false);}
+            if(parbc236_27.isChecked()){parbc236_27.setEnabled(true);}else{parbc236_27.setEnabled(false);}
+            if(parbc236_28.isChecked()){parbc236_28.setEnabled(true);}else{parbc236_28.setEnabled(false);}
+            if(parbc236_29.isChecked()){parbc236_29.setEnabled(true);}else{parbc236_29.setEnabled(false);}
+            if(parbc236_30.isChecked()){parbc236_30.setEnabled(true);}else{parbc236_30.setEnabled(false);}
+            if(parbc236_31.isChecked()){parbc236_31.setEnabled(true);}else{parbc236_31.setEnabled(false);}
+            if(parbc236_32.isChecked()){parbc236_32.setEnabled(true);}else{parbc236_32.setEnabled(false);}
+            if(parbc236_33.isChecked()){parbc236_33.setEnabled(true);}else{parbc236_33.setEnabled(false);}
+            if(parbc236_34.isChecked()){parbc236_34.setEnabled(true);}else{parbc236_34.setEnabled(false);}
+            if(parbc236_35.isChecked()){parbc236_35.setEnabled(true);}else{parbc236_35.setEnabled(false);}
+            if(parbc236_36.isChecked()){parbc236_36.setEnabled(true);}else{parbc236_36.setEnabled(false);}
+            if(parbc236_37.isChecked()){parbc236_37.setEnabled(true);}else{parbc236_37.setEnabled(false);}
+            if(parbc236_38.isChecked()){parbc236_38.setEnabled(true);}else{parbc236_38.setEnabled(false);}
+            if(parbc236_39.isChecked()){parbc236_39.setEnabled(true);}else{parbc236_39.setEnabled(false);}
+            if(parbc236_40.isChecked()){parbc236_40.setEnabled(true);}else{parbc236_40.setEnabled(false);}
+            if(parbc236_41.isChecked()){parbc236_41.setEnabled(true);}else{parbc236_41.setEnabled(false);}
+            if(parbc236_42.isChecked()){parbc236_42.setEnabled(true);}else{parbc236_42.setEnabled(false);}
+            if(parbc236_43.isChecked()){parbc236_43.setEnabled(true);}else{parbc236_43.setEnabled(false);}
+            if(parbc236_44.isChecked()){parbc236_44.setEnabled(true);}else{parbc236_44.setEnabled(false);}
+            if(parbc236_45.isChecked()){parbc236_45.setEnabled(true);}else{parbc236_45.setEnabled(false);}
+            if(parbc236_46.isChecked()){parbc236_46.setEnabled(true);}else{parbc236_46.setEnabled(false);}
+            if(parbc236_47.isChecked()){parbc236_47.setEnabled(true);}else{parbc236_47.setEnabled(false);}
+            if(parbc236_48.isChecked()){parbc236_48.setEnabled(true);}else{parbc236_48.setEnabled(false);}
+            if(parbc236_49.isChecked()){parbc236_49.setEnabled(true);}else{parbc236_49.setEnabled(false);}
+            if(parbc236_50.isChecked()){parbc236_50.setEnabled(true);}else{parbc236_50.setEnabled(false);}
+            if(parbc236_51.isChecked()){parbc236_51.setEnabled(true);}else{parbc236_51.setEnabled(false);}
+            if(parbc236_52.isChecked()){parbc236_52.setEnabled(true);}else{parbc236_52.setEnabled(false);}
+            if(parbc236_53.isChecked()){parbc236_53.setEnabled(true);}else{parbc236_53.setEnabled(false);}
+            if(parbc236_54.isChecked()){parbc236_54.setEnabled(true);}else{parbc236_54.setEnabled(false);}
+            if(parbc236_55.isChecked()){parbc236_55.setEnabled(true);}else{parbc236_55.setEnabled(false);}
+            if(parbc236_56.isChecked()){parbc236_56.setEnabled(true);}else{parbc236_56.setEnabled(false);}
+            if(parbc236_57.isChecked()){parbc236_57.setEnabled(true);}else{parbc236_57.setEnabled(false);}
+        }
+        else {
+            parbc190.setEnabled(true);
+            parbc191.setEnabled(true);
+            parbc192.setEnabled(true);
+            parbc193.setEnabled(true);
+            parbc194.setEnabled(true);
+            parbc195.setEnabled(true);
+            parbc196.setEnabled(true);
+            parbc197.setEnabled(true);
+            parbc198.setEnabled(true);
+            parbc199.setEnabled(true);
+            parbc200.setEnabled(true);
+            parbc201.setEnabled(true);
+            parbc202.setEnabled(true);
+            parbc203.setEnabled(true);
+            parbc204.setEnabled(true);
+            parbc205.setEnabled(true);
+            parbc206.setEnabled(true);
+            parbc207.setEnabled(true);
+            parbc208.setEnabled(true);
+            parbc209.setEnabled(true);
+            parbc210.setEnabled(true);
+            parbc211.setEnabled(true);
+            parbc212.setEnabled(true);
+            parbc213.setEnabled(true);
+            parbc214.setEnabled(true);
+            parbc215.setEnabled(true);
+            parbc216.setEnabled(true);
+            parbc217.setEnabled(true);
+            parbc218.setEnabled(true);
+            parbc219.setEnabled(true);
+            parbc220.setEnabled(true);
+            parbc221.setEnabled(true);
+            parbc222.setEnabled(true);
+            parbc223.setEnabled(true);
+            parbc224.setEnabled(true);
+            parbc225.setEnabled(true);
+            parbc226.setEnabled(true);
+            parbc227.setEnabled(true);
+            parbc228.setEnabled(true);
+            parbc229.setEnabled(true);
+            parbc230.setEnabled(true);
+            parbc231.setEnabled(true);
+            parbc232.setEnabled(true);
+            parbc233.setEnabled(true);
+            parbc234.setEnabled(true);
+            parbc235.setEnabled(true);
+            parbc236.setEnabled(true);
+            parbc236_1.setEnabled(true);
+            parbc236_2.setEnabled(true);
+            parbc236_3.setEnabled(true);
+            parbc236_4.setEnabled(true);
+            parbc236_5.setEnabled(true);
+            parbc236_6.setEnabled(true);
+            parbc236_7.setEnabled(true);
+            parbc236_8.setEnabled(true);
+            parbc236_9.setEnabled(true);
+            parbc236_10.setEnabled(true);
+            parbc236_11.setEnabled(true);
+            parbc236_12.setEnabled(true);
+            parbc236_13.setEnabled(true);
+            parbc236_14.setEnabled(true);
+            parbc236_15.setEnabled(true);
+            parbc236_16.setEnabled(true);
+            parbc236_17.setEnabled(true);
+            parbc236_18.setEnabled(true);
+            parbc236_19.setEnabled(true);
+            parbc236_20.setEnabled(true);
+            parbc236_21.setEnabled(true);
+            parbc236_22.setEnabled(true);
+            parbc236_23.setEnabled(true);
+            parbc236_24.setEnabled(true);
+            parbc236_25.setEnabled(true);
+            parbc236_26.setEnabled(true);
+            parbc236_27.setEnabled(true);
+            parbc236_28.setEnabled(true);
+            parbc236_29.setEnabled(true);
+            parbc236_30.setEnabled(true);
+            parbc236_31.setEnabled(true);
+            parbc236_32.setEnabled(true);
+            parbc236_33.setEnabled(true);
+            parbc236_34.setEnabled(true);
+            parbc236_35.setEnabled(true);
+            parbc236_36.setEnabled(true);
+            parbc236_37.setEnabled(true);
+            parbc236_38.setEnabled(true);
+            parbc236_39.setEnabled(true);
+            parbc236_40.setEnabled(true);
+            parbc236_41.setEnabled(true);
+            parbc236_42.setEnabled(true);
+            parbc236_43.setEnabled(true);
+            parbc236_44.setEnabled(true);
+            parbc236_45.setEnabled(true);
+            parbc236_46.setEnabled(true);
+            parbc236_47.setEnabled(true);
+            parbc236_48.setEnabled(true);
+            parbc236_49.setEnabled(true);
+            parbc236_50.setEnabled(true);
+            parbc236_51.setEnabled(true);
+            parbc236_52.setEnabled(true);
+            parbc236_53.setEnabled(true);
+            parbc236_54.setEnabled(true);
+            parbc236_55.setEnabled(true);
+            parbc236_56.setEnabled(true);
+            parbc236_57.setEnabled(true);
+        }
     }
 
     public boolean validar(){
