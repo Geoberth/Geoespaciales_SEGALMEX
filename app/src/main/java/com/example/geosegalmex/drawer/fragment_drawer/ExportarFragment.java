@@ -27,6 +27,17 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.geosegalmex.Liconsa.LiconsaBD;
+import com.example.geosegalmex.Liconsa2.LiconsaVerificacionBD;
+import com.example.geosegalmex.LiconsaBeneficiario.PASLbeneficiarioBD;
+import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
+import com.example.geosegalmex.PARBeneficiario.PARBeneficiarioBD;
+import com.example.geosegalmex.PAROperativo.PARoperativoBD;
+import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
+import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
+import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
+import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
+import com.example.geosegalmex.PGOperativoLeche.PGOperativoLecheBD;
 import com.example.geosegalmex.R;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
@@ -47,7 +58,7 @@ public class ExportarFragment extends Fragment {
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1 ;
     private TextView tvProgreso;
 
-    ExtendedFloatingActionButton fabExportar;
+    ExtendedFloatingActionButton fabExportar, aaaa;
     TextView ed1, ed2, ed3, ed4, ed5, ed6, ed7, ed8, ed9, ed10, ed11;
     private ProgressDialog progressDialog;
 
@@ -64,6 +75,7 @@ public class ExportarFragment extends Fragment {
 
         // tvProgreso = vistaExportar.findViewById(R.id.tvProgreso);
         fabExportar = vistaExportar.findViewById(R.id.fab_exportar);
+        aaaa = vistaExportar.findViewById(R.id.aaa);
         ed1 = vistaExportar.findViewById(R.id.pasl_o_tvTitulo55);
         ed1.setVisibility(View.GONE);
 
@@ -82,12 +94,64 @@ public class ExportarFragment extends Fragment {
             }
         }
 
+        aaaa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PASLoperativoBD baseBD;
+                baseBD = new PASLoperativoBD(getContext());
+                baseBD.deletePASLoperativo();
+
+                PASLbeneficiarioBD baseBD2;
+                baseBD2 = new PASLbeneficiarioBD(getContext());
+                baseBD2.deletePASLbeneficiario();
+
+                LiconsaBD baseBD3;
+                baseBD3 = new LiconsaBD(getContext());
+                baseBD3.deleteRNPLProductor();
+
+                LiconsaVerificacionBD baseBD4;
+                baseBD4 = new LiconsaVerificacionBD(getContext());
+                baseBD4.deleteRNPLExpediente();
+
+                PARBeneficiarioBD baseBD5;
+                baseBD5 = new PARBeneficiarioBD(getContext());
+                baseBD5.deletePARBeneficiario();
+
+                PARoperativoBD baseBD6;
+                baseBD6 = new PARoperativoBD(getContext());
+                baseBD6.deleteaddPAR_Operativo();
+
+                PGBgranosBD baseBD7;
+                baseBD7 = new PGBgranosBD(getContext());
+                baseBD7.deletePGBeneficiarioGranos();
+
+                PGBeneficiarioLecheBD baseBD8;
+                baseBD8 = new PGBeneficiarioLecheBD(getContext());
+                baseBD8.deletePGBeneficiarioLeche();
+
+                PGOperativoEstimulosBD baseBD9;
+                baseBD9 = new PGOperativoEstimulosBD(getContext());
+                baseBD9.deletePGOperativoEstimulos();
+
+                PGOperativoGranosBD baseBD10;
+                baseBD10 = new PGOperativoGranosBD(getContext());
+                baseBD10.deletePGOperativoGranos();
+
+                PGOperativoLecheBD baseBD11;
+                baseBD11 = new PGOperativoLecheBD(getContext());
+                baseBD11.deletePGOperativoLeche();
+                ed1.setText("Listo!, Bases de datos borradas.");
+                ed1.setVisibility(View.VISIBLE);
+            }
+
+        });
+
 
         fabExportar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ed1.setVisibility(View.GONE);
-
+                ed1.setText("Listo!, Bases de datos exportadas.");
                 final ProgressDialog progressDialog = new ProgressDialog(getActivity());
                 progressDialog.setTitle("Descargando Datos");
                 progressDialog.setCancelable(false);

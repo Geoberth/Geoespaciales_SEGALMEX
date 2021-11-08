@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
+import com.example.geosegalmex.LiconsaVentanilla.pasl_operativo_bd;
 
 
 public class PASLbeneficiarioBD extends SQLiteOpenHelper {
@@ -28,6 +29,7 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ pasl_beneficiario_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
     }
 
     public boolean addPASLbeneficiario(Pasl_b_Model model){
@@ -81,6 +83,14 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
         }else{
             return true;
         }
+
+    }
+
+    public void deletePASLbeneficiario(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from " + pasl_beneficiario_bd.TABLA_BD);
+        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        db.close();
 
     }
 

@@ -29,6 +29,7 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ pasl_operativo_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
     }
 
     public boolean addPASLoperativo(Pasl_o_Model model){
@@ -78,6 +79,14 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
         }else{
             return true;
         }
+
+    }
+
+    public void deletePASLoperativo(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from " + pasl_operativo_bd.TABLA_BD);
+        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        db.close();
 
     }
 

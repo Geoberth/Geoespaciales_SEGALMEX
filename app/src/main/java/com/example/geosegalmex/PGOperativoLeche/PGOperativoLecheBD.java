@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
+import com.example.geosegalmex.Liconsa2.LiconsaVerificacion_bd;
 
 public class PGOperativoLecheBD extends SQLiteOpenHelper {
 
@@ -27,6 +28,7 @@ public class PGOperativoLecheBD extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ PGOperativoLeche_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
     }
 
     public boolean addPGOperativoLeche(PGOperativoLeche_Model model){
@@ -91,6 +93,15 @@ public class PGOperativoLecheBD extends SQLiteOpenHelper {
             return true;
         }
     }
+
+    public void deletePGOperativoLeche(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from " + PGOperativoLeche_bd.TABLA_BD);
+        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        db.close();
+
+    }
+
 
     public boolean addTrayectoriaS(String folioPro, String folioBrig, String longGpsSave, String latiGpsSave, String horaActl, String fechaActl){
         SQLiteDatabase db = this.getWritableDatabase();
