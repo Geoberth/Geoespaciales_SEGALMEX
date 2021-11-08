@@ -1308,6 +1308,63 @@ public class PAR_Operativo extends AppCompatActivity {
         if(parec61.isChecked()){count = count + 1;}
         if(parec62.isChecked()){count = count + 1;}
         if(parec63.isChecked()){count = count + 1;}
+        if(pa63_1.isChecked()){count = count + 1;}
+        if(pa63_2.isChecked()){count = count + 1;}
+        if(pa63_3.isChecked()){count = count + 1;}
+        if(pa63_4.isChecked()){count = count + 1;}
+        if(pa63_5.isChecked()){count = count + 1;}
+        if(pa63_6.isChecked()){count = count + 1;}
+        if(pa63_7.isChecked()){count = count + 1;}
+        if(pa63_8.isChecked()){count = count + 1;}
+        if(pa63_9.isChecked()){count = count + 1;}
+        if(pa63_10.isChecked()){count = count + 1;}
+        if(pa63_11.isChecked()){count = count + 1;}
+        if(pa63_12.isChecked()){count = count + 1;}
+        if(pa63_13.isChecked()){count = count + 1;}
+        if(pa63_14.isChecked()){count = count + 1;}
+        if(pa63_15.isChecked()){count = count + 1;}
+        if(pa63_16.isChecked()){count = count + 1;}
+        if(pa63_17.isChecked()){count = count + 1;}
+        if(pa63_18.isChecked()){count = count + 1;}
+        if(pa63_19.isChecked()){count = count + 1;}
+        if(pa63_20.isChecked()){count = count + 1;}
+        if(pa63_21.isChecked()){count = count + 1;}
+        if(pa63_22.isChecked()){count = count + 1;}
+        if(pa63_23.isChecked()){count = count + 1;}
+        if(pa63_24.isChecked()){count = count + 1;}
+        if(pa63_25.isChecked()){count = count + 1;}
+        if(pa63_26.isChecked()){count = count + 1;}
+        if(pa63_27.isChecked()){count = count + 1;}
+        if(pa63_28.isChecked()){count = count + 1;}
+        if(pa63_29.isChecked()){count = count + 1;}
+        if(pa63_30.isChecked()){count = count + 1;}
+        if(pa63_31.isChecked()){count = count + 1;}
+        if(pa63_32.isChecked()){count = count + 1;}
+        if(pa63_33.isChecked()){count = count + 1;}
+        if(pa63_34.isChecked()){count = count + 1;}
+        if(pa63_35.isChecked()){count = count + 1;}
+        if(pa63_36.isChecked()){count = count + 1;}
+        if(pa63_37.isChecked()){count = count + 1;}
+        if(pa63_38.isChecked()){count = count + 1;}
+        if(pa63_39.isChecked()){count = count + 1;}
+        if(pa63_40.isChecked()){count = count + 1;}
+        if(pa63_41.isChecked()){count = count + 1;}
+        if(pa63_42.isChecked()){count = count + 1;}
+        if(pa63_43.isChecked()){count = count + 1;}
+        if(pa63_44.isChecked()){count = count + 1;}
+        if(pa63_45.isChecked()){count = count + 1;}
+        if(pa63_46.isChecked()){count = count + 1;}
+        if(pa63_47.isChecked()){count = count + 1;}
+        if(pa63_48.isChecked()){count = count + 1;}
+        if(pa63_49.isChecked()){count = count + 1;}
+        if(pa63_50.isChecked()){count = count + 1;}
+        if(pa63_51.isChecked()){count = count + 1;}
+        if(pa63_52.isChecked()){count = count + 1;}
+        if(pa63_53.isChecked()){count = count + 1;}
+        if(pa63_54.isChecked()){count = count + 1;}
+        if(pa63_55.isChecked()){count = count + 1;}
+        if(pa63_56.isChecked()){count = count + 1;}
+        if(pa63_57.isChecked()){count = count + 1;}
 
         if(count<=5) {
             retorno = true;
@@ -1614,15 +1671,64 @@ if(pa110_57.isChecked()){count = count + 1;}
         if(parec108.isChecked()){count = count + 1;}
         if(parec109.isChecked()){count = count + 1;}
         if(parec110.isChecked()){count = count + 1;}
-        if(parec111.isChecked()){count = count + 1;}
-        if(parec112.isChecked()){count = count + 1;}
-        if(parec113.isChecked()){count = count + 1;}
-        if(parec114.isChecked()){count = count + 1;}
-        if(parec115.isChecked()){count = count + 1;}
-        if(parec116.isChecked()){count = count + 1;}
-        if(parec117.isChecked()){count = count + 1;}
-        if(parec118.isChecked()){count = count + 1;}
-        if(parec119.isChecked()){count = count + 1;}
+
+        if(pa110_1.isChecked()){count = count + 1;}
+        if(pa110_2.isChecked()){count = count + 1;}
+        if(pa110_3.isChecked()){count = count + 1;}
+        if(pa110_4.isChecked()){count = count + 1;}
+        if(pa110_5.isChecked()){count = count + 1;}
+        if(pa110_6.isChecked()){count = count + 1;}
+        if(pa110_7.isChecked()){count = count + 1;}
+        if(pa110_8.isChecked()){count = count + 1;}
+        if(pa110_9.isChecked()){count = count + 1;}
+        if(pa110_10.isChecked()){count = count + 1;}
+        if(pa110_11.isChecked()){count = count + 1;}
+        if(pa110_12.isChecked()){count = count + 1;}
+        if(pa110_13.isChecked()){count = count + 1;}
+        if(pa110_14.isChecked()){count = count + 1;}
+        if(pa110_15.isChecked()){count = count + 1;}
+        if(pa110_16.isChecked()){count = count + 1;}
+        if(pa110_17.isChecked()){count = count + 1;}
+        if(pa110_18.isChecked()){count = count + 1;}
+        if(pa110_19.isChecked()){count = count + 1;}
+        if(pa110_20.isChecked()){count = count + 1;}
+        if(pa110_21.isChecked()){count = count + 1;}
+        if(pa110_22.isChecked()){count = count + 1;}
+        if(pa110_23.isChecked()){count = count + 1;}
+        if(pa110_24.isChecked()){count = count + 1;}
+        if(pa110_25.isChecked()){count = count + 1;}
+        if(pa110_26.isChecked()){count = count + 1;}
+        if(pa110_27.isChecked()){count = count + 1;}
+        if(pa110_28.isChecked()){count = count + 1;}
+        if(pa110_29.isChecked()){count = count + 1;}
+        if(pa110_30.isChecked()){count = count + 1;}
+        if(pa110_31.isChecked()){count = count + 1;}
+        if(pa110_32.isChecked()){count = count + 1;}
+        if(pa110_33.isChecked()){count = count + 1;}
+        if(pa110_34.isChecked()){count = count + 1;}
+        if(pa110_35.isChecked()){count = count + 1;}
+        if(pa110_36.isChecked()){count = count + 1;}
+        if(pa110_37.isChecked()){count = count + 1;}
+        if(pa110_38.isChecked()){count = count + 1;}
+        if(pa110_39.isChecked()){count = count + 1;}
+        if(pa110_40.isChecked()){count = count + 1;}
+        if(pa110_41.isChecked()){count = count + 1;}
+        if(pa110_42.isChecked()){count = count + 1;}
+        if(pa110_43.isChecked()){count = count + 1;}
+        if(pa110_44.isChecked()){count = count + 1;}
+        if(pa110_45.isChecked()){count = count + 1;}
+        if(pa110_46.isChecked()){count = count + 1;}
+        if(pa110_47.isChecked()){count = count + 1;}
+        if(pa110_48.isChecked()){count = count + 1;}
+        if(pa110_49.isChecked()){count = count + 1;}
+        if(pa110_50.isChecked()){count = count + 1;}
+        if(pa110_51.isChecked()){count = count + 1;}
+        if(pa110_52.isChecked()){count = count + 1;}
+        if(pa110_53.isChecked()){count = count + 1;}
+        if(pa110_54.isChecked()){count = count + 1;}
+        if(pa110_55.isChecked()){count = count + 1;}
+        if(pa110_56.isChecked()){count = count + 1;}
+        if(pa110_57.isChecked()){count = count + 1;}
 
         return count;
     }
@@ -1903,648 +2009,230 @@ if(pa110_57.isChecked()){count = count + 1;}
 
 
     public String capa3() {
-        String cadena3 = "";
+        String cadena = "";
         String resultado3 = "";
 
-        if (parec17.isChecked()) {
-            cadena3 = "1-Aceite comestible cristal.";
-        }
-        if (parec18.isChecked()) {
-            cadena3 = "2-Aceite mixto Patrona.";
-        }
-        if (parec19.isChecked()) {
-            cadena3 = "3-Arroz super extra.";
-        }
-        if (parec20.isChecked()) {
-            cadena3 = "4-Arroz Quebrado (1/2 grano).";
-        }
-        if (parec21.isChecked()) {
-            cadena3 = "5-Arroz Comercial.";
-        }
-        if (parec22.isChecked()) {
-            cadena3 = "6-Atún en Agua.";
-        }
-        if (parec23.isChecked()) {
-            cadena3 = "7-Atún en Aceite.";
-        }
-        if (parec24.isChecked()) {
-            cadena3 = "8-Avena.";
-        }
-        if (parec25.isChecked()) {
-            cadena3 = "9-Azúcar estandar.";
-        }
-        if (parec26.isChecked()) {
-            cadena3 = "10-Café soluble.";
-        }
-        if (parec27.isChecked()) {
-            cadena3 = "11-Arroz Comercial.";
-        }
-        if (parec28.isChecked()) {
-            cadena3 = "12-Chiles jalapeños enteros.";
-        }
-        if (parec29.isChecked()) {
-            cadena3 = "13-Chocolate en polvo.";
-        }
-        if (parec30.isChecked()) {
-            cadena3 = "14-Crema dental.";
-        }
-        if (parec31.isChecked()) {
-            cadena3 = "15-Detergente en polvo.";
-        }
-        if (parec32.isChecked()) {
-            cadena3 = "16-Frijol Negro San luis.";
-        }
-        if (parec33.isChecked()) {
-            cadena3 = "17-Galletas animalitos.";
-        }
-        if (parec34.isChecked()) {
-            cadena3 = "18-Galletas Marías.";
-        }
-        if (parec35.isChecked()) {
-            cadena3 = "19-Galletas Saladas.";
-        }
-        if (parec36.isChecked()) {
-            cadena3 = "20-Harina de Maíz.";
-        }
-        if (parec37.isChecked()) {
-            cadena3 = "21-Harina de Trigo.";
-        }
-        if (parec38.isChecked()) {
-            cadena3 = "22-Jabón de lavandería.";
-        }
-        if (parec39.isChecked()) {
-            cadena3 = "23-Jabón de tocador.";
-        }
-        if (parec40.isChecked()) {
-            cadena3 = "24-Leche Entera.";
-        }
-        if (parec41.isChecked()) {
-            cadena3 = "25-Leche Semidescremada.";
-        }
-        if (parec42.isChecked()) {
-            cadena3 = "26-Leche Descremada.";
-        }
-        if (parec43.isChecked()) {
-            cadena3 = "27-Leche Semideslactosada.";
-        }
-        if (parec44.isChecked()) {
-            cadena3 = "28-Leche Entera en Polvo Fortificada.";
-        }
-        if (parec45.isChecked()) {
-            cadena3 = "29-Maíz.";
-        }
-        if (parec46.isChecked()) {
-            cadena3 = "30-Leche Entera UGT en Bolsa Aséptica";
-        }
-
-        if (parec47.isChecked()) {
-            cadena3 = "31-Gelatina.";
-        }
-        if (parec48.isChecked()) {
-            cadena3 = "32-Leche Semidescremada UHT en Bolsa Aséptica.";
-        }
-        if (parec49.isChecked()) {
-            cadena3 = "33-Leche Descremada UHT en Bolsa Aséptica.";
-        }
-        if (parec50.isChecked()) {
-            cadena3 = "34-Leche Semidescremada Sabor Chocolate.";
-        }
-        if (parec51.isChecked()) {
-            cadena3 = "35-Leche Semidescremada Sabor Fresa.";
-        }
-        if (parec52.isChecked()) {
-            cadena3 = "36-Miel.";
-        }
-        if (parec53.isChecked()) {
-            cadena3 = "37-Leche Semidescremada Sabor Vainilla.";
-        }
-        if (parec54.isChecked()) {
-            cadena3 = "38-Papel Higiénico 200 H.D.";
-        }
-        if (parec55.isChecked()) {
-            cadena3 = "39-Sal de mesa.";
-        }
-        if (parec56.isChecked()) {
-            cadena3 = "40-Sardina en Salsa de Tomate.";
-        }
-        if (parec57.isChecked()) {
-            cadena3 = "41-Lenteja.";
-        }
-        if (parec58.isChecked()) {
-            cadena3 = "42-Puré de Tomate.";
-        }
-        if (parec59.isChecked()) {
-            cadena3 = "43-Garrafón 20 Lt. Agua.";
-        }
-        if (parec60.isChecked()) {
-            cadena3 = "44-Chícharos con Zanahoria (LA COSTEÑA).";
-        }
-        if (parec61.isChecked()) {
-            cadena3 = "45-Chícharos con Zanahoria (CLEMENTE JACQUES).";
-        }
-        if (parec62.isChecked()) {
-            cadena3 = "46-Huevo.";
-        }
-        if (parec63.isChecked()) {
-            cadena3 = "47-Soya Texturizada (NUTRICASA).";
-        }
-
-        if (pa63_1.isChecked()) {
-            cadena3 = "48-Soya Texturizada (NUTRICASA).";
-        }
-        if (pa63_2.isChecked()) {
-            cadena3 = "48-Soya Texturizada (NUTRICASA).";
-        }
-        if (pa63_3.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_4.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_5.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_6.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_7.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_8.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_9.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_10.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_11.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_12.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_13.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_14.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_15.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_16.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_17.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_18.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_19.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_20.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_21.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_22.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_23.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_24.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_25.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_26.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_27.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_28.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_29.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_30.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_31.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_32.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_33.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_34.isChecked()) {
-            cadena3 = "1";
-        }if (pa63_35.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_36.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_37.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_38.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_39.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_40.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_41.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_42.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_43.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_44.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_45.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_46.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_47.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_48.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_49.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_50.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_51.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_52.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_53.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_54.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_55.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_56.isChecked()) {
-            cadena3 = "1";
-        }
-        if (pa63_57.isChecked()) {
-            cadena3 = "1";
-        }
+        if(parec17.isChecked()){cadena += "" + parec17.getText().toString() + "-";}
+        if(parec18.isChecked()){cadena += "" + parec18.getText().toString() + "-";}
+        if(parec19.isChecked()){cadena += "" + parec19.getText().toString() + "-";}
+        if(parec20.isChecked()){cadena += "" + parec20.getText().toString() + "-";}
+        if(parec21.isChecked()){cadena += "" + parec21.getText().toString() + "-";}
+        if(parec22.isChecked()){cadena += "" + parec22.getText().toString() + "-";}
+        if(parec23.isChecked()){cadena += "" + parec23.getText().toString() + "-";}
+        if(parec24.isChecked()){cadena += "" + parec24.getText().toString() + "-";}
+        if(parec25.isChecked()){cadena += "" + parec25.getText().toString() + "-";}
+        if(parec26.isChecked()){cadena += "" + parec26.getText().toString() + "-";}
+        if(parec27.isChecked()){cadena += "" + parec27.getText().toString() + "-";}
+        if(parec28.isChecked()){cadena += "" + parec28.getText().toString() + "-";}
+        if(parec29.isChecked()){cadena += "" + parec29.getText().toString() + "-";}
+        if(parec30.isChecked()){cadena += "" + parec30.getText().toString() + "-";}
+        if(parec31.isChecked()){cadena += "" + parec31.getText().toString() + "-";}
+        if(parec32.isChecked()){cadena += "" + parec32.getText().toString() + "-";}
+        if(parec33.isChecked()){cadena += "" + parec33.getText().toString() + "-";}
+        if(parec34.isChecked()){cadena += "" + parec34.getText().toString() + "-";}
+        if(parec35.isChecked()){cadena += "" + parec35.getText().toString() + "-";}
+        if(parec36.isChecked()){cadena += "" + parec36.getText().toString() + "-";}
+        if(parec37.isChecked()){cadena += "" + parec37.getText().toString() + "-";}
+        if(parec38.isChecked()){cadena += "" + parec38.getText().toString() + "-";}
+        if(parec39.isChecked()){cadena += "" + parec39.getText().toString() + "-";}
+        if(parec40.isChecked()){cadena += "" + parec40.getText().toString() + "-";}
+        if(parec41.isChecked()){cadena += "" + parec41.getText().toString() + "-";}
+        if(parec42.isChecked()){cadena += "" + parec42.getText().toString() + "-";}
+        if(parec43.isChecked()){cadena += "" + parec43.getText().toString() + "-";}
+        if(parec44.isChecked()){cadena += "" + parec44.getText().toString() + "-";}
+        if(parec45.isChecked()){cadena += "" + parec45.getText().toString() + "-";}
+        if(parec46.isChecked()){cadena += "" + parec46.getText().toString() + "-";}
+        if(parec47.isChecked()){cadena += "" + parec47.getText().toString() + "-";}
+        if(parec48.isChecked()){cadena += "" + parec48.getText().toString() + "-";}
+        if(parec49.isChecked()){cadena += "" + parec49.getText().toString() + "-";}
+        if(parec50.isChecked()){cadena += "" + parec50.getText().toString() + "-";}
+        if(parec51.isChecked()){cadena += "" + parec51.getText().toString() + "-";}
+        if(parec52.isChecked()){cadena += "" + parec52.getText().toString() + "-";}
+        if(parec53.isChecked()){cadena += "" + parec53.getText().toString() + "-";}
+        if(parec54.isChecked()){cadena += "" + parec54.getText().toString() + "-";}
+        if(parec55.isChecked()){cadena += "" + parec55.getText().toString() + "-";}
+        if(parec56.isChecked()){cadena += "" + parec56.getText().toString() + "-";}
+        if(parec57.isChecked()){cadena += "" + parec57.getText().toString() + "-";}
+        if(parec58.isChecked()){cadena += "" + parec58.getText().toString() + "-";}
+        if(parec59.isChecked()){cadena += "" + parec59.getText().toString() + "-";}
+        if(parec60.isChecked()){cadena += "" + parec60.getText().toString() + "-";}
+        if(parec61.isChecked()){cadena += "" + parec61.getText().toString() + "-";}
+        if(parec62.isChecked()){cadena += "" + parec62.getText().toString() + "-";}
+        if(parec63.isChecked()){cadena += "" + parec63.getText().toString() + "-";}
+        if(pa63_1.isChecked()){cadena += "" + pa63_1.getText().toString() + "-";}
+        if(pa63_2.isChecked()){cadena += "" + pa63_2.getText().toString() + "-";}
+        if(pa63_3.isChecked()){cadena += "" + pa63_3.getText().toString() + "-";}
+        if(pa63_4.isChecked()){cadena += "" + pa63_4.getText().toString() + "-";}
+        if(pa63_5.isChecked()){cadena += "" + pa63_5.getText().toString() + "-";}
+        if(pa63_6.isChecked()){cadena += "" + pa63_6.getText().toString() + "-";}
+        if(pa63_7.isChecked()){cadena += "" + pa63_7.getText().toString() + "-";}
+        if(pa63_8.isChecked()){cadena += "" + pa63_8.getText().toString() + "-";}
+        if(pa63_9.isChecked()){cadena += "" + pa63_9.getText().toString() + "-";}
+        if(pa63_10.isChecked()){cadena += "" + pa63_10.getText().toString() + "-";}
+        if(pa63_11.isChecked()){cadena += "" + pa63_11.getText().toString() + "-";}
+        if(pa63_12.isChecked()){cadena += "" + pa63_12.getText().toString() + "-";}
+        if(pa63_13.isChecked()){cadena += "" + pa63_13.getText().toString() + "-";}
+        if(pa63_14.isChecked()){cadena += "" + pa63_14.getText().toString() + "-";}
+        if(pa63_15.isChecked()){cadena += "" + pa63_15.getText().toString() + "-";}
+        if(pa63_16.isChecked()){cadena += "" + pa63_16.getText().toString() + "-";}
+        if(pa63_17.isChecked()){cadena += "" + pa63_17.getText().toString() + "-";}
+        if(pa63_18.isChecked()){cadena += "" + pa63_18.getText().toString() + "-";}
+        if(pa63_19.isChecked()){cadena += "" + pa63_19.getText().toString() + "-";}
+        if(pa63_20.isChecked()){cadena += "" + pa63_20.getText().toString() + "-";}
+        if(pa63_21.isChecked()){cadena += "" + pa63_21.getText().toString() + "-";}
+        if(pa63_22.isChecked()){cadena += "" + pa63_22.getText().toString() + "-";}
+        if(pa63_23.isChecked()){cadena += "" + pa63_23.getText().toString() + "-";}
+        if(pa63_24.isChecked()){cadena += "" + pa63_24.getText().toString() + "-";}
+        if(pa63_25.isChecked()){cadena += "" + pa63_25.getText().toString() + "-";}
+        if(pa63_26.isChecked()){cadena += "" + pa63_26.getText().toString() + "-";}
+        if(pa63_27.isChecked()){cadena += "" + pa63_27.getText().toString() + "-";}
+        if(pa63_28.isChecked()){cadena += "" + pa63_28.getText().toString() + "-";}
+        if(pa63_29.isChecked()){cadena += "" + pa63_29.getText().toString() + "-";}
+        if(pa63_30.isChecked()){cadena += "" + pa63_30.getText().toString() + "-";}
+        if(pa63_31.isChecked()){cadena += "" + pa63_31.getText().toString() + "-";}
+        if(pa63_32.isChecked()){cadena += "" + pa63_32.getText().toString() + "-";}
+        if(pa63_33.isChecked()){cadena += "" + pa63_33.getText().toString() + "-";}
+        if(pa63_34.isChecked()){cadena += "" + pa63_34.getText().toString() + "-";}
+        if(pa63_35.isChecked()){cadena += "" + pa63_35.getText().toString() + "-";}
+        if(pa63_36.isChecked()){cadena += "" + pa63_36.getText().toString() + "-";}
+        if(pa63_37.isChecked()){cadena += "" + pa63_37.getText().toString() + "-";}
+        if(pa63_38.isChecked()){cadena += "" + pa63_38.getText().toString() + "-";}
+        if(pa63_39.isChecked()){cadena += "" + pa63_39.getText().toString() + "-";}
+        if(pa63_40.isChecked()){cadena += "" + pa63_40.getText().toString() + "-";}
+        if(pa63_41.isChecked()){cadena += "" + pa63_41.getText().toString() + "-";}
+        if(pa63_42.isChecked()){cadena += "" + pa63_42.getText().toString() + "-";}
+        if(pa63_43.isChecked()){cadena += "" + pa63_43.getText().toString() + "-";}
+        if(pa63_44.isChecked()){cadena += "" + pa63_44.getText().toString() + "-";}
+        if(pa63_45.isChecked()){cadena += "" + pa63_45.getText().toString() + "-";}
+        if(pa63_46.isChecked()){cadena += "" + pa63_46.getText().toString() + "-";}
+        if(pa63_47.isChecked()){cadena += "" + pa63_47.getText().toString() + "-";}
+        if(pa63_48.isChecked()){cadena += "" + pa63_48.getText().toString() + "-";}
+        if(pa63_49.isChecked()){cadena += "" + pa63_49.getText().toString() + "-";}
+        if(pa63_50.isChecked()){cadena += "" + pa63_50.getText().toString() + "-";}
+        if(pa63_51.isChecked()){cadena += "" + pa63_51.getText().toString() + "-";}
+        if(pa63_52.isChecked()){cadena += "" + pa63_52.getText().toString() + "-";}
+        if(pa63_53.isChecked()){cadena += "" + pa63_53.getText().toString() + "-";}
+        if(pa63_54.isChecked()){cadena += "" + pa63_54.getText().toString() + "-";}
+        if(pa63_55.isChecked()){cadena += "" + pa63_55.getText().toString() + "-";}
+        if(pa63_56.isChecked()){cadena += "" + pa63_56.getText().toString() + "-";}
+        if(pa63_57.isChecked()){cadena += "" + pa63_57.getText().toString() + "-";}
 
 
 
-        resultado3 = cadena3.substring(0, cadena3.length()-1);
+        resultado3 = cadena.substring(0, cadena.length()-1);
         return resultado3;
     }
 
     public String capa4() {
-        String cadena4 = "";
+        String cadena = "";
         String resultado4 = "";
 
-        if (parec64.isChecked()) {
-            cadena4 = "1-Aceite comestible cristal.";
-        }
-        if (parec65.isChecked()) {
-            cadena4 = "2-Aceite mixto Patrona.";
-        }
-        if (parec66.isChecked()) {
-            cadena4 = "3-Arroz super extra.";
-        }
-        if (parec67.isChecked()) {
-            cadena4 = "4-Arroz Quebrado (1/2 grano).";
-        }
-        if (parec68.isChecked()) {
-            cadena4 = "5-Arroz Comercial.";
-        }
-        if (parec69.isChecked()) {
-            cadena4 = "6-Atún en Agua.";
-        }
-        if (parec70.isChecked()) {
-            cadena4 = "7-Atún en Aceite.";
-        }
-        if (parec71.isChecked()) {
-            cadena4 = "8-Avena.";
-        }
-        if (parec72.isChecked()) {
-            cadena4 = "9-Azúcar estandar.";
-        }
-        if (parec73.isChecked()) {
-            cadena4 = "10-Café soluble.";
-        }
-        if (parec74.isChecked()) {
-            cadena4 = "11-Arroz Comercial.";
-        }
-        if (parec75.isChecked()) {
-            cadena4 = "12-Chiles jalapeños enteros.";
-        }
-        if (parec76.isChecked()) {
-            cadena4 = "13-Chocolate en polvo.";
-        }
-        if (parec77.isChecked()) {
-            cadena4 = "14-Crema dental.";
-        }
-        if (parec78.isChecked()) {
-            cadena4 = "15-Detergente en polvo.";
-        }
-        if (parec79.isChecked()) {
-            cadena4 = "16-Frijol Negro San luis.";
-        }
-        if (parec80.isChecked()) {
-            cadena4 = "17-Galletas animalitos.";
-        }
-        if (parec81.isChecked()) {
-            cadena4 = "18-Galletas Marías.";
-        }
-        if (parec82.isChecked()) {
-            cadena4 = "19-Galletas Saladas.";
-        }
-        if (parec83.isChecked()) {
-            cadena4 = "20-Harina de Maíz.";
-        }
-        if (parec84.isChecked()) {
-            cadena4 = "21-Harina de Trigo.";
-        }
-        if (parec85.isChecked()) {
-            cadena4 = "22-Jabón de lavandería.";
-        }
-        if (parec86.isChecked()) {
-            cadena4 = "23-Jabón de tocador.";
-        }
-        if (parec87.isChecked()) {
-            cadena4 = "24-Leche Entera.";
-        }
-        if (parec88.isChecked()) {
-            cadena4 = "25-Leche Semidescremada.";
-        }
-        if (parec89.isChecked()) {
-            cadena4 = "26-Leche Descremada.";
-        }
-        if (parec90.isChecked()) {
-            cadena4 = "27-Leche Semideslactosada.";
-        }
-        if (parec91.isChecked()) {
-            cadena4 = "28-Leche Entera en Polvo Fortificada.";
-        }
-        if (parec92.isChecked()) {
-            cadena4 = "29-Maíz.";
-        }
-        if (parec93.isChecked()) {
-            cadena4 = "30-Leche Entera UGT en Bolsa Aséptica";
-        }
-        if (parec94.isChecked()) {
-            cadena4 = "31-Gelatina.";
-        }
-        if (parec95.isChecked()) {
-            cadena4 = "32-Leche Semidescremada UHT en Bolsa Aséptica.";
-        }
-        if (parec96.isChecked()) {
-            cadena4 = "33-Leche Descremada UHT en Bolsa Aséptica.";
-        }
-        if (parec97.isChecked()) {
-            cadena4 = "34-Leche Semidescremada Sabor Chocolate.";
-        }
-        if (parec98.isChecked()) {
-            cadena4 = "35-Leche Semidescremada Sabor Fresa.";
-        }
-        if (parec99.isChecked()) {
-            cadena4 = "36-Miel";
-        }
-        if (parec100.isChecked()) {
-            cadena4 = "37-Leche Semidescremada Sabor Vainilla.";
-        }
-        if (parec101.isChecked()) {
-            cadena4 = "38-Papel Higiénico 200 H.D.";
-        }
-        if (parec102.isChecked()) {
-            cadena4 = "39-Sal de mesa.";
-        }
-        if (parec103.isChecked()) {
-            cadena4 = "40-Sardina en Salsa de Tomate.";
-        }
-        if (parec104.isChecked()) {
-            cadena4 = "41-Lenteja.";
-        }
-        if (parec105.isChecked()) {
-            cadena4 = "42-Puré de Tomate.";
-        }
-        if (parec106.isChecked()) {
-            cadena4 = "43-Garrafón 20 Lt. Agua.";
-        }
-        if (parec107.isChecked()) {
-            cadena4 = "44-Chícharos con Zanahoria (LA COSTEÑA).";
-        }
-        if (parec108.isChecked()) {
-            cadena4 = "45-Chícharos con Zanahoria (CLEMENTE JACQUES).";
-        }
-        if (parec109.isChecked()) {
-            cadena4 = "46-Huevo.";
-        }
-        if (parec110.isChecked()) {
-            cadena4 = "47-Soya Texturizada (NUTRICASA).";
-        }
-        if (pa110_1.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_2.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_3.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_4.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_5.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_6.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_7.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_8.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_9.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_10.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_11.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_12.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_13.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_14.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_15.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_16.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_17.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_18.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_19.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_20.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_21.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_22.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_23.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_24.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_25.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_26.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_27.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_28.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_29.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_30.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_31.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_32.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_33.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_34.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_35.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_36.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_37.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_38.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_39.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_40.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_41.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_42.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_43.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_44.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_45.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_46.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_47.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_48.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_49.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_50.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_51.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_52.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_53.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_54.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_55.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_56.isChecked()) {
-            cadena4 = "2";
-        }
-        if (pa110_57.isChecked()) {
-            cadena4 = "2";
-        }
+        if(parec64.isChecked()){cadena += "" + parec64.getText().toString() + "-";}
+        if(parec65.isChecked()){cadena += "" + parec65.getText().toString() + "-";}
+        if(parec66.isChecked()){cadena += "" + parec66.getText().toString() + "-";}
+        if(parec67.isChecked()){cadena += "" + parec67.getText().toString() + "-";}
+        if(parec68.isChecked()){cadena += "" + parec68.getText().toString() + "-";}
+        if(parec69.isChecked()){cadena += "" + parec69.getText().toString() + "-";}
+        if(parec70.isChecked()){cadena += "" + parec70.getText().toString() + "-";}
+        if(parec71.isChecked()){cadena += "" + parec71.getText().toString() + "-";}
+        if(parec72.isChecked()){cadena += "" + parec72.getText().toString() + "-";}
+        if(parec73.isChecked()){cadena += "" + parec73.getText().toString() + "-";}
+        if(parec74.isChecked()){cadena += "" + parec74.getText().toString() + "-";}
+        if(parec75.isChecked()){cadena += "" + parec75.getText().toString() + "-";}
+        if(parec76.isChecked()){cadena += "" + parec76.getText().toString() + "-";}
+        if(parec77.isChecked()){cadena += "" + parec77.getText().toString() + "-";}
+        if(parec78.isChecked()){cadena += "" + parec78.getText().toString() + "-";}
+        if(parec79.isChecked()){cadena += "" + parec79.getText().toString() + "-";}
+        if(parec80.isChecked()){cadena += "" + parec80.getText().toString() + "-";}
+        if(parec81.isChecked()){cadena += "" + parec81.getText().toString() + "-";}
+        if(parec82.isChecked()){cadena += "" + parec82.getText().toString() + "-";}
+        if(parec83.isChecked()){cadena += "" + parec83.getText().toString() + "-";}
+        if(parec84.isChecked()){cadena += "" + parec84.getText().toString() + "-";}
+        if(parec85.isChecked()){cadena += "" + parec85.getText().toString() + "-";}
+        if(parec86.isChecked()){cadena += "" + parec86.getText().toString() + "-";}
+        if(parec87.isChecked()){cadena += "" + parec87.getText().toString() + "-";}
+        if(parec88.isChecked()){cadena += "" + parec88.getText().toString() + "-";}
+        if(parec89.isChecked()){cadena += "" + parec89.getText().toString() + "-";}
+        if(parec90.isChecked()){cadena += "" + parec90.getText().toString() + "-";}
+        if(parec91.isChecked()){cadena += "" + parec91.getText().toString() + "-";}
+        if(parec92.isChecked()){cadena += "" + parec92.getText().toString() + "-";}
+        if(parec93.isChecked()){cadena += "" + parec93.getText().toString() + "-";}
+        if(parec94.isChecked()){cadena += "" + parec94.getText().toString() + "-";}
+        if(parec95.isChecked()){cadena += "" + parec95.getText().toString() + "-";}
+        if(parec96.isChecked()){cadena += "" + parec96.getText().toString() + "-";}
+        if(parec97.isChecked()){cadena += "" + parec97.getText().toString() + "-";}
+        if(parec98.isChecked()){cadena += "" + parec98.getText().toString() + "-";}
+        if(parec99.isChecked()){cadena += "" + parec99.getText().toString() + "-";}
+        if(parec100.isChecked()){cadena += "" + parec100.getText().toString() + "-";}
+        if(parec101.isChecked()){cadena += "" + parec101.getText().toString() + "-";}
+        if(parec102.isChecked()){cadena += "" + parec102.getText().toString() + "-";}
+        if(parec103.isChecked()){cadena += "" + parec103.getText().toString() + "-";}
+        if(parec104.isChecked()){cadena += "" + parec104.getText().toString() + "-";}
+        if(parec105.isChecked()){cadena += "" + parec105.getText().toString() + "-";}
+        if(parec106.isChecked()){cadena += "" + parec106.getText().toString() + "-";}
+        if(parec107.isChecked()){cadena += "" + parec107.getText().toString() + "-";}
+        if(parec108.isChecked()){cadena += "" + parec108.getText().toString() + "-";}
+        if(parec109.isChecked()){cadena += "" + parec109.getText().toString() + "-";}
+        if(parec110.isChecked()){cadena += "" + parec110.getText().toString() + "-";}
+        if(pa110_1.isChecked()){cadena += "" + pa110_1.getText().toString() + "-";}
+        if(pa110_2.isChecked()){cadena += "" + pa110_2.getText().toString() + "-";}
+        if(pa110_3.isChecked()){cadena += "" + pa110_3.getText().toString() + "-";}
+        if(pa110_4.isChecked()){cadena += "" + pa110_4.getText().toString() + "-";}
+        if(pa110_5.isChecked()){cadena += "" + pa110_5.getText().toString() + "-";}
+        if(pa110_6.isChecked()){cadena += "" + pa110_6.getText().toString() + "-";}
+        if(pa110_7.isChecked()){cadena += "" + pa110_7.getText().toString() + "-";}
+        if(pa110_8.isChecked()){cadena += "" + pa110_8.getText().toString() + "-";}
+        if(pa110_9.isChecked()){cadena += "" + pa110_9.getText().toString() + "-";}
+        if(pa110_10.isChecked()){cadena += "" + pa110_10.getText().toString() + "-";}
+        if(pa110_11.isChecked()){cadena += "" + pa110_11.getText().toString() + "-";}
+        if(pa110_12.isChecked()){cadena += "" + pa110_12.getText().toString() + "-";}
+        if(pa110_13.isChecked()){cadena += "" + pa110_13.getText().toString() + "-";}
+        if(pa110_14.isChecked()){cadena += "" + pa110_14.getText().toString() + "-";}
+        if(pa110_15.isChecked()){cadena += "" + pa110_15.getText().toString() + "-";}
+        if(pa110_16.isChecked()){cadena += "" + pa110_16.getText().toString() + "-";}
+        if(pa110_17.isChecked()){cadena += "" + pa110_17.getText().toString() + "-";}
+        if(pa110_18.isChecked()){cadena += "" + pa110_18.getText().toString() + "-";}
+        if(pa110_19.isChecked()){cadena += "" + pa110_19.getText().toString() + "-";}
+        if(pa110_20.isChecked()){cadena += "" + pa110_20.getText().toString() + "-";}
+        if(pa110_21.isChecked()){cadena += "" + pa110_21.getText().toString() + "-";}
+        if(pa110_22.isChecked()){cadena += "" + pa110_22.getText().toString() + "-";}
+        if(pa110_23.isChecked()){cadena += "" + pa110_23.getText().toString() + "-";}
+        if(pa110_24.isChecked()){cadena += "" + pa110_24.getText().toString() + "-";}
+        if(pa110_25.isChecked()){cadena += "" + pa110_25.getText().toString() + "-";}
+        if(pa110_26.isChecked()){cadena += "" + pa110_26.getText().toString() + "-";}
+        if(pa110_27.isChecked()){cadena += "" + pa110_27.getText().toString() + "-";}
+        if(pa110_28.isChecked()){cadena += "" + pa110_28.getText().toString() + "-";}
+        if(pa110_29.isChecked()){cadena += "" + pa110_29.getText().toString() + "-";}
+        if(pa110_30.isChecked()){cadena += "" + pa110_30.getText().toString() + "-";}
+        if(pa110_31.isChecked()){cadena += "" + pa110_31.getText().toString() + "-";}
+        if(pa110_32.isChecked()){cadena += "" + pa110_32.getText().toString() + "-";}
+        if(pa110_33.isChecked()){cadena += "" + pa110_33.getText().toString() + "-";}
+        if(pa110_34.isChecked()){cadena += "" + pa110_34.getText().toString() + "-";}
+        if(pa110_35.isChecked()){cadena += "" + pa110_35.getText().toString() + "-";}
+        if(pa110_36.isChecked()){cadena += "" + pa110_36.getText().toString() + "-";}
+        if(pa110_37.isChecked()){cadena += "" + pa110_37.getText().toString() + "-";}
+        if(pa110_38.isChecked()){cadena += "" + pa110_38.getText().toString() + "-";}
+        if(pa110_39.isChecked()){cadena += "" + pa110_39.getText().toString() + "-";}
+        if(pa110_40.isChecked()){cadena += "" + pa110_40.getText().toString() + "-";}
+        if(pa110_41.isChecked()){cadena += "" + pa110_41.getText().toString() + "-";}
+        if(pa110_42.isChecked()){cadena += "" + pa110_42.getText().toString() + "-";}
+        if(pa110_43.isChecked()){cadena += "" + pa110_43.getText().toString() + "-";}
+        if(pa110_44.isChecked()){cadena += "" + pa110_44.getText().toString() + "-";}
+        if(pa110_45.isChecked()){cadena += "" + pa110_45.getText().toString() + "-";}
+        if(pa110_46.isChecked()){cadena += "" + pa110_46.getText().toString() + "-";}
+        if(pa110_47.isChecked()){cadena += "" + pa110_47.getText().toString() + "-";}
+        if(pa110_48.isChecked()){cadena += "" + pa110_48.getText().toString() + "-";}
+        if(pa110_49.isChecked()){cadena += "" + pa110_49.getText().toString() + "-";}
+        if(pa110_50.isChecked()){cadena += "" + pa110_50.getText().toString() + "-";}
+        if(pa110_51.isChecked()){cadena += "" + pa110_51.getText().toString() + "-";}
+        if(pa110_52.isChecked()){cadena += "" + pa110_52.getText().toString() + "-";}
+        if(pa110_53.isChecked()){cadena += "" + pa110_53.getText().toString() + "-";}
+        if(pa110_54.isChecked()){cadena += "" + pa110_54.getText().toString() + "-";}
+        if(pa110_55.isChecked()){cadena += "" + pa110_55.getText().toString() + "-";}
+        if(pa110_56.isChecked()){cadena += "" + pa110_56.getText().toString() + "-";}
+        if(pa110_57.isChecked()){cadena += "" + pa110_57.getText().toString() + "-";}
 
-
-        resultado4 = cadena4.substring(0, cadena4.length() - 1);
+        resultado4 = cadena.substring(0, cadena.length() - 1);
         return resultado4;
     }
 

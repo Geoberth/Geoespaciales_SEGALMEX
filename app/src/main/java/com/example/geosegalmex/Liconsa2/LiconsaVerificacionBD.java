@@ -11,7 +11,7 @@ import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 public class LiconsaVerificacionBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "RNPLExpediente";
-    public static final int DB_VERSION = 4;
+    public static final int DB_VERSION = 11;
 
     public LiconsaVerificacionBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

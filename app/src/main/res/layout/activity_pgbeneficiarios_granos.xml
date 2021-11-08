@@ -301,8 +301,8 @@
                 android:id="@+id/pre_garan_granos_txt14"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
-                android:hint="Escriba el número."
-                android:inputType="number"
+
+
                 android:maxLines="1" />
 
             <TextView
@@ -315,8 +315,7 @@
                 android:id="@+id/pre_garan_granos_txt15"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
-                android:hint="Escriba el número."
-                android:inputType="number"
+
                 android:maxLines="1" />
 
             <TextView
