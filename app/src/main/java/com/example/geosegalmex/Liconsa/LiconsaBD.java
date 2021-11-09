@@ -12,7 +12,7 @@ import com.example.geosegalmex.LiconsaBeneficiario.pasl_beneficiario_bd;
 public class LiconsaBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "RNPLProductor";
-    public static final int DB_VERSION = 11;
+    public static final int DB_VERSION = 12;
 
     public LiconsaBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -136,9 +136,9 @@ public class LiconsaBD extends SQLiteOpenHelper {
 
     public void deleteRNPLProductor(){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + Liconsa_bd.TABLA_BD);
-        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
-        db.close();
+        db.execSQL("DROP TABLE IF EXISTS "+ Liconsa_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
 
     }
 

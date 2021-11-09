@@ -880,111 +880,1063 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch17"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch18"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch19"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch20"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch21"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch22"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch23"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch24"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch25"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch26"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch27"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch28"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch29"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch30"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch31"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch32"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch33"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch34"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch35"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch36"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch37"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch38"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch39"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch40"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch41"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch42"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch43"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch44"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch45"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch46"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch47"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch48"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch49"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch50"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch51"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch52"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch53"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch54"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch55"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch56"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch57"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch58"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch59"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch60"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch61"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch62"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_1"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_2"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_3"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_4"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_5"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_6"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_7"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_8"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_9"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_10"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_11"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_12"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_13"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_14"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_15"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_16"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_17"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_18"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_19"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_20"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_21"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_22"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_23"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_24"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_25"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_26"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_27"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_28"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_29"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_30"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_31"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_32"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_33"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_34"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_35"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_36"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_37"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_38"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_39"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_40"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_41"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_42"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_43"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_44"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_45"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_46"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_47"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_48"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_49"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_50"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_51"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_52"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_53"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_54"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_55"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_56"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch63_57"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="Aceite comestible Patrona" />
 
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Aceite comestible Cristal" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Aceite comestible El Faro" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Agua purificada Pascual" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Agua purificada Bonafont" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Agua purificada Gugar" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Arroz a granel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="4"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Crema dental Colgate" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Crema dental Crest" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="5"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Atún Tuny" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Atún El Dorado" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Atún Dolores" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Avena GRANVITA" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Avena Sureña" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Avena Cunduacán" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Azúcar estándar a granel" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="9"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Blanqueador Cloralex" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="9"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Blanqueador Clarasol" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="10"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Blanqueador Bandera" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="10"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Café Nescafé" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="11"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Café Dolca" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="11"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Café Único" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="12"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Caldo de pollo D'Alianza" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="12"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Caldo de pollo Knorr" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="13"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Caldo de pollo Riko Pollo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="13"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Cereales en Hojuelas Michel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="14"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Cereales en Hojuelas Nestle" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="14"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Cereales en Hojuelas Golden Foods"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="15"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chiles procesados La Costeña" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="15"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chiles procesados La Morena" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="16"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chiles procesados San Marcos" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="16"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate de mesa IDEAL"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="17"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate de mesa Abuelita"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="17"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate de mesa La Soledad"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="18"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate en polvo Chocomilk" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="18"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate en polvo SEGALMEX" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="19"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate en polvo Chocoideal" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="19"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Detergente en polvo Foca"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="20"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Detergente en polvo Blancanieves" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="20"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Detergente en polvo Útil" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="21"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Ensalada de verduras La Costeña" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch58"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="21"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Frijol a granel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="22"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Galletas básicas Cuetara" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="22"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Galletas básicas Marible" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="23"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Galletas básicas La Moderna"
+                        android:textSize="12sp" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="23"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Gelatinas D'Gari" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="24"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Gelatinas Pronto" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="24"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Gelatinas GUY" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="25"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de maíz SEGALMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="25"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de maíz MASECA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="26"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de maíz HARIMASA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="26"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de trigo Selecta" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="27"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de trigo Globo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="27"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de trigo San Blas" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="28"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Huevo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="28"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Insecticida y raticida OKO" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="29"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Insecticida y raticida OFF" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="29"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Insecticida y raticida RAID" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="30"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de tocador Rosa Venus" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="30"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de tocador Tepeyac" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="31"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de tocador Lirio" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="31"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de lavandería ZOTE" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="32"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de lavandería Princesa" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="32"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de lavandería León" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="33"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jugos y néctares JUMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="33"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jugos y néctares Kermato" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="34"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jugos y néctares HERDEZ" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="34"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Leche LICONSA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="35"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Leche Delite" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="35"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Leche NUTRI RINDES" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="36"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Lentejas El Labrador" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="36"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Lentejas El Fresno" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="37"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Lentejas PROMEXA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="37"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Limpiadores Líquidos Pinol" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="38"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Limpiadores Líquidos Fabuloso" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="38"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Limpiadores Líquidos Flash" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="39"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Maíz a granel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="39"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pañales desechables Absorbec" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="40"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pañales desechables Peque" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="40"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pañales desechables Suavelastic" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="41"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Papel higiénico Big Roll" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="41"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Papel higiénico Premier" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="42"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Papel higiénico Maxima" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="42"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pasta para sopa Italpasta" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="43"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pasta para sopa La Moderna" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="43"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pasta para sopa Yemina" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="44"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Puré de tomate HERDEZ" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="44"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Puré de tomate La Costeña" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="45"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Puré de tomate La Morena" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="45"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sal de mesa La Fina" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="46"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sal de mesa Roche" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="46"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sal de mesa Sol" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="47"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sardina FRESH LABEL" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="47"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sardina GUAYMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="48"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sardina CALMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="48"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Servilletas PETALO" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="49"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Servilletas LYS" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="49"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Servilletas ELITE" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="50"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Soya texturizada Nutricasa" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="50"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Soya texturizada PRODEA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="51"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Soya texturizada Clase Foods" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="51"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Toallas sanitarias SABA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="52"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Toallas sanitarias Kotex" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked"
+                        android:id="@+id/par_et_ch63_57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="52"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Toallas sanitarias Naturella" />
 
                 </GridLayout>
 
@@ -1010,111 +1962,1063 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch64"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch65"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch66"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch67"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch68"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch69"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch70"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch71"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch72"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch73"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch74"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch75"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch76"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch77"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch78"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch79"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch80"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch81"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch82"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch83"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch84"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch85"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch86"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch87"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch88"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch89"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch90"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch91"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch92"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch93"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch94"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch95"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch96"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch97"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch98"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch99"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch100"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch101"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch102"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch103"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch104"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch105"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch106"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch107"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch108"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch109"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_1"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_2"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_3"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_4"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_5"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_6"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_7"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_8"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_9"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_10"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_11"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_12"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_13"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_14"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_15"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_16"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_17"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_18"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_19"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_20"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_21"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_22"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_23"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_24"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_25"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_26"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_27"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_28"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_29"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_30"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_31"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_32"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_33"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_34"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_35"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_36"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_37"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_38"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_39"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_40"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_41"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_42"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_43"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_44"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_45"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_46"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_47"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_48"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_49"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_50"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_51"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_52"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_53"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_54"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_55"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_56"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="0"  android:layout_row="1" android:layout_height="wrap_content"/>
-                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2" android:enabled="true"   android:layout_marginTop="0dp" android:layout_width="wrap_content"    android:id="@+id/par_et_ch110_57"  android:text="Aceite comestible cristal PATRONA"   android:layout_column="2"  android:layout_row="1" android:layout_height="wrap_content"/>
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_marginTop="1dp"
+                        android:enabled="true"
+                        android:text="Aceite comestible Patrona" />
 
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Aceite comestible Cristal" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Aceite comestible El Faro" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="2"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Agua purificada Pascual" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch68"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Agua purificada Bonafont" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch69"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Agua purificada Gugar" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Arroz a granel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="4"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Crema dental Colgate" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Crema dental Crest" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch73"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="5"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Atún Tuny" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch74"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Atún El Dorado" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch75"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Atún Dolores" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch76"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Avena GRANVITA" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Avena Sureña" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch78"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Avena Cunduacán" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch79"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Azúcar estándar a granel" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch80"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="9"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Blanqueador Cloralex" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="9"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Blanqueador Clarasol" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch82"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="10"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Blanqueador Bandera" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch83"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="10"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Café Nescafé" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch84"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="11"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Café Dolca" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="11"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Café Único" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch86"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="12"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Caldo de pollo D'Alianza" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch87"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="12"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Caldo de pollo Knorr" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch88"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="13"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Caldo de pollo Riko Pollo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch89"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="13"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Cereales en Hojuelas Michel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="14"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Cereales en Hojuelas Nestle" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch91"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="14"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Cereales en Hojuelas Golden Foods"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch92"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="15"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chiles procesados La Costeña" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch93"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="15"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chiles procesados La Morena" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch94"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="16"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chiles procesados San Marcos" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch95"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="16"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate de mesa IDEAL"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch96"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="17"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate de mesa Abuelita"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch97"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="17"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate de mesa La Soledad"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch98"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="18"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate en polvo Chocomilk" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="18"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate en polvo SEGALMEX" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="19"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Chocolate en polvo Chocoideal" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="19"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Detergente en polvo Foca"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="20"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Detergente en polvo Blancanieves" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch103"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="20"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Detergente en polvo Útil" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch104"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="21"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Ensalada de verduras La Costeña" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch105"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="21"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Frijol a granel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch106"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="22"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Galletas básicas Cuetara" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch107"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="22"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Galletas básicas Marible" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch108"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="23"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Galletas básicas La Moderna"
+                        android:textSize="12sp" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch109"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="23"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Gelatinas D'Gari" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="24"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Gelatinas Pronto" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="24"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Gelatinas GUY" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="25"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de maíz SEGALMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="25"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de maíz MASECA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="26"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de maíz HARIMASA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="26"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de trigo Selecta" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="27"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de trigo Globo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="27"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Harina de trigo San Blas" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="28"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Huevo" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="28"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Insecticida y raticida OKO" />
+
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="29"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Insecticida y raticida OFF" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="29"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Insecticida y raticida RAID" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="30"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de tocador Rosa Venus" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="30"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de tocador Tepeyac" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="31"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de tocador Lirio" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="31"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de lavandería ZOTE" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="32"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de lavandería Princesa" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="32"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jabón de lavandería León" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="33"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jugos y néctares JUMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="33"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jugos y néctares Kermato" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="34"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Jugos y néctares HERDEZ" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="34"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Leche LICONSA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="35"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Leche Delite" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="35"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Leche NUTRI RINDES" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="36"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Lentejas El Labrador" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="36"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Lentejas El Fresno" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="37"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Lentejas PROMEXA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="37"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Limpiadores Líquidos Pinol" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="38"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Limpiadores Líquidos Fabuloso" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="38"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Limpiadores Líquidos Flash" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="39"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Maíz a granel" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="39"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pañales desechables Absorbec" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="40"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pañales desechables Peque" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="40"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pañales desechables Suavelastic" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="41"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Papel higiénico Big Roll" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="41"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Papel higiénico Premier" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="42"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Papel higiénico Maxima" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="42"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pasta para sopa Italpasta" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="43"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pasta para sopa La Moderna" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="43"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Pasta para sopa Yemina" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="44"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Puré de tomate HERDEZ" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="44"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Puré de tomate La Costeña" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="45"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Puré de tomate La Morena" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="45"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sal de mesa La Fina" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="46"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sal de mesa Roche" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="46"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sal de mesa Sol" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="47"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sardina FRESH LABEL" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="47"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sardina GUAYMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="48"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Sardina CALMEX" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="48"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Servilletas PETALO" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="49"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Servilletas LYS" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="49"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Servilletas ELITE" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="50"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Soya texturizada Nutricasa" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="50"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Soya texturizada PRODEA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="51"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Soya texturizada Clase Foods" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="51"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Toallas sanitarias SABA" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="52"
+                        android:layout_column="0"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Toallas sanitarias Kotex" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox  android:onClick="itemClicked2"
+                        android:id="@+id/par_et_ch110_57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="52"
+                        android:layout_column="2"
+                        android:layout_marginTop="0dp"
+                        android:enabled="true"
+                        android:text="Toallas sanitarias Naturella" />
                 </GridLayout>
 
             </HorizontalScrollView>

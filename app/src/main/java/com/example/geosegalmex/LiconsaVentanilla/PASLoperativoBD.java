@@ -13,7 +13,7 @@ import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 public class PASLoperativoBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PASLOperativo";
-    public static final int DB_VERSION = 11;
+    public static final int DB_VERSION = 12;
 
     public PASLoperativoBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -84,9 +84,11 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
 
     public void deletePASLoperativo(){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + pasl_operativo_bd.TABLA_BD);
-        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
-        db.close();
+        db.execSQL("DELETE FROM "+ pasl_operativo_bd.TABLA_BD);
+        db.execSQL("DELETE FROM "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        db.execSQL("DROP TABLE IF EXISTS "+ pasl_operativo_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
 
     }
 

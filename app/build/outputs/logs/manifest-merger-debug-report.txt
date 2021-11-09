@@ -14,6 +14,7 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\erick.burgo
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\erick.burgos\caches\transforms-3\075522a55ae82583a7d3b553bb99993c\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\erick.burgos\caches\transforms-3\19d97ca9758edac668220bd2f298cba2\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\erick.burgos\caches\transforms-3\a489357eef7c914f4d8c5503ac034cef\transformed\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.f0ris.sweetalert:library:1.5.6] C:\Users\erick.burgos\caches\transforms-3\a3768f6910d1b3b42800f52ae6b740d0\transformed\jetified-library-1.5.6\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\06f08a7c9eb92bee56db18779f31a479\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\erick.burgos\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\erick.burgos\caches\transforms-3\2fd72d8224e477335a7a34c602035317\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
@@ -55,6 +56,7 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\erick.burgos\cac
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\erick.burgos\caches\transforms-3\eb3bd80f829817dc46cef00554f9b4ab\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\erick.burgos\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\erick.burgos\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.pnikosis:materialish-progress:1.7] C:\Users\erick.burgos\caches\transforms-3\9ab3b8a7d6b1c5b53effc13cac550d0d\transformed\jetified-materialish-progress-1.7\AndroidManifest.xml:2:1-13:12
 INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:2:1-221:12
 INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:2:1-221:12
 INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:2:1-221:12
@@ -120,6 +122,8 @@ MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\eric
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\erick.burgos\caches\transforms-3\19d97ca9758edac668220bd2f298cba2\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\erick.burgos\caches\transforms-3\a489357eef7c914f4d8c5503ac034cef\transformed\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\erick.burgos\caches\transforms-3\a489357eef7c914f4d8c5503ac034cef\transformed\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.f0ris.sweetalert:library:1.5.6] C:\Users\erick.burgos\caches\transforms-3\a3768f6910d1b3b42800f52ae6b740d0\transformed\jetified-library-1.5.6\AndroidManifest.xml:11:5-20
+MERGED from [com.github.f0ris.sweetalert:library:1.5.6] C:\Users\erick.burgos\caches\transforms-3\a3768f6910d1b3b42800f52ae6b740d0\transformed\jetified-library-1.5.6\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\06f08a7c9eb92bee56db18779f31a479\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\06f08a7c9eb92bee56db18779f31a479\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\erick.burgos\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
@@ -134,6 +138,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\erick.burgos\c
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\erick.burgos\caches\transforms-3\cd60021bf2f3983f31ba46e306c12503\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\erick.burgos\caches\transforms-3\75cb0929a6f85c2da435fad4c201e57a\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\erick.burgos\caches\transforms-3\75cb0929a6f85c2da435fad4c201e57a\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.pnikosis:materialish-progress:1.7] C:\Users\erick.burgos\caches\transforms-3\9ab3b8a7d6b1c5b53effc13cac550d0d\transformed\jetified-materialish-progress-1.7\AndroidManifest.xml:11:5-20
+MERGED from [com.pnikosis:materialish-progress:1.7] C:\Users\erick.burgos\caches\transforms-3\9ab3b8a7d6b1c5b53effc13cac550d0d\transformed\jetified-materialish-progress-1.7\AndroidManifest.xml:11:5-20
 	android:requestLegacyExternalStorage
 		ADDED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml:21:9-52
 	android:appComponentFactory
@@ -782,6 +788,8 @@ MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\eric
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\erick.burgos\caches\transforms-3\19d97ca9758edac668220bd2f298cba2\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\erick.burgos\caches\transforms-3\a489357eef7c914f4d8c5503ac034cef\transformed\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\erick.burgos\caches\transforms-3\a489357eef7c914f4d8c5503ac034cef\transformed\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.github.f0ris.sweetalert:library:1.5.6] C:\Users\erick.burgos\caches\transforms-3\a3768f6910d1b3b42800f52ae6b740d0\transformed\jetified-library-1.5.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.f0ris.sweetalert:library:1.5.6] C:\Users\erick.burgos\caches\transforms-3\a3768f6910d1b3b42800f52ae6b740d0\transformed\jetified-library-1.5.6\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\06f08a7c9eb92bee56db18779f31a479\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\erick.burgos\caches\transforms-3\06f08a7c9eb92bee56db18779f31a479\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\erick.burgos\caches\transforms-3\c06fd3a3fdef78da88f554eb3537a124\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
@@ -864,6 +872,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\erick.burgos\caches\transforms
 MERGED from [androidx.print:print:1.0.0] C:\Users\erick.burgos\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\erick.burgos\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\erick.burgos\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.pnikosis:materialish-progress:1.7] C:\Users\erick.burgos\caches\transforms-3\9ab3b8a7d6b1c5b53effc13cac550d0d\transformed\jetified-materialish-progress-1.7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.pnikosis:materialish-progress:1.7] C:\Users\erick.burgos\caches\transforms-3\9ab3b8a7d6b1c5b53effc13cac550d0d\transformed\jetified-materialish-progress-1.7\AndroidManifest.xml:7:5-9:41
 INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\erick.burgos\AndroidStudioProjects\Geoespaciales_SEGALMEX\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion

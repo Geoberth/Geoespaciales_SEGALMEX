@@ -13,7 +13,7 @@ import com.example.geosegalmex.Liconsa2.LiconsaVerificacion_bd;
 public class PGOperativoEstimulosBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PGOperativoEstimulos";
-    public static final int DB_VERSION = 4;
+    public static final int DB_VERSION = 12;
 
     public PGOperativoEstimulosBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -75,8 +75,9 @@ public class PGOperativoEstimulosBD extends SQLiteOpenHelper {
 
     public void deletePGOperativoEstimulos(){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + PGOperativoEstimulos_bd.TABLA_BD);
-
+        db.execSQL("DROP TABLE IF EXISTS "+ PGOperativoEstimulos_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
     }
 
     public boolean addTrayectoriaS(String folioPro, String folioBrig, String longGpsSave, String latiGpsSave, String horaActl, String fechaActl){

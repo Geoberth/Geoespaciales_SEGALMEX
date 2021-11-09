@@ -48,6 +48,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -97,51 +99,71 @@ public class ExportarFragment extends Fragment {
         aaaa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PASLoperativoBD baseBD;
-                baseBD = new PASLoperativoBD(getContext());
-                baseBD.deletePASLoperativo();
 
-                PASLbeneficiarioBD baseBD2;
-                baseBD2 = new PASLbeneficiarioBD(getContext());
-                baseBD2.deletePASLbeneficiario();
+                new SweetAlertDialog(getContext(), SweetAlertDialog.WARNING_TYPE)
+                        .setTitleText("Estas segur@?")
+                        .setContentText("Deseas borrar tus registros")
+                        .setConfirmText("Si")
+                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                            @Override
+                            public void onClick(SweetAlertDialog sDialog) {
+                                PASLoperativoBD baseBD;
+                                baseBD = new PASLoperativoBD(getContext());
+                                baseBD.deletePASLoperativo();
 
-                LiconsaBD baseBD3;
-                baseBD3 = new LiconsaBD(getContext());
-                baseBD3.deleteRNPLProductor();
+                                PASLbeneficiarioBD baseBD2;
+                                baseBD2 = new PASLbeneficiarioBD(getContext());
+                                baseBD2.deletePASLbeneficiario();
 
-                LiconsaVerificacionBD baseBD4;
-                baseBD4 = new LiconsaVerificacionBD(getContext());
-                baseBD4.deleteRNPLExpediente();
+                                LiconsaBD baseBD3;
+                                baseBD3 = new LiconsaBD(getContext());
+                                baseBD3.deleteRNPLProductor();
 
-                PARBeneficiarioBD baseBD5;
-                baseBD5 = new PARBeneficiarioBD(getContext());
-                baseBD5.deletePARBeneficiario();
+                                LiconsaVerificacionBD baseBD4;
+                                baseBD4 = new LiconsaVerificacionBD(getContext());
+                                baseBD4.deleteRNPLExpediente();
 
-                PARoperativoBD baseBD6;
-                baseBD6 = new PARoperativoBD(getContext());
-                baseBD6.deleteaddPAR_Operativo();
+                                PARBeneficiarioBD baseBD5;
+                                baseBD5 = new PARBeneficiarioBD(getContext());
+                                baseBD5.deletePARBeneficiario();
 
-                PGBgranosBD baseBD7;
-                baseBD7 = new PGBgranosBD(getContext());
-                baseBD7.deletePGBeneficiarioGranos();
+                                PARoperativoBD baseBD6;
+                                baseBD6 = new PARoperativoBD(getContext());
+                                baseBD6.deleteaddPAR_Operativo();
 
-                PGBeneficiarioLecheBD baseBD8;
-                baseBD8 = new PGBeneficiarioLecheBD(getContext());
-                baseBD8.deletePGBeneficiarioLeche();
+                                PGBgranosBD baseBD7;
+                                baseBD7 = new PGBgranosBD(getContext());
+                                baseBD7.deletePGBeneficiarioGranos();
 
-                PGOperativoEstimulosBD baseBD9;
-                baseBD9 = new PGOperativoEstimulosBD(getContext());
-                baseBD9.deletePGOperativoEstimulos();
+                                PGBeneficiarioLecheBD baseBD8;
+                                baseBD8 = new PGBeneficiarioLecheBD(getContext());
+                                baseBD8.deletePGBeneficiarioLeche();
 
-                PGOperativoGranosBD baseBD10;
-                baseBD10 = new PGOperativoGranosBD(getContext());
-                baseBD10.deletePGOperativoGranos();
+                                PGOperativoEstimulosBD baseBD9;
+                                baseBD9 = new PGOperativoEstimulosBD(getContext());
+                                baseBD9.deletePGOperativoEstimulos();
 
-                PGOperativoLecheBD baseBD11;
-                baseBD11 = new PGOperativoLecheBD(getContext());
-                baseBD11.deletePGOperativoLeche();
-                ed1.setText("Listo!, Bases de datos borradas.");
-                ed1.setVisibility(View.VISIBLE);
+                                PGOperativoGranosBD baseBD10;
+                                baseBD10 = new PGOperativoGranosBD(getContext());
+                                baseBD10.deletePGOperativoGranos();
+
+                                PGOperativoLecheBD baseBD11;
+                                baseBD11 = new PGOperativoLecheBD(getContext());
+                                baseBD11.deletePGOperativoLeche();
+                                ed1.setText("Bases de datos borradas.");
+                                ed1.setVisibility(View.VISIBLE);
+                                sDialog.dismissWithAnimation();
+                            }
+                        })
+                        .setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {
+                            @Override
+                            public void onClick(SweetAlertDialog sDialog) {
+                                sDialog.dismissWithAnimation();
+                            }
+                        })
+                        .show();
+
+
             }
 
         });

@@ -17,7 +17,7 @@ import java.util.List;
 public class PARoperativoBD  extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "PAROperativo";
-    public static final int DB_VERSION = 11;
+    public static final int DB_VERSION = 12;
 
     public PARoperativoBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -32,7 +32,7 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + PGOperativoGranos_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS " + PAR_operativo_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
         onCreate(db);
     }
@@ -222,9 +222,9 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
 
     public void deleteaddPAR_Operativo(){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + PAR_operativo_bd.TABLA_BD);
-        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
-        db.close();
+        db.execSQL("DROP TABLE IF EXISTS " + PAR_operativo_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
 
     }
 

@@ -13,7 +13,7 @@ import com.example.geosegalmex.LiconsaVentanilla.pasl_operativo_bd;
 public class PASLbeneficiarioBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PASLBeneficiario";
-    public static final int DB_VERSION = 11;
+    public static final int DB_VERSION = 12;
 
     public PASLbeneficiarioBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -88,9 +88,9 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
 
     public void deletePASLbeneficiario(){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + pasl_beneficiario_bd.TABLA_BD);
-        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
-        db.close();
+        db.execSQL("DROP TABLE IF EXISTS "+ pasl_beneficiario_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
 
     }
 

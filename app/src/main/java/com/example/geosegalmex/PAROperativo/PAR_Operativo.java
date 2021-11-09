@@ -318,63 +318,63 @@ public class PAR_Operativo extends AppCompatActivity {
         parec109=(CheckBox)findViewById(R.id.par_et_ch109);
         parec110=(CheckBox)findViewById(R.id.par_et_ch110);
 
-        pa110_1=(CheckBox)findViewById(R.id.par_et_ch63_1);
-        pa110_2=(CheckBox)findViewById(R.id.par_et_ch63_2);
-        pa110_3=(CheckBox)findViewById(R.id.par_et_ch63_3);
-        pa110_4=(CheckBox)findViewById(R.id.par_et_ch63_4);
-        pa110_5=(CheckBox)findViewById(R.id.par_et_ch63_5);
-        pa110_6=(CheckBox)findViewById(R.id.par_et_ch63_6);
-        pa110_7=(CheckBox)findViewById(R.id.par_et_ch63_7);
-        pa110_8=(CheckBox)findViewById(R.id.par_et_ch63_8);
-        pa110_9=(CheckBox)findViewById(R.id.par_et_ch63_9);
-        pa110_10=(CheckBox)findViewById(R.id.par_et_ch63_10);
-        pa110_11=(CheckBox)findViewById(R.id.par_et_ch63_11);
-        pa110_12=(CheckBox)findViewById(R.id.par_et_ch63_12);
-        pa110_13=(CheckBox)findViewById(R.id.par_et_ch63_13);
-        pa110_14=(CheckBox)findViewById(R.id.par_et_ch63_14);
-        pa110_15=(CheckBox)findViewById(R.id.par_et_ch63_15);
-        pa110_16=(CheckBox)findViewById(R.id.par_et_ch63_16);
-        pa110_17=(CheckBox)findViewById(R.id.par_et_ch63_17);
-        pa110_18=(CheckBox)findViewById(R.id.par_et_ch63_18);
-        pa110_19=(CheckBox)findViewById(R.id.par_et_ch63_19);
-        pa110_20=(CheckBox)findViewById(R.id.par_et_ch63_20);
-        pa110_21=(CheckBox)findViewById(R.id.par_et_ch63_21);
-        pa110_22=(CheckBox)findViewById(R.id.par_et_ch63_22);
-        pa110_23=(CheckBox)findViewById(R.id.par_et_ch63_23);
-        pa110_24=(CheckBox)findViewById(R.id.par_et_ch63_24);
-        pa110_25=(CheckBox)findViewById(R.id.par_et_ch63_25);
-        pa110_26=(CheckBox)findViewById(R.id.par_et_ch63_26);
-        pa110_27=(CheckBox)findViewById(R.id.par_et_ch63_27);
-        pa110_28=(CheckBox)findViewById(R.id.par_et_ch63_28);
-        pa110_29=(CheckBox)findViewById(R.id.par_et_ch63_29);
-        pa110_30=(CheckBox)findViewById(R.id.par_et_ch63_30);
-        pa110_31=(CheckBox)findViewById(R.id.par_et_ch63_31);
-        pa110_32=(CheckBox)findViewById(R.id.par_et_ch63_32);
-        pa110_33=(CheckBox)findViewById(R.id.par_et_ch63_33);
-        pa110_34=(CheckBox)findViewById(R.id.par_et_ch63_34);
-        pa110_35=(CheckBox)findViewById(R.id.par_et_ch63_35);
-        pa110_36=(CheckBox)findViewById(R.id.par_et_ch63_36);
-        pa110_37=(CheckBox)findViewById(R.id.par_et_ch63_37);
-        pa110_38=(CheckBox)findViewById(R.id.par_et_ch63_38);
-        pa110_39=(CheckBox)findViewById(R.id.par_et_ch63_39);
-        pa110_40=(CheckBox)findViewById(R.id.par_et_ch63_40);
-        pa110_41=(CheckBox)findViewById(R.id.par_et_ch63_41);
-        pa110_42=(CheckBox)findViewById(R.id.par_et_ch63_42);
-        pa110_43=(CheckBox)findViewById(R.id.par_et_ch63_43);
-        pa110_44=(CheckBox)findViewById(R.id.par_et_ch63_44);
-        pa110_45=(CheckBox)findViewById(R.id.par_et_ch63_45);
-        pa110_46=(CheckBox)findViewById(R.id.par_et_ch63_46);
-        pa110_47=(CheckBox)findViewById(R.id.par_et_ch63_47);
-        pa110_48=(CheckBox)findViewById(R.id.par_et_ch63_48);
-        pa110_49=(CheckBox)findViewById(R.id.par_et_ch63_49);
-        pa110_50=(CheckBox)findViewById(R.id.par_et_ch63_50);
-        pa110_51=(CheckBox)findViewById(R.id.par_et_ch63_51);
-        pa110_52=(CheckBox)findViewById(R.id.par_et_ch63_52);
-        pa110_53=(CheckBox)findViewById(R.id.par_et_ch63_53);
-        pa110_54=(CheckBox)findViewById(R.id.par_et_ch63_54);
-        pa110_55=(CheckBox)findViewById(R.id.par_et_ch63_55);
-        pa110_56=(CheckBox)findViewById(R.id.par_et_ch63_56);
-        pa110_57=(CheckBox)findViewById(R.id.par_et_ch63_57);
+        pa110_1=(CheckBox)findViewById(R.id.par_et_ch110_1);
+        pa110_2=(CheckBox)findViewById(R.id.par_et_ch110_2);
+        pa110_3=(CheckBox)findViewById(R.id.par_et_ch110_3);
+        pa110_4=(CheckBox)findViewById(R.id.par_et_ch110_4);
+        pa110_5=(CheckBox)findViewById(R.id.par_et_ch110_5);
+        pa110_6=(CheckBox)findViewById(R.id.par_et_ch110_6);
+        pa110_7=(CheckBox)findViewById(R.id.par_et_ch110_7);
+        pa110_8=(CheckBox)findViewById(R.id.par_et_ch110_8);
+        pa110_9=(CheckBox)findViewById(R.id.par_et_ch110_9);
+        pa110_10=(CheckBox)findViewById(R.id.par_et_ch110_10);
+        pa110_11=(CheckBox)findViewById(R.id.par_et_ch110_11);
+        pa110_12=(CheckBox)findViewById(R.id.par_et_ch110_12);
+        pa110_13=(CheckBox)findViewById(R.id.par_et_ch110_13);
+        pa110_14=(CheckBox)findViewById(R.id.par_et_ch110_14);
+        pa110_15=(CheckBox)findViewById(R.id.par_et_ch110_15);
+        pa110_16=(CheckBox)findViewById(R.id.par_et_ch110_16);
+        pa110_17=(CheckBox)findViewById(R.id.par_et_ch110_17);
+        pa110_18=(CheckBox)findViewById(R.id.par_et_ch110_18);
+        pa110_19=(CheckBox)findViewById(R.id.par_et_ch110_19);
+        pa110_20=(CheckBox)findViewById(R.id.par_et_ch110_20);
+        pa110_21=(CheckBox)findViewById(R.id.par_et_ch110_21);
+        pa110_22=(CheckBox)findViewById(R.id.par_et_ch110_22);
+        pa110_23=(CheckBox)findViewById(R.id.par_et_ch110_23);
+        pa110_24=(CheckBox)findViewById(R.id.par_et_ch110_24);
+        pa110_25=(CheckBox)findViewById(R.id.par_et_ch110_25);
+        pa110_26=(CheckBox)findViewById(R.id.par_et_ch110_26);
+        pa110_27=(CheckBox)findViewById(R.id.par_et_ch110_27);
+        pa110_28=(CheckBox)findViewById(R.id.par_et_ch110_28);
+        pa110_29=(CheckBox)findViewById(R.id.par_et_ch110_29);
+        pa110_30=(CheckBox)findViewById(R.id.par_et_ch110_30);
+        pa110_31=(CheckBox)findViewById(R.id.par_et_ch110_31);
+        pa110_32=(CheckBox)findViewById(R.id.par_et_ch110_32);
+        pa110_33=(CheckBox)findViewById(R.id.par_et_ch110_33);
+        pa110_34=(CheckBox)findViewById(R.id.par_et_ch110_34);
+        pa110_35=(CheckBox)findViewById(R.id.par_et_ch110_35);
+        pa110_36=(CheckBox)findViewById(R.id.par_et_ch110_36);
+        pa110_37=(CheckBox)findViewById(R.id.par_et_ch110_37);
+        pa110_38=(CheckBox)findViewById(R.id.par_et_ch110_38);
+        pa110_39=(CheckBox)findViewById(R.id.par_et_ch110_39);
+        pa110_40=(CheckBox)findViewById(R.id.par_et_ch110_40);
+        pa110_41=(CheckBox)findViewById(R.id.par_et_ch110_41);
+        pa110_42=(CheckBox)findViewById(R.id.par_et_ch110_42);
+        pa110_43=(CheckBox)findViewById(R.id.par_et_ch110_43);
+        pa110_44=(CheckBox)findViewById(R.id.par_et_ch110_44);
+        pa110_45=(CheckBox)findViewById(R.id.par_et_ch110_45);
+        pa110_46=(CheckBox)findViewById(R.id.par_et_ch110_46);
+        pa110_47=(CheckBox)findViewById(R.id.par_et_ch110_47);
+        pa110_48=(CheckBox)findViewById(R.id.par_et_ch110_48);
+        pa110_49=(CheckBox)findViewById(R.id.par_et_ch110_49);
+        pa110_50=(CheckBox)findViewById(R.id.par_et_ch110_50);
+        pa110_51=(CheckBox)findViewById(R.id.par_et_ch110_51);
+        pa110_52=(CheckBox)findViewById(R.id.par_et_ch110_52);
+        pa110_53=(CheckBox)findViewById(R.id.par_et_ch110_53);
+        pa110_54=(CheckBox)findViewById(R.id.par_et_ch110_54);
+        pa110_55=(CheckBox)findViewById(R.id.par_et_ch110_55);
+        pa110_56=(CheckBox)findViewById(R.id.par_et_ch110_56);
+        pa110_57=(CheckBox)findViewById(R.id.par_et_ch110_57);
 
 
         //Fin checkboxes
@@ -1000,8 +1000,112 @@ public class PAR_Operativo extends AppCompatActivity {
             if(pa63_55.isChecked()){pa63_55.setEnabled(true);}else{pa63_55.setEnabled(false);}
             if(pa63_56.isChecked()){pa63_56.setEnabled(true);}else{pa63_56.setEnabled(false);}
             if(pa63_57.isChecked()){pa63_57.setEnabled(true);}else{pa63_57.setEnabled(false);}
-
-
+        }
+        else{
+            parec17.setEnabled(true);
+            parec18.setEnabled(true);
+            parec19.setEnabled(true);
+            parec20.setEnabled(true);
+            parec21.setEnabled(true);
+            parec22.setEnabled(true);
+            parec23.setEnabled(true);
+            parec24.setEnabled(true);
+            parec25.setEnabled(true);
+            parec26.setEnabled(true);
+            parec27.setEnabled(true);
+            parec28.setEnabled(true);
+            parec29.setEnabled(true);
+            parec30.setEnabled(true);
+            parec31.setEnabled(true);
+            parec32.setEnabled(true);
+            parec33.setEnabled(true);
+            parec34.setEnabled(true);
+            parec35.setEnabled(true);
+            parec36.setEnabled(true);
+            parec37.setEnabled(true);
+            parec38.setEnabled(true);
+            parec39.setEnabled(true);
+            parec40.setEnabled(true);
+            parec41.setEnabled(true);
+            parec42.setEnabled(true);
+            parec43.setEnabled(true);
+            parec44.setEnabled(true);
+            parec45.setEnabled(true);
+            parec46.setEnabled(true);
+            parec47.setEnabled(true);
+            parec48.setEnabled(true);
+            parec49.setEnabled(true);
+            parec50.setEnabled(true);
+            parec51.setEnabled(true);
+            parec52.setEnabled(true);
+            parec53.setEnabled(true);
+            parec54.setEnabled(true);
+            parec55.setEnabled(true);
+            parec56.setEnabled(true);
+            parec57.setEnabled(true);
+            parec58.setEnabled(true);
+            parec59.setEnabled(true);
+            parec60.setEnabled(true);
+            parec61.setEnabled(true);
+            parec62.setEnabled(true);
+            parec63.setEnabled(true);
+             pa63_1.setEnabled(true);
+             pa63_2.setEnabled(true);
+             pa63_3.setEnabled(true);
+             pa63_4.setEnabled(true);
+             pa63_5.setEnabled(true);
+             pa63_6.setEnabled(true);
+             pa63_7.setEnabled(true);
+             pa63_8.setEnabled(true);
+             pa63_9.setEnabled(true);
+        pa63_10.setEnabled(true);
+        pa63_11.setEnabled(true);
+        pa63_12.setEnabled(true);
+        pa63_13.setEnabled(true);
+        pa63_14.setEnabled(true);
+        pa63_15.setEnabled(true);
+        pa63_16.setEnabled(true);
+        pa63_17.setEnabled(true);
+        pa63_18.setEnabled(true);
+        pa63_19.setEnabled(true);
+        pa63_20.setEnabled(true);
+        pa63_21.setEnabled(true);
+        pa63_22.setEnabled(true);
+        pa63_23.setEnabled(true);
+        pa63_24.setEnabled(true);
+        pa63_25.setEnabled(true);
+        pa63_26.setEnabled(true);
+        pa63_27.setEnabled(true);
+        pa63_28.setEnabled(true);
+        pa63_29.setEnabled(true);
+        pa63_30.setEnabled(true);
+        pa63_31.setEnabled(true);
+        pa63_32.setEnabled(true);
+        pa63_33.setEnabled(true);
+        pa63_34.setEnabled(true);
+        pa63_35.setEnabled(true);
+        pa63_36.setEnabled(true);
+        pa63_37.setEnabled(true);
+        pa63_38.setEnabled(true);
+        pa63_39.setEnabled(true);
+        pa63_40.setEnabled(true);
+        pa63_41.setEnabled(true);
+        pa63_42.setEnabled(true);
+        pa63_43.setEnabled(true);
+        pa63_44.setEnabled(true);
+        pa63_45.setEnabled(true);
+        pa63_46.setEnabled(true);
+        pa63_47.setEnabled(true);
+        pa63_48.setEnabled(true);
+        pa63_49.setEnabled(true);
+        pa63_50.setEnabled(true);
+        pa63_51.setEnabled(true);
+        pa63_52.setEnabled(true);
+        pa63_53.setEnabled(true);
+        pa63_54.setEnabled(true);
+        pa63_55.setEnabled(true);
+        pa63_56.setEnabled(true);
+        pa63_57.setEnabled(true);
         }
     }
 
@@ -1011,12 +1115,12 @@ public class PAR_Operativo extends AppCompatActivity {
         //code to check if this checkbox is checked!
         CheckBox checkBox = (CheckBox) v;
         if (checkBox.isChecked()) {
-            bandera = bandera + 1;
+            bandera2 = bandera2 + 1;
         } else {
-            bandera = bandera - 1;
+            bandera2 = bandera2 - 1;
         }
 
-        if (bandera >= 5) {
+        if (bandera2 >= 5) {
             if(parec64.isChecked()){parec64.setEnabled(true);}else{parec64.setEnabled(false);}
             if(parec65.isChecked()){parec65.setEnabled(true);}else{parec65.setEnabled(false);}
             if(parec66.isChecked()){parec66.setEnabled(true);}else{parec66.setEnabled(false);}
@@ -1123,6 +1227,112 @@ public class PAR_Operativo extends AppCompatActivity {
             if(pa110_57.isChecked()){pa110_57.setEnabled(true);}else{pa110_57.setEnabled(false);}
 
 
+        }
+        else{
+        parec64.setEnabled(true);
+        parec65.setEnabled(true);
+        parec66.setEnabled(true);
+        parec67.setEnabled(true);
+        parec68.setEnabled(true);
+        parec69.setEnabled(true);
+        parec70.setEnabled(true);
+        parec71.setEnabled(true);
+        parec72.setEnabled(true);
+        parec73.setEnabled(true);
+        parec74.setEnabled(true);
+        parec75.setEnabled(true);
+        parec76.setEnabled(true);
+        parec77.setEnabled(true);
+        parec78.setEnabled(true);
+        parec79.setEnabled(true);
+        parec80.setEnabled(true);
+        parec81.setEnabled(true);
+        parec82.setEnabled(true);
+        parec83.setEnabled(true);
+        parec84.setEnabled(true);
+        parec85.setEnabled(true);
+        parec86.setEnabled(true);
+        parec87.setEnabled(true);
+        parec88.setEnabled(true);
+        parec89.setEnabled(true);
+        parec90.setEnabled(true);
+        parec91.setEnabled(true);
+        parec92.setEnabled(true);
+        parec93.setEnabled(true);
+        parec94.setEnabled(true);
+        parec95.setEnabled(true);
+        parec96.setEnabled(true);
+        parec97.setEnabled(true);
+        parec98.setEnabled(true);
+        parec99.setEnabled(true);
+        parec100.setEnabled(true);
+        parec101.setEnabled(true);
+        parec102.setEnabled(true);
+        parec103.setEnabled(true);
+        parec104.setEnabled(true);
+        parec105.setEnabled(true);
+        parec106.setEnabled(true);
+        parec107.setEnabled(true);
+        parec108.setEnabled(true);
+        parec109.setEnabled(true);
+        parec110.setEnabled(true);
+        pa110_1.setEnabled(true);
+        pa110_2.setEnabled(true);
+        pa110_3.setEnabled(true);
+        pa110_4.setEnabled(true);
+        pa110_5.setEnabled(true);
+        pa110_6.setEnabled(true);
+        pa110_7.setEnabled(true);
+        pa110_8.setEnabled(true);
+        pa110_9.setEnabled(true);
+        pa110_10.setEnabled(true);
+        pa110_11.setEnabled(true);
+        pa110_12.setEnabled(true);
+        pa110_13.setEnabled(true);
+        pa110_14.setEnabled(true);
+        pa110_15.setEnabled(true);
+        pa110_16.setEnabled(true);
+        pa110_17.setEnabled(true);
+        pa110_18.setEnabled(true);
+        pa110_19.setEnabled(true);
+        pa110_20.setEnabled(true);
+        pa110_21.setEnabled(true);
+        pa110_22.setEnabled(true);
+        pa110_23.setEnabled(true);
+        pa110_24.setEnabled(true);
+        pa110_25.setEnabled(true);
+        pa110_26.setEnabled(true);
+        pa110_27.setEnabled(true);
+        pa110_28.setEnabled(true);
+        pa110_29.setEnabled(true);
+        pa110_30.setEnabled(true);
+        pa110_31.setEnabled(true);
+        pa110_32.setEnabled(true);
+        pa110_33.setEnabled(true);
+        pa110_34.setEnabled(true);
+        pa110_35.setEnabled(true);
+        pa110_36.setEnabled(true);
+        pa110_37.setEnabled(true);
+        pa110_38.setEnabled(true);
+        pa110_39.setEnabled(true);
+        pa110_40.setEnabled(true);
+        pa110_41.setEnabled(true);
+        pa110_42.setEnabled(true);
+        pa110_43.setEnabled(true);
+        pa110_44.setEnabled(true);
+        pa110_45.setEnabled(true);
+        pa110_46.setEnabled(true);
+        pa110_47.setEnabled(true);
+        pa110_48.setEnabled(true);
+        pa110_49.setEnabled(true);
+        pa110_50.setEnabled(true);
+        pa110_51.setEnabled(true);
+        pa110_52.setEnabled(true);
+        pa110_53.setEnabled(true);
+        pa110_54.setEnabled(true);
+        pa110_55.setEnabled(true);
+        pa110_56.setEnabled(true);
+        pa110_57.setEnabled(true);
         }
     }
 

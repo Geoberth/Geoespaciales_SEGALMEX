@@ -12,7 +12,7 @@ import com.example.geosegalmex.Liconsa2.LiconsaVerificacion_bd;
 public class PGBeneficiarioLecheBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PGBeneficiarioLeche";
-    public static final int DB_VERSION = 4;
+    public static final int DB_VERSION = 12;
 
     public PGBeneficiarioLecheBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -122,9 +122,9 @@ public class PGBeneficiarioLecheBD extends SQLiteOpenHelper {
 
     public void deletePGBeneficiarioLeche(){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + PGBeneficiarioLeche_bd.TABLA_BD);
-        db.execSQL("delete from " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
-        db.close();
+        db.execSQL("DROP TABLE IF EXISTS "+ PGBeneficiarioLeche_bd.TABLA_BD);
+        db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
+        onCreate(db);
 
     }
 
