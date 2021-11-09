@@ -15,6 +15,7 @@
     <SOURCES>
       <root url="jar://$USER_HOME$/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.1.0/effb6f26806b1ecc6af7cd8ebe6a30c592a0c356/navigation-common-2.1.0-sources.jar!/" />
       <root url="jar://$USER_HOME$/Library/Android/sdk/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.1.0/effb6f26806b1ecc6af7cd8ebe6a30c592a0c356/navigation-common-2.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-common/2.1.0/effb6f26806b1ecc6af7cd8ebe6a30c592a0c356/navigation-common-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
