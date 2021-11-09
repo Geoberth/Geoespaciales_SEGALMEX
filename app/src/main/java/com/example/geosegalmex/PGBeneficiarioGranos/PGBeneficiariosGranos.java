@@ -282,9 +282,9 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   pgbr66.setEnabled(false);
   pgbr67.setEnabled(false);
   pgbt25.setVisibility(View.GONE);
-  pgbr68.setEnabled(false);
-  pgbr69.setEnabled(false);
-  pgbr70.setEnabled(false);
+  //pgbr68.setEnabled(false);
+  //pgbr69.setEnabled(false);
+  //pgbr70.setEnabled(false);
 
 
   muestrafecha();
@@ -414,12 +414,14 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
       pgbr51.setEnabled(true);
       pgbr52.setEnabled(true);
 
-     pgbr68.setEnabled(false);
+     /*
+      pgbr68.setEnabled(false);
      pgbr69.setEnabled(false);
      pgbr70.setEnabled(false);
      pgbr68.setChecked(false);
      pgbr69.setChecked(false);
      pgbr70.setChecked(false);
+*/
 
     }else{
 
@@ -451,9 +453,9 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      pgbr51.setChecked(false);
      pgbr52.setChecked(false);
 
-     pgbr68.setEnabled(true);
-     pgbr69.setEnabled(true);
-     pgbr70.setEnabled(true);
+     //pgbr68.setEnabled(true);
+     //pgbr69.setEnabled(true);
+     //pgbr70.setEnabled(true);
 
 
     }
