@@ -47,7 +47,7 @@ public class PARBeneficiario extends AppCompatActivity {
             ,parbc236_55,parbc236_56,parbc236_57;
     Button btnSiguiente;
     int bandera = 0, bandera2 = 0, bandera3 = 0, bandera4 = 0;
-    GridLayout cinco, siete, ocho, diesinueve, dos;
+    GridLayout cinco, siete, ocho, diesinueve, dos, combo19;
     LinearLayout trece, diesiciete;
     RadioButton parbr198, parbr199;
     String cveedo = "";
@@ -153,7 +153,7 @@ public class PARBeneficiario extends AppCompatActivity {
                     String cuales17 = (parbr39.isChecked()==true)? Resultado17() : "" ;
                     String dieciocho = obtenerResultado(parbr41, parbr42);
                     String diecinueve = obtenerResultado(parbr43, parbr44);
-                    String cuales19 = Resultado19();
+                    String cuales19 = (parbr43.isChecked()==true)? Resultado19() : "" ;
                     String veinte = obtenerResultado(parbr45, parbr46);
                     String ventiuno = obtenerResultado3(parbr47, parbr48, parbr49);
                     String ventidos = obtenerResultado3(parbr50, parbr51, parbr52);
@@ -194,7 +194,7 @@ public class PARBeneficiario extends AppCompatActivity {
         diesiciete=(LinearLayout)findViewById(R.id.combo17);
         cinco=(GridLayout)findViewById(R.id.combo5);
         dos=(GridLayout)findViewById(R.id.combo2);
-
+        combo19=(GridLayout)findViewById(R.id.combo19);
         textFecha=(TextView)findViewById(R.id.pasl_o_txtFecha);
 
         //DATOS DE LA TIENDA DICONSA (PRE-LLENADO)
@@ -795,6 +795,19 @@ public class PARBeneficiario extends AppCompatActivity {
                                                 }
                                             }
         );
+
+        RadioGroup radioGroup7 = (RadioGroup) findViewById(R.id.radio19);
+        radioGroup7.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(parbr44.isChecked()==true){
+                    combo19.setVisibility(View.GONE);
+                }else{
+                    combo19.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
 
 
@@ -1660,7 +1673,7 @@ public class PARBeneficiario extends AppCompatActivity {
             parbr43.setError("No puede quedar vacio");
             retorno=false;
         }
-        else if(Validar_19() == 0){
+        else if(parbr43.isChecked() && Validar_19() == 0){
             parbc190.setError("Debe seleccionar almenos una opción");
             retorno=false;
         }

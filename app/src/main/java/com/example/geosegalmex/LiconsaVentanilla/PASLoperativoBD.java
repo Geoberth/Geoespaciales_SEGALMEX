@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Build;
 
 import androidx.annotation.Nullable;
 
@@ -84,11 +85,12 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
 
     public void deletePASLoperativo(){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("DELETE FROM "+ pasl_operativo_bd.TABLA_BD);
-        db.execSQL("DELETE FROM "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
         db.execSQL("DROP TABLE IF EXISTS "+ pasl_operativo_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
         onCreate(db);
+        if (android.os.Build.VERSION.SDK_INT == Build.VERSION_CODES.P){
+            db.close();
+        }
 
     }
 

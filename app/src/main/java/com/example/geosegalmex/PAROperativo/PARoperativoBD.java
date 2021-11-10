@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Build;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
@@ -225,7 +226,9 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + PAR_operativo_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS " + UtilidadesTrayectoria.TABLA_TRAYECTORIA);
         onCreate(db);
-
+        if (android.os.Build.VERSION.SDK_INT == Build.VERSION_CODES.P){
+            db.close();
+        }
     }
 
     public boolean addTrayectoriaS(String folioPro, String folioBrig, String longGpsSave, String latiGpsSave, String horaActl, String fechaActl) {

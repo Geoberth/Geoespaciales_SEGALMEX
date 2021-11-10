@@ -106,8 +106,7 @@
                 android:id="@+id/pg_granos_txtnumcentro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number|numberDecimal" />
+                android:ems="10"/>
 
             <TextView
                 android:id="@+id/pg_granos_txtEstado"

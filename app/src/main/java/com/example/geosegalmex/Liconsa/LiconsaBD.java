@@ -4,10 +4,13 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Build;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 import com.example.geosegalmex.LiconsaBeneficiario.pasl_beneficiario_bd;
+
+import java.io.File;
 
 public class LiconsaBD extends SQLiteOpenHelper {
 
@@ -29,6 +32,7 @@ public class LiconsaBD extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+ Liconsa_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
         onCreate(db);
+
     }
 
     public boolean addRNPLProductor(Liconsa_Model model){
@@ -139,6 +143,10 @@ public class LiconsaBD extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+ Liconsa_bd.TABLA_BD);
         db.execSQL("DROP TABLE IF EXISTS "+ UtilidadesTrayectoria.TABLA_TRAYECTORIA);
         onCreate(db);
+        if (android.os.Build.VERSION.SDK_INT == Build.VERSION_CODES.P){
+            db.close();
+        }
+
 
     }
 
