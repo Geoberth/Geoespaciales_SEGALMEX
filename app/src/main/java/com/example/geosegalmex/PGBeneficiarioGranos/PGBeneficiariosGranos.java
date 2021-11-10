@@ -31,7 +31,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
  TextView textFecha;
  int dia, mes, anio;
  EditText  pgbt2, pgbt3, pgbt4, pgbt5, pgbt6, pgbt7, pgbt8, pgbt9, pgbt10, pgbt13, pgbt14, pgbt15, pgbt16, pgbt17, pgbt20, pgbt21, pgbt22, pgbt23, pgbt24, pgbt25, pgbt26, pgbt27, pgbt28, pgbt29, pgbt30;
- RadioButton propeq, promed, pgbr1, pgbr2, pgbr3, pgbr4, pgbr5, pgbr6, pgbr7, pgbr8, pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16, pgbr17, pgbr18, pgbr19, pgbr20, pgbr21, pgbr22, pgbr23, pgbr24, pgbr25, pgbr26, pgbr27, pgbr28, pgbr29, pgbr30, pgbr31, pgbr32, pgbr33, pgbr34, pgbr35, pgbr36, pgbr37, pgbr38, pgbr39, pgbr40, pgbr41, pgbr42, pgbr43, pgbr44, pgbr45, pgbr46, pgbr47, pgbr48, pgbr49, pgbr50, pgbr51, pgbr52, pgbr53, pgbr54, pgbr55, pgbr56, pgbr57, pgbr58, pgbr59, pgbr60, pgbr61, pgbr62, pgbr63, pgbr64, pgbr65, pgbr66, pgbr67, pgbr68, pgbr69, pgbr70, pgbr71, pgbr72, pgbr73, pgbr74, pgbr75, pgbr76, pgbr77, pgbr78, pgbr79, pgbr80, pgbr81, pgbr82, pgbr83, pgbr84, pgbr85, pgbr86, pgbr87, pgbr88;
+ RadioButton pgbr1, pgbr2, pgbr3, pgbr4, pgbr5, pgbr6, pgbr7, pgbr8, pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16,pgbr18, pgbr19,pgbr21, pgbr22, pgbr23, pgbr24, pgbr25, pgbr26, pgbr27, pgbr28, pgbr29, pgbr30, pgbr31, pgbr32, pgbr33, pgbr34, pgbr35, pgbr36, pgbr37, pgbr38, pgbr39, pgbr40, pgbr41, pgbr42, pgbr43, pgbr44, pgbr45, pgbr46, pgbr47, pgbr48, pgbr49, pgbr50, pgbr51, pgbr52, pgbr68, pgbr69, pgbr70, pgbr71, pgbr72, pgbr73, pgbr74, pgbr75, pgbr76, pgbr77, pgbr78, pgbr79, pgbr80, pgbr81, pgbr82, pgbr83, pgbr84, pgbr85, pgbr86, pgbr87, pgbr88;
  Spinner pgbs1, pgbs2, pgbs3, pgbs4;
  CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc7, pgbc8, pgbc9, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19;
  Button btnSiguiente;
@@ -82,9 +82,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   pgbt5 = (EditText)findViewById(R.id.pre_garan_granos_txt5);
 
   //proyecto
-  propeq = (RadioButton)findViewById(R.id.pre_garan_granos_ra1);
-  promed = (RadioButton)findViewById(R.id.pre_garan_granos_ra2);
-
   pgbt6 = (EditText)findViewById(R.id.pre_garan_granos_txt6);
   pgbt7 = (EditText)findViewById(R.id.pre_garan_granos_txt7);
   pgbt8 = (EditText)findViewById(R.id.pre_garan_granos_txt8);
@@ -131,10 +128,8 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   pgbt21 = (EditText)findViewById(R.id.pre_garan_granos_txt21);
 
   //Producto
-  pgbr17 = (RadioButton)findViewById(R.id.pre_garan_granos_ra17);
   pgbr18 = (RadioButton)findViewById(R.id.pre_garan_granos_ra18);
   pgbr19 = (RadioButton)findViewById(R.id.pre_garan_granos_ra19);
-  pgbr20 = (RadioButton)findViewById(R.id.pre_garan_granos_ra20);
 
   pgbt22 = (EditText)findViewById(R.id.pre_garan_granos_tx22);
   pgbt23 = (EditText)findViewById(R.id.pre_garan_granos_tx23);
@@ -201,24 +196,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
   pgbr51 = (RadioButton)findViewById(R.id.pre_garan_granos_ra51);
   pgbr52 = (RadioButton)findViewById(R.id.pre_garan_granos_ra52);
 
-  pgbr53 = (RadioButton)findViewById(R.id.pre_garan_granos_ra53);
-  pgbr54 = (RadioButton)findViewById(R.id.pre_garan_granos_ra54);
-  pgbr55 = (RadioButton)findViewById(R.id.pre_garan_granos_ra55);
-
-  pgbr56 = (RadioButton)findViewById(R.id.pre_garan_granos_ra56);
-  pgbr57 = (RadioButton)findViewById(R.id.pre_garan_granos_ra57);
-  pgbr58 = (RadioButton)findViewById(R.id.pre_garan_granos_ra58);
-
-
-  pgbr59 = (RadioButton)findViewById(R.id.pre_garan_granos_ra59);
-  pgbr60 = (RadioButton)findViewById(R.id.pre_garan_granos_ra60);
-  pgbr61 = (RadioButton)findViewById(R.id.pre_garan_granos_ra61);
-  pgbr62 = (RadioButton)findViewById(R.id.pre_garan_granos_ra62);
-  pgbr63 = (RadioButton)findViewById(R.id.pre_garan_granos_ra63);
-  pgbr64 = (RadioButton)findViewById(R.id.pre_garan_granos_ra64);
-  pgbr65 = (RadioButton)findViewById(R.id.pre_garan_granos_ra65);
-  pgbr66 = (RadioButton)findViewById(R.id.pre_garan_granos_ra66);
-  pgbr67 = (RadioButton)findViewById(R.id.pre_garan_granos_ra67);
   pgbr68 = (RadioButton)findViewById(R.id.pre_garan_granos_ra68);
   pgbr69 = (RadioButton)findViewById(R.id.pre_garan_granos_ra69);
   pgbr70 = (RadioButton)findViewById(R.id.pre_garan_granos_ra70);
@@ -260,27 +237,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
 
   btnSiguiente = findViewById(R.id.pre_garan_granos_sig);
   pgbt21.setVisibility(View.GONE);
-  pgbr17.setEnabled(false);
-  pgbr18.setEnabled(false);
-  pgbr19.setEnabled(false);
-  pgbr20.setEnabled(false);
-  pgbr51.setEnabled(false);
-  pgbr52.setEnabled(false);
-  pgbr53.setEnabled(false);
-  pgbr54.setEnabled(false);
-  pgbr55.setEnabled(false);
-  pgbr56.setEnabled(false);
-  pgbr57.setEnabled(false);
-  pgbr58.setEnabled(false);
-  pgbr59.setEnabled(false);
-  pgbr60.setEnabled(false);
-  pgbr61.setEnabled(false);
-  pgbr62.setEnabled(false);
-  pgbr63.setEnabled(false);
-  pgbr64.setEnabled(false);
-  pgbr65.setEnabled(false);
-  pgbr66.setEnabled(false);
-  pgbr67.setEnabled(false);
   pgbt25.setVisibility(View.GONE);
   //pgbr68.setEnabled(false);
   //pgbr69.setEnabled(false);
@@ -365,103 +321,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
    }
   });
 
-  RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.rad2);
-  radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
-  {
-   public void onCheckedChanged(RadioGroup group, int checkedId) {
-    // checkedId is the RadioButton selected
-    if(propeq.isChecked()==true){
-     //solo maiz o frijol
-      pgbr18.setEnabled(true);
-      pgbr19.setEnabled(true);
-      pgbr20.setEnabled(false);
-      pgbr20.setChecked(false);
-      pgbr17.setEnabled(false);
-      pgbr17.setChecked(false);
-      //Bloquear PREGUNTAS ADICIONALES MEDIANO
-      pgbr53.setEnabled(false);
-      pgbr54.setEnabled(false);
-      pgbr55.setEnabled(false);
-      pgbr56.setEnabled(false);
-      pgbr57.setEnabled(false);
-      pgbr58.setEnabled(false);
-      pgbr59.setEnabled(false);
-      pgbr60.setEnabled(false);
-      pgbr61.setEnabled(false);
-      pgbr62.setEnabled(false);
-      pgbr63.setEnabled(false);
-      pgbr64.setEnabled(false);
-      pgbr65.setEnabled(false);
-      pgbr66.setEnabled(false);
-      pgbr67.setEnabled(false);
-     //Limpiar PREGUNTAS ADICIONALES MEDIANO
-      pgbr53.setChecked(false);
-      pgbr54.setChecked(false);
-      pgbr55.setChecked(false);
-      pgbr56.setChecked(false);
-      pgbr57.setChecked(false);
-      pgbr58.setChecked(false);
-      pgbr59.setChecked(false);
-      pgbr60.setChecked(false);
-      pgbr61.setChecked(false);
-      pgbr62.setChecked(false);
-      pgbr63.setChecked(false);
-      pgbr64.setChecked(false);
-      pgbr65.setChecked(false);
-      pgbr66.setChecked(false);
-      pgbr67.setChecked(false);
-      //DESBLOQUEAR PREGUNTA EXCLUSIVA DE PEQUEÑO PRODUCTOR
-      pgbr51.setEnabled(true);
-      pgbr52.setEnabled(true);
-
-     /*
-      pgbr68.setEnabled(false);
-     pgbr69.setEnabled(false);
-     pgbr70.setEnabled(false);
-     pgbr68.setChecked(false);
-     pgbr69.setChecked(false);
-     pgbr70.setChecked(false);
-*/
-
-    }else{
-
-     //Excluir frijol
-     pgbr17.setEnabled(true);
-     pgbr18.setEnabled(true);
-     pgbr20.setEnabled(true);
-     pgbr19.setEnabled(false);
-     pgbr19.setChecked(false);
-     //Desbloquear PREGUNTAS ADICIONALES MEDIANO
-     pgbr53.setEnabled(true);
-     pgbr54.setEnabled(true);
-     pgbr55.setEnabled(true);
-     pgbr56.setEnabled(true);
-     pgbr57.setEnabled(true);
-     pgbr58.setEnabled(true);
-     pgbr59.setEnabled(true);
-     pgbr60.setEnabled(true);
-     pgbr61.setEnabled(true);
-     pgbr62.setEnabled(true);
-     pgbr63.setEnabled(true);
-     pgbr64.setEnabled(true);
-     pgbr65.setEnabled(true);
-     pgbr66.setEnabled(true);
-     pgbr67.setEnabled(true);
-     //BLOQUEAR Y LIMPIAR PREGUNTA EXCLUSIVA DE PEQUEÑO PRODUCTOR
-     pgbr51.setEnabled(false);
-     pgbr52.setEnabled(false);
-     pgbr51.setChecked(false);
-     pgbr52.setChecked(false);
-
-     //pgbr68.setEnabled(true);
-     //pgbr69.setEnabled(true);
-     //pgbr70.setEnabled(true);
-
-
-    }
-   }
-  });
-
   pgbc19.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
    @Override
    public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
@@ -499,7 +358,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String pgbtt3 = pgbt3.getText().toString();
      String pgbtt4 = pgbt4.getText().toString();
      String pgbtt5 = pgbt5.getText().toString();
-     String tprodu = obtenerRadio(promed,propeq);
      String pgbtt6 = pgbt6.getText().toString();
      String pgbtt7 = pgbt7.getText().toString();
      String pgbtt8 = pgbt8.getText().toString();
@@ -517,7 +375,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String pgr2 = obtenerRadio(pgbr3, pgbr4);
      String pgr3 = obtenerRadioo(pgbr5,pgbr6,pgbr7,pgbr8,pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16);
      String pgbtt21 = pgbt21.getText().toString();
-     String pgr4 = obtenerRadiooo(pgbr17, pgbr18, pgbr19, pgbr20);
+     String pgr4 = obtenerRadio(pgbr18, pgbr19);
      //cantidad kg
      String pgbtt22 = pgbt22.getText().toString();
      String pgbtt23 = pgbt23.getText().toString();
@@ -548,13 +406,8 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String pgr17 = obtenerRadio(pgbr45, pgbr46);
      String pgr18 = obtenerRadio(pgbr47, pgbr48);
      String pgr19 = obtenerRadio(pgbr49, pgbr50);
-     String pgr20 = (propeq.isChecked()==true)? obtenerRadio(pgbr51, pgbr52) : "" ;
-     String pgr21 = (promed.isChecked()==true)? obtenerRadioooo(pgbr53, pgbr54, pgbr55) : "" ;
-     String pgr22 = (promed.isChecked()==true)? obtenerRadioooo(pgbr56, pgbr57, pgbr58) : "" ;
-     String pgr23 = (promed.isChecked()==true)? obtenerRadioooo(pgbr59, pgbr60, pgbr61) : "" ;
-     String pgr24 = (promed.isChecked()==true)? obtenerRadioooo(pgbr62, pgbr63, pgbr64) : "" ;
-     String pgr25 = (promed.isChecked()==true)? obtenerRadioooo(pgbr65, pgbr66, pgbr67) : "" ;
-     String pgr26 = (promed.isChecked()==true)? obtenerRadioooo(pgbr68, pgbr69, pgbr70) : "" ;
+     String pgr20 = obtenerRadio(pgbr51, pgbr52);
+     String pgr26 = obtenerRadioooo(pgbr68, pgbr69, pgbr70);
      String pgr27 = obtenerRadioooo(pgbr71, pgbr72, pgbr73);
      String pgr28 = obtenerRadioooo(pgbr74, pgbr75, pgbr76);
      String pgr29 = obtenerRadioooo(pgbr77, pgbr78, pgbr79);
@@ -584,7 +437,7 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
      String f1 = General.Foto1;
      String f2 = General.Foto2;
 
-     model = new PGB_granos_model(folio, General.fechaenc, pgbtt2, pgbtt3, pgbtt4, pgbtt5, tprodu, pgbtt6, pgbtt7, pgbtt8, pgbtt9, pgbtt10, nomedo, cveedo, nommun, cvemun, pgbtt13, pgbtt14, pgbtt15, pgbtt16, pgbtt17, nomedo2, cveedo2, nommun2, cvemun2, pgr1, pgbtt20, pgr2, pgr3, pgbtt21, pgr4, pgbtt22, pgbtt23, pgbtt24, pgapoyo1, pgapoyo2, pgapoyo3, pgapoyo4, pgapoyo5, pgapoyo6, pgapoyo7,pgapoyo8, pgapoyo9, pgapoyo10, pgr5, pgr6, pgr7, pgr8, pgr9, pgr10, pgr11, pgr12, pgr13, pgr14, pgr15, pgr16, pgr17, pgr18, pgr19, pgr20, pgr21, pgr22, pgr23, pgr24, pgr25, pgr26, pgr27, pgr28, pgr29, pgr30, pgr31, pgr32, pgre1, pgre2, pgre3, pgre4, pgre5, pgre6, pgre7, pgre8, pgre9, pgbtt25, pgbtt26, pgbtt27, pgbtt28, pgbtt29, f1, f2, "", "");
+     model = new PGB_granos_model(folio, General.fechaenc, pgbtt2, pgbtt3, pgbtt4, pgbtt5, pgbtt6, pgbtt7, pgbtt8, pgbtt9, pgbtt10, nomedo, cveedo, nommun, cvemun, pgbtt13, pgbtt14, pgbtt15, pgbtt16, pgbtt17, nomedo2, cveedo2, nommun2, cvemun2, pgr1, pgbtt20, pgr2, pgr3, pgbtt21, pgr4, pgbtt22, pgbtt23, pgbtt24, pgapoyo1, pgapoyo2, pgapoyo3, pgapoyo4, pgapoyo5, pgapoyo6, pgapoyo7,pgapoyo8, pgapoyo9, pgapoyo10, pgr5, pgr6, pgr7, pgr8, pgr9, pgr10, pgr11, pgr12, pgr13, pgr14, pgr15, pgr16, pgr17, pgr18, pgr19, pgr20, pgr26, pgr27, pgr28, pgr29, pgr30, pgr31, pgr32, pgre1, pgre2, pgre3, pgre4, pgre5, pgre6, pgre7, pgre8, pgre9, pgbtt25, pgbtt26, pgbtt27, pgbtt28, pgbtt29, f1, f2, "", "");
      Intent in = new Intent(PGBeneficiariosGranos.this, GeoreferenciaActivity.class);
      in.putExtra("model", model);
      startActivity(in);
@@ -733,10 +586,6 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
    pgbt5.setError("CURP invalido");
    retorno=false;
   }
-  else if (!propeq.isChecked() && !promed.isChecked()) {
-   promed.setError("Debes seleccionar una opción");
-   retorno = false;
-  }
   else if (pgbt6.getText().toString().isEmpty()){
    pgbt6.setError("No puede quedar vacío");
    retorno = false;
@@ -771,8 +620,8 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
    pgbr16.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr17.isChecked() && !pgbr18.isChecked() && !pgbr19.isChecked() && !pgbr20.isChecked()){
-   pgbr20.setError("Debes seleccionar una opción");
+  else if (!pgbr18.isChecked() && !pgbr19.isChecked()){
+   pgbr19.setError("Debes seleccionar una opción");
    retorno = false;
   }
 
@@ -840,31 +689,11 @@ public class PGBeneficiariosGranos extends AppCompatActivity {
    pgbr50.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr51.isChecked() && !pgbr52.isChecked() && propeq.isChecked()) {
+  else if (!pgbr51.isChecked() && !pgbr52.isChecked()) {
    pgbr52.setError("Debes seleccionar una opción");
    retorno = false;
   }
-  else if (!pgbr53.isChecked() && !pgbr54.isChecked() && !pgbr55.isChecked() && promed.isChecked()) {
-   pgbr55.setError("Debes seleccionar una opción");
-   retorno = false;
-  }
-  else if (!pgbr56.isChecked() && !pgbr57.isChecked() && !pgbr58.isChecked() && promed.isChecked()) {
-   pgbr58.setError("Debes seleccionar una opción");
-   retorno = false;
-  }
-  else if (!pgbr59.isChecked() && !pgbr60.isChecked() && !pgbr61.isChecked() && promed.isChecked()) {
-   pgbr61.setError("Debes seleccionar una opción");
-   retorno = false;
-  }
-  else if (!pgbr62.isChecked() && !pgbr63.isChecked() && !pgbr64.isChecked() && promed.isChecked()) {
-   pgbr64.setError("Debes seleccionar una opción");
-   retorno = false;
-  }
-  else if (!pgbr65.isChecked() && !pgbr66.isChecked() && !pgbr67.isChecked() && promed.isChecked()) {
-   pgbr67.setError("Debes seleccionar una opción");
-   retorno = false;
-  }
-  else if (!pgbr68.isChecked() && !pgbr69.isChecked() && !pgbr70.isChecked() && promed.isChecked()) {
+  else if (!pgbr68.isChecked() && !pgbr69.isChecked() && !pgbr70.isChecked()) {
    pgbr70.setError("Debes seleccionar una opción");
    retorno = false;
   }

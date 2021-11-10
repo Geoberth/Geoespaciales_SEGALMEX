@@ -132,36 +132,6 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="5dp"
-                android:text="INDIQUE QUE TIPO DE PRODUCTOR ES:"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-
-            <RadioGroup
-                android:id="@+id/rad2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pequeño productor" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mediano productor" />
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="0dp"
                 android:text="Dirección del Beneficiario:"
@@ -600,13 +570,6 @@
 
                 <RadioButton
 
-                    android:id="@+id/pre_garan_granos_ra17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Arroz" />
-
-                <RadioButton
-
                     android:id="@+id/pre_garan_granos_ra18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -619,12 +582,6 @@
                     android:layout_height="wrap_content"
                     android:text="Frijol" />
 
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Trigo" />
 
             </RadioGroup>
 
@@ -1238,201 +1195,6 @@
                     android:text="No" />
             </RadioGroup>
 
-            <TextView
-                android:id="@+id/pre_garan_granos_txtview3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="5dp"
-                android:visibility="visible"
-                android:text="8. PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE ESTÍMULOS (ARROZ, TRIGO Y MAÍZ MEDIANOS PRODUCTORES)"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/pre_garan_granos_txtview4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:text="8.1 ¿Conoce el precio de referencia sobre el cual se calcula el estímulo?:"
-                android:textColor="#000000" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/pre_garan_granos_ra53"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sí" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra54"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra55"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No Aplica" />
-            </RadioGroup>
-
-            <TextView
-                android:id="@+id/pre_garan_granos_txtview5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:text="8.2 ¿Conoce el monto del estímulo que se le está pagando?:"
-                android:textColor="#000000" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/pre_garan_granos_ra56"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sí" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra57"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra58"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No Aplica" />
-            </RadioGroup>
-
-            <TextView
-                android:id="@+id/pre_garan_granos_txtview6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:text="8.3 Para el caso de los beneficiarios de maíz de medianos productores y trigo cristalino. ¿Conoce el apoyo que se otorga para la Adquisición de Instrumentos de Administración de Riesgos?:"
-                android:textColor="#000000" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/pre_garan_granos_ra59"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sí" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra60"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra61"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No Aplica" />
-            </RadioGroup>
-
-            <TextView
-                android:id="@+id/pre_garan_granos_txtview7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:text="8.4 ¿Recibió formato/comprobante de recepción de documentos?:"
-                android:textColor="#000000" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/pre_garan_granos_ra62"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sí" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra63"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra64"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No Aplica" />
-            </RadioGroup>
-
-            <TextView
-                android:id="@+id/pre_garan_granos_txtview8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:text="8.5 ¿Recibió factura que indica el volumen comercializado?:"
-                android:textColor="#000000" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/pre_garan_granos_ra65"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sí" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra66"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No" />
-
-                <RadioButton
-
-                    android:id="@+id/pre_garan_granos_ra67"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No Aplica" />
-            </RadioGroup>
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview9"
@@ -1441,7 +1203,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:visibility="visible"
-                android:text="9. ENCUESTA DE OPINIÓN:"
+                android:text="8. ENCUESTA DE OPINIÓN:"
                 android:textStyle="bold"
                 android:textColor="#000000" />
 
@@ -1460,7 +1222,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="9.1 La atención de los encargados del Centro de Acopio fue:"
+                android:text="8.1 La atención de los encargados del Centro de Acopio fue:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1497,7 +1259,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="9.2 ¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="8.2 ¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1534,7 +1296,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="9.3 ¿Cómo considera el proceso para acceder al apoyo?:"
+                android:text="8.3 ¿Cómo considera el proceso para acceder al apoyo?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1571,7 +1333,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="9.4 ¿Cómo considera el tiempo transcurrido para recibir el pago?:"
+                android:text="8.4 ¿Cómo considera el tiempo transcurrido para recibir el pago?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1608,7 +1370,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="9.5 ¿Cómo considera el monto pagado?:"
+                android:text="8.5 ¿Cómo considera el monto pagado?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1645,7 +1407,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="9.6 ¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
+                android:text="8.6 ¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1682,7 +1444,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="9.7 En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="8.7 En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1719,7 +1481,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="0dp"
-                android:text="10. Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
+                android:text="9. Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -1728,7 +1490,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="10.1 ¿Cómo se enteró del Programa y los requisitos?:"
+                android:text="9.1 ¿Cómo se enteró del Programa y los requisitos?:"
                 android:textColor="#000000" />
 
             <LinearLayout
@@ -1847,7 +1609,7 @@
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:layout_marginTop="5dp"
-                android:text="10.2 ¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
+                android:text="9.2 ¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
                 android:textColor="#000000" />
 
             <EditText
@@ -1863,7 +1625,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="10.3 ¿Cuáles considera son para usted las ventajas de este Programa?:"
+                android:text="9.3 ¿Cuáles considera son para usted las ventajas de este Programa?:"
                 android:textColor="#000000" />
 
             <EditText
@@ -1879,7 +1641,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="10.4 ¿Cuáles considera son las principales desventajas del Programa?:"
+                android:text="9.4 ¿Cuáles considera son las principales desventajas del Programa?:"
                 android:textColor="#000000" />
 
             <EditText
@@ -1895,7 +1657,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
-                android:text="10.5 ¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="9.5 ¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000" />
 
             <EditText

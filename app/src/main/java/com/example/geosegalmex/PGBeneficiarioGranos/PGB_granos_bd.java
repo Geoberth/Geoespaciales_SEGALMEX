@@ -9,7 +9,6 @@ public class PGB_granos_bd {
     public static final String COLUMN_PGBTT3 = "PGBTT3";
     public static final String COLUMN_PGBTT4 = "PGBTT4";
     public static final String COLUMN_PGBTT5 = "PGBTT5";
-    public static final String COLUMN_TPRODU = "TPRODU";
     public static final String COLUMN_PGBTT6 = "PGBTT6";
     public static final String COLUMN_PGBTT7 = "PGBTT7";
     public static final String COLUMN_PGBTT8 = "PGBTT8";
@@ -63,18 +62,13 @@ public class PGB_granos_bd {
     public static final String COLUMN_PGR18 = "PGR18";
     public static final String COLUMN_PGR19 = "PGR19";
     public static final String COLUMN_PGR20 = "PGR20";
-    public static final String COLUMN_PGR21 = "PGR21";
-    public static final String COLUMN_PGR22 = "PGR22";
-    public static final String COLUMN_PGR23 = "PGR23";
-    public static final String COLUMN_PGR24 = "PGR24";
-    public static final String COLUMN_PGR25 = "PGR25";
-    public static final String COLUMN_PGR26 = "PGR26";
-    public static final String COLUMN_PGR27 = "PGR27";
-    public static final String COLUMN_PGR28 = "PGR28";
-    public static final String COLUMN_PGR29 = "PGR29";
-    public static final String COLUMN_PGR30 = "PGR30";
-    public static final String COLUMN_PGR31 = "PGR31";
-    public static final String COLUMN_PGR32 = "PGR32";
+    public static final String COLUMN_PGR26 = "PGR21";
+    public static final String COLUMN_PGR27 = "PGR22";
+    public static final String COLUMN_PGR28 = "PGR23";
+    public static final String COLUMN_PGR29 = "PGR24";
+    public static final String COLUMN_PGR30 = "PGR25";
+    public static final String COLUMN_PGR31 = "PGR26";
+    public static final String COLUMN_PGR32 = "PGR27";
     public static final String COLUMN_PGRE1 = "PGRE1";
     public static final String COLUMN_PGRE2 = "PGRE2";
     public static final String COLUMN_PGRE3 = "PGRE3";
@@ -101,7 +95,6 @@ public class PGB_granos_bd {
             + COLUMN_PGBTT3 + " VARCHAR, "
             + COLUMN_PGBTT4 + " VARCHAR, "
             + COLUMN_PGBTT5 + " VARCHAR, "
-            + COLUMN_TPRODU + " VARCHAR, "
             + COLUMN_PGBTT6 + " VARCHAR, "
             + COLUMN_PGBTT7 + " VARCHAR, "
             + COLUMN_PGBTT8 + " VARCHAR, "
@@ -155,11 +148,6 @@ public class PGB_granos_bd {
             + COLUMN_PGR18 + " VARCHAR, "
             + COLUMN_PGR19 + " VARCHAR, "
             + COLUMN_PGR20 + " VARCHAR, "
-            + COLUMN_PGR21 + " VARCHAR, "
-            + COLUMN_PGR22 + " VARCHAR, "
-            + COLUMN_PGR23 + " VARCHAR, "
-            + COLUMN_PGR24 + " VARCHAR, "
-            + COLUMN_PGR25 + " VARCHAR, "
             + COLUMN_PGR26 + " VARCHAR, "
             + COLUMN_PGR27 + " VARCHAR, "
             + COLUMN_PGR28 + " VARCHAR, "

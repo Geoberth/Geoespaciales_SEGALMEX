@@ -13,7 +13,7 @@ import com.example.geosegalmex.Liconsa2.LiconsaVerificacion_bd;
 public class PGBgranosBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "PGBeneficiarioGranos";
-    public static final int DB_VERSION = 12;
+    public static final int DB_VERSION = 15;
 
     public PGBgranosBD(Context context) {super(context, DB_NAME, null, DB_VERSION);}
 
@@ -40,7 +40,6 @@ public class PGBgranosBD extends SQLiteOpenHelper {
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT3, model.getPgbtt3());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT4, model.getPgbtt4());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT5, model.getPgbtt5());
-        contentValues.put(PGB_granos_bd.COLUMN_TPRODU, model.getTprodu());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT6, model.getPgbtt6());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT7, model.getPgbtt7());
         contentValues.put(PGB_granos_bd.COLUMN_PGBTT8, model.getPgbtt8());
@@ -94,11 +93,6 @@ public class PGBgranosBD extends SQLiteOpenHelper {
         contentValues.put(PGB_granos_bd.COLUMN_PGR18, model.getPgr18());
         contentValues.put(PGB_granos_bd.COLUMN_PGR19, model.getPgr19());
         contentValues.put(PGB_granos_bd.COLUMN_PGR20, model.getPgr20());
-        contentValues.put(PGB_granos_bd.COLUMN_PGR21, model.getPgr21());
-        contentValues.put(PGB_granos_bd.COLUMN_PGR22, model.getPgr22());
-        contentValues.put(PGB_granos_bd.COLUMN_PGR23, model.getPgr23());
-        contentValues.put(PGB_granos_bd.COLUMN_PGR24, model.getPgr24());
-        contentValues.put(PGB_granos_bd.COLUMN_PGR25, model.getPgr25());
         contentValues.put(PGB_granos_bd.COLUMN_PGR26, model.getPgr26());
         contentValues.put(PGB_granos_bd.COLUMN_PGR27, model.getPgr27());
         contentValues.put(PGB_granos_bd.COLUMN_PGR28, model.getPgr28());
