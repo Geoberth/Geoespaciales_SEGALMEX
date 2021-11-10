@@ -138,7 +138,7 @@ public class PGOperativoEstimulos extends AppCompatActivity {
                     String fol = General.Foliocuestion;
                     General.fechaenc = textFecha.getText().toString();
                     String nomven = nomcentro.getText().toString();
-                    String cveven = numcentro.getText().toString();
+                    //String cveven = numcentro.getText().toString();
                     String loc = localidad.getText().toString();
                     String call = calle.getText().toString();
                     String codp = cp.getText().toString();
@@ -149,12 +149,12 @@ public class PGOperativoEstimulos extends AppCompatActivity {
                     String cinco = obtenerResultado(si5, no5, na5);
                     String seis = obtenerResultado(si6, no6, na6);
                     String siete = Resultado();
-                    String ocho = obtenerResultado(si8, no8, na8);
+                    //String ocho = obtenerResultado(si8, no8, na8);
                     String nueve = obtenerResultado(si9, no9, na9);
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
 
-                    model = new PGOperativoEstimulos_Model(fol, General.fechaenc, cveven, nomven, cveedo, nomedo, cvemun,  nommun, "", loc, call, codp, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, f1, f2, "", "");
+                    model = new PGOperativoEstimulos_Model(fol, General.fechaenc, nomven, cveedo, nomedo, cvemun,  nommun, "", loc, call, codp, uno, dos, tres, cuatro, cinco, seis, siete, nueve, f1, f2, "", "");
                     Intent in = new Intent(PGOperativoEstimulos.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);
@@ -228,10 +228,12 @@ public class PGOperativoEstimulos extends AppCompatActivity {
             nomcentro.setError("No puede quedar vacio");
             retorno=false;
         }
+        /*
         else if(numcentro.getText().toString().isEmpty()){
             numcentro.setError("No puede quedar vacio");
             retorno=false;
         }
+        */
         else if(spi_edo.getSelectedItem().toString().equals("") || cveedo.equals("") || nomedo.equals("")){
             TextView errorText = (TextView)spi_edo.getSelectedView();
             errorText.setError("No puede quedar vacio");

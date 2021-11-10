@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="DATOS DEL MOLINO, BODEGA, VENTANILLA:"
+                android:text="DATOS VENTANILLA:"
                 android:textColor="#000000"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -99,6 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:text="Número del centro de acopio:"
+                android:visibility="gone"
                 android:textColor="#000000"
                 android:textSize="15sp" />
 
@@ -106,6 +107,7 @@
                 android:id="@+id/pg_granos_txtnumcentro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:ems="10"/>
 
             <TextView
@@ -154,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="Localidad:"
+                android:text="Localidad/Colonia:"
                 android:textColor="#000000"
                 android:textSize="15sp" />
 
@@ -195,6 +197,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:maxLength="5"
                 android:inputType="number" />
 
             <TextView
@@ -309,7 +312,7 @@
                     android:id="@+id/pg_granos_tvTres"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3. ¿Cuenta con oficios y/o correos de la notificación a SEGALMEX de la apertura de ventanillas en tiempo?"
+                    android:text="3. ¿Cuenta con oficios y/o correos de la notificación a SEGALMEX para la apertura de ventanillas en tiempo?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
@@ -447,7 +450,7 @@
                     android:id="@+id/pg_granos_tvSeis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="6. ¿Conoce el procedimiento para registrar a un productor en el padrón?"
+                    android:text="6. ¿Conoce el procedimiento para registrar a un productor en el Programa?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
@@ -496,7 +499,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:enabled="true"
-                android:text="Documento o folio que acredite su registro en el padrón (Censo del Bienestar, Producción para el Bienestar, padrón SEGALMEX)" />
+                android:text="Documento o folio que acredite su registro en el programa (Censo del Bienestar, Producción para el Bienestar, padrón SEGALMEX)" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/pg_granos_ch2"
@@ -550,11 +553,13 @@
                     android:layout_height="wrap_content"
                     android:text="8. ¿Difundió ante la población las actividades que se llevan a cabo respecto de la Contraloría Social?"
                     android:textColor="#000000"
+                    android:visibility="gone"
                     android:textSize="15sp" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:orientation="horizontal">
 
                     <RadioButton
@@ -594,7 +599,7 @@
                     android:id="@+id/pg_granos_tvNueve"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="9. ¿Se toman las medidas de salud procedentes para prevenir cualquier enfermedad, especialmente las contagiosas?"
+                    android:text="8. ¿Se toman las medidas de salud procedentes para prevenir cualquier enfermedad, especialmente las contagiosas?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 

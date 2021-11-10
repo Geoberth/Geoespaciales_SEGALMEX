@@ -4,15 +4,14 @@ import java.io.Serializable;
 
 public class PGOperativoEstimulos_Model implements Serializable {
 
-    private String folio, fecha, cveventanilla, ventanilla, cveestado, estado, cvemunicipio, municipio, cvelocalidad, localidad, calle, cp, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, fecha, ventanilla, cveestado, estado, cvemunicipio, municipio, cvelocalidad, localidad, calle, cp, uno, dos, tres, cuatro, cinco, seis, siete, ocho, foto1, foto2, longitudGeo, latitudGeo;
 
     public PGOperativoEstimulos_Model() {
     }
 
-    public PGOperativoEstimulos_Model(String folio, String fecha, String cveventanilla, String ventanilla, String cveestado, String estado, String cvemunicipio, String municipio, String cvelocalidad, String localidad, String calle, String cp, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String nueve, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public PGOperativoEstimulos_Model(String folio, String fecha, String ventanilla, String cveestado, String estado, String cvemunicipio, String municipio, String cvelocalidad, String localidad, String calle, String cp, String uno, String dos, String tres, String cuatro, String cinco, String seis, String siete, String ocho, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
-        this.cveventanilla = cveventanilla;
         this.ventanilla = ventanilla;
         this.cveestado = cveestado;
         this.estado = estado;
@@ -30,7 +29,7 @@ public class PGOperativoEstimulos_Model implements Serializable {
         this.seis = seis;
         this.siete = siete;
         this.ocho = ocho;
-        this.nueve = nueve;
+
         this.foto1 = foto1;
         this.foto2 = foto2;
         this.longitudGeo = longitudGeo;
@@ -51,14 +50,6 @@ public class PGOperativoEstimulos_Model implements Serializable {
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
-    }
-
-    public String getCveventanilla() {
-        return cveventanilla;
-    }
-
-    public void setCveventanilla(String cveventanilla) {
-        this.cveventanilla = cveventanilla;
     }
 
     public String getVentanilla() {
@@ -197,13 +188,6 @@ public class PGOperativoEstimulos_Model implements Serializable {
         this.ocho = ocho;
     }
 
-    public String getNueve() {
-        return nueve;
-    }
-
-    public void setNueve(String nueve) {
-        this.nueve = nueve;
-    }
 
     public String getFoto1() {
         return foto1;

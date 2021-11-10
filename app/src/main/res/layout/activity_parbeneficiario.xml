@@ -326,8 +326,6 @@
                     <com.google.android.material.checkbox.MaterialCheckBox	android:onClick="itemClicked" android:enabled="true"	android:layout_marginTop="0dp"	android:layout_width="wrap_content"	android:id="@+id/par_ben_ch47_56"	android:text="Toallas Sanitarias KOTEX"	android:layout_column="0"	android:layout_row="52"	android:layout_height="wrap_content"/>
                     <com.google.android.material.checkbox.MaterialCheckBox	android:onClick="itemClicked" android:enabled="true"	android:layout_marginTop="0dp"	android:layout_width="wrap_content"	android:id="@+id/par_ben_ch47_57"	android:text="Toallas Sanitarias NATURELLA"	android:layout_column="2"	android:layout_row="52"	android:layout_height="wrap_content"/>
 
-
-
                 </GridLayout>
 
             </HorizontalScrollView>
@@ -347,14 +345,12 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-
                     android:id="@+id/par_ben_ra5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sí" />
 
                 <RadioButton
-
                     android:id="@+id/par_ben_ra6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -40,7 +40,7 @@ public class PGOperativoEstimulosBD extends SQLiteOpenHelper {
 
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_FOLIO, model.getFolio());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_FECHA, model.getFecha());
-        contentValues.put(PGOperativoEstimulos_bd.COLUMN_CVEVENTANILLA, model.getCveventanilla());
+
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_VENTANILLA, model.getVentanilla());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_CVEESTADO, model.getCveestado());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_ESTADO, model.getEstado());
@@ -58,7 +58,7 @@ public class PGOperativoEstimulosBD extends SQLiteOpenHelper {
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_SEIS, model.getSeis());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_SIETE, model.getSiete());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_OCHO, model.getOcho());
-        contentValues.put(PGOperativoEstimulos_bd.COLUMN_NUEVE, model.getNueve());
+
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_FOTO1, model.getFoto1());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_FOTO2, model.getFoto2());
         contentValues.put(PGOperativoEstimulos_bd.COLUMN_LONGITUD, model.getLongitudGeo());
