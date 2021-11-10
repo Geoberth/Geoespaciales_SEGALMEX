@@ -14,7 +14,7 @@ import com.example.geosegalmex.Liconsa2.LiconsaVerificacion_bd;
 public class PGOperativoEstimulosBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PGOperativoEstimulos";
-    public static final int DB_VERSION = 12;
+    public static final int DB_VERSION = 13;
 
     public PGOperativoEstimulosBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
