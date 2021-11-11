@@ -9,8 +9,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-183dp">
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,8 +126,8 @@
             <EditText
                 android:id="@+id/pre_garan_granos_txt5"
                 android:layout_width="match_parent"
-                android:inputType="textCapCharacters"
                 android:layout_height="62dp"
+                android:inputType="textCapCharacters"
                 android:maxLines="1" />
 
             <TextView
@@ -478,7 +478,6 @@
                     android:text="Secundaria incompleta" />
 
 
-
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra9"
@@ -660,8 +659,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="4. SELECCIONE LA INFORMACIÓN QUE CONOCE DEL APOYO:"
-                android:textStyle="bold"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textStyle="bold" />
 
 
             <com.google.android.material.checkbox.MaterialCheckBox
@@ -753,8 +752,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="5. SELECCIONE LA DOCUMENTACIÓN QUE ENTREGÓ PARA REGISTRARSE EN EL PROGRAMA:"
-                android:textStyle="bold"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -892,8 +891,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="6. SELECCIONE LA OPCIÓN QUE CORRESPONDA A SU OPINIÓN DEL APOYO:"
-                android:textStyle="bold"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1161,18 +1160,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
-                android:visibility="visible"
                 android:text="7. PREGUNTAS ADICIONALES DE ACOPIO SOLO PARA BENEFICIARIOS DE FRIJOL Y MAÍZ PEQUEÑOS PRODUCTORES"
                 android:textColor="#000000"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="visible" />
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="7.1 ¿Le entregaron el Documento de Compra (DC-01) que indica la calidad y el pesaje del grano firmada por el jefe de centro de acopio?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1181,18 +1180,18 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra51"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sí" />
+                    android:text="Sí"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra52"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No" />
+                    android:text="No"
+                    android:visibility="visible" />
             </RadioGroup>
 
 
@@ -1202,10 +1201,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:visibility="visible"
                 android:text="8. ENCUESTA DE OPINIÓN:"
+                android:textColor="#000000"
                 android:textStyle="bold"
-                android:textColor="#000000" />
+                android:visibility="visible" />
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview10"
@@ -1214,16 +1213,16 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="Seleccione la opción que corresponda a su opinión:"
-                android:textStyle="bold"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="8.1 La atención de los encargados del Centro de Acopio fue:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1232,35 +1231,35 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra68"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra69"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="Aceptable"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra70"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:visibility="visible" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="8.2 ¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1269,35 +1268,35 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra71"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra72"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="Aceptable"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra73"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:visibility="visible" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="8.3 ¿Cómo considera el proceso para acceder al apoyo?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1306,35 +1305,35 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra74"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra75"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="Aceptable"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra76"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:visibility="visible" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="8.4 ¿Cómo considera el tiempo transcurrido para recibir el pago?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1343,35 +1342,35 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra77"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra78"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="Aceptable"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra79"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:visibility="visible" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="8.5 ¿Cómo considera el monto pagado?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1380,35 +1379,35 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra80"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra81"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="Aceptable"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra82"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:visibility="visible" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="8.6 ¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1417,35 +1416,35 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra83"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra84"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="Aceptable"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra85"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:visibility="visible" />
             </RadioGroup>
 
             <TextView
                 android:id="@+id/pre_garan_granos_txtview17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="8.7 En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -1454,26 +1453,26 @@
 
                 <RadioButton
                     android:id="@+id/pre_garan_granos_ra86"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra87"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aceptable" />
+                    android:text="Aceptable"
+                    android:visibility="visible" />
 
                 <RadioButton
 
                     android:id="@+id/pre_garan_granos_ra88"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:visibility="visible" />
             </RadioGroup>
 
             <TextView
@@ -1489,9 +1488,9 @@
                 android:id="@+id/pre_garan_granos_txtview177"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="9.1 ¿Cómo se enteró del Programa y los requisitos?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -1500,21 +1499,21 @@
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/pre_garan_granos_ch11"
-                    android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:enabled="true"
-                    android:text="Carteles informativos" />
+                    android:text="Carteles informativos"
+                    android:visibility="visible" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/pre_garan_granos_ch12"
-                    android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:enabled="true"
-                    android:text="Periódico" />
+                    android:text="Periódico"
+                    android:visibility="visible" />
 
             </LinearLayout>
 
@@ -1525,59 +1524,59 @@
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/pre_garan_granos_ch13"
-                    android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:enabled="true"
-                    android:text="Radio" />
+                    android:text="Radio"
+                    android:visibility="visible" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/pre_garan_granos_ch14"
-                    android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:enabled="true"
-                    android:text="Televisión" />
+                    android:text="Televisión"
+                    android:visibility="visible" />
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/pre_garan_granos_ch15"
-                    android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:enabled="true"
-                    android:text="Otros productores" />
+                    android:text="Otros productores"
+                    android:visibility="visible" />
 
             </LinearLayout>
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/pre_garan_granos_ch16"
-                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:enabled="true"
-                android:text="Sitio oficial/Medios oficiales" />
+                android:text="Sitio oficial/Medios oficiales"
+                android:visibility="visible" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/pre_garan_granos_ch17"
-                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:enabled="true"
-                android:text="Redes sociales, Internet" />
+                android:text="Redes sociales, Internet"
+                android:visibility="visible" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/pre_garan_granos_ch18"
-                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:enabled="true"
-                android:text="Autoridades o instituciones locales" />
+                android:text="Autoridades o instituciones locales"
+                android:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -1586,20 +1585,20 @@
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/pre_garan_granos_ch19"
-                    android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:enabled="true"
-                    android:text="Otro  " />
+                    android:text="Otro  "
+                    android:visibility="visible" />
 
                 <EditText
                     android:id="@+id/pre_garan_granos_tx25"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:visibility="visible"
                     android:hint="Especifique"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:visibility="visible" />
 
             </LinearLayout>
 
@@ -1607,10 +1606,10 @@
                 android:id="@+id/pre_garan_granos_txtview19"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:layout_marginTop="5dp"
                 android:text="9.2 ¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <EditText
                 android:id="@+id/pre_garan_granos_txt26"
@@ -1624,9 +1623,9 @@
                 android:id="@+id/pre_garan_granos_txtview20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="9.3 ¿Cuáles considera son para usted las ventajas de este Programa?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <EditText
                 android:id="@+id/pre_garan_granos_txt27"
@@ -1640,9 +1639,9 @@
                 android:id="@+id/pre_garan_granos_txtview21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="9.4 ¿Cuáles considera son las principales desventajas del Programa?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <EditText
                 android:id="@+id/pre_garan_granos_txt28"
@@ -1656,9 +1655,9 @@
                 android:id="@+id/pre_garan_granos_txtview22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
                 android:text="9.5 ¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:visibility="visible" />
 
             <EditText
                 android:id="@+id/pre_garan_granos_txt29"

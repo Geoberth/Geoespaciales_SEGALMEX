@@ -41,6 +41,8 @@ import com.example.geosegalmex.PARBeneficiario.PARBeneficiarioBD;
 import com.example.geosegalmex.PAROperativo.PARoperativoBD;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
+import com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivosBD;
+import com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivos_bd;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
 import com.example.geosegalmex.PGOperativoLeche.PGOperativoLecheBD;
@@ -196,15 +198,18 @@ public class GpsEnableb extends AppCompatActivity {
                         textid.setText("PG_B_G_"+folioo);
                         break;
                     case 7:
-                        textid.setText("PAR_B_"+folioo);
+                        textid.setText("PG_B_G_I_"+folioo);
                         break;
                     case 8:
-                        textid.setText("PAR_O_"+folioo);
+                        textid.setText("PAR_B_"+folioo);
                         break;
                     case 9:
-                        textid.setText("LI_"+folioo);
+                        textid.setText("PAR_O_"+folioo);
                         break;
                     case 10:
+                        textid.setText("LI_"+folioo);
+                        break;
+                    case 11:
                         textid.setText("LI_E_"+folioo);
                         flag = 1;
                         break;
@@ -485,6 +490,16 @@ public class GpsEnableb extends AppCompatActivity {
         else if(proy.equals("RNPL Expediente")){
             LiconsaVerificacionBD db;
             db = new LiconsaVerificacionBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
+        }
+
+        else if(proy.equals("PG Beneficiario Granos Incentivos")){
+            PGBeneficiariosGranosIncentivosBD db;
+            db = new PGBeneficiariosGranosIncentivosBD(this);
             boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
             db.close();
             if(insertarData == true) {

@@ -35,6 +35,7 @@ import com.example.geosegalmex.PARBeneficiario.PARBeneficiarioBD;
 import com.example.geosegalmex.PAROperativo.PARoperativoBD;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
+import com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivosBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
 import com.example.geosegalmex.PGOperativoLeche.PGOperativoLecheBD;
@@ -150,6 +151,11 @@ public class ExportarFragment extends Fragment {
                                 PGOperativoLecheBD baseBD11;
                                 baseBD11 = new PGOperativoLecheBD(getContext());
                                 baseBD11.deletePGOperativoLeche();
+
+                                PGBeneficiariosGranosIncentivosBD baseBD12;
+                                baseBD12 = new PGBeneficiariosGranosIncentivosBD(getContext());
+                                baseBD12.deletePGBeneficiarioGranosIncentivos();
+
                                 ed1.setText("Bases de datos borradas.");
                                 ed1.setVisibility(View.VISIBLE);
                                 sDialog.dismissWithAnimation();
@@ -303,6 +309,17 @@ public class ExportarFragment extends Fragment {
                         } catch (IOException e) {
                             try {
                                 deployDatabase("RNPLExpediente");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            deployDatabase("PGBeneficiarioGranosIncentivos");
+                        } catch (IOException e) {
+                            try {
+                                deployDatabase("PGBeneficiarioGranosIncentivos");
                             } catch (IOException ex) {
                                 ex.printStackTrace();
                             }

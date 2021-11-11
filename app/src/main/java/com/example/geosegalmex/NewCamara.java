@@ -30,6 +30,7 @@ import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
 import com.example.geosegalmex.PAROperativo.PAR_Operativo;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBeneficiariosGranos;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
+import com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivos;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos;
 import com.example.geosegalmex.PGOperativoLeche.PGOperativoLeche;
@@ -263,6 +264,9 @@ public class NewCamara extends AppCompatActivity {
                                     }
                                     else if (General.Proyecto.equals("RNPL Productor")){
                                         startActivity(new Intent(getApplication(), Liconsa.class));
+                                    }
+                                    else if (General.Proyecto.equals("PG Beneficiario Granos Incentivos")){
+                                        startActivity(new Intent(getApplication(), PGBeneficiariosGranosIncentivos.class));
                                     }
                                     else{
                                         startActivity(new Intent(getApplication(), IdentificacionCuestionario.class));

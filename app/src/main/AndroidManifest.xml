@@ -24,51 +24,55 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Liconsa2.LiconsaVerificacion"
-            android:screenOrientation="portrait"
+            android:name=".PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivos"
             android:exported="false" />
+        <activity
+            android:name=".Liconsa2.LiconsaVerificacion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PGBeneficiarioLeche.PGBeneficiarioLeche"
-            android:screenOrientation="portrait"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PGOperativoLeche.PGOperativoLeche"
-            android:screenOrientation="portrait"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PGOperativoGranos.PGOperativoGranos"
-            android:screenOrientation="portrait"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Liconsa.Liconsa"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PAROperativo.PAR_Operativo"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PGBeneficiarioGranos.PGBeneficiariosGranos"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PGOperativoEstimulos.PGOperativoEstimulos"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PARBeneficiario.PARBeneficiario"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LiconsaBeneficiario.PASLBeneficiario"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LiconsaVentanilla.PASLOperativo"
-            android:screenOrientation="portrait"
-            android:exported="true" />
-        <activity android:name=".NewCamara"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewCamara"
+            android:screenOrientation="portrait" />
         <activity android:name=".apicola.HerramientasProteccion" />
         <activity android:name=".unidadcomercializacion.Apicultura_4" />
         <activity android:name=".unidadcomercializacion.Apicultura_3" />
@@ -78,8 +82,9 @@
         <activity android:name=".unidadcomercializacion.comercializacion_3_1" />
         <activity android:name=".caracterizacion.variables_caracterizacion.CalendarioDate" />
         <activity android:name=".unidadproduccion.FuenteAgua" />
-        <activity android:name=".Gps.GpsEnableb"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Gps.GpsEnableb"
+            android:screenOrientation="portrait" />
         <activity android:name=".unidadcaracterizacionhortalizas.FertilizanteSi" />
         <activity android:name=".apicola.SanidadApicola" />
         <activity android:name=".apicola.ReproduccionApicola" />
@@ -177,18 +182,20 @@
         <activity android:name=".Gps.GpsActivity" />
         <activity
             android:name=".drawer.DrawerActivity"
+            android:exported="true"
             android:label="Drawer"
             android:screenOrientation="portrait"
-            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Georeferencia.GeoreferenciaActivity" />
         <activity android:name=".Geo.GeoFotos" />
         <activity android:name=".Geo.FotoActivityDos" />
         <activity android:name=".Geo.FotoActivityUno" />
         <activity android:name=".IdentificacionCuestionario" />
-        <activity android:name=".Segunda"
+        <activity
+            android:name=".Segunda"
             android:screenOrientation="portrait" />
-        <activity android:name=".Principal"
+        <activity
+            android:name=".Principal"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

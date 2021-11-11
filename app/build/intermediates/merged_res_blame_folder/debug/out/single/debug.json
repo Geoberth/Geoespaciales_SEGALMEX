@@ -472,6 +472,10 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pecuario_ovinos.xml"
     },
     {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pgbeneficiarios_granos_incentivos.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pgbeneficiarios_granos_incentivos.xml"
+    },
+    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pgoperativo_estimulos.xml.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_pgoperativo_estimulos.xml"
     },

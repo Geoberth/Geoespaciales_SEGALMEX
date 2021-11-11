@@ -37,6 +37,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivos"
+            android:exported="false" />
+        <activity
             android:name="com.example.geosegalmex.Liconsa2.LiconsaVerificacion"
             android:exported="false"
             android:screenOrientation="portrait" />

@@ -34,6 +34,8 @@ import com.example.geosegalmex.PGBeneficiarioGranos.PGB_granos_model;
 import com.example.geosegalmex.PGBeneficiarioGranos.PGBgranosBD;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLecheBD;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche_Model;
+import com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivosBD;
+import com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivos_Model;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulosBD;
 import com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos_Model;
 import com.example.geosegalmex.PGOperativoGranos.PGOperativoGranosBD;
@@ -83,6 +85,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
     Liconsa_Model model9;
     PAR_operativo_model model10;
     LiconsaVerificacion_Model model11;
+    PGBeneficiariosGranosIncentivos_Model model12;
 
     String longitudGeo="";
     String latitudGeo="";
@@ -130,6 +133,9 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 }
                 else if(General.Proyecto.equals("PG Beneficiario Granos")){
                     agregarPGBeneficiarioGranos();
+                }
+                else if(General.Proyecto.equals("PG Beneficiario Granos Incentivos")){
+                    agregarPGBeneficiarioGranosIncentivos();
                 }
                 else if(General.Proyecto.equals("PG Beneficiario Leche")){
                     agregarPGBeneficiarioLeche();
@@ -556,6 +562,33 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
         }
     }
+
+    private void agregarPGBeneficiarioGranosIncentivos() {
+        if(bandera == 2){
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
+        }
+        else{
+            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
+            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+        }
+
+        model12 = new PGBeneficiariosGranosIncentivos_Model();
+        model12 = (PGBeneficiariosGranosIncentivos_Model)getIntent().getSerializableExtra("model");
+        model12.setLongitudGeo(longitudGeo);
+        model12.setLatitudGeo(latitudGeo);
+
+        PGBeneficiariosGranosIncentivosBD baseBD;
+        baseBD = new PGBeneficiariosGranosIncentivosBD(this);
+
+        boolean insertarData = baseBD.addPGBeneficiarioGranosIncentivos(model12);
+        if(insertarData == true) {
+            Toast.makeText(this, "Encuesta guardada correctamente", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, "Error al guardar", Toast.LENGTH_LONG).show();
+        }
+    }
+
 
 
 
