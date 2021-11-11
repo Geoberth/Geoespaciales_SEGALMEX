@@ -4,16 +4,15 @@ import java.io.Serializable;
 
 public class PGB_granos_model implements Serializable {
 
-    private String folio, fechaenc, pgbtt2, pgbtt3, pgbtt4, pgbtt5, tprodu, pgbtt6, pgbtt7, pgbtt8, pgbtt9, pgbtt10, nomedo, cveedo, nommun, cvemun, pgbtt13, pgbtt14, pgbtt15, pgbtt16, pgbtt17, nomedo2, cveedo2, nommun2, cvemun2, pgr1, pgbtt20, pgr2, pgr3, pgbtt21, pgr4, pgbtt22, pgbtt23, pgbtt24, pgapoyo1, pgapoyo2, pgapoyo3, pgapoyo4, pgapoyo5, pgapoyo6, pgapoyo7, pgapoyo8, pgapoyo9, pgapoyo10, pgr5, pgr6, pgr7, pgr8, pgr9, pgr10, pgr11, pgr12, pgr13, pgr14, pgr15, pgr16, pgr17, pgr18, pgr19, pgr20, pgr21, pgr22, pgr23, pgr24, pgr25, pgr26, pgr27, pgr28, pgr29, pgr30, pgr31, pgr32, pgre1, pgre2, pgre3, pgre4, pgre5, pgre6, pgre7, pgre8, pgre9, pgbtt25, pgbtt26, pgbtt27, pgbtt28, pgbtt29, foto1, foto2, longitudGeo, latitudGeo;
+    private String folio, fechaenc, pgbtt2, pgbtt3, pgbtt4, pgbtt5, pgbtt6, pgbtt7, pgbtt8, pgbtt9, pgbtt10, nomedo, cveedo, nommun, cvemun, pgbtt13, pgbtt14, pgbtt15, pgbtt16, pgbtt17, nomedo2, cveedo2, nommun2, cvemun2, pgr1, pgbtt20, pgr2, pgr3, pgbtt21, pgr4, pgbtt22, pgbtt23, pgbtt24, pgapoyo1, pgapoyo2, pgapoyo3, pgapoyo4, pgapoyo5, pgapoyo6, pgapoyo7, pgapoyo8, pgapoyo9, pgapoyo10, pgr5, pgr6, pgr7, pgr8, pgr9, pgr10, pgr11, pgr12, pgr13, pgr14, pgr15, pgr16, pgr17, pgr18, pgr19, pgr20, pgr26, pgr27, pgr28, pgr29, pgr30, pgr31, pgr32, pgre1, pgre2, pgre3, pgre4, pgre5, pgre6, pgre7, pgre8, pgre9, pgbtt25, pgbtt26, pgbtt27, pgbtt28, pgbtt29, foto1, foto2, longitudGeo, latitudGeo;
 
-    public PGB_granos_model(String folio, String fechaenc, String pgbtt2, String pgbtt3, String pgbtt4, String pgbtt5, String tprodu, String pgbtt6, String pgbtt7, String pgbtt8, String pgbtt9, String pgbtt10, String nomedo, String cveedo, String nommun, String cvemun, String pgbtt13, String pgbtt14, String pgbtt15, String pgbtt16, String pgbtt17, String nomedo2, String cveedo2, String nommun2, String cvemun2, String pgr1, String pgbtt20, String pgr2, String pgr3, String pgbtt21, String pgr4, String pgbtt22, String pgbtt23, String pgbtt24, String pgapoyo1, String pgapoyo2, String pgapoyo3, String pgapoyo4, String pgapoyo5, String pgapoyo6, String pgapoyo7, String pgapoyo8, String pgapoyo9, String pgapoyo10, String pgr5, String pgr6, String pgr7, String pgr8, String pgr9, String pgr10, String pgr11, String pgr12, String pgr13, String pgr14, String pgr15, String pgr16, String pgr17, String pgr18, String pgr19, String pgr20, String pgr21, String pgr22, String pgr23, String pgr24, String pgr25, String pgr26, String pgr27, String pgr28, String pgr29, String pgr30, String pgr31, String pgr32, String pgre1, String pgre2, String pgre3, String pgre4, String pgre5, String pgre6, String pgre7, String pgre8, String pgre9, String pgbtt25, String pgbtt26, String pgbtt27, String pgbtt28, String pgbtt29, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public PGB_granos_model(String folio, String fechaenc, String pgbtt2, String pgbtt3, String pgbtt4, String pgbtt5,String pgbtt6, String pgbtt7, String pgbtt8, String pgbtt9, String pgbtt10, String nomedo, String cveedo, String nommun, String cvemun, String pgbtt13, String pgbtt14, String pgbtt15, String pgbtt16, String pgbtt17, String nomedo2, String cveedo2, String nommun2, String cvemun2, String pgr1, String pgbtt20, String pgr2, String pgr3, String pgbtt21, String pgr4, String pgbtt22, String pgbtt23, String pgbtt24, String pgapoyo1, String pgapoyo2, String pgapoyo3, String pgapoyo4, String pgapoyo5, String pgapoyo6, String pgapoyo7, String pgapoyo8, String pgapoyo9, String pgapoyo10, String pgr5, String pgr6, String pgr7, String pgr8, String pgr9, String pgr10, String pgr11, String pgr12, String pgr13, String pgr14, String pgr15, String pgr16, String pgr17, String pgr18, String pgr19, String pgr20, String pgr26, String pgr27, String pgr28, String pgr29, String pgr30, String pgr31, String pgr32, String pgre1, String pgre2, String pgre3, String pgre4, String pgre5, String pgre6, String pgre7, String pgre8, String pgre9, String pgbtt25, String pgbtt26, String pgbtt27, String pgbtt28, String pgbtt29, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fechaenc = fechaenc;
         this.pgbtt2 = pgbtt2;
         this.pgbtt3 = pgbtt3;
         this.pgbtt4 = pgbtt4;
         this.pgbtt5 = pgbtt5;
-        this.tprodu = tprodu;
         this.pgbtt6 = pgbtt6;
         this.pgbtt7 = pgbtt7;
         this.pgbtt8 = pgbtt8;
@@ -67,11 +66,6 @@ public class PGB_granos_model implements Serializable {
         this.pgr18 = pgr18;
         this.pgr19 = pgr19;
         this.pgr20 = pgr20;
-        this.pgr21 = pgr21;
-        this.pgr22 = pgr22;
-        this.pgr23 = pgr23;
-        this.pgr24 = pgr24;
-        this.pgr25 = pgr25;
         this.pgr26 = pgr26;
         this.pgr27 = pgr27;
         this.pgr28 = pgr28;
@@ -149,14 +143,6 @@ public class PGB_granos_model implements Serializable {
 
     public void setPgbtt5(String pgbtt5) {
         this.pgbtt5 = pgbtt5;
-    }
-
-    public String getTprodu() {
-        return tprodu;
-    }
-
-    public void setTprodu(String tprodu) {
-        this.tprodu = tprodu;
     }
 
     public String getPgbtt6() {
@@ -581,46 +567,6 @@ public class PGB_granos_model implements Serializable {
 
     public void setPgr20(String pgr20) {
         this.pgr20 = pgr20;
-    }
-
-    public String getPgr21() {
-        return pgr21;
-    }
-
-    public void setPgr21(String pgr21) {
-        this.pgr21 = pgr21;
-    }
-
-    public String getPgr22() {
-        return pgr22;
-    }
-
-    public void setPgr22(String pgr22) {
-        this.pgr22 = pgr22;
-    }
-
-    public String getPgr23() {
-        return pgr23;
-    }
-
-    public void setPgr23(String pgr23) {
-        this.pgr23 = pgr23;
-    }
-
-    public String getPgr24() {
-        return pgr24;
-    }
-
-    public void setPgr24(String pgr24) {
-        this.pgr24 = pgr24;
-    }
-
-    public String getPgr25() {
-        return pgr25;
-    }
-
-    public void setPgr25(String pgr25) {
-        this.pgr25 = pgr25;
     }
 
     public String getPgr26() {
