@@ -293,7 +293,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="4. ¿Recibe un trato adecuado, oportuno, respetuoso"
+                android:text="4. ¿Recibe un trato adecuado, oportuno, respetuoso?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -466,7 +466,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="8. ¿Le han condicionado la dotación de leche que le conrresponde condicionamiento alguno?"
+                android:text="8. ¿Le han condicionado la dotación de leche que le corresponde condicionamiento alguno?"
                 android:textColor="#000000" />
 
             <RadioGroup
