@@ -265,7 +265,7 @@ public class NewCamara extends AppCompatActivity {
                                     else if (General.Proyecto.equals("RNPL Productor")){
                                         startActivity(new Intent(getApplication(), Liconsa.class));
                                     }
-                                    else if (General.Proyecto.equals("PG Beneficiario Granos Incentivos")){
+                                    else if (General.Proyecto.equals("PG Beneficiario Estimulos")){
                                         startActivity(new Intent(getApplication(), PGBeneficiariosGranosIncentivos.class));
                                     }
                                     else{

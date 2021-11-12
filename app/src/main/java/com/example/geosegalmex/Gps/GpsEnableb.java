@@ -497,7 +497,7 @@ public class GpsEnableb extends AppCompatActivity {
             }
         }
 
-        else if(proy.equals("PG Beneficiario Granos Incentivos")){
+        else if(proy.equals("PG Beneficiario Estimulos")){
             PGBeneficiariosGranosIncentivosBD db;
             db = new PGBeneficiariosGranosIncentivosBD(this);
             boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);

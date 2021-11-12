@@ -134,7 +134,7 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
                 else if(General.Proyecto.equals("PG Beneficiario Granos")){
                     agregarPGBeneficiarioGranos();
                 }
-                else if(General.Proyecto.equals("PG Beneficiario Granos Incentivos")){
+                else if(General.Proyecto.equals("PG Beneficiario Estimulos")){
                     agregarPGBeneficiarioGranosIncentivos();
                 }
                 else if(General.Proyecto.equals("PG Beneficiario Leche")){
