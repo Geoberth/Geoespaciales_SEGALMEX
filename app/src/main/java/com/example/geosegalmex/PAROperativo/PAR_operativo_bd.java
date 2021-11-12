@@ -10,6 +10,9 @@ public class PAR_operativo_bd {
     public static final String COLUMN_CVEEDO= "CVEEDO";
     public static final String COLUMN_NOMMUN= "NOMMUN";
     public static final String COLUMN_CVEMUN= "CVEMUN";
+    public static final String COLUMN_LOCALI= "LOCALI";
+    public static final String COLUMN_CVELOCA= "CVELOCA";
+
     public static final String COLUMN_PARNOM= "PARNOM";
     public static final String COLUMN_PARAPE= "PARAPE";
     public static final String COLUMN_PARAPEM= "PARAPEM";
@@ -179,6 +182,9 @@ public class PAR_operativo_bd {
             + COLUMN_CVEEDO + " VARCHAR, "
             + COLUMN_NOMMUN + " VARCHAR, "
             + COLUMN_CVEMUN + " VARCHAR, "
+            + COLUMN_LOCALI + " VARCHAR, "
+            + COLUMN_CVELOCA + " VARCHAR, "
+
             + COLUMN_PARNOM + " VARCHAR, "
             + COLUMN_PARAPE + " VARCHAR, "
             + COLUMN_PARAPEM + " VARCHAR, "

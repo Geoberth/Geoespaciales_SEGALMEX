@@ -49,6 +49,8 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
         contentValues.put(PAR_operativo_bd.COLUMN_CVEEDO, model.getCveedo());
         contentValues.put(PAR_operativo_bd.COLUMN_NOMMUN, model.getNommun());
         contentValues.put(PAR_operativo_bd.COLUMN_CVEMUN, model.getCvemun());
+        contentValues.put(PAR_operativo_bd.COLUMN_LOCALI, model.getLocali());
+        contentValues.put(PAR_operativo_bd.COLUMN_CVELOCA, model.getCveloca());
         contentValues.put(PAR_operativo_bd.COLUMN_PARNOM, model.getParnom());
         contentValues.put(PAR_operativo_bd.COLUMN_PARAPE, model.getParape());
         contentValues.put(PAR_operativo_bd.COLUMN_PARAPEM, model.getParapem());
@@ -267,11 +269,13 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
                 String cveenti = cursor.getString(3);
                 String muni = cursor.getString(4);
                 String cvemuni = cursor.getString(5);
-                String nom = cursor.getString(6);
-                String ape = cursor.getString(7);
-                String apem = cursor.getString(8);
+                String locali = cursor.getString(6);
+                String cveloca = cursor.getString(7);
+                String nom = cursor.getString(8);
+                String ape = cursor.getString(9);
+                String apem = cursor.getString(10);
 
-                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, nom, ape, apem, "","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
+                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, locali, cveloca, nom, ape, apem, "","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
                 returnList.add(newCuastomer);
 
             }while(cursor.moveToNext());

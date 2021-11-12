@@ -358,7 +358,7 @@
                     android:id="@+id/pg_granos_tvCuatro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4. ¿Ha sido capacitado como ventanilla para la operación del programa y el uso del sistema?"
+                    android:text="4. ¿Ha sido capacitado como ventanilla para la operación del Programa y el uso del sistema?"
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
