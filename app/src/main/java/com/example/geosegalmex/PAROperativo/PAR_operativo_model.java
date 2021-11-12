@@ -4,21 +4,20 @@ import java.io.Serializable;
 
 public class PAR_operativo_model implements Serializable {
 
-    private String folio, fechaenc, noment, cveedo, nommun, cvemun, cveloca, locali, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, longitudGeo, latitudGeo;
+    private String folio, fechaenc, noment, cveedo, nommun, cvemun, cveloca, locali, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pareo15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, longitudGeo, latitudGeo;
 
     public PAR_operativo_model() {
     }
 
-
-    public PAR_operativo_model(String folio, String fechaenc, String noment, String cveedo, String nommun, String cvemun, String cveloca, String locali, String parnom, String parape, String parapem, String parrad1, String edad, String pare6, String pare7, String parrad2, String parrad3, String parrad4, String parrad5, String parrad6, String parrad7, String pare8, String pare9, String pare10, String pare11, String pare12, String pare13, String pare14, String pare15, String pare16, String pare17, String pare18, String pare19, String pare20, String pare21, String pare22, String pare23, String pare24, String pare25, String pare26, String pare27, String pare28, String pare29, String pare30, String pare31, String pare32, String pare33, String pare34, String pare35, String pare36, String pare37, String pare38, String pare39, String pare40, String pare41, String pare42, String pare43, String pare44, String pare45, String pare46, String pare47, String pare48, String pare49, String pare50, String pare51, String pare52, String pare53, String pare54, String pare55, String pare56, String pare57, String pare58, String pare59, String pare60, String pare61, String pare62, String pare63, String pare64, String pare65, String pare66, String pare67, String pare68, String pare69, String pare70, String pare71, String pare72, String pare73, String pare74, String pare75, String pare76, String pare77, String pare78, String pare79, String pare80, String pare81, String pare82, String pare84, String pare85, String pare86, String pare87, String pare88, String pare89, String pare90, String pare91, String pare92, String pare93, String pare94, String pare95, String pare96, String pare97, String pare98, String pare99, String pare100, String pare101, String pare102, String pare103, String pare104, String pare105, String pare106, String pare107, String pare108, String pare109, String pare110, String pare111, String pare112, String pare113, String pare114, String pare115, String pare116, String pare117, String pare118, String pare119, String pare120, String pare121, String pare122, String pare123, String pare124, String pare125, String pare126, String pare127, String pare128, String pare129, String pare130, String pare131, String pare132, String pare133, String pare134, String pare135, String pare136, String pare137, String pare138, String pare139, String pare140, String pare141, String pare142, String pare143, String pare144, String pare145, String pare146, String pare147, String pare148, String pare149, String pare150, String pare151, String pare152, String f1, String f2, String longitudGeo, String latitudGeo) {
+    public PAR_operativo_model(String folio, String fechaenc, String noment, String cveedo, String nommun, String cvemun, String cveloca, String locali, String parnom, String parape, String parapem, String parrad1, String edad, String pare6, String pare7, String parrad2, String parrad3, String parrad4, String parrad5, String parrad6, String parrad7, String pare8, String pare9, String pare10, String pare11, String pare12, String pare13, String pare14, String pare15, String pareo15, String pare16, String pare17, String pare18, String pare19, String pare20, String pare21, String pare22, String pare23, String pare24, String pare25, String pare26, String pare27, String pare28, String pare29, String pare30, String pare31, String pare32, String pare33, String pare34, String pare35, String pare36, String pare37, String pare38, String pare39, String pare40, String pare41, String pare42, String pare43, String pare44, String pare45, String pare46, String pare47, String pare48, String pare49, String pare50, String pare51, String pare52, String pare53, String pare54, String pare55, String pare56, String pare57, String pare58, String pare59, String pare60, String pare61, String pare62, String pare63, String pare64, String pare65, String pare66, String pare67, String pare68, String pare69, String pare70, String pare71, String pare72, String pare73, String pare74, String pare75, String pare76, String pare77, String pare78, String pare79, String pare80, String pare81, String pare82, String pare84, String pare85, String pare86, String pare87, String pare88, String pare89, String pare90, String pare91, String pare92, String pare93, String pare94, String pare95, String pare96, String pare97, String pare98, String pare99, String pare100, String pare101, String pare102, String pare103, String pare104, String pare105, String pare106, String pare107, String pare108, String pare109, String pare110, String pare111, String pare112, String pare113, String pare114, String pare115, String pare116, String pare117, String pare118, String pare119, String pare120, String pare121, String pare122, String pare123, String pare124, String pare125, String pare126, String pare127, String pare128, String pare129, String pare130, String pare131, String pare132, String pare133, String pare134, String pare135, String pare136, String pare137, String pare138, String pare139, String pare140, String pare141, String pare142, String pare143, String pare144, String pare145, String pare146, String pare147, String pare148, String pare149, String pare150, String pare151, String pare152, String f1, String f2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fechaenc = fechaenc;
         this.noment = noment;
         this.cveedo = cveedo;
         this.nommun = nommun;
         this.cvemun = cvemun;
-        this.locali = locali;
         this.cveloca = cveloca;
+        this.locali = locali;
         this.parnom = parnom;
         this.parape = parape;
         this.parapem = parapem;
@@ -40,6 +39,7 @@ public class PAR_operativo_model implements Serializable {
         this.pare13 = pare13;
         this.pare14 = pare14;
         this.pare15 = pare15;
+        this.pareo15 = pareo15;
         this.pare16 = pare16;
         this.pare17 = pare17;
         this.pare18 = pare18;
@@ -182,6 +182,7 @@ public class PAR_operativo_model implements Serializable {
         this.latitudGeo = latitudGeo;
     }
 
+
     public String getFolio() {
         return folio;
     }
@@ -230,20 +231,20 @@ public class PAR_operativo_model implements Serializable {
         this.cvemun = cvemun;
     }
 
-    public String getLocali() {
-        return locali;
-    }
-
-    public void getLocali(String locali) {
-        this.locali = locali;
-    }
-
     public String getCveloca() {
         return cveloca;
     }
 
     public void setCveloca(String cveloca) {
         this.cveloca = cveloca;
+    }
+
+    public String getLocali() {
+        return locali;
+    }
+
+    public void setLocali(String locali) {
+        this.locali = locali;
     }
 
     public String getParnom() {
@@ -412,6 +413,14 @@ public class PAR_operativo_model implements Serializable {
 
     public void setPare15(String pare15) {
         this.pare15 = pare15;
+    }
+
+    public String getPareo15() {
+        return pareo15;
+    }
+
+    public void setPareo15(String pareo15) {
+        this.pareo15 = pareo15;
     }
 
     public String getPare16() {

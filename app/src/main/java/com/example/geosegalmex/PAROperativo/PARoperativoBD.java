@@ -18,7 +18,7 @@ import java.util.List;
 public class PARoperativoBD  extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "PAROperativo";
-    public static final int DB_VERSION = 12;
+    public static final int DB_VERSION = 13;
 
     public PARoperativoBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -72,6 +72,7 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
         contentValues.put(PAR_operativo_bd.COLUMN_PARE13, model.getPare13());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE14, model.getPare14());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE15, model.getPare15());
+        contentValues.put(PAR_operativo_bd.COLUMN_PAREO15, model.getPareo15());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE16, model.getPare16());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE17, model.getPare17());
         contentValues.put(PAR_operativo_bd.COLUMN_PARE18, model.getPare18());
@@ -275,7 +276,7 @@ public class PARoperativoBD  extends SQLiteOpenHelper {
                 String ape = cursor.getString(9);
                 String apem = cursor.getString(10);
 
-                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, locali, cveloca, nom, ape, apem, "","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
+                PAR_operativo_model newCuastomer = new PAR_operativo_model(folio, fecha, entidad, cveenti, muni, cvemuni, locali, cveloca, nom, ape, apem, "","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","" );
                 returnList.add(newCuastomer);
 
             }while(cursor.moveToNext());

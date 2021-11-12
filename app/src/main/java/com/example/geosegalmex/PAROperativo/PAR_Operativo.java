@@ -700,6 +700,7 @@ public class PAR_Operativo extends AppCompatActivity {
                                     String pare13 = obtenerRadio(parer15, parer16);
                                     String pare14 = obtenerRadio(parer17, parer18);
                                     String pare15 = obtenerRadio4(parer19, parer20, parer21, parer22);
+                                    String pareo15 = paret9.getText().toString();
                                     String pare16 = obtenerRadio3(parer23, parer24, parer25);
                                     String pare17 = obtenerRadio4(parer26, parer27, parer28, parer29);
                                     String pare18 = capa3();
@@ -840,7 +841,7 @@ public class PAR_Operativo extends AppCompatActivity {
                                     String f1 = General.Foto1;
                                     String f2 = General.Foto2;
 
-                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, locali, cveloca, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, "", "");
+                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, locali, cveloca, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pareo15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, "", "");
                                     Intent in = new Intent(PAR_Operativo.this, GeoreferenciaActivity.class);
                                     in.putExtra("model", model);
                                     startActivity(in);
@@ -2278,27 +2279,13 @@ if(pa110_57.isChecked()){count = count + 1;}
         String cadena5 = "";
         String resultado5 = "";
 
-        if (parec111.isChecked()){
-            cadena5 = "Lunes-";
-        }
-        if (parec112.isChecked()){
-            cadena5 = "Martes-";
-        }
-        if (parec113.isChecked()){
-            cadena5 = "Miércoles-";
-        }
-        if (parec114.isChecked()){
-            cadena5 = "Jueves-";
-        }
-        if (parec115.isChecked()){
-            cadena5 = "Viernes-";
-        }
-        if (parec116.isChecked()){
-            cadena5 = "Sábado-";
-        }
-        if (parec117.isChecked()){
-            cadena5 = "Domingo-";
-        }
+        if(parec111.isChecked()){cadena5 += "" + parec111.getText().toString() + "-";}
+        if(parec112.isChecked()){cadena5 += "" + parec112.getText().toString() + "-";}
+        if(parec113.isChecked()){cadena5 += "" + parec113.getText().toString() + "-";}
+        if(parec114.isChecked()){cadena5 += "" + parec114.getText().toString() + "-";}
+        if(parec115.isChecked()){cadena5 += "" + parec115.getText().toString() + "-";}
+        if(parec116.isChecked()){cadena5 += "" + parec116.getText().toString() + "-";}
+        if(parec117.isChecked()){cadena5 += "" + parec117.getText().toString() + "-";}
 
         resultado5 = cadena5.substring(0, cadena5.length()-1);
         return resultado5;
@@ -2323,22 +2310,13 @@ if(pa110_57.isChecked()){count = count + 1;}
         String cadena6 = "";
         String resultado6 = "";
 
-        if (parec118.isChecked()){
-            cadena6 = "Sismos-";
-        }
-        if (parec119.isChecked()){
-            cadena6 = "Ciclones-";
-        }
-        if (parec120.isChecked()){
-            cadena6 = "Violencia-";
-        }
-        if (parec121.isChecked()){
-            cadena6 = "Otro-";
-        }
-        if (parec122.isChecked()){
-            cadena6 = "Ninguno-";
-        }
 
+        if(parec118.isChecked()){cadena6 += "" + parec118.getText().toString() + "-";}
+        if(parec119.isChecked()){cadena6 += "" + parec119.getText().toString() + "-";}
+        if(parec120.isChecked()){cadena6 += "" + parec120.getText().toString() + "-";}
+        if(parec121.isChecked()){cadena6 += "" + parec121.getText().toString() + "-";}
+        if(parec122.isChecked()){cadena6 += "" + parec122.getText().toString() + "-";}
+        
         resultado6 = cadena6.substring(0, cadena6.length()-1);
         return resultado6;
 
@@ -2362,33 +2340,15 @@ if(pa110_57.isChecked()){count = count + 1;}
         String cadena7 = "";
         String resultado7 = "";
 
-        if (parec123.isChecked()){
-            cadena7 = "Sismos-";
-        }
-        if (parec124.isChecked()){
-            cadena7 = "Caseta de telefonía-";
-        }
-        if (parec125.isChecked()){
-            cadena7 = "Tiempo aire-";
-        }
-        if (parec126.isChecked()){
-            cadena7 = "Internet-";
-        }
-        if (parec127.isChecked()){
-            cadena7 = "Pago de servicios-";
-        }
-        if (parec128.isChecked()){
-            cadena7 = "Pago de apoyos-";
-        }
-        if (parec129.isChecked()){
-            cadena7 = "Distribución de leche Liconsa-";
-        }
-        if (parec130.isChecked()){
-            cadena7 = "Papelería-";
-        }
-        if (parec131.isChecked()){
-            cadena7 = "Otros-";
-        }
+        if(parec123.isChecked()){cadena7 += "" + parec123.getText().toString() + "-";}
+        if(parec124.isChecked()){cadena7 += "" + parec124.getText().toString() + "-";}
+        if(parec125.isChecked()){cadena7 += "" + parec125.getText().toString() + "-";}
+        if(parec126.isChecked()){cadena7 += "" + parec126.getText().toString() + "-";}
+        if(parec127.isChecked()){cadena7 += "" + parec127.getText().toString() + "-";}
+        if(parec128.isChecked()){cadena7 += "" + parec128.getText().toString() + "-";}
+        if(parec129.isChecked()){cadena7 += "" + parec129.getText().toString() + "-";}
+        if(parec130.isChecked()){cadena7 += "" + parec130.getText().toString() + "-";}
+        if(parec131.isChecked()){cadena7 += "" + parec131.getText().toString() + "-";}
 
         resultado7 = cadena7.substring(0, cadena7.length()-1);
         return resultado7;
@@ -2418,33 +2378,16 @@ if(pa110_57.isChecked()){count = count + 1;}
         String cadena8 = "";
         String resultado8 = "";
 
-        if (parec132.isChecked()){
-            cadena8 = "Sismos-";
-        }
-        if (parec133.isChecked()){
-            cadena8 = "Caseta de telefonía-";
-        }
-        if (parec134.isChecked()){
-            cadena8 = "Tiempo aire-";
-        }
-        if (parec135.isChecked()){
-            cadena8 = "Internet-";
-        }
-        if (parec136.isChecked()){
-            cadena8 = "Pago de servicios-";
-        }
-        if (parec137.isChecked()){
-            cadena8 = "Pago de apoyos-";
-        }
-        if (parec138.isChecked()){
-            cadena8 = "Distribución de leche Liconsa-";
-        }
-        if (parec139.isChecked()){
-            cadena8 = "Papelería-";
-        }
-        if (parec140.isChecked()){
-            cadena8 = "Otros-";
-        }
+        if(parec132.isChecked()){cadena8 += "" + parec132.getText().toString() + "-";}
+        if(parec133.isChecked()){cadena8 += "" + parec133.getText().toString() + "-";}
+        if(parec134.isChecked()){cadena8 += "" + parec134.getText().toString() + "-";}
+        if(parec135.isChecked()){cadena8 += "" + parec135.getText().toString() + "-";}
+        if(parec136.isChecked()){cadena8 += "" + parec136.getText().toString() + "-";}
+        if(parec137.isChecked()){cadena8 += "" + parec137.getText().toString() + "-";}
+        if(parec138.isChecked()){cadena8 += "" + parec138.getText().toString() + "-";}
+        if(parec139.isChecked()){cadena8 += "" + parec139.getText().toString() + "-";}
+        if(parec140.isChecked()){cadena8 += "" + parec140.getText().toString() + "-";}
+
         resultado8 = cadena8.substring(0, cadena8.length()-1);
         return resultado8;
     }

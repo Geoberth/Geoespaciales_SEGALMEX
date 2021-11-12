@@ -8,16 +8,16 @@
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-hdpi/icononor2_foreground.png"
     },
     {
-        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/drawable_iconoapp_liz_background.xml.flat",
-        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/drawable/iconoapp_liz_background.xml"
+        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_iconoapp_liz_round.xml.flat",
+        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-anydpi-v26/iconoapp_liz_round.xml"
     },
     {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_icononor2_round.png.flat",
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-xxhdpi/icononor2_round.png"
     },
     {
-        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_iconoapp_liz_round.xml.flat",
-        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-anydpi-v26/iconoapp_liz_round.xml"
+        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/drawable_iconoapp_liz_background.xml.flat",
+        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/drawable/iconoapp_liz_background.xml"
     },
     {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/drawable_icono_si_nov_background.xml.flat",
@@ -120,12 +120,12 @@
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pgoperativo_granos.xml"
     },
     {
-        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/layout_activity_pecuario_inicio.xml.flat",
-        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pecuario_inicio.xml"
-    },
-    {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-xhdpi_iconoapp_lizz_foreground.png.flat",
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-xhdpi/iconoapp_lizz_foreground.png"
+    },
+    {
+        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/layout_activity_pecuario_inicio.xml.flat",
+        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_pecuario_inicio.xml"
     },
     {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/layout_activity_pecuario_param_prod_reproductivos.xml.flat",
@@ -140,12 +140,12 @@
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-mdpi/iconoapp_lizz.png"
     },
     {
-        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/drawable_ic_baseline_monetization_on_24.xml.flat",
-        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/drawable/ic_baseline_monetization_on_24.xml"
-    },
-    {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-mdpi_icononor2.png.flat",
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-mdpi/icononor2.png"
+    },
+    {
+        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/drawable_ic_baseline_monetization_on_24.xml.flat",
+        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/drawable/ic_baseline_monetization_on_24.xml"
     },
     {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/layout_activity_manejo_apicola.xml.flat",
@@ -240,12 +240,12 @@
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_inventario_ganado_ovino.xml"
     },
     {
-        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-hdpi_iconoliz2.png.flat",
-        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-hdpi/iconoliz2.png"
-    },
-    {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/layout_activity_apicola_inicio.xml.flat",
         "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_apicola_inicio.xml"
+    },
+    {
+        "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-hdpi_iconoliz2.png.flat",
+        "source": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/mipmap-hdpi/iconoliz2.png"
     },
     {
         "merged": "/Users/dti-siap/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_iconoapp_liz_round.png.flat",

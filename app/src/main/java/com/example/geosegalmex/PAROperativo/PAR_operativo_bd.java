@@ -34,6 +34,7 @@ public class PAR_operativo_bd {
     public static final String COLUMN_PARE13= "PARE13";
     public static final String COLUMN_PARE14= "PARE14";
     public static final String COLUMN_PARE15= "PARE15";
+    public static final String COLUMN_PAREO15= "PARE15O";
     public static final String COLUMN_PARE16= "PARE16";
     public static final String COLUMN_PARE17= "PARE17";
     public static final String COLUMN_PARE18= "PARE18";
@@ -206,6 +207,7 @@ public class PAR_operativo_bd {
             + COLUMN_PARE13 + " VARCHAR, "
             + COLUMN_PARE14 + " VARCHAR, "
             + COLUMN_PARE15 + " VARCHAR, "
+            + COLUMN_PAREO15 + " VARCHAR, "
             + COLUMN_PARE16 + " VARCHAR, "
             + COLUMN_PARE17 + " VARCHAR, "
             + COLUMN_PARE18 + " VARCHAR, "
