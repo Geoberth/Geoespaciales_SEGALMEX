@@ -28,13 +28,13 @@ import java.util.regex.Pattern;
 
 public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
 
-    TextView textFecha;
+    TextView textFecha, pgbs3_1_1, pgbs4_1_2, pgbs3_2_1, pgbs4_2_2, pgbs3_3_1, pgbs4_3_2, pgbs3_4_1, pgbs4_4_2;
     int dia, mes, anio;
     EditText pgbt2, pgbt3, pgbt4, pgbt5, pgbt6, pgbt7, pgbt8, pgbt9, pgbt10, pgbt13, pgbt14, pgbt15, pgbt16, pgbt17, pgbt20, pgbt21, pgbt22, pgbt23, pgbt24, pgbt25, pgbt26, pgbt27, pgbt28, pgbt29, pgbt30;
-    RadioButton pgbr1, pgbr2, pgbr3, pgbr4, pgbr5, pgbr6, pgbr7, pgbr8, pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16,pgbr18, pgbr19, pgbr19_1, pgbr21, pgbr22, pgbr23, pgbr24, pgbr25, pgbr26, pgbr27, pgbr28, pgbr29, pgbr30, pgbr31, pgbr32, pgbr33, pgbr34, pgbr35, pgbr36, pgbr37, pgbr38, pgbr39, pgbr40, pgbr41, pgbr42, pgbr43, pgbr44, pgbr45, pgbr46, pgbr47, pgbr48, pgbr49, pgbr50, pgbr51, pgbr52, pgbr68, pgbr69, pgbr70, pgbr71, pgbr72, pgbr73, pgbr74, pgbr75, pgbr76, pgbr77, pgbr78, pgbr79, pgbr80, pgbr81, pgbr82, pgbr83, pgbr84, pgbr85, pgbr86, pgbr87, pgbr88;
-    RadioButton pgbr51_1,pgbr52_1,pgbr51_2,pgbr52_2,pgbr51_3,pgbr52_3,pgbr51_4,pgbr52_4,pgbr51_5,pgbr52_5;
-    Spinner pgbs1, pgbs2, pgbs3, pgbs4;
-    CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc7, pgbc8, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19;
+    RadioButton pgbr1, pgbr2, pgbr3, pgbr4, pgbr5, pgbr6, pgbr7, pgbr8, pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16,pgbr18, pgbr19, pgbr19_1, pgbr21, pgbr22, pgbr23, pgbr24, pgbr25, pgbr26, pgbr27, pgbr28, pgbr29, pgbr30, pgbr31, pgbr32, pgbr33, pgbr34, pgbr35, pgbr36, pgbr37, pgbr38, pgbr39, pgbr40, pgbr41, pgbr42, pgbr43, pgbr44, pgbr45, pgbr46, pgbr45_1, pgbr46_1, pgbr49, pgbr50, pgbr51, pgbr52, pgbr68, pgbr69, pgbr70, pgbr71, pgbr72, pgbr73, pgbr74, pgbr75, pgbr76, pgbr77, pgbr78, pgbr79, pgbr80, pgbr81, pgbr82, pgbr83, pgbr84, pgbr85, pgbr86, pgbr87, pgbr88;
+    RadioButton pgbr51_1,pgbr52_1,pgbr51_2,pgbr52_2,pgbr51_3,pgbr52_3,pgbr51_4,pgbr52_4, parrad11,parrad22,parrad33,parrad44,parrad55;
+    Spinner pgbs1, pgbs2, pgbs3, pgbs4, pgbs3_1, pgbs4_1, pgbs3_2, pgbs4_2, pgbs3_3, pgbs4_3, pgbs3_4, pgbs4_4;
+    CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc7, pgbc8, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19, pgbc20;
     Button btnSiguiente;
 
     PGBeneficiariosGranosIncentivos_Model model;
@@ -52,6 +52,9 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
             , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
             , R.array.cveYucatán2021, R.array.cveZacatecas2021
     };
+
+    EditText etcveedo, etcvemun, etcveedo2, etcvemun2;
+
     String[] municipios;
     String[] cvemunicipios;
 
@@ -70,6 +73,70 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
     };
     String[] municipios2;
     String[] cvemunicipios2;
+
+    String cveedo3 = "";
+    String nomedo3 = "";
+    String cvemun3 = "";
+    String nommun3 = "";
+    int[] idmunicipios3 = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+            , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+            , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021, R.array.Zacatecas2021};
+    int[] idcvemunicipios3 = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+            , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021, R.array.cveZacatecas2021
+    };
+    String[] municipios3;
+    String[] cvemunicipios3;
+
+    String cveedo4 = "";
+    String nomedo4 = "";
+    String cvemun4 = "";
+    String nommun4 = "";
+    int[] idmunicipios4 = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+            , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+            , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021, R.array.Zacatecas2021};
+    int[] idcvemunicipios4 = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+            , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021, R.array.cveZacatecas2021
+    };
+    String[] municipios4;
+    String[] cvemunicipios4;
+
+    String cveedo5 = "";
+    String nomedo5 = "";
+    String cvemun5 = "";
+    String nommun5 = "";
+    int[] idmunicipios5 = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+            , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+            , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021, R.array.Zacatecas2021};
+    int[] idcvemunicipios5 = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+            , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021, R.array.cveZacatecas2021
+    };
+    String[] municipios5;
+    String[] cvemunicipios5;
+
+    String cveedo6 = "";
+    String nomedo6 = "";
+    String cvemun6 = "";
+    String nommun6 = "";
+    int[] idmunicipios6 = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+            , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+            , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021, R.array.Zacatecas2021};
+    int[] idcvemunicipios6 = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+            , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021, R.array.cveZacatecas2021
+    };
+    String[] municipios6;
+    String[] cvemunicipios6;
     
     
 
@@ -77,6 +144,12 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pgbeneficiarios_granos_incentivos);
+
+        etcveedo = (EditText)findViewById(R.id.dospgb_o_cveedo);
+        etcvemun = (EditText)findViewById(R.id.dospgb_o_cvemun);
+        etcveedo2 = (EditText)findViewById(R.id.dospgb_o_cveedo2);
+        etcvemun2 = (EditText)findViewById(R.id.dospgb_o_cvemun2);
+
 
         textFecha=(TextView)findViewById(R.id.dospg_leche_txtFecha);
         pgbt2 = (EditText)findViewById(R.id.dospre_garan_granos_txt2);
@@ -102,6 +175,32 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
         pgbs3 = (Spinner)findViewById(R.id.dospgb_o_spiEstado2);
 
         pgbs4 = (Spinner)findViewById(R.id.dospgb_o_spiMunicipio2);
+
+        parrad11 = (RadioButton)findViewById(R.id.parrad1);
+        parrad22 = (RadioButton)findViewById(R.id.parrad2);
+        parrad33 = (RadioButton)findViewById(R.id.parrad3);
+        parrad44 = (RadioButton)findViewById(R.id.parrad4);
+        parrad55 = (RadioButton)findViewById(R.id.parrad5);
+
+        pgbs3_1 = (Spinner)findViewById(R.id.dospgb_o_spiEstado3);
+        pgbs4_1 = (Spinner)findViewById(R.id.dospgb_o_spiMunicipio3);
+        pgbs3_1_1 = (TextView)findViewById(R.id.dospgb_o_spiEstado3_1);
+        pgbs4_1_2 = (TextView)findViewById(R.id.dospgb_o_spiEstado3_2);
+
+        pgbs3_2 = (Spinner)findViewById(R.id.dospgb_o_spiEstado4);
+        pgbs4_2 = (Spinner)findViewById(R.id.dospgb_o_spiMunicipio4);
+        pgbs3_2_1 = (TextView)findViewById(R.id.dospgb_o_spiEstado4_1);
+        pgbs4_2_2 = (TextView)findViewById(R.id.dospgb_o_spiEstado4_2);
+
+        pgbs3_3 = (Spinner)findViewById(R.id.dospgb_o_spiEstado5);
+        pgbs4_3 = (Spinner)findViewById(R.id.dospgb_o_spiMunicipio5);
+        pgbs3_3_1 = (TextView)findViewById(R.id.dospgb_o_spiEstado5_1);
+        pgbs4_3_2 = (TextView)findViewById(R.id.dospgb_o_spiEstado5_2);
+
+        pgbs3_4 = (Spinner)findViewById(R.id.dospgb_o_spiEstado6);
+        pgbs4_4 = (Spinner)findViewById(R.id.dospgb_o_spiMunicipio6);
+        pgbs3_4_1 = (TextView)findViewById(R.id.dospgb_o_spiEstado6_1);
+        pgbs4_4_2 = (TextView)findViewById(R.id.dospgb_o_spiEstado6_2);
 
         //sexo
         pgbr1 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra2_1);
@@ -185,6 +284,9 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
         pgbr45 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra45);
         pgbr46 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra46);
 
+        pgbr45_1 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra45_1);
+        pgbr46_1 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra46_1);
+
         pgbr51 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra51);
         pgbr52 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra52);
         pgbr51_1 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra51_1);
@@ -195,8 +297,6 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
         pgbr52_3 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra52_3);
         pgbr51_4 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra51_4);
         pgbr52_4 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra52_4);
-        pgbr51_5 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra51_5);
-        pgbr52_5 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra52_5);
 
         pgbr68 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra68);
         pgbr69 = (RadioButton)findViewById(R.id.dospre_garan_granos_ra69);
@@ -228,6 +328,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
         pgbc16 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch16);
         pgbc17 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch17);
         pgbc18 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch18);
+        pgbc20 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch20);
         pgbc19 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch19);
 
         pgbt25 = (EditText)findViewById(R.id.dospre_garan_granos_tx25);
@@ -242,6 +343,22 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
         pgbt25.setVisibility(View.GONE);
 
         muestrafecha();
+        pgbs3_1.setVisibility(View.GONE);
+        pgbs4_1.setVisibility(View.GONE);
+        pgbs3_1_1.setVisibility(View.GONE);
+        pgbs4_1_2.setVisibility(View.GONE);
+        pgbs3_2.setVisibility(View.GONE);
+        pgbs4_2.setVisibility(View.GONE);
+        pgbs3_2_1.setVisibility(View.GONE);
+        pgbs4_2_2.setVisibility(View.GONE);
+        pgbs3_3.setVisibility(View.GONE);
+        pgbs4_3.setVisibility(View.GONE);
+        pgbs3_3_1.setVisibility(View.GONE);
+        pgbs4_3_2.setVisibility(View.GONE);
+        pgbs3_4.setVisibility(View.GONE);
+        pgbs4_4.setVisibility(View.GONE);
+        pgbs3_4_1.setVisibility(View.GONE);
+        pgbs4_4_2.setVisibility(View.GONE);
 
         pgbs1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
@@ -250,6 +367,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
 
                 cveedo = cveestados[position];
                 nomedo = estados[position];
+                etcveedo.setText(cveedo);
 
                 municipios = getResources().getStringArray(idmunicipios[position]);
                 cvemunicipios = getResources().getStringArray(idcvemunicipios[position]);
@@ -268,6 +386,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 nommun = municipios[position];
                 cvemun = cvemunicipios[position];
+                etcvemun.setText(cvemun);
             }
             public void onNothingSelected(AdapterView<?> adapterView) {
                 return;
@@ -281,6 +400,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
 
                 cveedo2 = cveestados2[position];
                 nomedo2 = estados2[position];
+                etcveedo2.setText(cveedo2);
 
                 municipios2 = getResources().getStringArray(idmunicipios2[position]);
                 cvemunicipios2 = getResources().getStringArray(idcvemunicipios2[position]);
@@ -299,11 +419,143 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 nommun2 = municipios2[position];
                 cvemun2 = cvemunicipios2[position];
+                etcvemun2.setText(cvemun2);
             }
             public void onNothingSelected(AdapterView<?> adapterView) {
                 return;
             }
         });
+
+
+
+
+
+        pgbs3_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String[] estados3 = getResources().getStringArray(R.array.Estados2021);
+                String[] cveestados3 = getResources().getStringArray(R.array.cveEstados2021);
+
+                cveedo3 = cveestados3[position];
+                nomedo3 = estados3[position];
+
+                municipios3 = getResources().getStringArray(idmunicipios3[position]);
+                cvemunicipios3 = getResources().getStringArray(idcvemunicipios3[position]);
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(PGBeneficiariosGranosIncentivos.this, android.R.layout.simple_spinner_item, municipios3);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                pgbs4_1.setAdapter(adapter);
+                pgbs4_1.setEnabled(true);
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pgbs4_1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                nommun3 = municipios3[position];
+                cvemun3 = cvemunicipios3[position];
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pgbs3_2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String[] estados4 = getResources().getStringArray(R.array.Estados2021);
+                String[] cveestados4 = getResources().getStringArray(R.array.cveEstados2021);
+
+                cveedo4 = cveestados4[position];
+                nomedo4 = estados4[position];
+
+                municipios4 = getResources().getStringArray(idmunicipios4[position]);
+                cvemunicipios4 = getResources().getStringArray(idcvemunicipios4[position]);
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(PGBeneficiariosGranosIncentivos.this, android.R.layout.simple_spinner_item, municipios4);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                pgbs4_2.setAdapter(adapter);
+                pgbs4_2.setEnabled(true);
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pgbs4_2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                nommun4 = municipios4[position];
+                cvemun4 = cvemunicipios4[position];
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pgbs3_3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String[] estados5 = getResources().getStringArray(R.array.Estados2021);
+                String[] cveestados5 = getResources().getStringArray(R.array.cveEstados2021);
+
+                cveedo5 = cveestados5[position];
+                nomedo5 = estados5[position];
+
+                municipios5 = getResources().getStringArray(idmunicipios5[position]);
+                cvemunicipios5 = getResources().getStringArray(idcvemunicipios5[position]);
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(PGBeneficiariosGranosIncentivos.this, android.R.layout.simple_spinner_item, municipios5);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                pgbs4_3.setAdapter(adapter);
+                pgbs4_3.setEnabled(true);
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pgbs4_3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                nommun5 = municipios5[position];
+                cvemun5 = cvemunicipios5[position];
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pgbs3_4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String[] estados6 = getResources().getStringArray(R.array.Estados2021);
+                String[] cveestados6 = getResources().getStringArray(R.array.cveEstados2021);
+
+                cveedo6 = cveestados6[position];
+                nomedo6 = estados6[position];
+
+                municipios6 = getResources().getStringArray(idmunicipios6[position]);
+                cvemunicipios6 = getResources().getStringArray(idcvemunicipios6[position]);
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(PGBeneficiariosGranosIncentivos.this, android.R.layout.simple_spinner_item, municipios6);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                pgbs4_4.setAdapter(adapter);
+                pgbs4_4.setEnabled(true);
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        pgbs4_4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                nommun6 = municipios6[position];
+                cvemun6 = cvemunicipios6[position];
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+
+
 
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.dosradg1);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
@@ -331,6 +583,121 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
                                           }
         );
 
+        RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.group7_1);
+        radioGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // checkedId is the RadioButton selected
+                if(parrad11.isChecked()==true){
+                    pgbs3_1.setVisibility(View.GONE);
+                    pgbs4_1.setVisibility(View.GONE);
+                    pgbs3_1_1.setVisibility(View.GONE);
+                    pgbs4_1_2.setVisibility(View.GONE);
+
+                    pgbs3_2.setVisibility(View.GONE);
+                    pgbs4_2.setVisibility(View.GONE);
+                    pgbs3_2_1.setVisibility(View.GONE);
+                    pgbs4_2_2.setVisibility(View.GONE);
+
+                    pgbs3_3.setVisibility(View.GONE);
+                    pgbs4_3.setVisibility(View.GONE);
+                    pgbs3_3_1.setVisibility(View.GONE);
+                    pgbs4_3_2.setVisibility(View.GONE);
+
+                    pgbs3_4.setVisibility(View.GONE);
+                    pgbs4_4.setVisibility(View.GONE);
+                    pgbs3_4_1.setVisibility(View.GONE);
+                    pgbs4_4_2.setVisibility(View.GONE);
+                }
+                else if(parrad22.isChecked()==true){
+                    pgbs3_1.setVisibility(View.VISIBLE);
+                    pgbs4_1.setVisibility(View.VISIBLE);
+                    pgbs3_1_1.setVisibility(View.VISIBLE);
+                    pgbs4_1_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_2.setVisibility(View.GONE);
+                    pgbs4_2.setVisibility(View.GONE);
+                    pgbs3_2_1.setVisibility(View.GONE);
+                    pgbs4_2_2.setVisibility(View.GONE);
+
+                    pgbs3_3.setVisibility(View.GONE);
+                    pgbs4_3.setVisibility(View.GONE);
+                    pgbs3_3_1.setVisibility(View.GONE);
+                    pgbs4_3_2.setVisibility(View.GONE);
+
+                    pgbs3_4.setVisibility(View.GONE);
+                    pgbs4_4.setVisibility(View.GONE);
+                    pgbs3_4_1.setVisibility(View.GONE);
+                    pgbs4_4_2.setVisibility(View.GONE);
+                }
+                else if(parrad33.isChecked()==true){
+                    pgbs3_1.setVisibility(View.VISIBLE);
+                    pgbs4_1.setVisibility(View.VISIBLE);
+                    pgbs3_1_1.setVisibility(View.VISIBLE);
+                    pgbs4_1_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_2.setVisibility(View.VISIBLE);
+                    pgbs4_2.setVisibility(View.VISIBLE);
+                    pgbs3_2_1.setVisibility(View.VISIBLE);
+                    pgbs4_2_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_3.setVisibility(View.GONE);
+                    pgbs4_3.setVisibility(View.GONE);
+                    pgbs3_3_1.setVisibility(View.GONE);
+                    pgbs4_3_2.setVisibility(View.GONE);
+
+                    pgbs3_4.setVisibility(View.GONE);
+                    pgbs4_4.setVisibility(View.GONE);
+                    pgbs3_4_1.setVisibility(View.GONE);
+                    pgbs4_4_2.setVisibility(View.GONE);
+                }
+                else if(parrad44.isChecked()==true){
+                    pgbs3_1.setVisibility(View.VISIBLE);
+                    pgbs4_1.setVisibility(View.VISIBLE);
+                    pgbs3_1_1.setVisibility(View.VISIBLE);
+                    pgbs4_1_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_2.setVisibility(View.VISIBLE);
+                    pgbs4_2.setVisibility(View.VISIBLE);
+                    pgbs3_2_1.setVisibility(View.VISIBLE);
+                    pgbs4_2_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_3.setVisibility(View.VISIBLE);
+                    pgbs4_3.setVisibility(View.VISIBLE);
+                    pgbs3_3_1.setVisibility(View.VISIBLE);
+                    pgbs4_3_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_4.setVisibility(View.GONE);
+                    pgbs4_4.setVisibility(View.GONE);
+                    pgbs3_4_1.setVisibility(View.GONE);
+                    pgbs4_4_2.setVisibility(View.GONE);
+
+                }
+                else if(parrad55.isChecked()==true){
+                    pgbs3_1.setVisibility(View.VISIBLE);
+                    pgbs4_1.setVisibility(View.VISIBLE);
+                    pgbs3_1_1.setVisibility(View.VISIBLE);
+                    pgbs4_1_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_2.setVisibility(View.VISIBLE);
+                    pgbs4_2.setVisibility(View.VISIBLE);
+                    pgbs3_2_1.setVisibility(View.VISIBLE);
+                    pgbs4_2_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_3.setVisibility(View.VISIBLE);
+                    pgbs4_3.setVisibility(View.VISIBLE);
+                    pgbs3_3_1.setVisibility(View.VISIBLE);
+                    pgbs4_3_2.setVisibility(View.VISIBLE);
+
+                    pgbs3_4.setVisibility(View.VISIBLE);
+                    pgbs4_4.setVisibility(View.VISIBLE);
+                    pgbs3_4_1.setVisibility(View.VISIBLE);
+                    pgbs4_4_2.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -357,6 +724,55 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
                     String nomEdo2 = nomedo2;
                     String claveMun2 = cvemun2;
                     String nomMun2 = nommun2;
+
+                    String nomEdo3 = nomedo3;
+                    String nomMun3 = nommun3;
+                    String nomEdo4 = nomedo4;
+                    String nomMun4 = nommun4;
+                    String nomEdo5 = nomedo5;
+                    String nomMun5 = nommun5;
+                    String nomEdo6 = nomedo6;
+                    String nomMun6 = nommun6;
+
+                    if(parrad11.isChecked()==true){
+                        nomEdo3 = "";
+                        nomMun3 = "";
+                        nomEdo4 = "";
+                        nomMun4 = "";
+                        nomEdo5 = "";
+                        nomMun5 = "";
+                        nomEdo6 = "";
+                        nomMun6 = "";
+                    }
+                    else if(parrad22.isChecked()==true){
+                        nomEdo4 = "";
+                        nomMun4 = "";
+                        nomEdo5 = "";
+                        nomMun5 = "";
+                        nomEdo6 = "";
+                        nomMun6 = "";
+                    }
+                    else if(parrad33.isChecked()==true){
+                        nomEdo5 = "";
+                        nomMun5 = "";
+                        nomEdo6 = "";
+                        nomMun6 = "";
+                    }
+                    else if(parrad44.isChecked()==true){
+                        nomEdo6 = "";
+                        nomMun6 = "";
+                    }
+                    else if(parrad55.isChecked()==true){
+                        nomEdo3 = nomedo3;
+                        nomMun3 = nommun3;
+                        nomEdo4 = nomedo4;
+                        nomMun4 = nommun4;
+                        nomEdo5 = nomedo5;
+                        nomMun5 = nommun5;
+                        nomEdo6 = nomedo6;
+                        nomMun6 = nommun6;
+                    }
+
                     String sexo = obtenerResultado(pgbr1,pgbr2);
                     String edad = pgbt20.getText().toString();
                     String leer = obtenerResultado(pgbr3,pgbr4);
@@ -386,12 +802,14 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
                     String seis_6 = obtenerResultado(pgbr41,pgbr42);
                     String seis_7 = obtenerResultado(pgbr43,pgbr44);
                     String seis_8 = obtenerResultado(pgbr45,pgbr46);
+
+                    String seis_9 = obtenerResultado(pgbr45_1,pgbr46_1);
+
                     String siete_1 = obtenerResultado(pgbr51,pgbr52);
                     String siete_2 = obtenerResultado(pgbr51_1,pgbr52_1);
                     String siete_3 = obtenerResultado(pgbr51_2,pgbr52_2);
                     String siete_4 = obtenerResultado(pgbr51_3,pgbr52_3);
                     String siete_5 = obtenerResultado(pgbr51_4,pgbr52_4);
-                    String siete_6 = obtenerResultado(pgbr51_5,pgbr52_5);
                     String ocho_1 = obtenerResultado3(pgbr68,pgbr69,pgbr70);
                     String ocho_2 = obtenerResultado3(pgbr71,pgbr72,pgbr73);
                     String ocho_3 = obtenerResultado3(pgbr74,pgbr75,pgbr76);
@@ -407,6 +825,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
                     String nueve6 = (pgbc16.isChecked())? "X" : "";
                     String nueve7 = (pgbc17.isChecked())? "X" : "";
                     String nueve8 = (pgbc18.isChecked())? "X" : "";
+                    String nueve10 = (pgbc20.isChecked())? "X" : "";
                     String nueve9 = (pgbc19.isChecked())? "X" : "";
                     String nueveotro =  (pgbc19.isChecked())? pgbt25.getText().toString() : "";
                     String diez = pgbt26.getText().toString();
@@ -416,8 +835,8 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
 
-                    model = new PGBeneficiariosGranosIncentivos_Model(folio, General.fechaenc,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf7,inf8,inf9,docine,doccurp
-                            ,docclabe,docfol,docren,seis_1,seis_2,seis_3,seis_4,seis_5,seis_6,seis_7,seis_8,siete_1,siete_2,siete_3,siete_4,siete_5,siete_6,ocho_1,ocho_2,ocho_3,ocho_4,ocho_5,ocho_6,ocho_7,nueve1,nueve2,nueve3,nueve4,nueve5,nueve6,nueve7,nueve8,nueve9,nueveotro
+                    model = new PGBeneficiariosGranosIncentivos_Model(folio, General.fechaenc,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,nomEdo3,nomMun3,nomEdo4,nomMun4,nomEdo5,nomMun5,nomEdo6,nomMun6,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf7,inf8,inf9,docine,doccurp
+                            ,docclabe,docfol,docren,seis_1,seis_2,seis_3,seis_4,seis_5,seis_6,seis_7,seis_8,seis_9,siete_1,siete_2,siete_3,siete_4,siete_5,ocho_1,ocho_2,ocho_3,ocho_4,ocho_5,ocho_6,ocho_7,nueve1,nueve2,nueve3,nueve4,nueve5,nueve6,nueve7,nueve8,nueve10,nueve9,nueveotro
                             ,diez,once,doce,trece, f1, f2, "", "");
 
                     Intent in = new Intent(PGBeneficiariosGranosIncentivos.this, GeoreferenciaActivity.class);
@@ -578,6 +997,10 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
             pgbr45.setError("Debes seleccionar una opción");
             retorno=false;
         }
+        else if(!pgbr45_1.isChecked() && !pgbr46_1.isChecked()){
+            pgbr45_1.setError("Debes seleccionar una opción");
+            retorno=false;
+        }
         else if(!pgbr51.isChecked() && !pgbr52.isChecked()){
             pgbr51.setError("Debes seleccionar una opción");
             retorno=false;
@@ -596,10 +1019,6 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
         }
         else if(!pgbr51_4.isChecked() && !pgbr52_4.isChecked()){
             pgbr51_4.setError("Debes seleccionar una opción");
-            retorno=false;
-        }
-        else if(!pgbr51_5.isChecked() && !pgbr52_5.isChecked()){
-            pgbr51_5.setError("Debes seleccionar una opción");
             retorno=false;
         }
         else if(!pgbr68.isChecked() && !pgbr69.isChecked() && !pgbr70.isChecked()){

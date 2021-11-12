@@ -2,7 +2,7 @@ package com.example.geosegalmex.PGBeneficiariosGranosIncentivos;
 
 public class PGBeneficiariosGranosIncentivos_bd {
 
-    public static final String TABLA_BD = "TB_PG_BENEFICIARIO_GRANOS_INCENTIVOS";
+    public static final String TABLA_BD = "TB_PG_BENEFICIARIO_ESTIMULOS";
     public static final String COLUMN_FOLIO = "FOLIO";
     public static final String COLUMN_FECHA = "FECHA";
     public static final String COLUMN_NOMBRE = "NOMBRE";
@@ -12,18 +12,26 @@ public class PGBeneficiariosGranosIncentivos_bd {
     public static final String COLUMN_CALLE = "CALLE";
     public static final String COLUMN_EXT = "EXT";
     public static final String COLUMN_INT = "INT";
-    public static final String COLUMN_LOCALIDAD = "LOCALIDAD";
-    public static final String COLUMN_CP = "CP";
-    public static final String COLUMN_CVEESTADO = "CVEEDO";
-    public static final String COLUMN_ESTADO = "ENTIDAD";
-    public static final String COLUMN_CVEMUNICIPIO = "CVEMUN";
-    public static final String COLUMN_MUNICIPIO = "MUNICIPIO";
-    public static final String COLUMN_LOCALIDAD2 = "LOCALIDAD2";
-    public static final String COLUMN_CP2 = "CP2";
-    public static final String COLUMN_CVEESTADO2 = "CVEEDO2";
-    public static final String COLUMN_ESTADO2 = "ENTIDAD2";
-    public static final String COLUMN_CVEMUNICIPIO2 = "CVEMUN2";
-    public static final String COLUMN_MUNICIPIO2 = "MUNICIPIO2";
+    public static final String COLUMN_LOCALIDAD = "LOCALIDADB";
+    public static final String COLUMN_CP = "CPBE";
+    public static final String COLUMN_CVEESTADO = "CLAVEEDOBE";
+    public static final String COLUMN_ESTADO = "ENTIDADBE";
+    public static final String COLUMN_CVEMUNICIPIO = "CLAVEMUNBE";
+    public static final String COLUMN_MUNICIPIO = "MUNICIPIOB";
+    public static final String COLUMN_LOCALIDAD2 = "LOCALIDAD";
+    public static final String COLUMN_CP2 = "CP";
+    public static final String COLUMN_CVEESTADO2 = "CLAVEEDO";
+    public static final String COLUMN_ESTADO2 = "ENTIDAD";
+    public static final String COLUMN_CVEMUNICIPIO2 = "CLAVEMUN";
+    public static final String COLUMN_MUNICIPIO2 = "MUNICIPIO";
+    public static final String COLUMN_ESTADO3 = "ENTIDAD2";
+    public static final String COLUMN_MUNICIPIO3 = "MUNICIPIO2";
+    public static final String COLUMN_ESTADO4 = "ENTIDAD3";
+    public static final String COLUMN_MUNICIPIO4 = "MUNICIPIO3";
+    public static final String COLUMN_ESTADO5 = "ENTIDAD4";
+    public static final String COLUMN_MUNICIPIO5 = "MUNICIPIO4";
+    public static final String COLUMN_ESTADO6 = "ENTIDAD5";
+    public static final String COLUMN_MUNICIPIO6 = "MUNICIPIO5";
     public static final String COLUMN_SEXO = "SEXO";
     public static final String COLUMN_EDAD = "EDAD";
     public static final String COLUMN_LEER = "LEER";
@@ -31,55 +39,56 @@ public class PGBeneficiariosGranosIncentivos_bd {
     public static final String COLUMN_GRADOOTRO = "GRADOOTRO";
     public static final String COLUMN_PRODUCTO = "PRODUCTO";
     public static final String COLUMN_PESO = "PESO";
-    public static final String COLUMN_CUATRO1 = "CUATRO1";
-    public static final String COLUMN_CUATRO2 = "CUATRO2";
-    public static final String COLUMN_CUATRO3 = "CUATRO3";
-    public static final String COLUMN_CUATRO4 = "CUATRO4";
-    public static final String COLUMN_CUATRO5 = "CUATRO5";
-    public static final String COLUMN_CUATRO6 = "CUATRO6";
-    public static final String COLUMN_CUATRO7 = "CUATRO7";
-    public static final String COLUMN_CUATRO8 = "CUATRO8";
-    public static final String COLUMN_CUATRO9 = "CUATRO9";
-    public static final String COLUMN_CINCO1 = "CINCO1";
-    public static final String COLUMN_CINCO2 = "CINCO2";
-    public static final String COLUMN_CINCO3 = "CINCO3";
-    public static final String COLUMN_CINCO4 = "CINCO4";
-    public static final String COLUMN_CINCO5 = "CINCO5";
-    public static final String COLUMN_SEIS1 = "SEIS1";
-    public static final String COLUMN_SEIS2 = "SEIS2";
-    public static final String COLUMN_SEIS3 = "SEIS3";
-    public static final String COLUMN_SEIS4 = "SEIS4";
-    public static final String COLUMN_SEIS5 = "SEIS5";
-    public static final String COLUMN_SEIS6 = "SEIS6";
-    public static final String COLUMN_SEIS7 = "SEIS7";
-    public static final String COLUMN_SEIS8 = "SEIS8";
-    public static final String COLUMN_SIETE1 = "SIETE1";
-    public static final String COLUMN_SIETE2 = "SIETE2";
-    public static final String COLUMN_SIETE3 = "SIETE3";
-    public static final String COLUMN_SIETE4 = "SIETE4";
-    public static final String COLUMN_SIETE5 = "SIETE5";
-    public static final String COLUMN_SIETE6 = "SIETE6";
-    public static final String COLUMN_OCHO1 = "OCHO1";
-    public static final String COLUMN_OCHO2 = "OCHO2";
-    public static final String COLUMN_OCHO3 = "OCHO3";
-    public static final String COLUMN_OCHO4 = "OCHO4";
-    public static final String COLUMN_OCHO5 = "OCHO5";
-    public static final String COLUMN_OCHO6 = "OCHO6";
-    public static final String COLUMN_OCHO7 = "OCHO7";
-    public static final String COLUMN_NUEVE1 = "NUEVE1";
-    public static final String COLUMN_NUEVE2 = "NUEVE2";
-    public static final String COLUMN_NUEVE3 = "NUEVE3";
-    public static final String COLUMN_NUEVE4 = "NUEVE4";
-    public static final String COLUMN_NUEVE5 = "NUEVE5";
-    public static final String COLUMN_NUEVE6 = "NUEVE6";
-    public static final String COLUMN_NUEVE7 = "NUEVE7";
-    public static final String COLUMN_NUEVE8 = "NUEVE8";
-    public static final String COLUMN_NUEVE9 = "NUEVE9";
-    public static final String COLUMN_NUEVEOTRO = "NUEVEOTRO";
-    public static final String COLUMN_DIEZ = "DIEZ";
-    public static final String COLUMN_ONCE = "ONCE";
-    public static final String COLUMN_DOCE = "DOCE";
-    public static final String COLUMN_TRECE = "TRECE";
+    public static final String COLUMN_CUATRO1 = "INFORM1";
+    public static final String COLUMN_CUATRO2 = "INFORM2";
+    public static final String COLUMN_CUATRO3 = "INFORM3";
+    public static final String COLUMN_CUATRO4 = "INFORM4";
+    public static final String COLUMN_CUATRO5 = "INFORM5";
+    public static final String COLUMN_CUATRO6 = "INFORM6";
+    public static final String COLUMN_CUATRO7 = "INFORM7";
+    public static final String COLUMN_CUATRO8 = "INFORM8";
+    public static final String COLUMN_CUATRO9 = "INFORM9";
+    public static final String COLUMN_CINCO1 = "P1";
+    public static final String COLUMN_CINCO2 = "P2";
+    public static final String COLUMN_CINCO3 = "P3";
+    public static final String COLUMN_CINCO4 = "P4";
+    public static final String COLUMN_CINCO5 = "P5";
+    public static final String COLUMN_SEIS1 = "P6";
+    public static final String COLUMN_SEIS2 = "P7";
+    public static final String COLUMN_SEIS3 = "P8";
+    public static final String COLUMN_SEIS4 = "P9";
+    public static final String COLUMN_SEIS5 = "P10";
+    public static final String COLUMN_SEIS6 = "P11";
+    public static final String COLUMN_SEIS7 = "P12";
+    public static final String COLUMN_SEIS8 = "P13";
+    public static final String COLUMN_SEIS9 = "P14";
+    public static final String COLUMN_SIETE1 = "P15";
+    public static final String COLUMN_SIETE2 = "P16";
+    public static final String COLUMN_SIETE3 = "P17";
+    public static final String COLUMN_SIETE4 = "P18";
+    public static final String COLUMN_SIETE5 = "P19";
+    public static final String COLUMN_OCHO1 = "P20";
+    public static final String COLUMN_OCHO2 = "P21";
+    public static final String COLUMN_OCHO3 = "P22";
+    public static final String COLUMN_OCHO4 = "P23";
+    public static final String COLUMN_OCHO5 = "P24";
+    public static final String COLUMN_OCHO6 = "P25";
+    public static final String COLUMN_OCHO7 = "P26";
+    public static final String COLUMN_NUEVE1 = "P27A";
+    public static final String COLUMN_NUEVE2 = "P27B";
+    public static final String COLUMN_NUEVE3 = "P27C";
+    public static final String COLUMN_NUEVE4 = "P27D";
+    public static final String COLUMN_NUEVE5 = "P27E";
+    public static final String COLUMN_NUEVE6 = "P27F";
+    public static final String COLUMN_NUEVE7 = "P27G";
+    public static final String COLUMN_NUEVE8 = "P27H";
+    public static final String COLUMN_NUEVE9 = "P27I";
+    public static final String COLUMN_NUEVE10 = "P27J";
+    public static final String COLUMN_NUEVEOTRO = "P27OTRO";
+    public static final String COLUMN_DIEZ = "P28";
+    public static final String COLUMN_ONCE = "P29";
+    public static final String COLUMN_DOCE = "P30";
+    public static final String COLUMN_TRECE = "P31";
     public static final String COLUMN_FOTO1 = "FOTO1";
     public static final String COLUMN_FOTO2 = "FOTO2";
     public static final String COLUMN_LONGITUD = "LONGITUD";
@@ -107,6 +116,14 @@ public class PGBeneficiariosGranosIncentivos_bd {
             + COLUMN_ESTADO2           + " VARCHAR, "
             + COLUMN_CVEMUNICIPIO2     + " VARCHAR, "
             + COLUMN_MUNICIPIO2        + " VARCHAR, "
+            + COLUMN_ESTADO3 + " VARCHAR, "
+            + COLUMN_MUNICIPIO3+ " VARCHAR, "
+            + COLUMN_ESTADO4 + " VARCHAR, "
+            + COLUMN_MUNICIPIO4+ " VARCHAR, "
+            + COLUMN_ESTADO5 + " VARCHAR, "
+            + COLUMN_MUNICIPIO5+ " VARCHAR, "
+            + COLUMN_ESTADO6 + " VARCHAR, "
+            + COLUMN_MUNICIPIO6+ " VARCHAR, "
             + COLUMN_SEXO              + " VARCHAR, "
             + COLUMN_EDAD              + " VARCHAR, "
             + COLUMN_LEER              + " VARCHAR, "
@@ -136,12 +153,12 @@ public class PGBeneficiariosGranosIncentivos_bd {
             + COLUMN_SEIS6             + " VARCHAR, "
             + COLUMN_SEIS7             + " VARCHAR, "
             + COLUMN_SEIS8             + " VARCHAR, "
+            + COLUMN_SEIS9             + " VARCHAR, "
             + COLUMN_SIETE1            + " VARCHAR, "
             + COLUMN_SIETE2            + " VARCHAR, "
             + COLUMN_SIETE3            + " VARCHAR, "
             + COLUMN_SIETE4            + " VARCHAR, "
             + COLUMN_SIETE5            + " VARCHAR, "
-            + COLUMN_SIETE6            + " VARCHAR, "
             + COLUMN_OCHO1             + " VARCHAR, "
             + COLUMN_OCHO2             + " VARCHAR, "
             + COLUMN_OCHO3             + " VARCHAR, "
@@ -158,6 +175,7 @@ public class PGBeneficiariosGranosIncentivos_bd {
             + COLUMN_NUEVE7            + " VARCHAR, "
             + COLUMN_NUEVE8            + " VARCHAR, "
             + COLUMN_NUEVE9            + " VARCHAR, "
+            + COLUMN_NUEVE10            + " VARCHAR, "
             + COLUMN_NUEVEOTRO         + " VARCHAR, "
             + COLUMN_DIEZ              + " VARCHAR, "
             + COLUMN_ONCE              + " VARCHAR, "

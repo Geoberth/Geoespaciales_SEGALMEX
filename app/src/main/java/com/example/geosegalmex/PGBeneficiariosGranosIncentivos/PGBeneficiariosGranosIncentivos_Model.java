@@ -4,14 +4,14 @@ import java.io.Serializable;
 
 public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
 
-    private String folio,fecha,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf7,inf8,inf9,docine,doccurp
-    ,docclabe,docfol,docren,seis_1,seis_2,seis_3,seis_4,seis_5,seis_6,seis_7,seis_8,siete_1,siete_2,siete_3,siete_4,siete_5,siete_6,ocho_1,ocho_2,ocho_3,ocho_4,ocho_5,ocho_6,ocho_7,nueve1,nueve2,nueve3,nueve4,nueve5,nueve6,nueve7,nueve8,nueve9,nueveotro
+    private String folio,fecha,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,nomEdo3,nomMun3,nomEdo4,nomMun4,nomEdo5,nomMun5,nomEdo6,nomMun6,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf7,inf8,inf9,docine,doccurp
+    ,docclabe,docfol,docren,seis_1,seis_2,seis_3,seis_4,seis_5,seis_6,seis_7,seis_8,seis_9,siete_1,siete_2,siete_3,siete_4,siete_5,ocho_1,ocho_2,ocho_3,ocho_4,ocho_5,ocho_6,ocho_7,nueve1,nueve2,nueve3,nueve4,nueve5,nueve6,nueve7,nueve8,nueve9,nueve10,nueveotro
     ,diez,once,doce,trece,foto1, foto2, longitudGeo, latitudGeo;
 
     public PGBeneficiariosGranosIncentivos_Model() {
     }
 
-    public PGBeneficiariosGranosIncentivos_Model(String folio, String fecha, String nom, String apa, String ama, String curp, String calle, String ext, String inte, String col, String cp, String claveEdo, String nomEdo, String claveMun, String nomMun, String col2, String cp2, String claveEdo2, String nomEdo2, String claveMun2, String nomMun2, String sexo, String edad, String leer, String ult1, String ultotro, String prod, String peso, String inf1, String inf2, String inf3, String inf4, String inf5, String inf6, String inf7, String inf8, String inf9, String docine, String doccurp, String docclabe, String docfol, String docren, String seis_1, String seis_2, String seis_3, String seis_4, String seis_5, String seis_6, String seis_7, String seis_8, String siete_1, String siete_2, String siete_3, String siete_4, String siete_5, String siete_6, String ocho_1, String ocho_2, String ocho_3, String ocho_4, String ocho_5, String ocho_6, String ocho_7, String nueve1, String nueve2, String nueve3, String nueve4, String nueve5, String nueve6, String nueve7, String nueve8, String nueve9, String nueveotro, String diez, String once, String doce, String trece, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public PGBeneficiariosGranosIncentivos_Model(String folio, String fecha, String nom, String apa, String ama, String curp, String calle, String ext, String inte, String col, String cp, String claveEdo, String nomEdo, String claveMun, String nomMun, String col2, String cp2, String claveEdo2, String nomEdo2, String claveMun2, String nomMun2, String nomEdo3, String nomMun3, String nomEdo4, String nomMun4, String nomEdo5, String nomMun5, String nomEdo6, String nomMun6, String sexo, String edad, String leer, String ult1, String ultotro, String prod, String peso, String inf1, String inf2, String inf3, String inf4, String inf5, String inf6, String inf7, String inf8, String inf9, String docine, String doccurp, String docclabe, String docfol, String docren, String seis_1, String seis_2, String seis_3, String seis_4, String seis_5, String seis_6, String seis_7, String seis_8, String seis_9, String siete_1, String siete_2, String siete_3, String siete_4, String siete_5, String ocho_1, String ocho_2, String ocho_3, String ocho_4, String ocho_5, String ocho_6, String ocho_7, String nueve1, String nueve2, String nueve3, String nueve4, String nueve5, String nueve6, String nueve7, String nueve8, String nueve9, String nueve10, String nueveotro, String diez, String once, String doce, String trece, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
         this.nom = nom;
@@ -33,6 +33,14 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
         this.nomEdo2 = nomEdo2;
         this.claveMun2 = claveMun2;
         this.nomMun2 = nomMun2;
+        this.nomEdo3 = nomEdo3;
+        this.nomMun3 = nomMun3;
+        this.nomEdo4 = nomEdo4;
+        this.nomMun4 = nomMun4;
+        this.nomEdo5 = nomEdo5;
+        this.nomMun5 = nomMun5;
+        this.nomEdo6 = nomEdo6;
+        this.nomMun6 = nomMun6;
         this.sexo = sexo;
         this.edad = edad;
         this.leer = leer;
@@ -62,12 +70,12 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
         this.seis_6 = seis_6;
         this.seis_7 = seis_7;
         this.seis_8 = seis_8;
+        this.seis_9 = seis_9;
         this.siete_1 = siete_1;
         this.siete_2 = siete_2;
         this.siete_3 = siete_3;
         this.siete_4 = siete_4;
         this.siete_5 = siete_5;
-        this.siete_6 = siete_6;
         this.ocho_1 = ocho_1;
         this.ocho_2 = ocho_2;
         this.ocho_3 = ocho_3;
@@ -84,6 +92,7 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
         this.nueve7 = nueve7;
         this.nueve8 = nueve8;
         this.nueve9 = nueve9;
+        this.nueve10 = nueve10;
         this.nueveotro = nueveotro;
         this.diez = diez;
         this.once = once;
@@ -261,6 +270,70 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
 
     public void setNomMun2(String nomMun2) {
         this.nomMun2 = nomMun2;
+    }
+
+    public String getNomEdo3() {
+        return nomEdo3;
+    }
+
+    public void setNomEdo3(String nomEdo3) {
+        this.nomEdo3 = nomEdo3;
+    }
+
+    public String getNomMun3() {
+        return nomMun3;
+    }
+
+    public void setNomMun3(String nomMun3) {
+        this.nomMun3 = nomMun3;
+    }
+
+    public String getNomEdo4() {
+        return nomEdo4;
+    }
+
+    public void setNomEdo4(String nomEdo4) {
+        this.nomEdo4 = nomEdo4;
+    }
+
+    public String getNomMun4() {
+        return nomMun4;
+    }
+
+    public void setNomMun4(String nomMun4) {
+        this.nomMun4 = nomMun4;
+    }
+
+    public String getNomEdo5() {
+        return nomEdo5;
+    }
+
+    public void setNomEdo5(String nomEdo5) {
+        this.nomEdo5 = nomEdo5;
+    }
+
+    public String getNomMun5() {
+        return nomMun5;
+    }
+
+    public void setNomMun5(String nomMun5) {
+        this.nomMun5 = nomMun5;
+    }
+
+    public String getNomEdo6() {
+        return nomEdo6;
+    }
+
+    public void setNomEdo6(String nomEdo6) {
+        this.nomEdo6 = nomEdo6;
+    }
+
+    public String getNomMun6() {
+        return nomMun6;
+    }
+
+    public void setNomMun6(String nomMun6) {
+        this.nomMun6 = nomMun6;
     }
 
     public String getSexo() {
@@ -495,6 +568,14 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
         this.seis_8 = seis_8;
     }
 
+    public String getSeis_9() {
+        return seis_9;
+    }
+
+    public void setSeis_9(String seis_9) {
+        this.seis_9 = seis_9;
+    }
+
     public String getSiete_1() {
         return siete_1;
     }
@@ -533,14 +614,6 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
 
     public void setSiete_5(String siete_5) {
         this.siete_5 = siete_5;
-    }
-
-    public String getSiete_6() {
-        return siete_6;
-    }
-
-    public void setSiete_6(String siete_6) {
-        this.siete_6 = siete_6;
     }
 
     public String getOcho_1() {
@@ -669,6 +742,14 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
 
     public void setNueve9(String nueve9) {
         this.nueve9 = nueve9;
+    }
+
+    public String getNueve10() {
+        return nueve10;
+    }
+
+    public void setNueve10(String nueve10) {
+        this.nueve10 = nueve10;
     }
 
     public String getNueveotro() {

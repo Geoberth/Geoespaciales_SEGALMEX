@@ -11,8 +11,8 @@ import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 
 public class PGBeneficiariosGranosIncentivosBD extends SQLiteOpenHelper {
 
-    public static final String DB_NAME  = "PGBeneficiarioGranosIncentivos";
-    public static final int DB_VERSION = 1;
+    public static final String DB_NAME  = "PGBeneficiarioEstimulos";
+    public static final int DB_VERSION = 4;
 
     public PGBeneficiariosGranosIncentivosBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -57,6 +57,14 @@ public class PGBeneficiariosGranosIncentivosBD extends SQLiteOpenHelper {
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_ESTADO2        , model.getNomEdo2() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CVEMUNICIPIO2  , model.getClaveMun2() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_MUNICIPIO2     , model.getNomMun2() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_ESTADO3        , model.getNomEdo3() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_MUNICIPIO3     , model.getNomMun3() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_ESTADO4        , model.getNomEdo4() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_MUNICIPIO4     , model.getNomMun4() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_ESTADO5        , model.getNomEdo5() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_MUNICIPIO5     , model.getNomMun5() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_ESTADO6        , model.getNomEdo6() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_MUNICIPIO6     , model.getNomMun6() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SEXO           , model.getSexo() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_EDAD           , model.getEdad() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_LEER           , model.getLeer() );
@@ -86,12 +94,12 @@ public class PGBeneficiariosGranosIncentivosBD extends SQLiteOpenHelper {
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SEIS6          , model.getSeis_6() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SEIS7          , model.getSeis_7() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SEIS8          , model.getSeis_8() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SEIS9          , model.getSeis_9() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SIETE1         , model.getSiete_1() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SIETE2         , model.getSiete_2() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SIETE3         , model.getSiete_3() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SIETE4         , model.getSiete_4() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SIETE5         , model.getSiete_5() );
-        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_SIETE6         , model.getSiete_6() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_OCHO1          , model.getOcho_1() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_OCHO2          , model.getOcho_2() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_OCHO3          , model.getOcho_3() );
@@ -108,6 +116,7 @@ public class PGBeneficiariosGranosIncentivosBD extends SQLiteOpenHelper {
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_NUEVE7         , model.getNueve7() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_NUEVE8         , model.getNueve8() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_NUEVE9         , model.getNueve9() );
+        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_NUEVE10         , model.getNueve10() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_NUEVEOTRO      , model.getNueveotro() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_DIEZ           , model.getDiez() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_ONCE           , model.getOnce() );

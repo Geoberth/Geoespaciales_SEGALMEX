@@ -90,7 +90,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt2"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:maxLines="1" />
 
             <TextView
@@ -102,7 +102,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt3"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:maxLines="1" />
 
             <TextView
@@ -114,7 +114,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt4"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:maxLines="1" />
 
             <TextView
@@ -126,7 +126,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt5"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:inputType="textCapCharacters"
                 android:maxLines="1" />
 
@@ -147,7 +147,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt6"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:maxLines="1" />
 
             <TextView
@@ -159,7 +159,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt7"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
 
 
                 android:maxLines="1" />
@@ -173,7 +173,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt8"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
 
 
                 android:maxLines="1" />
@@ -188,7 +188,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt9"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:maxLines="1" />
 
             <TextView
@@ -201,7 +201,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt10"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:hint="Escriba el número."
                 android:inputType="number"
                 android:maxLines="1" />
@@ -212,16 +212,31 @@
                 android:text="ENTIDAD FEDERATIVA"
                 android:textColor="#000000" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/dospgb_o_cveedo"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:enabled="false"
+                android:textColor="#000000" />
+
             <Spinner
                 android:id="@+id/dospgb_o_spiEstado"
                 android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
                 android:background="@drawable/borde"
                 android:entries="@array/Estados2021"
                 android:spinnerMode="dropdown"
                 android:textSize="15sp" />
+
+
+        </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -229,17 +244,34 @@
                 android:text="MUNICIPIO"
                 android:textColor="#000000" />
 
-            <Spinner
-                android:id="@+id/dospgb_o_spiMunicipio"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/borde"
-                android:enabled="false"
-                android:entries="@array/Aguascalientes2021"
-                android:spinnerMode="dropdown"
-                android:textSize="15sp" />
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/dospgb_o_cvemun"
+                    android:layout_height="wrap_content"
+                    android:text="001"
+                    android:enabled="false"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/dospgb_o_spiMunicipio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/borde"
+                    android:enabled="false"
+                    android:entries="@array/Aguascalientes2021"
+                    android:spinnerMode="dropdown"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -260,7 +292,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt16"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:maxLines="1" />
 
             <TextView
@@ -273,10 +305,63 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt17"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:hint="Escriba el número."
                 android:inputType="number"
                 android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:text="Número de predios:"
+                android:textColor="#000000" />
+
+
+            <RadioGroup
+                android:id="@+id/group7_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+
+                    android:id="@+id/parrad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="1" />
+
+                <RadioButton
+
+                    android:id="@+id/parrad2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <RadioButton
+
+                    android:id="@+id/parrad3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/parrad4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+
+                <RadioButton
+
+                    android:id="@+id/parrad5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5" />
+
+
+            </RadioGroup>
 
             <TextView
                 android:layout_width="match_parent"
@@ -284,16 +369,31 @@
                 android:text="ENTIDAD FEDERATIVA"
                 android:textColor="#000000" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/dospgb_o_cveedo2"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:textColor="#000000" />
+
             <Spinner
                 android:id="@+id/dospgb_o_spiEstado2"
                 android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
                 android:background="@drawable/borde"
                 android:entries="@array/Estados2021"
                 android:spinnerMode="dropdown"
                 android:textSize="15sp" />
+
+        </LinearLayout>
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -301,17 +401,190 @@
                 android:text="MUNICIPIO"
                 android:textColor="#000000" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/dospgb_o_cvemun2"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:text="001"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/dospgb_o_spiMunicipio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/borde"
+                    android:enabled="false"
+                    android:entries="@array/Aguascalientes2021"
+                    android:spinnerMode="dropdown"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado3_1"
+                android:layout_height="wrap_content"
+                android:text="2. ENTIDAD FEDERATIVA"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+
             <Spinner
-                android:id="@+id/dospgb_o_spiMunicipio2"
+                android:id="@+id/dospgb_o_spiEstado3"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado3_2"
+                android:layout_height="wrap_content"
+                android:text="2. MUNICIPIO"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+
+            <Spinner
+                android:id="@+id/dospgb_o_spiMunicipio3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
                 android:background="@drawable/borde"
                 android:enabled="false"
                 android:entries="@array/Aguascalientes2021"
                 android:spinnerMode="dropdown"
                 android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado4_1"
+                android:layout_height="wrap_content"
+                android:text="3. ENTIDAD FEDERATIVA"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/dospgb_o_spiEstado4"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado4_2"
+                android:layout_height="wrap_content"
+                android:text="3. MUNICIPIO"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+
+            <Spinner
+                android:id="@+id/dospgb_o_spiMunicipio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/borde"
+                android:enabled="false"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado5_1"
+                android:layout_height="wrap_content"
+                android:text="4. ENTIDAD FEDERATIVA"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/dospgb_o_spiEstado5"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado5_2"
+                android:layout_height="wrap_content"
+                android:text="4. MUNICIPIO"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+
+            <Spinner
+                android:id="@+id/dospgb_o_spiMunicipio5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/borde"
+                android:enabled="false"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado6_1"
+                android:layout_height="wrap_content"
+                android:text="5. ENTIDAD FEDERATIVA"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/dospgb_o_spiEstado6"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/dospgb_o_spiEstado6_2"
+                android:layout_height="wrap_content"
+                android:text="5. MUNICIPIO"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000" />
+
+
+            <Spinner
+                android:id="@+id/dospgb_o_spiMunicipio6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/borde"
+                android:enabled="false"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -356,7 +629,7 @@
             <EditText
                 android:id="@+id/dospre_garan_granos_txt20"
                 android:layout_width="160dp"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:hint="Escriba el número"
                 android:inputType="number"
                 android:maxLength="2"
@@ -375,7 +648,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. ¿Sabe leer y escribir?"
+                android:text="¿Sabe leer y escribir?"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -402,7 +675,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="2. Indique el último nivel o grado de estudio que cursó en la escuela"
+                android:text="Indique el último nivel o grado de estudio que cursó en la escuela"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -522,7 +795,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:text="3. Nombre del producto:"
+                android:text="Nombre del producto:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -535,7 +808,7 @@
                     android:id="@+id/dospre_garan_granos_ra18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Maíz" />
+                    android:text="Arroz" />
 
                 <RadioButton
 
@@ -549,7 +822,7 @@
                     android:id="@+id/dospre_garan_granos_ra19_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Arroz" />
+                    android:text="Maíz comercial" />
 
 
             </RadioGroup>
@@ -570,7 +843,7 @@
                 <EditText
                     android:id="@+id/dospre_garan_granos_tx22"
                     android:layout_width="150dp"
-                    android:layout_height="62dp"
+                    android:layout_height="wrap_content"
                     android:hint="Cantidad (Kg)"
                     android:inputType="number"
                     android:maxLines="1" />
@@ -583,7 +856,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="4. SELECCIONE LA INFORMACIÓN QUE CONOCE DEL APOYO:"
+                android:text="SELECCIONE LA INFORMACIÓN QUE CONOCE DEL APOYO:"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -620,7 +893,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:enabled="true"
-                android:text="Fechas de entrega del apoyo" />
+                android:text="Fechas de entrega del apoyo o incentivo" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/dospre_garan_granos_ch5"
@@ -661,21 +934,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:enabled="true"
-                android:text="Mecánica operativa" />
+                android:text="Mecánica operativa / funcionamiento del programa" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="5. SELECCIONE LA DOCUMENTACIÓN QUE ENTREGÓ PARA REGISTRARSE EN EL PROGRAMA:"
+                android:text="SELECCIONE LA DOCUMENTACIÓN QUE ENTREGÓ PARA REGISTRARSE EN EL PROGRAMA:"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5.1 Identificación oficial vigente:"
+                android:text="1. Identificación oficial vigente:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -701,7 +974,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5.2 CURP:"
+                android:text="2. CURP:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -727,7 +1000,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5.3 Número de cuenta CLABE o algún método de pago:"
+                android:text="3. Número de cuenta CLABE o algún método de pago:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -753,7 +1026,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5.4 Documento o folio que acredite su registro en alguno de los siguientes padrones: Censo del Bienestar, producción para el Bienestar:"
+                android:text="4. Documento o folio que acredite su registro en alguno de los siguientes padrones: Censo del Bienestar, producción para el Bienestar:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -779,7 +1052,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5.5 Documento que acredite la posesión del predio sembrado o la renta del mismo:"
+                android:text="5. Documento que acredite la posesión del predio sembrado o la renta del mismo:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -807,14 +1080,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="6. SELECCIONE LA OPCIÓN QUE CORRESPONDA A SU OPINIÓN DEL APOYO:"
+                android:text="SELECCIONE LA OPCIÓN QUE CORRESPONDA A SU OPINIÓN DEL APOYO:"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.1 El pago le fue entregado completo:"
+                android:text="6. ¿El pago le fue entregado completo?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -840,7 +1113,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.2 El pago se realizó de acuerdo a la fecha programada:"
+                android:text="7. ¿El pago se realizó de acuerdo a la fecha programada?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -866,7 +1139,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.3 Incremento sus ingresos a partir del incentivo del Programa:"
+                android:text="8. ¿Incrementó sus ingresos a partir del incentivo del Programa?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -892,7 +1165,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.4 En su opinión ¿El pago lo reciben las personas que lo necesitan?:"
+                android:text="9. ¿Se le condicionó en algún momento el apoyo o incentivo?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -918,7 +1191,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.5 ¿Le entregaron el formato de Registro de Precios de Garantía?:"
+                android:text="10. En su opinión ¿El pago lo reciben las personas que lo necesitan?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -944,7 +1217,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.6 ¿Se le dio a conocer el precio de garantía?:"
+                android:text="11. ¿Le entregaron el formato de Registro al Programa Precios de Garantía?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -970,7 +1243,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.7 ¿Identifica alguna diferencia entre el precio al que compran los acopiadores privados y el precio de garantía?:"
+                android:text="12. ¿Se le dio a conocer el precio de garantía?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -996,7 +1269,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6.8  ¿La información difundida del programa fue suficiente, clara y oportuna?:"
+                android:text="13. ¿Identifica alguna diferencia entre el precio al que compran los acopiadores privados y el precio de garantía?:"
                 android:textColor="#000000" />
 
             <RadioGroup
@@ -1019,6 +1292,32 @@
                     android:text="No" />
             </RadioGroup>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14. ¿La información difundida del programa fue suficiente, clara y oportuna?:"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/dospre_garan_granos_ra45_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sí" />
+
+                <RadioButton
+
+                    android:id="@+id/dospre_garan_granos_ra46_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
 
             <TextView
                 android:id="@+id/dospre_garan_granos_txtview1"
@@ -1026,7 +1325,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
-                android:text="7. BENEFICIARIOS CON INCENTIVOS: MEDIANOS PRODUCTORES DE MAIZ, Y PEQUEÑOS Y MEDIANOS PRODUCTORES ARROZ Y TRIGO"
+                android:text="MEDIANOS PRODUCTORES DE MAIZ, Y PEQUEÑOS Y MEDIANOS PRODUCTORES ARROZ Y TRIGO"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:visibility="visible" />
@@ -1035,7 +1334,7 @@
                 android:id="@+id/dospre_garan_granos_txtview2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7.1 ¿Le entregaron el Documento de Compra (DC-01) que indica la calidad y el pesaje del grano firmada?:"
+                android:text="15. ¿Conoce el precio de referencia sobre el cual se calcula el estímulo:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1064,7 +1363,7 @@
                 android:id="@+id/dospre_garan_granos_txtview2_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7.2 ¿Conoce el precio de referencia sobre el cual se calcula el estímulo:"
+                android:text="16. ¿Conoce el monto del incentivo que se le está pagando?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1093,7 +1392,7 @@
                 android:id="@+id/dospre_garan_granos_txtview2_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7.3 ¿Conoce el monto del estímulo que se le está pagando?:"
+                android:text="17. Para el caso de beneficiarios de los estímulos para maíz de medianos productores y productores de trigo cristalino,¿Conoce el apoyo que se otorga para la Adquisición de Instrumentos de Administración de Riesgos?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1122,7 +1421,7 @@
                 android:id="@+id/dospre_garan_granos_txtview2_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7.4 ¿Conoce el apoyo que se otorga para la Adquisición de Instrumentos de Administración de Riesgos:"
+                android:text="18. ¿Recibió formato/comprobante durante la recepción de documentos (formato de Registro al Programa de Precios de Garantía:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1151,7 +1450,7 @@
                 android:id="@+id/dospre_garan_granos_txtview2_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7.5 ¿Recibió formato/comprobante de recepción de documentos?:"
+                android:text="19. ¿Le solicitaron la factura del volumen que comercializó?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1176,37 +1475,6 @@
                     android:visibility="visible" />
             </RadioGroup>
 
-            <TextView
-                android:id="@+id/dospre_garan_granos_txtview2_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="7.6 ¿Le solicitaron la factura del volumen que comercializó?:"
-                android:textColor="#000000"
-                android:visibility="visible" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/dospre_garan_granos_ra51_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sí"
-                    android:visibility="visible" />
-
-                <RadioButton
-
-                    android:id="@+id/dospre_garan_granos_ra52_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    android:visibility="visible" />
-            </RadioGroup>
-
-
-
 
             <TextView
                 android:id="@+id/dospre_garan_granos_txtview9"
@@ -1214,7 +1482,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="8. ENCUESTA DE OPINIÓN:"
+                android:text="ENCUESTA DE OPINIÓN:"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:visibility="visible" />
@@ -1233,7 +1501,7 @@
                 android:id="@+id/dospre_garan_granos_txtview11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8.1 La atención de los encargados del Centro de Acopio fue:"
+                android:text="20. La atención del responsable de la ventanilla/ (molino, bodega, comercializadora) fue:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1270,7 +1538,7 @@
                 android:id="@+id/dospre_garan_granos_txtview12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8.2 ¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="21. ¿Cómo califica la difusión del Programa Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1307,7 +1575,7 @@
                 android:id="@+id/dospre_garan_granos_txtview13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8.3 ¿Cómo considera el proceso para acceder al apoyo?:"
+                android:text="22. ¿Cómo considera el proceso para acceder al apoyo o incentivo?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1344,7 +1612,7 @@
                 android:id="@+id/dospre_garan_granos_txtview14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8.4 ¿Cómo considera el tiempo transcurrido para recibir el pago?:"
+                android:text="23. ¿Cómo considera el tiempo transcurrido para recibir el pago?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1381,7 +1649,7 @@
                 android:id="@+id/dospre_garan_granos_txtview15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8.5 ¿Cómo considera el monto pagado?:"
+                android:text="24. ¿Cómo considera el monto pagado?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1418,7 +1686,7 @@
                 android:id="@+id/dospre_garan_granos_txtview16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8.6 ¿Cómo califica el trámite y entrega de papeles en el Centro de Acopio?:"
+                android:text="25. ¿Cómo califica el trámite y entrega de papeles en la ventanilla?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1455,7 +1723,7 @@
                 android:id="@+id/dospre_garan_granos_txtview17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8.7 En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="26. En General, ¿Cómo califica el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1493,7 +1761,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="0dp"
-                android:text="9. Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
+                android:text="Finalmente responda, de acuerdo a su experiencia, las siguientes preguntas:"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -1501,7 +1769,7 @@
                 android:id="@+id/dospre_garan_granos_txtview177"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="9.1 ¿Cómo se enteró del Programa y los requisitos?:"
+                android:text="27. ¿Cómo se enteró del Programa y los requisitos?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1591,6 +1859,15 @@
                 android:text="Autoridades o instituciones locales"
                 android:visibility="visible" />
 
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/dospre_garan_granos_ch20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:enabled="true"
+                android:text="Por medio del Centro de Acopio, bodega o molino al que le vende"
+                android:visibility="visible" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -1620,7 +1897,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="9.2 ¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
+                android:text="28. ¿Qué otro tipo de información requiere que sea difundida por el Programa?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1636,7 +1913,7 @@
                 android:id="@+id/dospre_garan_granos_txtview20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="9.3 ¿Cuáles considera son para usted las ventajas de este Programa?:"
+                android:text="29. ¿Cuáles considera son para usted las ventajas de este Programa?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1652,7 +1929,7 @@
                 android:id="@+id/dospre_garan_granos_txtview21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="9.4 ¿Cuáles considera son las principales desventajas del Programa?:"
+                android:text="30. ¿Cuáles considera son las principales desventajas del Programa?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 
@@ -1668,7 +1945,7 @@
                 android:id="@+id/dospre_garan_granos_txtview22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="9.5 ¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
+                android:text="31. ¿Cómo mejoraría el Programa de Precios de Garantía a Productos Alimentarios Básicos?:"
                 android:textColor="#000000"
                 android:visibility="visible" />
 

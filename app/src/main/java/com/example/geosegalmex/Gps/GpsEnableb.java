@@ -198,7 +198,7 @@ public class GpsEnableb extends AppCompatActivity {
                         textid.setText("PG_B_G_"+folioo);
                         break;
                     case 7:
-                        textid.setText("PG_B_G_I_"+folioo);
+                        textid.setText("PG_B_E_"+folioo);
                         break;
                     case 8:
                         textid.setText("PAR_B_"+folioo);

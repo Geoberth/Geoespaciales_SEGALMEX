@@ -316,10 +316,10 @@ public class ExportarFragment extends Fragment {
                         }
 
                         try {
-                            deployDatabase("PGBeneficiarioGranosIncentivos");
+                            deployDatabase("PGBeneficiarioEstimulos");
                         } catch (IOException e) {
                             try {
-                                deployDatabase("PGBeneficiarioGranosIncentivos");
+                                deployDatabase("PGBeneficiarioEstimulos");
                             } catch (IOException ex) {
                                 ex.printStackTrace();
                             }
