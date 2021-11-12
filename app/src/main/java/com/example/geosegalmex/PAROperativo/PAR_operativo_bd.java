@@ -12,7 +12,6 @@ public class PAR_operativo_bd {
     public static final String COLUMN_CVEMUN= "CVEMUN";
     public static final String COLUMN_LOCALI= "LOCALI";
     public static final String COLUMN_CVELOCA= "CVELOCA";
-
     public static final String COLUMN_PARNOM= "PARNOM";
     public static final String COLUMN_PARAPE= "PARAPE";
     public static final String COLUMN_PARAPEM= "PARAPEM";
@@ -34,9 +33,10 @@ public class PAR_operativo_bd {
     public static final String COLUMN_PARE13= "PARE13";
     public static final String COLUMN_PARE14= "PARE14";
     public static final String COLUMN_PARE15= "PARE15";
-    public static final String COLUMN_PAREO15= "PARE15O";
+    public static final String COLUMN_PAREO15= "PAREO15";
     public static final String COLUMN_PARE16= "PARE16";
     public static final String COLUMN_PARE17= "PARE17";
+    public static final String COLUMN_PAREO17= "PAREO17";
     public static final String COLUMN_PARE18= "PARE18";
     public static final String COLUMN_PARE19= "PARE19";
     public static final String COLUMN_PARE20= "PARE20";
@@ -210,6 +210,7 @@ public class PAR_operativo_bd {
             + COLUMN_PAREO15 + " VARCHAR, "
             + COLUMN_PARE16 + " VARCHAR, "
             + COLUMN_PARE17 + " VARCHAR, "
+            + COLUMN_PAREO17 + " VARCHAR, "
             + COLUMN_PARE18 + " VARCHAR, "
             + COLUMN_PARE19 + " VARCHAR, "
             + COLUMN_PARE20 + " VARCHAR, "

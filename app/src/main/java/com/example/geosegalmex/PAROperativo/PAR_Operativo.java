@@ -703,6 +703,7 @@ public class PAR_Operativo extends AppCompatActivity {
                                     String pareo15 = paret9.getText().toString();
                                     String pare16 = obtenerRadio3(parer23, parer24, parer25);
                                     String pare17 = obtenerRadio4(parer26, parer27, parer28, parer29);
+                                    String pareo17 = paret10.getText().toString();
                                     String pare18 = capa3();
                                     String pare19 = capa4();
                                     String pare20 = obtenerRadio3(parer30, parer31, parer32);
@@ -841,7 +842,7 @@ public class PAR_Operativo extends AppCompatActivity {
                                     String f1 = General.Foto1;
                                     String f2 = General.Foto2;
 
-                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, locali, cveloca, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pareo15, pare16, pare17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, "", "");
+                                    model = new PAR_operativo_model(folio, General.fechaenc, noment, cveedo, nommun, cvemun, locali, cveloca, parnom, parape, parapem, parrad1, edad, pare6, pare7, parrad2, parrad3, parrad4, parrad5, parrad6, parrad7, pare8, pare9, pare10, pare11, pare12, pare13, pare14, pare15, pareo15, pare16, pare17, pareo17, pare18, pare19, pare20, pare21, pare22, pare23, pare24, pare25, pare26, pare27, pare28, pare29, pare30, pare31, pare32, pare33, pare34, pare35, pare36, pare37, pare38, pare39, pare40, pare41, pare42, pare43, pare44, pare45, pare46, pare47, pare48, pare49, pare50, pare51, pare52, pare53, pare54, pare55, pare56, pare57, pare58, pare59, pare60, pare61, pare62, pare63, pare64, pare65, pare66, pare67, pare68, pare69, pare70, pare71, pare72, pare73, pare74, pare75, pare76, pare77, pare78, pare79, pare80, pare81, pare82, pare84, pare85, pare86, pare87, pare88, pare89, pare90, pare91, pare92, pare93, pare94, pare95, pare96, pare97, pare98, pare99, pare100, pare101, pare102, pare103, pare104, pare105, pare106, pare107, pare108, pare109, pare110, pare111, pare112, pare113, pare114, pare115, pare116, pare117, pare118, pare119, pare120, pare121, pare122, pare123, pare124, pare125, pare126, pare127, pare128, pare129, pare130, pare131, pare132, pare133, pare134, pare135, pare136, pare137, pare138, pare139, pare140, pare141, pare142, pare143, pare144, pare145, pare146, pare147, pare148, pare149, pare150, pare151, pare152, f1, f2, "", "");
                                     Intent in = new Intent(PAR_Operativo.this, GeoreferenciaActivity.class);
                                     in.putExtra("model", model);
                                     startActivity(in);
@@ -2198,27 +2199,14 @@ if(pa110_57.isChecked()){count = count + 1;}
         String cadena = "";
         String resultado1 = "";
 
-        if (parec1.isChecked()){
-            cadena = "1-";
-        }
-        if (parec2.isChecked()){
-            cadena = "2-";
-        }
-        if (parec3.isChecked()){
-            cadena = "3-";
-        }
-        if (parec4.isChecked()){
-            cadena = "4-";
-        }
-        if (parec5.isChecked()){
-            cadena = "5-";
-        }
-        if (parec6.isChecked()){
-            cadena = "6-";
-        }
-        if (parec7.isChecked()){
-            cadena = "7-";
-        }
+        if(parec1.isChecked()){cadena += "" + parec1.getText().toString() + "-";}
+        if(parec2.isChecked()){cadena += "" + parec2.getText().toString() + "-";}
+        if(parec3.isChecked()){cadena += "" + parec3.getText().toString() + "-";}
+        if(parec4.isChecked()){cadena += "" + parec4.getText().toString() + "-";}
+        if(parec5.isChecked()){cadena += "" + parec5.getText().toString() + "-";}
+        if(parec6.isChecked()){cadena += "" + parec6.getText().toString() + "-";}
+        if(parec7.isChecked()){cadena += "" + parec7.getText().toString() + "-";}
+
         if (!parec7.isChecked() && !parec6.isChecked() && !parec5.isChecked() && !parec4.isChecked() && !parec3.isChecked() && !parec2.isChecked() && !parec1.isChecked()){
             cadena = "No aplica";
         }
@@ -2245,27 +2233,14 @@ if(pa110_57.isChecked()){count = count + 1;}
         String cadena = "";
         String resultado1 = "";
 
-        if (parec9.isChecked()){
-            cadena = "1-";
-        }
-        if (parec10.isChecked()){
-            cadena = "2-";
-        }
-        if (parec11.isChecked()){
-            cadena = "3-";
-        }
-        if (parec12.isChecked()){
-            cadena = "4-";
-        }
-        if (parec13.isChecked()){
-            cadena = "5-";
-        }
-        if (parec14.isChecked()){
-            cadena = "6-";
-        }
-        if (parec15.isChecked()){
-            cadena = "7-";
-        }
+        if(parec9.isChecked()){cadena += "" + parec9.getText().toString() + "-";}
+        if(parec10.isChecked()){cadena += "" + parec10.getText().toString() + "-";}
+        if(parec11.isChecked()){cadena += "" + parec11.getText().toString() + "-";}
+        if(parec12.isChecked()){cadena += "" + parec12.getText().toString() + "-";}
+        if(parec13.isChecked()){cadena += "" + parec13.getText().toString() + "-";}
+        if(parec14.isChecked()){cadena += "" + parec14.getText().toString() + "-";}
+        if(parec15.isChecked()){cadena += "" + parec15.getText().toString() + "-";}
+
         if (!parec9.isChecked() && !parec10.isChecked() && !parec11.isChecked() && !parec12.isChecked() && !parec13.isChecked() && !parec14.isChecked() && !parec15.isChecked()){
             cadena = "No aplica";
         }
