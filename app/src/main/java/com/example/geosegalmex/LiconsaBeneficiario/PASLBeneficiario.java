@@ -142,9 +142,9 @@ public class PASLBeneficiario extends AppCompatActivity {
 
                 if(validar()){
                     String fol = General.Foliocuestion;
-                    String res = responde.getSelectedItem().toString();
-                    String bene = obtenerRadio(radi1, radi2, radi3);
-                    String obene = otrobene.getText().toString();
+                    String res =  obtenerRadio(radi1, radi2, radi3);
+                    String bene = Resultado();
+                    String obene = (radi3.isChecked())? otrobene.getText().toString() : "";
                     String uno = obtenerRadio(bueno,aceptable,malo);
                     String dos = obtenerRadio(bueno2,aceptable2,malo2);
                     String tres = obtenerRadio(bueno3,aceptable3,malo3);
@@ -176,9 +176,6 @@ public class PASLBeneficiario extends AppCompatActivity {
                     String doceco = docecom.getText().toString();
                     String trececo = trececom.getText().toString();
                     String catorceco = catorcecom.getText().toString();
-
-
-
 
                     model = new Pasl_b_Model(fol, res, bene, obene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, f1, f2, "", "");
                     Intent in = new Intent(PASLBeneficiario.this, GeoreferenciaActivity.class);

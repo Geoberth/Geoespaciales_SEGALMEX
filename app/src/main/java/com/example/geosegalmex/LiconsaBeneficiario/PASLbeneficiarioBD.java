@@ -14,7 +14,7 @@ import com.example.geosegalmex.LiconsaVentanilla.pasl_operativo_bd;
 public class PASLbeneficiarioBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PASLBeneficiario";
-    public static final int DB_VERSION = 12;
+    public static final int DB_VERSION = 13;
 
     public PASLbeneficiarioBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -40,8 +40,8 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
 
         contentValues.put(pasl_beneficiario_bd.COLUMN_FOLIO, model.getFolio());
         contentValues.put(pasl_beneficiario_bd.COLUMN_RES, model.getRes());
-        contentValues.put(pasl_beneficiario_bd.COLUMN_BENEFI, model.getBene());
         contentValues.put(pasl_beneficiario_bd.COLUMN_OBENEFI, model.getObene());
+        contentValues.put(pasl_beneficiario_bd.COLUMN_BENEFI, model.getBene());
         contentValues.put(pasl_beneficiario_bd.COLUMN_UNO, model.getUno());
         contentValues.put(pasl_beneficiario_bd.COLUMN_DOS, model.getDos());
         contentValues.put(pasl_beneficiario_bd.COLUMN_TRES, model.getTres());
