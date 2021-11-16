@@ -288,10 +288,12 @@ public class PGOperativoEstimulos extends AppCompatActivity {
             sietea.setError("Debes seleccionar almenos una opción");
             retorno = false;
         }
+        /*
         else if(!si8.isChecked() && !no8.isChecked() && !na8.isChecked()){
             si.setError("Debes seleccionar una opción");
             retorno=false;
         }
+         */
         else if(!si9.isChecked() && !no9.isChecked() && !na9.isChecked()){
             si9.setError("Debes seleccionar una opción");
             retorno=false;

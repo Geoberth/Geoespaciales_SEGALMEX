@@ -693,16 +693,9 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/ControlPlagasEnfermB.jav
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$1
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$2
-com/example/geosegalmex/NewCamara.java
- com.example.geosegalmex.NewCamara
- com.example.geosegalmex.NewCamara$1
- com.example.geosegalmex.NewCamara$1$1
- com.example.geosegalmex.NewCamara$2
- com.example.geosegalmex.NewCamara$2$1
- com.example.geosegalmex.NewCamara$3
- com.example.geosegalmex.NewCamara$3$1
- com.example.geosegalmex.NewCamara$4
- com.example.geosegalmex.NewCamara$4$1
+com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
+ com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
+ com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
 com/example/geosegalmex/unidadcomercializacion/comercializacion_6.java
  com.example.geosegalmex.unidadcomercializacion.comercializacion_6
  com.example.geosegalmex.unidadcomercializacion.comercializacion_6$1
@@ -814,9 +807,16 @@ com/example/geosegalmex/Gps/Trayectoria.java
 com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
  com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
  com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
-com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
- com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
- com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
+com/example/geosegalmex/NewCamara.java
+ com.example.geosegalmex.NewCamara
+ com.example.geosegalmex.NewCamara$1
+ com.example.geosegalmex.NewCamara$1$1
+ com.example.geosegalmex.NewCamara$2
+ com.example.geosegalmex.NewCamara$2$1
+ com.example.geosegalmex.NewCamara$3
+ com.example.geosegalmex.NewCamara$3$1
+ com.example.geosegalmex.NewCamara$4
+ com.example.geosegalmex.NewCamara$4$1
 com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
  com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
  com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
