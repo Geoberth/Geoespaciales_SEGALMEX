@@ -25,6 +25,7 @@ import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
 import com.example.geosegalmex.PARBeneficiario.PARBeneficiario_Model;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche;
 import com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche_Model;
+import com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivos;
 import com.example.geosegalmex.R;
 
 import java.util.Calendar;
@@ -33,11 +34,12 @@ import java.util.regex.Pattern;
 public class Liconsa extends AppCompatActivity {
     EditText especifique, ernplpt1, ernplpt2, ernplpt3, ernplpt4, ernplpt5, ernplpt6, ernplpt7, ernplpt9, ernplpt10, ernplpt11, ernplpt12, ernplpt13, ernplpt14, ernplpt15, ernplpt16, ernplpt17, ernplpt18, ernplpt19, ernplpt20, ernplpt21, ernplpt22, ernplpt23, ernplpt24, ernplpt25, ernplpt26, ernplpt27, ernplpt28, ernplpt29, ernplpt30, ernplpt31, ernplpt32, ernplpt33, ernplpt34, ernplpt35, ernplpt36, ernplpt37, ernplpt38, ernplpt39, ernplpt40, ernplpt41, ernplpt42, ernplpt43, ernplpt44, ernplpt45, ernplpt46, ernplpt47, ernplpt48, ernplpt49, ernplpt50, ernplpt51, ernplpt52, ernplpt53, ernplpt54;
     RadioButton ernplpr1, ernplpr2, ernplpr3, ernplpr4, type1, type2, type3, ernplpr8, ernplpr9, ernplpr10, ernplpr11, ernplpr12, ernplpr13, ernplpr14, ernplpr15, ernplpr16, ernplpr17, ernplpr18, ernplpr19, ernplpr20, ernplpr21, ernplpr22, ernplpr23, ernplpr24, ernplpr25, ernplpr26, ernplpr27, ernplpr28, ernplpr29, ernplpr30, ernplpr31, ernplpr32, ernplpr33, ernplpr34, ernplpr35, ernplpr36, ernplpr37, ernplpr38, ernplpr39, ernplpr40, ernplpr41, ernplpr42, ernplpr43, ernplpr44, ernplpr45, ernplpr46, ernplpr47, ernplpr48, ernplpr49, ernplpr50, ernplpr51, ernplpr52, ernplpr53, ernplpr54, ernplpr55, ernplpr56, ernplpr57, ernplpr58, ernplpr59, ernplpr60, ernplpr61, ernplpr62, ernplpr63, ernplpr64, ernplpr65, ernplpr66, ernplpr67, ernplpr68, ernplpr69, ernplpr70, ernplpr71, ernplpr72;
-    Spinner ernplps1, ernplps2, spn, ernplpt8, spmes, spdia, spaño, spmes2, spdia2, spaño2;
+    Spinner ernplps1, ernplps2, spn, ernplpt8, spmes, spdia, spaño, spmes2, spdia2, spaño2,ernplps4, ernplps3;
     CheckBox ernplpc1, ernplpc2, ernplpc3;
     Button btnSiguiente;
     LinearLayout ll1, ll2;
     TextView tv1, tv2;
+    EditText rnplup1,rnplup2,rnplup3,rnplup4,rnplup5,rnplup6,rnplup7;
 
     Calendar c, c2;
     DatePickerDialog dpd, dpd2;
@@ -58,6 +60,22 @@ public class Liconsa extends AppCompatActivity {
     };
     String[] municipios;
     String[] cvemunicipios;
+
+    String cveedo2 = "";
+    String nomedo2 = "";
+    String cvemun2 = "";
+    String nommun2 = "";
+    int[] idmunicipios2 = {R.array.Aguascalientes2021, R.array.BajaCalifornia2021, R.array.BajaCaliforniaSur2021, R.array.Campeche2021, R.array.CoahuiladeZaragoza2021, R.array.Colima2021, R.array.Chiapas2021, R.array.Chihuahua2021, R.array.CiudaddeMéxico2021
+            , R.array.Durango2021, R.array.Guanajuato2021, R.array.Guerrero2021, R.array.Hidalgo2021, R.array.Jalisco2021, R.array.México2021, R.array.MichoacándeOcampo2021, R.array.Morelos2021, R.array.Nayarit2021, R.array.NuevoLeón2021, R.array.Oaxaca2021
+            , R.array.Puebla2021, R.array.Querétaro2021, R.array.QuintanaRoo2021, R.array.SanLuisPotosí2021, R.array.Sinaloa2021, R.array.Sonora2021, R.array.Tabasco2021, R.array.Tamaulipas2021, R.array.Tlaxcala2021, R.array.VeracruzdeIgnaciodelaLlave2021
+            , R.array.Yucatán2021, R.array.Zacatecas2021};
+    int[] idcvemunicipios2 = {R.array.cveAguascalientes2021, R.array.cveBajaCalifornia2021, R.array.cveBajaCaliforniaSur2021, R.array.cveCampeche2021, R.array.cveCoahuiladeZaragoza2021, R.array.cveColima2021, R.array.cveChiapas2021, R.array.cveChihuahua2021, R.array.cveCiudaddeMéxico2021
+            , R.array.cveDurango2021, R.array.cveGuanajuato2021, R.array.cveGuerrero2021, R.array.cveHidalgo2021, R.array.cveJalisco2021, R.array.cveMéxico2021, R.array.cveMichoacándeOcampo2021, R.array.cveMorelos2021, R.array.cveNayarit2021, R.array.cveNuevoLeón2021, R.array.cveOaxaca2021
+            , R.array.cvePuebla2021, R.array.cveQuerétaro2021, R.array.cveQuintanaRoo2021, R.array.cveSanLuisPotosí2021, R.array.cveSinaloa2021, R.array.cveSonora2021, R.array.cveTabasco2021, R.array.cveTamaulipas2021, R.array.cveTlaxcala2021, R.array.cveVeracruzdeIgnaciodelaLlave2021
+            , R.array.cveYucatán2021, R.array.cveZacatecas2021
+    };
+    String[] municipios2;
+    String[] cvemunicipios2;
 
 
     @Override
@@ -110,6 +128,37 @@ public class Liconsa extends AppCompatActivity {
             }
         });
 
+        ernplps3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                String[] estados2 = getResources().getStringArray(R.array.Estados2021);
+                String[] cveestados2 = getResources().getStringArray(R.array.cveEstados2021);
+
+                cveedo2 = cveestados2[position];
+                nomedo2 = estados2[position];
+
+                municipios2 = getResources().getStringArray(idmunicipios2[position]);
+                cvemunicipios2 = getResources().getStringArray(idcvemunicipios2[position]);
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(Liconsa.this, android.R.layout.simple_spinner_item, municipios2);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                ernplps4.setAdapter(adapter);
+                ernplps4.setEnabled(true);
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
+        ernplps4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                nommun2 = municipios2[position];
+                cvemun2 = cvemunicipios2[position];
+            }
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
+
 
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,12 +187,26 @@ public class Liconsa extends AppCompatActivity {
                     String cveMun = cvemun;
                     String Mun = nommun;
                     String cveLoc = "";
-                    String colonia = ernplpt15.getText().toString();
+                    String localidad = ernplpt15.getText().toString();
+                    String colonia = rnplup7.getText().toString();
                     String tipoasen = (ernplpr3.isChecked()==true || ernplpr4.isChecked()==true)? obtenerResultado(ernplpr3, ernplpr4) : "" ;
                     String nomasen = ernplpt19.getText().toString();
                     String cveasen = ernplpt20.getText().toString();
                     String vialidad = ernplpt21.getText().toString();
                     String tipovialidad = spn.getSelectedItem().toString();
+
+                    String calleup = rnplup1.getText().toString();
+                    String extup = rnplup3.getText().toString();
+                    String intup = rnplup2.getText().toString();
+                    String cveLocup = "";
+                    String desclocup = rnplup4.getText().toString();
+                    String colup = rnplup5.getText().toString();
+                    String cpup = rnplup6.getText().toString();
+                    String cveEdoup = cveedo2;
+                    String Edoup = nomedo2;
+                    String cveMunup = cvemun2;
+                    String Munup = nommun2;
+
                     String asociacion = obtenerResultado(ernplpr25, ernplpr26);
                     String nomaso = (ernplpr25.isChecked()==true)? ernplpt24.getText().toString() : "" ;
                     String regimen = obtenerResultado3(ernplpr27, ernplpr28, ernplpr29);
@@ -202,7 +265,8 @@ public class Liconsa extends AppCompatActivity {
                     String f2 = General.Foto2;
                     String f3 = General.Foto3;
 
-                    model = new Liconsa_Model(fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipotel,calle,ext,inte,cp,cveEdo,Edo,cveMun,Mun,cveLoc,colonia,tipoasen,nomasen,cveasen,vialidad,tipovialidad,asociacion,nomaso,regimen,
+                    model = new Liconsa_Model(fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipotel,calle,ext,inte,cp,cveEdo,Edo,cveMun,Mun,cveLoc,localidad,colonia,tipoasen,nomasen,cveasen,vialidad,tipovialidad,
+                            calleup,extup,intup,cveLocup,desclocup,colup,cpup,cveEdoup,Edoup,cveMunup,Munup,asociacion,nomaso,regimen,
                             discapacidad,nomdiscapacidad,indigena,declaindigena,estatus,upp,p1,p2,p3,p4,p5,p6,p7,p8,p9,p9_1,p9_2,p10,p10_1,p11,p12_1,p12_2,p12_3,p12_4,p12_4otros,p13,p13_1,p13_2,p13_3,p13_4,p13_5,p14,p14_1,p14_2,
                             p14_3,p14_4,p14_5,p15_1,p15_2,p15_3,p15_4,p15_4otros,p16,p16_registro,p17,p17_registro,p18,p19,p20,observaciones, f1, f2, f3, "", "");
 
@@ -218,58 +282,6 @@ public class Liconsa extends AppCompatActivity {
 
             }
         });
-
-        ernplpt4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                c = Calendar.getInstance();
-                int day = c.get(Calendar.DAY_OF_MONTH);
-                int month = c.get(Calendar.MONTH);
-                int year = c.get(Calendar.YEAR);
-
-                dpd = new DatePickerDialog(Liconsa.this, new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int mYear, int mMonth, int mDay) {
-                        ernplpt4.setText(mDay +"/"+ (mMonth+1) +"/"+ mYear);
-                    }
-                }, year, month, day);
-                dpd.show();
-            }
-        });
-
-        ernplpt37.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                c2 = Calendar.getInstance();
-                int day2 = c2.get(Calendar.DAY_OF_MONTH);
-                int month2 = c2.get(Calendar.MONTH);
-                int year2 = c2.get(Calendar.YEAR);
-
-                dpd2 = new DatePickerDialog(Liconsa.this, new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int mYear2, int mMonth2, int mDay2) {
-                        ernplpt37.setText(mDay2 +"/"+ (mMonth2+1) +"/"+ mYear2);
-                    }
-                }, year2, month2, day2);
-                dpd2.show();
-            }
-        });
-
-        tv1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ernplpt6.setText("AAAA990131MDFZZZ00");
-            }
-        });
-
-        tv2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ernplpt7.setText("AAAA990131ZZ9");
-            }
-        });
-
-
 
     }
 
@@ -330,7 +342,7 @@ public class Liconsa extends AppCompatActivity {
 
         ernplpt19 = (EditText)findViewById(R.id.ernpl_prod_txt19);
         ernplpt20 = (EditText)findViewById(R.id.ernpl_prod_txt20);
-        ernplpt21 = (EditText)findViewById(R.id.ernpl_prod_txt11);
+        ernplpt21 = (EditText)findViewById(R.id.ernpl_prod_txt21);
 
         spn = (Spinner) findViewById(R.id.par_ben_spin2);
 
@@ -443,6 +455,18 @@ public class Liconsa extends AppCompatActivity {
         ernplpr70 = (RadioButton)findViewById(R.id.ernpl_prod_ra70);
         ernplpt54 = (EditText)findViewById(R.id.ernpl_prod_txt54);
         btnSiguiente = (Button)findViewById(R.id.ernpl_prod_sig);
+
+
+        rnplup1 = (EditText)findViewById(R.id.ernpl_1001);
+        rnplup2 = (EditText)findViewById(R.id.ernpl_1002);
+        rnplup3 = (EditText)findViewById(R.id.ernpl_1003);
+        rnplup4 = (EditText)findViewById(R.id.ernpl_1004);
+        rnplup5 = (EditText)findViewById(R.id.ernpl_1005);
+        rnplup7 = (EditText)findViewById(R.id.ernpl_1005_1);
+        rnplup6 = (EditText)findViewById(R.id.ernpl_1006);
+        ernplps3 = (Spinner) findViewById(R.id.ernpl_prod_spin3); //ENTIDAD FEDERATIVA
+        ernplps4 = (Spinner) findViewById(R.id.ernpl_prod_spin4); //MUNICIPIO
+
     }
 
     public void Eventos(){
@@ -655,6 +679,56 @@ public class Liconsa extends AppCompatActivity {
             }
         });
 
+        ernplpt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                c = Calendar.getInstance();
+                int day = c.get(Calendar.DAY_OF_MONTH);
+                int month = c.get(Calendar.MONTH);
+                int year = c.get(Calendar.YEAR);
+
+                dpd = new DatePickerDialog(Liconsa.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker datePicker, int mYear, int mMonth, int mDay) {
+                        ernplpt4.setText(mDay +"/"+ (mMonth+1) +"/"+ mYear);
+                    }
+                }, year, month, day);
+                dpd.show();
+            }
+        });
+
+        ernplpt37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                c2 = Calendar.getInstance();
+                int day2 = c2.get(Calendar.DAY_OF_MONTH);
+                int month2 = c2.get(Calendar.MONTH);
+                int year2 = c2.get(Calendar.YEAR);
+
+                dpd2 = new DatePickerDialog(Liconsa.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker datePicker, int mYear2, int mMonth2, int mDay2) {
+                        ernplpt37.setText(mDay2 +"/"+ (mMonth2+1) +"/"+ mYear2);
+                    }
+                }, year2, month2, day2);
+                dpd2.show();
+            }
+        });
+
+        tv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ernplpt6.setText("AAAA990131MDFZZZ00");
+            }
+        });
+
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ernplpt7.setText("AAAA990131ZZ9");
+            }
+        });
+
 
 
 
@@ -745,6 +819,26 @@ public class Liconsa extends AppCompatActivity {
         }
         else if(ernplpt15.getText().toString().isEmpty()) {
             ernplpt15.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(rnplup7.getText().toString().isEmpty()) {
+            rnplup7.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(rnplup1.getText().toString().isEmpty()) {
+            rnplup1.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(rnplup4.getText().toString().isEmpty()) {
+            rnplup4.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(rnplup5.getText().toString().isEmpty()) {
+            rnplup5.setError("No puede quedar vacio");
+            retorno = false;
+        }
+        else if(rnplup6.getText().toString().isEmpty()) {
+            rnplup6.setError("No puede quedar vacio");
             retorno = false;
         }
         else if(!ernplpr25.isChecked() && !ernplpr26.isChecked()){

@@ -27,11 +27,23 @@ public class Liconsa_bd {
     public static final String COLUMN_MUN        = "MUN";
     public static final String COLUMN_CVELOC     = "CVELOC";
     public static final String COLUMN_LOC        = "LOC";
+    public static final String COLUMN_COL        = "COL";
     public static final String COLUMN_TIPOASEN   = "TIPOASEN";
     public static final String COLUMN_NOMASEN    = "NOMASEN";
     public static final String COLUMN_CVEASEN    = "CVEASEN";
     public static final String COLUMN_VIALIDAD   = "VIALIDAD";
     public static final String COLUMN_TIPOVIA    = "TIPOVIA";
+    public static final String COLUMN_CALLEUP     ="CALLEUP";
+    public static final String COLUMN_EXTUP       ="EXTUP";
+    public static final String COLUMN_INTUP       ="INTUP";
+    public static final String COLUMN_CVELOCUP    ="CVELOCUP";
+    public static final String COLUMN_LOCUP    ="LOCUP";
+    public static final String COLUMN_COLUP       ="COLUP";
+    public static final String COLUMN_CPUP        ="CPUP";
+    public static final String COLUMN_CVEEDOUP    ="CVEEDOUP ";
+    public static final String COLUMN_ENTIDADUP   ="ENTIDADUP";
+    public static final String COLUMN_CVEMUNUP    ="CVEMUNUP";
+    public static final String COLUMN_MUNUP       ="MUNUP";
     public static final String COLUMN_ASOC       = "ASOC";
     public static final String COLUMN_NOMASOC    = "NOMASOC";
     public static final String COLUMN_REGIMEN    = "REGIMEN";
@@ -116,11 +128,23 @@ public class Liconsa_bd {
             + COLUMN_MUN       + " VARCHAR, "
             + COLUMN_CVELOC    + " VARCHAR, "
             + COLUMN_LOC       + " VARCHAR, "
+            + COLUMN_COL       + " VARCHAR, "
             + COLUMN_TIPOASEN  + " VARCHAR, "
             + COLUMN_NOMASEN   + " VARCHAR, "
             + COLUMN_CVEASEN   + " VARCHAR, "
             + COLUMN_VIALIDAD  + " VARCHAR, "
             + COLUMN_TIPOVIA   + " VARCHAR, "
+            + COLUMN_CALLEUP     + " VARCHAR, "
+            + COLUMN_EXTUP     + " VARCHAR, "
+            + COLUMN_INTUP     + " VARCHAR, "
+            + COLUMN_CVELOCUP     + " VARCHAR, "
+            + COLUMN_LOCUP     + " VARCHAR, "
+            + COLUMN_COLUP     + " VARCHAR, "
+            + COLUMN_CPUP     + " VARCHAR, "
+            + COLUMN_CVEEDOUP     + " VARCHAR, "
+            + COLUMN_ENTIDADUP     + " VARCHAR, "
+            + COLUMN_CVEMUNUP     + " VARCHAR, "
+            + COLUMN_MUNUP         + " VARCHAR, "
             + COLUMN_ASOC      + " VARCHAR, "
             + COLUMN_NOMASOC   + " VARCHAR, "
             + COLUMN_REGIMEN   + " VARCHAR, "

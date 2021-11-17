@@ -15,7 +15,7 @@ import java.io.File;
 public class LiconsaBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "RNPLProductor";
-    public static final int DB_VERSION = 12;
+    public static final int DB_VERSION = 14;
 
     public LiconsaBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -63,12 +63,24 @@ public class LiconsaBD extends SQLiteOpenHelper {
         contentValues.put(Liconsa_bd.COLUMN_CVEMUN     , model.getCveMun());
         contentValues.put(Liconsa_bd.COLUMN_MUN        , model.getMun());
         contentValues.put(Liconsa_bd.COLUMN_CVELOC     , model.getCveLoc());
-        contentValues.put(Liconsa_bd.COLUMN_LOC        , model.getColonia());
+        contentValues.put(Liconsa_bd.COLUMN_LOC        , model.getLoc());
+        contentValues.put(Liconsa_bd.COLUMN_COL        , model.getColonia());
         contentValues.put(Liconsa_bd.COLUMN_TIPOASEN   , model.getTipoasen());
         contentValues.put(Liconsa_bd.COLUMN_NOMASEN    , model.getNomasen());
         contentValues.put(Liconsa_bd.COLUMN_CVEASEN    , model.getCveasen());
         contentValues.put(Liconsa_bd.COLUMN_VIALIDAD   , model.getVialidad());
         contentValues.put(Liconsa_bd.COLUMN_TIPOVIA    , model.getTipovialidad());
+        contentValues.put(Liconsa_bd.COLUMN_CALLEUP     ,model.getCalleup());
+        contentValues.put(Liconsa_bd.COLUMN_EXTUP     ,model.getExtup());
+        contentValues.put(Liconsa_bd.COLUMN_INTUP     ,model.getIntup());
+        contentValues.put(Liconsa_bd.COLUMN_CVELOCUP     ,model.getCveLocup());
+        contentValues.put(Liconsa_bd.COLUMN_LOCUP     ,model.getDesclocup());
+        contentValues.put(Liconsa_bd.COLUMN_COLUP     ,model.getColup());
+        contentValues.put(Liconsa_bd.COLUMN_CPUP     ,model.getCpup());
+        contentValues.put(Liconsa_bd.COLUMN_CVEEDOUP     ,model.getCveEdoup());
+        contentValues.put(Liconsa_bd.COLUMN_ENTIDADUP     ,model.getEdoup());
+        contentValues.put(Liconsa_bd.COLUMN_CVEMUNUP     ,model.getCveMunup());
+        contentValues.put(Liconsa_bd.COLUMN_MUNUP     ,model.getMunup());
         contentValues.put(Liconsa_bd.COLUMN_ASOC       , model.getAsociacion());
         contentValues.put(Liconsa_bd.COLUMN_NOMASOC    , model.getNomaso());
         contentValues.put(Liconsa_bd.COLUMN_REGIMEN    , model.getRegimen());

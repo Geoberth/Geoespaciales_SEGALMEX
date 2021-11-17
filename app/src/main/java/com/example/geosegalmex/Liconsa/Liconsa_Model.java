@@ -4,14 +4,14 @@ import java.io.Serializable;
 
 public class Liconsa_Model implements Serializable {
 
-String fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipotel,calle,ext,inte,cp,cveEdo,Edo,cveMun,Mun,cveLoc,colonia,tipoasen,nomasen,cveasen,vialidad,tipovialidad,asociacion,nomaso,regimen,
+String fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipotel,calle,ext,inte,cp,cveEdo,Edo,cveMun,Mun,cveLoc,loc,colonia,tipoasen,nomasen,cveasen,vialidad,tipovialidad,calleup,extup,intup,cveLocup,desclocup,colup,cpup,cveEdoup,Edoup,cveMunup,Munup,asociacion,nomaso,regimen,
         discapacidad,nomdiscapacidad,indigena,declaindigena,estatus,upp,p1,p2,p3,p4,p5,p6,p7,p8,p9,p9_1,p9_2,p10,p10_1,p11,p12_1,p12_2,p12_3,p12_4,p12_4otros,p13,p13_1,p13_2,p13_3,p13_4,p13_5,p14,p14_1,p14_2,
         p14_3,p14_4,p14_5,p15_1,p15_2,p15_3,p15_4,p15_4otros,p16,p16_registro,p17,p17_registro,p18,p19,p20,observaciones, foto1, foto2, foto3, longitudGeo, latitudGeo;
 
     public Liconsa_Model() {
     }
 
-    public Liconsa_Model(String fol, String nom, String app, String apm, String nac, String sexo, String nacion, String curp, String rfc, String tipoide, String numide, String email, String tel, String tipotel, String calle, String ext, String inte, String cp, String cveEdo, String edo, String cveMun, String mun, String cveLoc, String colonia, String tipoasen, String nomasen, String cveasen, String vialidad, String tipovialidad, String asociacion, String nomaso, String regimen, String discapacidad, String nomdiscapacidad, String indigena, String declaindigena, String estatus, String upp, String p1, String p2, String p3, String p4, String p5, String p6, String p7, String p8, String p9, String p9_1, String p9_2, String p10, String p10_1, String p11, String p12_1, String p12_2, String p12_3, String p12_4, String p12_4otros, String p13, String p13_1, String p13_2, String p13_3, String p13_4, String p13_5, String p14, String p14_1, String p14_2, String p14_3, String p14_4, String p14_5, String p15_1, String p15_2, String p15_3, String p15_4, String p15_4otros, String p16, String p16_registro, String p17, String p17_registro, String p18, String p19, String p20, String observaciones, String foto1, String foto2, String foto3, String longitudGeo, String latitudGeo) {
+    public Liconsa_Model(String fol, String nom, String app, String apm, String nac, String sexo, String nacion, String curp, String rfc, String tipoide, String numide, String email, String tel, String tipotel, String calle, String ext, String inte, String cp, String cveEdo, String edo, String cveMun, String mun, String cveLoc, String loc, String colonia, String tipoasen, String nomasen, String cveasen, String vialidad, String tipovialidad, String calleup, String extup, String intup, String cveLocup, String desclocup, String colup, String cpup, String cveEdoup, String edoup, String cveMunup, String munup, String asociacion, String nomaso, String regimen, String discapacidad, String nomdiscapacidad, String indigena, String declaindigena, String estatus, String upp, String p1, String p2, String p3, String p4, String p5, String p6, String p7, String p8, String p9, String p9_1, String p9_2, String p10, String p10_1, String p11, String p12_1, String p12_2, String p12_3, String p12_4, String p12_4otros, String p13, String p13_1, String p13_2, String p13_3, String p13_4, String p13_5, String p14, String p14_1, String p14_2, String p14_3, String p14_4, String p14_5, String p15_1, String p15_2, String p15_3, String p15_4, String p15_4otros, String p16, String p16_registro, String p17, String p17_registro, String p18, String p19, String p20, String observaciones, String foto1, String foto2, String foto3, String longitudGeo, String latitudGeo) {
         this.fol = fol;
         this.nom = nom;
         this.app = app;
@@ -35,12 +35,24 @@ String fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipote
         this.cveMun = cveMun;
         this.Mun = mun;
         this.cveLoc = cveLoc;
+        this.loc = loc;
         this.colonia = colonia;
         this.tipoasen = tipoasen;
         this.nomasen = nomasen;
         this.cveasen = cveasen;
         this.vialidad = vialidad;
         this.tipovialidad = tipovialidad;
+        this.calleup = calleup;
+        this.extup = extup;
+        this.intup = intup;
+        this.cveLocup = cveLocup;
+        this.desclocup = desclocup;
+        this.colup = colup;
+        this.cpup = cpup;
+        this.cveEdoup = cveEdoup;
+        this.Edoup = edoup;
+        this.cveMunup = cveMunup;
+        this.Munup = munup;
         this.asociacion = asociacion;
         this.nomaso = nomaso;
         this.regimen = regimen;
@@ -99,6 +111,14 @@ String fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipote
         this.foto3 = foto3;
         this.longitudGeo = longitudGeo;
         this.latitudGeo = latitudGeo;
+    }
+
+    public String getLoc() {
+        return loc;
+    }
+
+    public void setLoc(String loc) {
+        this.loc = loc;
     }
 
     public String getFol() {
@@ -258,7 +278,7 @@ String fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipote
     }
 
     public void setEdo(String edo) {
-        this.Edo = edo;
+        Edo = edo;
     }
 
     public String getCveMun() {
@@ -274,7 +294,7 @@ String fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipote
     }
 
     public void setMun(String mun) {
-        this.Mun = mun;
+        Mun = mun;
     }
 
     public String getCveLoc() {
@@ -331,6 +351,94 @@ String fol, nom,app,apm,nac,sexo,nacion,curp,rfc,tipoide,numide,email,tel,tipote
 
     public void setTipovialidad(String tipovialidad) {
         this.tipovialidad = tipovialidad;
+    }
+
+    public String getCalleup() {
+        return calleup;
+    }
+
+    public void setCalleup(String calleup) {
+        this.calleup = calleup;
+    }
+
+    public String getExtup() {
+        return extup;
+    }
+
+    public void setExtup(String extup) {
+        this.extup = extup;
+    }
+
+    public String getIntup() {
+        return intup;
+    }
+
+    public void setIntup(String intup) {
+        this.intup = intup;
+    }
+
+    public String getCveLocup() {
+        return cveLocup;
+    }
+
+    public void setCveLocup(String cveLocup) {
+        this.cveLocup = cveLocup;
+    }
+
+    public String getDesclocup() {
+        return desclocup;
+    }
+
+    public void setDesclocup(String desclocup) {
+        this.desclocup = desclocup;
+    }
+
+    public String getColup() {
+        return colup;
+    }
+
+    public void setColup(String colup) {
+        this.colup = colup;
+    }
+
+    public String getCpup() {
+        return cpup;
+    }
+
+    public void setCpup(String cpup) {
+        this.cpup = cpup;
+    }
+
+    public String getCveEdoup() {
+        return cveEdoup;
+    }
+
+    public void setCveEdoup(String cveEdoup) {
+        this.cveEdoup = cveEdoup;
+    }
+
+    public String getEdoup() {
+        return Edoup;
+    }
+
+    public void setEdoup(String edoup) {
+        Edoup = edoup;
+    }
+
+    public String getCveMunup() {
+        return cveMunup;
+    }
+
+    public void setCveMunup(String cveMunup) {
+        this.cveMunup = cveMunup;
+    }
+
+    public String getMunup() {
+        return Munup;
+    }
+
+    public void setMunup(String munup) {
+        Munup = munup;
     }
 
     public String getAsociacion() {

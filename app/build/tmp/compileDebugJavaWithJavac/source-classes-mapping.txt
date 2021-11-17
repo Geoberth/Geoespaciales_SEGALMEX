@@ -641,12 +641,14 @@ com/example/geosegalmex/Liconsa/Liconsa.java
  com.example.geosegalmex.Liconsa.Liconsa$20
  com.example.geosegalmex.Liconsa.Liconsa$21
  com.example.geosegalmex.Liconsa.Liconsa$22
+ com.example.geosegalmex.Liconsa.Liconsa$22$1
  com.example.geosegalmex.Liconsa.Liconsa$23
+ com.example.geosegalmex.Liconsa.Liconsa$23$1
+ com.example.geosegalmex.Liconsa.Liconsa$24
+ com.example.geosegalmex.Liconsa.Liconsa$25
  com.example.geosegalmex.Liconsa.Liconsa$3
  com.example.geosegalmex.Liconsa.Liconsa$4
- com.example.geosegalmex.Liconsa.Liconsa$4$1
  com.example.geosegalmex.Liconsa.Liconsa$5
- com.example.geosegalmex.Liconsa.Liconsa$5$1
  com.example.geosegalmex.Liconsa.Liconsa$6
  com.example.geosegalmex.Liconsa.Liconsa$7
  com.example.geosegalmex.Liconsa.Liconsa$8

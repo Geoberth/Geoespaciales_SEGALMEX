@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="16dp"
-        android:text="Guardar Encuesta"
+        android:text="Guardar Cuestionario"
         app:iconPadding="20dp"
         app:icon="@android:drawable/ic_menu_save"
         />

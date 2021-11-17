@@ -3631,6 +3631,13 @@ id ent_localidad_tres
 id ent_municipio_tres
 id enterAlways
 id enterAlwaysCollapsed
+id ernpl_1001
+id ernpl_1002
+id ernpl_1003
+id ernpl_1004
+id ernpl_1005
+id ernpl_1005_1
+id ernpl_1006
 id ernpl_prod_ra1
 id ernpl_prod_ra2
 id ernpl_prod_ra21
@@ -3686,6 +3693,8 @@ id ernpl_prod_rg
 id ernpl_prod_sig
 id ernpl_prod_spin1
 id ernpl_prod_spin2
+id ernpl_prod_spin3
+id ernpl_prod_spin4
 id ernpl_prod_txt1
 id ernpl_prod_txt10
 id ernpl_prod_txt11

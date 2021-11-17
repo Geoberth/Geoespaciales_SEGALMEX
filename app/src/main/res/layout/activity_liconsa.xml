@@ -350,7 +350,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Escriba el número."
-                android:inputType="number"
                 android:maxLines="1" />
 
             <TextView
@@ -364,7 +363,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Escriba el número."
-                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localidad:"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/ernpl_prod_txt15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:maxLines="1" />
 
             <TextView
@@ -375,10 +386,11 @@
 
 
             <EditText
-                android:id="@+id/ernpl_prod_txt15"
+                android:id="@+id/ernpl_1005_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -517,6 +529,120 @@
                 android:background="@drawable/borde"
                 android:entries="@array/vialidad"
                 android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calle:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ernpl_1001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num Int:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ernpl_1002"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba el número."
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num Ext:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ernpl_1003"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba el número."
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localidad:"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/ernpl_1004"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colonia"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/ernpl_1005"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código Postal"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/ernpl_1006"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escriba el número."
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTIDAD FEDERATIVA:"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/ernpl_prod_spin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dialog" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MUNICIPIO"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/ernpl_prod_spin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/borde"
+                android:entries="@array/Aguascalientes2021"
+                android:spinnerMode="dialog" />
+
+
 
             <TextView
                 android:layout_width="match_parent"
