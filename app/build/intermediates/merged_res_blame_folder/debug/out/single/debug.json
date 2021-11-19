@@ -76,6 +76,10 @@
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\drawable\\borde.xml"
     },
     {
+        "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_firma.xml.flat",
+        "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\layout\\activity_firma.xml"
+    },
+    {
         "merged": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_iconoapp_lizz_round.png.flat",
         "source": "C:\\Users\\erick.burgos\\AndroidStudioProjects\\Geoespaciales_SEGALMEX\\app\\src\\main\\res\\mipmap-hdpi\\iconoapp_lizz_round.png"
     },

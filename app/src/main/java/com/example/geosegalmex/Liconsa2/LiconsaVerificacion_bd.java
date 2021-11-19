@@ -23,8 +23,8 @@ public class LiconsaVerificacion_bd {
     public static final String COLUMN_P22GER = "_P22GER";
     public static final String COLUMN_GER = "_GER";
     public static final String COLUMN_PRODUCTOR = "TIPOPROD";
-    public static final String COLUMN_NOMPROD = "_NOMORG";
-    public static final String COLUMN_TIPOPROD = "TIPOORG";
+    public static final String COLUMN_NOMPROD = "_NOMASOC";
+    public static final String COLUMN_TIPOPROD = "TIPOASOC";
     public static final String COLUMN_OBSERV     = "OBSERV";
     public static final String COLUMN_LONGITUD = "LONGITUD";
     public static final String COLUMN_LATITUD = "LATITUD";

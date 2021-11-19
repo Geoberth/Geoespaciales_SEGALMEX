@@ -271,6 +271,10 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/model/MlTiempoRiegoAdapt
 com/example/geosegalmex/Pecuario/PecuarioManejoSanGanado.java
  com.example.geosegalmex.Pecuario.PecuarioManejoSanGanado
  com.example.geosegalmex.Pecuario.PecuarioManejoSanGanado$1
+com/example/geosegalmex/Firma.java
+ com.example.geosegalmex.Firma
+ com.example.geosegalmex.Firma$1
+ com.example.geosegalmex.Firma$2
 com/example/geosegalmex/PGBeneficiarioLeche/PGBeneficiarioLeche_bd.java
  com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche_bd
 com/example/geosegalmex/caracterizacion/variables_caracterizacion/CalendarioDate.java

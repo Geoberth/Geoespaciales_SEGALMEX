@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeoSegalmex.iml" filepath="$PROJECT_DIR$/.idea/modules/GeoSegalmex.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.iml" />
     </modules>
   </component>
 </project>

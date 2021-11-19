@@ -15,7 +15,7 @@ import java.io.File;
 public class LiconsaBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "RNPLProductor";
-    public static final int DB_VERSION = 14;
+    public static final int DB_VERSION = 15;
 
     public LiconsaBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -108,7 +108,7 @@ public class LiconsaBD extends SQLiteOpenHelper {
         contentValues.put(Liconsa_bd.COLUMN_P12_2      , model.getP12_2());
         contentValues.put(Liconsa_bd.COLUMN_P12_3      , model.getP12_3());
         contentValues.put(Liconsa_bd.COLUMN_P12_4      , model.getP12_4());
-        contentValues.put(Liconsa_bd.COLUMN_P12_4OTROS , model.getP12_4());
+        contentValues.put(Liconsa_bd.COLUMN_P12_4OTROS , model.getP12_4otros());
         contentValues.put(Liconsa_bd.COLUMN_P13        , model.getP13());
         contentValues.put(Liconsa_bd.COLUMN_P13_1      , model.getP13_1());
         contentValues.put(Liconsa_bd.COLUMN_P13_2      , model.getP13_2());

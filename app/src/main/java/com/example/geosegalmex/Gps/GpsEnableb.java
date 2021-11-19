@@ -27,6 +27,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.geosegalmex.Firma;
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.IdentificacionCuestionario;
 import com.example.geosegalmex.Liconsa.LiconsaBD;
@@ -241,6 +242,7 @@ public class GpsEnableb extends AppCompatActivity {
             public void onClick(View v) {
                 animacion();
                 btnGPsEna.setEnabled(false);
+                //startActivity(new Intent(getApplication(), Firma.class));
             }
         });
 

@@ -29,6 +29,7 @@
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_ciclo_carac.xml" value="0.5197916666666667" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_ciclo_caracterizacion.xml" value="0.5197916666666667" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_drawer.xml" value="0.17457114026236126" />
+        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_firma.xml" value="0.14682139253279516" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_frutales_1.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_frutales_10.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_frutales_11.xml" value="0.521875" />
@@ -38,7 +39,7 @@
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_gps_enableb.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_identificacion_cuestionario.xml" value="0.3675715333822451" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_leche_ventanilla.xml" value="0.5" />
-        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_liconsa.xml" value="0.21028331584470095" />
+        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_liconsa.xml" value="0.2966485507246377" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_liconsa_verificacion.xml" value="0.2861060329067642" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_new_camara.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_nutricion.xml" value="0.521875" />
@@ -60,6 +61,7 @@
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_produccion_pecuaria.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_productor_econom.xml" value="0.521875" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_productor_familia.xml" value="0.521875" />
+        <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_segunda.xml" value="0.303125" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/activity_unidad_produccion.xml" value="0.5197916666666667" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/app_bar_drawer.xml" value="0.17457114026236126" />
         <entry key="..\:/Users/erick.burgos/AndroidStudioProjects/Geoespaciales_SEGALMEX/app/src/main/res/layout/content_drawer.xml" value="0.17457114026236126" />

@@ -13,7 +13,7 @@ import com.example.geosegalmex.Liconsa.Liconsa_bd;
 public class LiconsaVerificacionBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "RNPLExpediente";
-    public static final int DB_VERSION = 13;
+    public static final int DB_VERSION = 14;
 
     public LiconsaVerificacionBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

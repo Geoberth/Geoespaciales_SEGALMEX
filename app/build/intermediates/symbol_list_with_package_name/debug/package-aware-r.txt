@@ -1855,6 +1855,8 @@ id btn_sig7
 id btn_sig8
 id btn_sig9
 id btn_uni_pro
+id button1
+id button2
 id buttonPanel
 id button_activity_captureDos
 id button_captureUno
@@ -3117,6 +3119,7 @@ id dospre_garan_granos_txtview2_3
 id dospre_garan_granos_txtview2_4
 id dospre_garan_granos_txtview9
 id dosradg1
+id draw
 id drawer_layout
 id dropdown_menu
 id edProyec
@@ -6541,6 +6544,7 @@ layout activity_drawer
 layout activity_enfermedades_cambio_panales
 layout activity_estructura_del_hato
 layout activity_fertilizante_si
+layout activity_firma
 layout activity_foliar_riego
 layout activity_foto_dos
 layout activity_foto_uno
