@@ -33,11 +33,13 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/icononor2"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.geosegalmex.Firma"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.geosegalmex.PGBeneficiariosGranosIncentivos.PGBeneficiariosGranosIncentivos"
             android:exported="false" />

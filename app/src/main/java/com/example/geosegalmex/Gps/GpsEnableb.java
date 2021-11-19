@@ -242,7 +242,6 @@ public class GpsEnableb extends AppCompatActivity {
             public void onClick(View v) {
                 animacion();
                 btnGPsEna.setEnabled(false);
-                //startActivity(new Intent(getApplication(), Firma.class));
             }
         });
 
@@ -285,6 +284,7 @@ public class GpsEnableb extends AppCompatActivity {
                                                     General.Proyecto = proyecto.getSelectedItem().toString();
                                                     General.Latini = "" + latitudeGPS;
                                                     General.Lonini = "" + longitudeGPS;
+                                                    //startActivity(new Intent(getApplication(), Firma.class));
                                                     aggTrayectoriaGps();
                                                     if (General.Proyecto.equals("RNPL Expediente")){
                                                         startActivity(new Intent(getApplication(), LiconsaVerificacion.class));

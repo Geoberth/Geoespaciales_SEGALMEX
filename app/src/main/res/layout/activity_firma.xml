@@ -9,8 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Firma">
 
-    "
-
     <com.ajithvgiri.canvaslibrary.CanvasView
         android:id="@+id/draw"
         android:layout_width="wrap_content"
@@ -23,6 +21,10 @@
         android:layout_alignEnd="@+id/draw"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/button2"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/borde"
+        android:textColor="#000000"
         android:text="Guardar"></Button>
 
     <Button
@@ -30,7 +32,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-
-        android:text="Limpiar"></Button>"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:background="@drawable/borde"
+        android:textColor="#000000"
+        android:text="Limpiar"></Button>
 
 </RelativeLayout>

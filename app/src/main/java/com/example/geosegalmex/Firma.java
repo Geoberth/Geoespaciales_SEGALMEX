@@ -26,6 +26,7 @@ import java.io.IOException;
 public class Firma extends AppCompatActivity {
 
     CanvasView myDrawView;
+    String typeproyect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,8 @@ public class Firma extends AppCompatActivity {
 
         validaPermisos();
 
+        typeproyect = General.Proyecto;
+        typeproyect = typeproyect.replaceAll(" ","");
         myDrawView = (CanvasView)findViewById(R.id.draw);
         Button button1 = (Button)findViewById(R.id.button1);
         Button button2 = (Button)findViewById(R.id.button2);
@@ -48,62 +51,12 @@ public class Firma extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-
-                File folder = new File(Environment.getExternalStorageDirectory().toString());
-                boolean success = false;
-                if (!folder.exists())
-                {
-                    success = folder.mkdirs();
+                try {
+                    getfirma(typeproyect,General.Foliocuestion);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
 
-                System.out.println(success+"folder");
-
-                File file = new File(Environment.getExternalStorageDirectory().toString() + "/sample.png");
-
-                if ( !file.exists() )
-                {
-                    try {
-                        success = file.createNewFile();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-                System.out.println(success+"file");
-
-
-                FileOutputStream ostream = null;
-                try
-                {
-                    ostream = new FileOutputStream(file);
-
-                    System.out.println(ostream);
-                    View targetView = myDrawView;
-
-                    Bitmap well = myDrawView.getBitmap();
-                    Bitmap save = Bitmap.createBitmap(320, 480, Bitmap.Config.ARGB_8888);
-                    Paint paint = new Paint();
-                    paint.setColor(Color.WHITE);
-                    Canvas now = new Canvas(save);
-                    now.drawRect(new Rect(0,0,320,480), paint);
-                    now.drawBitmap(well, new Rect(0,0,well.getWidth(),well.getHeight()), new Rect(0,0,320,480), null);
-
-                    if(save == null) {
-                        System.out.println("NULL bitmap save\n");
-                    }
-                    save.compress(Bitmap.CompressFormat.PNG, 100, ostream);
-
-                }catch (NullPointerException e)
-                {
-                    e.printStackTrace();
-                    Toast.makeText(getApplicationContext(), "Null error", Toast.LENGTH_SHORT).show();
-                }
-
-                catch (FileNotFoundException e)
-                {
-                    e.printStackTrace();
-                    Toast.makeText(getApplicationContext(), "File error", Toast.LENGTH_SHORT).show();
-                }
 
             }
         });
@@ -132,6 +85,77 @@ public class Firma extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
+    }
+
+    private void getfirma(String DB_NAME, String name) throws IOException {
+
+        String DB_PATHCopy =Environment.getExternalStorageDirectory() + "/" + DB_NAME;
+
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
+            File file = new File(getExternalFilesDir(null), "/" + DB_NAME + "/");
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+        }
+        else{
+            File directory = new File(DB_PATHCopy);
+            if (!directory.exists()) {
+                String direc = Environment.getExternalStorageDirectory().toString() + "/" + DB_NAME + "/";
+                new File(direc).mkdirs();
+            }
+        }
+
+        String outFileName;
+        if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
+            File file = new File(getExternalFilesDir(null), "/" + DB_NAME + "/" + name + ".jpg");
+            try {
+                if (!file.exists()) {
+                    file.createNewFile();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            outFileName = file.getAbsolutePath();
+        }
+        else{
+            outFileName = Environment.getExternalStorageDirectory() + "/" + DB_NAME + "/" + name + ".jpg";
+        }
+
+        FileOutputStream ostream = null;
+        try
+        {
+            ostream = new FileOutputStream(outFileName);
+
+            System.out.println(ostream);
+            View targetView = myDrawView;
+
+            Bitmap well = myDrawView.getBitmap();
+            Bitmap save = Bitmap.createBitmap(480, 720, Bitmap.Config.ARGB_8888);
+            Paint paint = new Paint();
+            paint.setColor(Color.WHITE);
+            Canvas now = new Canvas(save);
+            now.drawRect(new Rect(0,0,480,720), paint);
+            now.drawBitmap(well, new Rect(0,0,well.getWidth(),well.getHeight()), new Rect(0,0,480,720), null);
+
+            if(save == null) {
+                System.out.println("NULL bitmap save\n");
+            }
+            save.compress(Bitmap.CompressFormat.JPEG, 100, ostream);
+            Toast.makeText(getApplicationContext(), "Firma Guardada", Toast.LENGTH_SHORT).show();
+
+        }catch (NullPointerException e)
+        {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "Null error", Toast.LENGTH_SHORT).show();
+        }
+
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "File error", Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 
