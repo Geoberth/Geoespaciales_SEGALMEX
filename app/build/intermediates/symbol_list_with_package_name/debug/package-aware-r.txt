@@ -2997,7 +2997,6 @@ id dospre_garan_granos_ch3
 id dospre_garan_granos_ch4
 id dospre_garan_granos_ch5
 id dospre_garan_granos_ch6
-id dospre_garan_granos_ch7
 id dospre_garan_granos_ch8
 id dospre_garan_granos_ra10
 id dospre_garan_granos_ra11

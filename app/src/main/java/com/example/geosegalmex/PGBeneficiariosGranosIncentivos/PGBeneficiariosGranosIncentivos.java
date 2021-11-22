@@ -34,7 +34,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
     RadioButton pgbr1, pgbr2, pgbr3, pgbr4, pgbr5, pgbr6, pgbr7, pgbr8, pgbr9, pgbr10, pgbr11, pgbr12, pgbr13, pgbr14, pgbr15, pgbr16,pgbr18, pgbr19, pgbr19_1, pgbr21, pgbr22, pgbr23, pgbr24, pgbr25, pgbr26, pgbr27, pgbr28, pgbr29, pgbr30, pgbr31, pgbr32, pgbr33, pgbr34, pgbr35, pgbr36, pgbr37, pgbr38, pgbr39, pgbr40, pgbr41, pgbr42, pgbr43, pgbr44, pgbr45, pgbr46, pgbr45_1, pgbr46_1, pgbr49, pgbr50, pgbr51, pgbr52, pgbr68, pgbr69, pgbr70, pgbr71, pgbr72, pgbr73, pgbr74, pgbr75, pgbr76, pgbr77, pgbr78, pgbr79, pgbr80, pgbr81, pgbr82, pgbr83, pgbr84, pgbr85, pgbr86, pgbr87, pgbr88;
     RadioButton pgbr51_1,pgbr52_1,pgbr51_2,pgbr52_2,pgbr51_3,pgbr52_3,pgbr51_4,pgbr52_4, parrad11,parrad22,parrad33,parrad44,parrad55;
     Spinner pgbs1, pgbs2, pgbs3, pgbs4, pgbs3_1, pgbs4_1, pgbs3_2, pgbs4_2, pgbs3_3, pgbs4_3, pgbs3_4, pgbs4_4;
-    CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc7, pgbc8, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19, pgbc20;
+    CheckBox pgbc1, pgbc2, pgbc3, pgbc4, pgbc5, pgbc6, pgbc8, pgbc10, pgbc11, pgbc12, pgbc13, pgbc14, pgbc15, pgbc16, pgbc17, pgbc18, pgbc19, pgbc20;
     Button btnSiguiente;
 
     PGBeneficiariosGranosIncentivos_Model model;
@@ -240,7 +240,6 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
         pgbc4 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch4);
         pgbc5 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch5);
         pgbc6 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch6);
-        pgbc7 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch7);
         pgbc8 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch8);
         pgbc10 = (CheckBox)findViewById(R.id.dospre_garan_granos_ch10);
 
@@ -786,7 +785,6 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
                     String inf4 = (pgbc4.isChecked())? "X" : "";
                     String inf5 = (pgbc5.isChecked())? "X" : "";
                     String inf6 = (pgbc6.isChecked())? "X" : "";
-                    String inf7 = (pgbc7.isChecked())? "X" : "";
                     String inf8 = (pgbc8.isChecked())? "X" : "";
                     String inf9 = (pgbc10.isChecked())? "X" : "";
                     String docine = obtenerResultado(pgbr21,pgbr22);
@@ -835,7 +833,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
 
-                    model = new PGBeneficiariosGranosIncentivos_Model(folio, General.fechaenc,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,nomEdo3,nomMun3,nomEdo4,nomMun4,nomEdo5,nomMun5,nomEdo6,nomMun6,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf7,inf8,inf9,docine,doccurp
+                    model = new PGBeneficiariosGranosIncentivos_Model(folio, General.fechaenc,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,nomEdo3,nomMun3,nomEdo4,nomMun4,nomEdo5,nomMun5,nomEdo6,nomMun6,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf8,inf9,docine,doccurp
                             ,docclabe,docfol,docren,seis_1,seis_2,seis_3,seis_4,seis_5,seis_6,seis_7,seis_8,seis_9,siete_1,siete_2,siete_3,siete_4,siete_5,ocho_1,ocho_2,ocho_3,ocho_4,ocho_5,ocho_6,ocho_7,nueve1,nueve2,nueve3,nueve4,nueve5,nueve6,nueve7,nueve8,nueve10,nueve9,nueveotro
                             ,diez,once,doce,trece, f1, f2, "", "");
 
@@ -941,7 +939,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
             pgbt22.setError("No puede quedar vacio");
             retorno=false;
         }
-        else if(!pgbc1.isChecked() && !pgbc2.isChecked()&& !pgbc3.isChecked()&& !pgbc4.isChecked()&& !pgbc5.isChecked()&& !pgbc6.isChecked()&& !pgbc7.isChecked()&& !pgbc8.isChecked()&& !pgbc10.isChecked()){
+        else if(!pgbc1.isChecked() && !pgbc2.isChecked() && !pgbc3.isChecked() && !pgbc4.isChecked() && !pgbc5.isChecked() && !pgbc6.isChecked() && !pgbc8.isChecked() && !pgbc10.isChecked()){
             pgbc1.setError("Debes seleccionar una opción");
             retorno=false;
         }
@@ -1049,7 +1047,7 @@ public class PGBeneficiariosGranosIncentivos extends AppCompatActivity {
             pgbr86.setError("Debes seleccionar una opción");
             retorno=false;
         }
-        else if(!pgbc11.isChecked() && !pgbc12.isChecked()&& !pgbc13.isChecked()&& !pgbc14.isChecked()&& !pgbc15.isChecked()&& !pgbc16.isChecked()&& !pgbc17.isChecked()&& !pgbc18.isChecked()&& !pgbc19.isChecked()){
+        else if(!pgbc11.isChecked() && !pgbc12.isChecked() && !pgbc13.isChecked() && !pgbc14.isChecked() && !pgbc15.isChecked() && !pgbc16.isChecked() && !pgbc17.isChecked() && !pgbc18.isChecked() && !pgbc19.isChecked() && !pgbc20.isChecked()){
             pgbc11.setError("Debes seleccionar una opción");
             retorno=false;
         }

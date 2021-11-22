@@ -911,14 +911,6 @@
                 android:enabled="true"
                 android:text="Precios de compra" />
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:id="@+id/dospre_garan_granos_ch7"
-                android:layout_width="match_parent"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:enabled="true"
-                android:text="Monto total de dinero a recibir" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/dospre_garan_granos_ch8"

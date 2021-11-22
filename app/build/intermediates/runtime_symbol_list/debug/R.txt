@@ -2996,7 +2996,6 @@ int id dospre_garan_granos_ch3 0x7f090536
 int id dospre_garan_granos_ch4 0x7f090537
 int id dospre_garan_granos_ch5 0x7f090538
 int id dospre_garan_granos_ch6 0x7f090539
-int id dospre_garan_granos_ch7 0x7f09053a
 int id dospre_garan_granos_ch8 0x7f09053b
 int id dospre_garan_granos_ra10 0x7f09053c
 int id dospre_garan_granos_ra11 0x7f09053d

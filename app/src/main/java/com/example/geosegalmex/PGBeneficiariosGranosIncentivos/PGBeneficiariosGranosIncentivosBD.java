@@ -12,7 +12,7 @@ import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
 public class PGBeneficiariosGranosIncentivosBD extends SQLiteOpenHelper {
 
     public static final String DB_NAME  = "PGBeneficiarioEstimulos";
-    public static final int DB_VERSION = 4;
+    public static final int DB_VERSION = 5;
 
     public PGBeneficiariosGranosIncentivosBD(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -78,7 +78,6 @@ public class PGBeneficiariosGranosIncentivosBD extends SQLiteOpenHelper {
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CUATRO4        , model.getInf4() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CUATRO5        , model.getInf5() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CUATRO6        , model.getInf6() );
-        contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CUATRO7        , model.getInf7() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CUATRO8        , model.getInf8() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CUATRO9        , model.getInf9() );
         contentValues.put(PGBeneficiariosGranosIncentivos_bd.COLUMN_CINCO1         , model.getDocine() );

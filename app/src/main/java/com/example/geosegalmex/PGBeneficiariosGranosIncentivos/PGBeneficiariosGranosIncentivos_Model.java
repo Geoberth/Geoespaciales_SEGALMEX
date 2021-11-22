@@ -4,14 +4,14 @@ import java.io.Serializable;
 
 public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
 
-    private String folio,fecha,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,nomEdo3,nomMun3,nomEdo4,nomMun4,nomEdo5,nomMun5,nomEdo6,nomMun6,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf7,inf8,inf9,docine,doccurp
+    private String folio,fecha,nom,apa,ama,curp,calle,ext,inte,col,cp,claveEdo,nomEdo,claveMun,nomMun,col2,cp2,claveEdo2,nomEdo2,claveMun2,nomMun2,nomEdo3,nomMun3,nomEdo4,nomMun4,nomEdo5,nomMun5,nomEdo6,nomMun6,sexo,edad,leer,ult1,ultotro,prod,peso,inf1,inf2,inf3,inf4,inf5,inf6,inf8,inf9,docine,doccurp
     ,docclabe,docfol,docren,seis_1,seis_2,seis_3,seis_4,seis_5,seis_6,seis_7,seis_8,seis_9,siete_1,siete_2,siete_3,siete_4,siete_5,ocho_1,ocho_2,ocho_3,ocho_4,ocho_5,ocho_6,ocho_7,nueve1,nueve2,nueve3,nueve4,nueve5,nueve6,nueve7,nueve8,nueve9,nueve10,nueveotro
     ,diez,once,doce,trece,foto1, foto2, longitudGeo, latitudGeo;
 
     public PGBeneficiariosGranosIncentivos_Model() {
     }
 
-    public PGBeneficiariosGranosIncentivos_Model(String folio, String fecha, String nom, String apa, String ama, String curp, String calle, String ext, String inte, String col, String cp, String claveEdo, String nomEdo, String claveMun, String nomMun, String col2, String cp2, String claveEdo2, String nomEdo2, String claveMun2, String nomMun2, String nomEdo3, String nomMun3, String nomEdo4, String nomMun4, String nomEdo5, String nomMun5, String nomEdo6, String nomMun6, String sexo, String edad, String leer, String ult1, String ultotro, String prod, String peso, String inf1, String inf2, String inf3, String inf4, String inf5, String inf6, String inf7, String inf8, String inf9, String docine, String doccurp, String docclabe, String docfol, String docren, String seis_1, String seis_2, String seis_3, String seis_4, String seis_5, String seis_6, String seis_7, String seis_8, String seis_9, String siete_1, String siete_2, String siete_3, String siete_4, String siete_5, String ocho_1, String ocho_2, String ocho_3, String ocho_4, String ocho_5, String ocho_6, String ocho_7, String nueve1, String nueve2, String nueve3, String nueve4, String nueve5, String nueve6, String nueve7, String nueve8, String nueve9, String nueve10, String nueveotro, String diez, String once, String doce, String trece, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public PGBeneficiariosGranosIncentivos_Model(String folio, String fecha, String nom, String apa, String ama, String curp, String calle, String ext, String inte, String col, String cp, String claveEdo, String nomEdo, String claveMun, String nomMun, String col2, String cp2, String claveEdo2, String nomEdo2, String claveMun2, String nomMun2, String nomEdo3, String nomMun3, String nomEdo4, String nomMun4, String nomEdo5, String nomMun5, String nomEdo6, String nomMun6, String sexo, String edad, String leer, String ult1, String ultotro, String prod, String peso, String inf1, String inf2, String inf3, String inf4, String inf5, String inf6, String inf8, String inf9, String docine, String doccurp, String docclabe, String docfol, String docren, String seis_1, String seis_2, String seis_3, String seis_4, String seis_5, String seis_6, String seis_7, String seis_8, String seis_9, String siete_1, String siete_2, String siete_3, String siete_4, String siete_5, String ocho_1, String ocho_2, String ocho_3, String ocho_4, String ocho_5, String ocho_6, String ocho_7, String nueve1, String nueve2, String nueve3, String nueve4, String nueve5, String nueve6, String nueve7, String nueve8, String nueve9, String nueve10, String nueveotro, String diez, String once, String doce, String trece, String foto1, String foto2, String longitudGeo, String latitudGeo) {
         this.folio = folio;
         this.fecha = fecha;
         this.nom = nom;
@@ -54,7 +54,6 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
         this.inf4 = inf4;
         this.inf5 = inf5;
         this.inf6 = inf6;
-        this.inf7 = inf7;
         this.inf8 = inf8;
         this.inf9 = inf9;
         this.docine = docine;
@@ -438,14 +437,6 @@ public class PGBeneficiariosGranosIncentivos_Model implements Serializable {
 
     public void setInf6(String inf6) {
         this.inf6 = inf6;
-    }
-
-    public String getInf7() {
-        return inf7;
-    }
-
-    public void setInf7(String inf7) {
-        this.inf7 = inf7;
     }
 
     public String getInf8() {

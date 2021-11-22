@@ -45,9 +45,8 @@ public class PGBeneficiariosGranosIncentivos_bd {
     public static final String COLUMN_CUATRO4 = "INFORM4";
     public static final String COLUMN_CUATRO5 = "INFORM5";
     public static final String COLUMN_CUATRO6 = "INFORM6";
-    public static final String COLUMN_CUATRO7 = "INFORM7";
-    public static final String COLUMN_CUATRO8 = "INFORM8";
-    public static final String COLUMN_CUATRO9 = "INFORM9";
+    public static final String COLUMN_CUATRO8 = "INFORM7";
+    public static final String COLUMN_CUATRO9 = "INFORM8";
     public static final String COLUMN_CINCO1 = "P1";
     public static final String COLUMN_CINCO2 = "P2";
     public static final String COLUMN_CINCO3 = "P3";
@@ -137,7 +136,6 @@ public class PGBeneficiariosGranosIncentivos_bd {
             + COLUMN_CUATRO4           + " VARCHAR, "
             + COLUMN_CUATRO5           + " VARCHAR, "
             + COLUMN_CUATRO6           + " VARCHAR, "
-            + COLUMN_CUATRO7           + " VARCHAR, "
             + COLUMN_CUATRO8           + " VARCHAR, "
             + COLUMN_CUATRO9           + " VARCHAR, "
             + COLUMN_CINCO1            + " VARCHAR, "

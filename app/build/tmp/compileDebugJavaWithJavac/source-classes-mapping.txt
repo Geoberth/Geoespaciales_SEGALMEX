@@ -271,8 +271,10 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/model/MlTiempoRiegoAdapt
 com/example/geosegalmex/Pecuario/PecuarioManejoSanGanado.java
  com.example.geosegalmex.Pecuario.PecuarioManejoSanGanado
  com.example.geosegalmex.Pecuario.PecuarioManejoSanGanado$1
-com/example/geosegalmex/Gps/Trayectoria.java
- com.example.geosegalmex.Gps.Trayectoria
+com/example/geosegalmex/Firma.java
+ com.example.geosegalmex.Firma
+ com.example.geosegalmex.Firma$1
+ com.example.geosegalmex.Firma$2
 com/example/geosegalmex/PGBeneficiarioLeche/PGBeneficiarioLeche_bd.java
  com.example.geosegalmex.PGBeneficiarioLeche.PGBeneficiarioLeche_bd
 com/example/geosegalmex/caracterizacion/variables_caracterizacion/CalendarioDate.java
@@ -330,19 +332,25 @@ com/example/geosegalmex/Pecuario/PecuarioInicio.java
 com/example/geosegalmex/Pecuario/PecuarioParamProdReproductivos.java
  com.example.geosegalmex.Pecuario.PecuarioParamProdReproductivos
  com.example.geosegalmex.Pecuario.PecuarioParamProdReproductivos$1
-com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
- com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
- com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
+com/example/geosegalmex/drawer/fragment_drawer/MapaFragment.java
+ com.example.geosegalmex.drawer.fragment_drawer.MapaFragment
+ com.example.geosegalmex.drawer.fragment_drawer.MapaFragment$1
 com/example/geosegalmex/unidadcomercializacion/comercializacion_4.java
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4$1
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4$2
  com.example.geosegalmex.unidadcomercializacion.comercializacion_4$3
-com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3
+com/example/geosegalmex/Geo/FotoActivityUno.java
+ com.example.geosegalmex.Geo.FotoActivityUno
+ com.example.geosegalmex.Geo.FotoActivityUno$1
+ com.example.geosegalmex.Geo.FotoActivityUno$2
+ com.example.geosegalmex.Geo.FotoActivityUno$3
+ com.example.geosegalmex.Geo.FotoActivityUno$4
+ com.example.geosegalmex.Geo.FotoActivityUno$5
+ com.example.geosegalmex.Geo.FotoActivityUno$6
+ com.example.geosegalmex.Geo.FotoActivityUno$7
+ com.example.geosegalmex.Geo.FotoActivityUno$8
+ com.example.geosegalmex.Geo.FotoActivityUno$9
 com/example/geosegalmex/dbstorage/Georreferencia.java
  com.example.geosegalmex.dbstorage.Georreferencia
 com/example/geosegalmex/unidadcaracterizacionhortalizas/PostCosecha.java
@@ -724,9 +732,20 @@ com/example/geosegalmex/infraestructura_1.java
  com.example.geosegalmex.infraestructura_1$2
  com.example.geosegalmex.infraestructura_1$3
  com.example.geosegalmex.infraestructura_1$4
-com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
+com/example/geosegalmex/Gps/GpsEnableb.java
+ com.example.geosegalmex.Gps.GpsEnableb
+ com.example.geosegalmex.Gps.GpsEnableb$1
+ com.example.geosegalmex.Gps.GpsEnableb$2
+ com.example.geosegalmex.Gps.GpsEnableb$3
+ com.example.geosegalmex.Gps.GpsEnableb$4
+ com.example.geosegalmex.Gps.GpsEnableb$4$1
+ com.example.geosegalmex.Gps.GpsEnableb$4$1$1
+ com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1
+ com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1$1
+ com.example.geosegalmex.Gps.GpsEnableb$5
+ com.example.geosegalmex.Gps.GpsEnableb$6
+ com.example.geosegalmex.Gps.GpsEnableb$7
+ com.example.geosegalmex.Gps.GpsEnableb$7$1
 com/example/geosegalmex/unidadcaracterizacionhortalizas/FertilizanteSi.java
  com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi
  com.example.geosegalmex.unidadcaracterizacionhortalizas.FertilizanteSi$1
@@ -796,35 +815,16 @@ com/example/geosegalmex/PGOperativoGranos/PGOperativoGranos.java
  com.example.geosegalmex.PGOperativoGranos.PGOperativoGranos$9
 com/example/geosegalmex/caracterizacion/variables_caracterizacion/DatePickerFragment.java
  com.example.geosegalmex.caracterizacion.variables_caracterizacion.DatePickerFragment
-com/example/geosegalmex/Firma.java
- com.example.geosegalmex.Firma
- com.example.geosegalmex.Firma$1
- com.example.geosegalmex.Firma$2
-com/example/geosegalmex/Geo/FotoActivityUno.java
- com.example.geosegalmex.Geo.FotoActivityUno
- com.example.geosegalmex.Geo.FotoActivityUno$1
- com.example.geosegalmex.Geo.FotoActivityUno$2
- com.example.geosegalmex.Geo.FotoActivityUno$3
- com.example.geosegalmex.Geo.FotoActivityUno$4
- com.example.geosegalmex.Geo.FotoActivityUno$5
- com.example.geosegalmex.Geo.FotoActivityUno$6
- com.example.geosegalmex.Geo.FotoActivityUno$7
- com.example.geosegalmex.Geo.FotoActivityUno$8
- com.example.geosegalmex.Geo.FotoActivityUno$9
-com/example/geosegalmex/Gps/GpsEnableb.java
- com.example.geosegalmex.Gps.GpsEnableb
- com.example.geosegalmex.Gps.GpsEnableb$1
- com.example.geosegalmex.Gps.GpsEnableb$2
- com.example.geosegalmex.Gps.GpsEnableb$3
- com.example.geosegalmex.Gps.GpsEnableb$4
- com.example.geosegalmex.Gps.GpsEnableb$4$1
- com.example.geosegalmex.Gps.GpsEnableb$4$1$1
- com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1
- com.example.geosegalmex.Gps.GpsEnableb$4$1$1$1$1
- com.example.geosegalmex.Gps.GpsEnableb$5
- com.example.geosegalmex.Gps.GpsEnableb$6
- com.example.geosegalmex.Gps.GpsEnableb$7
- com.example.geosegalmex.Gps.GpsEnableb$7$1
-com/example/geosegalmex/drawer/fragment_drawer/MapaFragment.java
- com.example.geosegalmex.drawer.fragment_drawer.MapaFragment
- com.example.geosegalmex.drawer.fragment_drawer.MapaFragment$1
+com/example/geosegalmex/Gps/Trayectoria.java
+ com.example.geosegalmex.Gps.Trayectoria
+com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
+ com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
+ com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
+com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
+com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3
