@@ -237,19 +237,9 @@ com/example/geosegalmex/caracterizacion/variables_caracterizacion/ActividadesCos
 com/example/geosegalmex/Pecuario/ManejoSanitarioOrdenia.java
  com.example.geosegalmex.Pecuario.ManejoSanitarioOrdenia
  com.example.geosegalmex.Pecuario.ManejoSanitarioOrdenia$1
-com/example/geosegalmex/PARBeneficiario/PARBeneficiario.java
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$1
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$10
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$11
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$2
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$3
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$4
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$5
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$6
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$7
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$8
- com.example.geosegalmex.PARBeneficiario.PARBeneficiario$9
+com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
+ com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
 com/example/geosegalmex/Gps/GpsActivity.java
  com.example.geosegalmex.Gps.GpsActivity
 com/example/geosegalmex/frutales/frutales_11.java
@@ -699,16 +689,11 @@ com/example/geosegalmex/unidadcaracterizacionhortalizas/ControlPlagasEnfermB.jav
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$1
  com.example.geosegalmex.unidadcaracterizacionhortalizas.ControlPlagasEnfermB$2
-com/example/geosegalmex/NewCamara.java
- com.example.geosegalmex.NewCamara
- com.example.geosegalmex.NewCamara$1
- com.example.geosegalmex.NewCamara$1$1
- com.example.geosegalmex.NewCamara$2
- com.example.geosegalmex.NewCamara$2$1
- com.example.geosegalmex.NewCamara$3
- com.example.geosegalmex.NewCamara$3$1
- com.example.geosegalmex.NewCamara$4
- com.example.geosegalmex.NewCamara$4$1
+com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
+ com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3
 com/example/geosegalmex/unidadcomercializacion/comercializacion_6.java
  com.example.geosegalmex.unidadcomercializacion.comercializacion_6
  com.example.geosegalmex.unidadcomercializacion.comercializacion_6$1
@@ -820,11 +805,27 @@ com/example/geosegalmex/Gps/Trayectoria.java
 com/example/geosegalmex/Pecuario/PecuarioReproduccionGenetica.java
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica
  com.example.geosegalmex.Pecuario.PecuarioReproduccionGenetica$1
-com/example/geosegalmex/Pecuario/PecuarioAlimentacionGanado.java
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado
- com.example.geosegalmex.Pecuario.PecuarioAlimentacionGanado$1
-com/example/geosegalmex/PGOperativoEstimulos/PGOperativoEstimulos.java
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$1
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$2
- com.example.geosegalmex.PGOperativoEstimulos.PGOperativoEstimulos$3
+com/example/geosegalmex/NewCamara.java
+ com.example.geosegalmex.NewCamara
+ com.example.geosegalmex.NewCamara$1
+ com.example.geosegalmex.NewCamara$1$1
+ com.example.geosegalmex.NewCamara$2
+ com.example.geosegalmex.NewCamara$2$1
+ com.example.geosegalmex.NewCamara$3
+ com.example.geosegalmex.NewCamara$3$1
+ com.example.geosegalmex.NewCamara$4
+ com.example.geosegalmex.NewCamara$4$1
+com/example/geosegalmex/PARBeneficiario/PARBeneficiario.java
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$1
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$10
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$11
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$12
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$2
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$3
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$4
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$5
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$6
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$7
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$8
+ com.example.geosegalmex.PARBeneficiario.PARBeneficiario$9

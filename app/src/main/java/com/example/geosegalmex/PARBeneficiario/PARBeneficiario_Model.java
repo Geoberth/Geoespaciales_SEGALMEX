@@ -4,13 +4,14 @@ import java.io.Serializable;
 
 public class PARBeneficiario_Model implements Serializable {
 
-    private String fol, fecha, cveedo, edo, cvemun, mun, cveloc, loc, sexo, edad, p1, p2, p3, p4, p5, p5cuales, p6, p7, p7cuales, p8, p9, p10, p11, p12, p13, p13cuales, p14, p15, p16, p17, p17cuales,
+    private String folope, fol, fecha, cveedo, edo, cvemun, mun, cveloc, loc, sexo, edad, p1, p2, p3, p4, p5, p5cuales, p6, p7, p7cuales, p8, p9, p10, p11, p12, p13, p13cuales, p14, p15, p16, p17, p17cuales,
             p18, p19, p19cuales, p20, p21, p22, p23, p23explique, p24, p25, p25otro, p26, p26otro, p27, foto1, foto2, longitudGeo, latitudGeo;
 
     public PARBeneficiario_Model() {
     }
 
-    public PARBeneficiario_Model(String fol, String fecha, String cveedo, String edo, String cvemun, String mun, String cveloc, String loc, String sexo, String edad, String p1, String p2, String p3, String p4, String p5, String p5cuales, String p6, String p7, String p7cuales, String p8, String p9, String p10, String p11, String p12, String p13, String p13cuales, String p14, String p15, String p16, String p17, String p17cuales, String p18, String p19, String p19cuales, String p20, String p21, String p22, String p23, String p23explique, String p24, String p25, String p25otro, String p26, String p26otro, String p27, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+    public PARBeneficiario_Model(String folope, String fol, String fecha, String cveedo, String edo, String cvemun, String mun, String cveloc, String loc, String sexo, String edad, String p1, String p2, String p3, String p4, String p5, String p5cuales, String p6, String p7, String p7cuales, String p8, String p9, String p10, String p11, String p12, String p13, String p13cuales, String p14, String p15, String p16, String p17, String p17cuales, String p18, String p19, String p19cuales, String p20, String p21, String p22, String p23, String p23explique, String p24, String p25, String p25otro, String p26, String p26otro, String p27, String foto1, String foto2, String longitudGeo, String latitudGeo) {
+        this.folope = folope;
         this.fol = fol;
         this.fecha = fecha;
         this.cveedo = cveedo;
@@ -60,6 +61,14 @@ public class PARBeneficiario_Model implements Serializable {
         this.foto2 = foto2;
         this.longitudGeo = longitudGeo;
         this.latitudGeo = latitudGeo;
+    }
+
+    public String getFolope() {
+        return folope;
+    }
+
+    public void setFolope(String folope) {
+        this.folope = folope;
     }
 
     public String getFol() {

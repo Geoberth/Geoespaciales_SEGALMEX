@@ -37,6 +37,7 @@ public class PARBeneficiarioBD extends SQLiteOpenHelper {
         SQLiteDatabase db           = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
+        contentValues.put(PARBeneficiario_bd.COLUMN_FOLIOPERA, model.getFolope());
         contentValues.put(PARBeneficiario_bd.COLUMN_FOLIO, model.getFol());
         contentValues.put(PARBeneficiario_bd.COLUMN_FECHA    , model.getFecha());
         contentValues.put(PARBeneficiario_bd.COLUMN_CVEEDO   , model.getCveedo());

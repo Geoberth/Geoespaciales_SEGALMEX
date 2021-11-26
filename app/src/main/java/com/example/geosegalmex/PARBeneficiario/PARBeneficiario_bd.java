@@ -3,6 +3,7 @@ package com.example.geosegalmex.PARBeneficiario;
 public class PARBeneficiario_bd {
 
     public static final String TABLA_BD = "TB_PAR_BENEFICIARIO";
+    public static final String COLUMN_FOLIOPERA    ="FOLIOPERA";
     public static final String COLUMN_FOLIO    ="FOLIO";
     public static final String COLUMN_FECHA    ="FECHA";
     public static final String COLUMN_CVEEDO   ="CVEEDO";
@@ -54,6 +55,7 @@ public class PARBeneficiario_bd {
     public static final String COLUMN_LATITUD = "LATITUD";
 
     public static final String CREAR_TABLA_PAR_BENEFICIARIO= "CREATE TABLE " + TABLA_BD + "("
+            + COLUMN_FOLIOPERA     + " VARCHAR, "
             + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
             + COLUMN_FECHA     + " VARCHAR, "
             + COLUMN_CVEEDO    + " VARCHAR, "

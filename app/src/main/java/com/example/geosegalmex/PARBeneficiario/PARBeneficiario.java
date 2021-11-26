@@ -1,10 +1,14 @@
 package com.example.geosegalmex.PARBeneficiario;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Georeferencia.GeoreferenciaActivity;
+import com.example.geosegalmex.PAROperativo.PAR_operativo_model;
+import com.example.geosegalmex.PAROperativo.PARoperativoBD;
 import com.example.geosegalmex.R;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,19 +26,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class PARBeneficiario extends AppCompatActivity {
+
 
     int dia, mes, anio;
     PARBeneficiario_Model model;
 
     EditText fec, parbt2, parbt3, parbt4, parbt5, parbt6, parbt7;
     RadioButton parbr1, parbr2, parbr3, parbr4, parbr5, parbr6, parbr7, parbr8, parbr9, parbr10, parbr11, parbr12, parbr13, parbr14, parbr15, parbr16, parbr17, parbr18, parbr19, parbr20, parbr21, parbr22, parbr23, parbr24, parbr25, parbr26, parbr27, parbr28, parbr29, parbr30, parbr31, parbr32, parbr33, parbr34, parbr35, parbr36, parbr37, parbr38, parbr39, parbr40, parbr41, parbr42, parbr43, parbr44, parbr45, parbr46, parbr47, parbr48, parbr49, parbr50, parbr51, parbr52, parbr53, parbr54;
-    Spinner parbs1, parbs2;
+    Spinner parbs1, parbs2, folios;
     EditText parbs3, parbt23, parbt27;
-    TextView textFecha;
+    TextView textFecha, tv3;
     CheckBox parbc1, parbc2, parbc3, parbc4, parbc5, parbc6, parbc7, parbc8, parbc9, parbc10, parbc11, parbc12, parbc13, parbc14, parbc15, parbc16, parbc17, parbc18, parbc19, parbc20, parbc21, parbc22, parbc23, parbc24, parbc25, parbc26, parbc27, parbc28, parbc29, parbc30, parbc31, parbc32, parbc33, parbc34, parbc35, parbc36, parbc37, parbc38, parbc39, parbc40, parbc41, parbc42, parbc43, parbc44, parbc45, parbc46, parbc47, parbc48, parbc49, parbc50, parbc51, parbc52, parbc53, parbc54, parbc55, parbc56, parbc57, parbc58, parbc59, parbc60, parbc61, parbc62, parbc63, parbc64, parbc65, parbc66, parbc67, parbc68, parbc69, parbc70, parbc71, parbc72, parbc73, parbc74, parbc75, parbc76, parbc77, parbc78, parbc79, parbc80, parbc81, parbc82, parbc83, parbc84, parbc85, parbc86, parbc87, parbc88, parbc89, parbc90, parbc91, parbc92, parbc93, parbc94, parbc95, parbc96, parbc97, parbc98, parbc99, parbc100, parbc101, parbc102, parbc103, parbc104, parbc105, parbc106, parbc107, parbc108, parbc109, parbc110, parbc111, parbc112, parbc113, parbc114, parbc115, parbc116, parbc117, parbc118, parbc119, parbc120, parbc121, parbc122, parbc123, parbc124, parbc125, parbc126, parbc127, parbc128, parbc129, parbc130, parbc131, parbc132, parbc133, parbc134, parbc135, parbc136, parbc137, parbc138, parbc139, parbc140, parbc141, parbc142, parbc143, parbc144, parbc145, parbc146, parbc147, parbc148, parbc149, parbc150, parbc151, parbc152, parbc153, parbc154, parbc155, parbc156, parbc157, parbc158, parbc159, parbc160, parbc161, parbc162, parbc163, parbc164, parbc165, parbc166, parbc167, parbc168, parbc169, parbc170, parbc171, parbc172, parbc173, parbc174, parbc175, parbc176, parbc177, parbc178, parbc179, parbc180, parbc181, parbc182, parbc183, parbc184, parbc185, parbc186, parbc187, parbc188, parbc189, parbc190, parbc191, parbc192, parbc193, parbc194, parbc195, parbc196, parbc197, parbc198, parbc199, parbc200, parbc201, parbc202, parbc203, parbc204, parbc205, parbc206, parbc207, parbc208, parbc209, parbc210, parbc211, parbc212, parbc213, parbc214, parbc215, parbc216, parbc217, parbc218, parbc219, parbc220, parbc221, parbc222, parbc223, parbc224, parbc225, parbc226, parbc227, parbc228, parbc229, parbc230, parbc231, parbc232, parbc233, parbc234, parbc235, parbc236, parbc237, parbc238, parbc239, parbc240, parbc241, parbc242, parbc243, parbc244, parbc245, parbc246;
     CheckBox parbc47_1,parbc47_2,parbc47_3,parbc47_4,parbc47_5,parbc47_6,parbc47_7,parbc47_8,parbc47_9,parbc47_10,parbc47_11,parbc47_12,parbc47_13,parbc47_14,parbc47_15,parbc47_16,parbc47_17,parbc47_18,parbc47_19,parbc47_20
             ,parbc47_21,parbc47_22,parbc47_23,parbc47_24,parbc47_25,parbc47_26,parbc47_27,parbc47_28,parbc47_29,parbc47_30,parbc47_31,parbc47_32,parbc47_33,parbc47_34,parbc47_35,parbc47_36,parbc47_37,parbc47_38,parbc47_39
@@ -67,6 +76,12 @@ public class PARBeneficiario extends AppCompatActivity {
     String[] cvemunicipios;
 
 
+
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +95,8 @@ public class PARBeneficiario extends AppCompatActivity {
         parbt23.setVisibility(View.GONE);
         parbt5.setVisibility(View.GONE);
         parbt6.setVisibility(View.GONE);
+
+
 
         muestrafecha();
         Eventos();
@@ -120,6 +137,7 @@ public class PARBeneficiario extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(validar()){
+                    String folop = folios.getSelectedItem().toString();
                     String fol = General.Foliocuestion;
                     General.fechaenc = textFecha.getText().toString();
                     String cveEdo = cveedo;
@@ -168,7 +186,7 @@ public class PARBeneficiario extends AppCompatActivity {
                     String f1 = General.Foto1;
                     String f2 = General.Foto2;
 
-                    model = new PARBeneficiario_Model(fol, General.fechaenc, cveEdo, Edo, cveMun, Mun, cveLoc, Loc, sexo, edad, uno, dos, tres, cuatro, cinco, cincocuales, seis, siete, sietecuales,
+                    model = new PARBeneficiario_Model(folop, fol, General.fechaenc, cveEdo, Edo, cveMun, Mun, cveLoc, Loc, sexo, edad, uno, dos, tres, cuatro, cinco, cincocuales, seis, siete, sietecuales,
                             ocho, nueve, diez, once, doce, trece, trececuales, catorce, quince, dieciseis, diecisiete, cuales17, dieciocho, diecinueve, cuales19, veinte, ventiuno, ventidos, ventitres,
                             explique23, venticuatro, venticinco, otro25, ventiseis, otro26, ventisiete, f1, f2, "", "");
 
@@ -184,9 +202,47 @@ public class PARBeneficiario extends AppCompatActivity {
         });
 
 
+        //LISTADO OPERARIOS
+        ArrayList<String> listapersonas;
+        ArrayList<PARBeneficiario_Model> folioslist;
+
+        PARoperativoBD db = new PARoperativoBD(PARBeneficiario.this);
+        List<PAR_operativo_model> everyone = db.getEveryone();
+
+        ArrayList<String> Miarreglo = new ArrayList<>();
+
+        for(int i=0; i<everyone.size(); i++){
+            Miarreglo.add(everyone.get(i).getFolio());
+        }
+
+        folios = (Spinner)findViewById(R.id.sp1);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(PARBeneficiario.this, android.R.layout.simple_spinner_item, Miarreglo);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        folios.setAdapter(adapter2);
+        folios.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                tv3.setText("Entidad: " + everyone.get(position).getNoment() + "\nMunicipio: " + everyone.get(position).getNommun() + "\nNombre: " + everyone.get(position).getParnom() + " " + everyone.get(position).getParape());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                return;
+            }
+        });
+
+
+
+
     }
 
+
+
     public void Declaracion(){
+
+        tv3 = (TextView)findViewById(R.id.tv3);
+
+
         siete=(GridLayout)findViewById(R.id.combo7);
         ocho=(GridLayout)findViewById(R.id.combo8);
         diesinueve=(GridLayout)findViewById(R.id.combo19);
@@ -693,7 +749,13 @@ public class PARBeneficiario extends AppCompatActivity {
         //BOTON SIGUIENTE
 
         btnSiguiente = findViewById(R.id.par_ben_sig);
+
     }
+
+
+
+
+
 
     //Metodo para extraer la fecha actual
     public void muestrafecha(){
