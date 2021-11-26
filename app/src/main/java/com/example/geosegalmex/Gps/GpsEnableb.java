@@ -433,6 +433,15 @@ public class GpsEnableb extends AppCompatActivity {
             }else{
             }
         }
+        else if(proy.equals("PG Operativo Granos")){
+            PGOperativoGranosBD db;
+            db = new PGOperativoGranosBD(this);
+            boolean insertarData = db.addTrayectoriaS(folioPro, folioBrig, longGpsSave, latiGpsSave, horaActl, fechaActl);
+            db.close();
+            if(insertarData == true) {
+            }else{
+            }
+        }
         else if(proy.equals("PG Beneficiario Granos")){
             PGBgranosBD db;
             db = new PGBgranosBD(this);
