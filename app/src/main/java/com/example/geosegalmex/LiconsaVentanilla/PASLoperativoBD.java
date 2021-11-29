@@ -2,14 +2,16 @@ package com.example.geosegalmex.LiconsaVentanilla;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 
-import androidx.annotation.Nullable;
-
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Gps.UtilidadesTrayectoria;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PASLoperativoBD extends SQLiteOpenHelper {
 
@@ -113,5 +115,43 @@ public class PASLoperativoBD extends SQLiteOpenHelper {
             return true;
         }
     }
+
+
+    public List<Pasl_o_Model> getEveryone2(){
+
+        List<Pasl_o_Model> returnList2 = new ArrayList<>();
+
+        String queryString = "SELECT * FROM " + pasl_operativo_bd.TABLA_BD;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(queryString, null);
+
+        if(cursor.moveToFirst()){
+            do{
+                String folio = cursor.getString(0);
+                String fecha = cursor.getString(1);
+                String cveenti = cursor.getString(2);
+                String entidad = cursor.getString(3);
+                String cvemuni = cursor.getString(4);
+                String muni = cursor.getString(5);
+                String cveloca = cursor.getString(6);
+                String locali = cursor.getString(7);
+                String nom = cursor.getString(8);
+                String ape = cursor.getString(9);
+                String apem = cursor.getString(10);
+
+                Pasl_o_Model newCustomer = new Pasl_o_Model(folio, fecha, cveenti, entidad, cvemuni, muni, cveloca, locali, nom, ape, apem, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "");
+                returnList2.add(newCustomer);
+
+            }while(cursor.moveToNext());
+        }
+        else{
+
+        }
+        cursor.close();
+        db.close();
+        return returnList2;
+    }
+
+
 
 }

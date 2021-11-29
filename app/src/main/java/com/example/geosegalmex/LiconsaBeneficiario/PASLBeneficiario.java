@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -19,18 +20,27 @@ import android.widget.Toast;
 import com.example.geosegalmex.General;
 import com.example.geosegalmex.Georeferencia.GeoreferenciaActivity;
 import com.example.geosegalmex.LiconsaVentanilla.PASLOperativo;
+import com.example.geosegalmex.LiconsaVentanilla.PASLoperativoBD;
 import com.example.geosegalmex.LiconsaVentanilla.Pasl_o_Model;
+import com.example.geosegalmex.PARBeneficiario.PARBeneficiario;
+import com.example.geosegalmex.PARBeneficiario.PARBeneficiario_Model;
+import com.example.geosegalmex.PAROperativo.PAR_operativo_model;
+import com.example.geosegalmex.PAROperativo.PARoperativoBD;
 import com.example.geosegalmex.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PASLBeneficiario extends AppCompatActivity {
 
-    Spinner responde;
+    Spinner responde, folios;
     CheckBox beneficiarioa, beneficiariob, beneficiarioc, beneficiariod, beneficiarioe, beneficiariof;
     RadioButton radi1, radi2, radi3, bueno, aceptable, malo, bueno2, aceptable2, malo2, bueno3, aceptable3, malo3,bueno4, aceptable4, malo4,bueno5, aceptable5, malo5,bueno6, aceptable6, malo6,bueno7, aceptable7, malo7;
     RadioButton bueno8, aceptable8, malo8, bueno9, aceptable9, malo9, bueno10, aceptable10, malo10, bueno11, aceptable11, malo11,bueno12, aceptable12, malo12,bueno13, aceptable13, malo13,bueno14, aceptable14, malo14;
     CheckBox quincea, quinceb, quincec, quinced;
     EditText otrobene, quinceotras, quince, dieciseis, diecisiete,  cuatrocom, cincocom, seiscom, sietecom, ochocom, nuevecom, diezcom, oncecom, docecom, trececom, catorcecom;
     Button btnNext;
+    TextView tv3;
 
     Pasl_b_Model model;
 
@@ -38,6 +48,8 @@ public class PASLBeneficiario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paslbeneficiario);
+
+        tv3 = (TextView)findViewById(R.id.tv3);
 
         responde = (Spinner)findViewById(R.id.paslb_spin1);
 
@@ -136,11 +148,42 @@ public class PASLBeneficiario extends AppCompatActivity {
         eventos01();
 
 
+        //LISTADO OPERARIOS
+        ArrayList<String> listapersonas;
+        ArrayList<PARBeneficiario_Model> folioslist;
+
+        PASLoperativoBD db = new PASLoperativoBD(PASLBeneficiario.this);
+        List<Pasl_o_Model> everyone = db.getEveryone2();
+
+        ArrayList<String> Miarreglo = new ArrayList<>();
+
+        for(int i=0; i<everyone.size(); i++){
+            Miarreglo.add(everyone.get(i).getFolio());
+        }
+
+        folios = (Spinner)findViewById(R.id.sp1);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(PASLBeneficiario.this, android.R.layout.simple_spinner_item, Miarreglo);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        folios.setAdapter(adapter2);
+        folios.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                tv3.setText("Entidad: " + everyone.get(position).getEstado() + "\nMunicipio: " + everyone.get(position).getMunicipio() + "\nNombre: " + everyone.get(position).getNombre() + " " + everyone.get(position).getApaterno());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                return;
+            }
+        });
+
+
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 if(validar()){
+                    String folop = folios.getSelectedItem().toString();
                     String fol = General.Foliocuestion;
                     String res =  obtenerRadio(radi1, radi2, radi3);
                     String bene = Resultado();
@@ -177,7 +220,7 @@ public class PASLBeneficiario extends AppCompatActivity {
                     String trececo = trececom.getText().toString();
                     String catorceco = catorcecom.getText().toString();
 
-                    model = new Pasl_b_Model(fol, res, bene, obene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, f1, f2, "", "");
+                    model = new Pasl_b_Model(folop, fol, res, bene, obene, uno, dos, tres, cuatro, cuatroco, cinco, cincoco, seis, seisco, siete, sieteco, ocho, ochoco, nueve, nueveco, diez, diezco, once, onceco, doce, doceco, trece, trececo, catorce, catorceco, quince, quinceco, dieciseiss, diecisietes, f1, f2, "", "");
                     Intent in = new Intent(PASLBeneficiario.this, GeoreferenciaActivity.class);
                     in.putExtra("model", model);
                     startActivity(in);

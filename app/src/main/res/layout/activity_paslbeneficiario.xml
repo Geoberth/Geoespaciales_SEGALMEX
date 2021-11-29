@@ -39,6 +39,35 @@
                 android:textSize="16dp" />
 
             <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Selecciona el folio operativo:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/sp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde"
+                android:entries="@array/Estados2021"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"

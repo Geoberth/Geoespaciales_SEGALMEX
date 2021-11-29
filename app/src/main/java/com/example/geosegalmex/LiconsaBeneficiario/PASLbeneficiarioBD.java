@@ -38,6 +38,7 @@ public class PASLbeneficiarioBD extends SQLiteOpenHelper {
         SQLiteDatabase db           = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
+        contentValues.put(pasl_beneficiario_bd.COLUMN_FOLIOPE, model.getFoliope());
         contentValues.put(pasl_beneficiario_bd.COLUMN_FOLIO, model.getFolio());
         contentValues.put(pasl_beneficiario_bd.COLUMN_RES, model.getRes());
         contentValues.put(pasl_beneficiario_bd.COLUMN_OBENEFI, model.getObene());

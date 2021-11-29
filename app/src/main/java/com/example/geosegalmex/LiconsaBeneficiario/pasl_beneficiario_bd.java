@@ -5,6 +5,7 @@ import android.net.wifi.aware.PublishConfig;
 public class pasl_beneficiario_bd {
 
     public static final String TABLA_BD = "TB_PASL_BENEFICIARIO";
+    public static final String COLUMN_FOLIOPE = "FOLIOPE";
     public static final String COLUMN_FOLIO = "FOLIO";
     public static final String COLUMN_RES = "RES";
     public static final String COLUMN_BENEFI = "BENEFI";
@@ -44,6 +45,7 @@ public class pasl_beneficiario_bd {
     public static final String COLUMN_LATITUD = "LATITUD";
 
     public static final String CREAR_TABLA_PASL_BENEFICIARIO= "CREATE TABLE " + TABLA_BD + "("
+            + COLUMN_FOLIOPE + " VARCHAR, "
             + COLUMN_FOLIO + " VARCHAR PRIMARY KEY, "
             + COLUMN_RES + " VARCHAR, "
             + COLUMN_OBENEFI + " VARCHAR, "
