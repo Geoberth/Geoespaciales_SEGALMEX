@@ -268,8 +268,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model = new Pasl_o_Model();
@@ -302,8 +302,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model2 = new Pasl_b_Model();
@@ -335,8 +335,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model3 = new PGOperativoEstimulos_Model();
@@ -361,8 +361,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model4 = new PGOperativoGranos_Model();
@@ -387,8 +387,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model5 = new PGOperativoLeche_Model();
@@ -413,8 +413,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model6 = new PGB_granos_model();
@@ -439,8 +439,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model7 = new PGBeneficiarioLeche_Model();
@@ -465,8 +465,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model8 = new PARBeneficiario_Model();
@@ -491,8 +491,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model9 = new Liconsa_Model();
@@ -517,8 +517,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model10 = new PAR_operativo_model();
@@ -543,8 +543,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model11 = new LiconsaVerificacion_Model();
@@ -569,8 +569,8 @@ public class GeoreferenciaActivity extends AppCompatActivity  implements OnMapRe
             latitudGeo = General.Latini;
         }
         else{
-            longitudGeo = String.valueOf(mlocationBeta.getLongitude());
-            latitudGeo = String.valueOf(mlocationBeta.getLatitude());
+            longitudGeo = General.Lonini;
+            latitudGeo = General.Latini;
         }
 
         model12 = new PGBeneficiariosGranosIncentivos_Model();
