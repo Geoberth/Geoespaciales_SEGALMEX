@@ -4,7 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GeoSegalmex.iml" filepath="$PROJECT_DIR$/.idea/modules/GeoSegalmex.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GeoSegalmex.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/canvaslibrary/GeoSegalmex.canvaslibrary.unitTest.iml" />
     </modules>
   </component>
 </project>
